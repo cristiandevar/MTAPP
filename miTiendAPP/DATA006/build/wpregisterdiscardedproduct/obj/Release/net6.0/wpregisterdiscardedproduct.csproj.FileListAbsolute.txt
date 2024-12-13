@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpregisterdiscardedproduct.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpregisterdiscardedproduct.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\refint\wpregisterdiscardedproduct.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\wpregisterdiscardedproduct.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregisterdiscardedproduct\obj\Release\net6.0\ref\wpregisterdiscardedproduct.dll

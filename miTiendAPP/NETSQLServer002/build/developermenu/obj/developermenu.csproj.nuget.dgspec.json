@@ -1,0 +1,3948 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\developermenu\\developermenu.csproj": {}
+  },
+  "projects": {
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\brandgeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\brandgeneral.csproj",
+        "projectName": "brandgeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\brandgeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\brandproductwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\brandproductwc.csproj",
+        "projectName": "brandproductwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\brandproductwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\brand.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\brand.csproj",
+        "projectName": "brand",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\brand.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\developermenu\\developermenu.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\developermenu\\developermenu.csproj",
+        "projectName": "developermenu",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\developermenu\\developermenu.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\developermenu\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\brandgeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandgeneral\\brandgeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\brandproductwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brandproductwc\\brandproductwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\brand.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\brand\\brand.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\employeegeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\employeegeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\employeeinvoicewc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\employeeinvoicewc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\employee.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\employee.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\general.security.notauthorized.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\general.security.notauthorized.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\general.ui.masterprompt.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\general.ui.masterprompt.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\general.ui.masterunanimosidebar.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\general.ui.masterunanimosidebar.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\gx0010.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\gx0010.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\gx0020.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\gx0020.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\gx0030.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\gx0030.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\gx0040.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\gx0040.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\gx0050.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\gx0050.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\gx0060.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\gx0060.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\gx00c1.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\gx00c1.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\gx00d1.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\gx00d1.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\invoicedetailwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\invoicedetailwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\invoicegeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\invoicegeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\invoice.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\invoice.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\productdetail1wc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\productdetail1wc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\productdetailwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\productdetailwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\productgeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\productgeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\product.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\product.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\purchaseorderdetailwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\purchaseorderdetailwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\purchaseordergeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\purchaseordergeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\purchaseorder.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\purchaseorder.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\sectorgeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\sectorgeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\sectorproductwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\sectorproductwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\sector.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\sector.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\suppliergeneral.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\suppliergeneral.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\supplierproductwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\supplierproductwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\supplierpurchaseorderwc.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\supplierpurchaseorderwc.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\supplier.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\supplier.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\viewbrand.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\viewbrand.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\viewemployee.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\viewemployee.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\viewinvoice.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\viewinvoice.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\viewproduct.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\viewproduct.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\viewpurchaseorder.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\viewpurchaseorder.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\viewsector.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\viewsector.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\viewsupplier.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\viewsupplier.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\wwbrand.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\wwbrand.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\wwemployee.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\wwemployee.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\wwinvoice.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\wwinvoice.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\wwproduct.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\wwproduct.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\wwpurchaseorder.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\wwpurchaseorder.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\wwsector.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\wwsector.csproj"
+              },
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\wwsupplier.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\wwsupplier.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\employeegeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\employeegeneral.csproj",
+        "projectName": "employeegeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\employeegeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeegeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\employeeinvoicewc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\employeeinvoicewc.csproj",
+        "projectName": "employeeinvoicewc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\employeeinvoicewc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employeeinvoicewc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\employee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\employee.csproj",
+        "projectName": "employee",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\employee.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\employee\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\general.security.notauthorized.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\general.security.notauthorized.csproj",
+        "projectName": "general.security.notauthorized",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\general.security.notauthorized.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.security.notauthorized\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\general.ui.masterprompt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\general.ui.masterprompt.csproj",
+        "projectName": "general.ui.masterprompt",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\general.ui.masterprompt.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterprompt\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\general.ui.masterunanimosidebar.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\general.ui.masterunanimosidebar.csproj",
+        "projectName": "general.ui.masterunanimosidebar",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\general.ui.masterunanimosidebar.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\general.ui.masterunanimosidebar\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj",
+        "projectName": "GeneXus.Programs.Common",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\gx0010.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\gx0010.csproj",
+        "projectName": "gx0010",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\gx0010.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0010\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\gx0020.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\gx0020.csproj",
+        "projectName": "gx0020",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\gx0020.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0020\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\gx0030.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\gx0030.csproj",
+        "projectName": "gx0030",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\gx0030.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0030\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\gx0040.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\gx0040.csproj",
+        "projectName": "gx0040",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\gx0040.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0040\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\gx0050.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\gx0050.csproj",
+        "projectName": "gx0050",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\gx0050.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0050\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\gx0060.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\gx0060.csproj",
+        "projectName": "gx0060",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\gx0060.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx0060\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\gx00c1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\gx00c1.csproj",
+        "projectName": "gx00c1",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\gx00c1.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00c1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\gx00d1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\gx00d1.csproj",
+        "projectName": "gx00d1",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\gx00d1.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\gx00d1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\invoicedetailwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\invoicedetailwc.csproj",
+        "projectName": "invoicedetailwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\invoicedetailwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicedetailwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\invoicegeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\invoicegeneral.csproj",
+        "projectName": "invoicegeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\invoicegeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoicegeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\invoice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\invoice.csproj",
+        "projectName": "invoice",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\invoice.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\invoice\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\productdetail1wc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\productdetail1wc.csproj",
+        "projectName": "productdetail1wc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\productdetail1wc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetail1wc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\productdetailwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\productdetailwc.csproj",
+        "projectName": "productdetailwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\productdetailwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productdetailwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\productgeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\productgeneral.csproj",
+        "projectName": "productgeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\productgeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\productgeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\product.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\product.csproj",
+        "projectName": "product",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\product.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\product\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\purchaseorderdetailwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\purchaseorderdetailwc.csproj",
+        "projectName": "purchaseorderdetailwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\purchaseorderdetailwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorderdetailwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\purchaseordergeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\purchaseordergeneral.csproj",
+        "projectName": "purchaseordergeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\purchaseordergeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseordergeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\purchaseorder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\purchaseorder.csproj",
+        "projectName": "purchaseorder",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\purchaseorder.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\purchaseorder\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\sectorgeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\sectorgeneral.csproj",
+        "projectName": "sectorgeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\sectorgeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorgeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\sectorproductwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\sectorproductwc.csproj",
+        "projectName": "sectorproductwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\sectorproductwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sectorproductwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\sector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\sector.csproj",
+        "projectName": "sector",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\sector.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\sector\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\suppliergeneral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\suppliergeneral.csproj",
+        "projectName": "suppliergeneral",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\suppliergeneral.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\suppliergeneral\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\supplierproductwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\supplierproductwc.csproj",
+        "projectName": "supplierproductwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\supplierproductwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierproductwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\supplierpurchaseorderwc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\supplierpurchaseorderwc.csproj",
+        "projectName": "supplierpurchaseorderwc",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\supplierpurchaseorderwc.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplierpurchaseorderwc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\supplier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\supplier.csproj",
+        "projectName": "supplier",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\supplier.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\supplier\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\viewbrand.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\viewbrand.csproj",
+        "projectName": "viewbrand",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\viewbrand.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewbrand\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\viewemployee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\viewemployee.csproj",
+        "projectName": "viewemployee",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\viewemployee.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewemployee\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\viewinvoice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\viewinvoice.csproj",
+        "projectName": "viewinvoice",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\viewinvoice.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewinvoice\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\viewproduct.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\viewproduct.csproj",
+        "projectName": "viewproduct",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\viewproduct.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewproduct\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\viewpurchaseorder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\viewpurchaseorder.csproj",
+        "projectName": "viewpurchaseorder",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\viewpurchaseorder.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewpurchaseorder\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\viewsector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\viewsector.csproj",
+        "projectName": "viewsector",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\viewsector.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsector\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\viewsupplier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\viewsupplier.csproj",
+        "projectName": "viewsupplier",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\viewsupplier.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\viewsupplier\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\wwbrand.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\wwbrand.csproj",
+        "projectName": "wwbrand",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\wwbrand.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwbrand\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\wwemployee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\wwemployee.csproj",
+        "projectName": "wwemployee",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\wwemployee.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwemployee\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\wwinvoice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\wwinvoice.csproj",
+        "projectName": "wwinvoice",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\wwinvoice.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwinvoice\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\wwproduct.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\wwproduct.csproj",
+        "projectName": "wwproduct",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\wwproduct.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwproduct\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\wwpurchaseorder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\wwpurchaseorder.csproj",
+        "projectName": "wwpurchaseorder",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\wwpurchaseorder.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwpurchaseorder\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\wwsector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\wwsector.csproj",
+        "projectName": "wwsector",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\wwsector.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsector\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\wwsupplier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\wwsupplier.csproj",
+        "projectName": "wwsupplier",
+        "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\wwsupplier.csproj",
+        "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+        "outputPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\wwsupplier\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\NuGet.Config",
+          "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\NETSQLServer002\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.22.0, 1.22.0]"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

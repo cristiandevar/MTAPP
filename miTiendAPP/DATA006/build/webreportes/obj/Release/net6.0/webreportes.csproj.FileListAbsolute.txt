@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\webreportes.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\webreportes.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\refint\webreportes.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\webreportes.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webreportes\obj\Release\net6.0\ref\webreportes.dll

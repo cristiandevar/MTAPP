@@ -1,0 +1,9 @@
+
+Iniciando copia...
+1000 rows successfully bulk-copied to host-file. Total received: 1000
+1000 rows successfully bulk-copied to host-file. Total received: 2000
+1000 rows successfully bulk-copied to host-file. Total received: 3000
+
+3119 filas copiadas.
+Tama¤o del paquete de red (bytes): 4096
+Tiempo de reloj (ms.) Total     : 47     Media: (66361.70 filas por s)

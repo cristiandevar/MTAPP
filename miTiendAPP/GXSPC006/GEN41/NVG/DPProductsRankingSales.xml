@@ -1,0 +1,353 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>2a9e9aba-d2de-4801-ae7f-5e3819222daf</ObjClsGuid>
+<ObjCls>33</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>DPProductsRankingSales</ObjName>
+<ObjDesc>DPProducts Ranking Sales</ObjDesc>
+<ObjPgmName>DPProductsRankingSales</ObjPgmName>
+<ObjClsName>DataProvider</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Name</VarId>
+<VarName>&amp;Name</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Supplierid</VarId>
+<VarName>&amp;SupplierId</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Sectorid</VarId>
+<VarName>&amp;SectorId</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Brandid</VarId>
+<VarName>&amp;BrandId</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Token>SDTRankingProducts</Token></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>7</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Sp></Sp>
+<Token>like</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Name</VarId>
+<VarName>&amp;Name</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Name</VarId>
+<VarName>&amp;Name</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Brandid</VarId>
+<VarName>&amp;BrandId</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Brandid</VarId>
+<VarName>&amp;BrandId</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Sectorid</VarId>
+<VarName>&amp;SectorId</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Sectorid</VarId>
+<VarName>&amp;SectorId</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Supplierid</VarId>
+<VarName>&amp;SupplierId</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Supplierid</VarId>
+<VarName>&amp;SupplierId</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>ProductCostPrice</AttriName>
+<Description>Product Cost Price</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Into>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table>
+<Table>
+<TableId>3</TableId>
+<TableName>Sector</TableName>
+<Description>Sector</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></Into>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>5</TableId>
+<TableName>count( InvoiceDetailId ) , sum( InvoiceDetailQuantity ) , sum( InvoiceDetailQuantity * InvoiceDetailHistoricPrice )  navigation</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas>
+<Formula>
+<FormulaAttri>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>*</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Token>)</Token></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IPRODUCT</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula>
+<Formula>
+<FormulaAttri>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Token>)</Token></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IPRODUCT</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula>
+<Formula>
+<FormulaAttri>
+<Token>count(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute>
+<Token>)</Token></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IPRODUCT</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

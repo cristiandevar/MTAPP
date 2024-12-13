@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\productorderdetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\productorderdetailwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\refint\productorderdetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\productorderdetailwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productorderdetailwc\obj\Release\net6.0\ref\productorderdetailwc.dll

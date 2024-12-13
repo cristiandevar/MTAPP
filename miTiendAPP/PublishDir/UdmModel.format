@@ -1,0 +1,6 @@
+14.0
+4
+1       SQLINT              0       4       ""   1     ModelId                        ""
+2       SQLNCHAR            2       256     ""   2     ModelName                      Latin1_General_100_CI_AS_SC_UTF8
+3       SQLINT              0       4       ""   3     ModelType                      ""
+4       SQLINT              0       4       ""   4     ModelParentId                  ""

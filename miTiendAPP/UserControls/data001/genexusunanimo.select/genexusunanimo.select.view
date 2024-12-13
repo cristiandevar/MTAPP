@@ -1,0 +1,5 @@
+<ch-select id="ch-select-{{gxTpr_Name}}{{Name}}" name="{{gxTpr_Name}}{{Name}}" class="{{gxTpr_Class}}{{Class}}{{^Class}}ch-select{{/Class}}" icon-src="{{gxTpr_Icon}}{{Icon}}" {{#ArrowIcon}}arrow-icon-src="{{gxTpr_ArrowIcon}}{{ArrowIcon}}"{{/ArrowIcon}} {{^ArrowIcon}}{{/ArrowIcon}} {{#IconAutoColor}}auto-color{{/IconAutoColor}} height="{{gxTpr_Height}}{{Height}}" option-height="{{gxTpr_OptionHeight}}{{OptionHeight}}" tabindex="0">
+	{{#SelectItems}}
+	<option value="{{gxTpr_value}}{{value}}" {{#selected}}selected{{/selected}}> {{gxTpr_text}}{{text}} </option>
+	{{/SelectItems}}
+</ch-select>

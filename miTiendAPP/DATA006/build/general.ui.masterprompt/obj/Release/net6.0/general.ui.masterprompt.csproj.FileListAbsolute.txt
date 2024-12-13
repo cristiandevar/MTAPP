@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterprompt.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterprompt.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\refint\general.ui.masterprompt.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\general.ui.masterprompt.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterprompt\obj\Release\net6.0\ref\general.ui.masterprompt.dll

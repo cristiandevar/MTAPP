@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\productstopurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\productstopurchase.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\refint\productstopurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\productstopurchase.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productstopurchase\obj\Release\net6.0\ref\productstopurchase.dll

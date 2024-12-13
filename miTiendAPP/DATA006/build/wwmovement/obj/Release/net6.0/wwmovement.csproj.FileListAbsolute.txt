@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwmovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\refint\wwmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\wwmovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwmovement\obj\Release\net6.0\ref\wwmovement.dll

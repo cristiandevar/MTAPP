@@ -1,0 +1,20 @@
+usercontrol_directory_i('genexusunanimo.button', ['UserControls']).
+usercontrol_i('genexusunanimo.button', ['GeneXusUnanimo.Button','Genexusunanimo.button']).
+usercontrol_property_mapping_i('genexusunanimo.button', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Icon', 'Icon', 'Icon', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'IconSize', 'Iconsize', 'Iconsize', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'IconColor', 'Iconcolor', 'Iconcolor', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Variant', 'Variant', 'Variant', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Style', 'Style', 'Style', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'OnClickEvent', 'Onclickevent', 'Event', [event,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Caption', 'Caption', 'Caption', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.button', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).

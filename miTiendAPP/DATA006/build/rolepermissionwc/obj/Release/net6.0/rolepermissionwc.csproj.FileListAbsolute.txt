@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\rolepermissionwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\rolepermissionwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\refint\rolepermissionwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\rolepermissionwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\rolepermissionwc\obj\Release\net6.0\ref\rolepermissionwc.dll

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.productperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.productperishable.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\refint\general.productperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\general.productperishable.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.productperishable\obj\Release\net6.0\ref\general.productperishable.dll

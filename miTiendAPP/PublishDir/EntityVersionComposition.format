@@ -1,0 +1,8 @@
+14.0
+6
+1       SQLINT              0       4       ""   1     ComponentEntityTypeId                                ""
+2       SQLINT              0       4       ""   2     ComponentEntityId                                    ""
+3       SQLINT              0       4       ""   3     ComponentEntityVersionId                             ""
+4       SQLINT              0       4       ""   4     CompoundEntityTypeId                                 ""
+5       SQLINT              0       4       ""   5     CompoundEntityId                                     ""
+6       SQLINT              0       4       ""   6     CompoundEntityVersionId                              ""

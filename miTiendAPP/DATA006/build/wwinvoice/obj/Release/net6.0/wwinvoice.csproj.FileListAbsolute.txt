@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwinvoice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwinvoice.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\refint\wwinvoice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\wwinvoice.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwinvoice\obj\Release\net6.0\ref\wwinvoice.dll

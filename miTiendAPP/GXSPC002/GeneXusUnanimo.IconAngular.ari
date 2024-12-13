@@ -1,0 +1,10 @@
+usercontrol_directory_i('genexusunanimo.iconangular', ['UserControls']).
+usercontrol_i('genexusunanimo.iconangular', ['GeneXusUnanimo.IconAngular','Genexusunanimo.iconangular']).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'source', 'Source', 'Source', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'size', 'Size', 'Size', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'color', 'Color', 'Color', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.iconangular', 'autoColor', 'Autocolor', 'Autocolor', [boolean,0,0,0], 0, any).
+usercontrol_event_mapping_i('genexusunanimo.iconangular', 'Click', 'Click').

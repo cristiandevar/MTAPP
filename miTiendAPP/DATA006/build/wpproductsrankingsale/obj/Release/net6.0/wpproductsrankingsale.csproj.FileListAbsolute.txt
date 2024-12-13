@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpproductsrankingsale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpproductsrankingsale.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\refint\wpproductsrankingsale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\wpproductsrankingsale.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpproductsrankingsale\obj\Release\net6.0\ref\wpproductsrankingsale.dll

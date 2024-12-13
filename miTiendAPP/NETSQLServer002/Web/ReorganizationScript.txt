@@ -1,0 +1,39 @@
+CREATE TABLE [InvoiceDetail] ([InvoiceId] int NOT NULL , [InvoiceDetailId] int NOT NULL , [InvoiceDetailQuantity] int NOT NULL , [InvoiceDetailHistoricPrice] money NOT NULL , [ProductId] int NOT NULL , PRIMARY KEY([InvoiceId], [InvoiceDetailId]))
+CREATE NONCLUSTERED INDEX [IINVOICEDETAIL1] ON [InvoiceDetail] ([ProductId] )
+
+CREATE TABLE [PurchaseOrderDetail] ([PurchaseOrderId] int NOT NULL , [PurchaseOrderDetailId] int NOT NULL , [PurchaseOrderDetailQuantity] smallint NOT NULL , [ProductId] int NOT NULL , [PurchaseOrderDetailCurrentPric] money NOT NULL , [PurchaseOrderDetailSuggestedPr] money NOT NULL , PRIMARY KEY([PurchaseOrderId], [PurchaseOrderDetailId]))
+CREATE NONCLUSTERED INDEX [IPURCHASEORDERDETAIL1] ON [PurchaseOrderDetail] ([ProductId] )
+
+CREATE TABLE [PurchaseOrder] ([PurchaseOrderId] int NOT NULL IDENTITY(1,1), [SupplierId] int NOT NULL , [PurchaseOrderCreatedDate] datetime NOT NULL , [PurchaseOrderModifiedDate] datetime NULL , [PurchaseOrderClosedDate] datetime NULL , PRIMARY KEY([PurchaseOrderId]))
+CREATE NONCLUSTERED INDEX [IPURCHASEORDER1] ON [PurchaseOrder] ([SupplierId] )
+
+CREATE TABLE [Invoice] ([InvoiceId] int NOT NULL IDENTITY(1,1), [InvoiceDate] datetime NOT NULL , [EmployeeId] int NOT NULL , [InvoiceCreatedDate] datetime NOT NULL , [InvoiceModifiedDate] datetime NULL , PRIMARY KEY([InvoiceId]))
+CREATE NONCLUSTERED INDEX [IINVOICE1] ON [Invoice] ([EmployeeId] )
+
+CREATE TABLE [Product] ([ProductId] int NOT NULL IDENTITY(1,1), [ProductName] nvarchar(60) NOT NULL , [ProductStock] int NOT NULL , [ProductPrice] money NOT NULL , [ProductDescription] nvarchar(200) NULL , [BrandId] int NOT NULL , [SectorId] int NOT NULL , [SupplierId] int NOT NULL , [ProductCreatedDate] datetime NOT NULL , [ProductModifiedDate] datetime NULL , [ProductCode] nvarchar(100) NULL , PRIMARY KEY([ProductId]))
+CREATE NONCLUSTERED INDEX [IPRODUCT1] ON [Product] ([SupplierId] )
+CREATE NONCLUSTERED INDEX [IPRODUCT2] ON [Product] ([SectorId] )
+CREATE NONCLUSTERED INDEX [IPRODUCT3] ON [Product] ([BrandId] )
+
+CREATE TABLE [Employee] ([EmployeeId] int NOT NULL IDENTITY(1,1), [EmployeeFirstName] nvarchar(60) NOT NULL , [EmployeeLastName] nvarchar(60) NOT NULL , [EmployeeCreatedDate] datetime NOT NULL , [EmployeeModifiedDate] datetime NOT NULL , PRIMARY KEY([EmployeeId]))
+
+CREATE TABLE [Sector] ([SectorId] int NOT NULL IDENTITY(1,1), [SectorName] nvarchar(60) NOT NULL , [SectorDescription] nvarchar(200) NULL , [SectorCreatedDate] datetime NOT NULL , [SectorModifiedDate] datetime NULL , PRIMARY KEY([SectorId]))
+
+CREATE TABLE [Supplier] ([SupplierId] int NOT NULL IDENTITY(1,1), [SupplierName] nvarchar(60) NOT NULL , [SupplierDescription] nvarchar(200) NULL , [SupplierPhone] nchar(20) NULL , [SupplierEmail] nvarchar(100) NULL , [SupplierCreatedDate] datetime NOT NULL , [SupplierModifiedDate] datetime NOT NULL , PRIMARY KEY([SupplierId]))
+
+CREATE TABLE [Brand] ([BrandId] int NOT NULL IDENTITY(1,1), [BrandName] nvarchar(60) NOT NULL , [BrandDescription] nvarchar(200) NULL , [BrandCreatedDate] datetime NOT NULL , [BrandModifiedDate] datetime NULL , PRIMARY KEY([BrandId]))
+
+ALTER TABLE [Product] ADD CONSTRAINT [IPRODUCT3] FOREIGN KEY ([BrandId]) REFERENCES [Brand] ([BrandId])
+ALTER TABLE [Product] ADD CONSTRAINT [IPRODUCT2] FOREIGN KEY ([SectorId]) REFERENCES [Sector] ([SectorId])
+ALTER TABLE [Product] ADD CONSTRAINT [IPRODUCT1] FOREIGN KEY ([SupplierId]) REFERENCES [Supplier] ([SupplierId])
+
+ALTER TABLE [Invoice] ADD CONSTRAINT [IINVOICE1] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([EmployeeId])
+
+ALTER TABLE [PurchaseOrder] ADD CONSTRAINT [IPURCHASEORDER1] FOREIGN KEY ([SupplierId]) REFERENCES [Supplier] ([SupplierId])
+
+ALTER TABLE [PurchaseOrderDetail] ADD CONSTRAINT [IPURCHASEORDERDETAIL2] FOREIGN KEY ([PurchaseOrderId]) REFERENCES [PurchaseOrder] ([PurchaseOrderId])
+ALTER TABLE [PurchaseOrderDetail] ADD CONSTRAINT [IPURCHASEORDERDETAIL1] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId])
+
+ALTER TABLE [InvoiceDetail] ADD CONSTRAINT [IINVOICEDETAIL2] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId])
+ALTER TABLE [InvoiceDetail] ADD CONSTRAINT [IINVOICEDETAIL1] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId])
+

@@ -1,0 +1,8 @@
+14.0
+6
+1       SQLINT              0       4       ""   1     EntityTypeId                                         ""
+2       SQLNCHAR            2       256     ""   2     EntityTypeName                                       Latin1_General_100_CI_AS_SC_UTF8
+3       SQLNCHAR            2       512     ""   3     EntityTypeNamespace                                  Latin1_General_100_CI_AS_SC_UTF8
+4       SQLINT              0       4       ""   4     EntityTypeLastObjectId                               ""
+5       SQLINT              0       4       ""   5     EntityTypeIsModelable                                ""
+6       SQLINT              0       4       ""   6     EntityTypeIsInternalNode                             ""

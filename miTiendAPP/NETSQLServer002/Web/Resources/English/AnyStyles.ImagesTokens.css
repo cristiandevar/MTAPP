@@ -1,0 +1,8 @@
+@layer AnyStylesImagesTokens {
+:root
+{
+	--GX-Image_selectRow : url(../selectRow.png);
+}
+
+.GX_Image_selectRow_Class{content: var(--GX-Image_selectRow);}
+}

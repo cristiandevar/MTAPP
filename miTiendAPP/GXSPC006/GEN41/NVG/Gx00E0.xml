@@ -1,0 +1,175 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>149</ObjId>
+<ObjName>Gx00E0</ObjName>
+<ObjDesc>Selection List Product Perishable</ObjDesc>
+<ObjPgmName>Gx00E0</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pproductperishableid</VarId>
+<VarName>&amp;pProductPerishableId</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>'Toggle'</EventName></Event>
+<Event>
+<EventName>Lblproductperishableidfilter.Click</EventName></Event>
+<Event>
+<EventName>Lblproductidfilter.Click</EventName></Event>
+<Event>
+<EventName>Lblproductperishablebatchdatefilter.Click</EventName></Event>
+<Event>
+<EventName>Lblproductperishableexpirationdatefilter.Click</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCTPERISHABLE</IndexName>
+<LevelOptions></LevelOptions>
+<Optimizations>
+<Optimization>
+<Type>ServerPaging</Type></Optimization></Optimizations>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductperishableid</VarId>
+<VarName>&amp;cProductPerishableId</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductid</VarId>
+<VarName>&amp;cProductId</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductid</VarId>
+<VarName>&amp;cProductId</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductperishablebatchdate</VarId>
+<VarName>&amp;cProductPerishableBatchDate</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductperishablebatchdate</VarId>
+<VarName>&amp;cProductPerishableBatchDate</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductperishableexpirationdate</VarId>
+<VarName>&amp;cProductPerishableExpirationDate</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Cproductperishableexpirationdate</VarId>
+<VarName>&amp;cProductPerishableExpirationDate</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>Enter</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -1,0 +1,14 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsfilteredexportexcel.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsfilteredexportexcel.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\refint\alistproductsfilteredexportexcel.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\ref\alistproductsfilteredexportexcel.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsfilteredexportexcel.exe
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsfilteredexportexcel.deps.json
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsfilteredexportexcel.runtimeconfig.json
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsfilteredexportexcel\obj\Release\net6.0\alistproductsfilteredexportexcel.genruntimeconfig.cache

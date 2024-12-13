@@ -1,0 +1,10 @@
+14.0
+8
+1       SQLSMALLINT         0       2       ""   1     model_id               ""
+2       SQLINT              0       4       ""   2     trn_id                 ""
+3       SQLSMALLINT         0       2       ""   3     trn_pos                ""
+4       SQLINT              0       4       ""   4     attri_num              ""
+5       SQLSMALLINT         0       2       ""   5     key_num                ""
+6       SQLSMALLINT         0       2       ""   6     key_flag               ""
+7       SQLSMALLINT         0       2       ""   7     open_par               ""
+8       SQLSMALLINT         0       2       ""   8     close_par              ""

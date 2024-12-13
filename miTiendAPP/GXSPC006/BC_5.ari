@@ -1,0 +1,14 @@
+bc_dt_elem_i([ 0,5,0 ],'Productid',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Productname',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Productretailprice',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Productwholesaleprice',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Brandname',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Brandname',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Supplierid',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Suppliername',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Suppliername',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Sectorname',readonly,yes).
+bc_dt_elem_i([ 0,5,0 ],'Sectorname',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Productcreateddate',allownulls,no).
+bc_dt_elem_i([ 0,5,0 ],'Productmodifieddate',allownulls,no).
+ 

@@ -1,0 +1,28 @@
+<div class="dropdown">
+	<div class="dd-flex-container">
+		<div class="dd-vertical-separator" id="ddSeparator"></div>
+		<div class="dd-text-container" id="textContainer">
+			<div class="row"> <span class="dd-username">{{gxTpr_UserFullName}}{{UserFullName}}</span> </div>
+			<div class="row"> <span class="dd-companyname">{{gxTpr_UserCompany}}{{UserCompany}}</span> </div>
+		</div>
+		<div class="dd-avatar-container" id="imgContainer">
+			<img {{#UserPhoto}}src={{gxTpr_UserPhoto}}{{UserPhoto}}{{/UserPhoto}} class="dd-avatar" alt="avatar-image">
+		</div>
+	</div> 
+	<div class="dropdown-content">
+		{{#DropdownItems}}
+		<a id="{{gxTpr_id}}{{id}}" class="dd-option-container" href="#">
+			<img alt="{{gxTpr_alternativeText}}{{alternativeText}}" class="dd-option-icon" src={{gxTpr_icon}}{{icon}}>
+			<span class="dd-option">{{gxTpr_title}}{{title}}</span>
+		</a>
+		{{/DropdownItems}}
+		{{#ShowLogoutOption}}
+		<!-- default logout event -->
+		<a class="dd-option-container"  data-event="Logout" >
+			<img alt="logout_icon" class="dd-option-icon" src={{gxTpr_LogoutIcon}}{{LogoutIcon}}>
+			<span class="dd-option">Logout</span>
+		</a>
+		{{/ShowLogoutOption}}
+	</div>
+</div>
+

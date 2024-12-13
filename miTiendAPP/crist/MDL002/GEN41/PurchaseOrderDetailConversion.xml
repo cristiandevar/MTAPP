@@ -1,0 +1,199 @@
+
+<ReorgSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>PurchaseOrderDetail is new</ReorgMsg>
+<ReorgAction>!</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PurchaseOrderDetailQuantity</AttriName>
+<Description>Purchase Order Detail Quantity</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>63</AttriId>
+<AttriName>PurchaseOrderDetailCurrentPric</AttriName>
+<Description>Purchase Order Detail Current Price</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>10</Presicion>
+<Scale>2</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>64</AttriId>
+<AttriName>PurchaseOrderDetailSuggestedPr</AttriName>
+<Description>Purchase Order Detail Suggested Price</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>10</Presicion>
+<Scale>2</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IPURCHASEORDERDETAIL</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>IPURCHASEORDERDETAIL1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>CREATE TABLE [PurchaseOrderDetail] ([PurchaseOrderId] int NOT NULL , [PurchaseOrderDetailId] int NOT NULL , [PurchaseOrderDetailQuantity] smallint NOT NULL , [ProductId] int NOT NULL , [PurchaseOrderDetailCurrentPric] money NOT NULL , [PurchaseOrderDetailSuggestedPr] money NOT NULL , PRIMARY KEY([PurchaseOrderId], [PurchaseOrderDetailId])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [IPURCHASEORDERDETAIL1] ON [PurchaseOrderDetail] ([ProductId] )</Statement>
+<Statement>ALTER TABLE [PurchaseOrderDetail] ADD CONSTRAINT [IPURCHASEORDERDETAIL2] FOREIGN KEY ([PurchaseOrderId]) REFERENCES [PurchaseOrder] ([PurchaseOrderId])</Statement>
+<Statement>ALTER TABLE [PurchaseOrderDetail] ADD CONSTRAINT [IPURCHASEORDERDETAIL1] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings>
+<Warning>
+<MsgCode>rgz0009</MsgCode>
+<Message>
+<Token>AutoNumber=True ignored. Attribute </Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute>
+<Token> is not table </Token>
+<Token>PurchaseOrderDetail</Token>
+<Token>'s primary key.</Token></Message></Warning></Warnings>
+<Errors></Errors></ReorgSpec>

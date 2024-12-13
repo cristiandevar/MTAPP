@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\purchaseorder_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\purchaseorder_bc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\refint\purchaseorder_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\purchaseorder_bc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseorder_bc\obj\Release\net6.0\ref\purchaseorder_bc.dll

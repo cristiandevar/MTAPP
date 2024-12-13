@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\roleuserwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\roleuserwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\refint\roleuserwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\roleuserwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\roleuserwc\obj\Release\net6.0\ref\roleuserwc.dll

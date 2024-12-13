@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\productproductperishablewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\productproductperishablewc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\refint\productproductperishablewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\productproductperishablewc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\productproductperishablewc\obj\Release\net6.0\ref\productproductperishablewc.dll

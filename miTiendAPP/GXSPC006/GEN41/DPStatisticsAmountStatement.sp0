@@ -1,0 +1,518 @@
+spec_i([ mnproc,13,'DPStatistics Amount Statement','DPStatisticsAmountStatement',0,eng,'18_0_2-169539' ]).
+ 
+struct_i(3,1,[],[]).
+struct_i(2,1,[],[]).
+ 
+level_i(3,[ 10,[ [ 10,many ] ],[],[],[ [ [ 10 ],[ 66,79,78 ] ] ],[ [ [ 10 ],[] ] ],[ 50 ],'IPURCHASEORDER',[],[] ]).
+level_i(2,[ 6,[ [ 6,many ],[ 2000,one ] ],[],[],[ [ [ 6,2000 ],[ 38,94,40000,20 ] ] ],[ [ [ 6,2000 ],[] ] ],[ 20 ],'IINVOICE',[],[] ]).
+ 
+tw_i(3,[]).
+tw_i(2,[ [ 2000,[ [ 6,oe([ t(20,2) ]),20 ] ] ] ]).
+ 
+lwi_i(3,[ [ c([ t(79,2) ],[ 79 ]),c([ t('.NOT.',8),t('(',0),t('null(',1),t(66,2),t(')',4),t('.OR.',9),t('isnull(',1),t(66,2),t(')',4),t('.OR.',9),t(66,2),t(=,10),t('nullvalue(',1),t(66,2),t(')',4),t('.OR.',9),t('null(',1),t(66,2),t(')',4),t(')',4) ],[ 66 ]) ] ]).
+lwi_i(2,[ [ c([ t(94,2) ],[ 94 ]) ] ]).
+ 
+cond_constraint_i(3,[ [ t('year(',1),t(66,2),t(')',4),t(=,10),t('Year',23) ],[ 66 ],[ t('.NOT.',8),t('null(',1),t('Year',23),t(')',4) ],[] ]).
+cond_constraint_i(3,[ [ t('month(',1),t(66,2),t(')',4),t(=,10),t('Month',23) ],[ 66 ],[ t('.NOT.',8),t('null(',1),t('Month',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t('year(',1),t(38,2),t(')',4),t(=,10),t('Year',23) ],[ 38 ],[ t('.NOT.',8),t('null(',1),t('Year',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t('month(',1),t(38,2),t(')',4),t(=,10),t('Month',23) ],[ 38 ],[ t('.NOT.',8),t('null(',1),t('Month',23),t(')',4) ],[] ]).
+ 
+ 
+ 
+ta_i(3,[ [ [ 10,66 ],[ 10,79 ],[ 10,78 ] ] ]).
+ta_i(2,[ [ [ 6,20 ],[ 6,38 ],[ 6,94 ],[ 2000,se(40000,[ [ 2000,40000 ] ],[ t('coalesce(',1),t(40000,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
+ 
+las_i(3,[ [ 66,79,78 ] ]).
+las_i(2,[ [ 38,94,40000,20 ] ]).
+ 
+lac_i(3,[ [] ]).
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','DPStatisticsAmountStatement')).
+rule_i(0,prop('Folder',o(8,'DPs'))).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OutputCollectionName','DPStatisticsAmountStatement')).
+rule_i(0,prop('OutputCollection','0')).
+rule_i(0,prop('OutputSDT',o(26,'SDTStatisticsAccountStatement'))).
+rule_i(0,prop(idINFER_SDT,idINFER_STRUCTURE_NO)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop(idDRPV_SOAP_NAMESPACE,mtaKB)).
+rule_i(0,prop('DPRV_WSPROTOCOL','SOAP')).
+rule_i(0,prop(idISWEBSERVICE,'-1')).
+rule_i(0,prop('ObjDesc','DPStatistics Amount Statement')).
+rule_i(0,prop('ObjName','DPStatisticsAmountStatement')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Year','Month','Gxm2rootcol' ],[])).
+rule_i(0,parmio([ [ 'Year',in ],[ 'Month',in ],[ 'Gxm2rootcol',out ] ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,6,[],[ [],'IINVOICE',[] ]).
+a_i(3,2,r,2000,[],[ [ [ 6,oe([ t(20,2) ]),20 ] ],'IINVOICE',[] ]).
+a_i(4,3,t,10,[],[ [],'IPURCHASEORDER',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,20).
+v_i(t,o,2,38).
+v_i(t,o,2,94).
+v_i(r,i,3,20).
+v_i(r,o,3,40000).
+v_i(t,i,4,[]).
+v_i(t,o,4,66).
+v_i(t,o,4,79).
+v_i(t,o,4,78).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(50,[ 'PurchaseOrderId',int,6,0,'ZZZZZ9',0,'Purchase Order Id','',0 ]).
+attri_i(118,[ 'InvoicePaymentMethodId',int,6,0,'ZZZZZ9',0,'Invoice Payment Method Id','',0 ]).
+attri_i(20,[ 'InvoiceId',int,6,0,'ZZZZZ9',0,'Invoice Id','',0 ]).
+attri_i(94,[ 'InvoiceActive',boolean,4,0,'',0,'Invoice Active','',0 ]).
+attri_i(79,[ 'PurchaseOrderActive',boolean,4,0,'',0,'Purchase Order Active','',0 ]).
+attri_i(66,[ 'PurchaseOrderClosedDate',date,8,0,'99/99/99',0,'Purchase Order Closed Date','',0 ]).
+attri_i(78,[ 'PurchaseOrderTotalPaid',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Purchase Order Total Paid','',0 ]).
+attri_i(38,[ 'InvoiceCreatedDate',date,8,0,'99/99/99',0,'Invoice Created Date','',0 ]).
+attri_i(40000,[ 'GXC1',int,18,2,'',0,'',[],0 ]).
+attri_i(133,[ 'InvoicePaymentMethodDiscountIm',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Invoice Payment Method Discount Import','',0 ]).
+attri_i(132,[ 'InvoicePaymentMethodRechargeIm',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Invoice Payment Method Recharge Import','',0 ]).
+attri_i(120,[ 'InvoicePaymentMethodImport',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Invoice Payment Method Import','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',10 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',9 ]).
+attri_i('Gxm1sdtstatisticsaccountstatement',[ 'Gxm1sdtstatisticsaccountstatement',o('SDTStatisticsAccountStatement.SDTStatisticsAccountStatementItem'),0,0,'',0,'Gxm1sdtstatisticsaccountstatement','',8 ]).
+attri_i('Gxm2rootcol',[ 'Gxm2rootcol',o(objectcollection('SDTStatisticsAccountStatement.SDTStatisticsAccountStatementItem')),0,0,'',0,'Gxm2rootcol','',7 ]).
+attri_i('Month',[ 'Month',int,4,0,'ZZZ9',0,'Month','',6 ]).
+attri_i('Year',[ 'Year',int,4,0,'ZZZ9',0,'Year','',5 ]).
+ 
+table_i(21,[ 'InvoicePaymentMethod',[ 20,118,120,132,133 ],'Payment Method','InvoicePaymentMethod' ]).
+table_i(2000,[ 'Invoice',[ 40000,20 ],'Invoice','Invoice' ]).
+table_i(6,[ 'Invoice',[ 20,38,94 ],'Invoice','Invoice' ]).
+table_i(10,[ 'PurchaseOrder',[ 50,66,78,79 ],'Purchase Order','PurchaseOrder' ]).
+ 
+index_i(21,[ 'IINVOICEPAYMENTMETHOD',u,[ 20,118 ],'IInvoicePaymentMethod' ]).
+index_i(6,[ 'IINVOICE',u,[ 20 ],'IInvoice' ]).
+index_i(2000,[ 'IINVOICE',u,[ 20 ],'IInvoice' ]).
+index_i(10,[ 'IPURCHASEORDER',u,[ 50 ],'IPurchaseOrder' ]).
+ 
+lv_i(6,2000,6).
+ 
+ 
+ 
+ 
+nav_view_i(2000,[ 40000 ],[ 20 ],[ 20 ],[ [ 2000,[ [ 6,oe([ t(20,2) ]),20 ] ] ] ],[ [ [ 21,[ 'sum(',se(40000,[ [ 21,120 ],[ 21,132 ],[ 21,133 ] ],[ t('coalesce(',1),t(120,2),t(',',7),t('0',3),t(')',4),t(+,5),t('coalesce(',1),t(132,2),t(',',7),t('0',3),t(')',4),t(-,5),t('coalesce(',1),t(133,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 21,20 ] ],n,[ [ 21,many ] ],[],[],[ none ],[],[ 20 ],[] ]).
+ 
+ 
+agg_def_i(40000,[ t('0',3) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(140,[ 'PurchaseOrderDate' ]).
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 38 ],[ 94,38 ],[] ]).
+break_i(3,nvg,1,[],[ [ 78,66 ],[ 79,66 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,3).
+b_group_i(1,2,nvg,2,3,3).
+b_group_i(2,1,lit,0,4,8).
+b_group_i(1,3,lit,0,12,13).
+b_group_i(1,4,nvg,3,13,13).
+b_group_i(3,1,lit,0,14,19).
+b_group_i(1,5,lit,0,22,0).
+ 
+b_line_i(3,2,1,cmd,4,[ t('',121,3,0),t(table,3,3,41),t(6,3,3,41) ]).
+b_line_i([ 3,4 ],2,1,cmd,3,[ t('',107,3,0),t('Gxm1sdtstatisticsaccountstatement',23,3,0),t(=,10,3,0),t([ 'SDTStatisticsAccountStatement.SDTStatisticsAccountStatementItem',[ t('(',0,3,0),t(')',4,3,0) ],n ],46,3,0) ]).
+b_line_i([ 3,5 ],2,1,cmd,3,[ t('',107,3,0),t([ t('Gxm2rootcol',23,3,0),t('add(',1,3,0) ],31,3,0),t('Gxm1sdtstatisticsaccountstatement',23,3,0),t(')',4,3,0) ]).
+b_line_i(8,2,1,cmd,8,[ t('',107,8,0),t([ t('Gxm1sdtstatisticsaccountstatement',23,8,0),t('Date',3,8,0) ],29,8,0),t(=,10,8,0),t(38,2,8,0) ]).
+b_line_i(10,2,1,cmd,8,[ t('',107,10,0),t([ t('Gxm1sdtstatisticsaccountstatement',23,8,0),t('Importraised',3,8,0) ],29,8,0),t(=,10,8,0),t(40000,2,8,0) ]).
+b_line_i(11,2,1,cmd,8,[ t('',128,11,0) ]).
+b_line_i(13,3,1,cmd,14,[ t('',121,13,0),t(table,3,13,41),t(10,3,13,41) ]).
+b_line_i([ 13,5 ],3,1,cmd,13,[ t('',107,13,0),t('Gxm1sdtstatisticsaccountstatement',23,13,0),t(=,10,13,0),t([ 'SDTStatisticsAccountStatement.SDTStatisticsAccountStatementItem',[ t('(',0,13,0),t(')',4,13,0) ],n ],46,13,0) ]).
+b_line_i([ 13,6 ],3,1,cmd,13,[ t('',107,13,0),t([ t('Gxm2rootcol',23,13,0),t('add(',1,13,0) ],31,13,0),t('Gxm1sdtstatisticsaccountstatement',23,13,0),t(')',4,13,0) ]).
+b_line_i(19,3,1,cmd,19,[ t('',107,19,0),t([ t('Gxm1sdtstatisticsaccountstatement',23,19,0),t('Date',3,19,0) ],29,19,0),t(=,10,19,0),t(66,2,19,0) ]).
+b_line_i(20,3,1,cmd,19,[ t('',107,20,0),t([ t('Gxm1sdtstatisticsaccountstatement',23,19,0),t('Importpurchased',3,19,0) ],29,19,0),t(=,10,19,0),t(78,2,19,0) ]).
+b_line_i(21,3,1,cmd,19,[ t('',128,21,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+att_prop_i(6,120,'ExternalName','InvoicePaymentMethodImport',d).
+att_prop_i(6,120,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,120,'EmptyAsNull','Yes',d).
+att_prop_i(6,120,idBasedOn,94,v).
+att_prop_i(6,120,'AUTONUMBER','0',d).
+att_prop_i(6,120,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,120,'AttRegEx','',d).
+att_prop_i(6,120,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,120,'DownloadOffline','0',d).
+att_prop_i(6,120,'VarServiceExtName','',d).
+att_prop_i(6,120,'FullName','InvoicePaymentMethodImport',v).
+att_prop_i(6,132,'ExternalName','InvoicePaymentMethodRechargeImport',d).
+att_prop_i(6,132,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,132,'EmptyAsNull','Yes',d).
+att_prop_i(6,132,idBasedOn,94,v).
+att_prop_i(6,132,'AUTONUMBER','0',d).
+att_prop_i(6,132,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,132,'AttRegEx','',d).
+att_prop_i(6,132,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,132,'DownloadOffline','0',d).
+att_prop_i(6,132,'VarServiceExtName','',d).
+att_prop_i(6,132,'FullName','InvoicePaymentMethodRechargeImport',v).
+att_prop_i(6,133,'ExternalName','InvoicePaymentMethodDiscountImport',d).
+att_prop_i(6,133,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,133,'EmptyAsNull','Yes',d).
+att_prop_i(6,133,idBasedOn,94,v).
+att_prop_i(6,133,'AUTONUMBER','0',d).
+att_prop_i(6,133,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,133,'AttRegEx','',d).
+att_prop_i(6,133,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,133,'DownloadOffline','0',d).
+att_prop_i(6,133,'VarServiceExtName','',d).
+att_prop_i(6,133,'FullName','InvoicePaymentMethodDiscountImport',v).
+att_prop_i(6,38,'ExternalName','InvoiceCreatedDate',d).
+att_prop_i(6,38,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,38,'EmptyAsNull','Yes',d).
+att_prop_i(6,38,idBasedOn,'',d).
+att_prop_i(6,38,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,38,'AttRegEx','',d).
+att_prop_i(6,38,'AttValidationFailedMsg','',d).
+att_prop_i(6,38,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,38,'DownloadOffline','0',d).
+att_prop_i(6,38,'VarServiceExtName','',d).
+att_prop_i(6,38,'FullName','InvoiceCreatedDate',v).
+att_prop_i(6,78,'ExternalName','PurchaseOrderTotalPaid',d).
+att_prop_i(6,78,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,78,'EmptyAsNull','Yes',d).
+att_prop_i(6,78,idBasedOn,94,v).
+att_prop_i(6,78,'AUTONUMBER','0',d).
+att_prop_i(6,78,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,78,'AttRegEx','',d).
+att_prop_i(6,78,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,78,'DownloadOffline','0',d).
+att_prop_i(6,78,'VarServiceExtName','',d).
+att_prop_i(6,78,'FullName','PurchaseOrderTotalPaid',v).
+att_prop_i(6,66,'ExternalName','PurchaseOrderClosedDate',d).
+att_prop_i(6,66,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,66,'EmptyAsNull','Yes',d).
+att_prop_i(6,66,idBasedOn,140,v).
+att_prop_i(6,66,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,66,'AttRegEx','',d).
+att_prop_i(6,66,'AttValidationFailedMsg','',d).
+att_prop_i(6,66,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,66,'DownloadOffline','0',d).
+att_prop_i(6,66,'VarServiceExtName','',d).
+att_prop_i(6,66,'FullName','PurchaseOrderClosedDate',v).
+att_prop_i(6,79,'ExternalName','PurchaseOrderActive',d).
+att_prop_i(6,79,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,79,'EmptyAsNull','Yes',d).
+att_prop_i(6,79,'ExternalStorage','-1',d).
+att_prop_i(6,79,idBasedOn,'',d).
+att_prop_i(6,79,'ATT_INITIAL_VALUE',[ t('TRUE',40) ],v).
+att_prop_i(6,79,'AttRegEx','',d).
+att_prop_i(6,79,'AttValidationFailedMsg','',d).
+att_prop_i(6,79,'DownloadOffline','0',d).
+att_prop_i(6,79,'VarServiceExtName','',d).
+att_prop_i(6,79,'FullName','PurchaseOrderActive',v).
+att_prop_i(6,94,'ExternalName','InvoiceActive',d).
+att_prop_i(6,94,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,94,'EmptyAsNull','Yes',d).
+att_prop_i(6,94,'ExternalStorage','-1',d).
+att_prop_i(6,94,idBasedOn,'',d).
+att_prop_i(6,94,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,94,'AttRegEx','',d).
+att_prop_i(6,94,'AttValidationFailedMsg','',d).
+att_prop_i(6,94,'DownloadOffline','0',d).
+att_prop_i(6,94,'VarServiceExtName','',d).
+att_prop_i(6,94,'FullName','InvoiceActive',v).
+att_prop_i(6,20,'ExternalName','InvoiceId',d).
+att_prop_i(6,20,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,20,'EmptyAsNull','Yes',d).
+att_prop_i(6,20,idBasedOn,92,v).
+att_prop_i(6,20,'AUTONUMBER','-1',d).
+att_prop_i(6,20,'AUTONUMBER_START','1',d).
+att_prop_i(6,20,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,20,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,20,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,20,'AttRegEx','',d).
+att_prop_i(6,20,'AttValidationFailedMsg','',d).
+att_prop_i(6,20,'DownloadOffline','0',d).
+att_prop_i(6,20,'VarServiceExtName','',d).
+att_prop_i(6,20,'FullName','InvoiceId',v).
+att_prop_i(6,118,'ExternalName','InvoicePaymentMethodId',d).
+att_prop_i(6,118,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,118,'EmptyAsNull','Yes',d).
+att_prop_i(6,118,idBasedOn,92,v).
+att_prop_i(6,118,'AUTONUMBER','-1',d).
+att_prop_i(6,118,'AUTONUMBER_START','1',d).
+att_prop_i(6,118,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,118,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,118,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,118,'AttRegEx','',d).
+att_prop_i(6,118,'AttValidationFailedMsg','',d).
+att_prop_i(6,118,'DownloadOffline','0',d).
+att_prop_i(6,118,'VarServiceExtName','',d).
+att_prop_i(6,118,'FullName','InvoicePaymentMethodId',v).
+att_prop_i(6,50,'ExternalName','PurchaseOrderId',d).
+att_prop_i(6,50,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,50,'EmptyAsNull','Yes',d).
+att_prop_i(6,50,idBasedOn,92,v).
+att_prop_i(6,50,'AUTONUMBER','-1',d).
+att_prop_i(6,50,'AUTONUMBER_START','1',d).
+att_prop_i(6,50,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,50,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,50,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,50,'AttRegEx','',d).
+att_prop_i(6,50,'AttValidationFailedMsg','',d).
+att_prop_i(6,50,'DownloadOffline','0',d).
+att_prop_i(6,50,'VarServiceExtName','',d).
+att_prop_i(6,50,'FullName','PurchaseOrderId',v).
+att_prop_i(6,40000,'ExternalName','',d).
+att_prop_i(6,40000,'ExternalNamespace','',d).
+att_prop_i(6,40000,'EmptyAsNull','Yes',d).
+att_prop_i(6,40000,idBasedOn,'',d).
+att_prop_i(6,40000,'AUTONUMBER','0',d).
+att_prop_i(6,40000,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,40000,'AttRegEx','',d).
+att_prop_i(6,40000,'AttValidationFailedMsg','',d).
+att_prop_i(6,40000,'FullName','',v).
+ 
+tbl_prop_i(6,21,'AllDirSuper',[ [ 6,[ 20 ] ] ],v).
+tbl_prop_i(6,2000,'DirSubor',[ [ 21,[ 20 ] ] ],v).
+tbl_prop_i(6,6,'DirSubor',[ [ 21,[ 20 ] ] ],v).
+tbl_prop_i(6,21,'DirSuper',[ [ 6,[ 20 ] ] ],v).
+ 
+tbl_att_prop_i(6,21,20,'AllowNulls',n).
+tbl_att_prop_i(6,21,118,'AllowNulls',n).
+tbl_att_prop_i(6,6,20,'AllowNulls',n).
+tbl_att_prop_i(6,6,20,'AUTONUMBER',y).
+tbl_att_prop_i(6,6,38,'AllowNulls',n).
+tbl_att_prop_i(6,6,94,'AllowNulls',n).
+tbl_att_prop_i(6,2000,20,'AllowNulls',n).
+tbl_att_prop_i(6,2000,20,'AUTONUMBER',y).
+tbl_att_prop_i(6,10,50,'AllowNulls',n).
+tbl_att_prop_i(6,10,50,'AUTONUMBER',y).
+tbl_att_prop_i(6,10,79,'AllowNulls',n).
+ 
+ 
+ 
+ 
+a_alias_i([ 'sum(',se(40000,[ [ 21,120 ],[ 21,132 ],[ 21,133 ] ],[ t('coalesce(',1),t(120,2),t(',',7),t('0',3),t(')',4),t(+,5),t('coalesce(',1),t(132,2),t(',',7),t('0',3),t(')',4),t(-,5),t('coalesce(',1),t(133,2),t(',',7),t('0',3),t(')',4) ]) ],'GXC1').
+a_alias_i(se(40000,[ [ 2000,40000 ] ],[ t('coalesce(',1),t(40000,2),t(',',7),t('0',3),t(')',4) ]),'GXC1').
+ 
+ 
+struct_dt_i([ 26,98,0 ],name,'SDTStatisticsAccountStatement').
+struct_dt_i([ 26,98,0 ],namespace,mtaKB).
+struct_dt_i([ 26,98,0 ],'ObjName','SDTStatisticsAccountStatement').
+struct_dt_i([ 26,98,0 ],'ObjDesc','SDT Statistics Account Statement').
+struct_dt_i([ 26,98,0 ],'ExternalName','SDTStatisticsAccountStatement').
+struct_dt_i([ 26,98,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,98,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,98,0 ],collection,'True').
+struct_dt_i([ 26,98,0 ],datatype,[ 26,98,154 ]).
+struct_dt_i([ 26,98,0 ],'CollectionItemName','SDTStatisticsAccountStatementItem').
+struct_dt_i([ 26,98,0 ],'XmlName','').
+struct_dt_i([ 26,98,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,98,0 ],'XmlNamespace','').
+struct_dt_i([ 26,98,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,98,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,98,0 ],'JsonName','').
+struct_dt_i([ 26,98,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,98,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,98,154 ],name,'SDTStatisticsAccountStatementItem').
+struct_dt_i([ 26,98,154 ],namespace,'mtaKB.SDTStatisticsAccountStatement').
+struct_dt_i([ 26,98,0 ],fullname,'SDTStatisticsAccountStatement').
+struct_dt_i([ 26,98,154 ],fullname,'SDTStatisticsAccountStatement.SDTStatisticsAccountStatementItem').
+struct_dt_i([ 26,98,0 ],camelname,'Sdtstatisticsaccountstatement').
+struct_dt_i([ 26,98,154 ],camelname,'Sdtstatisticsaccountstatementitem').
+ 
+struct_dt_elem_i([ 26,98,154 ],1,name,'Date').
+struct_dt_elem_i([ 26,98,154 ],1,camelname,'Date').
+struct_dt_elem_i([ 26,98,154 ],1,length,8).
+struct_dt_elem_i([ 26,98,154 ],1,decimals,0).
+struct_dt_elem_i([ 26,98,154 ],1,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 26,98,154 ],1,pic,'99/99/99').
+struct_dt_elem_i([ 26,98,154 ],1,collection,'False').
+struct_dt_elem_i([ 26,98,154 ],1,'ExternalName','Date').
+struct_dt_elem_i([ 26,98,154 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,98,154 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,98,154 ],1,'XmlName','').
+struct_dt_elem_i([ 26,98,154 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,98,154 ],1,soaptype,'').
+struct_dt_elem_i([ 26,98,154 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,98,154 ],1,'JsonName','').
+struct_dt_elem_i([ 26,98,154 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,98,154 ],2,name,'Importraised').
+struct_dt_elem_i([ 26,98,154 ],2,camelname,'ImportRaised').
+struct_dt_elem_i([ 26,98,154 ],2,length,18).
+struct_dt_elem_i([ 26,98,154 ],2,decimals,2).
+struct_dt_elem_i([ 26,98,154 ],2,sign,0).
+struct_dt_elem_i([ 26,98,154 ],2,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,98,154 ],2,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,98,154 ],2,collection,'False').
+struct_dt_elem_i([ 26,98,154 ],2,'ExternalName','ImportRaised').
+struct_dt_elem_i([ 26,98,154 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,98,154 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,98,154 ],2,'XmlName','').
+struct_dt_elem_i([ 26,98,154 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,98,154 ],2,soaptype,'').
+struct_dt_elem_i([ 26,98,154 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,98,154 ],2,'JsonName','').
+struct_dt_elem_i([ 26,98,154 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,98,154 ],3,name,'Importpurchased').
+struct_dt_elem_i([ 26,98,154 ],3,camelname,'ImportPurchased').
+struct_dt_elem_i([ 26,98,154 ],3,length,18).
+struct_dt_elem_i([ 26,98,154 ],3,decimals,2).
+struct_dt_elem_i([ 26,98,154 ],3,sign,1).
+struct_dt_elem_i([ 26,98,154 ],3,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,98,154 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,98,154 ],3,collection,'False').
+struct_dt_elem_i([ 26,98,154 ],3,'ExternalName','ImportPurchased').
+struct_dt_elem_i([ 26,98,154 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,98,154 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,98,154 ],3,'XmlName','').
+struct_dt_elem_i([ 26,98,154 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,98,154 ],3,soaptype,'').
+struct_dt_elem_i([ 26,98,154 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,98,154 ],3,'JsonName','').
+struct_dt_elem_i([ 26,98,154 ],3,'JsonInclude',idJsonEmpty).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT','INTERNAL','').
+ 
+ 
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

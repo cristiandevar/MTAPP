@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwpaymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwpaymentmethod.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\refint\wwpaymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\wwpaymentmethod.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpaymentmethod\obj\Release\net6.0\ref\wwpaymentmethod.dll

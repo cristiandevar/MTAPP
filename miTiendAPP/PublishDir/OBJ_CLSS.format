@@ -1,0 +1,6 @@
+14.0
+4
+1       SQLSMALLINT         0       2       ""   1     model_id                   ""
+2       SQLSMALLINT         0       2       ""   2     obj_class                  ""
+3       SQLINT              0       4       ""   3     obj_last_id                ""
+4       SQLSMALLINT         0       2       ""   4     obj_len                    ""

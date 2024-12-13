@@ -1,0 +1,310 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>65</ObjId>
+<ObjName>WPRegisterSale</ObjName>
+<ObjDesc>WPRegister Sale</ObjDesc>
+<ObjPgmName>WPRegisterSale</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0047</MsgCode>
+<Message>
+<Token>Variable </Token>
+<Token>Count</Token>
+<Token> not defined; </Token>
+<Token>N(1.0)</Token>
+<Token> assumed.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0038</MsgCode>
+<Message>
+<Token>There is no index for order </Token>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Token>; poor performance may be noticed</Token>
+<Token> in grid '</Token>
+<Token>Grid1</Token>
+<Token>'</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Variable>
+<VarId>Brand</VarId>
+<VarName>&amp;Brand</VarName></Variable></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Variable>
+<VarId>Supplier</VarId>
+<VarName>&amp;Supplier</VarName></Variable></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action></StandAloneRules>
+<Event>
+<EventName>'RegisterSale'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>23</ObjId>
+<ObjName>RegisterSaleProductSelected</ObjName>
+<ObjPgmName>RegisterSaleProductSelected</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Jsonproductselectedid</VarId>
+<VarName>&amp;JSONProductSelectedId</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Jsonquantityproduct</VarId>
+<VarName>&amp;JSONQuantityProduct</VarName></Variable></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'AddCar'</EventName>
+<Command>
+<Expression>
+<Variable>
+<VarId>Product</VarId>
+<VarName>&amp;Product</VarName></Variable>
+<Token>.</Token>
+<Token>load(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Token>)</Token></Expression></Command>
+<Command>
+<Expression>
+<Variable>
+<VarId>Product</VarId>
+<VarName>&amp;Product</VarName></Variable>
+<Token>.</Token>
+<Token>update(</Token>
+<Token>)</Token></Expression></Command></Event>
+<Event>
+<EventName>ProductName.Click</EventName></Event>
+<Event>
+<EventName>Grid2.Load</EventName></Event>
+<Event>
+<EventName>Grid1.Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Code</VarId>
+<VarName>&amp;Code</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Code</VarId>
+<VarName>&amp;Code</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Name</VarId>
+<VarName>&amp;Name</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Name</VarId>
+<VarName>&amp;Name</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Supplier</VarId>
+<VarName>&amp;Supplier</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Supplier</VarId>
+<VarName>&amp;Supplier</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Brand</VarId>
+<VarName>&amp;Brand</VarName></Variable></Constraint>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Brand</VarId>
+<VarName>&amp;Brand</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

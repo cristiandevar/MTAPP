@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpconfirm.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\refint\wpconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\wpconfirm.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpconfirm\obj\Release\net6.0\ref\wpconfirm.dll

@@ -1,0 +1,438 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Product</ObjName>
+<ObjDesc>Product</ObjDesc>
+<ObjPgmName>Product</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0158</MsgCode>
+<Message>
+<Token>Rule '</Token>
+<Token>Error( 'Product Code alredy exist' ) IF &amp;Productexist ; </Token>
+<Token>' not included.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>2</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>CheckAuthentication</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Productid</VarId>
+<VarName>&amp;ProductId</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>5</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table>
+<Table>
+<TableId>3</TableId>
+<TableName>Sector</TableName>
+<Description>Sector</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>USUPPLIER</IndexName></NavigationOrder></Navigation></DynamicLoad></Action>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>3</TableId>
+<TableName>Sector</TableName>
+<Description>Sector</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>110</AttriId>
+<AttriName>ProductActive</AttriName>
+<Description>Product Active</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>ProductCostPrice</AttriName>
+<Description>Product Cost Price</Description></Attribute>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>ProductRetailProfit</AttriName>
+<Description>Product Retail Profit</Description></Attribute>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>ProductWholesaleProfit</AttriName>
+<Description>Product Wholesale Profit</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>ProductMiniumStock</AttriName>
+<Description>Product Minium Stock</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>ProductDescription</AttriName>
+<Description>Product Description</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>ProductCreatedDate</AttriName>
+<Description>Product Created Date</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>ProductModifiedDate</AttriName>
+<Description>Product Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>93</AttriId>
+<AttriName>ProductMiniumQuantityWholesale</AttriName>
+<Description>Product Minium Quantity Wholesale</Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>110</AttriId>
+<AttriName>ProductActive</AttriName>
+<Description>Product Active</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>ProductCostPrice</AttriName>
+<Description>Product Cost Price</Description></Attribute>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>ProductRetailProfit</AttriName>
+<Description>Product Retail Profit</Description></Attribute>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>ProductWholesaleProfit</AttriName>
+<Description>Product Wholesale Profit</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>ProductMiniumStock</AttriName>
+<Description>Product Minium Stock</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>ProductDescription</AttriName>
+<Description>Product Description</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>ProductCreatedDate</AttriName>
+<Description>Product Created Date</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>ProductModifiedDate</AttriName>
+<Description>Product Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>93</AttriId>
+<AttriName>ProductMiniumQuantityWholesale</AttriName>
+<Description>Product Minium Quantity Wholesale</Description></Attribute>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

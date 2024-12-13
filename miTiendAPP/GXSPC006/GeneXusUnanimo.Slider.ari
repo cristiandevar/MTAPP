@@ -1,0 +1,34 @@
+usercontrol_directory_i('genexusunanimo.slider', ['UserControls']).
+usercontrol_i('genexusunanimo.slider', ['GeneXusUnanimo.Slider','Genexusunanimo.slider']).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'id', 'Id', 'Id', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'MinValue', 'Minvalue', 'Minvalue', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'MaxValue', 'Maxvalue', 'Maxvalue', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Step', 'Step', 'Step', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Attribute', 'Attribute', 'Attid', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'SetAttribute', 'Setattribute', 'Setattid', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'GetAttribute', 'Getattribute', 'Getattid', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'SdtItemObject', 'Sdtitemobject', 'Prop_sdt_item_object', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Dimensions', 'Dimensions', 'Attnumdim', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'BaseAttType', 'Baseatttype', 'Baseatttype', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'PROP_EXT_BASE_ATT_COLLECTION', 'Prop_ext_base_att_collection', 'Prop_ext_base_att_collection', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'FieldSpecifier', 'Fieldspecifier', 'Fieldspecifier', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CaptionValue', 'Captionvalue', 'Captionvalue', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CaptionClass', 'Captionclass', 'Captionclass', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CaptionStyle', 'Captionstyle', 'Captionstyle', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CaptionPosition', 'Captionposition', 'Captionposition', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'IsAbstractLayoutControl', 'Isabstractlayoutcontrol', 'Isabstractlayoutcontrol', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'InternalTitle', 'Internaltitle', 'Coltitle', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'TitleFont', 'Titlefont', 'Coltitlefont', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'TitleForeColor', 'Titleforecolor', 'Coltitlecolor', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'UserControlIsColumn', 'Usercontroliscolumn', 'Usercontroliscolumn', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.slider', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).

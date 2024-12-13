@@ -1,0 +1,328 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>PurchaseOrder_BC</ObjName>
+<ObjDesc>Purchase Order</ObjDesc>
+<ObjPgmName>PurchaseOrder_BC</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>3</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>CheckAuthentication</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>10</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrderDetailsQuantity, PurchaseOrderLastDetailId navigation</TableName>
+<Description>Purchase Order</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>PurchaseOrderTotalPaid</AttriName>
+<Description>Purchase Order Total Paid</Description></Attribute>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Attribute>
+<AttriId>53</AttriId>
+<AttriName>PurchaseOrderModifiedDate</AttriName>
+<Description>Purchase Order Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>135</AttriId>
+<AttriName>PurchaseOrderConfirmatedDate</AttriName>
+<Description>Purchase Order Confirmated Date</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>PurchaseOrderActive</AttriName>
+<Description>Purchase Order Active</Description></Attribute>
+<Attribute>
+<AttriId>136</AttriId>
+<AttriName>PurchaseOrderCanceledDescripti</AttriName>
+<Description>Purchase Order Canceled Description</Description></Attribute>
+<Attribute>
+<AttriId>138</AttriId>
+<AttriName>PurchaseOrderWasPaid</AttriName>
+<Description>Purchase Order Was Paid</Description></Attribute>
+<Attribute>
+<AttriId>139</AttriId>
+<AttriName>PurchaseOrderPaidDate</AttriName>
+<Description>Purchase Order Paid Date</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>PurchaseOrderTotalPaid</AttriName>
+<Description>Purchase Order Total Paid</Description></Attribute>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Attribute>
+<AttriId>53</AttriId>
+<AttriName>PurchaseOrderModifiedDate</AttriName>
+<Description>Purchase Order Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>135</AttriId>
+<AttriName>PurchaseOrderConfirmatedDate</AttriName>
+<Description>Purchase Order Confirmated Date</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>PurchaseOrderActive</AttriName>
+<Description>Purchase Order Active</Description></Attribute>
+<Attribute>
+<AttriId>136</AttriId>
+<AttriName>PurchaseOrderCanceledDescripti</AttriName>
+<Description>Purchase Order Canceled Description</Description></Attribute>
+<Attribute>
+<AttriId>138</AttriId>
+<AttriName>PurchaseOrderWasPaid</AttriName>
+<Description>Purchase Order Was Paid</Description></Attribute>
+<Attribute>
+<AttriId>139</AttriId>
+<AttriName>PurchaseOrderPaidDate</AttriName>
+<Description>Purchase Order Paid Date</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>12</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrderDetailsQuantity, PurchaseOrderLastDetailId navigation</TableName>
+<Description>Purchase Order</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>PurchaseOrderDetailQuantityOrd</AttriName>
+<Description>Purchase Order Detail Quantity Ordered</Description></Attribute>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>PurchaseOrderDetailQuantityRec</AttriName>
+<Description>Purchase Order Detail Quantity Received</Description></Attribute>
+<Attribute>
+<AttriId>134</AttriId>
+<AttriName>PurchaseOrderDetailSuggestedPr</AttriName>
+<Description>Purchase Order Detail Suggested Price</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>PurchaseOrderDetailQuantityOrd</AttriName>
+<Description>Purchase Order Detail Quantity Ordered</Description></Attribute>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>PurchaseOrderDetailQuantityRec</AttriName>
+<Description>Purchase Order Detail Quantity Received</Description></Attribute>
+<Attribute>
+<AttriId>134</AttriId>
+<AttriName>PurchaseOrderDetailSuggestedPr</AttriName>
+<Description>Purchase Order Detail Suggested Price</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

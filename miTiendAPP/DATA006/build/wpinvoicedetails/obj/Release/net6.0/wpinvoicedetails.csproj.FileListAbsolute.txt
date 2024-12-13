@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpinvoicedetails.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpinvoicedetails.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\refint\wpinvoicedetails.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\wpinvoicedetails.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpinvoicedetails\obj\Release\net6.0\ref\wpinvoicedetails.dll

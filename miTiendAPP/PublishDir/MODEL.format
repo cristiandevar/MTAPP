@@ -1,0 +1,10 @@
+14.0
+8
+1       SQLSMALLINT         0       2       ""   1     model_id                         ""
+2       SQLNCHAR            2       256     ""   2     model_name                       Latin1_General_100_CI_AS_SC_UTF8
+3       SQLSMALLINT         1       2       ""   3     kbase_version                    ""
+4       SQLSMALLINT         0       2       ""   4     last_attri_num                   ""
+5       SQLSMALLINT         1       2       ""   5     DOSFlag                          ""
+6       SQLSMALLINT         0       2       ""   6     att_len                          ""
+7       SQLSMALLINT         1       2       ""   7     BaseModel                        ""
+8       SQLNCHAR            2       512     ""   8     model_path                       Latin1_General_100_CI_AS_SC_UTF8

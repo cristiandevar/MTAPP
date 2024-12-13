@@ -1,0 +1,731 @@
+spec_i([ proc,63,'Export Supplier Product','ExportSupplierProductWC',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 5,[ [ 5,many ],[ 1,one ],[ 3,one ] ],[],[],[ [ [ 5,1,3 ],[ 4,55,16,17,69,93,2,10,110,28,29,19,87,88,85,89,90,1,9 ] ] ],[ [ [ 5,1,3 ],[] ] ],[ 4 ],'IPRODUCT1',[ 5,[ [ [],'Supplierid',4 ] ] ],[] ]).
+ 
+tw_i(2,[ [ 1,[ [ 5,1,1 ] ] ],[ 3,[ [ 5,9,9 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 5,1 ],[ 5,9 ],[ 5,4 ],[ 5,55 ],[ 5,16 ],[ 5,17 ],[ 5,69 ],[ 5,93 ],[ 1,2 ],[ 3,10 ],[ 5,110 ],[ 5,28 ],[ 5,29 ],[ 5,19 ],[ 5,87 ],[ 5,85 ],[ 5,89 ] ] ]).
+ 
+las_i(2,[ [ 4,55,16,17,69,93,2,10,110,28,29,19,87,88,85,89,90,1,9 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ExportSupplierProductWC')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('ObjDesc','Export Supplier Product')).
+rule_i(0,prop('ObjName','ExportSupplierProductWC')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Supplierid','Filename','Errormessage' ],[])).
+rule_i(0,parmio([ [ 'Supplierid',in ],[ 'Filename',out ],[ 'Errormessage',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,2,f,88,[],[ [],[ t('iif(',1),t(87,2),t(<>,10),t('0',3),t(',',7),t('udp(',1),t(88,3),t(0,3),t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(87,2),t(/,6),t('100',3),t(')',4),t(')',4),t(',',7),t('udp(',1),t(88,3),t(1,3),t(85,2),t(')',4),t(')',4),t(';',18) ] ]).
+a_i(2,2,f,90,[],[ [],[ t('iif(',1),t(89,2),t(<>,10),t('0',3),t(',',7),t('udp(',1),t(90,3),t(0,3),t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(89,2),t(/,6),t('100',3),t(')',4),t(')',4),t(',',7),t('udp(',1),t(90,3),t(1,3),t(85,2),t(')',4),t(')',4),t(';',18) ] ]).
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(4,2,t,5,[],[ [ [ [],'Supplierid',4 ] ],'IPRODUCT1',[] ]).
+a_i(5,2,r,1,[],[ [ [ 5,1,1 ] ],'IBRAND',[] ]).
+a_i(6,2,r,3,[],[ [ [ 5,9,9 ] ],'ISECTOR',[] ]).
+ 
+v_i(f,i,1,87).
+v_i(f,i,1,85).
+v_i(f,o,1,88).
+v_i(f,i,2,89).
+v_i(f,i,2,85).
+v_i(f,o,2,90).
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+v_i(t,i,4,'Supplierid').
+v_i(t,o,4,1).
+v_i(t,o,4,9).
+v_i(t,o,4,4).
+v_i(t,o,4,55).
+v_i(t,o,4,16).
+v_i(t,o,4,17).
+v_i(t,o,4,69).
+v_i(t,o,4,93).
+v_i(t,o,4,110).
+v_i(t,o,4,28).
+v_i(t,o,4,29).
+v_i(t,o,4,19).
+v_i(t,o,4,87).
+v_i(t,o,4,85).
+v_i(t,o,4,89).
+v_i(r,i,5,1).
+v_i(r,o,5,2).
+v_i(r,i,6,9).
+v_i(r,o,6,10).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',22 ]).
+attri_i(15,[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',0 ]).
+attri_i(9,[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',0 ]).
+attri_i(1,[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',0 ]).
+attri_i(4,[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',0 ]).
+attri_i(55,[ 'ProductCode',svchar,100,0,'',0,'Product Code','',0 ]).
+attri_i(16,[ 'ProductName',svchar,60,0,'',0,'Product Name','',0 ]).
+attri_i(17,[ 'ProductStock',int,6,0,'ZZZZZ9',0,'Product Stock','',0 ]).
+attri_i(69,[ 'ProductMiniumStock',int,6,0,'ZZZZZ9',0,'Product Minium Stock','',0 ]).
+attri_i(85,[ 'ProductCostPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Cost Price','',0 ]).
+attri_i(89,[ 'ProductRetailProfit',int,8,2,'ZZZZ9.99',1,'Product Retail Profit','',0 ]).
+attri_i(90,[ 'ProductRetailPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Retail Price','',0 ]).
+attri_i(87,[ 'ProductWholesaleProfit',int,8,2,'ZZZZ9.99',1,'Product Wholesale Profit','',0 ]).
+attri_i(88,[ 'ProductWholesalePrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Wholesale Price','',0 ]).
+attri_i(93,[ 'ProductMiniumQuantityWholesale',int,4,0,'ZZZ9',0,'Product Minium Quantity Wholesale','',0 ]).
+attri_i(2,[ 'BrandName',svchar,60,0,'',0,'Brand Name','',0 ]).
+attri_i(10,[ 'SectorName',svchar,60,0,'',0,'Sector Name','',0 ]).
+attri_i(110,[ 'ProductActive',boolean,4,0,'',0,'Product Active','',0 ]).
+attri_i(28,[ 'ProductCreatedDate',date,8,0,'99/99/9999',0,'Product Created Date','',0 ]).
+attri_i(29,[ 'ProductModifiedDate',date,8,0,'99/99/9999',0,'Product Modified Date','',0 ]).
+attri_i(19,[ 'ProductDescription',svchar,200,0,'',0,'Product Description','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',20 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',19 ]).
+attri_i('Supplierid',[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',18 ]).
+attri_i('Messages',[ 'Messages',o(objectcollection('GeneXus\Common\Messages.Message')),0,0,'',0,'Messages','',17 ]).
+attri_i('Storageprovider',[ 'StorageProvider',o(storageprovider),4,0,'',0,'Storage Provider','',16 ]).
+attri_i('File',[ 'File',o(file),4,0,'',0,'File','',15 ]).
+attri_i('Random',[ 'Random',int,8,0,'ZZZZZZZ9',0,'Random','',14 ]).
+attri_i('Firstcolumn',[ 'FirstColumn',int,8,0,'ZZZZZZZ9',0,'First Column','',13 ]).
+attri_i('Cellrow',[ 'CellRow',int,8,0,'ZZZZZZZ9',0,'Cell Row','',12 ]).
+attri_i('Errormessage',[ 'ErrorMessage',svchar,512,0,'',0,'Error Message','',11 ]).
+attri_i('Filename',[ 'Filename',svchar,1000,0,'',0,'Filename','',10 ]).
+attri_i('Exceldocument',[ 'ExcelDocument',o(exceldoc),4,0,'',0,'Excel Document','',9 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
+ 
+table_i(3,[ 'Sector',[ 9,10 ],'Sector','Sector' ]).
+table_i(1,[ 'Brand',[ 1,2 ],'Brand','Brand' ]).
+table_i(5,[ 'Product',[ 15,16,17,19,1,9,4,28,29,55,69,85,87,89,93,110 ],'Product','Product' ]).
+ 
+index_i(5,[ 'IPRODUCT',u,[ 15 ],'IProduct' ]).
+index_i(5,[ 'IPRODUCT1',d,[ 4 ],'IProduct1' ]).
+index_i(1,[ 'IBRAND',u,[ 1 ],'IBrand' ]).
+index_i(3,[ 'ISECTOR',u,[ 9 ],'ISector' ]).
+ 
+ 
+ 
+function_i(2,90,yes,udp,o(1,'RoundValue'),[ 85 ],1,90,[ [ t(85,2) ] ]).
+function_i(2,90,yes,udp,o(1,'RoundValue'),[ 85,89 ],0,90,[ [ t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(89,2),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(2,88,yes,udp,o(1,'RoundValue'),[ 85 ],1,88,[ [ t(85,2) ] ]).
+function_i(2,88,yes,udp,o(1,'RoundValue'),[ 85,87 ],0,88,[ [ t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(87,2),t(/,6),t('100',3),t(')',4) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sql_no_eval_hor_i(2,90).
+sql_no_eval_hor_i(2,88).
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 4,23,'Supplierid',= ] ],many ]).
+ 
+end_i(2,0,0,[ [ [ t(4,2),t(=,10),t('Supplierid',23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(129,[ 'MyDate' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(127,[ 'Percentage' ]).
+dom_info_i(97,[ 'Stock' ]).
+dom_info_i(89,[ 'GeneXusUnanimo\Code' ]).
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(33,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 19,29,28,110,10,2,93,88,87,90,89,85,69,17,16,55 ],[ 4 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,47,47).
+b_group_i(2,1,lit,0,48,48).
+b_group_i(1,3,lit,0,70,79).
+b_group_i(1,4,lit,0,80,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,1,1,cmd,0,[]).
+b_line_i(3,1,1,cmd,0,[ t('',107,3,0),t('Random',23,0,0),t(=,10,0,0),t('random(',1,0,0),t(')',4,0,0),t(*,6,0,0),t('10000',3,0,0) ]).
+b_line_i(4,1,1,cmd,0,[ t('',107,4,0),t('Filename',23,0,0),t(=,10,0,0),t('"ExportSupplierProductWC-"',3,0,0),t(+,5,0,0),t('trim(',1,0,0),t('str(',1,0,0),t('Random',23,0,0),t(',',7,0,0),t(8,3,0,0),t(',',7,0,0),t(0,3,0,0),t(')',4,0,0),t(')',4,0,0),t(+,5,0,0),t('".xlsx"',3,0,0) ]).
+b_line_i(5,1,1,cmd,0,[]).
+b_line_i(6,1,1,cmd,0,[ t('',107,6,0),t([ t('Exceldocument',23,6,1),t('open(',1,6,16) ],31,6,16),t('Filename',23,0,22),t(')',4,0,31) ]).
+b_line_i(7,1,1,cmd,0,[ t('',145,7,0),t('''CHECKSTATUS''',3,7,4) ]).
+b_line_i(8,1,1,cmd,0,[ t('',107,8,0),t([ t('Exceldocument',23,8,1),t('clear(',1,8,16) ],31,8,16),t(')',4,0,23) ]).
+b_line_i(9,1,1,cmd,0,[]).
+b_line_i(10,1,1,cmd,0,[ t('',107,10,0),t('Cellrow',23,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(11,1,1,cmd,0,[ t('',107,11,0),t('Firstcolumn',23,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(12,1,1,cmd,0,[]).
+b_line_i(13,1,1,cmd,0,[]).
+b_line_i(14,1,1,cmd,0,[ t('',107,14,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('0',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(15,1,1,cmd,0,[ t('',107,15,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('0',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Code''',3,0,0) ]).
+b_line_i(16,1,1,cmd,0,[ t('',107,16,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('1',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(17,1,1,cmd,0,[ t('',107,17,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('1',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Name''',3,0,0) ]).
+b_line_i(18,1,1,cmd,0,[ t('',107,18,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('2',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(19,1,1,cmd,0,[ t('',107,19,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('2',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Stock''',3,0,0) ]).
+b_line_i(20,1,1,cmd,0,[ t('',107,20,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('3',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(21,1,1,cmd,0,[ t('',107,21,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('3',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Minium Stock''',3,0,0) ]).
+b_line_i(22,1,1,cmd,0,[ t('',107,22,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('4',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(23,1,1,cmd,0,[ t('',107,23,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('4',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Cost Price''',3,0,0) ]).
+b_line_i(24,1,1,cmd,0,[ t('',107,24,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('5',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(25,1,1,cmd,0,[ t('',107,25,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('5',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Retail Profit''',3,0,0) ]).
+b_line_i(26,1,1,cmd,0,[ t('',107,26,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('6',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(27,1,1,cmd,0,[ t('',107,27,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('6',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Retail Price''',3,0,0) ]).
+b_line_i(28,1,1,cmd,0,[ t('',107,28,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('7',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(29,1,1,cmd,0,[ t('',107,29,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('7',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Wholesale Profit''',3,0,0) ]).
+b_line_i(30,1,1,cmd,0,[ t('',107,30,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('8',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(31,1,1,cmd,0,[ t('',107,31,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('8',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Wholesale Price''',3,0,0) ]).
+b_line_i(32,1,1,cmd,0,[ t('',107,32,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('9',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(33,1,1,cmd,0,[ t('',107,33,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('9',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Quantity Wholesale''',3,0,0) ]).
+b_line_i(34,1,1,cmd,0,[ t('',107,34,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('10',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(35,1,1,cmd,0,[ t('',107,35,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('10',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Brand''',3,0,0) ]).
+b_line_i(36,1,1,cmd,0,[ t('',107,36,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('11',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(37,1,1,cmd,0,[ t('',107,37,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('11',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Sector''',3,0,0) ]).
+b_line_i(38,1,1,cmd,0,[ t('',107,38,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('12',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(39,1,1,cmd,0,[ t('',107,39,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('12',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''State''',3,0,0) ]).
+b_line_i(40,1,1,cmd,0,[ t('',107,40,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('13',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(41,1,1,cmd,0,[ t('',107,41,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('13',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Created''',3,0,0) ]).
+b_line_i(42,1,1,cmd,0,[ t('',107,42,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('14',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(43,1,1,cmd,0,[ t('',107,43,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('14',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Modified''',3,0,0) ]).
+b_line_i(44,1,1,cmd,0,[ t('',107,44,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('15',3,0,0),t(')',4,0,0) ],t('Bold',3,0,0) ],29,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(45,1,1,cmd,0,[ t('',107,45,0),t([ t('Exceldocument',23,0,0),[ t('cells(',1,0,0),t('Cellrow',23,0,0),t(',',7,0,0),t('Firstcolumn',23,0,0),t(+,5,0,0),t('15',3,0,0),t(')',4,0,0) ],t('Text',3,0,0) ],29,0,0),t(=,10,0,0),t('''Description''',3,0,0) ]).
+b_line_i(46,1,1,cmd,0,[]).
+b_line_i(47,2,1,cmd,48,[ t('',121,47,0) ]).
+b_line_i(49,2,1,cmd,48,[]).
+b_line_i(50,2,1,cmd,48,[]).
+b_line_i(51,2,1,cmd,48,[ t('',107,51,0),t('Cellrow',23,48,0),t(=,10,48,0),t('Cellrow',23,48,0),t(+,5,48,0),t('1',3,48,0) ]).
+b_line_i(52,2,1,cmd,48,[ t('',107,52,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('0',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t(55,2,48,0) ]).
+b_line_i(53,2,1,cmd,48,[ t('',107,53,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('1',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t(16,2,48,0) ]).
+b_line_i(54,2,1,cmd,48,[ t('',107,54,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('2',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(17,2,48,0) ]).
+b_line_i(55,2,1,cmd,48,[ t('',107,55,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('3',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(69,2,48,0) ]).
+b_line_i(56,2,1,cmd,48,[ t('',107,56,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('4',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(85,2,48,0) ]).
+b_line_i(57,2,1,cmd,48,[ t('',107,57,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('5',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(89,2,48,0) ]).
+b_line_i(58,2,1,cmd,48,[ t('',107,58,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('6',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(90,2,48,0) ]).
+b_line_i(59,2,1,cmd,48,[ t('',107,59,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('7',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(87,2,48,0) ]).
+b_line_i(60,2,1,cmd,48,[ t('',107,60,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('8',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(88,2,48,0) ]).
+b_line_i(61,2,1,cmd,48,[ t('',107,61,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('9',3,48,0),t(')',4,48,0) ],t('Number',3,48,0) ],29,48,0),t(=,10,48,0),t(93,2,48,0) ]).
+b_line_i(62,2,1,cmd,48,[ t('',107,62,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('10',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t(2,2,48,0) ]).
+b_line_i(63,2,1,cmd,48,[ t('',107,63,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('11',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t(10,2,48,0) ]).
+b_line_i(64,2,1,cmd,48,[ t('',107,64,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('12',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t('iif(',1,48,0),t(110,2,48,0),t(',',7,48,0),t('''Enable''',3,48,0),t(',',7,48,0),t('''Disable''',3,48,0),t(')',4,48,0) ]).
+b_line_i(65,2,1,cmd,48,[ t('',107,65,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('13',3,48,0),t(')',4,48,0) ],t('Date',3,48,0) ],29,48,0),t(=,10,48,0),t(28,2,48,0) ]).
+b_line_i(66,2,1,cmd,48,[ t('',107,66,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('14',3,48,0),t(')',4,48,0) ],t('Date',3,48,0) ],29,48,0),t(=,10,48,0),t(29,2,48,0) ]).
+b_line_i(67,2,1,cmd,48,[ t('',107,67,0),t([ t('Exceldocument',23,48,0),[ t('cells(',1,48,0),t('Cellrow',23,48,0),t(',',7,48,0),t('Firstcolumn',23,48,0),t(+,5,48,0),t('15',3,48,0),t(')',4,48,0) ],t('Text',3,48,0) ],29,48,0),t(=,10,48,0),t(19,2,48,0) ]).
+b_line_i(68,2,1,cmd,48,[]).
+b_line_i(69,2,1,cmd,48,[ t('',128,69,0) ]).
+b_line_i(70,1,3,cmd,23,[]).
+b_line_i(71,1,3,cmd,23,[ t('',107,71,0),t([ t('Exceldocument',23,71,1),t('save(',1,71,16) ],31,71,16),t(')',4,23,22) ]).
+b_line_i(72,1,3,cmd,23,[ t('',145,72,0),t('''CHECKSTATUS''',3,72,4) ]).
+b_line_i(73,1,3,cmd,23,[ t('',107,73,0),t([ t('Exceldocument',23,73,1),t('close(',1,73,16) ],31,73,16),t(')',4,23,23) ]).
+b_line_i(74,1,3,cmd,23,[]).
+b_line_i(75,1,3,cmd,23,[ t('',109,75,0),t([ t('Storageprovider',23,23,4),t('getprivate(',1,23,21) ],31,75,21),t('Filename',23,23,33),t(',',7,23,42),t('File',23,23,44),t(',',7,23,49),t('1',3,23,51),t(',',7,23,52),t('Messages',23,23,54),t(')',4,23,63) ]).
+b_line_i(76,1,3,cmd,23,[ t('',107,76,0),t('Filename',23,23,0),t(=,10,23,0),t([ t('File',23,23,0),t('geturi(',1,23,0) ],31,23,0),t(')',4,23,0) ]).
+b_line_i(77,1,3,cmd,23,[ t('',111,77,0) ]).
+b_line_i(78,1,3,cmd,23,[]).
+b_line_i(79,1,3,cmd,23,[ t('',143,79,0),t('''CHECKSTATUS''',3,79,5) ]).
+b_line_i(80,1,4,cmd,23,[ t('',109,80,0),t('(',0,23,5),t([ t('Exceldocument',23,80,6),t('Errcode',3,80,21) ],29,80,21),t(<>,10,23,29),t('0',3,23,32),t(')',4,23,33) ]).
+b_line_i(81,1,4,cmd,23,[ t('',107,81,0),t('Filename',23,23,0),t(=,10,23,0),t('""',3,23,0) ]).
+b_line_i(82,1,4,cmd,23,[ t('',107,82,0),t('Errormessage',23,23,0),t(=,10,23,0),t([ t('Exceldocument',23,23,0),t('Errdescription',3,23,0) ],29,23,0) ]).
+b_line_i(83,1,4,cmd,23,[ t('',107,83,0),t([ t('Exceldocument',23,83,3),t('close(',1,83,18) ],31,83,18),t(')',4,23,25) ]).
+b_line_i(84,1,4,cmd,23,[ t('',118,84,0) ]).
+b_line_i(85,1,4,cmd,23,[ t('',111,85,0) ]).
+b_line_i(86,1,4,cmd,23,[ t('',144,86,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+ 
+att_prop_i(6,19,'ExternalName','ProductDescription',d).
+att_prop_i(6,19,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,19,'EmptyAsNull','Yes',d).
+att_prop_i(6,19,idBasedOn,88,v).
+att_prop_i(6,19,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,19,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,19,'AttRegEx','',d).
+att_prop_i(6,19,'AttValidationFailedMsg','',d).
+att_prop_i(6,19,'DownloadOffline','0',d).
+att_prop_i(6,19,'VarServiceExtName','',d).
+att_prop_i(6,19,'FullName','ProductDescription',v).
+att_prop_i(6,29,'ExternalName','ProductModifiedDate',d).
+att_prop_i(6,29,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,29,'EmptyAsNull','Yes',d).
+att_prop_i(6,29,idBasedOn,129,v).
+att_prop_i(6,29,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,29,'AttRegEx','',d).
+att_prop_i(6,29,'AttValidationFailedMsg','',d).
+att_prop_i(6,29,idDATEFORMAT,idDATEFORMAT_LONG,d).
+att_prop_i(6,29,'DownloadOffline','0',d).
+att_prop_i(6,29,'VarServiceExtName','',d).
+att_prop_i(6,29,'FullName','ProductModifiedDate',v).
+att_prop_i(6,28,'ExternalName','ProductCreatedDate',d).
+att_prop_i(6,28,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,28,'EmptyAsNull','Yes',d).
+att_prop_i(6,28,idBasedOn,129,v).
+att_prop_i(6,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,28,'AttRegEx','',d).
+att_prop_i(6,28,'AttValidationFailedMsg','',d).
+att_prop_i(6,28,idDATEFORMAT,idDATEFORMAT_LONG,d).
+att_prop_i(6,28,'DownloadOffline','0',d).
+att_prop_i(6,28,'VarServiceExtName','',d).
+att_prop_i(6,28,'FullName','ProductCreatedDate',v).
+att_prop_i(6,110,'ExternalName','ProductActive',d).
+att_prop_i(6,110,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,110,'EmptyAsNull','Yes',d).
+att_prop_i(6,110,'ExternalStorage','-1',d).
+att_prop_i(6,110,idBasedOn,'',d).
+att_prop_i(6,110,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,110,'AttRegEx','',d).
+att_prop_i(6,110,'AttValidationFailedMsg','',d).
+att_prop_i(6,110,'DownloadOffline','0',d).
+att_prop_i(6,110,'VarServiceExtName','',d).
+att_prop_i(6,110,'FullName','ProductActive',v).
+att_prop_i(6,10,'ExternalName','SectorName',d).
+att_prop_i(6,10,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,10,'EmptyAsNull','Yes',d).
+att_prop_i(6,10,idBasedOn,93,v).
+att_prop_i(6,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,10,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,10,'AttRegEx','',d).
+att_prop_i(6,10,'AttValidationFailedMsg','',d).
+att_prop_i(6,10,'DownloadOffline','0',d).
+att_prop_i(6,10,'VarServiceExtName','',d).
+att_prop_i(6,10,'FullName','SectorName',v).
+att_prop_i(6,2,'ExternalName','BrandName',d).
+att_prop_i(6,2,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,2,'EmptyAsNull','Yes',d).
+att_prop_i(6,2,idBasedOn,93,v).
+att_prop_i(6,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,2,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,2,'AttRegEx','',d).
+att_prop_i(6,2,'AttValidationFailedMsg','',d).
+att_prop_i(6,2,'DownloadOffline','0',d).
+att_prop_i(6,2,'VarServiceExtName','',d).
+att_prop_i(6,2,'FullName','BrandName',v).
+att_prop_i(6,93,'ExternalName','ProductMiniumQuantityWholesale',d).
+att_prop_i(6,93,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,93,'EmptyAsNull','Yes',d).
+att_prop_i(6,93,idBasedOn,'',d).
+att_prop_i(6,93,'AUTONUMBER','0',d).
+att_prop_i(6,93,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,93,'AttRegEx','',d).
+att_prop_i(6,93,'AttValidationFailedMsg','',d).
+att_prop_i(6,93,'DownloadOffline','0',d).
+att_prop_i(6,93,'VarServiceExtName','',d).
+att_prop_i(6,93,'FullName','ProductMiniumQuantityWholesale',v).
+att_prop_i(6,88,'ExternalName','ProductWholesalePrice',d).
+att_prop_i(6,88,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,88,idBasedOn,94,v).
+att_prop_i(6,88,'DownloadOffline','0',d).
+att_prop_i(6,88,'VarServiceExtName','',d).
+att_prop_i(6,88,'FullName','ProductWholesalePrice',v).
+att_prop_i(6,87,'ExternalName','ProductWholesaleProfit',d).
+att_prop_i(6,87,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,87,'EmptyAsNull','Yes',d).
+att_prop_i(6,87,idBasedOn,127,v).
+att_prop_i(6,87,'AUTONUMBER','0',d).
+att_prop_i(6,87,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,87,'AttRegEx','',d).
+att_prop_i(6,87,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,87,'DownloadOffline','0',d).
+att_prop_i(6,87,'VarServiceExtName','',d).
+att_prop_i(6,87,'FullName','ProductWholesaleProfit',v).
+att_prop_i(6,90,'ExternalName','ProductRetailPrice',d).
+att_prop_i(6,90,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,90,idBasedOn,94,v).
+att_prop_i(6,90,'DownloadOffline','0',d).
+att_prop_i(6,90,'VarServiceExtName','',d).
+att_prop_i(6,90,'FullName','ProductRetailPrice',v).
+att_prop_i(6,89,'ExternalName','ProductRetailProfit',d).
+att_prop_i(6,89,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,89,'EmptyAsNull','Yes',d).
+att_prop_i(6,89,idBasedOn,127,v).
+att_prop_i(6,89,'AUTONUMBER','0',d).
+att_prop_i(6,89,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,89,'AttRegEx','',d).
+att_prop_i(6,89,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,89,'DownloadOffline','0',d).
+att_prop_i(6,89,'VarServiceExtName','',d).
+att_prop_i(6,89,'FullName','ProductRetailProfit',v).
+att_prop_i(6,85,'ExternalName','ProductCostPrice',d).
+att_prop_i(6,85,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,85,'EmptyAsNull','Yes',d).
+att_prop_i(6,85,idBasedOn,94,v).
+att_prop_i(6,85,'AUTONUMBER','0',d).
+att_prop_i(6,85,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,85,'AttRegEx','',d).
+att_prop_i(6,85,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,85,'DownloadOffline','0',d).
+att_prop_i(6,85,'VarServiceExtName','',d).
+att_prop_i(6,85,'FullName','ProductCostPrice',v).
+att_prop_i(6,69,'ExternalName','ProductMiniumStock',d).
+att_prop_i(6,69,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,69,'EmptyAsNull','Yes',d).
+att_prop_i(6,69,idBasedOn,97,v).
+att_prop_i(6,69,'AUTONUMBER','0',d).
+att_prop_i(6,69,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,69,'AttRegEx','',d).
+att_prop_i(6,69,'AttValidationFailedMsg','',d).
+att_prop_i(6,69,'DownloadOffline','0',d).
+att_prop_i(6,69,'VarServiceExtName','',d).
+att_prop_i(6,69,'FullName','ProductMiniumStock',v).
+att_prop_i(6,17,'ExternalName','ProductStock',d).
+att_prop_i(6,17,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,17,'EmptyAsNull','Yes',d).
+att_prop_i(6,17,idBasedOn,97,v).
+att_prop_i(6,17,'AUTONUMBER','0',d).
+att_prop_i(6,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,17,'AttRegEx','',d).
+att_prop_i(6,17,'AttValidationFailedMsg','',d).
+att_prop_i(6,17,'DownloadOffline','0',d).
+att_prop_i(6,17,'VarServiceExtName','',d).
+att_prop_i(6,17,'FullName','ProductStock',v).
+att_prop_i(6,16,'ExternalName','ProductName',d).
+att_prop_i(6,16,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,16,'EmptyAsNull','Yes',d).
+att_prop_i(6,16,idBasedOn,93,v).
+att_prop_i(6,16,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,16,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,16,'AttRegEx','',d).
+att_prop_i(6,16,'AttValidationFailedMsg','',d).
+att_prop_i(6,16,'DownloadOffline','0',d).
+att_prop_i(6,16,'VarServiceExtName','',d).
+att_prop_i(6,16,'FullName','ProductName',v).
+att_prop_i(6,55,'ExternalName','ProductCode',d).
+att_prop_i(6,55,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,55,'EmptyAsNull','Yes',d).
+att_prop_i(6,55,idBasedOn,89,v).
+att_prop_i(6,55,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,55,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,55,'AttRegEx','',d).
+att_prop_i(6,55,'AttValidationFailedMsg','',d).
+att_prop_i(6,55,'DownloadOffline','0',d).
+att_prop_i(6,55,'VarServiceExtName','',d).
+att_prop_i(6,55,'FullName','ProductCode',v).
+att_prop_i(6,4,'ExternalName','SupplierId',d).
+att_prop_i(6,4,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,4,'EmptyAsNull','Yes',d).
+att_prop_i(6,4,idBasedOn,92,v).
+att_prop_i(6,4,'AUTONUMBER','-1',d).
+att_prop_i(6,4,'AUTONUMBER_START','1',d).
+att_prop_i(6,4,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,4,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,4,'AttRegEx','',d).
+att_prop_i(6,4,'AttValidationFailedMsg','',d).
+att_prop_i(6,4,'DownloadOffline','0',d).
+att_prop_i(6,4,'VarServiceExtName','',d).
+att_prop_i(6,4,'FullName','SupplierId',v).
+att_prop_i(6,1,'ExternalName','BrandId',d).
+att_prop_i(6,1,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,1,'EmptyAsNull','Yes',d).
+att_prop_i(6,1,idBasedOn,92,v).
+att_prop_i(6,1,'AUTONUMBER','-1',d).
+att_prop_i(6,1,'AUTONUMBER_START','1',d).
+att_prop_i(6,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,1,'AttRegEx','',d).
+att_prop_i(6,1,'AttValidationFailedMsg','',d).
+att_prop_i(6,1,'DownloadOffline','0',d).
+att_prop_i(6,1,'VarServiceExtName','',d).
+att_prop_i(6,1,'FullName','BrandId',v).
+att_prop_i(6,9,'ExternalName','SectorId',d).
+att_prop_i(6,9,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,9,'EmptyAsNull','Yes',d).
+att_prop_i(6,9,idBasedOn,92,v).
+att_prop_i(6,9,'AUTONUMBER','-1',d).
+att_prop_i(6,9,'AUTONUMBER_START','1',d).
+att_prop_i(6,9,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,9,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,9,'AttRegEx','',d).
+att_prop_i(6,9,'AttValidationFailedMsg','',d).
+att_prop_i(6,9,'DownloadOffline','0',d).
+att_prop_i(6,9,'VarServiceExtName','',d).
+att_prop_i(6,9,'FullName','SectorId',v).
+att_prop_i(6,15,'ExternalName','ProductId',d).
+att_prop_i(6,15,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,15,'EmptyAsNull','Yes',d).
+att_prop_i(6,15,idBasedOn,92,v).
+att_prop_i(6,15,'AUTONUMBER','-1',d).
+att_prop_i(6,15,'AUTONUMBER_START','1',d).
+att_prop_i(6,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,15,'AttRegEx','',d).
+att_prop_i(6,15,'AttValidationFailedMsg','',d).
+att_prop_i(6,15,'DownloadOffline','0',d).
+att_prop_i(6,15,'VarServiceExtName','',d).
+att_prop_i(6,15,'FullName','ProductId',v).
+ 
+tbl_prop_i(6,5,'AllDirSuper',[ [ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(6,5,'DirSuperNull',[ [ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(6,3,'DirSubor',[ [ 5,[ 9 ] ] ],v).
+tbl_prop_i(6,1,'DirSubor',[ [ 5,[ 1 ] ] ],v).
+tbl_prop_i(6,5,'DirSuper',[ [ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+ 
+tbl_att_prop_i(6,5,15,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AUTONUMBER',y).
+tbl_att_prop_i(6,5,16,'AllowNulls',n).
+tbl_att_prop_i(6,5,4,'AllowNulls',n).
+tbl_att_prop_i(6,5,28,'AllowNulls',n).
+tbl_att_prop_i(6,5,29,'AllowNulls',n).
+tbl_att_prop_i(6,1,1,'AllowNulls',n).
+tbl_att_prop_i(6,1,1,'AUTONUMBER',y).
+tbl_att_prop_i(6,1,2,'AllowNulls',n).
+tbl_att_prop_i(6,3,9,'AllowNulls',n).
+tbl_att_prop_i(6,3,9,'AUTONUMBER',y).
+tbl_att_prop_i(6,3,10,'AllowNulls',n).
+ 
+var_prop_i(6,'Filename',idBasedOn,33,v).
+var_prop_i(6,'Filename','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(6,'Filename','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Supplierid',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,13,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,13,0 ],'ObjName','Messages').
+struct_dt_i([ 26,13,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,13,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,13,0 ],collection,'True').
+struct_dt_i([ 26,13,0 ],datatype,[ 26,13,30 ]).
+struct_dt_i([ 26,13,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,13,0 ],'XmlName','').
+struct_dt_i([ 26,13,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,13,0 ],'XmlNamespace','').
+struct_dt_i([ 26,13,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,13,0 ],'JsonName','').
+struct_dt_i([ 26,13,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,13,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],isexternal,'True').
+struct_dt_i([ 26,13,30 ],name,'Message').
+struct_dt_i([ 26,13,30 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 26,13,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,30 ],fullname,'GeneXus\Common\Messages.Message').
+ 
+struct_dt_elem_i([ 26,13,30 ],1,name,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,length,128).
+struct_dt_elem_i([ 26,13,30 ],1,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,13,30 ],1,pic,'').
+struct_dt_elem_i([ 26,13,30 ],1,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],1,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],1,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],2,name,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,basedon,51).
+struct_dt_elem_i([ 26,13,30 ],2,length,2).
+struct_dt_elem_i([ 26,13,30 ],2,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],2,sign,0).
+struct_dt_elem_i([ 26,13,30 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,13,30 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,13,30 ],2,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],2,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],2,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],3,name,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,length,256).
+struct_dt_elem_i([ 26,13,30 ],3,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,13,30 ],3,pic,'').
+struct_dt_elem_i([ 26,13,30 ],3,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],3,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],3,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],3,'JsonInclude',idJsonEmpty).
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,42,'ROUNDVALUE',[ [ int,18,2,0 ],[ int,18,2,0 ] ],[ [ 'Value',in,[] ],[ 'ValueRounded',out,[] ] ]).
+ 
+pgm_callprotocol_i(proc,63,'EXPORTSUPPLIERPRODUCTWC','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,42,'ROUNDVALUE','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

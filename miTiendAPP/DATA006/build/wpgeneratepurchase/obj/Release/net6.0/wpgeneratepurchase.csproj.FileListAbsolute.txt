@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpgeneratepurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpgeneratepurchase.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\refint\wpgeneratepurchase.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\wpgeneratepurchase.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpgeneratepurchase\obj\Release\net6.0\ref\wpgeneratepurchase.dll

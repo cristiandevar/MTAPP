@@ -1,0 +1,73 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>138</ObjId>
+<ObjName>WPRegisterSaleNew</ObjName>
+<ObjDesc>WPRegister Sale New</ObjDesc>
+<ObjPgmName>WPRegisterSaleNew</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>src0306</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>76</Line></Location>
+<Message>
+<Token>Subroutine ''CalculateSubtotalToCharge'' is defined but never used.</Token></Message></Warning>
+<Warning>
+<MsgCode>src0306</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>88</Line></Location>
+<Message>
+<Token>Subroutine ''CalculateTotal'' is defined but never used.</Token></Message></Warning>
+<Warning>
+<MsgCode>src0306</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>95</Line></Location>
+<Message>
+<Token>Subroutine ''RestartProductToCharge'' is defined but never used.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0156</MsgCode>
+<Message>
+<Token>Event </Token>
+<Token>'Confirm'</Token>
+<Token> for control '</Token>
+<Token>Confirm</Token>
+<Token>' is not defined.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>'CALCULATESUBTOTALTOCHARGE'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'CALCULATETOTAL'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'RESTARTPRODUCTTOCHARGE'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Grid1.Load</EventName>
+<Binding>
+<Variable>
+<VarId>Sdtcarproducts</VarId>
+<VarName>&amp;SDTCarProducts</VarName></Variable></Binding></Event>
+<Event>
+<EventName>Grid2.Load</EventName>
+<Binding>
+<Variable>
+<VarId>Sdtcarproductstocharge</VarId>
+<VarName>&amp;SDTCarProductsToCharge</VarName></Variable></Binding></Event>
+<Suggests></Suggests></ObjectSpec>

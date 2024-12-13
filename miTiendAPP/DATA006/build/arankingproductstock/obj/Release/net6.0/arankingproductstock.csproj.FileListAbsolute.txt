@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\arankingproductstock.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\arankingproductstock.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\refint\arankingproductstock.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\arankingproductstock.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingproductstock\obj\Release\net6.0\ref\arankingproductstock.dll

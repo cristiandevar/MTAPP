@@ -1,0 +1,165 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+	
+	
+	<PropertyGroup>
+		<AssemblyName>developermenu</AssemblyName>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<PostgresqlSupport>false</PostgresqlSupport>
+		<OfficeSupport>false</OfficeSupport>
+		<MailSupport>false</MailSupport>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include=".\..\movement\movement.csproj" />
+		<ProjectReference Include=".\..\paymentmethod\paymentmethod.csproj" />
+		<ProjectReference Include=".\..\permission\permission.csproj" />
+		<ProjectReference Include=".\..\role\role.csproj" />
+		<ProjectReference Include=".\..\purchaseorder\purchaseorder.csproj" />
+		<ProjectReference Include=".\..\invoice\invoice.csproj" />
+		<ProjectReference Include=".\..\product\product.csproj" />
+		<ProjectReference Include=".\..\user\user.csproj" />
+		<ProjectReference Include=".\..\sector\sector.csproj" />
+		<ProjectReference Include=".\..\supplier\supplier.csproj" />
+		<ProjectReference Include=".\..\brand\brand.csproj" />
+		<ProjectReference Include=".\..\wpstatisticsgraphs\wpstatisticsgraphs.csproj" />
+		<ProjectReference Include=".\..\wppurchaseordergenerated\wppurchaseordergenerated.csproj" />
+		<ProjectReference Include=".\..\wppaymentmethodinvoicestatistics\wppaymentmethodinvoicestatistics.csproj" />
+		<ProjectReference Include=".\..\viewmovement\viewmovement.csproj" />
+		<ProjectReference Include=".\..\movementgeneral\movementgeneral.csproj" />
+		<ProjectReference Include=".\..\wwmovement\wwmovement.csproj" />
+		<ProjectReference Include=".\..\paymentmethodpaymentmethodwc\paymentmethodpaymentmethodwc.csproj" />
+		<ProjectReference Include=".\..\paymentmethodgeneral\paymentmethodgeneral.csproj" />
+		<ProjectReference Include=".\..\wwpaymentmethod\wwpaymentmethod.csproj" />
+		<ProjectReference Include=".\..\viewpaymentmethod\viewpaymentmethod.csproj" />
+		<ProjectReference Include=".\..\gx00l1\gx00l1.csproj" />
+		<ProjectReference Include=".\..\gx00m0\gx00m0.csproj" />
+		<ProjectReference Include=".\..\gx00k0\gx00k0.csproj" />
+		<ProjectReference Include=".\..\invoicepaymentmethodwc\invoicepaymentmethodwc.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductsretailwholesale\wcstatisticsproductsretailwholesale.csproj" />
+		<ProjectReference Include=".\..\wcstatisticssuppliertopsold\wcstatisticssuppliertopsold.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductsoutofstock\wcstatisticsproductsoutofstock.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsamountstatement\wcstatisticsamountstatement.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductsleastpurchased\wcstatisticsproductsleastpurchased.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductsleastsold\wcstatisticsproductsleastsold.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductstoppurchased\wcstatisticsproductstoppurchased.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductstopsold\wcstatisticsproductstopsold.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductsleast\wcstatisticsproductsleast.csproj" />
+		<ProjectReference Include=".\..\wcstatisticsproductstop\wcstatisticsproductstop.csproj" />
+		<ProjectReference Include=".\..\wpregistersalenew\wpregistersalenew.csproj" />
+		<ProjectReference Include=".\..\wpproductinsertduplicate\wpproductinsertduplicate.csproj" />
+		<ProjectReference Include=".\..\wpsupplierpurchaseorderstatistics\wpsupplierpurchaseorderstatistics.csproj" />
+		<ProjectReference Include=".\..\wprolepromptassignuser\wprolepromptassignuser.csproj" />
+		<ProjectReference Include=".\..\wpinvoicedetails\wpinvoicedetails.csproj" />
+		<ProjectReference Include=".\..\wpcontactus\wpcontactus.csproj" />
+		<ProjectReference Include=".\..\general.ui.masterguest\general.ui.masterguest.csproj" />
+		<ProjectReference Include=".\..\purchaseordersupplierview\purchaseordersupplierview.csproj" />
+		<ProjectReference Include=".\..\wprolepromptassignpermission\wprolepromptassignpermission.csproj" />
+		<ProjectReference Include=".\..\wproleassignpermission\wproleassignpermission.csproj" />
+		<ProjectReference Include=".\..\wpperfilchangepassword\wpperfilchangepassword.csproj" />
+		<ProjectReference Include=".\..\permissionrolewc\permissionrolewc.csproj" />
+		<ProjectReference Include=".\..\permissiongeneral\permissiongeneral.csproj" />
+		<ProjectReference Include=".\..\wwpermission\wwpermission.csproj" />
+		<ProjectReference Include=".\..\viewpermission\viewpermission.csproj" />
+		<ProjectReference Include=".\..\roleuserwc\roleuserwc.csproj" />
+		<ProjectReference Include=".\..\rolepermissionwc\rolepermissionwc.csproj" />
+		<ProjectReference Include=".\..\rolegeneral\rolegeneral.csproj" />
+		<ProjectReference Include=".\..\wwrole\wwrole.csproj" />
+		<ProjectReference Include=".\..\viewrole\viewrole.csproj" />
+		<ProjectReference Include=".\..\wphome\wphome.csproj" />
+		<ProjectReference Include=".\..\wplogin\wplogin.csproj" />
+		<ProjectReference Include=".\..\gx00j1\gx00j1.csproj" />
+		<ProjectReference Include=".\..\gx00h0\gx00h0.csproj" />
+		<ProjectReference Include=".\..\gx00i0\gx00i0.csproj" />
+		<ProjectReference Include=".\..\userinvoicewc\userinvoicewc.csproj" />
+		<ProjectReference Include=".\..\usergeneral\usergeneral.csproj" />
+		<ProjectReference Include=".\..\wwuser\wwuser.csproj" />
+		<ProjectReference Include=".\..\viewuser\viewuser.csproj" />
+		<ProjectReference Include=".\..\viewproduct\viewproduct.csproj" />
+		<ProjectReference Include=".\..\productdetail1wc\productdetail1wc.csproj" />
+		<ProjectReference Include=".\..\productdetailwc\productdetailwc.csproj" />
+		<ProjectReference Include=".\..\productgeneral\productgeneral.csproj" />
+		<ProjectReference Include=".\..\gx00g0\gx00g0.csproj" />
+		<ProjectReference Include=".\..\gx0050\gx0050.csproj" />
+		<ProjectReference Include=".\..\wppurchaseorderdetails\wppurchaseorderdetails.csproj" />
+		<ProjectReference Include=".\..\wpupdatewholesaleprofit\wpupdatewholesaleprofit.csproj" />
+		<ProjectReference Include=".\..\wpupdateretailprofit\wpupdateretailprofit.csproj" />
+		<ProjectReference Include=".\..\wpupdatecostprice\wpupdatecostprice.csproj" />
+		<ProjectReference Include=".\..\gx00a0\gx00a0.csproj" />
+		<ProjectReference Include=".\..\wpstatistics\wpstatistics.csproj" />
+		<ProjectReference Include=".\..\invoicedetailwc\invoicedetailwc.csproj" />
+		<ProjectReference Include=".\..\invoicegeneral\invoicegeneral.csproj" />
+		<ProjectReference Include=".\..\wwinvoice\wwinvoice.csproj" />
+		<ProjectReference Include=".\..\viewinvoice\viewinvoice.csproj" />
+		<ProjectReference Include=".\..\wpsearchproducts\wpsearchproducts.csproj" />
+		<ProjectReference Include=".\..\wpmanagepurchase\wpmanagepurchase.csproj" />
+		<ProjectReference Include=".\..\wpgeneratepurchase\wpgeneratepurchase.csproj" />
+		<ProjectReference Include=".\..\wprankings\wprankings.csproj" />
+		<ProjectReference Include=".\..\wpregistersale\wpregistersale.csproj" />
+		<ProjectReference Include=".\..\gx00d1\gx00d1.csproj" />
+		<ProjectReference Include=".\..\gx00c1\gx00c1.csproj" />
+		<ProjectReference Include=".\..\purchaseorderdetailwc\purchaseorderdetailwc.csproj" />
+		<ProjectReference Include=".\..\supplierpurchaseorderwc\supplierpurchaseorderwc.csproj" />
+		<ProjectReference Include=".\..\supplierproductwc\supplierproductwc.csproj" />
+		<ProjectReference Include=".\..\suppliergeneral\suppliergeneral.csproj" />
+		<ProjectReference Include=".\..\wwsupplier\wwsupplier.csproj" />
+		<ProjectReference Include=".\..\viewsupplier\viewsupplier.csproj" />
+		<ProjectReference Include=".\..\sectorproductwc\sectorproductwc.csproj" />
+		<ProjectReference Include=".\..\sectorgeneral\sectorgeneral.csproj" />
+		<ProjectReference Include=".\..\wwsector\wwsector.csproj" />
+		<ProjectReference Include=".\..\viewsector\viewsector.csproj" />
+		<ProjectReference Include=".\..\purchaseordergeneral\purchaseordergeneral.csproj" />
+		<ProjectReference Include=".\..\wwpurchaseorder\wwpurchaseorder.csproj" />
+		<ProjectReference Include=".\..\viewpurchaseorder\viewpurchaseorder.csproj" />
+		<ProjectReference Include=".\..\wwproduct\wwproduct.csproj" />
+		<ProjectReference Include=".\..\brandproductwc\brandproductwc.csproj" />
+		<ProjectReference Include=".\..\brandgeneral\brandgeneral.csproj" />
+		<ProjectReference Include=".\..\wwbrand\wwbrand.csproj" />
+		<ProjectReference Include=".\..\viewbrand\viewbrand.csproj" />
+		<ProjectReference Include=".\..\general.security.notauthorized\general.security.notauthorized.csproj" />
+		<ProjectReference Include=".\..\gx0030\gx0030.csproj" />
+		<ProjectReference Include=".\..\gx0020\gx0020.csproj" />
+		<ProjectReference Include=".\..\gx0010\gx0010.csproj" />
+		<ProjectReference Include=".\..\general.ui.masterprompt\general.ui.masterprompt.csproj" />
+		<ProjectReference Include=".\..\general.ui.masterunanimosidebar\general.ui.masterunanimosidebar.csproj" />
+		<ProjectReference Include=".\..\apurchaseordervoucher\apurchaseordervoucher.csproj" />
+		<ProjectReference Include=".\..\apurchaseordervoucher\apurchaseordervoucher.csproj" />
+		<ProjectReference Include=".\..\apurchaseordergenerateattach\apurchaseordergenerateattach.csproj" />
+		<ProjectReference Include=".\..\apurchaseordergenerateattach\apurchaseordergenerateattach.csproj" />
+		<ProjectReference Include=".\..\ainvoiceregisterattach\ainvoiceregisterattach.csproj" />
+		<ProjectReference Include=".\..\ainvoiceregisterattach\ainvoiceregisterattach.csproj" />
+		<ProjectReference Include=".\..\apurchaseordergenerate\apurchaseordergenerate.csproj" />
+		<ProjectReference Include=".\..\apurchaseordergenerate\apurchaseordergenerate.csproj" />
+		<ProjectReference Include=".\..\ainvoiceregister\ainvoiceregister.csproj" />
+		<ProjectReference Include=".\..\ainvoiceregister\ainvoiceregister.csproj" />
+		<ProjectReference Include=".\..\alistproductsfiltered\alistproductsfiltered.csproj" />
+		<ProjectReference Include=".\..\alistproductsfiltered\alistproductsfiltered.csproj" />
+		<ProjectReference Include=".\..\aproductsrankingpurchase\aproductsrankingpurchase.csproj" />
+		<ProjectReference Include=".\..\aproductsrankingpurchase\aproductsrankingpurchase.csproj" />
+		<ProjectReference Include=".\..\aproductsrankingsale\aproductsrankingsale.csproj" />
+		<ProjectReference Include=".\..\aproductsrankingsale\aproductsrankingsale.csproj" />
+		<ProjectReference Include=".\..\dpstatisticsamountstatement\dpstatisticsamountstatement.csproj" />
+		<ProjectReference Include=".\..\dpstatisticstopproductsold\dpstatisticstopproductsold.csproj" />
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
+
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">
+		<PackageReference Include="Npgsql" Version="3.2.7" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<Import Project="..\DotNetCoreBaseProject.targets"/>	
+</Project>

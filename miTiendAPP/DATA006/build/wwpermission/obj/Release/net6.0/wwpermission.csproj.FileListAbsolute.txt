@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwpermission.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\refint\wwpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\wwpermission.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwpermission\obj\Release\net6.0\ref\wwpermission.dll

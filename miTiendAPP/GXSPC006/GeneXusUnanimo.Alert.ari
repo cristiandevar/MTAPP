@@ -1,0 +1,21 @@
+usercontrol_directory_i('genexusunanimo.alert', ['UserControls']).
+usercontrol_i('genexusunanimo.alert', ['GeneXusUnanimo.Alert','Genexusunanimo.alert']).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'id', 'Id', 'Id', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Type', 'Type', 'Type', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Title', 'Title', 'Title', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Message', 'Message', 'Message', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Position', 'Position', 'Position', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'ShowMultiple', 'Showmultiple', 'Showmultiple', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Count', 'Count', 'Count', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.alert', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.alert', 'Close', 'Close').

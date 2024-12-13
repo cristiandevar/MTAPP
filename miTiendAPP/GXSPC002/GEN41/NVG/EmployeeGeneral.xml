@@ -1,0 +1,148 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>20</ObjId>
+<ObjName>EmployeeGeneral</ObjName>
+<ObjDesc>Employee General</ObjDesc>
+<ObjPgmName>EmployeeGeneral</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>13</ObjId>
+<ObjName>General.Security.NotAuthorized</ObjName>
+<ObjPgmName>General.Security.NotAuthorized</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For First</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Employee</TableName>
+<Description>Employee</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IEMPLOYEE</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Employee</TableName>
+<Description>Employee</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'DoUpdate'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>Employee</ObjName>
+<ObjPgmName>Employee</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Expression>
+<Token>TrnMode</Token>
+<Token>.Update</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'DoDelete'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>Employee</ObjName>
+<ObjPgmName>Employee</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Expression>
+<Token>TrnMode</Token>
+<Token>.Delete</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'PREPARETRANSACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsprice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\alistproductsprice.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\refint\alistproductsprice.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\alistproductsprice.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\alistproductsprice\obj\Release\net6.0\ref\alistproductsprice.dll

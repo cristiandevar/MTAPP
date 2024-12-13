@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="GeneXusUnanimo.Icon">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>source</Id>
+					<Name>source</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>size</Id>
+					<Name>size</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>color</Id>
+					<Name>color</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>autoColor</Id>
+					<Name>autoColor</Name>
+					<Type>Boolean</Type>
+					<Default>false</Default>
+					<Values></Values>
+				</Prop>
+			</Children>
+		</Group>
+	</Object>
+</Content>

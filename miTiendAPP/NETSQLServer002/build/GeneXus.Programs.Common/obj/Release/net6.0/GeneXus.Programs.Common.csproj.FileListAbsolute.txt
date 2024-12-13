@@ -1,0 +1,9 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\GeneXus.Programs.Common.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\GeneXus.Programs.Common.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\refint\GeneXus.Programs.Common.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\GeneXus.Programs.Common\obj\Release\net6.0\ref\GeneXus.Programs.Common.dll

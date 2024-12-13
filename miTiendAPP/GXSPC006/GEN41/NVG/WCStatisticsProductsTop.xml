@@ -1,0 +1,42 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>139</ObjId>
+<ObjName>WCStatisticsProductsTop</ObjName>
+<ObjDesc>WCStatistics Products Top</ObjDesc>
+<ObjPgmName>WCStatisticsProductsTop</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>nogenreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>&amp;Year.Controlvaluechanged</EventName></Event>
+<Event>
+<EventName>&amp;Month.Controlvaluechanged</EventName></Event>
+<Event>
+<EventName>&amp;Option.Controlvaluechanged</EventName></Event>
+<Event>
+<EventName>Refresh</EventName></Event>
+<Event>
+<EventName>'CHARGEYEARS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'CHARGEMONTHS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'CHARGEPARAMETERS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

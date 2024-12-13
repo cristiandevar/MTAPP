@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\invoicepaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\invoicepaymentmethodwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\refint\invoicepaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\invoicepaymentmethodwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoicepaymentmethodwc\obj\Release\net6.0\ref\invoicepaymentmethodwc.dll

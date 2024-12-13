@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+	
+	
+	<PropertyGroup>
+		<AssemblyName>developermenu</AssemblyName>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<PostgresqlSupport>false</PostgresqlSupport>
+		<OfficeSupport>false</OfficeSupport>
+		<MailSupport>false</MailSupport>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include=".\..\purchaseorder\purchaseorder.csproj" />
+		<ProjectReference Include=".\..\invoice\invoice.csproj" />
+		<ProjectReference Include=".\..\product\product.csproj" />
+		<ProjectReference Include=".\..\employee\employee.csproj" />
+		<ProjectReference Include=".\..\sector\sector.csproj" />
+		<ProjectReference Include=".\..\supplier\supplier.csproj" />
+		<ProjectReference Include=".\..\brand\brand.csproj" />
+		<ProjectReference Include=".\..\gx00d1\gx00d1.csproj" />
+		<ProjectReference Include=".\..\gx00c1\gx00c1.csproj" />
+		<ProjectReference Include=".\..\productdetail1wc\productdetail1wc.csproj" />
+		<ProjectReference Include=".\..\purchaseorderdetailwc\purchaseorderdetailwc.csproj" />
+		<ProjectReference Include=".\..\productdetailwc\productdetailwc.csproj" />
+		<ProjectReference Include=".\..\invoicedetailwc\invoicedetailwc.csproj" />
+		<ProjectReference Include=".\..\supplierpurchaseorderwc\supplierpurchaseorderwc.csproj" />
+		<ProjectReference Include=".\..\supplierproductwc\supplierproductwc.csproj" />
+		<ProjectReference Include=".\..\suppliergeneral\suppliergeneral.csproj" />
+		<ProjectReference Include=".\..\wwsupplier\wwsupplier.csproj" />
+		<ProjectReference Include=".\..\viewsupplier\viewsupplier.csproj" />
+		<ProjectReference Include=".\..\sectorproductwc\sectorproductwc.csproj" />
+		<ProjectReference Include=".\..\sectorgeneral\sectorgeneral.csproj" />
+		<ProjectReference Include=".\..\wwsector\wwsector.csproj" />
+		<ProjectReference Include=".\..\viewsector\viewsector.csproj" />
+		<ProjectReference Include=".\..\purchaseordergeneral\purchaseordergeneral.csproj" />
+		<ProjectReference Include=".\..\wwpurchaseorder\wwpurchaseorder.csproj" />
+		<ProjectReference Include=".\..\viewpurchaseorder\viewpurchaseorder.csproj" />
+		<ProjectReference Include=".\..\productgeneral\productgeneral.csproj" />
+		<ProjectReference Include=".\..\wwproduct\wwproduct.csproj" />
+		<ProjectReference Include=".\..\viewproduct\viewproduct.csproj" />
+		<ProjectReference Include=".\..\invoicegeneral\invoicegeneral.csproj" />
+		<ProjectReference Include=".\..\wwinvoice\wwinvoice.csproj" />
+		<ProjectReference Include=".\..\viewinvoice\viewinvoice.csproj" />
+		<ProjectReference Include=".\..\employeeinvoicewc\employeeinvoicewc.csproj" />
+		<ProjectReference Include=".\..\employeegeneral\employeegeneral.csproj" />
+		<ProjectReference Include=".\..\wwemployee\wwemployee.csproj" />
+		<ProjectReference Include=".\..\viewemployee\viewemployee.csproj" />
+		<ProjectReference Include=".\..\brandproductwc\brandproductwc.csproj" />
+		<ProjectReference Include=".\..\brandgeneral\brandgeneral.csproj" />
+		<ProjectReference Include=".\..\wwbrand\wwbrand.csproj" />
+		<ProjectReference Include=".\..\viewbrand\viewbrand.csproj" />
+		<ProjectReference Include=".\..\general.security.notauthorized\general.security.notauthorized.csproj" />
+		<ProjectReference Include=".\..\gx0060\gx0060.csproj" />
+		<ProjectReference Include=".\..\gx0050\gx0050.csproj" />
+		<ProjectReference Include=".\..\gx0040\gx0040.csproj" />
+		<ProjectReference Include=".\..\gx0030\gx0030.csproj" />
+		<ProjectReference Include=".\..\gx0020\gx0020.csproj" />
+		<ProjectReference Include=".\..\gx0010\gx0010.csproj" />
+		<ProjectReference Include=".\..\general.ui.masterprompt\general.ui.masterprompt.csproj" />
+		<ProjectReference Include=".\..\general.ui.masterunanimosidebar\general.ui.masterunanimosidebar.csproj" />
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">
+		<PackageReference Include="Npgsql" Version="3.2.7" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<Import Project="..\DotNetCoreBaseProject.targets"/>	
+</Project>

@@ -1,0 +1,334 @@
+ 
+spec_i([ sdt,[ 0,6,0 ],'Invoice','Invoice',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,6,0 ],name,'Invoice').
+struct_dt_i([ 0,6,0 ],namespace,mtaKB).
+struct_dt_i([ 0,6,0 ],significantName,'Invoice').
+struct_dt_i([ 0,6,0 ],'ObjName','Invoice').
+struct_dt_i([ 0,6,0 ],'ObjDesc','Invoice').
+struct_dt_i([ 0,6,0 ],'ExternalName','Invoice').
+struct_dt_i([ 0,6,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,6,0 ],key,[ 20 ]).
+struct_dt_i([ 0,6,0 ],lvl,6).
+struct_dt_i([ 0,6,[ 20,25 ] ],name,'Detail').
+struct_dt_i([ 0,6,[ 20,25 ] ],namespace,'mtaKB.Invoice').
+struct_dt_i([ 0,6,[ 20,25 ] ],lvl,13).
+struct_dt_i([ 0,6,[ 20,118 ] ],name,'PaymentMethod').
+struct_dt_i([ 0,6,[ 20,118 ] ],namespace,'mtaKB.Invoice').
+struct_dt_i([ 0,6,[ 20,118 ] ],lvl,21).
+struct_dt_i([ 0,6,0 ],fullname,'Invoice').
+struct_dt_i([ 0,6,[ 20,25 ] ],fullname,'Invoice.Detail').
+struct_dt_i([ 0,6,[ 20,118 ] ],fullname,'Invoice.PaymentMethod').
+ 
+struct_dt_elem_i([ 0,6,0 ],1,name,'Invoiceid').
+struct_dt_elem_i([ 0,6,0 ],1,camelname,'InvoiceId').
+struct_dt_elem_i([ 0,6,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,6,0 ],1,length,6).
+struct_dt_elem_i([ 0,6,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],1,sign,0).
+struct_dt_elem_i([ 0,6,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],1,attributeid,'20').
+struct_dt_elem_i([ 0,6,0 ],1,'ExternalName','InvoiceId').
+struct_dt_elem_i([ 0,6,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],2,name,'Invoicecreateddate').
+struct_dt_elem_i([ 0,6,0 ],2,camelname,'InvoiceCreatedDate').
+struct_dt_elem_i([ 0,6,0 ],2,length,8).
+struct_dt_elem_i([ 0,6,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],2,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,6,0 ],2,pic,'99/99/99').
+struct_dt_elem_i([ 0,6,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],2,attributeid,'38').
+struct_dt_elem_i([ 0,6,0 ],2,'ExternalName','InvoiceCreatedDate').
+struct_dt_elem_i([ 0,6,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],3,name,'Userid').
+struct_dt_elem_i([ 0,6,0 ],3,camelname,'UserId').
+struct_dt_elem_i([ 0,6,0 ],3,basedon,92).
+struct_dt_elem_i([ 0,6,0 ],3,length,6).
+struct_dt_elem_i([ 0,6,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],3,sign,0).
+struct_dt_elem_i([ 0,6,0 ],3,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,0 ],3,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],3,attributeid,'99').
+struct_dt_elem_i([ 0,6,0 ],3,'ExternalName','UserId').
+struct_dt_elem_i([ 0,6,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],4,name,'Username').
+struct_dt_elem_i([ 0,6,0 ],4,camelname,'UserName').
+struct_dt_elem_i([ 0,6,0 ],4,length,20).
+struct_dt_elem_i([ 0,6,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],4,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 0,6,0 ],4,pic,'').
+struct_dt_elem_i([ 0,6,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],4,attributeid,'100').
+struct_dt_elem_i([ 0,6,0 ],4,'ExternalName','UserName').
+struct_dt_elem_i([ 0,6,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],5,name,'Invoicemodifieddate').
+struct_dt_elem_i([ 0,6,0 ],5,camelname,'InvoiceModifiedDate').
+struct_dt_elem_i([ 0,6,0 ],5,length,8).
+struct_dt_elem_i([ 0,6,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],5,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,6,0 ],5,pic,'99/99/99').
+struct_dt_elem_i([ 0,6,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],5,attributeid,'39').
+struct_dt_elem_i([ 0,6,0 ],5,'ExternalName','InvoiceModifiedDate').
+struct_dt_elem_i([ 0,6,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],6,name,'Invoiceactive').
+struct_dt_elem_i([ 0,6,0 ],6,camelname,'InvoiceActive').
+struct_dt_elem_i([ 0,6,0 ],6,length,4).
+struct_dt_elem_i([ 0,6,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],6,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,6,0 ],6,pic,'').
+struct_dt_elem_i([ 0,6,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],6,attributeid,'94').
+struct_dt_elem_i([ 0,6,0 ],6,'ExternalName','InvoiceActive').
+struct_dt_elem_i([ 0,6,0 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],7,name,'Invoicetotalreceivable').
+struct_dt_elem_i([ 0,6,0 ],7,camelname,'InvoiceTotalReceivable').
+struct_dt_elem_i([ 0,6,0 ],7,basedon,94).
+struct_dt_elem_i([ 0,6,0 ],7,length,18).
+struct_dt_elem_i([ 0,6,0 ],7,decimals,2).
+struct_dt_elem_i([ 0,6,0 ],7,sign,0).
+struct_dt_elem_i([ 0,6,0 ],7,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,6,0 ],7,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],7,attributeid,'80').
+struct_dt_elem_i([ 0,6,0 ],7,'ExternalName','InvoiceTotalReceivable').
+struct_dt_elem_i([ 0,6,0 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],8,name,'Invoiceproductquantity').
+struct_dt_elem_i([ 0,6,0 ],8,camelname,'InvoiceProductQuantity').
+struct_dt_elem_i([ 0,6,0 ],8,length,4).
+struct_dt_elem_i([ 0,6,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],8,sign,0).
+struct_dt_elem_i([ 0,6,0 ],8,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,6,0 ],8,pic,'ZZZ9').
+struct_dt_elem_i([ 0,6,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],8,attributeid,'68').
+struct_dt_elem_i([ 0,6,0 ],8,'ExternalName','InvoiceProductQuantity').
+struct_dt_elem_i([ 0,6,0 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],9,name,'Invoicelastdetailid').
+struct_dt_elem_i([ 0,6,0 ],9,camelname,'InvoiceLastDetailId').
+struct_dt_elem_i([ 0,6,0 ],9,basedon,92).
+struct_dt_elem_i([ 0,6,0 ],9,length,6).
+struct_dt_elem_i([ 0,6,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],9,sign,0).
+struct_dt_elem_i([ 0,6,0 ],9,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,0 ],9,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],9,attributeid,'97').
+struct_dt_elem_i([ 0,6,0 ],9,'ExternalName','InvoiceLastDetailId').
+struct_dt_elem_i([ 0,6,0 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],10,name,'Invoicelastpaymentmethodid').
+struct_dt_elem_i([ 0,6,0 ],10,camelname,'InvoiceLastPaymentMethodId').
+struct_dt_elem_i([ 0,6,0 ],10,basedon,92).
+struct_dt_elem_i([ 0,6,0 ],10,length,6).
+struct_dt_elem_i([ 0,6,0 ],10,decimals,0).
+struct_dt_elem_i([ 0,6,0 ],10,sign,0).
+struct_dt_elem_i([ 0,6,0 ],10,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,0 ],10,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,0 ],10,collection,'False').
+struct_dt_elem_i([ 0,6,0 ],10,attributeid,'131').
+struct_dt_elem_i([ 0,6,0 ],10,'ExternalName','InvoiceLastPaymentMethodId').
+struct_dt_elem_i([ 0,6,0 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],11,name,'Detail').
+struct_dt_elem_i([ 0,6,0 ],11,camelname,'Detail').
+struct_dt_elem_i([ 0,6,0 ],11,type,[ [ 0,6,[ 20,25 ] ],0,0 ]).
+struct_dt_elem_i([ 0,6,0 ],11,pic,'').
+struct_dt_elem_i([ 0,6,0 ],11,collection,'True').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,name,'Invoicedetailid').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,camelname,'InvoiceDetailId').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,basedon,92).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,length,6).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,attributeid,'25').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,'ExternalName','InvoiceDetailId').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,name,'Productid').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,camelname,'ProductId').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,basedon,92).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,length,6).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,attributeid,'15').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,'ExternalName','ProductId').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,name,'Productname').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,camelname,'ProductName').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,basedon,93).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,length,60).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,pic,'').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,attributeid,'16').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,'ExternalName','ProductName').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,name,'Productstock').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,camelname,'ProductStock').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,basedon,97).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,length,6).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,attributeid,'17').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,'ExternalName','ProductStock').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,name,'Invoicedetailquantity').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,camelname,'InvoiceDetailQuantity').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,length,6).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,attributeid,'26').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,'ExternalName','InvoiceDetailQuantity').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,name,'Invoicedetailhistoricprice').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,camelname,'InvoiceDetailHistoricPrice').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,basedon,94).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,length,18).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,attributeid,'65').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,'ExternalName','InvoiceDetailHistoricPrice').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,name,'Invoicedetailiswholesale').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,camelname,'InvoiceDetailIsWholesale').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,length,4).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,pic,'').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,attributeid,'98').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,'ExternalName','InvoiceDetailIsWholesale').
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,0 ],12,name,'Paymentmethod').
+struct_dt_elem_i([ 0,6,0 ],12,camelname,'PaymentMethod').
+struct_dt_elem_i([ 0,6,0 ],12,type,[ [ 0,6,[ 20,118 ] ],0,0 ]).
+struct_dt_elem_i([ 0,6,0 ],12,pic,'').
+struct_dt_elem_i([ 0,6,0 ],12,collection,'True').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,name,'Invoicepaymentmethodid').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,camelname,'InvoicePaymentMethodId').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,basedon,92).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,length,6).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,attributeid,'118').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,'ExternalName','InvoicePaymentMethodId').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,name,'Paymentmethodid').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,camelname,'PaymentMethodId').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,basedon,92).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,length,6).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,attributeid,'115').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,'ExternalName','PaymentMethodId').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,name,'Paymentmethoddescription').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,camelname,'PaymentMethodDescription').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,basedon,88).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,length,200).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,decimals,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,pic,'').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,attributeid,'116').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,'ExternalName','PaymentMethodDescription').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,name,'Paymentmethoddiscount').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,camelname,'PaymentMethodDiscount').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,basedon,127).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,length,8).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,sign,1).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,attributeid,'129').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,'ExternalName','PaymentMethodDiscount').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,name,'Paymentmethodrecarge').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,camelname,'PaymentMethodRecarge').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,basedon,127).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,length,8).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,sign,1).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,attributeid,'130').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,'ExternalName','PaymentMethodRecarge').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,name,'Invoicepaymentmethodimport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,camelname,'InvoicePaymentMethodImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,basedon,94).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,length,18).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,attributeid,'120').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,'ExternalName','InvoicePaymentMethodImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,name,'Invoicepaymentmethodrechargeimport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,camelname,'InvoicePaymentMethodRechargeImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,basedon,94).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,length,18).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,attributeid,'132').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,'ExternalName','InvoicePaymentMethodRechargeImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,name,'Invoicepaymentmethoddiscountimport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,camelname,'InvoicePaymentMethodDiscountImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,basedon,94).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,length,18).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,decimals,2).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,sign,0).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,collection,'False').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,attributeid,'133').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,'ExternalName','InvoicePaymentMethodDiscountImport').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,pic,'ZZZ9').
+struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

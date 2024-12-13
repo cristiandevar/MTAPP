@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwrole.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\refint\wwrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\wwrole.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwrole\obj\Release\net6.0\ref\wwrole.dll

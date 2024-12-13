@@ -1,0 +1,203 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>107</ObjId>
+<ObjName>UserGeneral</ObjName>
+<ObjDesc>User General</ObjDesc>
+<ObjPgmName>UserGeneral</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>nogenreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>13</ObjId>
+<ObjName>General.Security.NotAuthorized</ObjName>
+<ObjPgmName>General.Security.NotAuthorized</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICE1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>@UserId</AttriName>
+<Description>User Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>@UserId</AttriName>
+<Description>User Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>17</TableId>
+<TableName>Role</TableName>
+<Description>Role</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>104</AttriId>
+<AttriName>RoleId</AttriName>
+<Description>Role Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'DoUpdate'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>User</ObjName>
+<ObjPgmName>User</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Expression>
+<Token>TrnMode</Token>
+<Token>.Update</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'DoUDelete'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>81</ObjId>
+<ObjName>UserActiveDeactive</ObjName>
+<ObjPgmName>UserActiveDeactive</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Expression>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute>
+<Token>,</Token>
+<Sp></Sp>
+<Token>not</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>111</AttriId>
+<AttriName>UserActive</AttriName>
+<Description>User Active</Description></Attribute>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Errormessages</VarId>
+<VarName>&amp;ErrorMessages</VarName></Variable></Expression>
+<IF></IF></CALL>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>105</ObjId>
+<ObjName>ViewUser</ObjName>
+<ObjPgmName>ViewUser</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute>
+<Token>,</Token>
+<Sp></Sp>
+<Token>'General'</Token></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'PREPARETRANSACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Suggests></Suggests></ObjectSpec>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Objects xmlns="qv">
+  <Object name="General.UI.SidebarItemsDP" id="1" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPProductsRankingPurchases" id="4" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPProductsRankingSales" id="5" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPAllProductsWhereSearch" id="6" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPAllProductsWhereUpdate" id="8" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPAllProductsWhereOrdered" id="9" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="General.UI.MySidebarItemsDP" id="10" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPStatisticsTopProductSold" id="11" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="DPStatisticsAmountStatement" id="13" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="QueryProductsSold" id="1" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartBar" xmlns="qv" />
+  </Object>
+  <Object name="QSaleQuantityPerDay" id="2" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QPurchaseQuantityPerDay" id="3" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QSupplierPurchaseOrderStatistic" id="5" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumn" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductTopSold" id="7" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductTopOrder" id="8" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductLeastOrder" id="9" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductLeastSold" id="10" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsInvoiceRaised" id="11" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsPurchaseOrderSpent" id="13" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsSupplierTopSold" id="14" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductsOutOfStock" id="15" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumn" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsProductSalesRetailAndWholesale" id="16" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QPaymentMethodHistory" id="17" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
+  </Object>
+  <Object name="QStatisticsSupplierLeastSold" id="18" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartColumnLine" xmlns="qv" />
+  </Object>
+  <Object name="QSalesThrowTime" id="1" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
+  </Object>
+  <Object name="QPurchaseThrowTime" id="19" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
+  </Object>
+</Objects>

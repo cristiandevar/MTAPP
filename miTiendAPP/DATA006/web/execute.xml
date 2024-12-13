@@ -1,0 +1,166 @@
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+  <Charset>UTF-8</Charset>
+  <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus18Trial/</Path>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWBrand</ObjName>
+    <ObjDesc>Brands</ObjDesc>
+    <ObjLink>wwbrand.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWProduct</ObjName>
+    <ObjDesc>Work With Product</ObjDesc>
+    <ObjLink>wwproduct.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWPurchaseOrder</ObjName>
+    <ObjDesc>Work With Purchase Order</ObjDesc>
+    <ObjLink>wwpurchaseorder.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWSector</ObjName>
+    <ObjDesc>Sectors</ObjDesc>
+    <ObjLink>wwsector.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWSupplier</ObjName>
+    <ObjDesc>Work With Supplier</ObjDesc>
+    <ObjLink>wwsupplier.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPRegisterSale</ObjName>
+    <ObjDesc>WPRegister Sale</ObjDesc>
+    <ObjLink>wpregistersale.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPRankings</ObjName>
+    <ObjDesc>WPRankings</ObjDesc>
+    <ObjLink>wprankings.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPGeneratePurchase</ObjName>
+    <ObjDesc>WPGenerate Purchase</ObjDesc>
+    <ObjLink>wpgeneratepurchase.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPManagePurchase</ObjName>
+    <ObjDesc>WPManage Purchase</ObjDesc>
+    <ObjLink>wpmanagepurchase.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPSearchProducts</ObjName>
+    <ObjDesc>WPSearch Products</ObjDesc>
+    <ObjLink>wpsearchproducts.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWInvoice</ObjName>
+    <ObjDesc>Work With Invoice</ObjDesc>
+    <ObjLink>wwinvoice.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPStatistics</ObjName>
+    <ObjDesc>WPStatistics</ObjDesc>
+    <ObjLink>wpstatistics.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPUpdateCostPrice</ObjName>
+    <ObjDesc>WPUpdate Cost Price</ObjDesc>
+    <ObjLink>wpupdatecostprice.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPUpdateRetailProfit</ObjName>
+    <ObjDesc>WPUpdate Retail Profit</ObjDesc>
+    <ObjLink>wpupdateretailprofit.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPUpdateWholesaleProfit</ObjName>
+    <ObjDesc>WPUpdate Wholesale Profit</ObjDesc>
+    <ObjLink>wpupdatewholesaleprofit.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWUser</ObjName>
+    <ObjDesc>Work With User</ObjDesc>
+    <ObjLink>wwuser.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPLogIn</ObjName>
+    <ObjDesc>Welcome</ObjDesc>
+    <ObjLink>wplogin.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPHome</ObjName>
+    <ObjDesc>Home</ObjDesc>
+    <ObjLink>wphome.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWRole</ObjName>
+    <ObjDesc>Roles</ObjDesc>
+    <ObjLink>wwrole.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWPermission</ObjName>
+    <ObjDesc>Permissions</ObjDesc>
+    <ObjLink>wwpermission.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPPerfilChangePassword</ObjName>
+    <ObjDesc>WPPerfil Change Password</ObjDesc>
+    <ObjLink>wpperfilchangepassword.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPContactUs</ObjName>
+    <ObjDesc>WPContact Us</ObjDesc>
+    <ObjLink>wpcontactus.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPRegisterSaleNew</ObjName>
+    <ObjDesc>WPRegister Sale New</ObjDesc>
+    <ObjLink>wpregistersalenew.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWPaymentMethod</ObjName>
+    <ObjDesc>Payment Method of Sales</ObjDesc>
+    <ObjLink>wwpaymentmethod.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWMovement</ObjName>
+    <ObjDesc>Movements</ObjDesc>
+    <ObjLink>wwmovement.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPPurchaseOrderGenerated</ObjName>
+    <ObjDesc>Purchase Order Generated</ObjDesc>
+    <ObjLink>wppurchaseordergenerated.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WPStatisticsGraphs</ObjName>
+    <ObjDesc>WPStatistics Graphs</ObjDesc>
+    <ObjLink>wpstatisticsgraphs.aspx</ObjLink>
+  </Object>
+</Objects>

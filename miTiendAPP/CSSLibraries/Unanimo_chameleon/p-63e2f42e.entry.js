@@ -1,0 +1,1 @@
+import{r,h as n,H as s}from"./p-23c5f09f.js";const e=class{constructor(n){r(this,n)}render(){return n(s,null,n("slot",null))}};e.style="@layer ch-grid {\n  ch-grid-rowset-legend {\n    grid-column-start: 1;\n    grid-column-end: -1;\n  }\n}";export{e as ch_grid_rowset_legend}

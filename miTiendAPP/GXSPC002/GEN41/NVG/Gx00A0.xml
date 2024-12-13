@@ -1,0 +1,57 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>11</ObjId>
+<ObjName>Gx00A0</ObjName>
+<ObjDesc>Selection List Purchase Order</ObjDesc>
+<ObjPgmName>Gx00A0</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>specfailed</Result>
+<Warnings></Warnings>
+<Errors>
+<Error>
+<MsgCode>spc0027</MsgCode>
+<Message>
+<Token>No relationship found among attributes</Token>
+<Token> in grid '</Token>
+<Token>Grid1</Token>
+<Token>'</Token>
+<Token>. Attributes: </Token>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>PurchaseOrderPurchaseDate</AttriName>
+<Description>Purchase Order Purchase Date</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>53</AttriId>
+<AttriName>PurchaseOrderModifiedDate</AttriName>
+<Description>Purchase Order Modified Date</Description></Attribute>
+<Token> are incompatible with: </Token>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Token>.</Token></Message></Error></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Ppurchaseorderid</VarId>
+<VarName>&amp;pPurchaseOrderId</VarName></Variable></Parameter></Parameters></ObjectSpec>

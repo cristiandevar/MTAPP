@@ -1,0 +1,103 @@
+{
+	"Name": "GeneXusUnanimo.Dropdown",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<div class=\"dropdown\">	<div class=\"dd-flex-container\">		<div class=\"dd-vertical-separator\" id=\"ddSeparator\"></div>		<div class=\"dd-text-container\" id=\"textContainer\">			<div class=\"row\"> <span class=\"dd-username\">{{UserFullName}}</span> </div>			<div class=\"row\"> <span class=\"dd-companyname\">{{UserCompany}}</span> </div>		</div>		<div class=\"dd-avatar-container\" id=\"imgContainer\">			<img {{#UserPhoto}}src={{UserPhoto}}{{/UserPhoto}} class=\"dd-avatar\" alt=\"avatar-image\">		</div>	</div> 	<div class=\"dropdown-content\">		{{#DropdownItems}}		<a id=\"{{id}}\" class=\"dd-option-container\" href=\"#\">			<img alt=\"{{alternativeText}}\" class=\"dd-option-icon\" src={{icon}}>			<span class=\"dd-option\">{{title}}</span>		</a>		{{/DropdownItems}}		{{#ShowLogoutOption}}		<!-- default logout event -->		<a class=\"dd-option-container\" {{Logout}}>			<img alt=\"logout_icon\" class=\"dd-option-icon\" src={{LogoutIcon}}>			<span class=\"dd-option\">Logout</span>		</a>		{{/ShowLogoutOption}}	</div></div>", 
+	"Events": [
+		{
+			"Name": "Logout",
+			"On": "click",
+			"Parameters": ""
+		} ,
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "UserPhoto",
+			"Name": "UserPhoto",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "UserFullName",
+			"Name": "UserFullName",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "UserCompany",
+			"Name": "UserCompany",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "DisplayType",
+			"Name": "DisplayType",
+			"Type": "enum",
+			"Default": "Avatar"
+		} ,
+		{
+			"Id": "ShowLogoutOption",
+			"Name": "ShowLogoutOption",
+			"Type": "boolean",
+			"Default": "true"
+		} ,
+		{
+			"Id": "LogoutIcon",
+			"Name": "LogoutIcon",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "DropdownItems",
+			"Name": "DropdownItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "DropdownItemsCurrentIndex",
+			"Name": "DropdownItemsCurrentIndex",
+			"Type": "numeric",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemId",
+			"Name": "SelectedItemId",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemTarget",
+			"Name": "SelectedItemTarget",
+			"Type": "string",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "Init",
+				"Source": "  	const UC = this;	const imgContainer = $(\"#imgContainer\");	const textContainer = $(\"#textContainer\");	const verticalSeparator = $(\"#ddSeparator\");	switch(UC.DisplayType) {		case \"Avatar\":		textContainer[0].hidden = true;		break;		case \"Text\":		imgContainer[0].hidden = true;		break;		case \"Avatar and Text\":		break;	}	/*get the item\'s target*/	const el = document.getElementsByClassName(\"dropdown-content\")[0];	el.addEventListener(\"click\", function(e){		var anchor = getParentAnchor(e.target);		if(anchor !== null) {			for (let i = 0; i < UC.DropdownItems.length; i++) {				const item = UC.DropdownItems[i];				if (item.id === anchor.id){					UC.SelectedItemId = item.id;					UC.SelectedItemTarget = item.link;					UC.ItemClick();					break;				}			}		}	});	var getParentAnchor = function (element) {		while (element !== null) {			if (element.tagName && element.tagName.toUpperCase() === \"A\") {			return element;			}			element = element.parentNode;		}		return null;	};  ",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

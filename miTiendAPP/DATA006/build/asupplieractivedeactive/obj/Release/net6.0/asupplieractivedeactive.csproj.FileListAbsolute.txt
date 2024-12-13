@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\asupplieractivedeactive.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\asupplieractivedeactive.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\refint\asupplieractivedeactive.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\asupplieractivedeactive.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\asupplieractivedeactive\obj\Release\net6.0\ref\asupplieractivedeactive.dll

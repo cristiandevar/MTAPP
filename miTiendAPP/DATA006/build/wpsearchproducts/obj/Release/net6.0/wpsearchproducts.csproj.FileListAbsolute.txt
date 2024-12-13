@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpsearchproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpsearchproducts.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\refint\wpsearchproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\wpsearchproducts.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpsearchproducts\obj\Release\net6.0\ref\wpsearchproducts.dll

@@ -1,0 +1,84 @@
+ 
+spec_i([ sdt,[ 0,14,0 ],'PaymentMethod','PaymentMethod',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,14,0 ],name,'PaymentMethod').
+struct_dt_i([ 0,14,0 ],namespace,mtaKB).
+struct_dt_i([ 0,14,0 ],significantName,'PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ObjName','PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ObjDesc','Payment Method of Sale').
+struct_dt_i([ 0,14,0 ],'ExternalName','PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,14,0 ],key,[ 115 ]).
+struct_dt_i([ 0,14,0 ],lvl,20).
+struct_dt_i([ 0,14,0 ],fullname,'PaymentMethod').
+ 
+struct_dt_elem_i([ 0,14,0 ],1,name,'Paymentmethodid').
+struct_dt_elem_i([ 0,14,0 ],1,camelname,'PaymentMethodId').
+struct_dt_elem_i([ 0,14,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,14,0 ],1,length,6).
+struct_dt_elem_i([ 0,14,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],1,sign,0).
+struct_dt_elem_i([ 0,14,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,14,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,14,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],1,attributeid,'115').
+struct_dt_elem_i([ 0,14,0 ],1,'ExternalName','PaymentMethodId').
+struct_dt_elem_i([ 0,14,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],2,name,'Paymentmethoddescription').
+struct_dt_elem_i([ 0,14,0 ],2,camelname,'PaymentMethodDescription').
+struct_dt_elem_i([ 0,14,0 ],2,basedon,88).
+struct_dt_elem_i([ 0,14,0 ],2,length,200).
+struct_dt_elem_i([ 0,14,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],2,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,14,0 ],2,pic,'').
+struct_dt_elem_i([ 0,14,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],2,attributeid,'116').
+struct_dt_elem_i([ 0,14,0 ],2,'ExternalName','PaymentMethodDescription').
+struct_dt_elem_i([ 0,14,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],3,name,'Paymentmethodactive').
+struct_dt_elem_i([ 0,14,0 ],3,camelname,'PaymentMethodActive').
+struct_dt_elem_i([ 0,14,0 ],3,length,4).
+struct_dt_elem_i([ 0,14,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],3,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,14,0 ],3,pic,'').
+struct_dt_elem_i([ 0,14,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],3,attributeid,'117').
+struct_dt_elem_i([ 0,14,0 ],3,'ExternalName','PaymentMethodActive').
+struct_dt_elem_i([ 0,14,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],4,name,'Paymentmethoddiscount').
+struct_dt_elem_i([ 0,14,0 ],4,camelname,'PaymentMethodDiscount').
+struct_dt_elem_i([ 0,14,0 ],4,basedon,127).
+struct_dt_elem_i([ 0,14,0 ],4,length,8).
+struct_dt_elem_i([ 0,14,0 ],4,decimals,2).
+struct_dt_elem_i([ 0,14,0 ],4,sign,1).
+struct_dt_elem_i([ 0,14,0 ],4,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,14,0 ],4,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,14,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],4,attributeid,'129').
+struct_dt_elem_i([ 0,14,0 ],4,'ExternalName','PaymentMethodDiscount').
+struct_dt_elem_i([ 0,14,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],5,name,'Paymentmethodrecarge').
+struct_dt_elem_i([ 0,14,0 ],5,camelname,'PaymentMethodRecarge').
+struct_dt_elem_i([ 0,14,0 ],5,basedon,127).
+struct_dt_elem_i([ 0,14,0 ],5,length,8).
+struct_dt_elem_i([ 0,14,0 ],5,decimals,2).
+struct_dt_elem_i([ 0,14,0 ],5,sign,1).
+struct_dt_elem_i([ 0,14,0 ],5,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,14,0 ],5,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,14,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],5,attributeid,'130').
+struct_dt_elem_i([ 0,14,0 ],5,'ExternalName','PaymentMethodRecarge').
+struct_dt_elem_i([ 0,14,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],2,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,14,0 ],4,pic,'ZZZ9').
+struct_dt_elem_i([ 0,14,0 ],5,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

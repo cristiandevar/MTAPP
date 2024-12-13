@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\permissionrolewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\permissionrolewc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\refint\permissionrolewc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\permissionrolewc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissionrolewc\obj\Release\net6.0\ref\permissionrolewc.dll

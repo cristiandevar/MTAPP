@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="36ca1a30-4fb2-40e5-bfb2-4fcc5306edd6" name="DPSupplierRankingPurchases" description="DPSupplier Ranking Purchases" namespace="GeneXus.Programs">
+  <Signature name="parm">
+    <Parameter name="ReturnValue" accessor="out">
+      <Field name="SDTSupplierRankingPurchases" description="SDTSupplier Ranking Purchases" collection="true">
+        <Fields>
+          <Field name="Id" description="Id">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>6</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>ZZZZZ9</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="Name" description="Name">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>60</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="QuantityPurchases" description="Quantity Purchases">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>4</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>ZZZ9</Value>
+              </Property>
+            </Properties>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

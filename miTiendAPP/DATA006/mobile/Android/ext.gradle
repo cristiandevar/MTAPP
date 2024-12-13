@@ -1,0 +1,6 @@
+ext.android_build = [
+    min_sdk: 21,
+    compile_sdk: 33,
+    target_sdk: 33,
+    java_version: JavaVersion.VERSION_1_8
+]

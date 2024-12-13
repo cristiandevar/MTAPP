@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterunanimosidebar.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterunanimosidebar.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\refint\general.ui.masterunanimosidebar.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\general.ui.masterunanimosidebar.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterunanimosidebar\obj\Release\net6.0\ref\general.ui.masterunanimosidebar.dll

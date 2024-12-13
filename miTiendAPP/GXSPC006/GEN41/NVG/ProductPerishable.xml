@@ -1,0 +1,281 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>10</ObjId>
+<ObjName>ProductPerishable</ObjName>
+<ObjDesc>Product Perishable</ObjDesc>
+<ObjPgmName>ProductPerishable</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>14</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table></BaseTable>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute></Into></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Product Perishable Expiration Date is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>ymdtod(</Token>
+<Sp></Sp>
+<Token>1753</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Product Perishable Batch Date is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>ymdtod(</Token>
+<Sp></Sp>
+<Token>1753</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>98</ObjId>
+<ObjName>Gx0050</ObjName>
+<ObjPgmName>Gx0050</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>149</ObjId>
+<ObjName>Gx00E0</ObjName>
+<ObjPgmName>Gx00E0</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

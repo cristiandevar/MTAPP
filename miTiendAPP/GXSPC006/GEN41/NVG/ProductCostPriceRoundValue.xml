@@ -1,0 +1,27 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>107</ObjId>
+<ObjName>ProductCostPriceRoundValue</ObjName>
+<ObjDesc>Product Cost Price Round Value</ObjDesc>
+<ObjPgmName>ProductCostPriceRoundValue</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Productcostprice</VarId>
+<VarName>&amp;ProductCostPrice</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

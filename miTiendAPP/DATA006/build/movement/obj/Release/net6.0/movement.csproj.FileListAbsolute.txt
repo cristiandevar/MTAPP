@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\movement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\movement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\refint\movement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\movement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\movement\obj\Release\net6.0\ref\movement.dll

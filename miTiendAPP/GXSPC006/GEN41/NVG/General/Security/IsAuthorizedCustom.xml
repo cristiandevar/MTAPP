@@ -1,0 +1,23 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>55</ObjId>
+<ObjName>General.Security.IsAuthorizedCustom</ObjName>
+<ObjDesc>Is Authorized Custom</ObjDesc>
+<ObjPgmName>General.Security.IsAuthorizedCustom</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>nogenspc</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0217</MsgCode>
+<Message>
+<Token>Object is unreachable.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters></ObjectSpec>

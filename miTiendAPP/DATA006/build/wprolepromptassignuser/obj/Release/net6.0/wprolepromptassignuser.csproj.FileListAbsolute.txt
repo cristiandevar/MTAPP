@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprolepromptassignuser.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprolepromptassignuser.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\refint\wprolepromptassignuser.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\wprolepromptassignuser.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignuser\obj\Release\net6.0\ref\wprolepromptassignuser.dll

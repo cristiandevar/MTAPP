@@ -1,0 +1,1 @@
+System.register(["./p-810da28d.system.js"],(function(t){"use strict";var n;return{setters:[function(t){n=t.r}],execute:function(){var r="@layer ch-grid {\n  ch-grid-rowset {\n    display: contents;\n  }\n}";var e=t("ch_grid_rowset",function(){function t(t){n(this,t)}return t}());e.style=r}}}));

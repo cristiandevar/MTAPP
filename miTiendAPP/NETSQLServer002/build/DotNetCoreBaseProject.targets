@@ -1,0 +1,71 @@
+<Project InitialTargets="LoadGxProperties" >
+	<Import Project="$(MSBuildThisFileDirectory)\DataSources.targets" Condition="Exists('$(MSBuildThisFileDirectory)\DataSources.targets')"/>
+	<PropertyGroup>
+		<WebDirectory>$(MSBuildThisFileDirectory)..\web</WebDirectory>
+		<WebBinDirectory>$(WebDirectory)\bin</WebBinDirectory>
+		<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+		<EnableDefaultCompileItems>False</EnableDefaultCompileItems>
+		<TargetFramework>net6.0</TargetFramework>
+		<OutputPath>$(WebBinDirectory)</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>0</WarningLevel>
+		<NoWarn>NU1603;CS2008;CS0414;CS0649;CS0169;CS0162;MSB3026;NETSDK1182;NETSDK1086;NU1701</NoWarn>
+		<RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+		<UseHostCompilerIfAvailable>true</UseHostCompilerIfAvailable>
+		<OutDir>$(OutputPath)</OutDir>
+		<Configuration>Release</Configuration>
+		<Prefer32Bit>false</Prefer32Bit>
+		<PlatformTarget Condition="'$(PlatformTarget)' == ''">AnyCPU</PlatformTarget>
+		<OfficeSupport Condition="'$(OfficeSupport)' == ''">true</OfficeSupport>
+		<MailSupport Condition="'$(MailSupport)' == ''">true</MailSupport>
+		<PDFSupport Condition="'$(PDFSupport)' == ''">true</PDFSupport>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+		<InformationalVersion>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</InformationalVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+  		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeneXus.Classes.Web.Core" Version="$(GenStdVersion)" />
+    <PackageReference Include="GeneXus.Mail.Core" Version="$(GenStdVersion)" Condition="'$(MailSupport)'=='true'"/>
+    <PackageReference Include="GeneXus.Excel.Core" Version="$(GenStdVersion)" Condition="'$(OfficeSupport)'=='true'"/>
+  </ItemGroup>
+  <ItemGroup Condition="'$(PDFSupport)'=='true'">
+    <PackageReference Include="GeneXus.PdfReportsCS.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Remove="*\**;*" />
+	</ItemGroup>
+
+
+	<Target Name="LoadGxProperties" Condition="'$(GxExternalReference)' != '' OR '$(GxBaseReference)' != ''">
+		<ItemGroup>
+			<GxReference Include="$(GxExternalReference.Split(';'))" />
+			<GxReference Include="$(GxBaseReference.Split(';'))" />
+		</ItemGroup>
+		<ItemGroup>
+			<Reference Include="%(GxReference.Identity)">
+				<HintPath>$(WebBinDirectory)\%(GxReference.Identity)</HintPath>
+			</Reference>
+		</ItemGroup>
+	</Target>
+
+	<Target Name="CopyConfig" AfterTargets="Build">
+		<ItemGroup>
+			<ConfigFiles Include="$(WebDirectory)\client.exe.config"/>
+			<ConfigFiles Include="$(WebDirectory)\reorgpgm.gen"/>
+		</ItemGroup>
+		<Copy SkipUnchangedFiles="true" SourceFiles="@(ConfigFiles)" DestinationFiles="@(ConfigFiles->'$(WebBinDirectory)\%(Filename)%(Extension)')"  Condition="Exists('%(ConfigFiles.FullPath)')" />
+	</Target>
+
+	<Target Name="Info">
+		<Message Text="Configuration is $(Configuration)" />
+		<Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+	</Target>
+
+</Project>

@@ -1,0 +1,10 @@
+﻿<ConnectionInformation>
+	<DBName>GX_KB_mtaKB</DBName>
+	<IntegratedSecurity>True</IntegratedSecurity>
+	<ServerInstance>CRISTIAN\SQLEXPRESS</ServerInstance>
+	<CreateDbInKbFolder>True</CreateDbInKbFolder>
+	<Directory>C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB</Directory>
+	<DataFile>GX_KB_mtaKB.mdf</DataFile>
+	<LogFile>GX_KB_mtaKB_log.ldf</LogFile>
+	<HostName>CRISTIAN</HostName>
+</ConnectionInformation>

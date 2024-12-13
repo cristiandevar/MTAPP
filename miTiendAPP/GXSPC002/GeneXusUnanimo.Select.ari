@@ -1,0 +1,25 @@
+usercontrol_directory_i('genexusunanimo.select', ['UserControls']).
+usercontrol_i('genexusunanimo.select', ['GeneXusUnanimo.Select','Genexusunanimo.select']).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Name', 'Name', 'Name', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Height', 'Height', 'Height', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'OptionHeight', 'Optionheight', 'Optionheight', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Icon', 'Icon', 'Icon', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'ArrowIcon', 'Arrowicon', 'Arrowicon', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'IconAutoColor', 'Iconautocolor', 'Iconautocolor', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'SelectedItem', 'Selecteditem', 'Selecteditem', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'SelectItems', 'Selectitems', 'Selectitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'SelectItemsCurrentIndex', 'Selectitemscurrentindex', 'Selectitemscurrentindex', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'SetSelectItems', 'Setselectitems', 'Setselectitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'GetSelectItems', 'Getselectitems', 'Getselectitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.select', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.select', 'Itemclick', 'ItemClick').

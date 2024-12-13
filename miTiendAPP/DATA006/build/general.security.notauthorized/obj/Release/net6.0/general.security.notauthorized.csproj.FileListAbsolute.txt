@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.security.notauthorized.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.security.notauthorized.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\refint\general.security.notauthorized.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\general.security.notauthorized.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.security.notauthorized\obj\Release\net6.0\ref\general.security.notauthorized.dll

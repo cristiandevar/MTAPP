@@ -1,0 +1,27 @@
+usercontrol_directory_i('genexusunanimo.dropdown', ['UserControls']).
+usercontrol_i('genexusunanimo.dropdown', ['GeneXusUnanimo.Dropdown','Genexusunanimo.dropdown']).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'UserPhoto', 'Userphoto', 'Userphoto', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'UserFullName', 'Userfullname', 'Userfullname', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'UserCompany', 'Usercompany', 'Usercompany', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'DisplayType', 'Displaytype', 'Displaytype', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'ShowLogoutOption', 'Showlogoutoption', 'Showlogoutoption', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'LogoutIcon', 'Logouticon', 'Logouticon', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'DropdownItems', 'Dropdownitems', 'Dropdownitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'DropdownItemsCurrentIndex', 'Dropdownitemscurrentindex', 'Dropdownitemscurrentindex', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'SelectedItemId', 'Selecteditemid', 'Selecteditemid', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'SelectedItemTarget', 'Selecteditemtarget', 'Selecteditemtarget', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'SetDropdownItems', 'Setdropdownitems', 'Setdropdownitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'GetDropdownItems', 'Getdropdownitems', 'Getdropdownitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdown', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.dropdown', 'Logout', 'Logout').
+usercontrol_event_mapping_i('genexusunanimo.dropdown', 'Itemclick', 'ItemClick').

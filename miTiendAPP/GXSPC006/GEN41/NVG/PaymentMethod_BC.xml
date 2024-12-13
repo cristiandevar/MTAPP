@@ -1,0 +1,120 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>14</ObjId>
+<ObjName>PaymentMethod_BC</ObjName>
+<ObjDesc>Payment Method of Sale</ObjDesc>
+<ObjPgmName>PaymentMethod_BC</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>20</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute>
+<Attribute>
+<AttriId>117</AttriId>
+<AttriName>PaymentMethodActive</AttriName>
+<Description>Payment Method Active</Description></Attribute>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute>
+<Attribute>
+<AttriId>117</AttriId>
+<AttriName>PaymentMethodActive</AttriName>
+<Description>Payment Method Active</Description></Attribute>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

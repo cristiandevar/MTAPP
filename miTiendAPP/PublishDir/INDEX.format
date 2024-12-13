@@ -1,0 +1,9 @@
+14.0
+7
+1       SQLSMALLINT         0       2       ""   1     model_id                             ""
+2       SQLINT              0       4       ""   2     table_id                             ""
+3       SQLSMALLINT         0       2       ""   3     index_id                             ""
+4       SQLNCHAR            2       256     ""   4     index_name                           Latin1_General_100_CI_AS_SC_UTF8
+5       SQLSMALLINT         0       2       ""   5     index_type                           ""
+6       SQLSMALLINT         0       2       ""   6     index_def_source                     ""
+7       SQLSMALLINT         0       2       ""   7     index_status                         ""

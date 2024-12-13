@@ -1,0 +1,20 @@
+usercontrol_directory_i('genexusunanimo.step', ['UserControls']).
+usercontrol_i('genexusunanimo.step', ['GeneXusUnanimo.Step','Genexusunanimo.step']).
+usercontrol_property_mapping_i('genexusunanimo.step', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'id', 'Id', 'Id', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'SelectedItem', 'Selecteditem', 'Selecteditem', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'StepItems', 'Stepitems', 'Stepitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'StepItemsCurrentIndex', 'Stepitemscurrentindex', 'Stepitemscurrentindex', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'SetStepItems', 'Setstepitems', 'Setstepitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'GetStepItems', 'Getstepitems', 'Getstepitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.step', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.step', 'Itemclick', 'ItemClick').

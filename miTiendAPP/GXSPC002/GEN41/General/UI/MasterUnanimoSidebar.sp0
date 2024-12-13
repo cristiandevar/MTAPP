@@ -1,0 +1,811 @@
+spec_i([ web,1,'Master Unanimo Sidebar','General\UI\MasterUnanimoSidebar',0,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [ 'Sidebaritems' ] ]).
+ 
+lac_i(2,[ [ 'Sidebaritems' ] ]).
+ 
+ 
+lits_i('Application Name',5,10).
+ 
+cls_i([ 0,0 ],[ 5,25 ]).
+ 
+pos_i('Sidebaritems',[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaDB)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','General.UI.MasterUnanimoSidebar')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WebApplication',idDefault)).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('WEB_COMP','Master')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('Folder',o(120,'General\UI'))).
+rule_i(0,prop('ObjDesc','Master Unanimo Sidebar')).
+rule_i(0,prop('ObjName','MasterUnanimoSidebar')).
+rule_i(0,maingen(41)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',8 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',7 ]).
+attri_i('Target',[ target,svchar,1000,0,'',0,target,'',6 ]).
+attri_i('Sidebaritems',[ sidebarItems,o(objectcollection('GeneXusUnanimo\SidebarItems.SidebarItem')),0,0,'',0,'sidebar Items','',5 ]).
+ 
+ 
+ 
+ 
+ 
+function_i(2,'Sidebaritems',yes,udp,o(33,'General\UI\SidebarItemsDP'),[],5,'Sidebaritems',[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(33,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,8).
+b_group_i(2,3,lit,0,9,13).
+b_group_i(2,4,lit,0,14,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Load',3,1,7) ]).
+b_line_i(3,2,2,cmd,1,[ t('',107,3,0),t([ t('Sidebarmenu',3,1,0),t('Title',3,1,0) ],29,1,0),t(=,10,1,0),t('"Unanimo"',3,1,0) ]).
+b_line_i(4,2,2,cmd,1,[ t('',107,4,0),t([ t('Sidebarmenu',3,1,0),t('Distancetotop',3,1,0) ],29,1,0),t(=,10,1,0),t('60',3,1,0) ]).
+b_line_i(5,2,2,cmd,1,[ t('',107,5,0),t('Sidebaritems',23,1,0),t(=,10,1,0),t('udp(',1,1,0),t('Sidebaritems',3,1,0),t(5,3,1,0),t(')',4,1,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',155,6,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',147,6,0) ]).
+b_line_i(8,2,2,cmd,1,[ t('',146,8,0),t([ t('Sidebarmenu',3,8,7),t('Itemclick',3,8,19) ],29,8,19) ]).
+b_line_i(9,2,3,cmd,1,[ t('',107,9,0),t('Target',23,1,0),t(=,10,1,0),t([ t('Sidebarmenu',3,1,0),t('Selecteditemtarget',3,1,0) ],29,1,0) ]).
+b_line_i(10,2,3,cmd,1,[ t('',171,10,0),t('Target',23,1,7) ]).
+b_line_i(11,2,3,cmd,1,[ t('',147,11,0) ]).
+b_line_i(13,2,3,cmd,1,[ t('',146,13,0),t([ t('Sidebarmenu',3,13,7),t('Getstate',3,13,19) ],29,13,19) ]).
+b_line_i(14,2,4,cmd,1,[ t('',109,14,0),t([ t('Sidebarmenu',3,14,5),t('Iscollapsed',3,14,17) ],29,14,17) ]).
+b_line_i(15,2,4,cmd,1,[ t('',107,15,0),t([ t('Content',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"expandible-container"',3,1,0),t(+,5,1,0),t('" expanded"',3,1,0) ]).
+b_line_i(16,2,4,cmd,1,[ t('',110,16,0) ]).
+b_line_i(17,2,4,cmd,1,[ t('',107,17,0),t([ t('Content',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"expandible-container"',3,1,0) ]).
+b_line_i(18,2,4,cmd,1,[ t('',111,18,0) ]).
+b_line_i(19,2,4,cmd,1,[ t('',147,19,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,div(2)).
+ 
+html_sub_i(2,3,html_i(0,div(3))).
+html_sub_i(3,4,html_i(0,div(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,div(6))).
+html_sub_i(6,7,html_i(0,div(7))).
+html_sub_i(7,8,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-68'))).
+html_sub_i(6,9,html_i(1,div(9))).
+html_sub_i(9,10,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-40'))).
+html_sub_i(6,11,html_i(2,div(11))).
+html_sub_i(11,12,html_i(0,t('Application Name',3))).
+html_sub_i(3,13,html_i(1,div(13))).
+html_sub_i(13,14,html_i(0,div(14))).
+html_sub_i(14,15,html_i(0,div(15))).
+html_sub_i(15,16,html_i(0,div(16))).
+html_sub_i(16,17,html_i(0,div(17))).
+html_sub_i(17,18,html_i(0,usercontrol(18))).
+html_sub_i(13,19,html_i(1,div(19))).
+html_sub_i(19,20,html_i(0,div(20))).
+html_sub_i(20,21,html_i(0,div(21))).
+html_sub_i(21,22,html_i(0,div(22))).
+html_sub_i(22,23,html_i(0,comp(conthold))).
+ 
+html_tags_i(1,'Class','form-horizontal Form').
+html_tags_i(2,'data-gx-base-lib',none).
+html_tags_i(2,'data-abstract-form','').
+html_tags_i(6,style,'align-items:center;').
+html_tags_i(6,'data-gx-flex','').
+html_tags_i(7,style,'align-self:center;').
+html_tags_i(7,classref,'').
+html_tags_i(8,'data-gx-image','').
+html_tags_i(9,style,'min-height:20;').
+html_tags_i(9,classref,'').
+html_tags_i(10,'data-gx-image','').
+html_tags_i(11,style,'flex-grow:1;min-height:20;').
+html_tags_i(11,classref,'').
+html_tags_i(12,'ControlType','').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',d,[ str ]).
+html_comp_i(2,'Id','',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Class','MainContainer',v,[ str ]).
+html_comp_i(3,'Id','Maintable',v,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Semanticcontent',div,d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Valign',top,d,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Class',row,v,[ str ]).
+html_comp_i(4,'Id','',d,[ str ]).
+html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Semanticcontent',div,d,[ str ]).
+html_comp_i(4,'Align',left,d,[ str ]).
+html_comp_i(4,'Valign',top,d,[ str ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','col-xs-12',v,[ str ]).
+html_comp_i(5,'Id','',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Class','HeaderContainer ContainerFluid',v,[ str ]).
+html_comp_i(6,'Id','Header',v,[ str ]).
+html_comp_i(6,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Semanticcontent',div,d,[ str ]).
+html_comp_i(6,'Align',left,d,[ str ]).
+html_comp_i(6,'Valign',top,d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Class','',v,[ str ]).
+html_comp_i(7,'Id','',d,[ str ]).
+html_comp_i(7,'Height',measure(24,px),v,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Semanticcontent',div,d,[ str ]).
+html_comp_i(7,'Align',left,d,[ str ]).
+html_comp_i(7,'Valign',top,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Id','Image2',v,[ str ]).
+html_comp_i(8,'Class','sidebar__toggle-ico',v,[ str ]).
+html_comp_i(8,'Srcname','GeneXusUnanimo.list_view_white',d,[ str ]).
+html_comp_i(8,src,i(98,'ef73725b-c186-4f57-94bc-867e0a183c3e'),v,[ image ]).
+html_comp_i(8,lowsrc,'',d,[ str ]).
+html_comp_i(8,'Returnonclick',0,d,[ bool ]).
+html_comp_i(8,'Eventgx','',d,[ str ]).
+html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Border','0',d,[ str ]).
+html_comp_i(8,'Alt','',d,[ str ]).
+html_comp_i(8,'Title','',d,[ str ]).
+html_comp_i(8,'Hspace',0,d,[ num ]).
+html_comp_i(8,'Vspace',0,d,[ num ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Usemap','',d,[ str ]).
+html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(9,'Class','',v,[ str ]).
+html_comp_i(9,'Id','',d,[ str ]).
+html_comp_i(9,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Semanticcontent',div,d,[ str ]).
+html_comp_i(9,'Align',left,d,[ str ]).
+html_comp_i(9,'Valign',top,d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Id','Image1',v,[ str ]).
+html_comp_i(10,'Class',header__logo,v,[ str ]).
+html_comp_i(10,'Srcname','GeneXusUnanimo.genexus_logo',d,[ str ]).
+html_comp_i(10,src,i(98,'194a18de-81a7-4ab6-8eb3-5191aa65f696'),v,[ image ]).
+html_comp_i(10,lowsrc,'',d,[ str ]).
+html_comp_i(10,'Returnonclick',0,d,[ bool ]).
+html_comp_i(10,'Eventgx','',d,[ str ]).
+html_comp_i(10,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Border','0',d,[ str ]).
+html_comp_i(10,'Alt','',d,[ str ]).
+html_comp_i(10,'Title','',d,[ str ]).
+html_comp_i(10,'Hspace',0,d,[ num ]).
+html_comp_i(10,'Vspace',0,d,[ num ]).
+html_comp_i(10,'Align',left,d,[ str ]).
+html_comp_i(10,'Usemap','',d,[ str ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Class','',v,[ str ]).
+html_comp_i(11,'Id','',d,[ str ]).
+html_comp_i(11,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Semanticcontent',div,d,[ str ]).
+html_comp_i(11,'Align','Center',v,[ str ]).
+html_comp_i(11,'Valign',top,d,[ str ]).
+html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(12,'Caption','Application Name',d,[ str ]).
+html_comp_i(12,'Id','Applicationheader',v,[ str ]).
+html_comp_i(12,'Class',header__title,v,[ str ]).
+html_comp_i(12,'Event','',d,[ str ]).
+html_comp_i(12,'Returnonclick',0,d,[ bool ]).
+html_comp_i(12,'Gxformat',0,d,[ num ]).
+html_comp_i(12,'Title','',d,[ str ]).
+html_comp_i(12,'Fill',-1,d,[ bool ]).
+html_comp_i(12,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(12,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(12,'Font','',d,[ str ]).
+html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(13,'Class',row,v,[ str ]).
+html_comp_i(13,'Id','',d,[ str ]).
+html_comp_i(13,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Semanticcontent',div,d,[ str ]).
+html_comp_i(13,'Align',left,d,[ str ]).
+html_comp_i(13,'Valign',top,d,[ str ]).
+html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(14,'Class','col-xs-12 col-sm-2',v,[ str ]).
+html_comp_i(14,'Id','',d,[ str ]).
+html_comp_i(14,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Semanticcontent',div,d,[ str ]).
+html_comp_i(14,'Align',left,d,[ str ]).
+html_comp_i(14,'Valign',top,d,[ str ]).
+html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(15,'Class','Table',v,[ str ]).
+html_comp_i(15,'Id','Tablesidebarcontainer',v,[ str ]).
+html_comp_i(15,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(15,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(15,'Semanticcontent',div,d,[ str ]).
+html_comp_i(15,'Align',left,d,[ str ]).
+html_comp_i(15,'Valign',top,d,[ str ]).
+html_comp_i(16,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(16,'Class',row,v,[ str ]).
+html_comp_i(16,'Id','',d,[ str ]).
+html_comp_i(16,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(16,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(16,'Semanticcontent',div,d,[ str ]).
+html_comp_i(16,'Align',left,d,[ str ]).
+html_comp_i(16,'Valign',top,d,[ str ]).
+html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(17,'Class','col-xs-12',v,[ str ]).
+html_comp_i(17,'Id','',d,[ str ]).
+html_comp_i(17,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(17,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(17,'Semanticcontent',div,d,[ str ]).
+html_comp_i(17,'Align',left,d,[ str ]).
+html_comp_i(17,'Valign',top,d,[ str ]).
+html_comp_i(18,'Usercontroltype','GeneXusUnanimo.Sidebar',d,[ str ]).
+html_comp_i(18,'Constructorname','GeneXusUnanimo_Sidebar',d,[ str ]).
+html_comp_i(18,'Showmethodname',show,d,[ str ]).
+html_comp_i(18,'Controlname','SidebarMenu',v,[ str ]).
+html_comp_i(18,'Title','',d,[ str ]).
+html_comp_i(18,'Class','ch-sidebar',d,[ str ]).
+html_comp_i(18,'Footertext','',d,[ str ]).
+html_comp_i(18,'Distancetotop',0,d,[ num ]).
+html_comp_i(18,'Collapsible',-1,d,[ bool ]).
+html_comp_i(18,'Sidebaritems',[ t('Sidebaritems',23) ],v,[ params ]).
+html_comp_i(18,'Sidebaritemscurrentindex',0,d,[ num ]).
+html_comp_i(18,'Activeitemid','',d,[ str ]).
+html_comp_i(18,'Selecteditemtarget','',d,[ str ]).
+html_comp_i(18,'Iscollapsed',0,d,[ bool ]).
+html_comp_i(18,'Iconautocolor',0,d,[ bool ]).
+html_comp_i(18,'Setsidebaritems',setSidebarItems,d,[ str ]).
+html_comp_i(18,'Getsidebaritems',getSidebarItems,d,[ str ]).
+html_comp_i(18,'Visible',-1,d,[ bool ]).
+html_comp_i(18,'Csssupportfiles',[ [ t('''Unanimo_chameleon/chameleon.css''',3) ] ],d,[ params ]).
+html_comp_i(18,'Jssupportfiles',[ [ t('''Unanimo_chameleon/chameleon.js''',3) ],[ t('''UserControls/GeneXusUnanimo.SidebarRender.js''',3) ] ],d,[ params ]).
+html_comp_i(18,'Csssharedsupportfiles',[],d,[ params ]).
+html_comp_i(18,'Jssharedsupportfiles',[],d,[ params ]).
+html_comp_i(19,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(19,'Class','col-xs-12',v,[ str ]).
+html_comp_i(19,'Id','',d,[ str ]).
+html_comp_i(19,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(19,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(19,'Semanticcontent',div,d,[ str ]).
+html_comp_i(19,'Align',left,d,[ str ]).
+html_comp_i(19,'Valign',top,d,[ str ]).
+html_comp_i(20,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(20,'Class','expandible-container',v,[ str ]).
+html_comp_i(20,'Id','Content',v,[ str ]).
+html_comp_i(20,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(20,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(20,'Semanticcontent',div,d,[ str ]).
+html_comp_i(20,'Align',left,d,[ str ]).
+html_comp_i(20,'Valign',top,d,[ str ]).
+html_comp_i(21,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(21,'Class',row,v,[ str ]).
+html_comp_i(21,'Id','',d,[ str ]).
+html_comp_i(21,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(21,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(21,'Semanticcontent',div,d,[ str ]).
+html_comp_i(21,'Align',left,d,[ str ]).
+html_comp_i(21,'Valign',top,d,[ str ]).
+html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(22,'Class','col-xs-12',v,[ str ]).
+html_comp_i(22,'Id','',d,[ str ]).
+html_comp_i(22,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(22,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(22,'Semanticcontent',div,d,[ str ]).
+html_comp_i(22,'Align',left,d,[ str ]).
+html_comp_i(22,'Valign',top,d,[ str ]).
+html_comp_i(23,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(23,'Controlname','Contentholder',v,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(8,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-68'),[ ctlname('Image2') ]).
+lit_i(7,1,div(7),[ ctlname('') ]).
+lit_i(10,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-40'),[ ctlname('Image1') ]).
+lit_i(9,1,div(9),[ ctlname('') ]).
+lit_i(12,1,t('Application Name',3),[ ctlname('Applicationheader') ]).
+lit_i(11,1,div(11),[ ctlname('') ]).
+lit_i(6,1,div(6),[ ctlname('Header') ]).
+lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(18,1,usercontrol(18),[ ctlname('Sidebarmenu'),ctrltype('genexusunanimo.sidebar'),el([ t('Sidebaritems',23) ]),containers([]) ]).
+lit_i(17,1,div(17),[ ctlname('') ]).
+lit_i(16,1,div(16),[ ctlname('') ]).
+lit_i(15,1,div(15),[ ctlname('Tablesidebarcontainer') ]).
+lit_i(14,1,div(14),[ ctlname('') ]).
+lit_i(23,1,comp(conthold),[ ctlname('Contentholder'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(22,1,div(22),[ ctlname('') ]).
+lit_i(21,1,div(21),[ ctlname('') ]).
+lit_i(20,1,div(20),[ ctlname('Content') ]).
+lit_i(19,1,div(19),[ ctlname('') ]).
+lit_i(13,1,div(13),[ ctlname('') ]).
+lit_i(3,1,div(3),[ ctlname('Maintable') ]).
+lit_i(2,1,div(2),[ ctlname('') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+var_prop_i(2,'Target',idBasedOn,33,v).
+var_prop_i(2,'Target','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(2,'Target','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,57,0 ],name,'GeneXusUnanimo\SidebarItems').
+struct_dt_i([ 26,57,0 ],namespace,'GeneXusUnanimo').
+struct_dt_i([ 26,57,0 ],'ObjName','SidebarItems').
+struct_dt_i([ 26,57,0 ],'ObjDesc','Sidebar Items').
+struct_dt_i([ 26,57,0 ],'ExternalName','SidebarItems').
+struct_dt_i([ 26,57,0 ],'ExternalNamespace','GeneXusUnanimo').
+struct_dt_i([ 26,57,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,57,0 ],collection,'True').
+struct_dt_i([ 26,57,0 ],datatype,[ 26,57,86 ]).
+struct_dt_i([ 26,57,0 ],'CollectionItemName','SidebarItem').
+struct_dt_i([ 26,57,0 ],'XmlName','').
+struct_dt_i([ 26,57,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,57,0 ],'XmlNamespace','').
+struct_dt_i([ 26,57,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,57,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,57,0 ],'JsonName','').
+struct_dt_i([ 26,57,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,57,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,57,0 ],isexternal,'True').
+struct_dt_i([ 26,57,86 ],name,'SidebarItem').
+struct_dt_i([ 26,57,86 ],namespace,'GeneXusUnanimo.SidebarItems').
+struct_dt_i([ 26,57,87 ],name,'SubItem').
+struct_dt_i([ 26,57,87 ],namespace,'GeneXusUnanimo.SidebarItems.SidebarItem').
+struct_dt_i([ 26,57,88 ],name,'SubSubItem').
+struct_dt_i([ 26,57,88 ],namespace,'GeneXusUnanimo.SidebarItems.SidebarItem.SubItem').
+struct_dt_i([ 26,57,0 ],fullname,'GeneXusUnanimo\SidebarItems').
+struct_dt_i([ 26,57,86 ],fullname,'GeneXusUnanimo\SidebarItems.SidebarItem').
+struct_dt_i([ 26,57,87 ],fullname,'GeneXusUnanimo\SidebarItems.SidebarItem.SubItem').
+struct_dt_i([ 26,57,88 ],fullname,'GeneXusUnanimo\SidebarItems.SidebarItem.SubItem.SubSubItem').
+ 
+struct_dt_elem_i([ 26,57,86 ],1,name,'Id').
+struct_dt_elem_i([ 26,57,86 ],1,camelname,id).
+struct_dt_elem_i([ 26,57,86 ],1,basedon,89).
+struct_dt_elem_i([ 26,57,86 ],1,length,100).
+struct_dt_elem_i([ 26,57,86 ],1,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],1,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,86 ],1,pic,'').
+struct_dt_elem_i([ 26,57,86 ],1,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],1,'ExternalName',id).
+struct_dt_elem_i([ 26,57,86 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],1,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],1,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],1,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],2,name,'Title').
+struct_dt_elem_i([ 26,57,86 ],2,camelname,title).
+struct_dt_elem_i([ 26,57,86 ],2,basedon,87).
+struct_dt_elem_i([ 26,57,86 ],2,length,100).
+struct_dt_elem_i([ 26,57,86 ],2,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,86 ],2,pic,'').
+struct_dt_elem_i([ 26,57,86 ],2,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],2,'ExternalName',title).
+struct_dt_elem_i([ 26,57,86 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],2,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],2,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],2,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],3,name,'Icon').
+struct_dt_elem_i([ 26,57,86 ],3,camelname,icon).
+struct_dt_elem_i([ 26,57,86 ],3,length,1000).
+struct_dt_elem_i([ 26,57,86 ],3,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,57,86 ],3,pic,'').
+struct_dt_elem_i([ 26,57,86 ],3,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],3,'ExternalName',icon).
+struct_dt_elem_i([ 26,57,86 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],3,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],3,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],3,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],4,name,'Target').
+struct_dt_elem_i([ 26,57,86 ],4,camelname,target).
+struct_dt_elem_i([ 26,57,86 ],4,basedon,33).
+struct_dt_elem_i([ 26,57,86 ],4,length,1000).
+struct_dt_elem_i([ 26,57,86 ],4,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],4,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,57,86 ],4,pic,'').
+struct_dt_elem_i([ 26,57,86 ],4,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],4,'ExternalName',target).
+struct_dt_elem_i([ 26,57,86 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],4,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],4,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],4,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],5,name,'Hassubitems').
+struct_dt_elem_i([ 26,57,86 ],5,camelname,hasSubItems).
+struct_dt_elem_i([ 26,57,86 ],5,length,4).
+struct_dt_elem_i([ 26,57,86 ],5,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],5,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 26,57,86 ],5,pic,'').
+struct_dt_elem_i([ 26,57,86 ],5,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],5,'ExternalName',hasSubItems).
+struct_dt_elem_i([ 26,57,86 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],5,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],5,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],5,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],6,name,'Sidebarsubitems').
+struct_dt_elem_i([ 26,57,86 ],6,camelname,'SidebarSubItems').
+struct_dt_elem_i([ 26,57,86 ],6,type,[ [ 26,57,87 ],0,0 ]).
+struct_dt_elem_i([ 26,57,86 ],6,pic,'').
+struct_dt_elem_i([ 26,57,86 ],6,collection,'True').
+struct_dt_elem_i([ 26,57,86 ],6,'ObjName','SidebarSubItems').
+struct_dt_elem_i([ 26,57,86 ],6,'ObjDesc','Sidebar Sub Items').
+struct_dt_elem_i([ 26,57,86 ],6,'CollectionItemName','SubItem').
+struct_dt_elem_i([ 26,57,86 ],6,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],6,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,57,86 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],6,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,57,86 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],6,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],6,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,57,86 ],6,'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,57,87 ],1,name,'Id').
+struct_dt_elem_i([ 26,57,87 ],1,camelname,id).
+struct_dt_elem_i([ 26,57,87 ],1,basedon,89).
+struct_dt_elem_i([ 26,57,87 ],1,length,100).
+struct_dt_elem_i([ 26,57,87 ],1,decimals,0).
+struct_dt_elem_i([ 26,57,87 ],1,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,87 ],1,pic,'').
+struct_dt_elem_i([ 26,57,87 ],1,collection,'False').
+struct_dt_elem_i([ 26,57,87 ],1,'ExternalName',id).
+struct_dt_elem_i([ 26,57,87 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,87 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,57,87 ],1,'XmlName','').
+struct_dt_elem_i([ 26,57,87 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,87 ],1,soaptype,'').
+struct_dt_elem_i([ 26,57,87 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,87 ],1,'JsonName','').
+struct_dt_elem_i([ 26,57,87 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,87 ],2,name,'Title').
+struct_dt_elem_i([ 26,57,87 ],2,camelname,title).
+struct_dt_elem_i([ 26,57,87 ],2,basedon,87).
+struct_dt_elem_i([ 26,57,87 ],2,length,100).
+struct_dt_elem_i([ 26,57,87 ],2,decimals,0).
+struct_dt_elem_i([ 26,57,87 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,87 ],2,pic,'').
+struct_dt_elem_i([ 26,57,87 ],2,collection,'False').
+struct_dt_elem_i([ 26,57,87 ],2,'ExternalName',title).
+struct_dt_elem_i([ 26,57,87 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,87 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,57,87 ],2,'XmlName','').
+struct_dt_elem_i([ 26,57,87 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,87 ],2,soaptype,'').
+struct_dt_elem_i([ 26,57,87 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,87 ],2,'JsonName','').
+struct_dt_elem_i([ 26,57,87 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,87 ],3,name,'Target').
+struct_dt_elem_i([ 26,57,87 ],3,camelname,target).
+struct_dt_elem_i([ 26,57,87 ],3,basedon,33).
+struct_dt_elem_i([ 26,57,87 ],3,length,1000).
+struct_dt_elem_i([ 26,57,87 ],3,decimals,0).
+struct_dt_elem_i([ 26,57,87 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,57,87 ],3,pic,'').
+struct_dt_elem_i([ 26,57,87 ],3,collection,'False').
+struct_dt_elem_i([ 26,57,87 ],3,'ExternalName',target).
+struct_dt_elem_i([ 26,57,87 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,87 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,57,87 ],3,'XmlName','').
+struct_dt_elem_i([ 26,57,87 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,87 ],3,soaptype,'').
+struct_dt_elem_i([ 26,57,87 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,87 ],3,'JsonName','').
+struct_dt_elem_i([ 26,57,87 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,87 ],4,name,'Hassubitems').
+struct_dt_elem_i([ 26,57,87 ],4,camelname,hasSubItems).
+struct_dt_elem_i([ 26,57,87 ],4,length,4).
+struct_dt_elem_i([ 26,57,87 ],4,decimals,0).
+struct_dt_elem_i([ 26,57,87 ],4,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 26,57,87 ],4,pic,'').
+struct_dt_elem_i([ 26,57,87 ],4,collection,'False').
+struct_dt_elem_i([ 26,57,87 ],4,'ExternalName',hasSubItems).
+struct_dt_elem_i([ 26,57,87 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,87 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,57,87 ],4,'XmlName','').
+struct_dt_elem_i([ 26,57,87 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,87 ],4,soaptype,'').
+struct_dt_elem_i([ 26,57,87 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,87 ],4,'JsonName','').
+struct_dt_elem_i([ 26,57,87 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,87 ],5,name,'Sidebarsubsubitems').
+struct_dt_elem_i([ 26,57,87 ],5,camelname,'SidebarSubSubItems').
+struct_dt_elem_i([ 26,57,87 ],5,type,[ [ 26,57,88 ],0,0 ]).
+struct_dt_elem_i([ 26,57,87 ],5,pic,'').
+struct_dt_elem_i([ 26,57,87 ],5,collection,'True').
+struct_dt_elem_i([ 26,57,87 ],5,'ObjName','SidebarSubSubItems').
+struct_dt_elem_i([ 26,57,87 ],5,'ObjDesc','Sidebar Sub Sub Items').
+struct_dt_elem_i([ 26,57,87 ],5,'CollectionItemName','SubSubItem').
+struct_dt_elem_i([ 26,57,87 ],5,'XmlName','').
+struct_dt_elem_i([ 26,57,87 ],5,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,57,87 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,87 ],5,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,57,87 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,87 ],5,'JsonName','').
+struct_dt_elem_i([ 26,57,87 ],5,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,57,87 ],5,'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,57,88 ],1,name,'Id').
+struct_dt_elem_i([ 26,57,88 ],1,camelname,id).
+struct_dt_elem_i([ 26,57,88 ],1,basedon,89).
+struct_dt_elem_i([ 26,57,88 ],1,length,100).
+struct_dt_elem_i([ 26,57,88 ],1,decimals,0).
+struct_dt_elem_i([ 26,57,88 ],1,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,88 ],1,pic,'').
+struct_dt_elem_i([ 26,57,88 ],1,collection,'False').
+struct_dt_elem_i([ 26,57,88 ],1,'ExternalName',id).
+struct_dt_elem_i([ 26,57,88 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,88 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,57,88 ],1,'XmlName','').
+struct_dt_elem_i([ 26,57,88 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,88 ],1,soaptype,'').
+struct_dt_elem_i([ 26,57,88 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,88 ],1,'JsonName','').
+struct_dt_elem_i([ 26,57,88 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,88 ],2,name,'Title').
+struct_dt_elem_i([ 26,57,88 ],2,camelname,title).
+struct_dt_elem_i([ 26,57,88 ],2,basedon,87).
+struct_dt_elem_i([ 26,57,88 ],2,length,100).
+struct_dt_elem_i([ 26,57,88 ],2,decimals,0).
+struct_dt_elem_i([ 26,57,88 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,88 ],2,pic,'').
+struct_dt_elem_i([ 26,57,88 ],2,collection,'False').
+struct_dt_elem_i([ 26,57,88 ],2,'ExternalName',title).
+struct_dt_elem_i([ 26,57,88 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,88 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,57,88 ],2,'XmlName','').
+struct_dt_elem_i([ 26,57,88 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,88 ],2,soaptype,'').
+struct_dt_elem_i([ 26,57,88 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,88 ],2,'JsonName','').
+struct_dt_elem_i([ 26,57,88 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,88 ],3,name,'Target').
+struct_dt_elem_i([ 26,57,88 ],3,camelname,target).
+struct_dt_elem_i([ 26,57,88 ],3,basedon,33).
+struct_dt_elem_i([ 26,57,88 ],3,length,1000).
+struct_dt_elem_i([ 26,57,88 ],3,decimals,0).
+struct_dt_elem_i([ 26,57,88 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,57,88 ],3,pic,'').
+struct_dt_elem_i([ 26,57,88 ],3,collection,'False').
+struct_dt_elem_i([ 26,57,88 ],3,'ExternalName',target).
+struct_dt_elem_i([ 26,57,88 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,88 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,57,88 ],3,'XmlName','').
+struct_dt_elem_i([ 26,57,88 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,88 ],3,soaptype,'').
+struct_dt_elem_i([ 26,57,88 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,88 ],3,'JsonName','').
+struct_dt_elem_i([ 26,57,88 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],7,name,'Activeitem').
+struct_dt_elem_i([ 26,57,86 ],7,camelname,activeItem).
+struct_dt_elem_i([ 26,57,86 ],7,basedon,87).
+struct_dt_elem_i([ 26,57,86 ],7,length,100).
+struct_dt_elem_i([ 26,57,86 ],7,decimals,0).
+struct_dt_elem_i([ 26,57,86 ],7,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,57,86 ],7,pic,'').
+struct_dt_elem_i([ 26,57,86 ],7,collection,'False').
+struct_dt_elem_i([ 26,57,86 ],7,'ExternalName',activeItem).
+struct_dt_elem_i([ 26,57,86 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,57,86 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,57,86 ],7,'XmlName','').
+struct_dt_elem_i([ 26,57,86 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,57,86 ],7,soaptype,'').
+struct_dt_elem_i([ 26,57,86 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,57,86 ],7,'JsonName','').
+struct_dt_elem_i([ 26,57,86 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,57,86 ],4,pic,'99/99/99').
+struct_dt_elem_i([ 26,57,87 ],3,pic,'99/99/99').
+struct_dt_elem_i([ 26,57,88 ],3,pic,'99/99/99').
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Load',1,6,[ [],[ [ t('Sidebarmenu',3),t('Title',3) ],[ t('Sidebarmenu',3),t('Distancetotop',3) ],'Sidebaritems' ] ]).
+sub_info_i(146,[ t('Sidebarmenu',3,8,7),t('Itemclick',3,8,19) ],8,11,[ [ [ t('Sidebarmenu',3),t('Selecteditemtarget',3) ] ],[] ]).
+sub_info_i(146,[ t('Sidebarmenu',3,13,7),t('Getstate',3,13,19) ],13,19,[ [ [ t('Sidebarmenu',3),t('Iscollapsed',3) ] ],[ [ t('Content',3),t('Class',3) ] ] ]).
+ 
+pgm_parm_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP',[ [ o(objectcollection('GeneXusUnanimo\SidebarItems.SidebarItem')),0,0,0 ] ],[ [ 'ReturnValue',out,[] ] ]).
+ 
+pgm_callprotocol_i(web,1,'GENERAL\UI\MASTERUNANIMOSIDEBAR','INTERNAL','Unsecure').
+pgm_callprotocol_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','INTERNAL','').
+ 
+ 
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

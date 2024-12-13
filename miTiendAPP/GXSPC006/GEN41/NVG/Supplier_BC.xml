@@ -1,0 +1,183 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>2</ObjId>
+<ObjName>Supplier_BC</ObjName>
+<ObjDesc>Supplier</ObjDesc>
+<ObjPgmName>Supplier_BC</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>nogenreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>2</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>CheckAuthentication</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>2</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>SupplierProductQuantity navigation</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>112</AttriId>
+<AttriName>SupplierActive</AttriName>
+<Description>Supplier Active</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>SupplierDescription</AttriName>
+<Description>Supplier Description</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>SupplierPhone</AttriName>
+<Description>Supplier Phone</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>32</AttriId>
+<AttriName>SupplierCreatedDate</AttriName>
+<Description>Supplier Created Date</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>SupplierModifiedDate</AttriName>
+<Description>Supplier Modified Date</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>112</AttriId>
+<AttriName>SupplierActive</AttriName>
+<Description>Supplier Active</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>SupplierDescription</AttriName>
+<Description>Supplier Description</Description></Attribute>
+<Attribute>
+<AttriId>7</AttriId>
+<AttriName>SupplierPhone</AttriName>
+<Description>Supplier Phone</Description></Attribute>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>32</AttriId>
+<AttriName>SupplierCreatedDate</AttriName>
+<Description>Supplier Created Date</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>SupplierModifiedDate</AttriName>
+<Description>Supplier Modified Date</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

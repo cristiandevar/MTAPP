@@ -1,0 +1,31 @@
+usercontrol_directory_i('genexusunanimo.switch', ['UserControls']).
+usercontrol_i('genexusunanimo.switch', ['GeneXusUnanimo.Switch','Genexusunanimo.switch']).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'id', 'Id', 'Id', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'Attribute', 'Attribute', 'Attid', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'SetAttribute', 'Setattribute', 'Setattid', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'GetAttribute', 'Getattribute', 'Getattid', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'SdtItemObject', 'Sdtitemobject', 'Prop_sdt_item_object', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'Dimensions', 'Dimensions', 'Attnumdim', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'BaseAttType', 'Baseatttype', 'Baseatttype', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'PROP_EXT_BASE_ATT_COLLECTION', 'Prop_ext_base_att_collection', 'Prop_ext_base_att_collection', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'FieldSpecifier', 'Fieldspecifier', 'Fieldspecifier', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CaptionValue', 'Captionvalue', 'Captionvalue', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CaptionClass', 'Captionclass', 'Captionclass', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CaptionStyle', 'Captionstyle', 'Captionstyle', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CaptionPosition', 'Captionposition', 'Captionposition', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'IsAbstractLayoutControl', 'Isabstractlayoutcontrol', 'Isabstractlayoutcontrol', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'InternalTitle', 'Internaltitle', 'Coltitle', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'TitleFont', 'Titlefont', 'Coltitlefont', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'TitleForeColor', 'Titleforecolor', 'Coltitlecolor', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'UserControlIsColumn', 'Usercontroliscolumn', 'Usercontroliscolumn', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.switch', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).

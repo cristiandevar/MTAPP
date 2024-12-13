@@ -1,0 +1,25 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>2a9e9aba-d2de-4801-ae7f-5e3819222daf</ObjClsGuid>
+<ObjCls>33</ObjCls>
+<ObjId>1</ObjId>
+<ObjName>General.UI.SidebarItemsDP</ObjName>
+<ObjDesc>Sidebar Items DP</ObjDesc>
+<ObjPgmName>General.UI.SidebarItemsDP</ObjPgmName>
+<ObjClsName>DataProvider</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Token>GeneXusUnanimo\SidebarItems</Token></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

@@ -1,0 +1,133 @@
+ 
+spec_i([ sdt,[ 0,4,0 ],'User','User',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,4,0 ],name,'User').
+struct_dt_i([ 0,4,0 ],namespace,mtaKB).
+struct_dt_i([ 0,4,0 ],significantName,'User').
+struct_dt_i([ 0,4,0 ],'ObjName','User').
+struct_dt_i([ 0,4,0 ],'ObjDesc','User').
+struct_dt_i([ 0,4,0 ],'ExternalName','User').
+struct_dt_i([ 0,4,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,4,0 ],key,[ 99 ]).
+struct_dt_i([ 0,4,0 ],lvl,16).
+struct_dt_i([ 0,4,0 ],fullname,'User').
+ 
+struct_dt_elem_i([ 0,4,0 ],1,name,'Userid').
+struct_dt_elem_i([ 0,4,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 0,4,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,4,0 ],1,length,6).
+struct_dt_elem_i([ 0,4,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],1,sign,0).
+struct_dt_elem_i([ 0,4,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,4,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,4,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],1,attributeid,'99').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],2,name,'Useremail').
+struct_dt_elem_i([ 0,4,0 ],2,camelname,'UserEmail').
+struct_dt_elem_i([ 0,4,0 ],2,basedon,46).
+struct_dt_elem_i([ 0,4,0 ],2,length,100).
+struct_dt_elem_i([ 0,4,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 0,4,0 ],2,pic,'').
+struct_dt_elem_i([ 0,4,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],2,attributeid,'137').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalName','UserEmail').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],3,name,'Username').
+struct_dt_elem_i([ 0,4,0 ],3,camelname,'UserName').
+struct_dt_elem_i([ 0,4,0 ],3,length,20).
+struct_dt_elem_i([ 0,4,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],3,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 0,4,0 ],3,pic,'').
+struct_dt_elem_i([ 0,4,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],3,attributeid,'100').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalName','UserName').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],4,name,'Userpassword').
+struct_dt_elem_i([ 0,4,0 ],4,camelname,'UserPassword').
+struct_dt_elem_i([ 0,4,0 ],4,length,40).
+struct_dt_elem_i([ 0,4,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],4,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 0,4,0 ],4,pic,'').
+struct_dt_elem_i([ 0,4,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],4,attributeid,'101').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalName','UserPassword').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],5,name,'Userhash').
+struct_dt_elem_i([ 0,4,0 ],5,camelname,'UserHash').
+struct_dt_elem_i([ 0,4,0 ],5,length,40).
+struct_dt_elem_i([ 0,4,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],5,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 0,4,0 ],5,pic,'').
+struct_dt_elem_i([ 0,4,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],5,attributeid,'109').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalName','UserHash').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],6,name,'Usercreateddate').
+struct_dt_elem_i([ 0,4,0 ],6,camelname,'UserCreatedDate').
+struct_dt_elem_i([ 0,4,0 ],6,length,8).
+struct_dt_elem_i([ 0,4,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],6,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,4,0 ],6,pic,'99/99/99').
+struct_dt_elem_i([ 0,4,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],6,attributeid,'102').
+struct_dt_elem_i([ 0,4,0 ],6,'ExternalName','UserCreatedDate').
+struct_dt_elem_i([ 0,4,0 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],7,name,'Usermodifieddate').
+struct_dt_elem_i([ 0,4,0 ],7,camelname,'UserModifiedDate').
+struct_dt_elem_i([ 0,4,0 ],7,length,8).
+struct_dt_elem_i([ 0,4,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],7,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,4,0 ],7,pic,'99/99/99').
+struct_dt_elem_i([ 0,4,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],7,attributeid,'103').
+struct_dt_elem_i([ 0,4,0 ],7,'ExternalName','UserModifiedDate').
+struct_dt_elem_i([ 0,4,0 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],8,name,'Roleid').
+struct_dt_elem_i([ 0,4,0 ],8,camelname,'RoleId').
+struct_dt_elem_i([ 0,4,0 ],8,basedon,92).
+struct_dt_elem_i([ 0,4,0 ],8,length,6).
+struct_dt_elem_i([ 0,4,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],8,sign,0).
+struct_dt_elem_i([ 0,4,0 ],8,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,4,0 ],8,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,4,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],8,attributeid,'104').
+struct_dt_elem_i([ 0,4,0 ],8,'ExternalName','RoleId').
+struct_dt_elem_i([ 0,4,0 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],9,name,'Rolename').
+struct_dt_elem_i([ 0,4,0 ],9,camelname,'RoleName').
+struct_dt_elem_i([ 0,4,0 ],9,basedon,93).
+struct_dt_elem_i([ 0,4,0 ],9,length,60).
+struct_dt_elem_i([ 0,4,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],9,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,4,0 ],9,pic,'').
+struct_dt_elem_i([ 0,4,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],9,attributeid,'105').
+struct_dt_elem_i([ 0,4,0 ],9,'ExternalName','RoleName').
+struct_dt_elem_i([ 0,4,0 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],10,name,'Useractive').
+struct_dt_elem_i([ 0,4,0 ],10,camelname,'UserActive').
+struct_dt_elem_i([ 0,4,0 ],10,length,4).
+struct_dt_elem_i([ 0,4,0 ],10,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],10,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,4,0 ],10,pic,'').
+struct_dt_elem_i([ 0,4,0 ],10,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],10,attributeid,'111').
+struct_dt_elem_i([ 0,4,0 ],10,'ExternalName','UserActive').
+struct_dt_elem_i([ 0,4,0 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],9,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

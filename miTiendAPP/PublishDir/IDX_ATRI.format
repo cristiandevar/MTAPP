@@ -1,0 +1,8 @@
+14.0
+6
+1       SQLSMALLINT         0       2       ""   1     model_id                         ""
+2       SQLINT              0       4       ""   2     table_id                         ""
+3       SQLSMALLINT         0       2       ""   3     index_id                         ""
+4       SQLSMALLINT         0       2       ""   4     index_position                   ""
+5       SQLINT              0       4       ""   5     attri_num                        ""
+6       SQLSMALLINT         0       2       ""   6     index_order                      ""

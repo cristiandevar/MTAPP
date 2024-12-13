@@ -1,0 +1,66 @@
+<configuration>
+   <configSections>
+      <section  name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" requirePermission="false"/>
+      <sectionGroup  name="languages" type="System.Configuration.NameValueSectionHandler">
+         <section  name="English" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+      </sectionGroup>
+   </configSections>
+   <appSettings>
+      <add  key="AppMainNamespace" value="GeneXus.Programs"/>
+      <add  key="DataStore1" value="Default"/>
+      <add  key="DataStore-Count" value="1"/>
+      <add  key="DataStore-Default" value="Default"/>
+      <add  key="Connection-Default-DBMS" value="sqlserver"/>
+      <add  key="Connection-Default-Port" value=""/>
+      <add  key="Connection-Default-LockTimeout" value="0"/>
+      <add  key="Connection-Default-LockRetryCount" value="10"/>
+      <add  key="Connection-Default-IsolationLevel" value="CR"/>
+      <add  key="Connection-Default-Datasource" value="7nl7OJOEb74Q30rakO16RKSSbIk1LkPMaRJXIvbTE1L="/>
+      <add  key="Connection-Default-User" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-Default-Password" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-Default-DB" value="mtaDB"/>
+      <add  key="Connection-Default-Schema" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-Default-Opts" value=";Integrated Security=yes;"/>
+      <add  key="Connection-Default-TrnInt" value="1"/>
+      <add  key="DateFormat" value="MDY"/>
+      <add  key="YearLimit" value="1940"/>
+      <add  key="TimeAmPmFormat" value="12"/>
+      <add  key="VER_STAMP" value="20231103.004656"/>
+      <add  key="CS_BLOB_PATH" value="PublicTempStorage"/>
+      <add  key="TMPMEDIA_DIR" value="PrivateTempStorage"/>
+      <add  key="PRINT_LAYOUT_METADATA_DIR" value="LayoutMetadata"/>
+      <add  key="StorageTimeZone" value="1"/>
+      <add  key="LOGIN_AS_USERID" value="0"/>
+      <add  key="LANGUAGE" value="eng"/>
+      <add  key="LANG_NAME" value="English"/>
+      <add  key="DECIMAL_POINT" value="."/>
+      <add  key="DATE_FMT" value="MDY"/>
+      <add  key="CTOD_DATE_FMT" value="L"/>
+      <add  key="Culture" value="en-US"/>
+      <add  key="Theme" value="mtaKB"/>
+      <add  key="UseNamedParameters" value="1"/>
+      <add  key="EnableIntegratedSecurity" value="0"/>
+      <add  key="MAX_CURSOR" value="100"/>
+      <add  key="STATIC_CONTENT" value=""/>
+      <add  key="GX_BUILD_NUMBER" value="1853160"/>
+      <add  key="CACHE_CONTENT_EXPIRATION" value="36"/>
+      <add  key="FTP_DEFAULT_USER" value="Zd8hx1OPJaolo5nN5s4nmc=="/>
+      <add  key="FTP_DEFAULT_PASSWORD" value="kvwmxbHzjMA66dQNAHRlhn=="/>
+      <add  key="ENABLE_MANAGEMENT" value="0"/>
+      <add  key="COMPRESS_HTML" value="1"/>
+      <add  key="IE_COMPATIBILITY_VIEW" value="EmulateIE7"/>
+      <add  key="DocumentType" value="HTML5"/>
+      <add  key="EXPOSE_METADATA" value="0"/>
+      <add  key="SMART_CACHING" value="0"/>
+      <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
+      <add  key="HTTP_PROTOCOL" value="Unsecure"/>
+      <add  key="SAMESITE_COOKIE" value="Lax"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="202311319534623"/>
+      <add  key="CORS_ALLOW_ORIGIN" value=""/>
+      <add  key="MaxFileUploadSize" value="528000000"/>
+   </appSettings>
+   <languages >
+      <English  code="eng" time_fmt="12" decimal_point="." thousand_sep="," date_fmt="MDY" culture="en-US"/>
+   </languages>
+   <log4net  configSource="log.config"/>
+</configuration>
