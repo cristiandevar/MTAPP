@@ -1,0 +1,485 @@
+spec_i([ proc,85,'Product Can Disabled','ProductCanDisabled',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,2,[ 15 ],[]).
+ 
+level_i(2,[ 5,[ [ 5,many ] ],[],[],[ [ [ 5 ],[ 15,17 ] ] ],[ [ [ 5 ],[] ] ],[ 15 ],'IPRODUCT',[ 5,[ [ [],'Productid',15 ] ] ],[] ]).
+level_i(3,[ 12,[ [ 12,many ],[ 10,one ] ],[],[],[ [ [ 12,10 ],[ 15,66,79,50 ] ] ],[ [ [ 12,10 ],[] ] ],[ 15 ],'IPURCHASEORDERDETAIL1',[ 12,[ [ [],15,15 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[ [ 10,[ [ 12,50,50 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [ c([ t(79,2) ],[ 79 ]),c([ t('(',0),t('isnull(',1),t(66,2),t(')',4),t('.OR.',9),t('null(',1),t(66,2),t(')',4),t('.OR.',9),t(66,2),t(=,10),t('nullvalue(',1),t(66,2),t(')',4),t('.OR.',9),t('null(',1),t(66,2),t(')',4),t(')',4) ],[ 66 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 5,15 ],[ 5,17 ] ] ]).
+ta_i(3,[ [ [ 12,15 ],[ 10,66 ],[ 10,79 ],[ 12,50 ] ] ]).
+ 
+las_i(2,[ [ 15,17 ] ]).
+las_i(3,[ [ 15,66,79,50 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ProductCanDisabled')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Procedures'))).
+rule_i(0,prop('ObjDesc','Product Can Disabled')).
+rule_i(0,prop('ObjName','ProductCanDisabled')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Productid','Candisabled','Canmessages' ],[])).
+rule_i(0,parmio([ [ 'Productid',in ],[ 'Candisabled',out ],[ 'Canmessages',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,12,[],[ [ [ [],15,15 ] ],'IPURCHASEORDERDETAIL1',[] ]).
+a_i(3,3,r,10,[],[ [ [ 12,50,50 ] ],'IPURCHASEORDER',[] ]).
+a_i(4,2,t,5,[],[ [ [ [],'Productid',15 ] ],'IPRODUCT',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,15).
+v_i(t,o,2,50).
+v_i(r,i,3,50).
+v_i(r,o,3,66).
+v_i(r,o,3,79).
+v_i(t,i,4,'Productid').
+v_i(t,o,4,15).
+v_i(t,o,4,17).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i(61,[ 'PurchaseOrderDetailId',int,6,0,'ZZZZZ9',0,'Purchase Order Detail Id','',0 ]).
+attri_i(79,[ 'PurchaseOrderActive',boolean,4,0,'',0,'Purchase Order Active','',0 ]).
+attri_i(15,[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',0 ]).
+attri_i(17,[ 'ProductStock',int,6,0,'ZZZZZ9',0,'Product Stock','',0 ]).
+attri_i(66,[ 'PurchaseOrderClosedDate',date,8,0,'99/99/99',0,'Purchase Order Closed Date','',0 ]).
+attri_i(50,[ 'PurchaseOrderId',int,6,0,'ZZZZZ9',0,'Purchase Order Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',12 ]).
+attri_i('Message',[ 'Message',o('GeneXus\Common\Messages.Message'),0,0,'',0,'Message','',11 ]).
+attri_i('Canmessages',[ 'CanMessages',o(objectcollection('GeneXus\Common\Messages.Message')),0,0,'',0,'Can Messages','',10 ]).
+attri_i('Candisabled',[ 'CanDisabled',boolean,4,0,'',0,'Can Disabled','',9 ]).
+attri_i('Productid',[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',8 ]).
+ 
+table_i(10,[ 'PurchaseOrder',[ 50,66,79 ],'Purchase Order','PurchaseOrder' ]).
+table_i(12,[ 'PurchaseOrderDetail',[ 50,61,15 ],'Detail','PurchaseOrderDetail' ]).
+table_i(5,[ 'Product',[ 15,17 ],'Product','Product' ]).
+ 
+index_i(12,[ 'IPURCHASEORDERDETAIL',u,[ 50,61 ],'IPurchaseOrderDetail' ]).
+index_i(12,[ 'IPURCHASEORDERDETAIL1',d,[ 15 ],'IPurchaseOrderDetail1' ]).
+index_i(10,[ 'IPURCHASEORDER',u,[ 50 ],'IPurchaseOrder' ]).
+index_i(5,[ 'IPRODUCT',u,[ 15 ],'IProduct' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 15,23,'Productid',= ] ],one ]).
+start_i(3,0,0,[ [ [ 15,2,15,= ] ],many ]).
+ 
+end_i(2,0,0,[ [ [ t(15,2),t(=,10),t('Productid',23) ] ] ]).
+end_i(3,0,0,[ [ [ t(15,2),t(=,10),t(15,23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(140,[ 'PurchaseOrderDate' ]).
+dom_info_i(97,[ 'Stock' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(129,[ 'MyDate' ]).
+dom_info_i(89,[ 'GeneXusUnanimo\Code' ]).
+dom_info_i(127,[ 'Percentage' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [ 50 ],[ 79,66 ],[] ]).
+break_i(2,nvg,1,[],[ [ 17 ],[ 15 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,4,4).
+b_group_i(2,1,lit,0,5,5).
+b_group_i(2,2,nvg,3,18,18).
+b_group_i(3,1,lit,0,19,19).
+b_group_i(2,3,lit,0,31,18).
+b_group_i(1,3,lit,0,35,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,1,1,cmd,0,[ t('',107,2,0),t('Candisabled',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(3,1,1,cmd,0,[]).
+b_line_i(4,2,1,cmd,5,[ t('',121,4,0),t(table,3,4,10),t(5,3,4,10) ]).
+b_line_i(6,2,1,cmd,5,[]).
+b_line_i(7,2,1,cmd,5,[ t('',109,7,0),t(17,2,5,5),t(>,10,5,18),t('0',3,5,20) ]).
+b_line_i(8,2,1,cmd,5,[ t('',107,8,0),t('Candisabled',23,5,0),t(=,10,5,0),t('FALSE',41,5,0) ]).
+b_line_i(9,2,1,cmd,5,[]).
+b_line_i(10,2,1,cmd,5,[ t('',107,10,0),t([ t('Message',23,5,0),t('Id',3,5,0) ],29,5,0),t(=,10,5,0),t('''Stock''',3,5,0) ]).
+b_line_i(11,2,1,cmd,5,[ t('',107,11,0),t([ t('Message',23,5,0),t('Description',3,5,0) ],29,5,0),t(=,10,5,0),t('''Exist stock of product''',3,5,0) ]).
+b_line_i(12,2,1,cmd,5,[]).
+b_line_i(13,2,1,cmd,5,[ t('',107,13,0),t([ t('Canmessages',23,13,3),t('add(',1,13,16) ],31,13,3),t('Message',23,5,21),t(')',4,5,29) ]).
+b_line_i(14,2,1,cmd,5,[ t('',139,14,0) ]).
+b_line_i(15,2,1,cmd,5,[ t('',111,15,0) ]).
+b_line_i(16,2,1,cmd,5,[]).
+b_line_i(17,2,1,cmd,5,[ t('',109,17,0),t('Candisabled',23,5,5) ]).
+b_line_i(18,3,1,cmd,19,[ t('',121,18,0),t(table,3,18,12),t(12,3,18,12) ]).
+b_line_i(21,3,1,cmd,19,[]).
+b_line_i(22,3,1,cmd,19,[ t('',107,22,0),t('Candisabled',23,19,0),t(=,10,19,0),t('FALSE',41,19,0) ]).
+b_line_i(23,3,1,cmd,19,[]).
+b_line_i(24,3,1,cmd,19,[ t('',107,24,0),t([ t('Message',23,19,0),t('Id',3,19,0) ],29,19,0),t(=,10,19,0),t('''Detail''',3,19,0) ]).
+b_line_i(25,3,1,cmd,19,[ t('',107,25,0),t([ t('Message',23,19,0),t('Description',3,19,0) ],29,19,0),t(=,10,19,0),t('''Purchase order nro ''',3,19,0),t(+,5,19,0),t('str(',1,19,0),t(50,2,19,0),t(',',7,19,0),t(6,3,19,0),t(',',7,19,0),t(0,3,19,0),t(')',4,19,0),t(+,5,19,0),t(''' pending with this product in their details''',3,19,0) ]).
+b_line_i(26,3,1,cmd,19,[]).
+b_line_i(27,3,1,cmd,19,[ t('',107,27,0),t([ t('Canmessages',23,27,4),t('add(',1,27,17) ],31,27,4),t('Message',23,19,22),t(')',4,19,30) ]).
+b_line_i(28,3,1,cmd,19,[]).
+b_line_i(29,3,1,cmd,19,[ t('',139,29,0) ]).
+b_line_i(30,3,1,cmd,19,[ t('',128,30,0) ]).
+b_line_i(31,2,3,cmd,18,[ t('',110,31,0) ]).
+b_line_i(32,2,3,cmd,18,[ t('',139,32,0) ]).
+b_line_i(33,2,3,cmd,18,[ t('',111,33,0) ]).
+b_line_i(34,2,3,cmd,18,[ t('',128,34,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+ 
+att_prop_i(6,50,'ExternalName','PurchaseOrderId',d).
+att_prop_i(6,50,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,50,'EmptyAsNull','Yes',d).
+att_prop_i(6,50,idBasedOn,92,v).
+att_prop_i(6,50,'AUTONUMBER','-1',d).
+att_prop_i(6,50,'AUTONUMBER_START','1',d).
+att_prop_i(6,50,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,50,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,50,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,50,'AttRegEx','',d).
+att_prop_i(6,50,'AttValidationFailedMsg','',d).
+att_prop_i(6,50,'DownloadOffline','0',d).
+att_prop_i(6,50,'VarServiceExtName','',d).
+att_prop_i(6,50,'FullName','PurchaseOrderId',v).
+att_prop_i(6,66,'ExternalName','PurchaseOrderClosedDate',d).
+att_prop_i(6,66,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,66,'EmptyAsNull','Yes',d).
+att_prop_i(6,66,idBasedOn,140,v).
+att_prop_i(6,66,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,66,'AttRegEx','',d).
+att_prop_i(6,66,'AttValidationFailedMsg','',d).
+att_prop_i(6,66,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,66,'DownloadOffline','0',d).
+att_prop_i(6,66,'VarServiceExtName','',d).
+att_prop_i(6,66,'FullName','PurchaseOrderClosedDate',v).
+att_prop_i(6,17,'ExternalName','ProductStock',d).
+att_prop_i(6,17,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,17,'EmptyAsNull','Yes',d).
+att_prop_i(6,17,idBasedOn,97,v).
+att_prop_i(6,17,'AUTONUMBER','0',d).
+att_prop_i(6,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,17,'AttRegEx','',d).
+att_prop_i(6,17,'AttValidationFailedMsg','',d).
+att_prop_i(6,17,'DownloadOffline','0',d).
+att_prop_i(6,17,'VarServiceExtName','',d).
+att_prop_i(6,17,'FullName','ProductStock',v).
+att_prop_i(6,15,'ExternalName','ProductId',d).
+att_prop_i(6,15,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,15,'EmptyAsNull','Yes',d).
+att_prop_i(6,15,idBasedOn,92,v).
+att_prop_i(6,15,'AUTONUMBER','-1',d).
+att_prop_i(6,15,'AUTONUMBER_START','1',d).
+att_prop_i(6,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,15,'AttRegEx','',d).
+att_prop_i(6,15,'AttValidationFailedMsg','',d).
+att_prop_i(6,15,'DownloadOffline','0',d).
+att_prop_i(6,15,'VarServiceExtName','',d).
+att_prop_i(6,15,'FullName','ProductId',v).
+att_prop_i(6,79,'ExternalName','PurchaseOrderActive',d).
+att_prop_i(6,79,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,79,'EmptyAsNull','Yes',d).
+att_prop_i(6,79,'ExternalStorage','-1',d).
+att_prop_i(6,79,idBasedOn,'',d).
+att_prop_i(6,79,'ATT_INITIAL_VALUE',[ t('TRUE',40) ],v).
+att_prop_i(6,79,'AttRegEx','',d).
+att_prop_i(6,79,'AttValidationFailedMsg','',d).
+att_prop_i(6,79,'DownloadOffline','0',d).
+att_prop_i(6,79,'VarServiceExtName','',d).
+att_prop_i(6,79,'FullName','PurchaseOrderActive',v).
+att_prop_i(6,61,'ExternalName','PurchaseOrderDetailId',d).
+att_prop_i(6,61,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,61,'EmptyAsNull','Yes',d).
+att_prop_i(6,61,idBasedOn,92,v).
+att_prop_i(6,61,'AUTONUMBER','-1',d).
+att_prop_i(6,61,'AUTONUMBER_START','1',d).
+att_prop_i(6,61,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,61,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,61,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,61,'AttRegEx','',d).
+att_prop_i(6,61,'AttValidationFailedMsg','',d).
+att_prop_i(6,61,'DownloadOffline','0',d).
+att_prop_i(6,61,'VarServiceExtName','',d).
+att_prop_i(6,61,'FullName','PurchaseOrderDetailId',v).
+ 
+tbl_prop_i(6,12,'AllDirSuper',[ [ 5,[ 15 ] ],[ 10,[ 50 ] ] ],v).
+tbl_prop_i(6,10,'DirSubor',[ [ 12,[ 50 ] ] ],v).
+tbl_prop_i(6,5,'DirSubor',[ [ 12,[ 15 ] ] ],v).
+tbl_prop_i(6,12,'DirSuper',[ [ 5,[ 15 ] ],[ 10,[ 50 ] ] ],v).
+ 
+tbl_att_prop_i(6,12,50,'AllowNulls',n).
+tbl_att_prop_i(6,12,61,'AllowNulls',n).
+tbl_att_prop_i(6,12,15,'AllowNulls',n).
+tbl_att_prop_i(6,10,50,'AllowNulls',n).
+tbl_att_prop_i(6,10,50,'AUTONUMBER',y).
+tbl_att_prop_i(6,10,79,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AUTONUMBER',y).
+ 
+var_prop_i(6,'Productid',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,13,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,13,0 ],'ObjName','Messages').
+struct_dt_i([ 26,13,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,13,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,13,0 ],collection,'True').
+struct_dt_i([ 26,13,0 ],datatype,[ 26,13,30 ]).
+struct_dt_i([ 26,13,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,13,0 ],'XmlName','').
+struct_dt_i([ 26,13,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,13,0 ],'XmlNamespace','').
+struct_dt_i([ 26,13,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,13,0 ],'JsonName','').
+struct_dt_i([ 26,13,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,13,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],isexternal,'True').
+struct_dt_i([ 26,13,30 ],name,'Message').
+struct_dt_i([ 26,13,30 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 26,13,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,30 ],fullname,'GeneXus\Common\Messages.Message').
+ 
+struct_dt_elem_i([ 26,13,30 ],1,name,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,length,128).
+struct_dt_elem_i([ 26,13,30 ],1,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,13,30 ],1,pic,'').
+struct_dt_elem_i([ 26,13,30 ],1,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],1,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],1,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],2,name,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,basedon,51).
+struct_dt_elem_i([ 26,13,30 ],2,length,2).
+struct_dt_elem_i([ 26,13,30 ],2,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],2,sign,0).
+struct_dt_elem_i([ 26,13,30 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,13,30 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,13,30 ],2,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],2,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],2,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],3,name,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,length,256).
+struct_dt_elem_i([ 26,13,30 ],3,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,13,30 ],3,pic,'').
+struct_dt_elem_i([ 26,13,30 ],3,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],3,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],3,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],3,'JsonInclude',idJsonEmpty).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,85,'PRODUCTCANDISABLED','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+ 
+ 
+ 
+ 
+ 
+optimize_i(3,0,[ maxrows(1) ]).
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\listproductsnamewp.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\listproductsnamewp.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\refint\listproductsnamewp.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\listproductsnamewp.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\listproductsnamewp\obj\Release\net6.0\ref\listproductsnamewp.dll

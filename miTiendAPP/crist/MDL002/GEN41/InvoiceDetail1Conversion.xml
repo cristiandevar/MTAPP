@@ -1,0 +1,180 @@
+
+<ReorgSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Table>
+<TableId>11</TableId>
+<TableName>InvoiceDetail1</TableName>
+<Description>Detail</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>InvoiceDetail1 is new</ReorgMsg>
+<ReorgAction>!</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>DetailId</AttriName>
+<Description>Detail Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>59</AttriId>
+<AttriName>DetailQuantity</AttriName>
+<Description>Detail Quantity</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>DetailHistoricPrice</AttriName>
+<Description>Detail Historic Price</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>10</Presicion>
+<Scale>2</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description>
+<TakesValueFrom></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IINVOICEDETAIL3</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>DetailId</AttriName>
+<Description>Detail Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>IINVOICEDETAIL4</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>CREATE TABLE [InvoiceDetail1] ([InvoiceId] int NOT NULL , [DetailId] int NOT NULL , [DetailQuantity] smallint NOT NULL , [DetailHistoricPrice] money NOT NULL , [ProductId] int NOT NULL , PRIMARY KEY([InvoiceId], [DetailId])) </Statement>
+<Statement>CREATE NONCLUSTERED INDEX [IINVOICEDETAIL4] ON [InvoiceDetail1] ([ProductId] )</Statement>
+<Statement>ALTER TABLE [InvoiceDetail1] ADD CONSTRAINT [IINVOICEDETAIL5] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId])</Statement>
+<Statement>ALTER TABLE [InvoiceDetail1] ADD CONSTRAINT [IINVOICEDETAIL4] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId])</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings>
+<Warning>
+<MsgCode>rgz0009</MsgCode>
+<Message>
+<Token>AutoNumber=True ignored. Attribute </Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>DetailId</AttriName>
+<Description>Detail Id</Description></Attribute>
+<Token> is not table </Token>
+<Token>InvoiceDetail1</Token>
+<Token>'s primary key.</Token></Message></Warning></Warnings>
+<Errors></Errors></ReorgSpec>

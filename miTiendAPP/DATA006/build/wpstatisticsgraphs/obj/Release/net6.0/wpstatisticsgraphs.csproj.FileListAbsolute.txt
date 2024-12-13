@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpstatisticsgraphs.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpstatisticsgraphs.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\refint\wpstatisticsgraphs.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\wpstatisticsgraphs.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpstatisticsgraphs\obj\Release\net6.0\ref\wpstatisticsgraphs.dll

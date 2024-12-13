@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\sector.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\sector.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\refint\sector.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\sector.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\sector\obj\Release\net6.0\ref\sector.dll

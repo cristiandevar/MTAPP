@@ -1,0 +1,154 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>41</ObjId>
+<ObjName>ProductUpdate</ObjName>
+<ObjDesc>Product Update</ObjDesc>
+<ObjPgmName>ProductUpdate</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0060</MsgCode>
+<Message>
+<Token>The program may be called by another program and the Commit on Exit property is set to YES</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Costpriceproductsselected</VarId>
+<VarName>&amp;CostPriceProductsSelected</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Errormessage</VarId>
+<VarName>&amp;ErrorMessage</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>FirstRows</Type>
+<MaxRows>1</MaxRows></Optimization></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>8</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Oneproduct</VarId>
+<VarName>&amp;OneProduct</VarName></Variable>
+<Token>.</Token>
+<Token>Id</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Oneproduct</VarId>
+<VarName>&amp;OneProduct</VarName></Variable>
+<Token>.</Token>
+<Token>Id</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>ProductCostPrice</AttriName>
+<Description>Product Cost Price</Description></Attribute>
+<Attribute>
+<AttriId>93</AttriId>
+<AttriName>ProductMiniumQuantityWholesale</AttriName>
+<Description>Product Minium Quantity Wholesale</Description></Attribute>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>ProductRetailProfit</AttriName>
+<Description>Product Retail Profit</Description></Attribute>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>ProductWholesaleProfit</AttriName>
+<Description>Product Wholesale Profit</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>ProductCostPrice</AttriName>
+<Description>Product Cost Price</Description></Attribute>
+<Attribute>
+<AttriId>93</AttriId>
+<AttriName>ProductMiniumQuantityWholesale</AttriName>
+<Description>Product Minium Quantity Wholesale</Description></Attribute>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>ProductRetailProfit</AttriName>
+<Description>Product Retail Profit</Description></Attribute>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>ProductWholesaleProfit</AttriName>
+<Description>Product Wholesale Profit</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

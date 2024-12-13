@@ -1,0 +1,14 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>57</ObjId>
+<ObjName>ViewProductPerishable</ObjName>
+<ObjDesc>View Product Perishable</ObjDesc>
+<ObjPgmName>ViewProductPerishable</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>specfailed</Result>
+<Warnings></Warnings>
+<Errors></Errors></ObjectSpec>

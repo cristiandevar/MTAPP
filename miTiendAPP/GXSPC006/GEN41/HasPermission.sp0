@@ -1,0 +1,420 @@
+spec_i([ proc,58,'Has Permission','HasPermission',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,2,[ 104 ],[]).
+ 
+level_i(2,[ 16,[ [ 16,many ] ],[],[],[ [ [ 16 ],[ 104,111,99 ] ] ],[ [ [ 16 ],[] ] ],[ 99 ],'IUSER',[],[] ]).
+level_i(3,[ 19,[ [ 19,many ],[ 18,one ] ],[],[],[ [ [ 19,18 ],[ 104,107,106 ] ] ],[ [ [ 19,18 ],[] ] ],[ 104 ],'IROLEPERMISSION',[ 19,[ [ [],104,104 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[ [ 18,[ [ 19,106,106 ] ] ] ]).
+ 
+lwi_i(2,[ [ c([ t(111,2) ],[ 111 ]) ] ]).
+lwi_i(3,[ [ c([ t(107,2),t(=,10),t('lower(',1),t('Permissionname',23),t(')',4) ],[ 107 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 16,104 ],[ 16,111 ],[ 16,99 ] ] ]).
+ta_i(3,[ [ [ 19,106 ],[ 19,104 ],[ 18,107 ] ] ]).
+ 
+las_i(2,[ [ 104,111,99 ] ]).
+las_i(3,[ [ 104,107,106 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','HasPermission')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Procedures'))).
+rule_i(0,prop('ObjDesc','Has Permission')).
+rule_i(0,prop('ObjName','HasPermission')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Permissionname','Has' ],[])).
+rule_i(0,parmio([ [ 'Permissionname',in ],[ 'Has',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,19,[],[ [ [ [],104,104 ] ],'IROLEPERMISSION',[] ]).
+a_i(3,3,r,18,[],[ [ [ 19,106,106 ] ],'IPERMISSION',[] ]).
+a_i(4,2,t,16,[],[ [],'IUSER',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,104).
+v_i(t,o,2,106).
+v_i(r,i,3,106).
+v_i(r,o,3,107).
+v_i(t,i,4,[]).
+v_i(t,o,4,104).
+v_i(t,o,4,111).
+v_i(t,o,4,99).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',16 ]).
+attri_i(106,[ 'PermissionId',int,6,0,'ZZZZZ9',0,'Permission Id','',0 ]).
+attri_i(107,[ 'PermissionName',svchar,60,0,'',0,'Permission Name','',0 ]).
+attri_i(104,[ 'RoleId',int,6,0,'ZZZZZ9',0,'Role Id','',0 ]).
+attri_i(99,[ 'UserId',int,6,0,'ZZZZZ9',0,'User Id','',0 ]).
+attri_i(111,[ 'UserActive',boolean,4,0,'',0,'User Active','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',12 ]).
+attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',11 ]).
+attri_i('Context',[ 'Context',o('General\UI\SDTContextSession'),0,0,'',0,'Context','',10 ]).
+attri_i('Has',[ 'Has',boolean,4,0,'',0,'Has','',9 ]).
+attri_i('Permissionname',[ 'PermissionName',svchar,60,0,'',0,'Permission Name','',8 ]).
+ 
+table_i(18,[ 'Permission',[ 106,107 ],'Permission','Permission' ]).
+table_i(19,[ 'RolePermission',[ 104,106 ],'Permission','RolePermission' ]).
+table_i(16,[ 'User',[ 99,104,111 ],'User','User' ]).
+ 
+index_i(19,[ 'IROLEPERMISSION',u,[ 104,106 ],'IRolePermission' ]).
+index_i(18,[ 'IPERMISSION',u,[ 106 ],'IPermission' ]).
+index_i(16,[ 'IUSER',u,[ 99 ],'IUser' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 99,29,[ t('Context',23),t('Userid',3) ],= ] ],one ]).
+start_i(3,0,0,[ [ [ 104,2,104,= ] ],many ]).
+ 
+end_i(2,0,0,[ [ [ t(99,2),t(=,10),t([ t('Context',23),t('Userid',3) ],29) ] ] ]).
+end_i(3,0,0,[ [ [ t(104,2),t(=,10),t(104,23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(46,[ 'GeneXus\Email' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [],[ 107 ],[] ]).
+break_i(2,nvg,1,[],[ [],[ 99,111 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,8,8).
+b_group_i(2,1,lit,0,9,9).
+b_group_i(2,2,nvg,3,11,11).
+b_group_i(3,1,lit,0,12,12).
+b_group_i(2,3,lit,0,16,14).
+b_group_i(1,3,lit,0,17,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',107,1,0),t('Has',23,0,0),t(=,10,0,0),t('FALSE',41,0,0) ]).
+b_line_i(2,1,1,cmd,0,[ t('',104,2,0),t(o(1,'GetContext'),28,0,1),t('Context',23,0,12),t(',',7,0,0),t('Allok',23,0,22) ]).
+b_line_i(3,1,1,cmd,0,[]).
+b_line_i(4,1,1,cmd,0,[ t('',109,4,0),t('.NOT.',8,0,4),t('Allok',23,0,10) ]).
+b_line_i(5,1,1,cmd,0,[ t('',104,5,0),t(o(13,'WPLogIn'),28,0,2) ]).
+b_line_i(6,1,1,cmd,0,[ t('',111,6,0) ]).
+b_line_i(7,1,1,cmd,0,[]).
+b_line_i(8,2,1,cmd,9,[ t('',121,8,0),t(table,3,8,10),t(16,3,8,10) ]).
+b_line_i(11,3,1,cmd,12,[ t('',121,11,0),t(table,3,11,11),t(19,3,11,11) ]).
+b_line_i(13,3,1,cmd,12,[ t('',107,13,0),t('Has',23,12,0),t(=,10,12,0),t('TRUE',40,12,0) ]).
+b_line_i(14,3,1,cmd,12,[ t('',139,14,0) ]).
+b_line_i(15,3,1,cmd,12,[ t('',128,15,0) ]).
+b_line_i(16,2,3,cmd,14,[ t('',128,16,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+calling_main_i(1,37).
+calling_main_i(1,110).
+ 
+att_prop_i(6,111,'ExternalName','UserActive',d).
+att_prop_i(6,111,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,111,'EmptyAsNull','Yes',d).
+att_prop_i(6,111,'ExternalStorage','-1',d).
+att_prop_i(6,111,idBasedOn,'',d).
+att_prop_i(6,111,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,111,'AttRegEx','',d).
+att_prop_i(6,111,'AttValidationFailedMsg','',d).
+att_prop_i(6,111,'DownloadOffline','0',d).
+att_prop_i(6,111,'VarServiceExtName','',d).
+att_prop_i(6,111,'FullName','UserActive',v).
+att_prop_i(6,99,'ExternalName','UserId',d).
+att_prop_i(6,99,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,99,'EmptyAsNull','Yes',d).
+att_prop_i(6,99,idBasedOn,92,v).
+att_prop_i(6,99,'AUTONUMBER','-1',d).
+att_prop_i(6,99,'AUTONUMBER_START','1',d).
+att_prop_i(6,99,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,99,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,99,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,99,'AttRegEx','',d).
+att_prop_i(6,99,'AttValidationFailedMsg','',d).
+att_prop_i(6,99,'DownloadOffline','0',d).
+att_prop_i(6,99,'VarServiceExtName','',d).
+att_prop_i(6,99,'FullName','UserId',v).
+att_prop_i(6,104,'ExternalName','RoleId',d).
+att_prop_i(6,104,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,104,'EmptyAsNull','Yes',d).
+att_prop_i(6,104,idBasedOn,92,v).
+att_prop_i(6,104,'AUTONUMBER','-1',d).
+att_prop_i(6,104,'AUTONUMBER_START','1',d).
+att_prop_i(6,104,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,104,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,104,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,104,'AttRegEx','',d).
+att_prop_i(6,104,'AttValidationFailedMsg','',d).
+att_prop_i(6,104,'DownloadOffline','0',d).
+att_prop_i(6,104,'VarServiceExtName','',d).
+att_prop_i(6,104,'FullName','RoleId',v).
+att_prop_i(6,107,'ExternalName','PermissionName',d).
+att_prop_i(6,107,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,107,'EmptyAsNull','Yes',d).
+att_prop_i(6,107,idBasedOn,93,v).
+att_prop_i(6,107,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,107,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,107,'AttRegEx','',d).
+att_prop_i(6,107,'AttValidationFailedMsg','',d).
+att_prop_i(6,107,'DownloadOffline','0',d).
+att_prop_i(6,107,'VarServiceExtName','',d).
+att_prop_i(6,107,'FullName','PermissionName',v).
+att_prop_i(6,106,'ExternalName','PermissionId',d).
+att_prop_i(6,106,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,106,'EmptyAsNull','Yes',d).
+att_prop_i(6,106,idBasedOn,92,v).
+att_prop_i(6,106,'AUTONUMBER','-1',d).
+att_prop_i(6,106,'AUTONUMBER_START','1',d).
+att_prop_i(6,106,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,106,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,106,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,106,'AttRegEx','',d).
+att_prop_i(6,106,'AttValidationFailedMsg','',d).
+att_prop_i(6,106,'DownloadOffline','0',d).
+att_prop_i(6,106,'VarServiceExtName','',d).
+att_prop_i(6,106,'FullName','PermissionId',v).
+ 
+tbl_prop_i(6,19,'AllDirSuper',[ [ 18,[ 106 ] ] ],v).
+tbl_prop_i(6,18,'DirSubor',[ [ 19,[ 106 ] ] ],v).
+tbl_prop_i(6,19,'DirSuper',[ [ 18,[ 106 ] ] ],v).
+ 
+tbl_att_prop_i(6,19,104,'AllowNulls',n).
+tbl_att_prop_i(6,19,106,'AllowNulls',n).
+tbl_att_prop_i(6,18,106,'AllowNulls',n).
+tbl_att_prop_i(6,18,106,'AUTONUMBER',y).
+tbl_att_prop_i(6,18,107,'AllowNulls',n).
+tbl_att_prop_i(6,16,99,'AllowNulls',n).
+tbl_att_prop_i(6,16,99,'AUTONUMBER',y).
+ 
+var_prop_i(6,'Permissionname',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,93,0 ],name,'General\UI\SDTContextSession').
+struct_dt_i([ 26,93,0 ],namespace,mtaKB).
+struct_dt_i([ 26,93,0 ],'ObjName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ObjDesc','SDTContext Session').
+struct_dt_i([ 26,93,0 ],'ExternalName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,93,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,93,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,93,0 ],fullname,'General\UI\SDTContextSession').
+ 
+struct_dt_elem_i([ 26,93,0 ],1,name,'Userid').
+struct_dt_elem_i([ 26,93,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 26,93,0 ],1,basedon,92).
+struct_dt_elem_i([ 26,93,0 ],1,length,6).
+struct_dt_elem_i([ 26,93,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],1,sign,0).
+struct_dt_elem_i([ 26,93,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,93,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,93,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],2,name,'Username').
+struct_dt_elem_i([ 26,93,0 ],2,camelname,'UserName').
+struct_dt_elem_i([ 26,93,0 ],2,length,20).
+struct_dt_elem_i([ 26,93,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],2,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,93,0 ],2,pic,'').
+struct_dt_elem_i([ 26,93,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalName','UserName').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(web,112,'WPLOGIN',[],[]).
+pgm_parm_i(proc,54,'GETCONTEXT',[ [ o('General\UI\SDTContextSession'),0,0,0 ],[ boolean,4,0,0 ] ],[ [ 'Context',out,[] ],[ 'AllOk',inout,[] ] ]).
+ 
+pgm_callprotocol_i(proc,58,'HASPERMISSION','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,112,'WPLOGIN','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,54,'GETCONTEXT','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+optimize_i(3,0,[ maxrows(1) ]).
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,30 @@
+{{=<% %>=}}
+<div class="dropdown">
+	<div class="dd-flex-container">
+		<div class="dd-vertical-separator" id="ddSeparator"></div>
+		<div *ngIf="UserFullName" class="dd-text-container" id="textContainer">
+			<div class="row"> <span class="dd-username">{{gxTpr_UserFullName}}{{UserFullName}}</span> </div>
+			<div class="row"> <span class="dd-companyname">{{gxTpr_UserCompany}}{{UserCompany}}</span> </div>
+		</div>
+		<div class="dd-avatar-container" id="imgContainer">
+			<img *ngIf="UserPhoto" [attr.src]="UserPhoto" class="dd-avatar">
+		</div>
+	</div> 
+	<div class="dropdown-content">
+	
+		<ng-container *ngFor="let dropItem of DropdownItems">
+			<div *ngIf="dropItem.separator" class="dd-dropdown-separator"></div>
+			<div id="{{gxTpr_dropItem.id}}{{dropItem.id}}" class="dd-option-container" (click)="SelectedItemId=dropItem.id; SelectedItemTarget=dropItem.link; ItemClick();"> 
+				<img alt="{{gxTpr_dropItem.alternativeText}}{{dropItem.alternativeText}}" class="dd-option-icon" src="{{gxTpr_dropItem.icon}}{{dropItem.icon}}"> 
+				<span class="dd-option">{{gxTpr_dropItem.title}}{{dropItem.title}}</span> 
+			</div>
+		</ng-container>
+		
+		<!-- default logout event -->
+		<div class="dd-option-container" <%Logout%> >
+			<img alt="logout_icon" class="dd-option-icon" src="{{gxTpr_LogoutIcon}}{{LogoutIcon}}">
+			<span class="dd-option">Logout</span>
+		</div>
+	</div>
+</div>
+

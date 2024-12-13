@@ -1,0 +1,12 @@
+usercontrol_directory_i('genexusunanimo.alertangular', ['UserControls']).
+usercontrol_i('genexusunanimo.alertangular', ['GeneXusUnanimo.AlertAngular','Genexusunanimo.alertangular']).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Type', 'Type', 'Type', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Title', 'Title', 'Title', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Message', 'Message', 'Message', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Position', 'Position', 'Position', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'ShowMultiple', 'Showmultiple', 'Showmultiple', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.alertangular', 'Count', 'Count', 'Count', [int,9,0,0], 0, any).
+usercontrol_event_mapping_i('genexusunanimo.alertangular', 'Close', 'Close').

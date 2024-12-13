@@ -1,0 +1,14 @@
+usercontrol_directory_i('genexusunanimo.treeviewangular', ['UserControls']).
+usercontrol_i('genexusunanimo.treeviewangular', ['GeneXusUnanimo.TreeviewAngular','Genexusunanimo.treeviewangular']).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'ToggleCheckboxes', 'Togglecheckboxes', 'Togglecheckboxes', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'SingleSelection', 'Singleselection', 'Singleselection', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'TreeviewItems', 'Treeviewitems', 'Treeviewitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'TreeviewItemsCurrentIndex', 'Treeviewitemscurrentindex', 'Treeviewitemscurrentindex', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'SelectedItemId', 'Selecteditemid', 'Selecteditemid', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'SelectedItemTarget', 'Selecteditemtarget', 'Selecteditemtarget', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'SetTreeviewItems', 'Settreeviewitems', 'Settreeviewitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.treeviewangular', 'GetTreeviewItems', 'Gettreeviewitems', 'Gettreeviewitems', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.treeviewangular', 'Itemclick', 'ItemClick').

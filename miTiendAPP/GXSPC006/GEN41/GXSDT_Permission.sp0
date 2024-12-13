@@ -1,0 +1,48 @@
+ 
+spec_i([ sdt,[ 0,13,0 ],'Permission','Permission',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,13,0 ],name,'Permission').
+struct_dt_i([ 0,13,0 ],namespace,mtaKB).
+struct_dt_i([ 0,13,0 ],significantName,'Permission').
+struct_dt_i([ 0,13,0 ],'ObjName','Permission').
+struct_dt_i([ 0,13,0 ],'ObjDesc','Permission').
+struct_dt_i([ 0,13,0 ],'ExternalName','Permission').
+struct_dt_i([ 0,13,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,13,0 ],key,[ 106 ]).
+struct_dt_i([ 0,13,0 ],lvl,18).
+struct_dt_i([ 0,13,0 ],fullname,'Permission').
+ 
+struct_dt_elem_i([ 0,13,0 ],1,name,'Permissionid').
+struct_dt_elem_i([ 0,13,0 ],1,camelname,'PermissionId').
+struct_dt_elem_i([ 0,13,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,13,0 ],1,length,6).
+struct_dt_elem_i([ 0,13,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,13,0 ],1,sign,0).
+struct_dt_elem_i([ 0,13,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,13,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,13,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,13,0 ],1,attributeid,'106').
+struct_dt_elem_i([ 0,13,0 ],1,'ExternalName','PermissionId').
+struct_dt_elem_i([ 0,13,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,13,0 ],2,name,'Permissionname').
+struct_dt_elem_i([ 0,13,0 ],2,camelname,'PermissionName').
+struct_dt_elem_i([ 0,13,0 ],2,basedon,93).
+struct_dt_elem_i([ 0,13,0 ],2,length,60).
+struct_dt_elem_i([ 0,13,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,13,0 ],2,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,13,0 ],2,pic,'').
+struct_dt_elem_i([ 0,13,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,13,0 ],2,attributeid,'107').
+struct_dt_elem_i([ 0,13,0 ],2,'ExternalName','PermissionName').
+struct_dt_elem_i([ 0,13,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,13,0 ],2,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').

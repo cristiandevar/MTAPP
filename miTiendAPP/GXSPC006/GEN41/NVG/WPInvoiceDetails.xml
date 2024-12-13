@@ -1,0 +1,393 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>134</ObjId>
+<ObjName>WPInvoiceDetails</ObjName>
+<ObjDesc>Details of Sale</ObjDesc>
+<ObjPgmName>WPInvoiceDetails</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>19</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>creating window</Token>
+<Sp></Sp>
+<Token>InvoiceRegister</Token>
+<Token>.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>54</ObjId>
+<ObjName>GetContext</ObjName>
+<ObjPgmName>GetContext</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Context</VarId>
+<VarName>&amp;Context</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Expression>
+<IF></IF></CALL>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>112</ObjId>
+<ObjName>WPLogIn</ObjName>
+<ObjPgmName>WPLogIn</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Grid1.Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICEDETAIL</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>98</AttriId>
+<AttriName>InvoiceDetailIsWholesale</AttriName>
+<Description>Invoice Detail Is Wholesale</Description></Attribute>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>*</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>-</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>+</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables>
+<Table>
+<TableId>6</TableId>
+<TableName>sum( InvoicePaymentMethodDiscountIm ) , sum( InvoicePaymentMethodRechargeIm )  navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table>
+<Table>
+<TableId>6</TableId>
+<TableName>sum( InvoiceDetailQuantity * InvoiceDetailHistoricPrice )  navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree></Formula></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'Ticket'</EventName></Event>
+<Event>
+<EventName>Grid2.Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>999</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICEPAYMENTMETHOD</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Attribute>
+<AttriId>120</AttriId>
+<AttriName>InvoicePaymentMethodImport</AttriName>
+<Description>Invoice Payment Method Import</Description></Attribute>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute></Into>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

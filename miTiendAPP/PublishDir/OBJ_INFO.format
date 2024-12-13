@@ -1,0 +1,13 @@
+14.0
+11
+1       SQLSMALLINT         0       2       ""   1     model_id                     ""
+2       SQLSMALLINT         0       2       ""   2     obj_class                    ""
+3       SQLINT              0       4       ""   3     obj_id                       ""
+4       SQLSMALLINT         0       2       ""   4     obj_infotype                 ""
+5       SQLSMALLINT         0       2       ""   5     row                          ""
+6       SQLSMALLINT         0       2       ""   6     col                          ""
+7       SQLSMALLINT         0       2       ""   7     scr_att                      ""
+8       SQLSMALLINT         1       2       ""   8     ref_class                    ""
+9       SQLINT              1       4       ""   9     ref_id                       ""
+10      SQLSMALLINT         0       2       ""   10    token_type                   ""
+11      SQLNCHAR            2       60      ""   11    token_value                  Latin1_General_100_CI_AS_SC_UTF8

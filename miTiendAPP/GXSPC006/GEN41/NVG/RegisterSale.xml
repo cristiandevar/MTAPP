@@ -1,0 +1,223 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>52</ObjId>
+<ObjName>RegisterSale</ObjName>
+<ObjDesc>Register Sale</ObjDesc>
+<ObjPgmName>RegisterSale</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Car</VarId>
+<VarName>&amp;Car</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Sdtinvoiceaddpaymentmethod</VarId>
+<VarName>&amp;SDTInvoiceAddPaymentMethod</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>150</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;</Token>
+<Sp></Sp>
+<Token>0</Token></Condition>
+<Condition>
+<Attribute>
+<AttriId>110</AttriId>
+<AttriName>ProductActive</AttriName>
+<Description>Product Active</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>112</AttriId>
+<AttriName>SupplierActive</AttriName>
+<Description>Supplier Active</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Productcode</VarId>
+<VarName>&amp;ProductCode</VarName></Variable></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>110</AttriId>
+<AttriName>ProductActive</AttriName>
+<Description>Product Active</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>112</AttriId>
+<AttriName>SupplierActive</AttriName>
+<Description>Supplier Active</Description></Attribute></Into>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>161</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Productidaux</VarId>
+<VarName>&amp;ProductIdAux</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Productidaux</VarId>
+<VarName>&amp;ProductIdAux</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>ProductCode</AttriName>
+<Description>Product Code</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

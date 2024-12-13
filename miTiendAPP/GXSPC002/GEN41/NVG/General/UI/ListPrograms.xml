@@ -1,0 +1,27 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>14</ObjId>
+<ObjName>General.UI.ListPrograms</ObjName>
+<ObjDesc>List Programs</ObjDesc>
+<ObjPgmName>General.UI.ListPrograms</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Programnames</VarId>
+<VarName>&amp;ProgramNames</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\gx0040.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\gx0040.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\refint\gx0040.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\gx0040.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\gx0040\obj\Release\net6.0\ref\gx0040.dll

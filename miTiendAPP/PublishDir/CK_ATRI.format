@@ -1,0 +1,7 @@
+14.0
+5
+1       SQLSMALLINT         0       2       ""   1     model_id                     ""
+2       SQLINT              0       4       ""   2     table_id                     ""
+3       SQLSMALLINT         0       2       ""   3     ck_num                       ""
+4       SQLINT              0       4       ""   4     CKAattri_num                 ""
+5       SQLSMALLINT         0       2       ""   5     position_ck                  ""

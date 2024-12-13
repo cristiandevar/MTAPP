@@ -1,0 +1,37 @@
+domain_i(126,'gxdomainorderoptionsearchproducts.cs').
+domain_i(128,'gxdomainoptionupdateprice.cs').
+domain_i(131,'gxdomainorderoptionorderpurchase.cs').
+domain_i(133,'gxdomainemaildata.cs').
+domain_i(134,'gxdomaininvoicestatevalue.cs').
+domain_i(137,'gxdomaininvoicetype.cs').
+domain_i(138,'gxdomainpurchaseorderstate.cs').
+domain_i(141,'gxdomainproductstate.cs').
+domain_i(142,'gxdomainuserstate.cs').
+domain_i(143,'gxdomainsupplierstate.cs').
+domain_i(144,'gxdomainmovementtype.cs').
+domain_i(95,'general\gxdomainpage.cs').
+domain_i(98,'gxdomaingooglecharttype.cs').
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,12,[ 104,106 ] ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,12,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,13,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,14,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,2,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,4,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,5,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,6,[ 20,118 ] ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,6,[ 20,25 ] ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,6,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,7,[ 50,61 ] ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,7,0 ]).
+sdt_map_i(41,'Invoice',[ 0,6,0 ]).
+sdt_map_i(41,'Invoice.Detail',[ 0,6,[ 20,25 ] ]).
+sdt_map_i(41,'Invoice.PaymentMethod',[ 0,6,[ 20,118 ] ]).
+sdt_map_i(41,'PaymentMethod',[ 0,14,0 ]).
+sdt_map_i(41,'Permission',[ 0,13,0 ]).
+sdt_map_i(41,'Product',[ 0,5,0 ]).
+sdt_map_i(41,'PurchaseOrder',[ 0,7,0 ]).
+sdt_map_i(41,'PurchaseOrder.Detail',[ 0,7,[ 50,61 ] ]).
+sdt_map_i(41,'Role',[ 0,12,0 ]).
+sdt_map_i(41,'Role.Permission',[ 0,12,[ 104,106 ] ]).
+sdt_map_i(41,'Supplier',[ 0,2,0 ]).
+sdt_map_i(41,'User',[ 0,4,0 ]).

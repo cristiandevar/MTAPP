@@ -1,0 +1,470 @@
+spec_i([ proc,93,'Product Get Data Code','ProductGetDataCode',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 5,[ [ 5,many ] ],[],[],[ [ [ 5 ],[ 55,85,16,89,93,87,1,9,69,19 ] ] ],[ [ [ 5 ],[] ] ],[ 15 ],'IPRODUCT',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(55,2),t(=,10),t('Productcode',23) ],[ 55 ]) ] ]).
+ 
+ 
+ 
+level_option_i(2,when_none,'GXLvl3').
+ 
+ta_i(2,[ [ [ 5,55 ],[ 5,85 ],[ 5,16 ],[ 5,89 ],[ 5,93 ],[ 5,87 ],[ 5,1 ],[ 5,9 ],[ 5,69 ],[ 5,19 ] ] ]).
+ 
+las_i(2,[ [ 55,85,16,89,93,87,1,9,69,19 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ProductGetDataCode')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Product Get Data Code')).
+rule_i(0,prop('ObjName','ProductGetDataCode')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Productcode','Productname','Productcostprice','Productretailprofit','Productminiumquantitywholesale','Productwholesaleprofit','Brandid','Sectorid','Productminiumstock','Productdescription' ],[])).
+rule_i(0,parmio([ [ 'Productcode',in ],[ 'Productname',out ],[ 'Productcostprice',inout ],[ 'Productretailprofit',inout ],[ 'Productminiumquantitywholesale',inout ],[ 'Productwholesaleprofit',inout ],[ 'Brandid',inout ],[ 'Sectorid',inout ],[ 'Productminiumstock',inout ],[ 'Productdescription',inout ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,5,[],[ [],'IPRODUCT',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,55).
+v_i(t,o,2,85).
+v_i(t,o,2,16).
+v_i(t,o,2,89).
+v_i(t,o,2,93).
+v_i(t,o,2,87).
+v_i(t,o,2,1).
+v_i(t,o,2,9).
+v_i(t,o,2,69).
+v_i(t,o,2,19).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',22 ]).
+attri_i(15,[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',0 ]).
+attri_i(55,[ 'ProductCode',svchar,100,0,'',0,'Product Code','',0 ]).
+attri_i(85,[ 'ProductCostPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Cost Price','',0 ]).
+attri_i(16,[ 'ProductName',svchar,60,0,'',0,'Product Name','',0 ]).
+attri_i(89,[ 'ProductRetailProfit',int,8,2,'ZZZZ9.99',1,'Product Retail Profit','',0 ]).
+attri_i(93,[ 'ProductMiniumQuantityWholesale',int,4,0,'ZZZ9',0,'Product Minium Quantity Wholesale','',0 ]).
+attri_i(87,[ 'ProductWholesaleProfit',int,8,2,'ZZZZ9.99',1,'Product Wholesale Profit','',0 ]).
+attri_i(1,[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',0 ]).
+attri_i(9,[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',0 ]).
+attri_i(69,[ 'ProductMiniumStock',int,6,0,'ZZZZZ9',0,'Product Minium Stock','',0 ]).
+attri_i(19,[ 'ProductDescription',svchar,200,0,'',0,'Product Description','',0 ]).
+attri_i('GXLvl3',[ 'GXLvl3',int,1,0,'',0,'',[],21 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',20 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',19 ]).
+attri_i('Productdescription',[ 'ProductDescription',svchar,200,0,'',0,'Product Description','',18 ]).
+attri_i('Productminiumstock',[ 'ProductMiniumStock',int,6,0,'ZZZZZ9',0,'Product Minium Stock','',17 ]).
+attri_i('Productminiumquantitywholesale',[ 'ProductMiniumQuantityWholesale',int,4,0,'ZZZ9',0,'Product Minium Quantity Wholesale','',16 ]).
+attri_i('Sectorid',[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',15 ]).
+attri_i('Brandid',[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',13 ]).
+attri_i('Productwholesaleprofit',[ 'ProductWholesaleProfit',int,8,2,'ZZZZ9.99',1,'Product Wholesale Profit','',12 ]).
+attri_i('Productretailprofit',[ 'ProductRetailProfit',int,8,2,'ZZZZ9.99',1,'Product Retail Profit','',11 ]).
+attri_i('Productcostprice',[ 'ProductCostPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Cost Price','',10 ]).
+attri_i('Productname',[ 'ProductName',svchar,60,0,'',0,'Product Name','',9 ]).
+attri_i('Productcode',[ 'ProductCode',svchar,100,0,'',0,'Product Code','',8 ]).
+ 
+table_i(5,[ 'Product',[ 15,16,19,1,9,55,69,85,87,89,93 ],'Product','Product' ]).
+ 
+index_i(5,[ 'IPRODUCT',u,[ 15 ],'IProduct' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(97,[ 'Stock' ]).
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(127,[ 'Percentage' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(89,[ 'GeneXusUnanimo\Code' ]).
+dom_info_i(129,[ 'MyDate' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 19,69,9,1,87,93,89,16,85 ],[ 55 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,3,3).
+b_group_i(2,1,lit,0,4,4).
+b_group_i(1,3,lit,0,18,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,1,1,cmd,0,[ t('',109,2,0),t('.NOT.',8,0,4),t('null(',1,2,23),t('Productcode',23,0,10),t(')',4,0,32) ]).
+b_line_i([ 3,0 ],1,1,cmd,0,[ t('',107,3,0),t('GXLvl3',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(3,2,1,cmd,4,[ t('',121,3,0),t(table,3,3,11),t(5,3,3,11) ]).
+b_line_i([ 3,1 ],2,1,cmd,3,[ t('',107,3,0),t('GXLvl3',23,3,0),t(=,10,3,0),t('1',3,3,0) ]).
+b_line_i(5,2,1,cmd,4,[]).
+b_line_i(6,2,1,cmd,4,[ t('',107,6,0),t('Productcostprice',23,4,0),t(=,10,4,0),t(85,2,4,0) ]).
+b_line_i(7,2,1,cmd,4,[ t('',107,7,0),t('Productname',23,4,0),t(=,10,4,0),t(16,2,4,0) ]).
+b_line_i(8,2,1,cmd,4,[ t('',107,8,0),t('Productretailprofit',23,4,0),t(=,10,4,0),t(89,2,4,0) ]).
+b_line_i(9,2,1,cmd,4,[ t('',107,9,0),t('Productminiumquantitywholesale',23,4,0),t(=,10,4,0),t(93,2,4,0) ]).
+b_line_i(10,2,1,cmd,4,[ t('',107,10,0),t('Productwholesaleprofit',23,4,0),t(=,10,4,0),t(87,2,4,0) ]).
+b_line_i(11,2,1,cmd,4,[ t('',107,11,0),t('Brandid',23,4,0),t(=,10,4,0),t(1,2,4,0) ]).
+b_line_i(12,2,1,cmd,4,[ t('',107,12,0),t('Sectorid',23,4,0),t(=,10,4,0),t(9,2,4,0) ]).
+b_line_i(13,2,1,cmd,4,[ t('',107,13,0),t('Productminiumstock',23,4,0),t(=,10,4,0),t(69,2,4,0) ]).
+b_line_i(14,2,1,cmd,4,[ t('',107,14,0),t('Productdescription',23,4,0),t(=,10,4,0),t(19,2,4,0) ]).
+b_line_i(15,2,1,cmd,4,[]).
+b_line_i(16,2,1,cmd,4,[ t('',139,16,0) ]).
+b_line_i(17,2,1,cmd,4,[ t('',128,17,0) ]).
+b_line_i([ 17,1 ],1,3,cmd,14,[ t('',109,17,0),t('GXLvl3',23,14,0),t(=,10,14,0),t('0',3,14,0) ]).
+b_line_i(18,1,3,cmd,15,[ t('',107,18,0),t([ t('Productcostprice',23,18,3),t('setempty(',1,18,21) ],31,18,3),t(')',4,15,31) ]).
+b_line_i(19,1,3,cmd,15,[ t('',107,19,0),t([ t('Productname',23,19,3),t('setempty(',1,19,16) ],31,19,3),t(')',4,15,26) ]).
+b_line_i(20,1,3,cmd,15,[ t('',107,20,0),t([ t('Productretailprofit',23,20,3),t('setempty(',1,20,24) ],31,20,3),t(')',4,15,34) ]).
+b_line_i(21,1,3,cmd,15,[ t('',107,21,0),t([ t('Productminiumquantitywholesale',23,21,3),t('setempty(',1,21,35) ],31,21,3),t(')',4,15,45) ]).
+b_line_i(22,1,3,cmd,15,[ t('',107,22,0),t([ t('Productwholesaleprofit',23,22,3),t('setempty(',1,22,27) ],31,22,3),t(')',4,15,37) ]).
+b_line_i(23,1,3,cmd,15,[ t('',107,23,0),t([ t('Brandid',23,23,3),t('setempty(',1,23,12) ],31,23,3),t(')',4,15,22) ]).
+b_line_i(24,1,3,cmd,15,[ t('',107,24,0),t([ t('Sectorid',23,24,3),t('setempty(',1,24,13) ],31,24,3),t(')',4,15,23) ]).
+b_line_i(25,1,3,cmd,15,[ t('',107,25,0),t([ t('Productminiumstock',23,25,3),t('setempty(',1,25,23) ],31,25,3),t(')',4,15,33) ]).
+b_line_i(26,1,3,cmd,15,[ t('',107,26,0),t([ t('Productdescription',23,26,3),t('setempty(',1,26,23) ],31,26,3),t(')',4,15,33) ]).
+b_line_i(27,1,3,cmd,15,[ t('',111,27,0) ]).
+b_line_i(28,1,3,cmd,15,[ t('',110,28,0) ]).
+b_line_i(29,1,3,cmd,15,[ t('',107,29,0),t([ t('Productcostprice',23,29,2),t('setempty(',1,29,20) ],31,29,2),t(')',4,15,30) ]).
+b_line_i(30,1,3,cmd,15,[ t('',107,30,0),t([ t('Productname',23,30,2),t('setempty(',1,30,15) ],31,30,2),t(')',4,15,25) ]).
+b_line_i(31,1,3,cmd,15,[ t('',107,31,0),t([ t('Productretailprofit',23,31,2),t('setempty(',1,31,23) ],31,31,2),t(')',4,15,33) ]).
+b_line_i(32,1,3,cmd,15,[ t('',107,32,0),t([ t('Productminiumquantitywholesale',23,32,2),t('setempty(',1,32,34) ],31,32,2),t(')',4,15,44) ]).
+b_line_i(33,1,3,cmd,15,[ t('',107,33,0),t([ t('Productwholesaleprofit',23,33,2),t('setempty(',1,33,26) ],31,33,2),t(')',4,15,36) ]).
+b_line_i(34,1,3,cmd,15,[ t('',107,34,0),t([ t('Brandid',23,34,2),t('setempty(',1,34,11) ],31,34,2),t(')',4,15,21) ]).
+b_line_i(35,1,3,cmd,15,[ t('',107,35,0),t([ t('Sectorid',23,35,2),t('setempty(',1,35,12) ],31,35,2),t(')',4,15,22) ]).
+b_line_i(36,1,3,cmd,15,[ t('',107,36,0),t([ t('Productminiumstock',23,36,2),t('setempty(',1,36,22) ],31,36,2),t(')',4,15,32) ]).
+b_line_i(37,1,3,cmd,15,[ t('',107,37,0),t([ t('Productdescription',23,37,2),t('setempty(',1,37,22) ],31,37,2),t(')',4,15,32) ]).
+b_line_i(38,1,3,cmd,15,[ t('',111,38,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+ 
+att_prop_i(6,19,'ExternalName','ProductDescription',d).
+att_prop_i(6,19,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,19,'EmptyAsNull','Yes',d).
+att_prop_i(6,19,idBasedOn,88,v).
+att_prop_i(6,19,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,19,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,19,'AttRegEx','',d).
+att_prop_i(6,19,'AttValidationFailedMsg','',d).
+att_prop_i(6,19,'DownloadOffline','0',d).
+att_prop_i(6,19,'VarServiceExtName','',d).
+att_prop_i(6,19,'FullName','ProductDescription',v).
+att_prop_i(6,69,'ExternalName','ProductMiniumStock',d).
+att_prop_i(6,69,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,69,'EmptyAsNull','Yes',d).
+att_prop_i(6,69,idBasedOn,97,v).
+att_prop_i(6,69,'AUTONUMBER','0',d).
+att_prop_i(6,69,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,69,'AttRegEx','',d).
+att_prop_i(6,69,'AttValidationFailedMsg','',d).
+att_prop_i(6,69,'DownloadOffline','0',d).
+att_prop_i(6,69,'VarServiceExtName','',d).
+att_prop_i(6,69,'FullName','ProductMiniumStock',v).
+att_prop_i(6,9,'ExternalName','SectorId',d).
+att_prop_i(6,9,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,9,'EmptyAsNull','Yes',d).
+att_prop_i(6,9,idBasedOn,92,v).
+att_prop_i(6,9,'AUTONUMBER','-1',d).
+att_prop_i(6,9,'AUTONUMBER_START','1',d).
+att_prop_i(6,9,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,9,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,9,'AttRegEx','',d).
+att_prop_i(6,9,'AttValidationFailedMsg','',d).
+att_prop_i(6,9,'DownloadOffline','0',d).
+att_prop_i(6,9,'VarServiceExtName','',d).
+att_prop_i(6,9,'FullName','SectorId',v).
+att_prop_i(6,1,'ExternalName','BrandId',d).
+att_prop_i(6,1,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,1,'EmptyAsNull','Yes',d).
+att_prop_i(6,1,idBasedOn,92,v).
+att_prop_i(6,1,'AUTONUMBER','-1',d).
+att_prop_i(6,1,'AUTONUMBER_START','1',d).
+att_prop_i(6,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,1,'AttRegEx','',d).
+att_prop_i(6,1,'AttValidationFailedMsg','',d).
+att_prop_i(6,1,'DownloadOffline','0',d).
+att_prop_i(6,1,'VarServiceExtName','',d).
+att_prop_i(6,1,'FullName','BrandId',v).
+att_prop_i(6,87,'ExternalName','ProductWholesaleProfit',d).
+att_prop_i(6,87,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,87,'EmptyAsNull','Yes',d).
+att_prop_i(6,87,idBasedOn,127,v).
+att_prop_i(6,87,'AUTONUMBER','0',d).
+att_prop_i(6,87,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,87,'AttRegEx','',d).
+att_prop_i(6,87,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,87,'DownloadOffline','0',d).
+att_prop_i(6,87,'VarServiceExtName','',d).
+att_prop_i(6,87,'FullName','ProductWholesaleProfit',v).
+att_prop_i(6,93,'ExternalName','ProductMiniumQuantityWholesale',d).
+att_prop_i(6,93,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,93,'EmptyAsNull','Yes',d).
+att_prop_i(6,93,idBasedOn,'',d).
+att_prop_i(6,93,'AUTONUMBER','0',d).
+att_prop_i(6,93,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,93,'AttRegEx','',d).
+att_prop_i(6,93,'AttValidationFailedMsg','',d).
+att_prop_i(6,93,'DownloadOffline','0',d).
+att_prop_i(6,93,'VarServiceExtName','',d).
+att_prop_i(6,93,'FullName','ProductMiniumQuantityWholesale',v).
+att_prop_i(6,89,'ExternalName','ProductRetailProfit',d).
+att_prop_i(6,89,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,89,'EmptyAsNull','Yes',d).
+att_prop_i(6,89,idBasedOn,127,v).
+att_prop_i(6,89,'AUTONUMBER','0',d).
+att_prop_i(6,89,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,89,'AttRegEx','',d).
+att_prop_i(6,89,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,89,'DownloadOffline','0',d).
+att_prop_i(6,89,'VarServiceExtName','',d).
+att_prop_i(6,89,'FullName','ProductRetailProfit',v).
+att_prop_i(6,16,'ExternalName','ProductName',d).
+att_prop_i(6,16,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,16,'EmptyAsNull','Yes',d).
+att_prop_i(6,16,idBasedOn,93,v).
+att_prop_i(6,16,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,16,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,16,'AttRegEx','',d).
+att_prop_i(6,16,'AttValidationFailedMsg','',d).
+att_prop_i(6,16,'DownloadOffline','0',d).
+att_prop_i(6,16,'VarServiceExtName','',d).
+att_prop_i(6,16,'FullName','ProductName',v).
+att_prop_i(6,85,'ExternalName','ProductCostPrice',d).
+att_prop_i(6,85,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,85,'EmptyAsNull','Yes',d).
+att_prop_i(6,85,idBasedOn,94,v).
+att_prop_i(6,85,'AUTONUMBER','0',d).
+att_prop_i(6,85,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,85,'AttRegEx','',d).
+att_prop_i(6,85,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,85,'DownloadOffline','0',d).
+att_prop_i(6,85,'VarServiceExtName','',d).
+att_prop_i(6,85,'FullName','ProductCostPrice',v).
+att_prop_i(6,55,'ExternalName','ProductCode',d).
+att_prop_i(6,55,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,55,'EmptyAsNull','Yes',d).
+att_prop_i(6,55,idBasedOn,89,v).
+att_prop_i(6,55,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,55,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,55,'AttRegEx','',d).
+att_prop_i(6,55,'AttValidationFailedMsg','',d).
+att_prop_i(6,55,'DownloadOffline','0',d).
+att_prop_i(6,55,'VarServiceExtName','',d).
+att_prop_i(6,55,'FullName','ProductCode',v).
+att_prop_i(6,15,'ExternalName','ProductId',d).
+att_prop_i(6,15,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,15,'EmptyAsNull','Yes',d).
+att_prop_i(6,15,idBasedOn,92,v).
+att_prop_i(6,15,'AUTONUMBER','-1',d).
+att_prop_i(6,15,'AUTONUMBER_START','1',d).
+att_prop_i(6,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,15,'AttRegEx','',d).
+att_prop_i(6,15,'AttValidationFailedMsg','',d).
+att_prop_i(6,15,'DownloadOffline','0',d).
+att_prop_i(6,15,'VarServiceExtName','',d).
+att_prop_i(6,15,'FullName','ProductId',v).
+ 
+ 
+tbl_att_prop_i(6,5,15,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AUTONUMBER',y).
+tbl_att_prop_i(6,5,16,'AllowNulls',n).
+ 
+var_prop_i(6,'Productcode',idBasedOn,'',v).
+var_prop_i(6,'Productname',idBasedOn,'',v).
+var_prop_i(6,'Productcostprice',idBasedOn,'',v).
+var_prop_i(6,'Productcostprice','AttValidationFailedMsg','Invalid Price',d).
+var_prop_i(6,'Productretailprofit',idBasedOn,'',v).
+var_prop_i(6,'Productretailprofit','AttValidationFailedMsg','GXSPC_OutOfRange',d).
+var_prop_i(6,'Productwholesaleprofit',idBasedOn,'',v).
+var_prop_i(6,'Productwholesaleprofit','AttValidationFailedMsg','GXSPC_OutOfRange',d).
+var_prop_i(6,'Brandid',idBasedOn,'',v).
+var_prop_i(6,'Sectorid',idBasedOn,'',v).
+var_prop_i(6,'Productminiumquantitywholesale',idBasedOn,'',v).
+var_prop_i(6,'Productminiumstock',idBasedOn,'',v).
+var_prop_i(6,'Productdescription',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,93,'PRODUCTGETDATACODE','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+ 
+ 
+ 
+ 
+ 
+optimize_i(2,0,[ maxrows(1) ]).
+ 
+ 
+ 
+ 
+ 

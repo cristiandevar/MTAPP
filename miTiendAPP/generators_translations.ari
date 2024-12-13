@@ -1,0 +1,23 @@
+lng_i(1,[ 'English','English',eng ]).
+lng_i(2,[ 'Spanish','Spanish',spa ]).
+ 
+lng_prop_i(1,'IsRightToLeft','0',d).
+lng_prop_i(1,'ISOLangCode','EN',v).
+lng_prop_i(1,'ISOCountryCode','US',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','ENG',v).
+lng_prop_i(1,'LangTimeFormat','12',v).
+lng_prop_i(1,'LangDecimalPoint','.',v).
+lng_prop_i(1,'FullyQualifiedName','English',d).
+lng_prop_i(2,'IsRightToLeft','0',d).
+lng_prop_i(2,'ISOLangCode','ES',v).
+lng_prop_i(2,'ISOCountryCode','ES',v).
+lng_prop_i(2,'Codepage','1252',v).
+lng_prop_i(2,'LanguageLocalization','',d).
+lng_prop_i(2,'LangDateFormat','SPA',v).
+lng_prop_i(2,'LangTimeFormat','24',v).
+lng_prop_i(2,'LangDecimalPoint',',',v).
+lng_prop_i(2,'FullyQualifiedName','Spanish',d).
+ 
+ 

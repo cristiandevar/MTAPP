@@ -1,0 +1,99 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>50</ObjId>
+<ObjName>RegisterSaleChargeProduct</ObjName>
+<ObjDesc>Register Sale Charge Product</ObjDesc>
+<ObjPgmName>RegisterSaleChargeProduct</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Caritem</VarId>
+<VarName>&amp;CarItem</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>FirstRows</Type>
+<MaxRows>1</MaxRows></Optimization></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>2</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>@ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>@ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

@@ -1,0 +1,125 @@
+ 
+spec_i([ sdt,[ 0,2,0 ],'Supplier','Supplier',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,2,0 ],name,'Supplier').
+struct_dt_i([ 0,2,0 ],namespace,mtaKB).
+struct_dt_i([ 0,2,0 ],significantName,'Supplier').
+struct_dt_i([ 0,2,0 ],'ObjName','Supplier').
+struct_dt_i([ 0,2,0 ],'ObjDesc','Supplier').
+struct_dt_i([ 0,2,0 ],'ExternalName','Supplier').
+struct_dt_i([ 0,2,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,2,0 ],key,[ 4 ]).
+struct_dt_i([ 0,2,0 ],lvl,2).
+struct_dt_i([ 0,2,0 ],fullname,'Supplier').
+ 
+struct_dt_elem_i([ 0,2,0 ],1,name,'Supplierid').
+struct_dt_elem_i([ 0,2,0 ],1,camelname,'SupplierId').
+struct_dt_elem_i([ 0,2,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,2,0 ],1,length,6).
+struct_dt_elem_i([ 0,2,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],1,sign,0).
+struct_dt_elem_i([ 0,2,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,2,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,2,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],1,attributeid,'4').
+struct_dt_elem_i([ 0,2,0 ],1,'ExternalName','SupplierId').
+struct_dt_elem_i([ 0,2,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],2,name,'Suppliername').
+struct_dt_elem_i([ 0,2,0 ],2,camelname,'SupplierName').
+struct_dt_elem_i([ 0,2,0 ],2,basedon,93).
+struct_dt_elem_i([ 0,2,0 ],2,length,60).
+struct_dt_elem_i([ 0,2,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],2,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,2,0 ],2,pic,'').
+struct_dt_elem_i([ 0,2,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],2,attributeid,'5').
+struct_dt_elem_i([ 0,2,0 ],2,'ExternalName','SupplierName').
+struct_dt_elem_i([ 0,2,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],3,name,'Supplierdescription').
+struct_dt_elem_i([ 0,2,0 ],3,camelname,'SupplierDescription').
+struct_dt_elem_i([ 0,2,0 ],3,basedon,88).
+struct_dt_elem_i([ 0,2,0 ],3,length,200).
+struct_dt_elem_i([ 0,2,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],3,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,2,0 ],3,pic,'').
+struct_dt_elem_i([ 0,2,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],3,attributeid,'6').
+struct_dt_elem_i([ 0,2,0 ],3,'ExternalName','SupplierDescription').
+struct_dt_elem_i([ 0,2,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],4,name,'Supplierphone').
+struct_dt_elem_i([ 0,2,0 ],4,camelname,'SupplierPhone').
+struct_dt_elem_i([ 0,2,0 ],4,basedon,49).
+struct_dt_elem_i([ 0,2,0 ],4,length,20).
+struct_dt_elem_i([ 0,2,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],4,type,[ 5,20,0 ]).
+struct_dt_elem_i([ 0,2,0 ],4,pic,'').
+struct_dt_elem_i([ 0,2,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],4,attributeid,'7').
+struct_dt_elem_i([ 0,2,0 ],4,'ExternalName','SupplierPhone').
+struct_dt_elem_i([ 0,2,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],5,name,'Supplieremail').
+struct_dt_elem_i([ 0,2,0 ],5,camelname,'SupplierEmail').
+struct_dt_elem_i([ 0,2,0 ],5,basedon,46).
+struct_dt_elem_i([ 0,2,0 ],5,length,100).
+struct_dt_elem_i([ 0,2,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],5,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 0,2,0 ],5,pic,'').
+struct_dt_elem_i([ 0,2,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],5,attributeid,'8').
+struct_dt_elem_i([ 0,2,0 ],5,'ExternalName','SupplierEmail').
+struct_dt_elem_i([ 0,2,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],6,name,'Suppliercreateddate').
+struct_dt_elem_i([ 0,2,0 ],6,camelname,'SupplierCreatedDate').
+struct_dt_elem_i([ 0,2,0 ],6,length,8).
+struct_dt_elem_i([ 0,2,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],6,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,2,0 ],6,pic,'99/99/99').
+struct_dt_elem_i([ 0,2,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],6,attributeid,'32').
+struct_dt_elem_i([ 0,2,0 ],6,'ExternalName','SupplierCreatedDate').
+struct_dt_elem_i([ 0,2,0 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],7,name,'Suppliermodifieddate').
+struct_dt_elem_i([ 0,2,0 ],7,camelname,'SupplierModifiedDate').
+struct_dt_elem_i([ 0,2,0 ],7,length,8).
+struct_dt_elem_i([ 0,2,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],7,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,2,0 ],7,pic,'99/99/99').
+struct_dt_elem_i([ 0,2,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],7,attributeid,'33').
+struct_dt_elem_i([ 0,2,0 ],7,'ExternalName','SupplierModifiedDate').
+struct_dt_elem_i([ 0,2,0 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],8,name,'Supplierproductquantity').
+struct_dt_elem_i([ 0,2,0 ],8,camelname,'SupplierProductQuantity').
+struct_dt_elem_i([ 0,2,0 ],8,length,4).
+struct_dt_elem_i([ 0,2,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],8,sign,0).
+struct_dt_elem_i([ 0,2,0 ],8,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,2,0 ],8,pic,'ZZZ9').
+struct_dt_elem_i([ 0,2,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],8,attributeid,'57').
+struct_dt_elem_i([ 0,2,0 ],8,'ExternalName','SupplierProductQuantity').
+struct_dt_elem_i([ 0,2,0 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],9,name,'Supplieractive').
+struct_dt_elem_i([ 0,2,0 ],9,camelname,'SupplierActive').
+struct_dt_elem_i([ 0,2,0 ],9,length,4).
+struct_dt_elem_i([ 0,2,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,2,0 ],9,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,2,0 ],9,pic,'').
+struct_dt_elem_i([ 0,2,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,2,0 ],9,attributeid,'112').
+struct_dt_elem_i([ 0,2,0 ],9,'ExternalName','SupplierActive').
+struct_dt_elem_i([ 0,2,0 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,2,0 ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,2,0 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wppaymentmethodinvoicestatistics.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wppaymentmethodinvoicestatistics.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\refint\wppaymentmethodinvoicestatistics.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\wppaymentmethodinvoicestatistics.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wppaymentmethodinvoicestatistics\obj\Release\net6.0\ref\wppaymentmethodinvoicestatistics.dll

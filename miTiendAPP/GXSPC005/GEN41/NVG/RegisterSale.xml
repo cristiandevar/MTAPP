@@ -1,0 +1,37 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>52</ObjId>
+<ObjName>RegisterSale</ObjName>
+<ObjDesc>Register Sale</ObjDesc>
+<ObjPgmName>RegisterSale</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Car</VarId>
+<VarName>&amp;Car</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

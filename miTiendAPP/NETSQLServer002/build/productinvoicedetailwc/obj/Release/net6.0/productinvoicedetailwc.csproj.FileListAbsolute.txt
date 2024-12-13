@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\productinvoicedetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\productinvoicedetailwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\refint\productinvoicedetailwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\productinvoicedetailwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\productinvoicedetailwc\obj\Release\net6.0\ref\productinvoicedetailwc.dll

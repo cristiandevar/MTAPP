@@ -1,0 +1,6 @@
+bc_dt_elem_i([ 0,14,0 ],'Paymentmethodid',allownulls,no).
+bc_dt_elem_i([ 0,14,0 ],'Paymentmethoddescription',allownulls,no).
+bc_dt_elem_i([ 0,14,0 ],'Paymentmethodactive',allownulls,no).
+bc_dt_elem_i([ 0,14,0 ],'Paymentmethoddiscount',allownulls,no).
+bc_dt_elem_i([ 0,14,0 ],'Paymentmethodrecarge',allownulls,no).
+ 

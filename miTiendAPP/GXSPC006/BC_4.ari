@@ -1,0 +1,9 @@
+bc_dt_elem_i([ 0,4,0 ],'Userid',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Username',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Userpassword',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Userhash',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Usercreateddate',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Usermodifieddate',allownulls,no).
+bc_dt_elem_i([ 0,4,0 ],'Rolename',readonly,yes).
+bc_dt_elem_i([ 0,4,0 ],'Rolename',allownulls,no).
+ 

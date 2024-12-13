@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterguest.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\general.ui.masterguest.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\refint\general.ui.masterguest.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\general.ui.masterguest.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\general.ui.masterguest\obj\Release\net6.0\ref\general.ui.masterguest.dll

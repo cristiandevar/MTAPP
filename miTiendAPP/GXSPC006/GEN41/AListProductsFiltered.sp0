@@ -1,0 +1,1138 @@
+spec_i([ proc,34,'List Products Filtered','ListProductsFiltered',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(6,1,[],[]).
+struct_i(5,2,[],[]).
+struct_i(4,2,[],[]).
+struct_i(3,2,[],[]).
+ 
+level_i(6,[ 5,[ [ 5,many ],[ 1,one ],[ 3,one ],[ 2,one ] ],[],[],[ [ [ 5,1,3,2 ],[ 110,17,55,16,1,9,4,93,28,10,2,5,89,90,85,87,88 ] ] ],[ [ [ 5,1,3,2 ],[] ] ],[ 15 ],'IPRODUCT',[],[] ]).
+level_i(5,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 1,2 ] ] ],[ [ [ 1 ],[] ] ],[ 1 ],'IBRAND',[ 1,[ [ [],'Brandid',1 ] ] ],[] ]).
+level_i(4,[ 3,[ [ 3,many ] ],[],[],[ [ [ 3 ],[ 9,10 ] ] ],[ [ [ 3 ],[] ] ],[ 9 ],'ISECTOR',[ 3,[ [ [],'Sectorid',9 ] ] ],[] ]).
+level_i(3,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 4,5 ] ] ],[ [ [ 2 ],[] ] ],[ 4 ],'ISUPPLIER',[ 2,[ [ [],'Supplierid',4 ] ] ],[] ]).
+ 
+tw_i(6,[ [ 1,[ [ 5,1,1 ] ] ],[ 3,[ [ 5,9,9 ] ] ],[ 2,[ [ 5,4,4 ] ] ] ]).
+tw_i(5,[]).
+tw_i(4,[]).
+tw_i(3,[]).
+ 
+lwi_i(6,[ [] ]).
+lwi_i(5,[ [] ]).
+lwi_i(4,[ [] ]).
+lwi_i(3,[ [] ]).
+ 
+cond_constraint_i(6,[ [ t(4,2),t(=,10),t('Supplierid',23) ],[ 4 ],[ t('.NOT.',8),t('null(',1),t('Supplierid',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(9,2),t(=,10),t('Sectorid',23) ],[ 9 ],[ t('.NOT.',8),t('null(',1),t('Sectorid',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(1,2),t(=,10),t('Brandid',23) ],[ 1 ],[ t('.NOT.',8),t('null(',1),t('Brandid',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(16,2),t('.LIKE.',10),t('Name',23) ],[ 16 ],[ t('.NOT.',8),t('null(',1),t('Name',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(55,2),t('.LIKE.',10),t('Code',23) ],[ 55 ],[ t('.NOT.',8),t('null(',1),t('Code',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(17,2),t(>=,10),t('Stockfrom',23) ],[ 17 ],[ t('.NOT.',8),t('null(',1),t('Stockfrom',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(17,2),t(<=,10),t('Stockto',23) ],[ 17 ],[ t('.NOT.',8),t('null(',1),t('Stockto',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(85,2),t(>=,10),t('Pricefrom',23) ],[ 85 ],[ t('.NOT.',8),t('null(',1),t('Pricefrom',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(85,2),t(<=,10),t('Priceto',23) ],[ 85 ],[ t('.NOT.',8),t('null(',1),t('Priceto',23),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t(110,2) ],[ 110 ],[ t('(',0),t('.NOT.',8),t('null(',1),t('Active',23),t(')',4),t('.AND.',9),t('Active',23),t(=,10),t('1',3),t(')',4) ],[] ]).
+cond_constraint_i(6,[ [ t('.NOT.',8),t(110,2) ],[ 110 ],[ t('(',0),t('.NOT.',8),t('null(',1),t('Active',23),t(')',4),t('.AND.',9),t('Active',23),t(=,10),t('2',3),t(')',4) ],[] ]).
+ 
+cond_order_i(6,[ 16 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('1',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -16 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('1',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 5 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('2',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -5 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('2',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 2 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('3',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -2 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('3',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 10 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('4',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -10 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('4',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 17 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('5',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -17 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('5',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 85 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('6',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -85 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('6',3),t('.AND.',9),t('Descending',23) ]).
+cond_order_i(6,[ 28 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('9',3),t('.AND.',9),t('.NOT.',8),t('Descending',23) ]).
+cond_order_i(6,[ -28 ],[ t('.NOT.',8),t('null(',1),t('Order',23),t(')',4),t('.AND.',9),t('Order',23),t(=,10),t('9',3),t('.AND.',9),t('Descending',23) ]).
+ 
+ 
+ta_i(6,[ [ [ 5,110 ],[ 5,17 ],[ 5,55 ],[ 5,16 ],[ 5,1 ],[ 5,9 ],[ 5,4 ],[ 5,93 ],[ 5,28 ],[ 3,10 ],[ 1,2 ],[ 2,5 ],[ 5,89 ],[ 5,85 ],[ 5,87 ] ] ]).
+ta_i(5,[ [ [ 1,1 ],[ 1,2 ] ] ]).
+ta_i(4,[ [ [ 3,9 ],[ 3,10 ] ] ]).
+ta_i(3,[ [ [ 2,4 ],[ 2,5 ] ] ]).
+ 
+las_i(6,[ [ 110,17,55,16,1,9,4,93,28,10,2,5,89,90,85,87,88 ] ]).
+las_i(5,[ [ 1,2 ] ]).
+las_i(4,[ [ 9,10 ] ]).
+las_i(3,[ [ 4,5 ] ]).
+ 
+lac_i(6,[ [] ]).
+lac_i(5,[ [] ]).
+lac_i(4,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','ListProductsFiltered')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Procedures'))).
+rule_i(0,prop('ObjDesc','List Products Filtered')).
+rule_i(0,prop('ObjName','ListProductsFiltered')).
+rule_i(0,maingen(41)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,parm([ 'Name','Supplierid','Sectorid','Brandid','Stockfrom','Stockto','Pricefrom','Priceto','Order','Descending','Active' ],[])).
+rule_i(0,parmio([ [ 'Name',in ],[ 'Supplierid',inout ],[ 'Sectorid',inout ],[ 'Brandid',inout ],[ 'Stockfrom',inout ],[ 'Stockto',inout ],[ 'Pricefrom',inout ],[ 'Priceto',inout ],[ 'Order',inout ],[ 'Descending',inout ],[ 'Active',inout ] ])).
+rule_i(0,output_file(t('List_All_Products',3),t(pdf,3))).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,2,f,'Page',[],[ [],[ t('Page',23),t(+,5),t('1',3) ] ]).
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(4,3,t,2,[],[ [ [ [],'Supplierid',4 ] ],'ISUPPLIER',[] ]).
+a_i(5,4,t,3,[],[ [ [ [],'Sectorid',9 ] ],'ISECTOR',[] ]).
+a_i(6,5,t,1,[],[ [ [ [],'Brandid',1 ] ],'IBRAND',[] ]).
+a_i(7,6,f,90,[],[ [],[ t('iif(',1),t(89,2),t(<>,10),t('0',3),t(',',7),t('udp(',1),t(90,3),t(0,3),t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(89,2),t(/,6),t('100',3),t(')',4),t(')',4),t(',',7),t('udp(',1),t(90,3),t(1,3),t(85,2),t(')',4),t(')',4),t(';',18) ] ]).
+a_i(8,6,f,88,[],[ [],[ t('iif(',1),t(87,2),t(<>,10),t('0',3),t(',',7),t('udp(',1),t(88,3),t(0,3),t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(87,2),t(/,6),t('100',3),t(')',4),t(')',4),t(',',7),t('udp(',1),t(88,3),t(1,3),t(85,2),t(')',4),t(')',4),t(';',18) ] ]).
+a_i(9,6,t,5,[],[ [],'IPRODUCT',[] ]).
+a_i(10,6,r,1,[],[ [ [ 5,1,1 ] ],'IBRAND',[] ]).
+a_i(11,6,r,3,[],[ [ [ 5,9,9 ] ],'ISECTOR',[] ]).
+a_i(12,6,r,2,[],[ [ [ 5,4,4 ] ],'ISUPPLIER',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,'Page').
+v_i(f,o,2,'Page').
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+v_i(t,i,4,'Supplierid').
+v_i(t,o,4,4).
+v_i(t,o,4,5).
+v_i(t,i,5,'Sectorid').
+v_i(t,o,5,9).
+v_i(t,o,5,10).
+v_i(t,i,6,'Brandid').
+v_i(t,o,6,1).
+v_i(t,o,6,2).
+v_i(f,i,7,89).
+v_i(f,i,7,85).
+v_i(f,o,7,90).
+v_i(f,i,8,87).
+v_i(f,i,8,85).
+v_i(f,o,8,88).
+v_i(t,i,9,[]).
+v_i(t,o,9,110).
+v_i(t,o,9,17).
+v_i(t,o,9,55).
+v_i(t,o,9,16).
+v_i(t,o,9,1).
+v_i(t,o,9,9).
+v_i(t,o,9,4).
+v_i(t,o,9,93).
+v_i(t,o,9,28).
+v_i(t,o,9,89).
+v_i(t,o,9,85).
+v_i(t,o,9,87).
+v_i(r,i,10,1).
+v_i(r,o,10,2).
+v_i(r,i,11,9).
+v_i(r,o,11,10).
+v_i(r,i,12,4).
+v_i(r,o,12,5).
+ 
+ 
+ca_i(2,'Page').
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',43 ]).
+attri_i(15,[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',0 ]).
+attri_i(89,[ 'ProductRetailProfit',int,8,2,'ZZZZ9.99',1,'Product Retail Profit','',0 ]).
+attri_i(87,[ 'ProductWholesaleProfit',int,8,2,'ZZZZ9.99',1,'Product Wholesale Profit','',0 ]).
+attri_i(4,[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',0 ]).
+attri_i(9,[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',0 ]).
+attri_i(1,[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',0 ]).
+attri_i(55,[ 'ProductCode',svchar,100,0,'',0,'Product Code','',0 ]).
+attri_i(110,[ 'ProductActive',boolean,4,0,'',0,'Product Active','',0 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',42 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',41 ]).
+attri_i(93,[ 'ProductMiniumQuantityWholesale',int,4,0,'ZZZ9',0,'Product Minium Quantity Wholesale','',0 ]).
+attri_i(88,[ 'ProductWholesalePrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Wholesale Price','',0 ]).
+attri_i(90,[ 'ProductRetailPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Retail Price','',0 ]).
+attri_i(28,[ 'ProductCreatedDate',date,8,0,'99/99/9999',0,'Product Created Date','',0 ]).
+attri_i(85,[ 'ProductCostPrice',int,18,2,'ZZZZZZZZZZZZZZ9.99',0,'Product Cost Price','',0 ]).
+attri_i(17,[ 'ProductStock',int,6,0,'ZZZZZ9',0,'Product Stock','',0 ]).
+attri_i(16,[ 'ProductName',svchar,60,0,'',0,'Product Name','',0 ]).
+attri_i(2,[ 'BrandName',svchar,60,0,'',0,'Brand Name','',0 ]).
+attri_i(10,[ 'SectorName',svchar,60,0,'',0,'Sector Name','',0 ]).
+attri_i(5,[ 'SupplierName',svchar,60,0,'',0,'Supplier Name','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',36 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',35 ]).
+attri_i('Active',[ 'Active',int,4,0,'ZZZ9',0,'Active','',34 ]).
+attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',33 ]).
+attri_i('Context',[ 'Context',o('General\UI\SDTContextSession'),0,0,'',0,'Context','',32 ]).
+attri_i('Ordertype',[ 'OrderType',char,20,0,'',0,'Order Type','',31 ]).
+attri_i('Orderby',[ 'OrderBy',char,20,0,'',0,'Order By','',30 ]).
+attri_i('Suppliername',[ 'SupplierName',svchar,60,0,'',0,'Supplier Name','',17 ]).
+attri_i('Supplierid',[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',16 ]).
+attri_i('Stockto',[ 'StockTo',int,4,0,'ZZZ9',0,'Stock To','',26 ]).
+attri_i('Stockfrom',[ 'StockFrom',int,4,0,'ZZZ9',0,'Stock From','',25 ]).
+attri_i('Sectorname',[ 'SectorName',svchar,60,0,'',0,'Sector Name','',15 ]).
+attri_i('Sectorid',[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',14 ]).
+attri_i('Products',[ 'Products',o(objectcollection('SDTProductsFiltered.SDTProductsFilteredItem')),0,0,'',0,'Products','',13 ]).
+attri_i('Priceto',[ 'PriceTo',int,4,0,'ZZZ9',0,'Price To','',28 ]).
+attri_i('Pricefrom',[ 'PriceFrom',int,4,0,'ZZZ9',0,'Price From','',27 ]).
+attri_i('Order',[ 'Order',int,1,0,'9',0,'Order','',20 ]).
+attri_i('Name',[ 'Name',svchar,60,0,'',0,'Name','',11 ]).
+attri_i('Descending',[ 'Descending',boolean,4,0,'',0,'Descending','',29 ]).
+attri_i('Count',[ 'Count',int,6,0,'ZZZZZ9',0,'Count','',21 ]).
+attri_i('Code',[ 'Code',svchar,100,0,'',0,'Code','',24 ]).
+attri_i('Brandname',[ 'BrandName',svchar,60,0,'',0,'Brand Name','',9 ]).
+attri_i('Brandid',[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',8 ]).
+ 
+table_i(2,[ 'Supplier',[ 4,5 ],'Supplier','Supplier' ]).
+table_i(1,[ 'Brand',[ 1,2 ],'Brand','Brand' ]).
+table_i(3,[ 'Sector',[ 9,10 ],'Sector','Sector' ]).
+table_i(5,[ 'Product',[ 15,16,17,1,9,4,28,55,85,87,89,93,110 ],'Product','Product' ]).
+ 
+index_i(2,[ 'ISUPPLIER',u,[ 4 ],'ISupplier' ]).
+index_i(3,[ 'ISECTOR',u,[ 9 ],'ISector' ]).
+index_i(1,[ 'IBRAND',u,[ 1 ],'IBrand' ]).
+index_i(5,[ 'IPRODUCT',u,[ 15 ],'IProduct' ]).
+index_i(5,[ 'UPRODUCT1',k,[ 16,4 ],'UProduct1' ]).
+ 
+ 
+ 
+function_i(6,88,yes,udp,o(1,'RoundValue'),[ 85 ],1,88,[ [ t(85,2) ] ]).
+function_i(6,88,yes,udp,o(1,'RoundValue'),[ 85,87 ],0,88,[ [ t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(87,2),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(6,90,yes,udp,o(1,'RoundValue'),[ 85 ],1,90,[ [ t(85,2) ] ]).
+function_i(6,90,yes,udp,o(1,'RoundValue'),[ 85,89 ],0,90,[ [ t(85,2),t(*,6),t('(',0),t('1',3),t(+,5),t(89,2),t(/,6),t('100',3),t(')',4) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sql_no_eval_hor_i(6,88).
+sql_no_eval_hor_i(6,90).
+ 
+ 
+ 
+ 
+ 
+start_i(5,0,0,[ [ [ 1,23,'Brandid',= ] ],one ]).
+start_i(4,0,0,[ [ [ 9,23,'Sectorid',= ] ],one ]).
+start_i(3,0,0,[ [ [ 4,23,'Supplierid',= ] ],one ]).
+ 
+end_i(5,0,0,[ [ [ t(1,2),t(=,10),t('Brandid',23) ] ] ]).
+end_i(4,0,0,[ [ [ t(9,2),t(=,10),t('Sectorid',23) ] ] ]).
+end_i(3,0,0,[ [ [ t(4,2),t(=,10),t('Supplierid',23) ] ] ]).
+ 
+ 
+ 
+ 
+enumerated_i(6,'Order',126).
+ 
+enum_value_i(6,126,'1','Name','"Name"',[ none ]).
+enum_value_i(6,126,'2','Supplier','"Supplier"',[ none ]).
+enum_value_i(6,126,'3','Brand','"Brand"',[ none ]).
+enum_value_i(6,126,'4','Sector','"Sector"',[ none ]).
+enum_value_i(6,126,'5','Stock','"Stock"',[ none ]).
+enum_value_i(6,126,'6','CostPrice','"Cost Price"',[ none ]).
+enum_value_i(6,126,'9','Registered','"Registered"',[ none ]).
+ 
+enum_value_info_i(6,126,'OrderOptionSearchProducts').
+ 
+enum_type_i(6,126,int,1,0).
+ 
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(97,[ 'Stock' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(129,[ 'MyDate' ]).
+dom_info_i(89,[ 'GeneXusUnanimo\Code' ]).
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(49,[ 'GeneXus\Phone' ]).
+dom_info_i(46,[ 'GeneXus\Email' ]).
+dom_info_i(127,[ 'Percentage' ]).
+dom_info_i(126,[ 'OrderOptionSearchProducts' ]).
+ 
+ 
+break_i(3,nvg,2,[],[ [ 5 ],[ 4 ],[] ]).
+break_i(4,nvg,2,[],[ [ 10 ],[ 9 ],[] ]).
+break_i(5,nvg,2,[],[ [ 2 ],[ 1 ],[] ]).
+break_i(2,page,1,[],[ [],[],[] ]).
+break_i(6,nvg,1,[],[ [ 16,5,2,10,17,85,28,90,88,93 ],[ 4,9,1,16,55,17,85,110 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,page,2,0,0).
+b_group_i(2,1,lit,0,37,49).
+b_group_i(2,2,nvg,3,40,40).
+b_group_i(3,1,lit,0,52,52).
+b_group_i(2,3,lit,0,55,53).
+b_group_i(2,4,nvg,4,45,45).
+b_group_i(4,1,lit,0,57,57).
+b_group_i(2,5,lit,0,60,57).
+b_group_i(2,6,nvg,5,50,50).
+b_group_i(5,1,lit,0,62,62).
+b_group_i(2,7,lit,0,65,73).
+b_group_i(1,3,lit,0,79,43).
+b_group_i(1,4,nvg,6,61,61).
+b_group_i(6,1,lit,0,84,85).
+b_group_i(1,5,lit,0,116,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',104,1,0),t(o(1,'GetContext'),28,0,1),t('Context',23,0,12),t(',',7,0,0),t('Allok',23,0,22) ]).
+b_line_i(2,1,1,cmd,0,[]).
+b_line_i(3,1,1,cmd,0,[ t('',109,3,0),t('.NOT.',8,0,4),t('Allok',23,0,10) ]).
+b_line_i(4,1,1,cmd,0,[ t('',104,4,0),t(o(13,'WPLogIn'),28,0,2) ]).
+b_line_i(5,1,1,cmd,0,[ t('',111,5,0) ]).
+b_line_i(6,1,1,cmd,0,[]).
+b_line_i(7,1,1,cmd,0,[]).
+b_line_i(8,1,1,cmd,0,[]).
+b_line_i(9,1,1,cmd,0,[]).
+b_line_i(10,1,1,cmd,0,[]).
+b_line_i(11,1,1,cmd,0,[]).
+b_line_i(12,1,1,cmd,0,[]).
+b_line_i(13,1,1,cmd,0,[]).
+b_line_i(14,1,1,cmd,0,[]).
+b_line_i(15,1,1,cmd,0,[]).
+b_line_i(16,1,1,cmd,0,[]).
+b_line_i(17,1,1,cmd,0,[]).
+b_line_i(18,1,1,cmd,0,[]).
+b_line_i(19,1,1,cmd,0,[]).
+b_line_i(20,1,1,cmd,0,[]).
+b_line_i(21,1,1,cmd,0,[]).
+b_line_i(22,1,1,cmd,0,[]).
+b_line_i(23,1,1,cmd,0,[]).
+b_line_i(24,1,1,cmd,0,[]).
+b_line_i(25,1,1,cmd,0,[]).
+b_line_i(26,1,1,cmd,0,[]).
+b_line_i(27,1,1,cmd,0,[]).
+b_line_i(28,1,1,cmd,0,[]).
+b_line_i(29,1,1,cmd,0,[]).
+b_line_i(30,1,1,cmd,0,[ t('',107,30,0),t('Orderby',23,0,0),t(=,10,0,0),t([ t(126,44,0,0),t('enumerationdescription(',1,0,0) ],31,0,0),t('Order',23,0,0),t(')',4,0,0) ]).
+b_line_i(31,1,1,cmd,0,[ t('',109,31,0),t('Descending',23,0,4) ]).
+b_line_i(32,1,1,cmd,0,[ t('',107,32,0),t('Ordertype',23,0,0),t(=,10,0,0),t('''Descending''',3,0,0) ]).
+b_line_i(33,1,1,cmd,0,[ t('',110,33,0) ]).
+b_line_i(34,1,1,cmd,0,[ t('',107,34,0),t('Ordertype',23,0,0),t(=,10,0,0),t('''Ascending''',3,0,0) ]).
+b_line_i(35,1,1,cmd,0,[ t('',111,35,0) ]).
+b_line_i(37,2,1,cmd,37,[ t('',109,37,0),t('null(',1,37,17),t('Supplierid',23,37,5),t(')',4,37,26),t('.AND.',9,37,28),t('null(',1,37,44),t('Sectorid',23,37,34),t(')',4,37,53),t('.AND.',9,37,55),t('null(',1,37,70),t('Brandid',23,37,61),t(')',4,37,79),t('.AND.',9,37,81),t('null(',1,37,98),t('Stockfrom',23,37,87),t(')',4,37,107),t('.AND.',9,37,109),t('null(',1,37,124),t('Stockto',23,37,115),t(')',4,37,133),t('.AND.',9,37,135),t('null(',1,37,152),t('Pricefrom',23,37,141),t(')',4,37,161),t('.AND.',9,37,163),t('null(',1,37,178),t('Priceto',23,37,169),t(')',4,37,187) ]).
+b_line_i(38,2,1,pb,37,[ t('Pbheaderempty',29,37,9) ]).
+b_line_i([ 38,0 ],2,1,line,37,[ t(' ',3,0,0) ]).
+b_line_i([ 38,1 ],2,1,line,38,[ t('List of Products',3,1,32) ]).
+b_line_i([ 38,6 ],2,1,line,43,[ t('Order :',3,6,131),t('Orderby',23,6,144),t(-,3,6,156),t('Ordertype',23,6,161) ]).
+b_line_i([ 38,9 ],2,1,line,46,[ t('Name',3,9,2),t('Supplier',3,9,31),t('Brand',3,9,58),t('Sector',3,9,78),t('Stock',3,9,97),t('Cost Price',3,9,111),t('R. Price',3,9,127),t('W. Price',3,9,144),t('Qty W.',3,9,159) ]).
+b_line_i([ 38,11 ],2,1,line,48,[ t(' ',3,11,0) ]).
+b_line_i(39,2,1,cmd,49,[ t('',110,39,0) ]).
+b_line_i(40,3,1,cmd,52,[ t('',121,40,0),t(table,3,40,12),t(2,3,40,12) ]).
+b_line_i(42,3,1,cmd,52,[ t('',107,42,0),t('Suppliername',23,52,0),t(=,10,52,0),t(5,2,52,0) ]).
+b_line_i(43,3,1,cmd,52,[ t('',128,43,0) ]).
+b_line_i(44,2,3,cmd,53,[]).
+b_line_i(45,4,1,cmd,57,[ t('',121,45,0),t(table,3,45,12),t(3,3,45,12) ]).
+b_line_i(47,4,1,cmd,57,[ t('',107,47,0),t('Sectorname',23,57,0),t(=,10,57,0),t(10,2,57,0) ]).
+b_line_i(48,4,1,cmd,57,[ t('',128,48,0) ]).
+b_line_i(49,2,5,cmd,57,[]).
+b_line_i(50,5,1,cmd,62,[ t('',121,50,0),t(table,3,50,12),t(1,3,50,12) ]).
+b_line_i(52,5,1,cmd,62,[ t('',107,52,0),t('Brandname',23,62,0),t(=,10,62,0),t(2,2,62,0) ]).
+b_line_i(53,5,1,cmd,62,[ t('',128,53,0) ]).
+b_line_i(54,2,7,pb,61,[ t('Pbheader',29,61,9) ]).
+b_line_i([ 54,0 ],2,7,line,61,[ t(' ',3,0,0) ]).
+b_line_i([ 54,1 ],2,7,line,62,[ t('List of Products',3,1,32),t('Supplier : ',3,1,95),t('Suppliername',23,1,108),t('Stock: ',3,1,131),t('Stockfrom',23,1,144),t(-,3,1,156),t('Stockto',23,1,161) ]).
+b_line_i([ 54,3 ],2,7,line,64,[ t('Sector :',3,3,95),t('Sectorname',23,3,108),t('Price :',3,3,131),t('Pricefrom',23,3,144),t(-,3,3,156),t('Priceto',23,3,161) ]).
+b_line_i([ 54,6 ],2,7,line,67,[ t('Brand :',3,6,95),t('Brandname',23,6,108),t('Order :',3,6,131),t('Orderby',23,6,144),t(-,3,6,156),t('Ordertype',23,6,161) ]).
+b_line_i([ 54,9 ],2,7,line,70,[ t('Name',3,9,2),t('Supplier',3,9,31),t('Brand',3,9,58),t('Sector',3,9,78),t('Stock',3,9,97),t('Cost Price',3,9,111),t('R. Price',3,9,127),t('W. Price',3,9,144),t('Qty W.',3,9,159) ]).
+b_line_i([ 54,11 ],2,7,line,72,[ t(' ',3,11,0) ]).
+b_line_i(55,2,7,cmd,73,[ t('',111,55,0) ]).
+b_line_i(56,2,7,cmd,73,[ t('',122,56,0) ]).
+b_line_i(57,1,3,cmd,43,[]).
+b_line_i(58,1,3,cmd,43,[]).
+b_line_i(59,1,3,cmd,43,[]).
+b_line_i(60,1,3,cmd,43,[]).
+b_line_i(61,6,1,cmd,84,[ t('',121,61,0),t(table,3,61,10),t(5,3,61,10),t('ORDER',39,61,21),t(16,2,61,27),t(when,35,61,39),t('.NOT.',8,61,44),t('null(',1,61,57),t('Order',23,61,50),t(')',4,61,66),t('.AND.',9,61,68),t('Order',23,61,74),t(=,10,61,81),t('1',3,61,83),t('.AND.',9,61,85),t('.NOT.',8,61,91),t('Descending',23,61,97),t('ORDER',39,61,111),t('(',0,61,117),t(16,2,61,118),t(')',4,61,129),t(when,35,61,131),t('.NOT.',8,61,136),t('null(',1,61,149),t('Order',23,61,142),t(')',4,61,158),t('.AND.',9,61,160),t('Order',23,61,166),t(=,10,61,173),t('1',3,61,175),t('.AND.',9,61,177),t('Descending',23,61,183),t('ORDER',39,61,197),t(5,2,61,203),t(when,35,61,216),t('.NOT.',8,61,221),t('null(',1,61,234),t('Order',23,61,227),t(')',4,61,243),t('.AND.',9,61,245),t('Order',23,61,251),t(=,10,61,258),t('2',3,61,260),t('.AND.',9,61,262),t('.NOT.',8,61,268),t('Descending',23,61,274),t('ORDER',39,61,288),t('(',0,61,294),t(5,2,61,295),t(')',4,61,307),t(when,35,61,309),t('.NOT.',8,61,314),t('null(',1,61,327),t('Order',23,61,320),t(')',4,61,336),t('.AND.',9,61,338),t('Order',23,61,344),t(=,10,61,351),t('2',3,61,353),t('.AND.',9,61,355),t('Descending',23,61,361),t('ORDER',39,61,375),t(2,2,61,381),t(when,35,61,391),t('.NOT.',8,61,396),t('null(',1,61,409),t('Order',23,61,402),t(')',4,61,418),t('.AND.',9,61,420),t('Order',23,61,426),t(=,10,61,433),t('3',3,61,435),t('.AND.',9,61,437),t('.NOT.',8,61,443),t('Descending',23,61,449),t('ORDER',39,61,463),t('(',0,61,469),t(2,2,61,470),t(')',4,61,479),t(when,35,61,481),t('.NOT.',8,61,486),t('null(',1,61,499),t('Order',23,61,492),t(')',4,61,508),t('.AND.',9,61,510),t('Order',23,61,516),t(=,10,61,523),t('3',3,61,525),t('.AND.',9,61,527),t('Descending',23,61,533),t('ORDER',39,61,547),t(10,2,61,553),t(when,35,61,564),t('.NOT.',8,61,569),t('null(',1,61,582),t('Order',23,61,575),t(')',4,61,591),t('.AND.',9,61,593),t('Order',23,61,599),t(=,10,61,606),t('4',3,61,608),t('.AND.',9,61,610),t('.NOT.',8,61,616),t('Descending',23,61,622),t('ORDER',39,61,636),t('(',0,61,642),t(10,2,61,643),t(')',4,61,653),t(when,35,61,655),t('.NOT.',8,61,660),t('null(',1,61,673),t('Order',23,61,666),t(')',4,61,682),t('.AND.',9,61,684),t('Order',23,61,690),t(=,10,61,697),t('4',3,61,699),t('.AND.',9,61,701),t('Descending',23,61,707),t('ORDER',39,61,721),t(17,2,61,727),t(when,35,61,740),t('.NOT.',8,61,745),t('null(',1,61,758),t('Order',23,61,751),t(')',4,61,767),t('.AND.',9,61,769),t('Order',23,61,775),t(=,10,61,782),t('5',3,61,784),t('.AND.',9,61,786),t('.NOT.',8,61,792),t('Descending',23,61,798),t('ORDER',39,61,812),t('(',0,61,818),t(17,2,61,819),t(')',4,61,831),t(when,35,61,833),t('.NOT.',8,61,838),t('null(',1,61,851),t('Order',23,61,844),t(')',4,61,860),t('.AND.',9,61,862),t('Order',23,61,868),t(=,10,61,875),t('5',3,61,877),t('.AND.',9,61,879),t('Descending',23,61,885),t('ORDER',39,61,899),t(85,2,61,905),t(when,35,61,922),t('.NOT.',8,61,927),t('null(',1,61,940),t('Order',23,61,933),t(')',4,61,949),t('.AND.',9,61,951),t('Order',23,61,957),t(=,10,61,964),t('6',3,61,966),t('.AND.',9,61,968),t('.NOT.',8,61,974),t('Descending',23,61,980),t('ORDER',39,61,994),t('(',0,61,1000),t(85,2,61,1001),t(')',4,61,1017),t(when,35,61,1019),t('.NOT.',8,61,1024),t('null(',1,61,1037),t('Order',23,61,1030),t(')',4,61,1046),t('.AND.',9,61,1048),t('Order',23,61,1054),t(=,10,61,1061),t('6',3,61,1063),t('.AND.',9,61,1065),t('Descending',23,61,1071),t('ORDER',39,61,1447),t(28,2,61,1453),t(when,35,61,1472),t('.NOT.',8,61,1477),t('null(',1,61,1490),t('Order',23,61,1483),t(')',4,61,1499),t('.AND.',9,61,1501),t('Order',23,61,1507),t(=,10,61,1514),t('9',3,61,1516),t('.AND.',9,61,1518),t('.NOT.',8,61,1524),t('Descending',23,61,1530),t('ORDER',39,61,1544),t('(',0,61,1550),t(28,2,61,1551),t(')',4,61,1569),t(when,35,61,1571),t('.NOT.',8,61,1576),t('null(',1,61,1589),t('Order',23,61,1582),t(')',4,61,1598),t('.AND.',9,61,1600),t('Order',23,61,1606),t(=,10,61,1613),t('9',3,61,1615),t('.AND.',9,61,1617),t('Descending',23,61,1623) ]).
+b_line_i(62,6,1,cmd,84,[]).
+b_line_i(63,6,1,cmd,84,[]).
+b_line_i(64,6,1,cmd,84,[]).
+b_line_i(65,6,1,cmd,84,[]).
+b_line_i(66,6,1,cmd,84,[]).
+b_line_i(67,6,1,cmd,84,[]).
+b_line_i(68,6,1,cmd,84,[]).
+b_line_i(69,6,1,cmd,84,[]).
+b_line_i(70,6,1,cmd,84,[]).
+b_line_i(71,6,1,cmd,84,[]).
+b_line_i(72,6,1,cmd,84,[]).
+b_line_i(73,6,1,cmd,84,[]).
+b_line_i(74,6,1,cmd,84,[]).
+b_line_i(75,6,1,cmd,84,[]).
+b_line_i(76,6,1,cmd,84,[]).
+b_line_i(77,6,1,cmd,84,[]).
+b_line_i(78,6,1,cmd,84,[]).
+b_line_i(79,6,1,cmd,84,[]).
+b_line_i(91,6,1,cmd,84,[]).
+b_line_i(92,6,1,pb,84,[ t('Pbproduct',29,84,8) ]).
+b_line_i([ 92,0 ],6,1,line,84,[ t(16,2,0,2),t(5,2,0,31),t(2,2,0,58),t(10,2,0,78),t(17,2,0,96),t(85,2,0,107),t(90,2,0,123),t(88,2,0,140),t(93,2,0,157) ]).
+b_line_i(93,6,1,cmd,85,[ t('',128,93,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',17539,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(30,38,rect(30),[ rect(20,176,1227,176),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(1),ctlname('Gxreportline2'),gxcolor([]),borderstyle(0) ]).
+lit_i(35,38,t('List of Products',3),[ font('Microsoft Sans Serif',15,[]),rect(227,26,454,119),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel15'),gxcolor([]) ]).
+lit_i(45,38,t('Cost Price',3),[ font('Microsoft Sans Serif',10,[]),rect(780,147,867,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel11'),gxcolor([]) ]).
+lit_i(46,38,t('Sector',3),[ font('Microsoft Sans Serif',10,[]),rect(547,147,605,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel12'),gxcolor([]) ]).
+lit_i(47,38,t('Stock',3),[ font('Microsoft Sans Serif',10,[]),rect(680,147,747,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel13'),gxcolor([]) ]).
+lit_i(48,38,t('Brand',3),[ font('Microsoft Sans Serif',10,[]),rect(407,147,465,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel14'),gxcolor([]) ]).
+lit_i(49,38,t('Supplier',3),[ font('Microsoft Sans Serif',10,[]),rect(220,147,292,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel16'),gxcolor([]) ]).
+lit_i(50,38,t('Name',3),[ font('Microsoft Sans Serif',10,[]),rect(20,147,79,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel17'),gxcolor([]) ]).
+lit_i(69,38,t('Order :',3),[ font('Microsoft Sans Serif',8,[]),rect(920,92,1000,119),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel24'),gxcolor([]) ]).
+lit_i(70,38,t('Ordertype',23),[ font('Microsoft Sans Serif',8,[]),rect(1133,92,1200,119),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&ordertype'),ctrltype(edit,70),ispwd(0),gxcolor([]) ]).
+lit_i(71,38,t(-,3),[ font('Microsoft Sans Serif',8,[]),rect(1093,92,1120,119),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel25'),gxcolor([]) ]).
+lit_i(72,38,t('Orderby',23),[ font('Microsoft Sans Serif',8,[]),rect(1013,92,1080,119),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&orderby'),ctrltype(edit,72),ispwd(0),gxcolor([]) ]).
+lit_i(74,38,rect(74),[ rect(20,0,1213,132),outstyle(single),fore(rgb(0,0,0)),border(1),ctlname('Gxreportrectangle2'),gxcolor([]),borderstyle(0,0,0,0),radius(0,0,0,0) ]).
+lit_i(78,38,t('Qty W.',3),[ font('Microsoft Sans Serif',10,[]),rect(1119,147,1206,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel29'),gxcolor([]) ]).
+lit_i(79,38,t('W. Price',3),[ font('Microsoft Sans Serif',10,[]),rect(1011,147,1098,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel30'),gxcolor([]) ]).
+lit_i(80,38,t('R. Price',3),[ font('Microsoft Sans Serif',10,[]),rect(892,147,979,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel31'),gxcolor([]) ]).
+lit_i(29,38,window,[ title('Text'),rect(0,0,1218,182),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Pbheaderempty'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(6,54,t('List of Products',3),[ font('Microsoft Sans Serif',15,[]),rect(227,26,454,119),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(7,54,t('Name',3),[ font('Microsoft Sans Serif',10,[]),rect(20,147,100,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel2'),gxcolor([]) ]).
+lit_i(8,54,t('Supplier',3),[ font('Microsoft Sans Serif',10,[]),rect(220,147,333,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel3'),gxcolor([]) ]).
+lit_i(9,54,t('Brand',3),[ font('Microsoft Sans Serif',10,[]),rect(407,147,487,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel4'),gxcolor([]) ]).
+lit_i(10,54,t('Stock',3),[ font('Microsoft Sans Serif',10,[]),rect(680,147,747,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel5'),gxcolor([]) ]).
+lit_i(13,54,t('Brandname',23),[ font('Microsoft Sans Serif',8,[]),rect(760,92,900,120),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&brandname'),ctrltype(edit,13),ispwd(0),gxcolor([]) ]).
+lit_i(15,54,t('Brand :',3),[ font('Microsoft Sans Serif',8,[]),rect(667,92,747,119),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
+lit_i(20,54,rect(20),[ rect(13,177,1212,177),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(1),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
+lit_i(25,54,t('Sector :',3),[ font('Microsoft Sans Serif',8,[]),rect(667,58,747,85),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel8'),gxcolor([]) ]).
+lit_i(26,54,t('Supplier : ',3),[ font('Microsoft Sans Serif',8,[]),rect(667,27,747,54),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel10'),gxcolor([]) ]).
+lit_i(27,54,t('Sectorname',23),[ font('Microsoft Sans Serif',8,[]),rect(760,58,900,86),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&sectorname'),ctrltype(edit,27),ispwd(0),gxcolor([]) ]).
+lit_i(28,54,t('Suppliername',23),[ font('Microsoft Sans Serif',8,[]),rect(760,27,900,55),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&suppliername'),ctrltype(edit,28),ispwd(0),gxcolor([]) ]).
+lit_i(43,54,t('Sector',3),[ font('Microsoft Sans Serif',10,[]),rect(547,147,627,174),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).
+lit_i(44,54,t('Cost Price',3),[ font('Microsoft Sans Serif',10,[]),rect(780,147,867,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel9'),gxcolor([]) ]).
+lit_i(57,54,t('Stock: ',3),[ font('Microsoft Sans Serif',8,[]),rect(920,27,1000,54),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel18'),gxcolor([]) ]).
+lit_i(58,54,t('Price :',3),[ font('Microsoft Sans Serif',8,[]),rect(920,58,1000,85),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel19'),gxcolor([]) ]).
+lit_i(59,54,t('Stockfrom',23),[ font('Microsoft Sans Serif',8,[]),rect(1013,27,1080,54),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&stockfrom'),ctrltype(edit,59),ispwd(0),gxcolor([]) ]).
+lit_i(60,54,t(-,3),[ font('Microsoft Sans Serif',8,[]),rect(1093,27,1120,54),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel20'),gxcolor([]) ]).
+lit_i(61,54,t('Stockto',23),[ font('Microsoft Sans Serif',8,[]),rect(1133,27,1200,54),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&stockto'),ctrltype(edit,61),ispwd(0),gxcolor([]) ]).
+lit_i(62,54,t('Priceto',23),[ font('Microsoft Sans Serif',8,[]),rect(1133,58,1200,85),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&priceto'),ctrltype(edit,62),ispwd(0),gxcolor([]) ]).
+lit_i(63,54,t(-,3),[ font('Microsoft Sans Serif',8,[]),rect(1093,58,1120,85),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel21'),gxcolor([]) ]).
+lit_i(64,54,t('Pricefrom',23),[ font('Microsoft Sans Serif',8,[]),rect(1013,58,1080,85),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&pricefrom'),ctrltype(edit,64),ispwd(0),gxcolor([]) ]).
+lit_i(65,54,t('Orderby',23),[ font('Microsoft Sans Serif',8,[]),rect(1013,92,1080,119),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&orderby'),ctrltype(edit,65),ispwd(0),gxcolor([]) ]).
+lit_i(66,54,t(-,3),[ font('Microsoft Sans Serif',8,[]),rect(1093,92,1120,119),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel22'),gxcolor([]) ]).
+lit_i(67,54,t('Ordertype',23),[ font('Microsoft Sans Serif',8,[]),rect(1133,92,1200,119),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('&ordertype'),ctrltype(edit,67),ispwd(0),gxcolor([]) ]).
+lit_i(68,54,t('Order :',3),[ font('Microsoft Sans Serif',8,[]),rect(920,92,1000,119),outstyle(none),align(right),valign(middle),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel23'),gxcolor([]) ]).
+lit_i(73,54,rect(73),[ rect(20,2,1213,134),outstyle(single),fore(rgb(0,0,0)),border(1),ctlname('Gxreportrectangle1'),gxcolor([]),borderstyle(0,0,0,0),radius(0,0,0,0) ]).
+lit_i(75,54,t('R. Price',3),[ font('Microsoft Sans Serif',10,[]),rect(892,147,979,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel26'),gxcolor([]) ]).
+lit_i(76,54,t('W. Price',3),[ font('Microsoft Sans Serif',10,[]),rect(1011,147,1098,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel27'),gxcolor([]) ]).
+lit_i(77,54,t('Qty W.',3),[ font('Microsoft Sans Serif',10,[]),rect(1119,147,1206,174),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel28'),gxcolor([]) ]).
+lit_i(1,54,window,[ title('Text'),rect(0,0,1218,182),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Pbheader'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(51,92,t(16,2),[ font('Microsoft Sans Serif',8,[]),rect(20,2,213,17),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('16'),ctrltype(edit,51),ispwd(0),gxcolor([]) ]).
+lit_i(52,92,t(5,2),[ font('Microsoft Sans Serif',8,[]),rect(220,2,387,17),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('5'),ctrltype(edit,52),ispwd(0),gxcolor([]) ]).
+lit_i(53,92,t(2,2),[ font('Microsoft Sans Serif',8,[]),rect(407,2,527,17),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('2'),ctrltype(edit,53),ispwd(0),gxcolor([]) ]).
+lit_i(54,92,t(10,2),[ font('Microsoft Sans Serif',8,[]),rect(547,2,674,17),outstyle(none),align(left),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('10'),ctrltype(edit,54),ispwd(0),gxcolor([]) ]).
+lit_i(55,92,t(17,2),[ font('Microsoft Sans Serif',8,[]),rect(672,3,747,16),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('17'),ctrltype(edit,55),ispwd(0),gxcolor([]) ]).
+lit_i(56,92,t(85,2),[ font('Microsoft Sans Serif',8,[]),rect(752,2,867,17),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('85'),ctrltype(edit,56),ispwd(0),gxcolor([]) ]).
+lit_i(81,92,t(90,2),[ font('Microsoft Sans Serif',8,[]),rect(864,2,979,17),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('90'),ctrltype(edit,81),ispwd(0),gxcolor([]) ]).
+lit_i(82,92,t(88,2),[ font('Microsoft Sans Serif',8,[]),rect(983,2,1098,17),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('88'),ctrltype(edit,82),ispwd(0),gxcolor([]) ]).
+lit_i(83,92,t(93,2),[ font('Microsoft Sans Serif',8,[]),rect(1104,2,1206,17),outstyle(none),align(right),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('93'),ctrltype(edit,83),ispwd(0),gxcolor([]) ]).
+lit_i(5,92,window,[ title('Text'),rect(0,0,1218,17),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Pbproduct'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ctrl_info_i(38,70,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(38,72,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,13,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,27,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,28,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,59,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,61,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,62,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,64,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,65,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(54,67,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ 
+ 
+calling_main_i(1,34).
+ 
+att_prop_i(6,5,'ExternalName','SupplierName',d).
+att_prop_i(6,5,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,5,'EmptyAsNull','Yes',d).
+att_prop_i(6,5,idBasedOn,93,v).
+att_prop_i(6,5,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,5,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,5,'AttRegEx','',d).
+att_prop_i(6,5,'AttValidationFailedMsg','',d).
+att_prop_i(6,5,'DownloadOffline','0',d).
+att_prop_i(6,5,'VarServiceExtName','',d).
+att_prop_i(6,5,'FullName','SupplierName',v).
+att_prop_i(6,10,'ExternalName','SectorName',d).
+att_prop_i(6,10,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,10,'EmptyAsNull','Yes',d).
+att_prop_i(6,10,idBasedOn,93,v).
+att_prop_i(6,10,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,10,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,10,'AttRegEx','',d).
+att_prop_i(6,10,'AttValidationFailedMsg','',d).
+att_prop_i(6,10,'DownloadOffline','0',d).
+att_prop_i(6,10,'VarServiceExtName','',d).
+att_prop_i(6,10,'FullName','SectorName',v).
+att_prop_i(6,2,'ExternalName','BrandName',d).
+att_prop_i(6,2,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,2,'EmptyAsNull','Yes',d).
+att_prop_i(6,2,idBasedOn,93,v).
+att_prop_i(6,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,2,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,2,'AttRegEx','',d).
+att_prop_i(6,2,'AttValidationFailedMsg','',d).
+att_prop_i(6,2,'DownloadOffline','0',d).
+att_prop_i(6,2,'VarServiceExtName','',d).
+att_prop_i(6,2,'FullName','BrandName',v).
+att_prop_i(6,16,'ExternalName','ProductName',d).
+att_prop_i(6,16,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,16,'EmptyAsNull','Yes',d).
+att_prop_i(6,16,idBasedOn,93,v).
+att_prop_i(6,16,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,16,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,16,'AttRegEx','',d).
+att_prop_i(6,16,'AttValidationFailedMsg','',d).
+att_prop_i(6,16,'DownloadOffline','0',d).
+att_prop_i(6,16,'VarServiceExtName','',d).
+att_prop_i(6,16,'FullName','ProductName',v).
+att_prop_i(6,17,'ExternalName','ProductStock',d).
+att_prop_i(6,17,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,17,'EmptyAsNull','Yes',d).
+att_prop_i(6,17,idBasedOn,97,v).
+att_prop_i(6,17,'AUTONUMBER','0',d).
+att_prop_i(6,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,17,'AttRegEx','',d).
+att_prop_i(6,17,'AttValidationFailedMsg','',d).
+att_prop_i(6,17,'DownloadOffline','0',d).
+att_prop_i(6,17,'VarServiceExtName','',d).
+att_prop_i(6,17,'FullName','ProductStock',v).
+att_prop_i(6,85,'ExternalName','ProductCostPrice',d).
+att_prop_i(6,85,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,85,'EmptyAsNull','Yes',d).
+att_prop_i(6,85,idBasedOn,94,v).
+att_prop_i(6,85,'AUTONUMBER','0',d).
+att_prop_i(6,85,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,85,'AttRegEx','',d).
+att_prop_i(6,85,'AttValidationFailedMsg','Invalid Price',d).
+att_prop_i(6,85,'DownloadOffline','0',d).
+att_prop_i(6,85,'VarServiceExtName','',d).
+att_prop_i(6,85,'FullName','ProductCostPrice',v).
+att_prop_i(6,28,'ExternalName','ProductCreatedDate',d).
+att_prop_i(6,28,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,28,'EmptyAsNull','Yes',d).
+att_prop_i(6,28,idBasedOn,129,v).
+att_prop_i(6,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,28,'AttRegEx','',d).
+att_prop_i(6,28,'AttValidationFailedMsg','',d).
+att_prop_i(6,28,idDATEFORMAT,idDATEFORMAT_LONG,d).
+att_prop_i(6,28,'DownloadOffline','0',d).
+att_prop_i(6,28,'VarServiceExtName','',d).
+att_prop_i(6,28,'FullName','ProductCreatedDate',v).
+att_prop_i(6,90,'ExternalName','ProductRetailPrice',d).
+att_prop_i(6,90,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,90,idBasedOn,94,v).
+att_prop_i(6,90,'DownloadOffline','0',d).
+att_prop_i(6,90,'VarServiceExtName','',d).
+att_prop_i(6,90,'FullName','ProductRetailPrice',v).
+att_prop_i(6,88,'ExternalName','ProductWholesalePrice',d).
+att_prop_i(6,88,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,88,idBasedOn,94,v).
+att_prop_i(6,88,'DownloadOffline','0',d).
+att_prop_i(6,88,'VarServiceExtName','',d).
+att_prop_i(6,88,'FullName','ProductWholesalePrice',v).
+att_prop_i(6,93,'ExternalName','ProductMiniumQuantityWholesale',d).
+att_prop_i(6,93,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,93,'EmptyAsNull','Yes',d).
+att_prop_i(6,93,idBasedOn,'',d).
+att_prop_i(6,93,'AUTONUMBER','0',d).
+att_prop_i(6,93,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,93,'AttRegEx','',d).
+att_prop_i(6,93,'AttValidationFailedMsg','',d).
+att_prop_i(6,93,'DownloadOffline','0',d).
+att_prop_i(6,93,'VarServiceExtName','',d).
+att_prop_i(6,93,'FullName','ProductMiniumQuantityWholesale',v).
+att_prop_i(6,110,'ExternalName','ProductActive',d).
+att_prop_i(6,110,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,110,'EmptyAsNull','Yes',d).
+att_prop_i(6,110,'ExternalStorage','-1',d).
+att_prop_i(6,110,idBasedOn,'',d).
+att_prop_i(6,110,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,110,'AttRegEx','',d).
+att_prop_i(6,110,'AttValidationFailedMsg','',d).
+att_prop_i(6,110,'DownloadOffline','0',d).
+att_prop_i(6,110,'VarServiceExtName','',d).
+att_prop_i(6,110,'FullName','ProductActive',v).
+att_prop_i(6,55,'ExternalName','ProductCode',d).
+att_prop_i(6,55,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,55,'EmptyAsNull','Yes',d).
+att_prop_i(6,55,idBasedOn,89,v).
+att_prop_i(6,55,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,55,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,55,'AttRegEx','',d).
+att_prop_i(6,55,'AttValidationFailedMsg','',d).
+att_prop_i(6,55,'DownloadOffline','0',d).
+att_prop_i(6,55,'VarServiceExtName','',d).
+att_prop_i(6,55,'FullName','ProductCode',v).
+att_prop_i(6,1,'ExternalName','BrandId',d).
+att_prop_i(6,1,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,1,'EmptyAsNull','Yes',d).
+att_prop_i(6,1,idBasedOn,92,v).
+att_prop_i(6,1,'AUTONUMBER','-1',d).
+att_prop_i(6,1,'AUTONUMBER_START','1',d).
+att_prop_i(6,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,1,'AttRegEx','',d).
+att_prop_i(6,1,'AttValidationFailedMsg','',d).
+att_prop_i(6,1,'DownloadOffline','0',d).
+att_prop_i(6,1,'VarServiceExtName','',d).
+att_prop_i(6,1,'FullName','BrandId',v).
+att_prop_i(6,9,'ExternalName','SectorId',d).
+att_prop_i(6,9,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,9,'EmptyAsNull','Yes',d).
+att_prop_i(6,9,idBasedOn,92,v).
+att_prop_i(6,9,'AUTONUMBER','-1',d).
+att_prop_i(6,9,'AUTONUMBER_START','1',d).
+att_prop_i(6,9,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,9,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,9,'AttRegEx','',d).
+att_prop_i(6,9,'AttValidationFailedMsg','',d).
+att_prop_i(6,9,'DownloadOffline','0',d).
+att_prop_i(6,9,'VarServiceExtName','',d).
+att_prop_i(6,9,'FullName','SectorId',v).
+att_prop_i(6,4,'ExternalName','SupplierId',d).
+att_prop_i(6,4,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,4,'EmptyAsNull','Yes',d).
+att_prop_i(6,4,idBasedOn,92,v).
+att_prop_i(6,4,'AUTONUMBER','-1',d).
+att_prop_i(6,4,'AUTONUMBER_START','1',d).
+att_prop_i(6,4,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,4,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,4,'AttRegEx','',d).
+att_prop_i(6,4,'AttValidationFailedMsg','',d).
+att_prop_i(6,4,'DownloadOffline','0',d).
+att_prop_i(6,4,'VarServiceExtName','',d).
+att_prop_i(6,4,'FullName','SupplierId',v).
+att_prop_i(6,87,'ExternalName','ProductWholesaleProfit',d).
+att_prop_i(6,87,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,87,'EmptyAsNull','Yes',d).
+att_prop_i(6,87,idBasedOn,127,v).
+att_prop_i(6,87,'AUTONUMBER','0',d).
+att_prop_i(6,87,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,87,'AttRegEx','',d).
+att_prop_i(6,87,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,87,'DownloadOffline','0',d).
+att_prop_i(6,87,'VarServiceExtName','',d).
+att_prop_i(6,87,'FullName','ProductWholesaleProfit',v).
+att_prop_i(6,89,'ExternalName','ProductRetailProfit',d).
+att_prop_i(6,89,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,89,'EmptyAsNull','Yes',d).
+att_prop_i(6,89,idBasedOn,127,v).
+att_prop_i(6,89,'AUTONUMBER','0',d).
+att_prop_i(6,89,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,89,'AttRegEx','',d).
+att_prop_i(6,89,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
+att_prop_i(6,89,'DownloadOffline','0',d).
+att_prop_i(6,89,'VarServiceExtName','',d).
+att_prop_i(6,89,'FullName','ProductRetailProfit',v).
+att_prop_i(6,15,'ExternalName','ProductId',d).
+att_prop_i(6,15,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,15,'EmptyAsNull','Yes',d).
+att_prop_i(6,15,idBasedOn,92,v).
+att_prop_i(6,15,'AUTONUMBER','-1',d).
+att_prop_i(6,15,'AUTONUMBER_START','1',d).
+att_prop_i(6,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,15,'AttRegEx','',d).
+att_prop_i(6,15,'AttValidationFailedMsg','',d).
+att_prop_i(6,15,'DownloadOffline','0',d).
+att_prop_i(6,15,'VarServiceExtName','',d).
+att_prop_i(6,15,'FullName','ProductId',v).
+ 
+tbl_prop_i(6,5,'AllDirSuper',[ [ 2,[ 4 ] ],[ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(6,5,'DirSuperNull',[ [ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(6,2,'DirSubor',[ [ 5,[ 4 ] ] ],v).
+tbl_prop_i(6,3,'DirSubor',[ [ 5,[ 9 ] ] ],v).
+tbl_prop_i(6,1,'DirSubor',[ [ 5,[ 1 ] ] ],v).
+tbl_prop_i(6,5,'DirSuper',[ [ 2,[ 4 ] ],[ 3,[ 9 ] ],[ 1,[ 1 ] ] ],v).
+ 
+tbl_att_prop_i(6,2,4,'AllowNulls',n).
+tbl_att_prop_i(6,2,4,'AUTONUMBER',y).
+tbl_att_prop_i(6,2,5,'AllowNulls',n).
+tbl_att_prop_i(6,3,9,'AllowNulls',n).
+tbl_att_prop_i(6,3,9,'AUTONUMBER',y).
+tbl_att_prop_i(6,3,10,'AllowNulls',n).
+tbl_att_prop_i(6,1,1,'AllowNulls',n).
+tbl_att_prop_i(6,1,1,'AUTONUMBER',y).
+tbl_att_prop_i(6,1,2,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AUTONUMBER',y).
+tbl_att_prop_i(6,5,16,'AllowNulls',n).
+tbl_att_prop_i(6,5,4,'AllowNulls',n).
+tbl_att_prop_i(6,5,28,'AllowNulls',n).
+ 
+var_prop_i(6,'Brandid',idBasedOn,'',v).
+var_prop_i(6,'Brandname',idBasedOn,'',v).
+var_prop_i(6,'Code',idBasedOn,89,v).
+var_prop_i(6,'Name',idBasedOn,93,v).
+var_prop_i(6,'Order',idBasedOn,126,v).
+var_prop_i(6,'Order','AttValidationFailedMsg','GXSPC_OutOfRange',d).
+var_prop_i(6,'Sectorid',idBasedOn,'',v).
+var_prop_i(6,'Sectorname',idBasedOn,'',v).
+var_prop_i(6,'Supplierid',idBasedOn,'',v).
+var_prop_i(6,'Suppliername',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,89,0 ],name,'SDTProductsFiltered').
+struct_dt_i([ 26,89,0 ],namespace,mtaKB).
+struct_dt_i([ 26,89,0 ],'ObjName','SDTProductsFiltered').
+struct_dt_i([ 26,89,0 ],'ObjDesc','SDTProducts Filtered').
+struct_dt_i([ 26,89,0 ],'ExternalName','SDTProductsFiltered').
+struct_dt_i([ 26,89,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,89,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,89,0 ],collection,'True').
+struct_dt_i([ 26,89,0 ],datatype,[ 26,89,143 ]).
+struct_dt_i([ 26,89,0 ],'CollectionItemName','SDTProductsFilteredItem').
+struct_dt_i([ 26,89,0 ],'XmlName','').
+struct_dt_i([ 26,89,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,89,0 ],'XmlNamespace','').
+struct_dt_i([ 26,89,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,89,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,89,0 ],'JsonName','').
+struct_dt_i([ 26,89,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,89,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,89,143 ],name,'SDTProductsFilteredItem').
+struct_dt_i([ 26,89,143 ],namespace,'mtaKB.SDTProductsFiltered').
+struct_dt_i([ 26,93,0 ],name,'General\UI\SDTContextSession').
+struct_dt_i([ 26,93,0 ],namespace,mtaKB).
+struct_dt_i([ 26,93,0 ],'ObjName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ObjDesc','SDTContext Session').
+struct_dt_i([ 26,93,0 ],'ExternalName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,93,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,93,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,89,0 ],fullname,'SDTProductsFiltered').
+struct_dt_i([ 26,89,143 ],fullname,'SDTProductsFiltered.SDTProductsFilteredItem').
+struct_dt_i([ 26,93,0 ],fullname,'General\UI\SDTContextSession').
+ 
+struct_dt_elem_i([ 26,89,143 ],1,name,'Id').
+struct_dt_elem_i([ 26,89,143 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,89,143 ],1,basedon,92).
+struct_dt_elem_i([ 26,89,143 ],1,length,6).
+struct_dt_elem_i([ 26,89,143 ],1,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],1,sign,0).
+struct_dt_elem_i([ 26,89,143 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,89,143 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,89,143 ],1,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,89,143 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],1,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],1,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],1,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],2,name,'Code').
+struct_dt_elem_i([ 26,89,143 ],2,camelname,'Code').
+struct_dt_elem_i([ 26,89,143 ],2,basedon,89).
+struct_dt_elem_i([ 26,89,143 ],2,length,100).
+struct_dt_elem_i([ 26,89,143 ],2,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,89,143 ],2,pic,'').
+struct_dt_elem_i([ 26,89,143 ],2,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],2,'ExternalName','Code').
+struct_dt_elem_i([ 26,89,143 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],2,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],2,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],2,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],3,name,'Name').
+struct_dt_elem_i([ 26,89,143 ],3,camelname,'Name').
+struct_dt_elem_i([ 26,89,143 ],3,basedon,93).
+struct_dt_elem_i([ 26,89,143 ],3,length,60).
+struct_dt_elem_i([ 26,89,143 ],3,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],3,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,89,143 ],3,pic,'').
+struct_dt_elem_i([ 26,89,143 ],3,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],3,'ExternalName','Name').
+struct_dt_elem_i([ 26,89,143 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],3,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],3,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],3,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],4,name,'Stock').
+struct_dt_elem_i([ 26,89,143 ],4,camelname,'Stock').
+struct_dt_elem_i([ 26,89,143 ],4,basedon,97).
+struct_dt_elem_i([ 26,89,143 ],4,length,6).
+struct_dt_elem_i([ 26,89,143 ],4,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],4,sign,0).
+struct_dt_elem_i([ 26,89,143 ],4,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,89,143 ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,89,143 ],4,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],4,'ExternalName','Stock').
+struct_dt_elem_i([ 26,89,143 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],4,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],4,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],4,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],5,name,'Miniumstock').
+struct_dt_elem_i([ 26,89,143 ],5,camelname,'MiniumStock').
+struct_dt_elem_i([ 26,89,143 ],5,basedon,97).
+struct_dt_elem_i([ 26,89,143 ],5,length,6).
+struct_dt_elem_i([ 26,89,143 ],5,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],5,sign,0).
+struct_dt_elem_i([ 26,89,143 ],5,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,89,143 ],5,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,89,143 ],5,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],5,'ExternalName','MiniumStock').
+struct_dt_elem_i([ 26,89,143 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],5,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],5,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],5,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],6,name,'Costprice').
+struct_dt_elem_i([ 26,89,143 ],6,camelname,'CostPrice').
+struct_dt_elem_i([ 26,89,143 ],6,basedon,94).
+struct_dt_elem_i([ 26,89,143 ],6,length,18).
+struct_dt_elem_i([ 26,89,143 ],6,decimals,2).
+struct_dt_elem_i([ 26,89,143 ],6,sign,0).
+struct_dt_elem_i([ 26,89,143 ],6,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,89,143 ],6,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,89,143 ],6,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],6,'ExternalName','CostPrice').
+struct_dt_elem_i([ 26,89,143 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],6,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],6,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],6,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],6,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],6,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],7,name,'Retailprice').
+struct_dt_elem_i([ 26,89,143 ],7,camelname,'RetailPrice').
+struct_dt_elem_i([ 26,89,143 ],7,basedon,94).
+struct_dt_elem_i([ 26,89,143 ],7,length,18).
+struct_dt_elem_i([ 26,89,143 ],7,decimals,2).
+struct_dt_elem_i([ 26,89,143 ],7,sign,0).
+struct_dt_elem_i([ 26,89,143 ],7,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,89,143 ],7,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,89,143 ],7,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],7,'ExternalName','RetailPrice').
+struct_dt_elem_i([ 26,89,143 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],7,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],7,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],7,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],8,name,'Wholesaleprice').
+struct_dt_elem_i([ 26,89,143 ],8,camelname,'WholesalePrice').
+struct_dt_elem_i([ 26,89,143 ],8,basedon,94).
+struct_dt_elem_i([ 26,89,143 ],8,length,18).
+struct_dt_elem_i([ 26,89,143 ],8,decimals,2).
+struct_dt_elem_i([ 26,89,143 ],8,sign,0).
+struct_dt_elem_i([ 26,89,143 ],8,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,89,143 ],8,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,89,143 ],8,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],8,'ExternalName','WholesalePrice').
+struct_dt_elem_i([ 26,89,143 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],8,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],8,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],8,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],8,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],8,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],8,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],8,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],9,name,'Miniumquantitywholesale').
+struct_dt_elem_i([ 26,89,143 ],9,camelname,'MiniumQuantityWholesale').
+struct_dt_elem_i([ 26,89,143 ],9,length,4).
+struct_dt_elem_i([ 26,89,143 ],9,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],9,sign,0).
+struct_dt_elem_i([ 26,89,143 ],9,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 26,89,143 ],9,pic,'ZZZ9').
+struct_dt_elem_i([ 26,89,143 ],9,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],9,'ExternalName','MiniumQuantityWholesale').
+struct_dt_elem_i([ 26,89,143 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],9,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],9,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],9,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],9,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],9,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],9,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],9,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],10,name,'Supplier').
+struct_dt_elem_i([ 26,89,143 ],10,camelname,'Supplier').
+struct_dt_elem_i([ 26,89,143 ],10,basedon,93).
+struct_dt_elem_i([ 26,89,143 ],10,length,60).
+struct_dt_elem_i([ 26,89,143 ],10,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],10,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,89,143 ],10,pic,'').
+struct_dt_elem_i([ 26,89,143 ],10,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],10,'ExternalName','Supplier').
+struct_dt_elem_i([ 26,89,143 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],10,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],10,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],10,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],10,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],10,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],10,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],10,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],11,name,'Brand').
+struct_dt_elem_i([ 26,89,143 ],11,camelname,'Brand').
+struct_dt_elem_i([ 26,89,143 ],11,basedon,93).
+struct_dt_elem_i([ 26,89,143 ],11,length,60).
+struct_dt_elem_i([ 26,89,143 ],11,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],11,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,89,143 ],11,pic,'').
+struct_dt_elem_i([ 26,89,143 ],11,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],11,'ExternalName','Brand').
+struct_dt_elem_i([ 26,89,143 ],11,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],11,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],11,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],11,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],11,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],11,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],11,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],11,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],12,name,'Sector').
+struct_dt_elem_i([ 26,89,143 ],12,camelname,'Sector').
+struct_dt_elem_i([ 26,89,143 ],12,basedon,93).
+struct_dt_elem_i([ 26,89,143 ],12,length,60).
+struct_dt_elem_i([ 26,89,143 ],12,decimals,0).
+struct_dt_elem_i([ 26,89,143 ],12,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,89,143 ],12,pic,'').
+struct_dt_elem_i([ 26,89,143 ],12,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],12,'ExternalName','Sector').
+struct_dt_elem_i([ 26,89,143 ],12,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],12,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],12,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],12,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],12,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],12,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],12,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],12,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],13,name,'Unitprice').
+struct_dt_elem_i([ 26,89,143 ],13,camelname,'UnitPrice').
+struct_dt_elem_i([ 26,89,143 ],13,basedon,94).
+struct_dt_elem_i([ 26,89,143 ],13,length,18).
+struct_dt_elem_i([ 26,89,143 ],13,decimals,2).
+struct_dt_elem_i([ 26,89,143 ],13,sign,0).
+struct_dt_elem_i([ 26,89,143 ],13,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,89,143 ],13,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,89,143 ],13,collection,'False').
+struct_dt_elem_i([ 26,89,143 ],13,'ExternalName','UnitPrice').
+struct_dt_elem_i([ 26,89,143 ],13,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,89,143 ],13,'XmlType','Element').
+struct_dt_elem_i([ 26,89,143 ],13,'XmlName','').
+struct_dt_elem_i([ 26,89,143 ],13,'XmlNamespace','').
+struct_dt_elem_i([ 26,89,143 ],13,soaptype,'').
+struct_dt_elem_i([ 26,89,143 ],13,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,89,143 ],13,'JsonName','').
+struct_dt_elem_i([ 26,89,143 ],13,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],1,name,'Userid').
+struct_dt_elem_i([ 26,93,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 26,93,0 ],1,basedon,92).
+struct_dt_elem_i([ 26,93,0 ],1,length,6).
+struct_dt_elem_i([ 26,93,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],1,sign,0).
+struct_dt_elem_i([ 26,93,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,93,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,93,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],2,name,'Username').
+struct_dt_elem_i([ 26,93,0 ],2,camelname,'UserName').
+struct_dt_elem_i([ 26,93,0 ],2,length,20).
+struct_dt_elem_i([ 26,93,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],2,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,93,0 ],2,pic,'').
+struct_dt_elem_i([ 26,93,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalName','UserName').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,89,143 ],2,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 26,89,143 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 26,89,143 ],10,pic,'ZZZ9').
+struct_dt_elem_i([ 26,89,143 ],11,pic,'ZZZ9').
+struct_dt_elem_i([ 26,89,143 ],12,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(web,112,'WPLOGIN',[],[]).
+pgm_parm_i(proc,54,'GETCONTEXT',[ [ o('General\UI\SDTContextSession'),0,0,0 ],[ boolean,4,0,0 ] ],[ [ 'Context',out,[] ],[ 'AllOk',inout,[] ] ]).
+pgm_parm_i(proc,42,'ROUNDVALUE',[ [ int,18,2,0 ],[ int,18,2,0 ] ],[ [ 'Value',in,[] ],[ 'ValueRounded',out,[] ] ]).
+ 
+pgm_callprotocol_i(proc,34,'LISTPRODUCTSFILTERED','HTTP','Unsecure').
+pgm_callprotocol_i(web,112,'WPLOGIN','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,54,'GETCONTEXT','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,42,'ROUNDVALUE','INTERNAL','Unsecure').
+ 
+ 
+pgm_main_info_i(proc,34,'LISTPRODUCTSFILTERED',[ 41,'ALISTPRODUCTSFILTERED','List Products Filtered','','','','HTTP' ]).
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

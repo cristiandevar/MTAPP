@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\viewrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\viewrole.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\refint\viewrole.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\viewrole.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewrole\obj\Release\net6.0\ref\viewrole.dll

@@ -1,0 +1,32 @@
+@layer AnyStylesImagesTokens {
+:root
+{
+	--GX-Image_selectRow : url(../selectRow.png);
+	--GX-Image_PageFirst : url(PageFirst.gif);
+	--GX-Image_PageLast : url(PageLast.gif);
+	--GX-Image_PageNext : url(PageNext.gif);
+	--GX-Image_PagePrevious : url(PagePrevious.gif);
+	--GX-Image_ImageDeleteTrash : url(../ImageDeleteTrash.png);
+	--GX-Image_IconPDF : url(../IconPDF.svg);
+	--GX-Image_IconXLS : url(../IconXLS.svg);
+	--GX-Image_HomeIcon : url(../HomeIcon.bmp);
+	--GX-Image_IconLogIn : url(../IconLogIn.bmp);
+	--GX-Image_ImageListTaskEmail : url(../ImageListTaskEmail.svg);
+	--GX-Image_ImageLetterEmail : url(../ImageLetterEmail.svg);
+	--GX-Image_ImageIconApp : url(../ImageIconApp.bmp);
+}
+
+.GX_Image_selectRow_Class{content: var(--GX-Image_selectRow);}
+.GX_Image_PageFirst_Class{content: var(--GX-Image_PageFirst);}
+.GX_Image_PageLast_Class{content: var(--GX-Image_PageLast);}
+.GX_Image_PageNext_Class{content: var(--GX-Image_PageNext);}
+.GX_Image_PagePrevious_Class{content: var(--GX-Image_PagePrevious);}
+.GX_Image_ImageDeleteTrash_Class{content: var(--GX-Image_ImageDeleteTrash);}
+.GX_Image_IconPDF_Class{content: var(--GX-Image_IconPDF);}
+.GX_Image_IconXLS_Class{content: var(--GX-Image_IconXLS);}
+.GX_Image_HomeIcon_Class{content: var(--GX-Image_HomeIcon);}
+.GX_Image_IconLogIn_Class{content: var(--GX-Image_IconLogIn);}
+.GX_Image_ImageListTaskEmail_Class{content: var(--GX-Image_ImageListTaskEmail);}
+.GX_Image_ImageLetterEmail_Class{content: var(--GX-Image_ImageLetterEmail);}
+.GX_Image_ImageIconApp_Class{content: var(--GX-Image_ImageIconApp);}
+}

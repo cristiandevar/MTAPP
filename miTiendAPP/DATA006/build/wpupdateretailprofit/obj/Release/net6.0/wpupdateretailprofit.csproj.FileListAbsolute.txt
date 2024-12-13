@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpupdateretailprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpupdateretailprofit.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\refint\wpupdateretailprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\wpupdateretailprofit.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdateretailprofit\obj\Release\net6.0\ref\wpupdateretailprofit.dll

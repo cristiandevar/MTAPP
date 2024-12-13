@@ -1,0 +1,678 @@
+spec_i([ web,132,'Purchase Order Confirmated','PurchaseOrderConfirmated',0,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[ 'Suppliername','Purchaseordercreateddate','Exists','Emailbody','Meemail','Answer','Buttonurl','Confirmeddate','Urls','Namesofattachs','Allok','Purchaseorderid','GXLvl3' ],[]).
+struct_i(3,1,[],[]).
+ 
+level_i(2,[ 10,[ [ 10,many ] ],[],[],[ [ [ 10 ],[ 50,52 ] ] ],[ [ [ 10 ],[] ] ],[ 50 ],'IPURCHASEORDER',[ 10,[ [ [],'Purchaseorderid',50 ] ] ],[] ]).
+level_i(3,[ 10,[ [ 10,many ],[ 2,one ] ],[],[],[ [ [ 10,2 ],[ 79,50,5,52,4 ] ] ],[ [ [ 10,2 ],[] ] ],[ 50 ],'IPURCHASEORDER',[ 10,[ [ [],'Purchaseorderid',50 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[ [ 2,[ [ 10,4,4 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [ c([ t(79,2),t(=,10),t('TRUE',40) ],[ 79 ]) ] ]).
+ 
+ 
+ 
+level_option_i(3,when_none,'GXLvl3').
+ 
+ta_i(2,[ [ [ 10,50 ],[ 10,52 ] ] ]).
+ta_i(3,[ [ [ 10,4 ],[ 10,79 ],[ 10,50 ],[ 2,5 ],[ 10,52 ] ] ]).
+ 
+las_i(2,[ [ 'Purchaseorderid',50,52 ] ]).
+las_i(3,[ [ 'Purchaseorderid',79,50,5,52,4 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+lits_i('Purchase Order to ',5,10).
+lits_i('Text Block',5,10).
+ 
+cls_i([ 0,0 ],[ 5,27 ]).
+ 
+pos_i(52,[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','PurchaseOrderConfirmated')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WebApplication',idDefault)).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','NO')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'General.UI.MasterGuest'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('Folder',o(8,'WebPanels'))).
+rule_i(0,prop('ObjDesc','Purchase Order Confirmated')).
+rule_i(0,prop('ObjName','PurchaseOrderConfirmated')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Purchaseorderid' ],[])).
+rule_i(0,parmio([ [ 'Purchaseorderid',in ] ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,10,[],[ [ [ [],'Purchaseorderid',50 ] ],'IPURCHASEORDER',[] ]).
+a_i(3,3,r,2,[],[ [ [ 10,4,4 ] ],'ISUPPLIER',[] ]).
+a_i(4,2,t,10,[],[ [ [ [],'Purchaseorderid',50 ] ],'IPURCHASEORDER',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,'Purchaseorderid').
+v_i(t,o,2,4).
+v_i(t,o,2,79).
+v_i(t,o,2,50).
+v_i(t,o,2,52).
+v_i(r,i,3,4).
+v_i(r,o,3,5).
+v_i(t,i,4,'Purchaseorderid').
+v_i(t,o,4,50).
+v_i(t,o,4,52).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(4,[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',0 ]).
+attri_i(79,[ 'PurchaseOrderActive',boolean,4,0,'',0,'Purchase Order Active','',0 ]).
+attri_i(50,[ 'PurchaseOrderId',int,6,0,'ZZZZZ9',0,'Purchase Order Id','',0 ]).
+attri_i(5,[ 'SupplierName',svchar,60,0,'',0,'Supplier Name','',0 ]).
+attri_i(52,[ 'PurchaseOrderCreatedDate',date,8,0,'99/99/99',0,'Purchase Order Created Date','',0 ]).
+attri_i('GXLvl3',[ 'GXLvl3',int,1,0,'',0,'',[],27 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',26 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',25 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',24 ]).
+attri_i('Buttonurl',[ 'ButtonURL',svchar,1000,0,'',0,'Button URL','',23 ]).
+attri_i('Answer',[ 'Answer',boolean,4,0,'',0,'Answer','',22 ]).
+attri_i('Urls',[ 'URLs',o(objectcollection(svchar)),1000,0,'',0,'URLs','',21 ]).
+attri_i('Tabs',[ 'Tabs',int,4,0,'ZZZ9',0,'Tabs','',20 ]).
+attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',19 ]).
+attri_i('Tab',[ 'Tab',int,4,0,'ZZZ9',0,'Tab','',18 ]).
+attri_i('Suppliername',[ 'SupplierName',svchar,60,0,'',0,'Supplier Name','',17 ]).
+attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code','',16 ]).
+attri_i('Purchaseorderid',[ 'PurchaseOrderId',int,6,0,'ZZZZZ9',0,'Purchase Order Id','',15 ]).
+attri_i('Purchaseordercreateddate',[ 'PurchaseOrderCreatedDate',date,8,0,'99/99/99',0,'Purchase Order Created Date','',14 ]).
+attri_i('Newquantity',[ 'NewQuantity',int,4,0,'ZZZ9',0,'New Quantity','',13 ]).
+attri_i('Namesofattachs',[ 'NamesOfAttachs',o(objectcollection(svchar)),100,0,'',0,'Names Of Attachs','',12 ]).
+attri_i('Meemail',[ 'MeEmail',svchar,100,0,'',0,'Me Email','',11 ]).
+attri_i('Loadalltabs',[ 'LoadAllTabs',boolean,4,0,'',0,'LoadAllTabs','',10 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',9 ]).
+attri_i('Exists',[ 'Exists',boolean,4,0,'',0,'Exists','',8 ]).
+attri_i('Emailbody',[ 'EmailBody',svchar,100,0,'',0,'Email Body','',7 ]).
+attri_i('Confirmeddate',[ 'ConfirmedDate',date,8,0,'99/99/9999',0,'Confirmed Date','',6 ]).
+attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',5 ]).
+ 
+table_i(2,[ 'Supplier',[ 4,5 ],'Supplier','Supplier' ]).
+table_i(10,[ 'PurchaseOrder',[ 50,4,52,79 ],'Purchase Order','PurchaseOrder' ]).
+ 
+index_i(10,[ 'IPURCHASEORDER',u,[ 50 ],'IPurchaseOrder' ]).
+index_i(2,[ 'ISUPPLIER',u,[ 4 ],'ISupplier' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 50,23,'Purchaseorderid',= ] ],one ]).
+start_i(3,0,0,[ [ [ 50,23,'Purchaseorderid',= ] ],one ]).
+ 
+end_i(2,0,0,[ [ [ t(50,2),t(=,10),t('Purchaseorderid',23) ] ] ]).
+end_i(3,0,0,[ [ [ t(50,2),t(=,10),t('Purchaseorderid',23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(140,[ 'PurchaseOrderDate' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(49,[ 'GeneXus\Phone' ]).
+dom_info_i(46,[ 'GeneXus\Email' ]).
+dom_info_i(96,[ 'General\TabCode' ]).
+dom_info_i(33,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(3,nvg,1,[],[ [ 52,5 ],[ 50,79 ],[] ]).
+break_i(2,nvg,1,[],[ [ 52 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,1).
+b_group_i(2,3,nvg,3,3,3).
+b_group_i(3,1,lit,0,4,4).
+b_group_i(2,4,lit,0,14,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i([ 3,0 ],2,2,cmd,1,[ t('',107,3,0),t('GXLvl3',23,1,0),t(=,10,1,0),t('0',3,1,0) ]).
+b_line_i(3,3,1,cmd,4,[ t('',121,3,0) ]).
+b_line_i([ 3,1 ],3,1,cmd,3,[ t('',107,3,0),t('GXLvl3',23,3,0),t(=,10,3,0),t('1',3,3,0) ]).
+b_line_i(7,3,1,cmd,4,[ t('',107,7,0),t([ t('Titletext',3,4,0),t('Caption',3,4,0) ],29,4,0),t(=,10,4,0),t([ t('Titletext',3,4,0),t('Caption',3,4,0) ],29,4,0),t(+,5,4,0),t(5,2,4,0) ]).
+b_line_i(9,3,1,cmd,4,[ t('',107,9,0),t('Suppliername',23,4,0),t(=,10,4,0),t(5,2,4,0) ]).
+b_line_i(10,3,1,cmd,4,[ t('',107,10,0),t('Purchaseordercreateddate',23,4,0),t(=,10,4,0),t(52,2,4,0) ]).
+b_line_i(12,3,1,cmd,4,[ t('',107,12,0),t('Exists',23,4,0),t(=,10,4,0),t('TRUE',40,4,0) ]).
+b_line_i(13,3,1,cmd,4,[ t('',128,13,0) ]).
+b_line_i([ 13,1 ],2,4,cmd,11,[ t('',109,13,0),t('GXLvl3',23,11,0),t(=,10,11,0),t('0',3,11,0) ]).
+b_line_i(14,2,4,cmd,12,[ t('',107,14,0),t('Exists',23,12,0),t(=,10,12,0),t('FALSE',41,12,0) ]).
+b_line_i(15,2,4,cmd,12,[ t('',107,15,0),t('Suppliername',23,12,0),t(=,10,12,0),t('''Not Found''',3,12,0) ]).
+b_line_i(16,2,4,cmd,12,[ t('',107,16,0),t('Purchaseordercreateddate',23,12,0),t(=,10,12,0),t('nullvalue(',1,12,0),t('Purchaseordercreateddate',23,12,0),t(')',4,12,0) ]).
+b_line_i(17,2,4,cmd,12,[ t('',111,17,0) ]).
+b_line_i(19,2,4,cmd,12,[ t('',109,19,0),t('.NOT.',8,12,5),t('Exists',23,12,11) ]).
+b_line_i(20,2,4,cmd,12,[ t('',104,20,0),t(o(13,'WPLogIn'),28,12,3) ]).
+b_line_i(21,2,4,cmd,12,[ t('',111,21,0) ]).
+b_line_i(23,2,4,cmd,12,[ t('',107,23,0),t('Emailbody',23,12,0),t(=,10,12,0),t('''''',3,12,0) ]).
+b_line_i(24,2,4,cmd,12,[ t('',107,24,0),t('Meemail',23,12,0),t(=,10,12,0),t('''mtappcontact@gmail.com''',3,12,0) ]).
+b_line_i(25,2,4,cmd,12,[ t('',107,25,0),t('Answer',23,12,0),t(=,10,12,0),t('FALSE',41,12,0) ]).
+b_line_i(27,2,4,cmd,12,[ t('',107,27,0),t('Buttonurl',23,12,0),t(=,10,12,0),t([ t('Httprequest',23,12,0),t('Baseurl',3,12,0) ],29,12,0) ]).
+b_line_i(28,2,4,cmd,12,[ t('',107,28,0),t('Buttonurl',23,12,0),t(=,10,12,0),t('Buttonurl',23,12,0),t(+,5,12,0),t('link(',1,12,0),t(o(13,'PurchaseOrderSupplierView'),28,12,0),t(',',7,12,0),t('Purchaseorderid',23,12,0),t(',',7,12,0),t('''''',3,12,0),t(')',4,12,0) ]).
+b_line_i(30,2,4,cmd,12,[ t('',107,30,0),t('Confirmeddate',23,12,0),t(=,10,12,0),t('serverdate(',1,12,0),t(')',4,12,0) ]).
+b_line_i(32,2,4,cmd,12,[ t('',107,32,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<h5>Order Confirmed</h5>''',3,12,0) ]).
+b_line_i(33,2,4,cmd,12,[ t('',107,33,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<p>Supplier:''',3,12,0),t(+,5,12,0),t('trim(',1,12,0),t('Suppliername',23,12,0),t(')',4,12,0),t(+,5,12,0),t('''</p></br>''',3,12,0) ]).
+b_line_i(34,2,4,cmd,12,[ t('',107,34,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<p>Order Nro:''',3,12,0),t(+,5,12,0),t('str(',1,12,0),t('Purchaseorderid',23,12,0),t(',',7,12,0),t(6,3,12,0),t(',',7,12,0),t(0,3,12,0),t(')',4,12,0),t(+,5,12,0),t('''</p></br>''',3,12,0) ]).
+b_line_i(35,2,4,cmd,12,[ t('',107,35,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<p>Date Ordered:''',3,12,0),t(+,5,12,0),t('toformattedstring(',1,12,0),t('Purchaseordercreateddate',23,12,0),t(')',4,12,0),t(+,5,12,0),t('''</p></br>''',3,12,0) ]).
+b_line_i(36,2,4,cmd,12,[ t('',107,36,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<p>Date Confirmated:''',3,12,0),t(+,5,12,0),t('toformattedstring(',1,12,0),t('Confirmeddate',23,12,0),t(')',4,12,0),t(+,5,12,0),t('''</p></br>''',3,12,0) ]).
+b_line_i(37,2,4,cmd,12,[ t('',107,37,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''<a href="''',3,12,0) ]).
+b_line_i(38,2,4,cmd,12,[ t('',107,38,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('toformattedstring(',1,12,0),t('Buttonurl',23,12,0),t(')',4,12,0) ]).
+b_line_i(39,2,4,cmd,12,[ t('',107,39,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''" target="_blank" class="btn btn-info"''',3,12,0) ]).
+b_line_i(40,2,4,cmd,12,[ t('',107,40,0),t('Emailbody',23,12,0),t(=,10,12,0),t('Emailbody',23,12,0),t(+,5,12,0),t('''>See PurchaseOrder</a>''',3,12,0) ]).
+b_line_i(45,2,4,cmd,12,[ t('',107,45,0),t('Urls',23,12,0),t(=,10,12,0),t([ [ svchar,1000,0 ],[ t('(',0,45,13),t(')',4,45,14) ],y ],46,12,0) ]).
+b_line_i(47,2,4,cmd,12,[ t('',107,47,0),t([ t('Urls',23,47,2),t('add(',1,47,8) ],31,47,2),t('link(',1,12,41),t(o(1,'PurchaseOrderGenerateAttach'),28,12,13),t(',',7,12,0),t('Purchaseorderid',23,12,47),t(')',4,12,63),t(')',4,12,64) ]).
+b_line_i(48,2,4,cmd,12,[ t('',107,48,0),t([ t('Namesofattachs',23,48,2),t('add(',1,48,18) ],31,48,2),t('''Voucher_''',3,48,23),t(+,5,12,33),t('trim(',1,48,63),t('str(',1,12,51),t('Purchaseorderid',23,12,34),t(',',7,12,51),t(6,3,12,51),t(',',7,12,51),t(0,3,12,51),t(')',4,12,61),t(')',4,12,69),t(+,5,12,70),t('''.pdf''',3,48,71),t(')',4,12,77) ]).
+b_line_i(50,2,4,cmd,12,[ t('',104,50,0),t(o(1,'SendEmail'),28,12,2),t('Meemail',23,12,18),t(',',7,12,0),t('Emailbody',23,12,28),t(',',7,12,0),t('''Order Confirmed''',3,50,40),t(',',7,12,0),t('Urls',23,12,59),t(',',7,12,0),t('Namesofattachs',23,12,66),t(',',7,12,0),t('Allok',23,12,83) ]).
+b_line_i(52,2,4,cmd,12,[ t('',109,52,0),t('Allok',23,12,5) ]).
+b_line_i(53,2,4,cmd,12,[ t('',107,53,0),t([ t('Messagge',3,12,0),t('Caption',3,12,0) ],29,12,0),t(=,10,12,0),t('''Purchase Order was Confirmed succeffully''',3,12,0) ]).
+b_line_i(54,2,4,cmd,12,[ t('',110,54,0) ]).
+b_line_i(55,2,4,cmd,12,[ t('',104,55,0),t(o(13,'PurchaseOrderSupplierView'),28,12,3),t('Purchaseorderid',23,12,29),t(',',7,12,0),t('''Error: Purchase Order was not Confirmed''',3,55,47) ]).
+b_line_i(56,2,4,cmd,12,[ t('',111,56,0) ]).
+b_line_i(57,2,4,cmd,12,[ t('',147,57,0) ]).
+b_line_i(1000,2,4,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,4,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,4,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,div(2)).
+ 
+html_sub_i(2,3,html_i(0,div(3))).
+html_sub_i(3,4,html_i(0,div(4))).
+html_sub_i(4,5,html_i(0,div(5))).
+html_sub_i(5,6,html_i(0,div(6))).
+html_sub_i(6,7,html_i(0,div(7))).
+html_sub_i(7,8,html_i(0,div(8))).
+html_sub_i(8,9,html_i(0,t('Purchase Order to ',3))).
+html_sub_i(3,10,html_i(1,div(10))).
+html_sub_i(10,11,html_i(0,div(11))).
+html_sub_i(11,12,html_i(0,div(12))).
+html_sub_i(12,13,html_i(0,div(13))).
+html_sub_i(13,14,html_i(0,div(14))).
+html_sub_i(14,15,html_i(0,t(52,2))).
+html_sub_i(3,16,html_i(2,div(16))).
+html_sub_i(16,17,html_i(0,div(17))).
+html_sub_i(17,18,html_i(0,table(18))).
+html_sub_i(18,19,html_i(0,row(19))).
+html_sub_i(19,20,html_i(0,cell(20))).
+html_sub_i(20,21,html_i(0,t('Text Block',3))).
+ 
+html_tags_i(1,'Class','form-horizontal Form').
+html_tags_i(2,'data-gx-base-lib',none).
+html_tags_i(2,'data-abstract-form','').
+html_tags_i(9,'ControlType','').
+html_tags_i(12,'data-gx-flex','').
+html_tags_i(13,classref,'').
+html_tags_i(15,'data-gx-att','att:52').
+html_tags_i(21,'ControlType','').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Class','Section',d,[ str ]).
+html_comp_i(2,'Id','',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Semanticcontent',div,d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Valign',top,d,[ str ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Class','Table',v,[ str ]).
+html_comp_i(3,'Id','Maintable',v,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Semanticcontent',div,d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Valign',top,d,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Class',row,v,[ str ]).
+html_comp_i(4,'Id','',d,[ str ]).
+html_comp_i(4,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(4,'Semanticcontent',div,d,[ str ]).
+html_comp_i(4,'Align',left,d,[ str ]).
+html_comp_i(4,'Valign',top,d,[ str ]).
+html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(5,'Class','col-xs-12',v,[ str ]).
+html_comp_i(5,'Id','',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Semanticcontent',div,d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(6,'Class','ww__actions-container',v,[ str ]).
+html_comp_i(6,'Id','Tabletop',v,[ str ]).
+html_comp_i(6,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(6,'Semanticcontent',div,d,[ str ]).
+html_comp_i(6,'Align',left,d,[ str ]).
+html_comp_i(6,'Valign',top,d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Class',row,v,[ str ]).
+html_comp_i(7,'Id','',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Semanticcontent',div,d,[ str ]).
+html_comp_i(7,'Align',left,d,[ str ]).
+html_comp_i(7,'Valign',top,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Class','col-xs-12',v,[ str ]).
+html_comp_i(8,'Id','',d,[ str ]).
+html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Semanticcontent',div,d,[ str ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Valign',top,d,[ str ]).
+html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(9,'Caption','Purchase Order to ',d,[ str ]).
+html_comp_i(9,'Id','Titletext',v,[ str ]).
+html_comp_i(9,'Class','TextblockMedium',v,[ str ]).
+html_comp_i(9,'Event','',d,[ str ]).
+html_comp_i(9,'Returnonclick',0,d,[ bool ]).
+html_comp_i(9,'Gxformat',0,d,[ num ]).
+html_comp_i(9,'Title','',d,[ str ]).
+html_comp_i(9,'Fill',-1,d,[ bool ]).
+html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(9,'Font','',d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Class',row,v,[ str ]).
+html_comp_i(10,'Id','',d,[ str ]).
+html_comp_i(10,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(10,'Semanticcontent',div,d,[ str ]).
+html_comp_i(10,'Align',left,d,[ str ]).
+html_comp_i(10,'Valign',top,d,[ str ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Class','col-xs-12',v,[ str ]).
+html_comp_i(11,'Id','',d,[ str ]).
+html_comp_i(11,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(11,'Semanticcontent',div,d,[ str ]).
+html_comp_i(11,'Align',left,d,[ str ]).
+html_comp_i(11,'Valign',top,d,[ str ]).
+html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(12,'Class','Flex ww__view__title-table',v,[ str ]).
+html_comp_i(12,'Id','Tablefixeddata_1',v,[ str ]).
+html_comp_i(12,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(12,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(12,'Semanticcontent',div,d,[ str ]).
+html_comp_i(12,'Align',left,d,[ str ]).
+html_comp_i(12,'Valign',top,d,[ str ]).
+html_comp_i(13,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(13,'Class','',v,[ str ]).
+html_comp_i(13,'Id','',d,[ str ]).
+html_comp_i(13,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(13,'Semanticcontent',div,d,[ str ]).
+html_comp_i(13,'Align',left,d,[ str ]).
+html_comp_i(13,'Valign',top,d,[ str ]).
+html_comp_i(14,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(14,'Class',' gx-attribute',v,[ str ]).
+html_comp_i(14,'Id','',d,[ str ]).
+html_comp_i(14,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(14,'Semanticcontent',div,d,[ str ]).
+html_comp_i(14,'Align',left,d,[ str ]).
+html_comp_i(14,'Valign',top,d,[ str ]).
+html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(15,'Colcount',8,d,[ num ]).
+html_comp_i(15,'Attid',52,v,[ num ]).
+html_comp_i(15,'Class','heading-01',v,[ str ]).
+html_comp_i(15,'Controlname','Purchaseordercreateddate',d,[ str ]).
+html_comp_i(15,'Returnonclick',0,v,[ bool ]).
+html_comp_i(15,'Eventgx','',d,[ str ]).
+html_comp_i(15,'Captionclass','gx-form-item heading-01Label',v,[ str ]).
+html_comp_i(15,'Captionstyle','width: 25%;',v,[ str ]).
+html_comp_i(15,'Captionposition','None',v,[ str ]).
+html_comp_i(15,'Captionvalue','Created Date',d,[ str ]).
+html_comp_i(15,'Layoutclass','',v,[ str ]).
+html_comp_i(15,'Controltype',2,d,[ num ]).
+html_comp_i(15,'Inputtype',0,d,[ num ]).
+html_comp_i(15,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(15,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(15,'Readonly',-1,v,[ bool ]).
+html_comp_i(15,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(15,'Ispassword',0,d,[ bool ]).
+html_comp_i(15,'Autoresize',-1,d,[ bool ]).
+html_comp_i(15,'Gxwidth',measure(8,chr),d,[ measure ]).
+html_comp_i(15,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(15,'Ismultiline',0,d,[ bool ]).
+html_comp_i(15,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(15,'Fill',-1,d,[ bool ]).
+html_comp_i(15,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(15,'Font',font('Verdana',12,[]),d,[ font ]).
+html_comp_i(15,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(15,'Gxformat',0,d,[ num ]).
+html_comp_i(15,'Title','',d,[ str ]).
+html_comp_i(15,'Use_datepicker',-1,d,[ bool ]).
+html_comp_i(15,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(16,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(16,'Class',row,v,[ str ]).
+html_comp_i(16,'Id','',d,[ str ]).
+html_comp_i(16,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(16,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(16,'Semanticcontent',div,d,[ str ]).
+html_comp_i(16,'Align',left,d,[ str ]).
+html_comp_i(16,'Valign',top,d,[ str ]).
+html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(17,'Class','col-xs-12',v,[ str ]).
+html_comp_i(17,'Id','',d,[ str ]).
+html_comp_i(17,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(17,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(17,'Semanticcontent',div,d,[ str ]).
+html_comp_i(17,'Align',left,d,[ str ]).
+html_comp_i(17,'Valign',top,d,[ str ]).
+html_comp_i(18,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(18,'Id','Table2',v,[ str ]).
+html_comp_i(18,'Class','ww__grid-container',v,[ str ]).
+html_comp_i(18,'Title','',d,[ str ]).
+html_comp_i(18,'Header','',d,[ str ]).
+html_comp_i(18,'Align',left,d,[ str ]).
+html_comp_i(18,'Backgroundgx','',d,[ str ]).
+html_comp_i(18,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(18,'Border','0',d,[ str ]).
+html_comp_i(18,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(18,'Cellpadding','1',d,[ str ]).
+html_comp_i(18,'Cellspacing','2',d,[ str ]).
+html_comp_i(18,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(18,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(18,'Rules',none,d,[ str ]).
+html_comp_i(21,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(21,'Caption','Text Block',d,[ str ]).
+html_comp_i(21,'Id','Messagge',v,[ str ]).
+html_comp_i(21,'Class','TextBlock',v,[ str ]).
+html_comp_i(21,'Event','',d,[ str ]).
+html_comp_i(21,'Returnonclick',0,d,[ bool ]).
+html_comp_i(21,'Gxformat',0,d,[ num ]).
+html_comp_i(21,'Title','',d,[ str ]).
+html_comp_i(21,'Fill',-1,d,[ bool ]).
+html_comp_i(21,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(21,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(21,'Font','',d,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(9,1,t('Purchase Order to ',3),[ ctlname('Titletext') ]).
+lit_i(8,1,div(8),[ ctlname('') ]).
+lit_i(7,1,div(7),[ ctlname('') ]).
+lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
+lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(15,1,t(52,2),[ ctlname(52),ctrltype(edit,15),pos(15),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(14,1,div(14),[ ctlname('') ]).
+lit_i(13,1,div(13),[ ctlname('') ]).
+lit_i(12,1,div(12),[ ctlname('Tablefixeddata_1') ]).
+lit_i(11,1,div(11),[ ctlname('') ]).
+lit_i(10,1,div(10),[ ctlname('') ]).
+lit_i(21,1,t('Text Block',3),[ ctlname('Messagge') ]).
+lit_i(18,1,table(18),[ ctlname('Table2') ]).
+lit_i(17,1,div(17),[ ctlname('') ]).
+lit_i(16,1,div(16),[ ctlname('') ]).
+lit_i(3,1,div(3),[ ctlname('Maintable') ]).
+lit_i(2,1,div(2),[ ctlname('') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+att_prop_i(6,52,'ExternalName','PurchaseOrderCreatedDate',d).
+att_prop_i(6,52,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,52,'EmptyAsNull','Yes',d).
+att_prop_i(6,52,idBasedOn,140,v).
+att_prop_i(6,52,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,52,'AttRegEx','',d).
+att_prop_i(6,52,'AttValidationFailedMsg','',d).
+att_prop_i(6,52,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,52,'DownloadOffline','0',d).
+att_prop_i(6,52,'VarServiceExtName','',d).
+att_prop_i(6,52,'FullName','PurchaseOrderCreatedDate',v).
+att_prop_i(6,5,'ExternalName','SupplierName',d).
+att_prop_i(6,5,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,5,'EmptyAsNull','Yes',d).
+att_prop_i(6,5,idBasedOn,93,v).
+att_prop_i(6,5,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,5,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,5,'AttRegEx','',d).
+att_prop_i(6,5,'AttValidationFailedMsg','',d).
+att_prop_i(6,5,'DownloadOffline','0',d).
+att_prop_i(6,5,'VarServiceExtName','',d).
+att_prop_i(6,5,'FullName','SupplierName',v).
+att_prop_i(6,50,'ExternalName','PurchaseOrderId',d).
+att_prop_i(6,50,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,50,'EmptyAsNull','Yes',d).
+att_prop_i(6,50,idBasedOn,92,v).
+att_prop_i(6,50,'AUTONUMBER','-1',d).
+att_prop_i(6,50,'AUTONUMBER_START','1',d).
+att_prop_i(6,50,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,50,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,50,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,50,'AttRegEx','',d).
+att_prop_i(6,50,'AttValidationFailedMsg','',d).
+att_prop_i(6,50,'DownloadOffline','0',d).
+att_prop_i(6,50,'VarServiceExtName','',d).
+att_prop_i(6,50,'FullName','PurchaseOrderId',v).
+att_prop_i(6,79,'ExternalName','PurchaseOrderActive',d).
+att_prop_i(6,79,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,79,'EmptyAsNull','Yes',d).
+att_prop_i(6,79,'ExternalStorage','-1',d).
+att_prop_i(6,79,idBasedOn,'',d).
+att_prop_i(6,79,'ATT_INITIAL_VALUE',[ t('TRUE',40) ],v).
+att_prop_i(6,79,'AttRegEx','',d).
+att_prop_i(6,79,'AttValidationFailedMsg','',d).
+att_prop_i(6,79,'DownloadOffline','0',d).
+att_prop_i(6,79,'VarServiceExtName','',d).
+att_prop_i(6,79,'FullName','PurchaseOrderActive',v).
+att_prop_i(6,4,'ExternalName','SupplierId',d).
+att_prop_i(6,4,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,4,'EmptyAsNull','Yes',d).
+att_prop_i(6,4,idBasedOn,92,v).
+att_prop_i(6,4,'AUTONUMBER','-1',d).
+att_prop_i(6,4,'AUTONUMBER_START','1',d).
+att_prop_i(6,4,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,4,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,4,'AttRegEx','',d).
+att_prop_i(6,4,'AttValidationFailedMsg','',d).
+att_prop_i(6,4,'DownloadOffline','0',d).
+att_prop_i(6,4,'VarServiceExtName','',d).
+att_prop_i(6,4,'FullName','SupplierId',v).
+ 
+tbl_prop_i(6,10,'AllDirSuper',[ [ 2,[ 4 ] ] ],v).
+tbl_prop_i(6,2,'DirSubor',[ [ 10,[ 4 ] ] ],v).
+tbl_prop_i(6,10,'DirSuper',[ [ 2,[ 4 ] ] ],v).
+ 
+tbl_att_prop_i(6,10,50,'AllowNulls',n).
+tbl_att_prop_i(6,10,50,'AUTONUMBER',y).
+tbl_att_prop_i(6,10,4,'AllowNulls',n).
+tbl_att_prop_i(6,10,52,'AllowNulls',n).
+tbl_att_prop_i(6,10,79,'AllowNulls',n).
+tbl_att_prop_i(6,2,4,'AllowNulls',n).
+tbl_att_prop_i(6,2,4,'AUTONUMBER',y).
+tbl_att_prop_i(6,2,5,'AllowNulls',n).
+ 
+var_prop_i(6,'Meemail',idBasedOn,46,v).
+var_prop_i(6,'Meemail','AttRegEx','^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$',d).
+var_prop_i(6,'Meemail','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Purchaseordercreateddate',idBasedOn,'',v).
+var_prop_i(6,'Purchaseorderid',idBasedOn,'',v).
+var_prop_i(6,'Selectedtabcode',idBasedOn,96,v).
+var_prop_i(6,'Suppliername',idBasedOn,'',v).
+var_prop_i(6,'Tabcode',idBasedOn,96,v).
+var_prop_i(6,'Urls',idBasedOn,33,v).
+var_prop_i(6,'Urls','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(6,'Urls','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Buttonurl',idBasedOn,33,v).
+var_prop_i(6,'Buttonurl','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(6,'Buttonurl','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,57,[ [ 50,'Purchaseorderid',79,[ t('Titletext',3),t('Caption',3) ],5,52,[ t('Httprequest',23),t('Baseurl',3) ],'Namesofattachs','Allok' ],[ [ t('Titletext',3),t('Caption',3) ],'Namesofattachs','Allok',[ t('Messagge',3),t('Caption',3) ] ] ]).
+ 
+pgm_parm_i(proc,75,'SENDEMAIL',[ [ svchar,100,0,0 ],[ svchar,1000,0,0 ],[ svchar,40,0,0 ],[ o(objectcollection(svchar)),1000,0,0 ],[ o(objectcollection(svchar)),100,0,0 ],[ boolean,4,0,0 ] ],[ [ 'ToEmail',in,[] ],[ 'BodyMsg',inout,[] ],[ 'Subject',inout,[] ],[ 'URLs',inout,[ '-1' ] ],[ 'NamesOfAttachs',inout,[ '-1' ] ],[ 'AllOk',inout,[] ] ]).
+pgm_parm_i(web,112,'WPLOGIN',[],[]).
+pgm_parm_i(proc,77,'PURCHASEORDERGENERATEATTACH',[ [ int,6,0,0 ] ],[ [ 'PurchaseOrderId',in,[] ] ]).
+pgm_parm_i(web,128,'PURCHASEORDERSUPPLIERVIEW',[ [ int,6,0,0 ],[ svchar,40,0,0 ] ],[ [ 'PurchaseOrderId',in,[] ],[ 'MesaggeError',inout,[] ] ]).
+ 
+pgm_callprotocol_i(web,132,'PURCHASEORDERCONFIRMATED','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,75,'SENDEMAIL','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,112,'WPLOGIN','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,77,'PURCHASEORDERGENERATEATTACH','HTTP','Unsecure').
+pgm_callprotocol_i(web,128,'PURCHASEORDERSUPPLIERVIEW','INTERNAL','Unsecure').
+ 
+ 
+pgm_main_info_i(proc,77,'PURCHASEORDERGENERATEATTACH',[ 41,'APURCHASEORDERGENERATEATTACH','','','','','HTTP' ]).
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

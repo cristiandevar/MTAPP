@@ -1,0 +1,261 @@
+ 
+spec_i([ sdt,[ 0,7,0 ],'PurchaseOrder','PurchaseOrder',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,7,0 ],name,'PurchaseOrder').
+struct_dt_i([ 0,7,0 ],namespace,mtaKB).
+struct_dt_i([ 0,7,0 ],significantName,'PurchaseOrder').
+struct_dt_i([ 0,7,0 ],'ObjName','PurchaseOrder').
+struct_dt_i([ 0,7,0 ],'ObjDesc','Purchase Order').
+struct_dt_i([ 0,7,0 ],'ExternalName','PurchaseOrder').
+struct_dt_i([ 0,7,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,7,0 ],key,[ 50 ]).
+struct_dt_i([ 0,7,0 ],lvl,10).
+struct_dt_i([ 0,7,[ 50,61 ] ],name,'Detail').
+struct_dt_i([ 0,7,[ 50,61 ] ],namespace,'mtaKB.PurchaseOrder').
+struct_dt_i([ 0,7,[ 50,61 ] ],lvl,12).
+struct_dt_i([ 0,7,0 ],fullname,'PurchaseOrder').
+struct_dt_i([ 0,7,[ 50,61 ] ],fullname,'PurchaseOrder.Detail').
+ 
+struct_dt_elem_i([ 0,7,0 ],1,name,'Purchaseorderid').
+struct_dt_elem_i([ 0,7,0 ],1,camelname,'PurchaseOrderId').
+struct_dt_elem_i([ 0,7,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,7,0 ],1,length,6).
+struct_dt_elem_i([ 0,7,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],1,sign,0).
+struct_dt_elem_i([ 0,7,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],1,attributeid,'50').
+struct_dt_elem_i([ 0,7,0 ],1,'ExternalName','PurchaseOrderId').
+struct_dt_elem_i([ 0,7,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],2,name,'Supplierid').
+struct_dt_elem_i([ 0,7,0 ],2,camelname,'SupplierId').
+struct_dt_elem_i([ 0,7,0 ],2,basedon,92).
+struct_dt_elem_i([ 0,7,0 ],2,length,6).
+struct_dt_elem_i([ 0,7,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],2,sign,0).
+struct_dt_elem_i([ 0,7,0 ],2,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,0 ],2,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],2,attributeid,'4').
+struct_dt_elem_i([ 0,7,0 ],2,'ExternalName','SupplierId').
+struct_dt_elem_i([ 0,7,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],3,name,'Suppliername').
+struct_dt_elem_i([ 0,7,0 ],3,camelname,'SupplierName').
+struct_dt_elem_i([ 0,7,0 ],3,basedon,93).
+struct_dt_elem_i([ 0,7,0 ],3,length,60).
+struct_dt_elem_i([ 0,7,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],3,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,7,0 ],3,pic,'').
+struct_dt_elem_i([ 0,7,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],3,attributeid,'5').
+struct_dt_elem_i([ 0,7,0 ],3,'ExternalName','SupplierName').
+struct_dt_elem_i([ 0,7,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],4,name,'Purchaseordercreateddate').
+struct_dt_elem_i([ 0,7,0 ],4,camelname,'PurchaseOrderCreatedDate').
+struct_dt_elem_i([ 0,7,0 ],4,basedon,140).
+struct_dt_elem_i([ 0,7,0 ],4,length,8).
+struct_dt_elem_i([ 0,7,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],4,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,7,0 ],4,pic,'99/99/99').
+struct_dt_elem_i([ 0,7,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],4,attributeid,'52').
+struct_dt_elem_i([ 0,7,0 ],4,'ExternalName','PurchaseOrderCreatedDate').
+struct_dt_elem_i([ 0,7,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],5,name,'Purchaseordertotalpaid').
+struct_dt_elem_i([ 0,7,0 ],5,camelname,'PurchaseOrderTotalPaid').
+struct_dt_elem_i([ 0,7,0 ],5,basedon,94).
+struct_dt_elem_i([ 0,7,0 ],5,length,18).
+struct_dt_elem_i([ 0,7,0 ],5,decimals,2).
+struct_dt_elem_i([ 0,7,0 ],5,sign,0).
+struct_dt_elem_i([ 0,7,0 ],5,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,7,0 ],5,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,7,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],5,attributeid,'78').
+struct_dt_elem_i([ 0,7,0 ],5,'ExternalName','PurchaseOrderTotalPaid').
+struct_dt_elem_i([ 0,7,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],6,name,'Purchaseordercloseddate').
+struct_dt_elem_i([ 0,7,0 ],6,camelname,'PurchaseOrderClosedDate').
+struct_dt_elem_i([ 0,7,0 ],6,basedon,140).
+struct_dt_elem_i([ 0,7,0 ],6,length,8).
+struct_dt_elem_i([ 0,7,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],6,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,7,0 ],6,pic,'99/99/99').
+struct_dt_elem_i([ 0,7,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],6,attributeid,'66').
+struct_dt_elem_i([ 0,7,0 ],6,'ExternalName','PurchaseOrderClosedDate').
+struct_dt_elem_i([ 0,7,0 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],7,name,'Purchaseordermodifieddate').
+struct_dt_elem_i([ 0,7,0 ],7,camelname,'PurchaseOrderModifiedDate').
+struct_dt_elem_i([ 0,7,0 ],7,length,8).
+struct_dt_elem_i([ 0,7,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],7,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,7,0 ],7,pic,'99/99/99').
+struct_dt_elem_i([ 0,7,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],7,attributeid,'53').
+struct_dt_elem_i([ 0,7,0 ],7,'ExternalName','PurchaseOrderModifiedDate').
+struct_dt_elem_i([ 0,7,0 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],8,name,'Purchaseorderconfirmateddate').
+struct_dt_elem_i([ 0,7,0 ],8,camelname,'PurchaseOrderConfirmatedDate').
+struct_dt_elem_i([ 0,7,0 ],8,length,8).
+struct_dt_elem_i([ 0,7,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],8,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,7,0 ],8,pic,'99/99/99').
+struct_dt_elem_i([ 0,7,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],8,attributeid,'135').
+struct_dt_elem_i([ 0,7,0 ],8,'ExternalName','PurchaseOrderConfirmatedDate').
+struct_dt_elem_i([ 0,7,0 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],9,name,'Purchaseorderactive').
+struct_dt_elem_i([ 0,7,0 ],9,camelname,'PurchaseOrderActive').
+struct_dt_elem_i([ 0,7,0 ],9,length,4).
+struct_dt_elem_i([ 0,7,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],9,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,7,0 ],9,pic,'').
+struct_dt_elem_i([ 0,7,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],9,attributeid,'79').
+struct_dt_elem_i([ 0,7,0 ],9,'ExternalName','PurchaseOrderActive').
+struct_dt_elem_i([ 0,7,0 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],9,'ATT_INITIAL_VALUE',[ t('TRUE',40) ]).
+struct_dt_elem_i([ 0,7,0 ],10,name,'Purchaseordercanceleddescription').
+struct_dt_elem_i([ 0,7,0 ],10,camelname,'PurchaseOrderCanceledDescription').
+struct_dt_elem_i([ 0,7,0 ],10,basedon,88).
+struct_dt_elem_i([ 0,7,0 ],10,length,200).
+struct_dt_elem_i([ 0,7,0 ],10,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],10,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,7,0 ],10,pic,'').
+struct_dt_elem_i([ 0,7,0 ],10,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],10,attributeid,'136').
+struct_dt_elem_i([ 0,7,0 ],10,'ExternalName','PurchaseOrderCanceledDescription').
+struct_dt_elem_i([ 0,7,0 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],11,name,'Purchaseorderwaspaid').
+struct_dt_elem_i([ 0,7,0 ],11,camelname,'PurchaseOrderWasPaid').
+struct_dt_elem_i([ 0,7,0 ],11,length,4).
+struct_dt_elem_i([ 0,7,0 ],11,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],11,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,7,0 ],11,pic,'').
+struct_dt_elem_i([ 0,7,0 ],11,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],11,attributeid,'138').
+struct_dt_elem_i([ 0,7,0 ],11,'ExternalName','PurchaseOrderWasPaid').
+struct_dt_elem_i([ 0,7,0 ],11,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],12,name,'Purchaseorderpaiddate').
+struct_dt_elem_i([ 0,7,0 ],12,camelname,'PurchaseOrderPaidDate').
+struct_dt_elem_i([ 0,7,0 ],12,length,8).
+struct_dt_elem_i([ 0,7,0 ],12,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],12,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,7,0 ],12,pic,'99/99/99').
+struct_dt_elem_i([ 0,7,0 ],12,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],12,attributeid,'139').
+struct_dt_elem_i([ 0,7,0 ],12,'ExternalName','PurchaseOrderPaidDate').
+struct_dt_elem_i([ 0,7,0 ],12,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],13,name,'Purchaseorderdetailsquantity').
+struct_dt_elem_i([ 0,7,0 ],13,camelname,'PurchaseOrderDetailsQuantity').
+struct_dt_elem_i([ 0,7,0 ],13,length,4).
+struct_dt_elem_i([ 0,7,0 ],13,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],13,sign,0).
+struct_dt_elem_i([ 0,7,0 ],13,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,7,0 ],13,pic,'ZZZ9').
+struct_dt_elem_i([ 0,7,0 ],13,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],13,attributeid,'67').
+struct_dt_elem_i([ 0,7,0 ],13,'ExternalName','PurchaseOrderDetailsQuantity').
+struct_dt_elem_i([ 0,7,0 ],13,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],14,name,'Purchaseorderlastdetailid').
+struct_dt_elem_i([ 0,7,0 ],14,camelname,'PurchaseOrderLastDetailId').
+struct_dt_elem_i([ 0,7,0 ],14,basedon,92).
+struct_dt_elem_i([ 0,7,0 ],14,length,6).
+struct_dt_elem_i([ 0,7,0 ],14,decimals,0).
+struct_dt_elem_i([ 0,7,0 ],14,sign,0).
+struct_dt_elem_i([ 0,7,0 ],14,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,0 ],14,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,0 ],14,collection,'False').
+struct_dt_elem_i([ 0,7,0 ],14,attributeid,'96').
+struct_dt_elem_i([ 0,7,0 ],14,'ExternalName','PurchaseOrderLastDetailId').
+struct_dt_elem_i([ 0,7,0 ],14,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],15,name,'Detail').
+struct_dt_elem_i([ 0,7,0 ],15,camelname,'Detail').
+struct_dt_elem_i([ 0,7,0 ],15,type,[ [ 0,7,[ 50,61 ] ],0,0 ]).
+struct_dt_elem_i([ 0,7,0 ],15,pic,'').
+struct_dt_elem_i([ 0,7,0 ],15,collection,'True').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,name,'Purchaseorderdetailid').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,camelname,'PurchaseOrderDetailId').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,basedon,92).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,length,6).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,decimals,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,sign,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,attributeid,'61').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,'ExternalName','PurchaseOrderDetailId').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,name,'Productid').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,camelname,'ProductId').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,basedon,92).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,length,6).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,decimals,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,sign,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,attributeid,'15').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,'ExternalName','ProductId').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,name,'Productname').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,camelname,'ProductName').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,basedon,93).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,length,60).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,decimals,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,pic,'').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,attributeid,'16').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,'ExternalName','ProductName').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,name,'Purchaseorderdetailquantityordered').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,camelname,'PurchaseOrderDetailQuantityOrdered').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,length,6).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,decimals,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,sign,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,attributeid,'76').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,'ExternalName','PurchaseOrderDetailQuantityOrdered').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,name,'Purchaseorderdetailquantityreceived').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,camelname,'PurchaseOrderDetailQuantityReceived').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,length,6).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,decimals,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,sign,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,attributeid,'77').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,'ExternalName','PurchaseOrderDetailQuantityReceived').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,name,'Purchaseorderdetailsuggestedprice').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,camelname,'PurchaseOrderDetailSuggestedPrice').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,basedon,94).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,length,18).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,decimals,2).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,sign,0).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,collection,'False').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,attributeid,'134').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,'ExternalName','PurchaseOrderDetailSuggestedPrice').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,7,0 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 0,7,0 ],10,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

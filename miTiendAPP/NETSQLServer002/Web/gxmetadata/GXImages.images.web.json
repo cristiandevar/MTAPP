@@ -1,0 +1,19 @@
+{ 
+    "Resources" : [ { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Unanimo",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Unanimo.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoControls",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoControls.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoMobile",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoMobile.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoAngular",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoAngular.json"
+    } ]
+}

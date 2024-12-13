@@ -1,0 +1,74 @@
+{
+	"Name": "GeneXusUnanimo.Slider",
+	"Target": "",
+	"IsControlType": true,
+	"Template": "<div class=\"slider-container\">    <input type=\"range\" id=\"slider{{id}}\" name=\"gxRange{{id}}\" min=\"{{MinValue=0}}\" max=\"{{MaxValue=100}}\" step=\"{{Step=1}}\" class=\"slider\" {{^Enabled}}disabled{{/Enabled}} {{DataElement}}>	<output for=\"slider{{id}}\" class=\"slider-value\"></div>", 
+	"Events": [
+		{
+			"Name": "Event",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "id",
+			"Name": "id",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "MinValue",
+			"Name": "MinValue",
+			"Type": "numeric",
+			"Default": "0"
+		} ,
+		{
+			"Id": "MaxValue",
+			"Name": "MaxValue",
+			"Type": "numeric",
+			"Default": "100"
+		} ,
+		{
+			"Id": "Step",
+			"Name": "Step",
+			"Type": "numeric",
+			"Default": "1"
+		} ,
+		{
+			"Id": "Enabled",
+			"Name": "Enabled",
+			"Type": "boolean",
+			"Default": "true"
+		} ,
+		{
+			"Id": "AttID",
+			"Name": "Attribute",
+			"Type": "numeric",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "InitSlider",
+				"Source": "  	const allRanges = document.querySelectorAll(\".slider-container\");	for (const wrap of allRanges) {		const range = wrap.querySelector(\".slider\");		const bubble = wrap.querySelector(\".slider-value\");				range.addEventListener(\"input\", function() {			setBubble(range, bubble);		});		setBubble(range, bubble);	}		function setBubble(range, bubble) {		const val = range.value;		const min = range.min ? range.min : 0;		const max = range.max ? range.max : 100;		const newVal = Number(((val - min) * 100) / (max - min));		bubble.innerHTML = val;		/*Sorta magic numbers based on size of the native UI thumb*/		bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;	}",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

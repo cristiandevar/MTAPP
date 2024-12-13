@@ -1,0 +1,46 @@
+<?xml-stylesheet type='text/xsl' href='prgs.xsl'?><Objects>
+  <Charset>UTF-8</Charset>
+  <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus18Trial/</Path>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWBrand</ObjName>
+    <ObjDesc>Brands</ObjDesc>
+    <ObjLink>wwbrand.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWEmployee</ObjName>
+    <ObjDesc>Employees</ObjDesc>
+    <ObjLink>wwemployee.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWInvoice</ObjName>
+    <ObjDesc>Invoices</ObjDesc>
+    <ObjLink>wwinvoice.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWProduct</ObjName>
+    <ObjDesc>Products</ObjDesc>
+    <ObjLink>wwproduct.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWPurchaseOrder</ObjName>
+    <ObjDesc>Purchase Orders</ObjDesc>
+    <ObjLink>wwpurchaseorder.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWSector</ObjName>
+    <ObjDesc>Sectors</ObjDesc>
+    <ObjLink>wwsector.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WWSupplier</ObjName>
+    <ObjDesc>Suppliers</ObjDesc>
+    <ObjLink>wwsupplier.aspx</ObjLink>
+  </Object>
+</Objects>

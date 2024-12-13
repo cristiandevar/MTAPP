@@ -1,0 +1,274 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>112</ObjId>
+<ObjName>WPLogIn</ObjName>
+<ObjDesc>Welcome</ObjDesc>
+<ObjPgmName>WPLogIn</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>'LogIn'</EventName>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>16</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>UUSER</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Username</VarId>
+<VarName>&amp;UserName</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Username</VarId>
+<VarName>&amp;UserName</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>101</AttriId>
+<AttriName>UserPassword</AttriName>
+<Description>User Password</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Token>encrypt64(</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Userpassword</VarId>
+<VarName>&amp;UserPassword</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>109</AttriId>
+<AttriName>UserHash</AttriName>
+<Description>User Hash</Description></Attribute>
+<Token>)</Token>
+<Icon>client</Icon></Condition>
+<Condition>
+<Attribute>
+<AttriId>111</AttriId>
+<AttriName>UserActive</AttriName>
+<Description>User Active</Description></Attribute></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>111</AttriId>
+<AttriName>UserActive</AttriName>
+<Description>User Active</Description></Attribute>
+<Attribute>
+<AttriId>109</AttriId>
+<AttriName>UserHash</AttriName>
+<Description>User Hash</Description></Attribute>
+<Attribute>
+<AttriId>101</AttriId>
+<AttriName>UserPassword</AttriName>
+<Description>User Password</Description></Attribute>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Event>
+<Event>
+<EventName>Enter</EventName>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>43</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>UUSER</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Username</VarId>
+<VarName>&amp;UserName</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Username</VarId>
+<VarName>&amp;UserName</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>101</AttriId>
+<AttriName>UserPassword</AttriName>
+<Description>User Password</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Token>encrypt64(</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Userpassword</VarId>
+<VarName>&amp;UserPassword</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>109</AttriId>
+<AttriName>UserHash</AttriName>
+<Description>User Hash</Description></Attribute>
+<Token>)</Token>
+<Icon>client</Icon></Condition>
+<Condition>
+<Attribute>
+<AttriId>111</AttriId>
+<AttriName>UserActive</AttriName>
+<Description>User Active</Description></Attribute></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>111</AttriId>
+<AttriName>UserActive</AttriName>
+<Description>User Active</Description></Attribute>
+<Attribute>
+<AttriId>109</AttriId>
+<AttriName>UserHash</AttriName>
+<Description>User Hash</Description></Attribute>
+<Attribute>
+<AttriId>101</AttriId>
+<AttriName>UserPassword</AttriName>
+<Description>User Password</Description></Attribute>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>53</ObjId>
+<ObjName>SetContext</ObjName>
+<ObjPgmName>SetContext</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Context</VarId>
+<VarName>&amp;Context</VarName></Variable></Expression>
+<IF></IF></CALL>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>113</ObjId>
+<ObjName>WPHome</ObjName>
+<ObjPgmName>WPHome</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression></Expression>
+<IF></IF></CALL>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>112</ObjId>
+<ObjName>WPLogIn</ObjName>
+<ObjPgmName>WPLogIn</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

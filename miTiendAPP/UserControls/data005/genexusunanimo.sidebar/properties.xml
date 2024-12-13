@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="GeneXusUnanimo.Sidebar">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>Title</Id>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Class</Id>
+					<Name>Class</Name>
+					<Type>Text</Type>
+					<Default>ch-sidebar</Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>FooterText</Id>
+					<Name>FooterText</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>DistanceToTop</Id>
+					<Name>DistanceToTop</Name>
+					<Type>Integer</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Collapsible</Id>
+					<Name>Collapsible</Name>
+					<Type>Boolean</Type>
+					<Default>True</Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>SidebarItems</Id>
+					<Name>SidebarItems</Name>
+					<Type>Custom</Type>
+					<Default></Default>
+					<Values></Values>
+					<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+					<Metadata>
+						<Value name="FlagScope">Designtime</Value>
+						<Value name="FlagSetValueMethod">setSidebarItems</Value>
+						<Value name="FlagGetValueMethod">getSidebarItems</Value>
+						<Value name="FlagHideAttributes">True</Value>
+						<Value name="FlagDataTypeFilter"></Value>
+					</Metadata>
+				</Prop>
+				<Prop>
+					<Id>SidebarItemsCurrentIndex</Id>
+					<Name>SidebarItemsCurrentIndex</Name>
+					<Type>Integer</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>ActiveItemId</Id>
+					<Name>ActiveItemId</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>SelectedItemTarget</Id>
+					<Name>SelectedItemTarget</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>isCollapsed</Id>
+					<Name>isCollapsed</Name>
+					<Type>Boolean</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>IconAutoColor</Id>
+					<Name>IconAutoColor</Name>
+					<Type>Boolean</Type>
+					<Default>false</Default>
+					<Values></Values>
+				</Prop>
+			</Children>
+		</Group>
+	</Object>
+</Content>

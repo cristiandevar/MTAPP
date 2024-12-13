@@ -1,0 +1,188 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>2a9e9aba-d2de-4801-ae7f-5e3819222daf</ObjClsGuid>
+<ObjCls>33</ObjCls>
+<ObjId>9</ObjId>
+<ObjName>DPAllProductsWhereOrdered</ObjName>
+<ObjDesc>DPAll Products Where Ordered</ObjDesc>
+<ObjPgmName>DPAllProductsWhereOrdered</ObjPgmName>
+<ObjClsName>DataProvider</ObjClsName></Object>
+<Result>nogenreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Token>SDTProductsSelected</Token></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>28</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPURCHASEORDERDETAIL</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>PurchaseOrderActive</AttriName>
+<Description>Purchase Order Active</Description></Attribute></Condition>
+<Condition>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Token>.</Token>
+<Token>isnull(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Token>nullvalue(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>PurchaseOrderClosedDate</AttriName>
+<Description>Purchase Order Closed Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table>
+<Table>
+<TableId>3</TableId>
+<TableName>Sector</TableName>
+<Description>Sector</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

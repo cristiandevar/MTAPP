@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wcstatisticsproductsleast.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wcstatisticsproductsleast.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\refint\wcstatisticsproductsleast.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\wcstatisticsproductsleast.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsproductsleast\obj\Release\net6.0\ref\wcstatisticsproductsleast.dll

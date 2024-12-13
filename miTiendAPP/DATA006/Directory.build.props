@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <GenStdVersion>[1.22.0]</GenStdVersion>
+  </PropertyGroup>
+</Project>

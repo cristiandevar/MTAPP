@@ -1,0 +1,17 @@
+{{=<% %>=}}
+<ch-select 
+  [name]="Name" 
+  [class]="Class" 
+  [iconSrc]="Icon" 
+  [arrowIconSrc]="ArrowIcon"
+  [autoColor]="IconAutoColor"
+  [height]="Height" 
+  [optionHeight]="OptionHeight" 
+  tabindex="0"
+  (optionClickedEvent)="SelectedItem=$event?.detail['option-value']; ItemClick();">
+	<ng-container *ngFor="let item of SelectItems">
+		<option [value]="item.value" [selected]="item.selected">
+			{{gxTpr_item.text}}{{item.text}}
+		</option>
+	</ng-container>
+</ch-select>

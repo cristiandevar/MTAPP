@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\arankingstocksupplier.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\arankingstocksupplier.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\refint\arankingstocksupplier.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\arankingstocksupplier.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\arankingstocksupplier\obj\Release\net6.0\ref\arankingstocksupplier.dll

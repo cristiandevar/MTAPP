@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wcstatisticsamountstatement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wcstatisticsamountstatement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\refint\wcstatisticsamountstatement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\wcstatisticsamountstatement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wcstatisticsamountstatement\obj\Release\net6.0\ref\wcstatisticsamountstatement.dll

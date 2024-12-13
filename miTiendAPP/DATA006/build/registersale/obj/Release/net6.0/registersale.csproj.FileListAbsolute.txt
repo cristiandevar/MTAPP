@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\registersale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\registersale.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\refint\registersale.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\registersale.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\registersale\obj\Release\net6.0\ref\registersale.dll

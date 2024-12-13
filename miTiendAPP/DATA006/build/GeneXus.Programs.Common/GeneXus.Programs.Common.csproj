@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+	<Import Project="..\..\web\GeneXus.Programs.Common.sdts.targets" Condition="Exists('..\..\web\GeneXus.Programs.Common.sdts.targets')"/>
+
+	
+	<PropertyGroup>
+		<AssemblyName>GeneXus.Programs.Common</AssemblyName>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<PostgresqlSupport>false</PostgresqlSupport>
+		<OfficeSupport>false</OfficeSupport>
+		<MailSupport>false</MailSupport>
+	</PropertyGroup>
+	
+	<ItemGroup>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
+
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\type_SdtPermission.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtSupplier.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainproductstate.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtRole_Permission.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtRole.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainuserstate.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtInvoice.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainsupplierstate.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtPurchaseOrder.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtInvoice_Detail.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainorderoptionorderpurchase.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtPaymentMethod.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomaininvoicetype.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtProduct.cs" />
+		<Compile Include = "$(WebDirectory)\GxFullTextSearchReindexer.cs" />
+		<Compile Include = "$(WebDirectory)\GxModelInfoProvider.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainorderoptionsearchproducts.cs" />
+		<Compile Include = "$(WebDirectory)\GxWebStd.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainoptionupdateprice.cs" />
+		<Compile Include = "$(WebDirectory)\SoapParm.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainemaildata.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtInvoice_PaymentMethod.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomaingooglecharttype.cs" />
+		<Compile Include = "$(WebDirectory)\general\gxdomainpage.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomaininvoicestatevalue.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainmovementtype.cs" />
+		<Compile Include = "$(WebDirectory)\GxWebServicesConfig.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtPurchaseOrder_Detail.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtUser.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainpurchaseorderstate.cs" />
+
+	</ItemGroup>
+	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">
+		<PackageReference Include="Npgsql" Version="3.2.7" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<Import Project="..\DotNetCoreBaseProject.targets"/>	
+</Project>

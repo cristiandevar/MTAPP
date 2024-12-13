@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wplogin.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wplogin.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\refint\wplogin.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\wplogin.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wplogin\obj\Release\net6.0\ref\wplogin.dll

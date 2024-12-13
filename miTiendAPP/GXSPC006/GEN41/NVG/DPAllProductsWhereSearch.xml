@@ -1,0 +1,23 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>2a9e9aba-d2de-4801-ae7f-5e3819222daf</ObjClsGuid>
+<ObjCls>33</ObjCls>
+<ObjId>6</ObjId>
+<ObjName>DPAllProductsWhereSearch</ObjName>
+<ObjDesc>DPAll Products Where Search</ObjDesc>
+<ObjPgmName>DPAllProductsWhereSearch</ObjPgmName>
+<ObjClsName>DataProvider</ObjClsName></Object>
+<Result>nogenspc</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0217</MsgCode>
+<Message>
+<Token>Object is unreachable.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters></ObjectSpec>

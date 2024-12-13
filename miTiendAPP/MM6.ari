@@ -1,0 +1,253 @@
+ 
+ 
+ 
+pgm_main_i(proc,83,'SUPPLIERACTIVEDEACTIVEOLD',[ 41,'ASUPPLIERACTIVEDEACTIVEOLD','Supplier Active Deactive Old','','','','INTERNAL' ]).
+pgm_main_i(proc,16,'RANKINGPRODUCTSTOCK',[ 41,'ARANKINGPRODUCTSTOCK','Ranking Product Stock','','','','HTTP' ]).
+pgm_main_i(proc,25,'PRODUCTSRANKINGPURCHASE',[ 41,'APRODUCTSRANKINGPURCHASE','Products Ranking Purchase','','','','HTTP' ]).
+pgm_main_i(proc,27,'PRODUCTSRANKINGPURCHASESUBTOTAL',[ 41,'APRODUCTSRANKINGPURCHASESUBTOTAL','Products Ranking Purchase Subtotal','','','','HTTP' ]).
+pgm_main_i(proc,15,'LISTPRODUCTSPURCHASE',[ 41,'ALISTPRODUCTSPURCHASE','List Products Purchase','','','','HTTP' ]).
+pgm_main_i(proc,28,'PRODUCTSRANKINGPURCHASEUNITS',[ 41,'APRODUCTSRANKINGPURCHASEUNITS','Products Ranking Purchase Units','','','','HTTP' ]).
+pgm_main_i(proc,29,'PRODUCTSRANKINGPURCHASESUBTOTAL',[ 41,'APRODUCTSRANKINGPURCHASESUBTOTAL','Products Ranking Purchase Subtotal1','','','','HTTP' ]).
+pgm_main_i(proc,31,'PRODUCTSRANKINGSALEUNITS',[ 41,'APRODUCTSRANKINGSALEUNITS','Products Ranking Sale Units','','','','HTTP' ]).
+pgm_main_i(proc,30,'PRODUCTSRANKINGSALESUBTOTAL',[ 41,'APRODUCTSRANKINGSALESUBTOTAL','Products Ranking Sale Subtotal','','','','HTTP' ]).
+pgm_main_i(proc,19,'LISTPRODUCTSNAME',[ 41,'ALISTPRODUCTSNAME','List Products Name','','','','HTTP' ]).
+pgm_main_i(proc,20,'LISTPRODUCTSPRICE',[ 41,'ALISTPRODUCTSPRICE','List Products Price','','','','HTTP' ]).
+pgm_main_i(proc,21,'LISTPRODUCTSSTOCK',[ 41,'ALISTPRODUCTSSTOCK','List Products Stock','','','','HTTP' ]).
+pgm_main_i(proc,17,'RANKINGSTOCKSUPPLIER',[ 41,'ARANKINGSTOCKSUPPLIER','Ranking Stock Supplier','','','','HTTP' ]).
+pgm_main_i(proc,22,'LISTPRODUCTSSALES',[ 41,'ALISTPRODUCTSSALES','List Products Sales','','','','HTTP' ]).
+pgm_main_i(proc,23,'REGISTERSALEPRODUCTSELECTED',[ 41,'AREGISTERSALEPRODUCTSELECTED','Register Sale Product Selected','','','','HTTP' ]).
+pgm_main_i(proc,34,'LISTPRODUCTSFILTERED',[ 41,'ALISTPRODUCTSFILTERED','List Products Filtered','','','','HTTP' ]).
+pgm_main_i(proc,74,'INVOICEREGISTERATTACH',[ 41,'AINVOICEREGISTERATTACH','Invoice Register Attach','','','','HTTP' ]).
+pgm_main_i(proc,24,'PRODUCTSRANKINGSALE',[ 41,'APRODUCTSRANKINGSALE','Products Ranking Sale','','','','HTTP' ]).
+pgm_main_i(proc,77,'PURCHASEORDERGENERATEATTACH',[ 41,'APURCHASEORDERGENERATEATTACH','Purchase Order Generate Attach','','','','HTTP' ]).
+pgm_main_i(proc,37,'INVOICEREGISTER',[ 41,'AINVOICEREGISTER','Invoice Register','','','','HTTP' ]).
+pgm_main_i(proc,26,'PRODUCTSRANKINGPURCHASE',[ 41,'APRODUCTSRANKINGPURCHASE','Products Ranking Purchase Quantity Unit','','','','HTTP' ]).
+pgm_main_i(proc,38,'PURCHASEORDERGENERATE',[ 41,'APURCHASEORDERGENERATE','Purchase Order Generate','','','','HTTP' ]).
+pgm_main_i(proc,110,'PURCHASEORDERVOUCHER',[ 41,'APURCHASEORDERVOUCHER','Purchase Order Voucher','','','','HTTP' ]).
+ 
+pgm_prop_i(web,21,'EMPLOYEEINVOICEWC','WEB_COMP','Yes').
+pgm_prop_i(web,21,'EMPLOYEEINVOICEWC','URLAccess','No').
+pgm_prop_i(proc,16,'ARANKINGPRODUCTSTOCK','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,16,'RANKINGPRODUCTSTOCK','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,50,'INVOICEDETAILWC','WEB_COMP','Yes').
+pgm_prop_i(web,50,'INVOICEDETAILWC','URLAccess','No').
+pgm_prop_i(proc,15,'ALISTPRODUCTSPURCHASE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'LISTPRODUCTSPURCHASE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,28,'APRODUCTSRANKINGPURCHASEUNITS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,28,'PRODUCTSRANKINGPURCHASEUNITS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,29,'APRODUCTSRANKINGPURCHASESUBTOTAL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,29,'PRODUCTSRANKINGPURCHASESUBTOTAL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,31,'APRODUCTSRANKINGSALEUNITS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,31,'PRODUCTSRANKINGSALEUNITS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,30,'APRODUCTSRANKINGSALESUBTOTAL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,30,'PRODUCTSRANKINGSALESUBTOTAL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(trn,11,'HISTORYOFDIRCARDEDPRODUCTS',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,87,'PRODUCTHISTORYOFDIRCARDEDPRODUCTSWC','WEB_COMP','Yes').
+pgm_prop_i(web,87,'PRODUCTHISTORYOFDIRCARDEDPRODUCTSWC','URLAccess','No').
+pgm_prop_i(web,86,'HISTORYOFDIRCARDEDPRODUCTSGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,86,'HISTORYOFDIRCARDEDPRODUCTSGENERAL','URLAccess','No').
+pgm_prop_i(proc,19,'ALISTPRODUCTSNAME','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,19,'LISTPRODUCTSNAME','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,20,'ALISTPRODUCTSPRICE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,20,'LISTPRODUCTSPRICE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,21,'ALISTPRODUCTSSTOCK','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,21,'LISTPRODUCTSSTOCK','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'ARANKINGSTOCKSUPPLIER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'RANKINGSTOCKSUPPLIER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,22,'ALISTPRODUCTSSALES','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,22,'LISTPRODUCTSSALES','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,23,'AREGISTERSALEPRODUCTSELECTED','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,23,'REGISTERSALEPRODUCTSELECTED','CALL_PROTOCOL','HTTP').
+pgm_prop_i(mnproc,3,'DPPRODUCTSRANKINGSALE','OutputSDT',o(26,'SDTProductsRankingSale')).
+pgm_prop_i(web,20,'EMPLOYEEGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,20,'EMPLOYEEGENERAL','URLAccess','No').
+pgm_prop_i(web,124,'WCPERMISSIONTREE','WEB_COMP','Yes').
+pgm_prop_i(web,124,'WCPERMISSIONTREE','URLAccess','No').
+pgm_prop_i(web,125,'ROLEPERMISSIONASSIGN','WEB_COMP','Yes').
+pgm_prop_i(web,125,'ROLEPERMISSIONASSIGN','URLAccess','No').
+pgm_prop_i(web,16,'BRANDGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,16,'BRANDGENERAL','URLAccess','No').
+pgm_prop_i(web,43,'SECTORGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,43,'SECTORGENERAL','URLAccess','No').
+pgm_prop_i(web,103,'PRODUCTPRODUCTPERISHABLEWC','WEB_COMP','Yes').
+pgm_prop_i(web,103,'PRODUCTPRODUCTPERISHABLEWC','URLAccess','No').
+pgm_prop_i(web,59,'PRODUCTPERISHABLEGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,59,'PRODUCTPERISHABLEGENERAL','URLAccess','No').
+pgm_prop_i(web,122,'PERMISSIONROLEWC','WEB_COMP','Yes').
+pgm_prop_i(web,122,'PERMISSIONROLEWC','URLAccess','No').
+pgm_prop_i(web,121,'PERMISSIONGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,121,'PERMISSIONGENERAL','URLAccess','No').
+pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
+pgm_prop_i(trn,13,'PERMISSION',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,145,'WCSTATISTICSAMOUNTSTATEMENT','WEB_COMP','Yes').
+pgm_prop_i(web,145,'WCSTATISTICSAMOUNTSTATEMENT','URLAccess','No').
+pgm_prop_i(web,159,'MOVEMENTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,159,'MOVEMENTGENERAL','URLAccess','No').
+pgm_prop_i(web,81,'INVOICEDETAILWC','WEB_COMP','Yes').
+pgm_prop_i(web,81,'INVOICEDETAILWC','URLAccess','No').
+pgm_prop_i(web,150,'INVOICEPAYMENTMETHODWC','WEB_COMP','Yes').
+pgm_prop_i(web,150,'INVOICEPAYMENTMETHODWC','URLAccess','No').
+pgm_prop_i(proc,34,'ALISTPRODUCTSFILTERED','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,34,'LISTPRODUCTSFILTERED','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,44,'SECTORPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,44,'SECTORPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,17,'BRANDPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,17,'BRANDPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,142,'WCSTATISTICSPRODUCTSTOPPURCHASED','WEB_COMP','Yes').
+pgm_prop_i(web,142,'WCSTATISTICSPRODUCTSTOPPURCHASED','URLAccess','No').
+pgm_prop_i(web,146,'WCSTATISTICSPRODUCTSOUTOFSTOCK','WEB_COMP','Yes').
+pgm_prop_i(web,146,'WCSTATISTICSPRODUCTSOUTOFSTOCK','URLAccess','No').
+pgm_prop_i(web,144,'WCSTATISTICSPRODUCTSLEASTPURCHASED','WEB_COMP','Yes').
+pgm_prop_i(web,144,'WCSTATISTICSPRODUCTSLEASTPURCHASED','URLAccess','No').
+pgm_prop_i(proc,74,'AINVOICEREGISTERATTACH','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,74,'INVOICEREGISTERATTACH','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,24,'APRODUCTSRANKINGSALE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,24,'PRODUCTSRANKINGSALE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(mnproc,5,'DPPRODUCTSRANKINGSALES','OutputSDT',o(26,'SDTRankingProducts')).
+pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD',idISWEBSERVICE,'-1').
+pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD','DPRV_WSPROTOCOL','SOAP').
+pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD','OutputSDT',o(26,'SDTInvoiceStatisticsTop')).
+pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','URLAccess','No').
+pgm_prop_i(trn,14,'PAYMENTMETHOD',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(proc,77,'APURCHASEORDERGENERATEATTACH','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,77,'PURCHASEORDERGENERATEATTACH','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,129,'GENERAL\UI\MASTERGUEST','WEB_COMP','Master').
+pgm_prop_i(web,139,'WCSTATISTICSPRODUCTSTOP','WEB_COMP','Yes').
+pgm_prop_i(web,139,'WCSTATISTICSPRODUCTSTOP','URLAccess','No').
+pgm_prop_i(web,143,'WCSTATISTICSPRODUCTSLEASTSOLD','WEB_COMP','Yes').
+pgm_prop_i(web,143,'WCSTATISTICSPRODUCTSLEASTSOLD','URLAccess','No').
+pgm_prop_i(web,141,'WCSTATISTICSPRODUCTSTOPSOLD','WEB_COMP','Yes').
+pgm_prop_i(web,141,'WCSTATISTICSPRODUCTSTOPSOLD','URLAccess','No').
+pgm_prop_i(web,148,'WCSTATISTICSPRODUCTSRETAILWHOLESALE','WEB_COMP','Yes').
+pgm_prop_i(web,148,'WCSTATISTICSPRODUCTSRETAILWHOLESALE','URLAccess','No').
+pgm_prop_i(web,140,'WCSTATISTICSPRODUCTSLEAST','WEB_COMP','Yes').
+pgm_prop_i(web,140,'WCSTATISTICSPRODUCTSLEAST','URLAccess','No').
+pgm_prop_i(web,147,'WCSTATISTICSSUPPLIERTOPSOLD','WEB_COMP','Yes').
+pgm_prop_i(web,147,'WCSTATISTICSSUPPLIERTOPSOLD','URLAccess','No').
+pgm_prop_i(web,117,'ROLEPERMISSIONWC','WEB_COMP','Yes').
+pgm_prop_i(web,117,'ROLEPERMISSIONWC','URLAccess','No').
+pgm_prop_i(web,116,'ROLEGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,116,'ROLEGENERAL','URLAccess','No').
+pgm_prop_i(proc,37,'AINVOICEREGISTER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,37,'INVOICEREGISTER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,108,'USERINVOICEWC','WEB_COMP','Yes').
+pgm_prop_i(web,108,'USERINVOICEWC','URLAccess','No').
+pgm_prop_i(web,80,'INVOICEGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,80,'INVOICEGENERAL','URLAccess','No').
+pgm_prop_i(web,157,'PAYMENTMETHODPAYMENTMETHODWC','WEB_COMP','Yes').
+pgm_prop_i(web,157,'PAYMENTMETHODPAYMENTMETHODWC','URLAccess','No').
+pgm_prop_i(web,118,'ROLEUSERWC','WEB_COMP','Yes').
+pgm_prop_i(web,118,'ROLEUSERWC','URLAccess','No').
+pgm_prop_i(web,107,'USERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,107,'USERGENERAL','URLAccess','No').
+pgm_prop_i(trn,12,'ROLE',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,6,'INVOICE',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,4,'USER',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,1,'GENERAL\UI\MASTERUNANIMOSIDEBAR','WEB_COMP','Master').
+pgm_prop_i(web,53,'PURCHASEORDERDETAILWC','WEB_COMP','Yes').
+pgm_prop_i(web,53,'PURCHASEORDERDETAILWC','URLAccess','No').
+pgm_prop_i(web,102,'PRODUCTDETAIL1WC','WEB_COMP','Yes').
+pgm_prop_i(web,102,'PRODUCTDETAIL1WC','URLAccess','No').
+pgm_prop_i(web,100,'PRODUCTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,100,'PRODUCTGENERAL','URLAccess','No').
+pgm_prop_i(web,47,'SUPPLIERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,47,'SUPPLIERGENERAL','URLAccess','No').
+pgm_prop_i(web,48,'SUPPLIERPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,48,'SUPPLIERPRODUCTWC','URLAccess','No').
+pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(proc,26,'APRODUCTSRANKINGPURCHASE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,26,'PRODUCTSRANKINGPURCHASE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,38,'APURCHASEORDERGENERATE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,38,'PURCHASEORDERGENERATE','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,39,'PURCHASEORDERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,39,'PURCHASEORDERGENERAL','URLAccess','No').
+pgm_prop_i(web,49,'SUPPLIERPURCHASEORDERWC','WEB_COMP','Yes').
+pgm_prop_i(web,49,'SUPPLIERPURCHASEORDERWC','URLAccess','No').
+pgm_prop_i(proc,110,'APURCHASEORDERVOUCHER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,110,'PURCHASEORDERVOUCHER','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,101,'PRODUCTDETAILWC','WEB_COMP','Yes').
+pgm_prop_i(web,101,'PRODUCTDETAILWC','URLAccess','No').
+pgm_prop_i(trn,2,'SUPPLIER',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,7,'PURCHASEORDER',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(mnproc,4,'DPPRODUCTSRANKINGPURCHASES','OutputSDT',o(26,'SDTProductsRankingPurchases')).
+pgm_prop_i(mnproc,9,'DPALLPRODUCTSWHEREORDERED','OutputSDT',o(26,'SDTProductsSelected')).
+pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT',idISWEBSERVICE,'-1').
+pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT','DPRV_WSPROTOCOL','SOAP').
+pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT','OutputSDT',o(26,'SDTStatisticsAccountStatement')).
+pgm_prop_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','OutputSDT',o(26,'GeneXusUnanimo\SidebarItems')).
+ 
+model_wrkinfo_i([ 'NETSQLServer','Data006' ]).
+ 
+model_info_i([ 'Upgrades for Version1','Data006',1 ]).
+ 
+datastore_i(1,'DS_LAST_CHANGE','').
+datastore_i(1,'LOCK_RETRY','10').
+datastore_i(1,'WAIT_RECORD','0').
+datastore_i(1,'ISOLATION_LEVEL','CR').
+datastore_i(1,'SQLSERVER_VERSION','10').
+datastore_i(1,'COMMENT_ON','No').
+datastore_i(1,'DFT_TMP_TBLSPACE','').
+datastore_i(1,'DFT_IDX_TBLSPACE','').
+datastore_i(1,'DFT_TBL_TBLSPACE','').
+datastore_i(1,'DCL_REF_INT_DB','Yes').
+datastore_i(1,'PRIMARY_KEY_TYPE','PK').
+datastore_i(1,'CS_SCHEMA','').
+datastore_i(1,'SORT_ATTRIBUTES','Yes').
+datastore_i(1,'JRN400','QSQJRN').
+datastore_i(1,'CREATE_SAVF','Yes').
+datastore_i(1,'PGMLIB','').
+datastore_i(1,'DTALIB','').
+datastore_i(1,'RecycleRWMin','30').
+datastore_i(1,'RecycleRWType','1').
+datastore_i(1,'RecycleRW','-1').
+datastore_i(1,'POOL_STARTUP','No').
+datastore_i(1,'POOLSIZE_RW','10').
+datastore_i(1,'UnlimitedRWPool','-1').
+datastore_i(1,'PoolRWEnabled','-1').
+datastore_i(1,'CS_RPCPGML','').
+datastore_i(1,'JDBC_DATASOURCE','').
+datastore_i(1,'USE_JDBC_DATASOURCE','0').
+datastore_i(1,'DS_DBMS_ADDINFO','').
+datastore_i(1,'USER_PASSWORD','').
+datastore_i(1,'USER_ID','').
+datastore_i(1,'TRUSTED_CONNECTION','Yes').
+datastore_i(1,'CS_CONNECT','First').
+datastore_i(1,'DBMS_PORT','').
+datastore_i(1,'CS_SERVER','CRISTIAN\SQLEXPRESS').
+datastore_i(1,'CS_DBNAME',mtaKB2).
+datastore_i(1,'CS_FLEDSNAME','').
+datastore_i(1,'CS_DRVNAME','sql server').
+datastore_i(1,'CS_DSNAME','').
+datastore_i(1,'DB_URL','').
+datastore_i(1,'JDBC_CUSTOM_URL','0').
+datastore_i(1,'JDBC_CUSTOM_DRIVER','').
+datastore_i(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver').
+datastore_i(1,'CONNECT_METHOD','OPSYS').
+datastore_i(1,'ACCESS_TECHNO','ADONET').
+datastore_i(1,'MAIN_DS','-1').
+datastore_i(1,'REORG_GEN','8').
+datastore_i(1,'HelpKeyword','20').
+datastore_i(1,'DBMS',12).
+datastore_i(1,'NAME','Default').
+ 
+ 
+ 
+culture_id_i(eng).
+ 
+lng_i(1,[ 'English','English',eng ]).
+ 
+lng_prop_i(1,'IsRightToLeft','0',d).
+lng_prop_i(1,'ISOLangCode','EN',v).
+lng_prop_i(1,'ISOCountryCode','US',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','ENG',v).
+lng_prop_i(1,'LangTimeFormat','12',v).
+lng_prop_i(1,'LangDecimalPoint','.',v).
+lng_prop_i(1,'FullyQualifiedName','English',d).
+ 
+ver_stamp('20241209.055552').
+ 
+ver_stamp(date(2024,12,11),time(23,59,47,30)).
+ 

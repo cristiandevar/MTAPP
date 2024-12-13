@@ -1,0 +1,9 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\Reorganization.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\Reorganization.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\reorganization.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\reorganization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\reorganization.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\Reorganization.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\refint\Reorganization.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\Reorganization.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\reorganization\obj\Release\net6.0\ref\Reorganization.dll

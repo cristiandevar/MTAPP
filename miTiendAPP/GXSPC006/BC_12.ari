@@ -1,0 +1,6 @@
+bc_dt_elem_i([ 0,12,0 ],'Roleid',allownulls,no).
+bc_dt_elem_i([ 0,12,0 ],'Rolename',allownulls,no).
+bc_dt_elem_i([ 0,12,[ 104,106 ] ],'Permissionid',allownulls,no).
+bc_dt_elem_i([ 0,12,[ 104,106 ] ],'Permissionname',readonly,yes).
+bc_dt_elem_i([ 0,12,[ 104,106 ] ],'Permissionname',allownulls,no).
+ 

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprankings.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprankings.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\refint\wprankings.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\wprankings.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprankings\obj\Release\net6.0\ref\wprankings.dll

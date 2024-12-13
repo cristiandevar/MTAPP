@@ -1,0 +1,7 @@
+14.0
+5
+1       SQLSMALLINT         0       2       ""   1     model_id                       ""
+2       SQLSMALLINT         0       2       ""   2     obj_class                      ""
+3       SQLINT              0       4       ""   3     obj_id                         ""
+4       SQLSMALLINT         0       2       ""   4     obj_updtype                    ""
+5       SQLDATETIME         0       8       ""   5     obj_timestamp                  ""

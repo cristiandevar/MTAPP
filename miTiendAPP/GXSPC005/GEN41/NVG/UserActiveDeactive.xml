@@ -1,0 +1,50 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>81</ObjId>
+<ObjName>UserActiveDeactive</ObjName>
+<ObjDesc>User Active Deactive</ObjDesc>
+<ObjPgmName>UserActiveDeactive</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0047</MsgCode>
+<Message>
+<Token>Variable </Token>
+<Token>Errormessagges</Token>
+<Token> not defined; </Token>
+<Token>N(10.2)</Token>
+<Token> assumed.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Userid</VarId>
+<VarName>&amp;UserId</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Active</VarId>
+<VarName>&amp;Active</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Errormessagges</VarId>
+<VarName>&amp;Errormessagges</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

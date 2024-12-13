@@ -1,0 +1,16 @@
+14.0
+14
+1       SQLSMALLINT         0       2       ""   1     model_id                   ""
+2       SQLINT              0       4       ""   2     attri_num                  ""
+3       SQLINT              0       4       ""   3     SubtypeOf                  ""
+4       SQLNCHAR            2       256     ""   4     attri_name                 Latin1_General_100_CI_AS_SC_UTF8
+5       SQLSMALLINT         0       2       ""   5     attri_type                 ""
+6       SQLSMALLINT         0       2       ""   6     attri_class                ""
+7       SQLINT              1       4       ""   7     min_value                  ""
+8       SQLINT              1       4       ""   8     max_value                  ""
+9       SQLSMALLINT         0       2       ""   9     decimals                   ""
+10      SQLSMALLINT         0       2       ""   10    att_sign                   ""
+11      SQLINT              0       4       ""   11    length                     ""
+12      SQLNCHAR            2       512     ""   12    header                     Latin1_General_100_CI_AS_SC_UTF8
+13      SQLNCHAR            2       512     ""   13    value_list                 Latin1_General_100_CI_AS_SC_UTF8
+14      SQLNCHAR            2       256     ""   14    Picture                    Latin1_General_100_CI_AS_SC_UTF8

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\invoicedetailgeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\invoicedetailgeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\refint\invoicedetailgeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\invoicedetailgeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\invoicedetailgeneral\obj\Release\net6.0\ref\invoicedetailgeneral.dll

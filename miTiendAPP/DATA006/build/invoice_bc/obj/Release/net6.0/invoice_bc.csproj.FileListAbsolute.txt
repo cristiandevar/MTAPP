@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\invoice_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\invoice_bc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\refint\invoice_bc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\invoice_bc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\invoice_bc\obj\Release\net6.0\ref\invoice_bc.dll

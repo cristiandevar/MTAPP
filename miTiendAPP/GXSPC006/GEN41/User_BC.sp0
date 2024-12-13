@@ -1,0 +1,1073 @@
+spec_i([ trn,4,'User','User_BC',[],eng,'18_0_2-169539' ]).
+ 
+struct_i(16,0,[ 'Userid','Pgmname','Auxusername','Auxuseremail','Auxroleid','Websession' ],[]).
+ 
+level_i(16,[ 16,[ [ 16,many ],[ 17,one ] ],[ 99 ],[],[],[],[ 99 ],'IUSER',[ 16,[] ],[] ]).
+ 
+tw_i(16,[ [ 17,[ [ 16,104,104 ] ] ] ]).
+ 
+lwi_i(16,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(16,[ [ [ 16,99 ],[ 16,137 ],[ 16,100 ],[ 16,101 ],[ 16,109 ],[ 16,102 ],[ 16,103 ],[ 17,105 ],[ 16,111 ],[ 16,104 ] ] ]).
+ 
+las_i(16,[ [ 'Userid','Pgmname','Auxusername','Auxuseremail','Auxroleid','Websession',99,'Today',137,100,101,109,102,103,104,105,111 ] ]).
+ 
+lac_i(16,[ [ 99,137,100,101,109,102,103,104,111 ] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+default_i(e('Pgmname',2,2,'"User_BC"')).
+default_i(e('Today',2,2,'''today''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PKSupFKs',[])).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','User')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewUser'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
+rule_i(0,prop('MTIER_OPT','Yes')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_LAST','UMPV')).
+rule_i(0,prop('KEY_FIRST','UMPV')).
+rule_i(0,prop('KEY_SELECT','UMPV')).
+rule_i(0,prop('KEY_DISPLAY','UMPV')).
+rule_i(0,prop('KEY_DELETE','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_UPDATE','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_RETRIEVE','UMPV')).
+rule_i(0,prop('KEY_NEXT','UMPV')).
+rule_i(0,prop('KEY_PREVIOUS','UMPV')).
+rule_i(0,prop('KEY_INSERT','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_PROMPT','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_CHECK','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebFormDefaults','0')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('FIELD_TO_FIELD','UMPV')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('IsDwhTrn','0')).
+rule_i(0,prop(idDynTrnUpdatePolicy,idDynTrnUpdatePolicy_UPDATABLE)).
+rule_i(0,prop(idIsDynTrn,'0')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'General.UI.MasterUnanimoSidebar'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop(idFormLayout,'UnanimoTemplate')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
+rule_i(0,prop('ExternalNamespace',mtaKB)).
+rule_i(0,prop('ExternalName','User')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop(idISBUSINESSCOMPONENT,'-1')).
+rule_i(0,prop('Folder',o(8,'Transactions'))).
+rule_i(0,prop('ObjDesc','User')).
+rule_i(0,prop('ObjName','User')).
+rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
+rule_i(0,maingen(41)).
+rule_i(16,rule([ a(1,msg([ t('"Field User Email does not match the specified pattern"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(137,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t('.OR.',9),t('null(',1),t(137,2),t(')',4),t(')',4) ],[ insert,update ],[ 137 ])).
+rule_i(16,rule([ a(1,msg([ t('"Field User Created Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(102,2),t(')',4),t('.OR.',9),t(102,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 102 ])).
+rule_i(16,rule([ a(1,msg([ t('"Field User Modified Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(103,2),t(')',4),t('.OR.',9),t(103,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 103 ])).
+rule_i(16,rule([ a(18,[ [ 104 ] ]) ],[],[ insert,update,delete ],[ 104 ])).
+rule_i(16,rule([ a(1,[ t('''Email is required''',3) ]) ],[ t('null(',1),t(137,2),t(')',4) ],[ insert,update,delete,display ],[ 137 ])).
+rule_i(16,rule([ a(19,[ [ 104 ],msg([ t('"No matching ''Role''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 104 ])).
+ 
+a_i(1,16,b,0,[],[ [],[ a(1,msg([ t('"Field User Email does not match the specified pattern"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(137,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t('.OR.',9),t('null(',1),t(137,2),t(')',4),t(')',4) ] ]).
+a_i(2,16,b,0,[],[ [],[ a(1,msg([ t('"Field User Created Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(102,2),t(')',4),t('.OR.',9),t(102,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
+a_i(3,16,b,0,[],[ [],[ a(1,msg([ t('"Field User Modified Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(103,2),t(')',4),t('.OR.',9),t(103,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
+a_i(4,16,f,102,[],[ [],[ t('Today',23),t('IF',17),t('Mode',23),t(=,10),t([ 43,'Insert' ],44),t(';',18),t('Today',23),t('IF',17),t('Mode',23),t(=,10),t([ 43,'Insert' ],44),t('.OR.',9),t('Mode',23),t(=,10),t([ 43,'Update' ],44),t(';',18) ] ]).
+a_i(5,16,b,3,[],[ [],[ a(1,[ t('''Email is required''',3) ]) ],[ t('null(',1),t(137,2),t(')',4) ] ]).
+a_i(6,16,t,16,[],[ [ [ [],99,99 ] ],'IUSER',[] ]).
+a_i(7,16,k,16,[],[ [ [ [],100,100 ] ],'UUSER',[] ]).
+a_i(8,16,r,17,[],[ [ [ 16,104,104 ] ],'IROLE',[] ]).
+a_i(9,16,f,'Pgmname',[],[ [],[ t('"User_BC"',3) ] ]).
+a_i(10,16,f,'Today',[],[ [],[ t('today(',1),t(')',4) ] ]).
+ 
+v_i(b,i,1,137).
+v_i(b,o,1,[]).
+v_i(b,i,2,102).
+v_i(b,o,2,[]).
+v_i(b,i,3,103).
+v_i(b,o,3,[]).
+v_i(f,i,4,'Today').
+v_i(f,o,4,102).
+v_i(b,i,5,137).
+v_i(b,o,5,[]).
+v_i(t,i,6,99).
+v_i(t,o,6,137).
+v_i(t,o,6,100).
+v_i(t,o,6,101).
+v_i(t,o,6,109).
+v_i(t,o,6,102).
+v_i(t,o,6,103).
+v_i(t,o,6,111).
+v_i(t,o,6,104).
+v_i(k,i,7,100).
+v_i(k,i,7,99).
+v_i(k,o,7,[]).
+v_i(r,i,8,104).
+v_i(r,o,8,105).
+v_i(f,i,9,[]).
+v_i(f,o,9,'Pgmname').
+v_i(f,i,10,[]).
+v_i(f,o,10,'Today').
+ 
+act_info_i(4,[ [ 102 ] ]).
+ 
+ca_i(4,102).
+ 
+tbl_to_delete_i(16,[ 6,[ [ 16,99,99 ] ],c,'IINVOICE1',0,[ 20 ],'' ]).
+ 
+ 
+ 
+attri_i(20,[ 'InvoiceId',int,6,0,'ZZZZZ9',0,'Invoice Id','',0 ]).
+attri_i(103,[ 'UserModifiedDate',date,8,0,'99/99/99',0,'User Modified Date','',0 ]).
+attri_i(102,[ 'UserCreatedDate',date,8,0,'99/99/99',0,'User Created Date','',0 ]).
+attri_i(109,[ 'UserHash',svchar,40,0,'',0,'User Hash','',0 ]).
+attri_i(101,[ 'UserPassword',svchar,40,0,'',0,'User Password','',0 ]).
+attri_i(100,[ 'UserName',svchar,20,0,'',0,'User Name','',0 ]).
+attri_i(137,[ 'UserEmail',svchar,100,0,'',0,'User Email','',0 ]).
+attri_i(104,[ 'RoleId',int,6,0,'ZZZZZ9',0,'Role Id','',0 ]).
+attri_i(111,[ 'UserActive',boolean,4,0,'',0,'User Active','',0 ]).
+attri_i(105,[ 'RoleName',svchar,60,0,'',0,'Role Name','',0 ]).
+attri_i(99,[ 'UserId',int,6,0,'ZZZZZ9',0,'User Id','',0 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',38 ]).
+attri_i('Today',[ 'Gx_date',date,8,0,'99/99/99',1,'','',37 ]).
+attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
+attri_i('Emailsubject',[ 'EmailSubject',svchar,100,0,'',0,'Email Subject','',36 ]).
+attri_i('Waschanged',[ 'WasChanged',boolean,4,0,'',0,'Was Changed','',35 ]).
+attri_i('Roleid',[ 'RoleId',int,6,0,'ZZZZZ9',0,'Role Id','',34 ]).
+attri_i('Auxroleid',[ 'AuxRoleId',int,6,0,'ZZZZZ9',0,'Role Id','',32 ]).
+attri_i('Auxuseremail',[ 'AuxUserEmail',svchar,100,0,'',0,'User Email','',29 ]).
+attri_i('Auxusername',[ 'AuxUserName',svchar,20,0,'',0,'User Name','',28 ]).
+attri_i('Useractive',[ 'UserActive',boolean,4,0,'',0,'User Active','',27 ]).
+attri_i('Rolname',[ 'RolName',svchar,60,0,'',0,'Rol Name','',26 ]).
+attri_i('Emailsubtitle',[ 'EmailSubtitle',svchar,100,0,'',0,'Email Subtitle','',25 ]).
+attri_i('Emailtitle',[ 'EmailTitle',svchar,100,0,'',0,'Email Title','',24 ]).
+attri_i('Usercreateddate',[ 'USerCreatedDAte',date,8,0,'99/99/99',0,'User Created Date','',22 ]).
+attri_i('Username',[ 'UserName',svchar,20,0,'',0,'User Name','',21 ]).
+attri_i('Names',[ 'Names',o(objectcollection(svchar)),40,0,'',0,'Names','',20 ]).
+attri_i('Urls',[ 'URLs',o(objectcollection(svchar)),1000,0,'',0,'URLs','',19 ]).
+attri_i('Emailbodyaux',[ 'EmailBodyAux',svchar,2000,0,'',0,'Email Body Aux','',18 ]).
+attri_i('Emailbody',[ 'EmailBody',svchar,2000,0,'',0,'Email Body','',17 ]).
+attri_i('Useremail',[ 'UserEmail',svchar,100,0,'',0,'User Email','',16 ]).
+attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',15 ]).
+attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
+attri_i('Userid',[ 'UserId',int,6,0,'ZZZZZ9',0,'User Id','',11 ]).
+attri_i('Trncontextatt',[ 'TrnContextAtt',o('General\UI\TransactionContext.Attribute'),0,0,'',0,'Trn Context Att','',13 ]).
+attri_i('Trncontext',[ 'TrnContext',o('General\UI\TransactionContext'),0,0,'',0,'Trn Context','',9 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
+attri_i('Insert_roleid',[ 'Insert_RoleId',int,6,0,'ZZZZZ9',0,'Insert_Role Id','',12 ]).
+attri_i('Context',[ 'Context',o('General\UI\SDTContextSession'),0,0,'',0,'Context','',14 ]).
+attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
+ 
+table_i(6,[ 'Invoice',[ 20,99 ],'Invoice','Invoice' ]).
+table_i(17,[ 'Role',[ 104,105 ],'Role','Role' ]).
+table_i(16,[ 'User',[ 99,100,101,102,103,104,109,111,137 ],'User','User' ]).
+ 
+index_i(16,[ 'IUSER',u,[ 99 ],'IUser' ]).
+index_i(16,[ 'UUSER',k,[ 100 ],'UUser' ]).
+index_i(17,[ 'IROLE',u,[ 104 ],'IRole' ]).
+index_i(6,[ 'IINVOICE',u,[ 20 ],'IInvoice' ]).
+index_i(6,[ 'IINVOICE1',d,[ 99 ],'IInvoice1' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+upd_i(16,16,i,[ [ 137,100,101,109,102,103,111,104 ],[],'IUSER',[ [ [],99,99 ] ] ]).
+upd_i(16,16,u,[ [ 137,100,101,109,102,103,111,104 ],[],'IUSER',[] ]).
+upd_i(16,16,d,[ [],[],'IUSER',[] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+enum_value_i(6,43,'"INS"','Insert','"Insert"',[ none ]).
+enum_value_i(6,43,'"UPD"','Update','"Update"',[ none ]).
+enum_value_i(6,43,'"DLT"','Delete','"Delete"',[ none ]).
+enum_value_i(6,43,'"DSP"','Display','"Display"',[ none ]).
+ 
+enum_value_info_i(6,43,'GeneXus\TrnMode').
+ 
+enum_type_i(6,43,char,3,0).
+ 
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(46,[ 'GeneXus\Email' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(33,[ 'GeneXus\Url' ]).
+dom_info_i(87,[ 'GeneXusUnanimo\Title' ]).
+ 
+a_ctrl_i(137,c,[ '"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"' ]).
+ 
+break_i(2,nvg,1,[],[ [ 99,105,111,104,137,100 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,57).
+b_group_i(2,3,lit,0,58,94).
+b_group_i(2,4,lit,0,95,104).
+b_group_i(2,5,lit,0,105,142).
+b_group_i(2,6,lit,0,143,178).
+b_group_i(2,7,lit,0,179,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(2,2,2,cmd,1,[ t('',104,2,0),t(o(1,'CheckAuthentication'),28,1,2) ]).
+b_line_i(4,2,2,cmd,1,[ t('',109,4,0),t('null(',1,4,13),t('Userid',23,1,5),t(')',4,1,22) ]).
+b_line_i(5,2,2,cmd,1,[ t('',107,5,0),t('Userid',23,1,0),t(=,10,1,0),t([ t('Context',23,1,0),t('Userid',3,1,0) ],29,1,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',111,6,0) ]).
+b_line_i(8,2,2,cmd,1,[ t('',152,8,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',153,9,0),t('Mode',23,1,8),t(=,10,1,14),t([ 43,'Display' ],44,9,16),t('.AND.',9,1,32),t('.NOT.',8,1,38),t('udp(',1,9,57),t(o(1,'HasPermission'),28,9,44),t(',',7,1,0),t('''user view''',3,9,58),t(')',4,1,0) ]).
+b_line_i(10,2,2,cmd,1,[ t('',109,10,0),t('Userid',23,1,7),t(<>,10,1,15),t([ t('Context',23,10,18),t('Userid',3,10,27) ],29,10,27) ]).
+b_line_i(11,2,2,cmd,1,[ t('',104,11,0),t(o(13,'General\Security\NotAuthorized'),28,1,5),t('Pgmname',23,1,19) ]).
+b_line_i(12,2,2,cmd,1,[ t('',111,12,0) ]).
+b_line_i(14,2,2,cmd,1,[ t('',153,14,0),t('Mode',23,1,8),t(=,10,1,14),t([ 43,'Insert' ],44,14,16),t('.AND.',9,1,31),t('.NOT.',8,1,37),t('udp(',1,14,56),t(o(1,'HasPermission'),28,14,43),t(',',7,1,0),t('''user insert''',3,14,57),t(')',4,1,0) ]).
+b_line_i(15,2,2,cmd,1,[ t('',104,15,0),t(o(13,'General\Security\NotAuthorized'),28,1,4),t('Pgmname',23,1,18) ]).
+b_line_i(17,2,2,cmd,1,[ t('',153,17,0),t('Mode',23,1,8),t(=,10,1,14),t([ 43,'Update' ],44,17,16),t('.AND.',9,1,31),t('.NOT.',8,1,37),t('udp(',1,17,56),t(o(1,'HasPermission'),28,17,43),t(',',7,1,0),t('''user update''',3,17,57),t(')',4,1,0) ]).
+b_line_i(18,2,2,cmd,1,[ t('',109,18,0),t('Userid',23,1,7),t(<>,10,1,15),t([ t('Context',23,18,18),t('Userid',3,18,27) ],29,18,27) ]).
+b_line_i(19,2,2,cmd,1,[ t('',104,19,0),t(o(13,'General\Security\NotAuthorized'),28,1,5),t('Pgmname',23,1,19) ]).
+b_line_i(20,2,2,cmd,1,[ t('',111,20,0) ]).
+b_line_i(22,2,2,cmd,1,[ t('',153,22,0),t('Mode',23,1,8),t(=,10,1,14),t([ 43,'Delete' ],44,22,16),t('.AND.',9,1,31),t('.NOT.',8,1,37),t('udp(',1,22,56),t(o(1,'HasPermission'),28,22,43),t(',',7,1,0),t('''user delete''',3,22,57),t(')',4,1,0) ]).
+b_line_i(23,2,2,cmd,1,[ t('',104,23,0),t(o(13,'General\Security\NotAuthorized'),28,1,4),t('Pgmname',23,1,18) ]).
+b_line_i(24,2,2,cmd,1,[ t('',154,24,0) ]).
+b_line_i(48,2,2,cmd,1,[ t('',109,48,0),t('Mode',23,1,5),t(=,10,1,11),t([ 43,'Update' ],44,48,13) ]).
+b_line_i(49,2,2,cmd,1,[ t('',107,49,0),t('Auxusername',23,1,0),t(=,10,1,0),t(100,2,1,0) ]).
+b_line_i(50,2,2,cmd,1,[ t('',107,50,0),t('Auxuseremail',23,1,0),t(=,10,1,0),t(137,2,1,0) ]).
+b_line_i(51,2,2,cmd,1,[ t('',107,51,0),t('Auxroleid',23,1,0),t(=,10,1,0),t(104,2,1,0) ]).
+b_line_i(52,2,2,cmd,1,[ t('',111,52,0) ]).
+b_line_i(55,2,2,cmd,1,[ t('',147,55,0) ]).
+b_line_i(57,2,2,cmd,1,[ t('',146,57,0),t('After Trn',3,57,7) ]).
+b_line_i(59,2,3,cmd,1,[ t('',107,59,0),t('Username',23,1,0),t(=,10,1,0),t(100,2,1,0) ]).
+b_line_i(60,2,3,cmd,1,[ t('',107,60,0),t('Useremail',23,1,0),t(=,10,1,0),t(137,2,1,0) ]).
+b_line_i(61,2,3,cmd,1,[ t('',107,61,0),t('Useractive',23,1,0),t(=,10,1,0),t(111,2,1,0) ]).
+b_line_i(62,2,3,cmd,1,[ t('',107,62,0),t('Roleid',23,1,0),t(=,10,1,0),t(104,2,1,0) ]).
+b_line_i(63,2,3,cmd,1,[ t('',107,63,0),t('Rolname',23,1,0),t(=,10,1,0),t(105,2,1,0) ]).
+b_line_i(65,2,3,cmd,1,[ t('',109,65,0),t('Mode',23,1,5),t(=,10,1,11),t([ 43,'Insert' ],44,65,13) ]).
+b_line_i(66,2,3,cmd,1,[ t('',104,66,0),t(o(1,'User_ResetPassword'),28,1,3),t(99,2,1,28) ]).
+b_line_i(67,2,3,cmd,1,[ t('',145,67,0),t('''PREPARENOTIFICATIONINSERT''',3,67,6) ]).
+b_line_i(68,2,3,cmd,1,[ t('',111,68,0) ]).
+b_line_i(70,2,3,cmd,1,[ t('',109,70,0),t('Mode',23,1,5),t(=,10,1,11),t([ 43,'Update' ],44,70,13) ]).
+b_line_i(71,2,3,cmd,1,[ t('',145,71,0),t('''WASCHANGED''',3,71,6) ]).
+b_line_i(72,2,3,cmd,1,[ t('',109,72,0),t('Waschanged',23,1,6) ]).
+b_line_i(73,2,3,cmd,1,[ t('',145,73,0),t('''PREPARENOTIFICATIONUPDATE''',3,73,7) ]).
+b_line_i(74,2,3,cmd,1,[ t('',111,74,0) ]).
+b_line_i(75,2,3,cmd,1,[ t('',111,75,0) ]).
+b_line_i(81,2,3,cmd,1,[ t('',145,81,0),t('''SENDNOTIFICATION''',3,81,5) ]).
+b_line_i(92,2,3,cmd,1,[ t('',147,92,0) ]).
+b_line_i(94,2,3,cmd,1,[ t('',143,94,0),t('''SENDNOTIFICATION''',3,94,5) ]).
+b_line_i(95,2,4,cmd,1,[ t('',107,95,0),t([ t('Urls',23,95,2),t('clear(',1,95,8) ],31,95,2),t(')',4,1,15) ]).
+b_line_i(96,2,4,cmd,1,[ t('',107,96,0),t([ t('Names',23,96,2),t('clear(',1,96,9) ],31,96,2),t(')',4,1,16) ]).
+b_line_i(98,2,4,cmd,1,[ t('',104,98,0),t(o(1,'SendEmailPrepareHeader'),28,1,2),t('Emailtitle',23,1,25),t(',',7,1,0),t('Emailsubtitle',23,1,38),t(',',7,1,0),t('Emailbody',23,1,54),t(',',7,1,0),t('Emailbodyaux',23,1,66) ]).
+b_line_i(99,2,4,cmd,1,[ t('',107,99,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbodyaux',23,1,0) ]).
+b_line_i(101,2,4,cmd,1,[ t('',104,101,0),t(o(1,'SendEmail'),28,1,2),t('Useremail',23,1,12),t(',',7,1,0),t('Emailbody',23,1,24),t(',',7,1,0),t('Emailsubject',23,1,36),t(',',7,1,0),t('Urls',23,1,51),t(',',7,1,0),t('Names',23,1,58),t(',',7,1,0),t('Allok',23,1,66) ]).
+b_line_i(102,2,4,cmd,1,[ t('',144,102,0) ]).
+b_line_i(104,2,4,cmd,1,[ t('',143,104,0),t('''PREPARENOTIFICATIONINSERT''',3,104,5) ]).
+b_line_i(105,2,5,cmd,1,[ t('',107,105,0),t('Emailsubject',23,1,0),t(=,10,1,0),t('''User Generated''',3,1,0) ]).
+b_line_i(106,2,5,cmd,1,[ t('',107,106,0),t('Emailtitle',23,1,0),t(=,10,1,0),t('''User Generated''',3,1,0) ]).
+b_line_i(107,2,5,cmd,1,[ t('',107,107,0),t('Emailsubtitle',23,1,0),t(=,10,1,0),t('''An User was Generated with the next information''',3,1,0) ]).
+b_line_i(108,2,5,cmd,1,[ t('',107,108,0),t('Usercreateddate',23,1,0),t(=,10,1,0),t('serverdate(',1,1,0),t(')',4,1,0) ]).
+b_line_i(110,2,5,cmd,1,[ t('',107,110,0),t('Emailbody',23,1,0),t(=,10,1,0),t('''''',3,1,0) ]).
+b_line_i(111,2,5,cmd,1,[ t('',107,111,0),t('Emailbody',23,1,0),t(=,10,1,0),t('''                <table class="table table-border table-striped">''',3,1,0) ]).
+b_line_i(112,2,5,cmd,1,[ t('',107,112,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(113,2,5,cmd,1,[ t('',107,113,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Email</strong></td>''',3,1,0) ]).
+b_line_i(114,2,5,cmd,1,[ t('',107,114,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0),t(+,5,1,0),t('Useremail',23,1,0),t(+,5,1,0),t('''</td>''',3,1,0) ]).
+b_line_i(115,2,5,cmd,1,[ t('',107,115,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(116,2,5,cmd,1,[ t('',107,116,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(117,2,5,cmd,1,[ t('',107,117,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>User Name</strong></td>''',3,1,0) ]).
+b_line_i(118,2,5,cmd,1,[ t('',107,118,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0),t(+,5,1,0),t('Username',23,1,0),t(+,5,1,0),t('''</td>''',3,1,0) ]).
+b_line_i(119,2,5,cmd,1,[ t('',107,119,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(120,2,5,cmd,1,[ t('',107,120,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(121,2,5,cmd,1,[ t('',107,121,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Created Date</strong></td>''',3,1,0) ]).
+b_line_i(122,2,5,cmd,1,[ t('',107,122,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(123,2,5,cmd,1,[ t('',107,123,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('dtoc(',1,1,0),t('Usercreateddate',23,1,0),t(')',4,1,0) ]).
+b_line_i(124,2,5,cmd,1,[ t('',107,124,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(125,2,5,cmd,1,[ t('',107,125,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(126,2,5,cmd,1,[ t('',107,126,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(127,2,5,cmd,1,[ t('',107,127,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Rol</strong></td>''',3,1,0) ]).
+b_line_i(128,2,5,cmd,1,[ t('',107,128,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(129,2,5,cmd,1,[ t('',107,129,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('Rolname',23,1,0) ]).
+b_line_i(130,2,5,cmd,1,[ t('',107,130,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(131,2,5,cmd,1,[ t('',107,131,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(132,2,5,cmd,1,[ t('',107,132,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(133,2,5,cmd,1,[ t('',107,133,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>State</strong></td>''',3,1,0) ]).
+b_line_i(134,2,5,cmd,1,[ t('',107,134,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(135,2,5,cmd,1,[ t('',107,135,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('iif(',1,1,0),t('Useractive',23,1,0),t(',',7,1,0),t('''Enabled''',3,1,0),t(',',7,1,0),t('''Disabled''',3,1,0),t(')',4,1,0) ]).
+b_line_i(136,2,5,cmd,1,[ t('',107,136,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(137,2,5,cmd,1,[ t('',107,137,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(138,2,5,cmd,1,[ t('',107,138,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                </table>''',3,1,0) ]).
+b_line_i(139,2,5,cmd,1,[ t('',144,139,0) ]).
+b_line_i(142,2,5,cmd,1,[ t('',143,142,0),t('''PREPARENOTIFICATIONUPDATE''',3,142,5) ]).
+b_line_i(143,2,6,cmd,1,[ t('',107,143,0),t('Emailsubject',23,1,0),t(=,10,1,0),t('''User Modified''',3,1,0) ]).
+b_line_i(144,2,6,cmd,1,[ t('',107,144,0),t('Emailtitle',23,1,0),t(=,10,1,0),t('''User Modified''',3,1,0) ]).
+b_line_i(145,2,6,cmd,1,[ t('',107,145,0),t('Emailsubtitle',23,1,0),t(=,10,1,0),t('''The information of the you user has been modified''',3,1,0) ]).
+b_line_i(146,2,6,cmd,1,[ t('',107,146,0),t('Usercreateddate',23,1,0),t(=,10,1,0),t('serverdate(',1,1,0),t(')',4,1,0) ]).
+b_line_i(148,2,6,cmd,1,[ t('',107,148,0),t('Emailbody',23,1,0),t(=,10,1,0),t('''                <table class="table table-border table-striped">''',3,1,0) ]).
+b_line_i(149,2,6,cmd,1,[ t('',107,149,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(150,2,6,cmd,1,[ t('',107,150,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Email</strong></td>''',3,1,0) ]).
+b_line_i(151,2,6,cmd,1,[ t('',107,151,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0),t(+,5,1,0),t('Useremail',23,1,0),t(+,5,1,0),t('''</td>''',3,1,0) ]).
+b_line_i(152,2,6,cmd,1,[ t('',107,152,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(153,2,6,cmd,1,[ t('',107,153,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(154,2,6,cmd,1,[ t('',107,154,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>User Name</strong></td>''',3,1,0) ]).
+b_line_i(155,2,6,cmd,1,[ t('',107,155,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0),t(+,5,1,0),t('Username',23,1,0),t(+,5,1,0),t('''</td>''',3,1,0) ]).
+b_line_i(156,2,6,cmd,1,[ t('',107,156,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(157,2,6,cmd,1,[ t('',107,157,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(158,2,6,cmd,1,[ t('',107,158,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Created Date</strong></td>''',3,1,0) ]).
+b_line_i(159,2,6,cmd,1,[ t('',107,159,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(160,2,6,cmd,1,[ t('',107,160,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('dtoc(',1,1,0),t('Usercreateddate',23,1,0),t(')',4,1,0) ]).
+b_line_i(161,2,6,cmd,1,[ t('',107,161,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(162,2,6,cmd,1,[ t('',107,162,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(163,2,6,cmd,1,[ t('',107,163,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(164,2,6,cmd,1,[ t('',107,164,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>Rol</strong></td>''',3,1,0) ]).
+b_line_i(165,2,6,cmd,1,[ t('',107,165,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(166,2,6,cmd,1,[ t('',107,166,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('Rolname',23,1,0) ]).
+b_line_i(167,2,6,cmd,1,[ t('',107,167,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(168,2,6,cmd,1,[ t('',107,168,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(169,2,6,cmd,1,[ t('',107,169,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    <tr>''',3,1,0) ]).
+b_line_i(170,2,6,cmd,1,[ t('',107,170,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td style="text-align:left;"><strong>State</strong></td>''',3,1,0) ]).
+b_line_i(171,2,6,cmd,1,[ t('',107,171,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                        <td>''',3,1,0) ]).
+b_line_i(172,2,6,cmd,1,[ t('',107,172,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('iif(',1,1,0),t('Useractive',23,1,0),t(',',7,1,0),t('''Enabled''',3,1,0),t(',',7,1,0),t('''Disabled''',3,1,0),t(')',4,1,0) ]).
+b_line_i(173,2,6,cmd,1,[ t('',107,173,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''					</td>''',3,1,0) ]).
+b_line_i(174,2,6,cmd,1,[ t('',107,174,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                    </tr>''',3,1,0) ]).
+b_line_i(175,2,6,cmd,1,[ t('',107,175,0),t('Emailbody',23,1,0),t(=,10,1,0),t('Emailbody',23,1,0),t(+,5,1,0),t('''                </table>''',3,1,0) ]).
+b_line_i(176,2,6,cmd,1,[ t('',144,176,0) ]).
+b_line_i(178,2,6,cmd,1,[ t('',143,178,0),t('''WASCHANGED''',3,178,5) ]).
+b_line_i(179,2,7,cmd,1,[ t('',107,179,0),t('Waschanged',23,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(181,2,7,cmd,1,[ t('',109,181,0),t('Auxroleid',23,1,5),t(<>,10,1,16),t('Roleid',23,1,19) ]).
+b_line_i(182,2,7,cmd,1,[ t('',107,182,0),t('Waschanged',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(183,2,7,cmd,1,[ t('',111,183,0) ]).
+b_line_i(185,2,7,cmd,1,[ t('',109,185,0),t('Auxuseremail',23,1,5),t(<>,10,1,19),t('Useremail',23,1,22) ]).
+b_line_i(186,2,7,cmd,1,[ t('',107,186,0),t('Waschanged',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(187,2,7,cmd,1,[ t('',111,187,0) ]).
+b_line_i(189,2,7,cmd,1,[ t('',109,189,0),t('Auxusername',23,1,5),t(<>,10,1,18),t('Username',23,1,21) ]).
+b_line_i(190,2,7,cmd,1,[ t('',107,190,0),t('Waschanged',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(191,2,7,cmd,1,[ t('',111,191,0) ]).
+b_line_i(193,2,7,cmd,1,[ t('',144,193,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg(events(2,[]),spc0024,[ 'Not enough parameters ',calling,' ','CheckAuthentication','.' ])).
+warn_gen_i(msg(events(66,[]),spc0024,[ 'Not enough parameters ',calling,' ','User_ResetPassword','.' ])).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+ 
+att_prop_i(6,99,'HORIZONTAL_DESCRIPTION','User Id',d).
+att_prop_i(6,99,'ExternalName','UserId',d).
+att_prop_i(6,99,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,99,'EmptyAsNull','Yes',d).
+att_prop_i(6,99,idBasedOn,92,v).
+att_prop_i(6,99,'AUTONUMBER','-1',d).
+att_prop_i(6,99,'AUTONUMBER_START','1',d).
+att_prop_i(6,99,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,99,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,99,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,99,'AttRegEx','',d).
+att_prop_i(6,99,'AttValidationFailedMsg','',d).
+att_prop_i(6,99,'DownloadOffline','0',d).
+att_prop_i(6,99,'VarServiceExtName','',d).
+att_prop_i(6,99,'FullName','UserId',v).
+att_prop_i(6,105,'HORIZONTAL_DESCRIPTION','Role Name',d).
+att_prop_i(6,105,'ExternalName','RoleName',d).
+att_prop_i(6,105,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,105,'EmptyAsNull','Yes',d).
+att_prop_i(6,105,idBasedOn,93,v).
+att_prop_i(6,105,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,105,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,105,'AttRegEx','',d).
+att_prop_i(6,105,'AttValidationFailedMsg','',d).
+att_prop_i(6,105,'DownloadOffline','0',d).
+att_prop_i(6,105,'VarServiceExtName','',d).
+att_prop_i(6,105,'FullName','RoleName',v).
+att_prop_i(6,111,'HORIZONTAL_DESCRIPTION','User Active',d).
+att_prop_i(6,111,'ExternalName','UserActive',d).
+att_prop_i(6,111,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,111,'EmptyAsNull','Yes',d).
+att_prop_i(6,111,'ExternalStorage','-1',d).
+att_prop_i(6,111,idBasedOn,'',d).
+att_prop_i(6,111,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,111,'AttRegEx','',d).
+att_prop_i(6,111,'AttValidationFailedMsg','',d).
+att_prop_i(6,111,'DownloadOffline','0',d).
+att_prop_i(6,111,'VarServiceExtName','',d).
+att_prop_i(6,111,'FullName','UserActive',v).
+att_prop_i(6,104,'HORIZONTAL_DESCRIPTION','Role Id',d).
+att_prop_i(6,104,'ExternalName','RoleId',d).
+att_prop_i(6,104,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,104,'EmptyAsNull','Yes',d).
+att_prop_i(6,104,idBasedOn,92,v).
+att_prop_i(6,104,'AUTONUMBER','-1',d).
+att_prop_i(6,104,'AUTONUMBER_START','1',d).
+att_prop_i(6,104,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,104,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,104,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,104,'AttRegEx','',d).
+att_prop_i(6,104,'AttValidationFailedMsg','',d).
+att_prop_i(6,104,'DownloadOffline','0',d).
+att_prop_i(6,104,'VarServiceExtName','',d).
+att_prop_i(6,104,'FullName','RoleId',v).
+att_prop_i(6,137,'HORIZONTAL_DESCRIPTION','User Email',d).
+att_prop_i(6,137,'ExternalName','UserEmail',d).
+att_prop_i(6,137,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,137,'EmptyAsNull','Yes',d).
+att_prop_i(6,137,idBasedOn,46,v).
+att_prop_i(6,137,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,137,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,137,'AttRegEx','^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$',d).
+att_prop_i(6,137,'AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+att_prop_i(6,137,'DownloadOffline','0',d).
+att_prop_i(6,137,'VarServiceExtName','',d).
+att_prop_i(6,137,'FullName','UserEmail',v).
+att_prop_i(6,100,'HORIZONTAL_DESCRIPTION','User Name',d).
+att_prop_i(6,100,'ExternalName','UserName',d).
+att_prop_i(6,100,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,100,'EmptyAsNull','Yes',v).
+att_prop_i(6,100,idBasedOn,'',d).
+att_prop_i(6,100,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,100,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,100,'AttRegEx','',d).
+att_prop_i(6,100,'AttValidationFailedMsg','',d).
+att_prop_i(6,100,'DownloadOffline','0',d).
+att_prop_i(6,100,'VarServiceExtName','',d).
+att_prop_i(6,100,'FullName','UserName',v).
+att_prop_i(6,101,'HORIZONTAL_DESCRIPTION','User Password',d).
+att_prop_i(6,101,'ExternalName','UserPassword',d).
+att_prop_i(6,101,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,101,'EmptyAsNull','Yes',d).
+att_prop_i(6,101,idBasedOn,'',d).
+att_prop_i(6,101,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,101,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,101,'AttRegEx','',d).
+att_prop_i(6,101,'AttValidationFailedMsg','',d).
+att_prop_i(6,101,'DownloadOffline','0',d).
+att_prop_i(6,101,'VarServiceExtName','',d).
+att_prop_i(6,101,'FullName','UserPassword',v).
+att_prop_i(6,109,'HORIZONTAL_DESCRIPTION','User Hash',d).
+att_prop_i(6,109,'ExternalName','UserHash',d).
+att_prop_i(6,109,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,109,'EmptyAsNull','Yes',d).
+att_prop_i(6,109,idBasedOn,'',d).
+att_prop_i(6,109,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,109,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,109,'AttRegEx','',d).
+att_prop_i(6,109,'AttValidationFailedMsg','',d).
+att_prop_i(6,109,'DownloadOffline','0',d).
+att_prop_i(6,109,'VarServiceExtName','',d).
+att_prop_i(6,109,'FullName','UserHash',v).
+att_prop_i(6,102,'HORIZONTAL_DESCRIPTION','User Created Date',d).
+att_prop_i(6,102,'ExternalName','UserCreatedDate',d).
+att_prop_i(6,102,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,102,'EmptyAsNull','Yes',d).
+att_prop_i(6,102,idBasedOn,'',d).
+att_prop_i(6,102,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,102,'AttRegEx','',d).
+att_prop_i(6,102,'AttValidationFailedMsg','',d).
+att_prop_i(6,102,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,102,'DownloadOffline','0',d).
+att_prop_i(6,102,'VarServiceExtName','',d).
+att_prop_i(6,102,'FullName','UserCreatedDate',v).
+att_prop_i(6,103,'HORIZONTAL_DESCRIPTION','User Modified Date',d).
+att_prop_i(6,103,'ExternalName','UserModifiedDate',d).
+att_prop_i(6,103,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,103,'EmptyAsNull','Yes',d).
+att_prop_i(6,103,idBasedOn,'',d).
+att_prop_i(6,103,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,103,'AttRegEx','',d).
+att_prop_i(6,103,'AttValidationFailedMsg','',d).
+att_prop_i(6,103,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(6,103,'DownloadOffline','0',d).
+att_prop_i(6,103,'VarServiceExtName','',d).
+att_prop_i(6,103,'FullName','UserModifiedDate',v).
+att_prop_i(6,20,'HORIZONTAL_DESCRIPTION','Invoice Id',d).
+att_prop_i(6,20,'ExternalName','InvoiceId',d).
+att_prop_i(6,20,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,20,'EmptyAsNull','Yes',d).
+att_prop_i(6,20,idBasedOn,92,v).
+att_prop_i(6,20,'AUTONUMBER','-1',d).
+att_prop_i(6,20,'AUTONUMBER_START','1',d).
+att_prop_i(6,20,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,20,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,20,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,20,'AttRegEx','',d).
+att_prop_i(6,20,'AttValidationFailedMsg','',d).
+att_prop_i(6,20,'DownloadOffline','0',d).
+att_prop_i(6,20,'VarServiceExtName','',d).
+att_prop_i(6,20,'FullName','InvoiceId',v).
+ 
+tbl_prop_i(6,6,'AllDirSuper',[ [ 16,[ 99 ] ] ],v).
+tbl_prop_i(6,16,'AllDirSuper',[ [ 17,[ 104 ] ] ],v).
+tbl_prop_i(6,16,'DirSuperNull',[ [ 17,[ 104 ] ] ],v).
+tbl_prop_i(6,17,'DirSubor',[ [ 16,[ 104 ] ] ],v).
+tbl_prop_i(6,16,'DirSubor',[ [ 6,[ 99 ] ] ],v).
+tbl_prop_i(6,6,'DirSuper',[ [ 16,[ 99 ] ] ],v).
+tbl_prop_i(6,16,'DirSuper',[ [ 17,[ 104 ] ] ],v).
+ 
+tbl_att_prop_i(6,16,99,'AllowNulls',n).
+tbl_att_prop_i(6,16,99,'AUTONUMBER',y).
+tbl_att_prop_i(6,16,100,'AllowNulls',n).
+tbl_att_prop_i(6,16,101,'AllowNulls',n).
+tbl_att_prop_i(6,16,102,'AllowNulls',n).
+tbl_att_prop_i(6,16,103,'AllowNulls',n).
+tbl_att_prop_i(6,16,109,'AllowNulls',n).
+tbl_att_prop_i(6,17,104,'AllowNulls',n).
+tbl_att_prop_i(6,17,104,'AUTONUMBER',y).
+tbl_att_prop_i(6,17,105,'AllowNulls',n).
+tbl_att_prop_i(6,6,20,'AllowNulls',n).
+tbl_att_prop_i(6,6,20,'AUTONUMBER',y).
+tbl_att_prop_i(6,6,99,'AllowNulls',n).
+ 
+var_prop_i(6,'Insert_roleid',idBasedOn,'',v).
+var_prop_i(6,'Userid',idBasedOn,'',v).
+var_prop_i(6,'Useremail',idBasedOn,46,v).
+var_prop_i(6,'Useremail','AttRegEx','^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$',d).
+var_prop_i(6,'Useremail','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Urls',idBasedOn,33,v).
+var_prop_i(6,'Urls','AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+var_prop_i(6,'Urls','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Username',idBasedOn,'',v).
+var_prop_i(6,'Usercreateddate',idBasedOn,'',v).
+var_prop_i(6,'Emailtitle',idBasedOn,87,v).
+var_prop_i(6,'Emailsubtitle',idBasedOn,87,v).
+var_prop_i(6,'Rolname',idBasedOn,93,v).
+var_prop_i(6,'Useractive',idBasedOn,'',v).
+var_prop_i(6,'Auxusername',idBasedOn,'',v).
+var_prop_i(6,'Auxuseremail',idBasedOn,'',v).
+var_prop_i(6,'Auxuseremail','AttRegEx','^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$',d).
+var_prop_i(6,'Auxuseremail','AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+var_prop_i(6,'Auxroleid',idBasedOn,'',v).
+var_prop_i(6,'Roleid',idBasedOn,'',v).
+ 
+i_tbl_best_trn(16,[ 4,1,'User','User',[] ]).
+i_tbl_best_trn(6,[ 6,1,'Invoice','Invoice',[] ]).
+i_tbl_best_trn(17,[ 12,1,'Role','Role',[] ]).
+ 
+ 
+ 
+trn_level_i(16,[ [ 99,137,100,101,109,102,103,104,105,111 ],'User','User','User','',137 ]).
+ 
+struct_dt_i([ 26,93,0 ],name,'General\UI\SDTContextSession').
+struct_dt_i([ 26,93,0 ],namespace,mtaKB).
+struct_dt_i([ 26,93,0 ],'ObjName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ObjDesc','SDTContext Session').
+struct_dt_i([ 26,93,0 ],'ExternalName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,93,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,93,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,61,0 ],name,'General\UI\TransactionContext').
+struct_dt_i([ 26,61,0 ],namespace,mtaKB).
+struct_dt_i([ 26,61,0 ],'ObjName','TransactionContext').
+struct_dt_i([ 26,61,0 ],'ObjDesc','Transaction Context').
+struct_dt_i([ 26,61,0 ],'ExternalName','TransactionContext').
+struct_dt_i([ 26,61,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,61,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,61,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,61,95 ],name,'Attribute').
+struct_dt_i([ 26,61,95 ],namespace,'mtaKB.TransactionContext').
+struct_dt_i([ 0,4,0 ],name,'User').
+struct_dt_i([ 0,4,0 ],namespace,mtaKB).
+struct_dt_i([ 0,4,0 ],significantName,'User').
+struct_dt_i([ 0,4,0 ],'ObjName','User').
+struct_dt_i([ 0,4,0 ],'ObjDesc','User').
+struct_dt_i([ 0,4,0 ],'ExternalName','User').
+struct_dt_i([ 0,4,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,4,0 ],key,[ 99 ]).
+struct_dt_i([ 0,4,0 ],lvl,16).
+struct_dt_i([ 26,13,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,13,0 ],'ObjName','Messages').
+struct_dt_i([ 26,13,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,13,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,13,0 ],collection,'True').
+struct_dt_i([ 26,13,0 ],datatype,[ 26,13,30 ]).
+struct_dt_i([ 26,13,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,13,0 ],'XmlName','').
+struct_dt_i([ 26,13,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,13,0 ],'XmlNamespace','').
+struct_dt_i([ 26,13,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,13,0 ],'JsonName','').
+struct_dt_i([ 26,13,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,13,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],isexternal,'True').
+struct_dt_i([ 26,13,30 ],name,'Message').
+struct_dt_i([ 26,13,30 ],namespace,'GeneXus.Messages').
+struct_dt_i([ 26,93,0 ],fullname,'General\UI\SDTContextSession').
+struct_dt_i([ 26,61,0 ],fullname,'General\UI\TransactionContext').
+struct_dt_i([ 26,61,95 ],fullname,'General\UI\TransactionContext.Attribute').
+struct_dt_i([ 0,4,0 ],fullname,'User').
+struct_dt_i([ 26,13,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,30 ],fullname,'GeneXus\Common\Messages.Message').
+ 
+struct_dt_elem_i([ 26,93,0 ],1,name,'Userid').
+struct_dt_elem_i([ 26,93,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 26,93,0 ],1,basedon,92).
+struct_dt_elem_i([ 26,93,0 ],1,length,6).
+struct_dt_elem_i([ 26,93,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],1,sign,0).
+struct_dt_elem_i([ 26,93,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,93,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,93,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],2,name,'Username').
+struct_dt_elem_i([ 26,93,0 ],2,camelname,'UserName').
+struct_dt_elem_i([ 26,93,0 ],2,length,20).
+struct_dt_elem_i([ 26,93,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],2,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,93,0 ],2,pic,'').
+struct_dt_elem_i([ 26,93,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalName','UserName').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],1,name,'Callerobject').
+struct_dt_elem_i([ 26,61,0 ],1,camelname,'CallerObject').
+struct_dt_elem_i([ 26,61,0 ],1,basedon,54).
+struct_dt_elem_i([ 26,61,0 ],1,length,256).
+struct_dt_elem_i([ 26,61,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,61,0 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,61,0 ],1,pic,'').
+struct_dt_elem_i([ 26,61,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,61,0 ],1,'ExternalName','CallerObject').
+struct_dt_elem_i([ 26,61,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,61,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,61,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,61,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,61,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],2,name,'Callerondelete').
+struct_dt_elem_i([ 26,61,0 ],2,camelname,'CallerOnDelete').
+struct_dt_elem_i([ 26,61,0 ],2,length,4).
+struct_dt_elem_i([ 26,61,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,61,0 ],2,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 26,61,0 ],2,pic,'').
+struct_dt_elem_i([ 26,61,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,61,0 ],2,'ExternalName','CallerOnDelete').
+struct_dt_elem_i([ 26,61,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,61,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,61,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,61,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,61,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],3,name,'Callerurl').
+struct_dt_elem_i([ 26,61,0 ],3,camelname,'CallerURL').
+struct_dt_elem_i([ 26,61,0 ],3,basedon,33).
+struct_dt_elem_i([ 26,61,0 ],3,length,1000).
+struct_dt_elem_i([ 26,61,0 ],3,decimals,0).
+struct_dt_elem_i([ 26,61,0 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,61,0 ],3,pic,'').
+struct_dt_elem_i([ 26,61,0 ],3,collection,'False').
+struct_dt_elem_i([ 26,61,0 ],3,'ExternalName','CallerURL').
+struct_dt_elem_i([ 26,61,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,0 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,61,0 ],3,'XmlName','').
+struct_dt_elem_i([ 26,61,0 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,0 ],3,soaptype,'').
+struct_dt_elem_i([ 26,61,0 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,0 ],3,'JsonName','').
+struct_dt_elem_i([ 26,61,0 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],4,name,'Transactionname').
+struct_dt_elem_i([ 26,61,0 ],4,camelname,'TransactionName').
+struct_dt_elem_i([ 26,61,0 ],4,basedon,54).
+struct_dt_elem_i([ 26,61,0 ],4,length,256).
+struct_dt_elem_i([ 26,61,0 ],4,decimals,0).
+struct_dt_elem_i([ 26,61,0 ],4,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,61,0 ],4,pic,'').
+struct_dt_elem_i([ 26,61,0 ],4,collection,'False').
+struct_dt_elem_i([ 26,61,0 ],4,'ExternalName','TransactionName').
+struct_dt_elem_i([ 26,61,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,0 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,61,0 ],4,'XmlName','').
+struct_dt_elem_i([ 26,61,0 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,0 ],4,soaptype,'').
+struct_dt_elem_i([ 26,61,0 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,0 ],4,'JsonName','').
+struct_dt_elem_i([ 26,61,0 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],5,name,'Attributes').
+struct_dt_elem_i([ 26,61,0 ],5,camelname,'Attributes').
+struct_dt_elem_i([ 26,61,0 ],5,type,[ [ 26,61,95 ],0,0 ]).
+struct_dt_elem_i([ 26,61,0 ],5,pic,'').
+struct_dt_elem_i([ 26,61,0 ],5,collection,'True').
+struct_dt_elem_i([ 26,61,0 ],5,'ObjName','Attributes').
+struct_dt_elem_i([ 26,61,0 ],5,'ObjDesc','Attributes').
+struct_dt_elem_i([ 26,61,0 ],5,'CollectionItemName','Attribute').
+struct_dt_elem_i([ 26,61,0 ],5,'XmlName','').
+struct_dt_elem_i([ 26,61,0 ],5,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,61,0 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,0 ],5,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,61,0 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,0 ],5,'JsonName','').
+struct_dt_elem_i([ 26,61,0 ],5,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,61,0 ],5,'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,61,95 ],1,name,'Attributename').
+struct_dt_elem_i([ 26,61,95 ],1,camelname,'AttributeName').
+struct_dt_elem_i([ 26,61,95 ],1,length,128).
+struct_dt_elem_i([ 26,61,95 ],1,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,61,95 ],1,pic,'').
+struct_dt_elem_i([ 26,61,95 ],1,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],1,'ExternalName','AttributeName').
+struct_dt_elem_i([ 26,61,95 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,95 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],1,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],1,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,95 ],2,name,'Attributevalue').
+struct_dt_elem_i([ 26,61,95 ],2,camelname,'AttributeValue').
+struct_dt_elem_i([ 26,61,95 ],2,length,1000).
+struct_dt_elem_i([ 26,61,95 ],2,decimals,0).
+struct_dt_elem_i([ 26,61,95 ],2,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,61,95 ],2,pic,'').
+struct_dt_elem_i([ 26,61,95 ],2,collection,'False').
+struct_dt_elem_i([ 26,61,95 ],2,'ExternalName','AttributeValue').
+struct_dt_elem_i([ 26,61,95 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,61,95 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlName','').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,61,95 ],2,soaptype,'').
+struct_dt_elem_i([ 26,61,95 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,61,95 ],2,'JsonName','').
+struct_dt_elem_i([ 26,61,95 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 0,4,0 ],1,name,'Userid').
+struct_dt_elem_i([ 0,4,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 0,4,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,4,0 ],1,length,6).
+struct_dt_elem_i([ 0,4,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],1,sign,0).
+struct_dt_elem_i([ 0,4,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,4,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,4,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],1,attributeid,'99').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 0,4,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],2,name,'Useremail').
+struct_dt_elem_i([ 0,4,0 ],2,camelname,'UserEmail').
+struct_dt_elem_i([ 0,4,0 ],2,basedon,46).
+struct_dt_elem_i([ 0,4,0 ],2,length,100).
+struct_dt_elem_i([ 0,4,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 0,4,0 ],2,pic,'').
+struct_dt_elem_i([ 0,4,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],2,attributeid,'137').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalName','UserEmail').
+struct_dt_elem_i([ 0,4,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],3,name,'Username').
+struct_dt_elem_i([ 0,4,0 ],3,camelname,'UserName').
+struct_dt_elem_i([ 0,4,0 ],3,length,20).
+struct_dt_elem_i([ 0,4,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],3,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 0,4,0 ],3,pic,'').
+struct_dt_elem_i([ 0,4,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],3,attributeid,'100').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalName','UserName').
+struct_dt_elem_i([ 0,4,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],4,name,'Userpassword').
+struct_dt_elem_i([ 0,4,0 ],4,camelname,'UserPassword').
+struct_dt_elem_i([ 0,4,0 ],4,length,40).
+struct_dt_elem_i([ 0,4,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],4,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 0,4,0 ],4,pic,'').
+struct_dt_elem_i([ 0,4,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],4,attributeid,'101').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalName','UserPassword').
+struct_dt_elem_i([ 0,4,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],5,name,'Userhash').
+struct_dt_elem_i([ 0,4,0 ],5,camelname,'UserHash').
+struct_dt_elem_i([ 0,4,0 ],5,length,40).
+struct_dt_elem_i([ 0,4,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],5,type,[ 13,40,0 ]).
+struct_dt_elem_i([ 0,4,0 ],5,pic,'').
+struct_dt_elem_i([ 0,4,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],5,attributeid,'109').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalName','UserHash').
+struct_dt_elem_i([ 0,4,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],6,name,'Usercreateddate').
+struct_dt_elem_i([ 0,4,0 ],6,camelname,'UserCreatedDate').
+struct_dt_elem_i([ 0,4,0 ],6,length,8).
+struct_dt_elem_i([ 0,4,0 ],6,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],6,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,4,0 ],6,pic,'99/99/99').
+struct_dt_elem_i([ 0,4,0 ],6,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],6,attributeid,'102').
+struct_dt_elem_i([ 0,4,0 ],6,'ExternalName','UserCreatedDate').
+struct_dt_elem_i([ 0,4,0 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],7,name,'Usermodifieddate').
+struct_dt_elem_i([ 0,4,0 ],7,camelname,'UserModifiedDate').
+struct_dt_elem_i([ 0,4,0 ],7,length,8).
+struct_dt_elem_i([ 0,4,0 ],7,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],7,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,4,0 ],7,pic,'99/99/99').
+struct_dt_elem_i([ 0,4,0 ],7,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],7,attributeid,'103').
+struct_dt_elem_i([ 0,4,0 ],7,'ExternalName','UserModifiedDate').
+struct_dt_elem_i([ 0,4,0 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],8,name,'Roleid').
+struct_dt_elem_i([ 0,4,0 ],8,camelname,'RoleId').
+struct_dt_elem_i([ 0,4,0 ],8,basedon,92).
+struct_dt_elem_i([ 0,4,0 ],8,length,6).
+struct_dt_elem_i([ 0,4,0 ],8,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],8,sign,0).
+struct_dt_elem_i([ 0,4,0 ],8,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,4,0 ],8,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,4,0 ],8,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],8,attributeid,'104').
+struct_dt_elem_i([ 0,4,0 ],8,'ExternalName','RoleId').
+struct_dt_elem_i([ 0,4,0 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],9,name,'Rolename').
+struct_dt_elem_i([ 0,4,0 ],9,camelname,'RoleName').
+struct_dt_elem_i([ 0,4,0 ],9,basedon,93).
+struct_dt_elem_i([ 0,4,0 ],9,length,60).
+struct_dt_elem_i([ 0,4,0 ],9,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],9,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,4,0 ],9,pic,'').
+struct_dt_elem_i([ 0,4,0 ],9,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],9,attributeid,'105').
+struct_dt_elem_i([ 0,4,0 ],9,'ExternalName','RoleName').
+struct_dt_elem_i([ 0,4,0 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,4,0 ],10,name,'Useractive').
+struct_dt_elem_i([ 0,4,0 ],10,camelname,'UserActive').
+struct_dt_elem_i([ 0,4,0 ],10,length,4).
+struct_dt_elem_i([ 0,4,0 ],10,decimals,0).
+struct_dt_elem_i([ 0,4,0 ],10,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,4,0 ],10,pic,'').
+struct_dt_elem_i([ 0,4,0 ],10,collection,'False').
+struct_dt_elem_i([ 0,4,0 ],10,attributeid,'111').
+struct_dt_elem_i([ 0,4,0 ],10,'ExternalName','UserActive').
+struct_dt_elem_i([ 0,4,0 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,name,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,length,128).
+struct_dt_elem_i([ 26,13,30 ],1,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,13,30 ],1,pic,'').
+struct_dt_elem_i([ 26,13,30 ],1,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],1,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],1,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],2,name,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,basedon,51).
+struct_dt_elem_i([ 26,13,30 ],2,length,2).
+struct_dt_elem_i([ 26,13,30 ],2,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],2,sign,0).
+struct_dt_elem_i([ 26,13,30 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,13,30 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,13,30 ],2,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],2,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],2,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],3,name,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,length,256).
+struct_dt_elem_i([ 26,13,30 ],3,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,13,30 ],3,pic,'').
+struct_dt_elem_i([ 26,13,30 ],3,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],3,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],3,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,61,0 ],3,pic,'99/99/99').
+struct_dt_elem_i([ 0,4,0 ],9,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,55,[ [ 'Userid','Context','Mode','Pgmname',100,137,104 ],[ 'Userid','Auxusername','Auxuseremail','Auxroleid' ] ]).
+sub_info_i(146,'After Trn',57,92,[ [ 100,137,111,104,105,'Mode',99,'Waschanged','Useremail','Username','Rolname','Useractive','Auxroleid','Roleid','Auxuseremail','Auxusername','Emailtitle','Emailsubtitle','Emailbody','Emailsubject','Allok' ],[ 'Username','Useremail','Useractive','Roleid','Rolname','Emailsubject','Emailtitle','Emailsubtitle','Emailbody','Waschanged','Allok' ] ]).
+ 
+pgm_parm_i(proc,75,'SENDEMAIL',[ [ svchar,100,0,0 ],[ svchar,1000,0,0 ],[ svchar,40,0,0 ],[ o(objectcollection(svchar)),1000,0,0 ],[ o(objectcollection(svchar)),100,0,0 ],[ boolean,4,0,0 ] ],[ [ 'ToEmail',in,[] ],[ 'BodyMsg',inout,[] ],[ 'Subject',inout,[] ],[ 'URLs',inout,[ '-1' ] ],[ 'NamesOfAttachs',inout,[ '-1' ] ],[ 'AllOk',inout,[] ] ]).
+pgm_parm_i(proc,78,'SENDEMAILPREPAREHEADER',[ [ svchar,100,0,0 ],[ svchar,100,0,0 ],[ svchar,2000,0,0 ],[ svchar,2000,0,0 ] ],[ [ 'EmailTitle',in,[] ],[ 'EmailSubtitle',in,[] ],[ 'Content',in,[] ],[ 'EmailBody',out,[] ] ]).
+pgm_parm_i(proc,79,'USER_RESETPASSWORD',[ [ int,6,0,0 ],[ boolean,4,0,0 ] ],[ [ 'UserId',in,[] ],[ 'AllOk',out,[] ] ]).
+pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(proc,59,'CHECKAUTHENTICATION',[ [ o('General\UI\SDTContextSession'),0,0,0 ] ],[ [ 'Context',out,[] ] ]).
+pgm_parm_i(proc,58,'HASPERMISSION',[ [ svchar,60,0,0 ],[ boolean,4,0,0 ] ],[ [ 'PermissionName',in,[] ],[ 'Has',out,[] ] ]).
+ 
+pgm_callprotocol_i(trn,4,'USER_BC','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,75,'SENDEMAIL','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,78,'SENDEMAILPREPAREHEADER','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,79,'USER_RESETPASSWORD','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,59,'CHECKAUTHENTICATION','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,58,'HASPERMISSION','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

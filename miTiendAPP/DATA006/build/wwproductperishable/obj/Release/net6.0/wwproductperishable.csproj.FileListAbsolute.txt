@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwproductperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwproductperishable.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\refint\wwproductperishable.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\wwproductperishable.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwproductperishable\obj\Release\net6.0\ref\wwproductperishable.dll

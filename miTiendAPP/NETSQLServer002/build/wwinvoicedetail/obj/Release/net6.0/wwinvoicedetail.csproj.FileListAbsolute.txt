@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\wwinvoicedetail.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\wwinvoicedetail.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\refint\wwinvoicedetail.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\wwinvoicedetail.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\wwinvoicedetail\obj\Release\net6.0\ref\wwinvoicedetail.dll

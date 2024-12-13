@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprolepromptassignpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wprolepromptassignpermission.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\refint\wprolepromptassignpermission.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\wprolepromptassignpermission.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wprolepromptassignpermission\obj\Release\net6.0\ref\wprolepromptassignpermission.dll

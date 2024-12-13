@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\ainvoiceregisterattach.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\ainvoiceregisterattach.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\refint\ainvoiceregisterattach.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ainvoiceregisterattach.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\ainvoiceregisterattach\obj\Release\net6.0\ref\ainvoiceregisterattach.dll

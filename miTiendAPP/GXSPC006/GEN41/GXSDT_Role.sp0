@@ -1,0 +1,81 @@
+ 
+spec_i([ sdt,[ 0,12,0 ],'Role','Role',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,12,0 ],name,'Role').
+struct_dt_i([ 0,12,0 ],namespace,mtaKB).
+struct_dt_i([ 0,12,0 ],significantName,'Role').
+struct_dt_i([ 0,12,0 ],'ObjName','Role').
+struct_dt_i([ 0,12,0 ],'ObjDesc','Role').
+struct_dt_i([ 0,12,0 ],'ExternalName','Role').
+struct_dt_i([ 0,12,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,12,0 ],key,[ 104 ]).
+struct_dt_i([ 0,12,0 ],lvl,17).
+struct_dt_i([ 0,12,[ 104,106 ] ],name,'Permission').
+struct_dt_i([ 0,12,[ 104,106 ] ],namespace,'mtaKB.Role').
+struct_dt_i([ 0,12,[ 104,106 ] ],lvl,19).
+struct_dt_i([ 0,12,0 ],fullname,'Role').
+struct_dt_i([ 0,12,[ 104,106 ] ],fullname,'Role.Permission').
+ 
+struct_dt_elem_i([ 0,12,0 ],1,name,'Roleid').
+struct_dt_elem_i([ 0,12,0 ],1,camelname,'RoleId').
+struct_dt_elem_i([ 0,12,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,12,0 ],1,length,6).
+struct_dt_elem_i([ 0,12,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,12,0 ],1,sign,0).
+struct_dt_elem_i([ 0,12,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,12,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,12,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,12,0 ],1,attributeid,'104').
+struct_dt_elem_i([ 0,12,0 ],1,'ExternalName','RoleId').
+struct_dt_elem_i([ 0,12,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,12,0 ],2,name,'Rolename').
+struct_dt_elem_i([ 0,12,0 ],2,camelname,'RoleName').
+struct_dt_elem_i([ 0,12,0 ],2,basedon,93).
+struct_dt_elem_i([ 0,12,0 ],2,length,60).
+struct_dt_elem_i([ 0,12,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,12,0 ],2,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,12,0 ],2,pic,'').
+struct_dt_elem_i([ 0,12,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,12,0 ],2,attributeid,'105').
+struct_dt_elem_i([ 0,12,0 ],2,'ExternalName','RoleName').
+struct_dt_elem_i([ 0,12,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,12,0 ],3,name,'Permission').
+struct_dt_elem_i([ 0,12,0 ],3,camelname,'Permission').
+struct_dt_elem_i([ 0,12,0 ],3,type,[ [ 0,12,[ 104,106 ] ],0,0 ]).
+struct_dt_elem_i([ 0,12,0 ],3,pic,'').
+struct_dt_elem_i([ 0,12,0 ],3,collection,'True').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,name,'Permissionid').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,camelname,'PermissionId').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,basedon,92).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,length,6).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,decimals,0).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,sign,0).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,collection,'False').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,attributeid,'106').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,'ExternalName','PermissionId').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,name,'Permissionname').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,camelname,'PermissionName').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,basedon,93).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,length,60).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,decimals,0).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,pic,'').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,collection,'False').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,attributeid,'107').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,'ExternalName','PermissionName').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,12,0 ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,12,[ 104,106 ] ],2,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\webpanelinfo.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\webpanelinfo.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\refint\webpanelinfo.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\webpanelinfo.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\webpanelinfo\obj\Release\net6.0\ref\webpanelinfo.dll

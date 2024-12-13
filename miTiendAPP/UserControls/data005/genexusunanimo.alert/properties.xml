@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="GeneXusUnanimo.Alert">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>id</Id>
+					<Name>id</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Type</Id>
+					<Name>Type</Name>
+					<Type>Combo</Type>
+					<Default>info</Default>
+					<Values><Value id='info' desc='info' /> 
+					<Value id='warning' desc='warning' /> 
+					<Value id='success' desc='success' /> 
+					<Value id='error' desc='error' /> </Values>
+				</Prop>
+				<Prop>
+					<Id>Title</Id>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Message</Id>
+					<Name>Message</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Position</Id>
+					<Name>Position</Name>
+					<Type>Combo</Type>
+					<Default>User defined</Default>
+					<Values><Value id='User defined' desc='User defined' /> 
+					<Value id='Fixed to bottom' desc='Fixed to bottom' /> </Values>
+				</Prop>
+				<Prop>
+					<Id>ShowMultiple</Id>
+					<Name>ShowMultiple</Name>
+					<Type>Boolean</Type>
+					<Default>false</Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Count</Id>
+					<Name>Count</Name>
+					<Type>Integer</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+			</Children>
+		</Group>
+	</Object>
+</Content>

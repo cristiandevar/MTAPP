@@ -1,0 +1,210 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>70</ObjId>
+<ObjName>WPRankings</ObjName>
+<ObjDesc>WPRankings</ObjDesc>
+<ObjPgmName>WPRankings</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Variable>
+<VarId>Supplier</VarId>
+<VarName>&amp;Supplier</VarName></Variable></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>Supplier</TableName>
+<Description>Supplier</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>USUPPLIER</IndexName></NavigationOrder></Navigation></DynamicLoad></Action>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Variable>
+<VarId>Sector</VarId>
+<VarName>&amp;Sector</VarName></Variable></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>3</TableId>
+<TableName>Sector</TableName>
+<Description>Sector</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>9</AttriId>
+<AttriName>SectorId</AttriName>
+<Description>Sector Id</Description></Attribute>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SectorName</AttriName>
+<Description>Sector Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action>
+<Action>
+<ActionType>DynamicLoad</ActionType>
+<DynamicLoad>
+<ControlName>
+<Variable>
+<VarId>Brand</VarId>
+<VarName>&amp;Brand</VarName></Variable></ControlName>
+<CodeAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></CodeAttributes>
+<DescriptionAttributes>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></DescriptionAttributes>
+<Navigation>
+<NavigationTree>
+<Table>
+<TableId>1</TableId>
+<TableName>Brand</TableName>
+<Description>Brand</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>1</AttriId>
+<AttriName>BrandId</AttriName>
+<Description>Brand Id</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<NavigationConditions></NavigationConditions>
+<NavigationOrder>
+<Order>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>BrandName</AttriName>
+<Description>Brand Name</Description></Attribute></Order>
+<Condition></Condition></NavigationOrder></Navigation></DynamicLoad></Action></StandAloneRules>
+<Event>
+<EventName>'NoSales'</EventName></Event>
+<Event>
+<EventName>'UnitsSold'</EventName></Event>
+<Event>
+<EventName>'TotalRaised'</EventName></Event>
+<Event>
+<EventName>'NoPurchase'</EventName></Event>
+<Event>
+<EventName>'UnitsPurchased'</EventName></Event>
+<Event>
+<EventName>'TotalPaid'</EventName></Event>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>54</ObjId>
+<ObjName>GetContext</ObjName>
+<ObjPgmName>GetContext</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Expression>
+<Variable>
+<VarId>Context</VarId>
+<VarName>&amp;Context</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Expression>
+<IF></IF></CALL>
+<CALL>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>112</ObjId>
+<ObjName>WPLogIn</ObjName>
+<ObjPgmName>WPLogIn</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Expression></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

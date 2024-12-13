@@ -1,0 +1,15 @@
+
+<Object>
+<ReorgCls>c</ReorgCls>
+<Mod>5</Mod>
+<OldMod>6</OldMod>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<Table>
+<TableId>10</TableId>
+<TableName>PurchaseOrder</TableName>
+<Description>Purchase Order</Description></Table>
+<ReorgAction>#</ReorgAction>
+<ObjNavig>crist\MDL006\GEN41\PurchaseOrderConversion.xml</ObjNavig></Object>

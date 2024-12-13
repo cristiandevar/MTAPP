@@ -1,0 +1,1 @@
+import{r}from"./p-23c5f09f.js";const s=class{constructor(s){r(this,s)}};s.style="@layer ch-grid {\n  ch-grid-rowset {\n    display: contents;\n  }\n}";export{s as ch_grid_rowset}

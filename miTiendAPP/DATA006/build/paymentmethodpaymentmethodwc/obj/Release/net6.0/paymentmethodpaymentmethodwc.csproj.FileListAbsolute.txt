@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\paymentmethodpaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\paymentmethodpaymentmethodwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\refint\paymentmethodpaymentmethodwc.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\paymentmethodpaymentmethodwc.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethodpaymentmethodwc\obj\Release\net6.0\ref\paymentmethodpaymentmethodwc.dll

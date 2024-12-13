@@ -1,0 +1,441 @@
+spec_i([ proc,0,'Stub for ProductsRankingPurchase','ProductsRankingPurchase',80,eng,'18_0_2-169539' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Name','SupplierId','SectorId','BrandId','FromDate','ToDate','Order' ],[])).
+rule_i(0,parmio([ [ 'Name',in ],[ 'SupplierId',inout ],[ 'SectorId',inout ],[ 'BrandId',inout ],[ 'FromDate',inout ],[ 'ToDate',inout ],[ 'Order',inout ] ])).
+rule_i(0,stub(proc)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',10 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',9 ]).
+attri_i('Order',[ 'Order',int,4,0,'',0,'','',8 ]).
+attri_i('ToDate',[ 'ToDate',date,8,0,'',0,'','',7 ]).
+attri_i('FromDate',[ 'FromDate',date,8,0,'',0,'','',6 ]).
+attri_i('BrandId',[ 'BrandId',int,6,0,'',0,'','',5 ]).
+attri_i('SectorId',[ 'SectorId',int,6,0,'',0,'','',4 ]).
+attri_i('SupplierId',[ 'SupplierId',int,6,0,'',0,'','',3 ]).
+attri_i('Name',[ 'Name',svchar,60,0,'',0,'','',2 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(1,1,1,cmd,1,[ t('',163,1,0),t('AProductsRankingPurchase',3,1,0),t(41,3,1,0),t('',3,1,0),t(',',7,1,0),t('Name',23,1,0),t(',',7,1,0),t('SupplierId',23,1,0),t(',',7,1,0),t('SectorId',23,1,0),t(',',7,1,0),t('BrandId',23,1,0),t(',',7,1,0),t('FromDate',23,1,0),t(',',7,1,0),t('ToDate',23,1,0),t(',',7,1,0),t('Order',23,1,0),t(')',4,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(1,26).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,67,0 ],name,'SDTProductsRankingPurchases').
+struct_dt_i([ 26,67,0 ],namespace,mtaKB).
+struct_dt_i([ 26,67,0 ],'ObjName','SDTProductsRankingPurchases').
+struct_dt_i([ 26,67,0 ],'ObjDesc','SDTProducts Ranking Purchases').
+struct_dt_i([ 26,67,0 ],'ExternalName','SDTProductsRankingPurchases').
+struct_dt_i([ 26,67,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,67,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,67,0 ],collection,'True').
+struct_dt_i([ 26,67,0 ],datatype,[ 26,67,101 ]).
+struct_dt_i([ 26,67,0 ],'CollectionItemName','SDTProductsRankingPurchasesItem').
+struct_dt_i([ 26,67,0 ],'XmlName','').
+struct_dt_i([ 26,67,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,67,0 ],'XmlNamespace','').
+struct_dt_i([ 26,67,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,67,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,67,0 ],'JsonName','').
+struct_dt_i([ 26,67,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,67,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,67,101 ],name,'SDTProductsRankingPurchasesItem').
+struct_dt_i([ 26,67,101 ],namespace,'mtaKB.SDTProductsRankingPurchases').
+struct_dt_i([ 26,93,0 ],name,'General\UI\SDTContextSession').
+struct_dt_i([ 26,93,0 ],namespace,mtaKB).
+struct_dt_i([ 26,93,0 ],'ObjName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ObjDesc','SDTContext Session').
+struct_dt_i([ 26,93,0 ],'ExternalName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,93,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,93,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,67,0 ],fullname,'SDTProductsRankingPurchases').
+struct_dt_i([ 26,67,101 ],fullname,'SDTProductsRankingPurchases.SDTProductsRankingPurchasesItem').
+struct_dt_i([ 26,93,0 ],fullname,'General\UI\SDTContextSession').
+ 
+struct_dt_elem_i([ 26,67,101 ],1,name,'Id').
+struct_dt_elem_i([ 26,67,101 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,67,101 ],1,basedon,92).
+struct_dt_elem_i([ 26,67,101 ],1,length,6).
+struct_dt_elem_i([ 26,67,101 ],1,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],1,sign,0).
+struct_dt_elem_i([ 26,67,101 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,67,101 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,67,101 ],1,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,67,101 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],1,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],1,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],1,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],2,name,'Name').
+struct_dt_elem_i([ 26,67,101 ],2,camelname,'Name').
+struct_dt_elem_i([ 26,67,101 ],2,basedon,93).
+struct_dt_elem_i([ 26,67,101 ],2,length,60).
+struct_dt_elem_i([ 26,67,101 ],2,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],2,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,67,101 ],2,pic,'').
+struct_dt_elem_i([ 26,67,101 ],2,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],2,'ExternalName','Name').
+struct_dt_elem_i([ 26,67,101 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],2,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],2,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],2,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],3,name,'Price').
+struct_dt_elem_i([ 26,67,101 ],3,camelname,'Price').
+struct_dt_elem_i([ 26,67,101 ],3,basedon,94).
+struct_dt_elem_i([ 26,67,101 ],3,length,18).
+struct_dt_elem_i([ 26,67,101 ],3,decimals,2).
+struct_dt_elem_i([ 26,67,101 ],3,sign,0).
+struct_dt_elem_i([ 26,67,101 ],3,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,67,101 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,67,101 ],3,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],3,'ExternalName','Price').
+struct_dt_elem_i([ 26,67,101 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],3,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],3,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],3,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],4,name,'Stock').
+struct_dt_elem_i([ 26,67,101 ],4,camelname,'Stock').
+struct_dt_elem_i([ 26,67,101 ],4,basedon,97).
+struct_dt_elem_i([ 26,67,101 ],4,length,6).
+struct_dt_elem_i([ 26,67,101 ],4,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],4,sign,0).
+struct_dt_elem_i([ 26,67,101 ],4,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,67,101 ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,67,101 ],4,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],4,'ExternalName','Stock').
+struct_dt_elem_i([ 26,67,101 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],4,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],4,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],4,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],5,name,'Quantitypurchases').
+struct_dt_elem_i([ 26,67,101 ],5,camelname,'QuantityPurchases').
+struct_dt_elem_i([ 26,67,101 ],5,length,4).
+struct_dt_elem_i([ 26,67,101 ],5,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],5,sign,0).
+struct_dt_elem_i([ 26,67,101 ],5,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 26,67,101 ],5,pic,'ZZZ9').
+struct_dt_elem_i([ 26,67,101 ],5,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],5,'ExternalName','QuantityPurchases').
+struct_dt_elem_i([ 26,67,101 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],5,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],5,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],5,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],6,name,'Quantityunitspurchases').
+struct_dt_elem_i([ 26,67,101 ],6,camelname,'QuantityUnitsPurchases').
+struct_dt_elem_i([ 26,67,101 ],6,length,4).
+struct_dt_elem_i([ 26,67,101 ],6,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],6,sign,0).
+struct_dt_elem_i([ 26,67,101 ],6,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 26,67,101 ],6,pic,'ZZZ9').
+struct_dt_elem_i([ 26,67,101 ],6,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],6,'ExternalName','QuantityUnitsPurchases').
+struct_dt_elem_i([ 26,67,101 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],6,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],6,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],6,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],6,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],6,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],7,name,'Total').
+struct_dt_elem_i([ 26,67,101 ],7,camelname,'Total').
+struct_dt_elem_i([ 26,67,101 ],7,length,10).
+struct_dt_elem_i([ 26,67,101 ],7,decimals,2).
+struct_dt_elem_i([ 26,67,101 ],7,sign,0).
+struct_dt_elem_i([ 26,67,101 ],7,type,[ 4,10,2 ]).
+struct_dt_elem_i([ 26,67,101 ],7,pic,'ZZZZZZ9.99').
+struct_dt_elem_i([ 26,67,101 ],7,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],7,'ExternalName','Total').
+struct_dt_elem_i([ 26,67,101 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],7,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],7,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],7,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],8,name,'Sector').
+struct_dt_elem_i([ 26,67,101 ],8,camelname,'Sector').
+struct_dt_elem_i([ 26,67,101 ],8,basedon,92).
+struct_dt_elem_i([ 26,67,101 ],8,length,6).
+struct_dt_elem_i([ 26,67,101 ],8,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],8,sign,0).
+struct_dt_elem_i([ 26,67,101 ],8,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,67,101 ],8,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,67,101 ],8,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],8,'ExternalName','Sector').
+struct_dt_elem_i([ 26,67,101 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],8,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],8,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],8,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],8,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],8,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],8,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],8,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],9,name,'Supplier').
+struct_dt_elem_i([ 26,67,101 ],9,camelname,'Supplier').
+struct_dt_elem_i([ 26,67,101 ],9,basedon,92).
+struct_dt_elem_i([ 26,67,101 ],9,length,6).
+struct_dt_elem_i([ 26,67,101 ],9,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],9,sign,0).
+struct_dt_elem_i([ 26,67,101 ],9,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,67,101 ],9,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,67,101 ],9,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],9,'ExternalName','Supplier').
+struct_dt_elem_i([ 26,67,101 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],9,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],9,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],9,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],9,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],9,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],9,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],9,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],10,name,'Brand').
+struct_dt_elem_i([ 26,67,101 ],10,camelname,'Brand').
+struct_dt_elem_i([ 26,67,101 ],10,basedon,92).
+struct_dt_elem_i([ 26,67,101 ],10,length,6).
+struct_dt_elem_i([ 26,67,101 ],10,decimals,0).
+struct_dt_elem_i([ 26,67,101 ],10,sign,0).
+struct_dt_elem_i([ 26,67,101 ],10,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,67,101 ],10,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,67,101 ],10,collection,'False').
+struct_dt_elem_i([ 26,67,101 ],10,'ExternalName','Brand').
+struct_dt_elem_i([ 26,67,101 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,67,101 ],10,'XmlType','Element').
+struct_dt_elem_i([ 26,67,101 ],10,'XmlName','').
+struct_dt_elem_i([ 26,67,101 ],10,'XmlNamespace','').
+struct_dt_elem_i([ 26,67,101 ],10,soaptype,'').
+struct_dt_elem_i([ 26,67,101 ],10,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,67,101 ],10,'JsonName','').
+struct_dt_elem_i([ 26,67,101 ],10,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],1,name,'Userid').
+struct_dt_elem_i([ 26,93,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 26,93,0 ],1,basedon,92).
+struct_dt_elem_i([ 26,93,0 ],1,length,6).
+struct_dt_elem_i([ 26,93,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],1,sign,0).
+struct_dt_elem_i([ 26,93,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,93,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,93,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],2,name,'Username').
+struct_dt_elem_i([ 26,93,0 ],2,camelname,'UserName').
+struct_dt_elem_i([ 26,93,0 ],2,length,20).
+struct_dt_elem_i([ 26,93,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],2,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,93,0 ],2,pic,'').
+struct_dt_elem_i([ 26,93,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalName','UserName').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,67,101 ],2,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(proc,26,'APRODUCTSRANKINGPURCHASE',[ [ svchar,60,0,0 ],[ int,6,0,0 ],[ int,6,0,0 ],[ int,6,0,0 ],[ date,8,0,0 ],[ date,8,0,0 ],[ int,4,0,0 ] ],[ [ 'Name',in,[] ],[ 'SupplierId',inout,[] ],[ 'SectorId',inout,[] ],[ 'BrandId',inout,[] ],[ 'FromDate',inout,[] ],[ 'ToDate',inout,[] ],[ 'Order',inout,[] ] ]).
+ 
+pgm_callprotocol_i(proc,0,'PRODUCTSRANKINGPURCHASE','INTERNAL','').
+pgm_callprotocol_i(proc,26,'APRODUCTSRANKINGPURCHASE','HTTP','Unsecure').
+ 
+ 
+pgm_main_info_i(proc,26,'PRODUCTSRANKINGPURCHASE',[ 41,'APRODUCTSRANKINGPURCHASE','Products Ranking Purchase Quantity Unit','','','','HTTP' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

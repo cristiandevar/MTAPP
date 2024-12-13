@@ -1,0 +1,736 @@
+spec_i([ proc,43,'Update Select All','UpdateSelectAll',78,eng,'18_0_2-169539' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 5,[ [ 5,many ] ],[],[],[ [ [ 5 ],[ 9,1,4,16,55,15 ] ] ],[ [ [ 5 ],[] ] ],[ 15 ],'IPRODUCT',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+cond_constraint_i(2,[ [ t(55,2),t(=,10),t('Code',23) ],[ 55 ],[ t('.NOT.',8),t('null(',1),t('Code',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(16,2),t(=,10),t('Name',23) ],[ 16 ],[ t('.NOT.',8),t('null(',1),t('Name',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(4,2),t(=,10),t('Supplier',23) ],[ 4 ],[ t('.NOT.',8),t('null(',1),t('Supplier',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(1,2),t(=,10),t('Brand',23) ],[ 1 ],[ t('.NOT.',8),t('null(',1),t('Brand',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(9,2),t(=,10),t('Sector',23) ],[ 9 ],[ t('.NOT.',8),t('null(',1),t('Sector',23),t(')',4) ],[] ]).
+ 
+ 
+ 
+ta_i(2,[ [ [ 5,9 ],[ 5,1 ],[ 5,4 ],[ 5,16 ],[ 5,55 ],[ 5,15 ] ] ]).
+ 
+las_i(2,[ [ 9,1,4,16,55,15 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','CRISTIAN\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME',mtaKB2)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.microsoft.sqlserver.jdbc.SQLServerDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','UpdateSelectAll')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(8,'Procedures'))).
+rule_i(0,prop('ObjDesc','Update Select All')).
+rule_i(0,prop('ObjName','UpdateSelectAll')).
+rule_i(0,maingen(41)).
+rule_i(0,parm([ 'Code','Name','Supplier','Brand','Sector','Productsselected' ],[])).
+rule_i(0,parmio([ [ 'Code',in ],[ 'Name',inout ],[ 'Supplier',inout ],[ 'Brand',inout ],[ 'Sector',inout ],[ 'Productsselected',out ] ])).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,5,[],[ [],'IPRODUCT',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,9).
+v_i(t,o,2,1).
+v_i(t,o,2,4).
+v_i(t,o,2,16).
+v_i(t,o,2,55).
+v_i(t,o,2,15).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',20 ]).
+attri_i(55,[ 'ProductCode',svchar,100,0,'',0,'Product Code','',0 ]).
+attri_i(16,[ 'ProductName',svchar,60,0,'',0,'Product Name','',0 ]).
+attri_i(4,[ 'SupplierId',int,6,0,'ZZZZZ9',0,'Supplier Id','',0 ]).
+attri_i(1,[ 'BrandId',int,6,0,'ZZZZZ9',0,'Brand Id','',0 ]).
+attri_i(9,[ 'SectorId',int,6,0,'ZZZZZ9',0,'Sector Id','',0 ]).
+attri_i(15,[ 'ProductId',int,6,0,'ZZZZZ9',0,'Product Id','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',18 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',17 ]).
+attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',16 ]).
+attri_i('Context',[ 'Context',o('General\UI\SDTContextSession'),0,0,'',0,'Context','',15 ]).
+attri_i('Oneproduct',[ 'OneProduct',o('SDTProductsSelected.SDTProductsSelectedItem'),0,0,'',0,'One Product','',14 ]).
+attri_i('Productsselected',[ 'ProductsSelected',o(objectcollection('SDTProductsSelected.SDTProductsSelectedItem')),0,0,'',0,'Products Selected','',13 ]).
+attri_i('Sector',[ 'Sector',int,6,0,'ZZZZZ9',0,'Sector','',12 ]).
+attri_i('Brand',[ 'Brand',int,6,0,'ZZZZZ9',0,'Brand','',11 ]).
+attri_i('Supplier',[ 'Supplier',int,6,0,'ZZZZZ9',0,'Supplier','',10 ]).
+attri_i('Name',[ 'Name',svchar,60,0,'',0,'Name','',9 ]).
+attri_i('Code',[ 'Code',svchar,100,0,'',0,'Code','',8 ]).
+ 
+table_i(5,[ 'Product',[ 15,16,1,9,4,55 ],'Product','Product' ]).
+ 
+index_i(5,[ 'IPRODUCT',u,[ 15 ],'IProduct' ]).
+ 
+ 
+ 
+function_i(2,'Oneproduct',yes,udp,o(1,'UpdateLoadOneProduct'),[ 15 ],15,'Oneproduct',[ [ t(15,2) ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(92,[ 'Id' ]).
+dom_info_i(93,[ 'Name' ]).
+dom_info_i(89,[ 'GeneXusUnanimo\Code' ]).
+dom_info_i(97,[ 'Stock' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
+dom_info_i(129,[ 'MyDate' ]).
+dom_info_i(94,[ 'Price' ]).
+dom_info_i(127,[ 'Percentage' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 15 ],[ 55,16,4,1,9 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,7,7).
+b_group_i(2,1,lit,0,8,8).
+b_group_i(1,3,lit,0,19,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,cmd,0,[ t('',104,1,0),t(o(1,'GetContext'),28,0,1),t('Context',23,0,12),t(',',7,0,0),t('Allok',23,0,22) ]).
+b_line_i(2,1,1,cmd,0,[]).
+b_line_i(3,1,1,cmd,0,[ t('',109,3,0),t('.NOT.',8,0,4),t('Allok',23,0,10) ]).
+b_line_i(4,1,1,cmd,0,[ t('',104,4,0),t(o(13,'WPLogIn'),28,0,2) ]).
+b_line_i(5,1,1,cmd,0,[ t('',111,5,0) ]).
+b_line_i(6,1,1,cmd,0,[]).
+b_line_i(7,2,1,cmd,8,[ t('',121,7,0),t(table,3,7,10),t(5,3,7,10) ]).
+b_line_i(13,2,1,cmd,8,[]).
+b_line_i(14,2,1,cmd,8,[ t('',107,14,0),t('Oneproduct',23,8,0),t(=,10,8,0),t([ 'SDTProductsSelected.SDTProductsSelectedItem',[ t('(',0,14,19),t(')',4,14,20) ],n ],46,8,0) ]).
+b_line_i(15,2,1,cmd,8,[ t('',107,15,0),t('Oneproduct',23,8,0),t(=,10,8,0),t('udp(',1,8,0),t('Oneproduct',3,8,0),t(15,3,8,0),t(15,2,8,0),t(')',4,8,0) ]).
+b_line_i(16,2,1,cmd,8,[]).
+b_line_i(17,2,1,cmd,8,[ t('',107,17,0),t([ t('Productsselected',23,17,2),t('add(',1,17,20) ],31,17,2),t('Oneproduct',23,8,25),t(')',4,8,36) ]).
+b_line_i(18,2,1,cmd,8,[ t('',128,18,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',11909,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,37).
+ 
+att_prop_i(6,15,'ExternalName','ProductId',d).
+att_prop_i(6,15,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,15,'EmptyAsNull','Yes',d).
+att_prop_i(6,15,idBasedOn,92,v).
+att_prop_i(6,15,'AUTONUMBER','-1',d).
+att_prop_i(6,15,'AUTONUMBER_START','1',d).
+att_prop_i(6,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,15,'AttRegEx','',d).
+att_prop_i(6,15,'AttValidationFailedMsg','',d).
+att_prop_i(6,15,'DownloadOffline','0',d).
+att_prop_i(6,15,'VarServiceExtName','',d).
+att_prop_i(6,15,'FullName','ProductId',v).
+att_prop_i(6,9,'ExternalName','SectorId',d).
+att_prop_i(6,9,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,9,'EmptyAsNull','Yes',d).
+att_prop_i(6,9,idBasedOn,92,v).
+att_prop_i(6,9,'AUTONUMBER','-1',d).
+att_prop_i(6,9,'AUTONUMBER_START','1',d).
+att_prop_i(6,9,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,9,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,9,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,9,'AttRegEx','',d).
+att_prop_i(6,9,'AttValidationFailedMsg','',d).
+att_prop_i(6,9,'DownloadOffline','0',d).
+att_prop_i(6,9,'VarServiceExtName','',d).
+att_prop_i(6,9,'FullName','SectorId',v).
+att_prop_i(6,1,'ExternalName','BrandId',d).
+att_prop_i(6,1,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,1,'EmptyAsNull','Yes',d).
+att_prop_i(6,1,idBasedOn,92,v).
+att_prop_i(6,1,'AUTONUMBER','-1',d).
+att_prop_i(6,1,'AUTONUMBER_START','1',d).
+att_prop_i(6,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,1,'AttRegEx','',d).
+att_prop_i(6,1,'AttValidationFailedMsg','',d).
+att_prop_i(6,1,'DownloadOffline','0',d).
+att_prop_i(6,1,'VarServiceExtName','',d).
+att_prop_i(6,1,'FullName','BrandId',v).
+att_prop_i(6,4,'ExternalName','SupplierId',d).
+att_prop_i(6,4,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,4,'EmptyAsNull','Yes',d).
+att_prop_i(6,4,idBasedOn,92,v).
+att_prop_i(6,4,'AUTONUMBER','-1',d).
+att_prop_i(6,4,'AUTONUMBER_START','1',d).
+att_prop_i(6,4,'AUTONUMBER_STEP','1',d).
+att_prop_i(6,4,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(6,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,4,'AttRegEx','',d).
+att_prop_i(6,4,'AttValidationFailedMsg','',d).
+att_prop_i(6,4,'DownloadOffline','0',d).
+att_prop_i(6,4,'VarServiceExtName','',d).
+att_prop_i(6,4,'FullName','SupplierId',v).
+att_prop_i(6,16,'ExternalName','ProductName',d).
+att_prop_i(6,16,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,16,'EmptyAsNull','Yes',d).
+att_prop_i(6,16,idBasedOn,93,v).
+att_prop_i(6,16,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,16,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,16,'AttRegEx','',d).
+att_prop_i(6,16,'AttValidationFailedMsg','',d).
+att_prop_i(6,16,'DownloadOffline','0',d).
+att_prop_i(6,16,'VarServiceExtName','',d).
+att_prop_i(6,16,'FullName','ProductName',v).
+att_prop_i(6,55,'ExternalName','ProductCode',d).
+att_prop_i(6,55,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,55,'EmptyAsNull','Yes',d).
+att_prop_i(6,55,idBasedOn,89,v).
+att_prop_i(6,55,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,55,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,55,'AttRegEx','',d).
+att_prop_i(6,55,'AttValidationFailedMsg','',d).
+att_prop_i(6,55,'DownloadOffline','0',d).
+att_prop_i(6,55,'VarServiceExtName','',d).
+att_prop_i(6,55,'FullName','ProductCode',v).
+ 
+ 
+tbl_att_prop_i(6,5,15,'AllowNulls',n).
+tbl_att_prop_i(6,5,15,'AUTONUMBER',y).
+tbl_att_prop_i(6,5,16,'AllowNulls',n).
+tbl_att_prop_i(6,5,4,'AllowNulls',n).
+ 
+var_prop_i(6,'Code',idBasedOn,89,v).
+var_prop_i(6,'Name',idBasedOn,93,v).
+var_prop_i(6,'Supplier',idBasedOn,'',v).
+var_prop_i(6,'Brand',idBasedOn,'',v).
+var_prop_i(6,'Sector',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,71,0 ],name,'SDTProductsSelected').
+struct_dt_i([ 26,71,0 ],namespace,mtaKB).
+struct_dt_i([ 26,71,0 ],'ObjName','SDTProductsSelected').
+struct_dt_i([ 26,71,0 ],'ObjDesc','SDTProducts Selected').
+struct_dt_i([ 26,71,0 ],'ExternalName','SDTProductsSelected').
+struct_dt_i([ 26,71,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,71,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,71,0 ],collection,'True').
+struct_dt_i([ 26,71,0 ],datatype,[ 26,71,105 ]).
+struct_dt_i([ 26,71,0 ],'CollectionItemName','SDTProductsSelectedItem').
+struct_dt_i([ 26,71,0 ],'XmlName','').
+struct_dt_i([ 26,71,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,71,0 ],'XmlNamespace','').
+struct_dt_i([ 26,71,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,71,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,71,0 ],'JsonName','').
+struct_dt_i([ 26,71,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,71,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,71,105 ],name,'SDTProductsSelectedItem').
+struct_dt_i([ 26,71,105 ],namespace,'mtaKB.SDTProductsSelected').
+struct_dt_i([ 26,93,0 ],name,'General\UI\SDTContextSession').
+struct_dt_i([ 26,93,0 ],namespace,mtaKB).
+struct_dt_i([ 26,93,0 ],'ObjName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ObjDesc','SDTContext Session').
+struct_dt_i([ 26,93,0 ],'ExternalName','SDTContextSession').
+struct_dt_i([ 26,93,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 26,93,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,93,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,71,0 ],fullname,'SDTProductsSelected').
+struct_dt_i([ 26,71,105 ],fullname,'SDTProductsSelected.SDTProductsSelectedItem').
+struct_dt_i([ 26,93,0 ],fullname,'General\UI\SDTContextSession').
+ 
+struct_dt_elem_i([ 26,71,105 ],1,name,'Id').
+struct_dt_elem_i([ 26,71,105 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,71,105 ],1,basedon,92).
+struct_dt_elem_i([ 26,71,105 ],1,length,6).
+struct_dt_elem_i([ 26,71,105 ],1,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],1,sign,0).
+struct_dt_elem_i([ 26,71,105 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,71,105 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,71,105 ],1,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,71,105 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],1,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],1,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],1,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],2,name,'Code').
+struct_dt_elem_i([ 26,71,105 ],2,camelname,'Code').
+struct_dt_elem_i([ 26,71,105 ],2,basedon,89).
+struct_dt_elem_i([ 26,71,105 ],2,length,100).
+struct_dt_elem_i([ 26,71,105 ],2,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],2,type,[ 13,100,0 ]).
+struct_dt_elem_i([ 26,71,105 ],2,pic,'').
+struct_dt_elem_i([ 26,71,105 ],2,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],2,'ExternalName','Code').
+struct_dt_elem_i([ 26,71,105 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],2,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],2,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],2,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],3,name,'Name').
+struct_dt_elem_i([ 26,71,105 ],3,camelname,'Name').
+struct_dt_elem_i([ 26,71,105 ],3,basedon,93).
+struct_dt_elem_i([ 26,71,105 ],3,length,60).
+struct_dt_elem_i([ 26,71,105 ],3,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],3,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,71,105 ],3,pic,'').
+struct_dt_elem_i([ 26,71,105 ],3,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],3,'ExternalName','Name').
+struct_dt_elem_i([ 26,71,105 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],3,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],3,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],3,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],4,name,'Unitprice').
+struct_dt_elem_i([ 26,71,105 ],4,camelname,'UnitPrice').
+struct_dt_elem_i([ 26,71,105 ],4,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],4,length,18).
+struct_dt_elem_i([ 26,71,105 ],4,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],4,sign,0).
+struct_dt_elem_i([ 26,71,105 ],4,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],4,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],4,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],4,'ExternalName','UnitPrice').
+struct_dt_elem_i([ 26,71,105 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],4,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],4,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],4,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],5,name,'Newunitprice').
+struct_dt_elem_i([ 26,71,105 ],5,camelname,'NewUnitPrice').
+struct_dt_elem_i([ 26,71,105 ],5,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],5,length,18).
+struct_dt_elem_i([ 26,71,105 ],5,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],5,sign,0).
+struct_dt_elem_i([ 26,71,105 ],5,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],5,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],5,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],5,'ExternalName','NewUnitPrice').
+struct_dt_elem_i([ 26,71,105 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],5,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],5,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],5,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],5,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],5,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],6,name,'Sector').
+struct_dt_elem_i([ 26,71,105 ],6,camelname,'Sector').
+struct_dt_elem_i([ 26,71,105 ],6,basedon,93).
+struct_dt_elem_i([ 26,71,105 ],6,length,60).
+struct_dt_elem_i([ 26,71,105 ],6,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],6,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,71,105 ],6,pic,'').
+struct_dt_elem_i([ 26,71,105 ],6,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],6,'ExternalName','Sector').
+struct_dt_elem_i([ 26,71,105 ],6,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],6,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],6,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],6,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],6,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],6,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],6,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],6,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],7,name,'Supplier').
+struct_dt_elem_i([ 26,71,105 ],7,camelname,'Supplier').
+struct_dt_elem_i([ 26,71,105 ],7,basedon,93).
+struct_dt_elem_i([ 26,71,105 ],7,length,60).
+struct_dt_elem_i([ 26,71,105 ],7,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],7,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,71,105 ],7,pic,'').
+struct_dt_elem_i([ 26,71,105 ],7,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],7,'ExternalName','Supplier').
+struct_dt_elem_i([ 26,71,105 ],7,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],7,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],7,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],7,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],7,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],7,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],7,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],7,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],8,name,'Brand').
+struct_dt_elem_i([ 26,71,105 ],8,camelname,'Brand').
+struct_dt_elem_i([ 26,71,105 ],8,basedon,93).
+struct_dt_elem_i([ 26,71,105 ],8,length,60).
+struct_dt_elem_i([ 26,71,105 ],8,decimals,0).
+struct_dt_elem_i([ 26,71,105 ],8,type,[ 13,60,0 ]).
+struct_dt_elem_i([ 26,71,105 ],8,pic,'').
+struct_dt_elem_i([ 26,71,105 ],8,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],8,'ExternalName','Brand').
+struct_dt_elem_i([ 26,71,105 ],8,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],8,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],8,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],8,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],8,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],8,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],8,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],8,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],9,name,'Costprice').
+struct_dt_elem_i([ 26,71,105 ],9,camelname,'CostPrice').
+struct_dt_elem_i([ 26,71,105 ],9,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],9,length,18).
+struct_dt_elem_i([ 26,71,105 ],9,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],9,sign,0).
+struct_dt_elem_i([ 26,71,105 ],9,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],9,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],9,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],9,'ExternalName','CostPrice').
+struct_dt_elem_i([ 26,71,105 ],9,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],9,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],9,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],9,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],9,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],9,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],9,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],9,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],10,name,'Newcostprice').
+struct_dt_elem_i([ 26,71,105 ],10,camelname,'NewCostPrice').
+struct_dt_elem_i([ 26,71,105 ],10,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],10,length,18).
+struct_dt_elem_i([ 26,71,105 ],10,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],10,sign,0).
+struct_dt_elem_i([ 26,71,105 ],10,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],10,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],10,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],10,'ExternalName','NewCostPrice').
+struct_dt_elem_i([ 26,71,105 ],10,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],10,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],10,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],10,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],10,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],10,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],10,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],10,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],11,name,'Retailprofit').
+struct_dt_elem_i([ 26,71,105 ],11,camelname,'RetailProfit').
+struct_dt_elem_i([ 26,71,105 ],11,basedon,130).
+struct_dt_elem_i([ 26,71,105 ],11,length,7).
+struct_dt_elem_i([ 26,71,105 ],11,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],11,sign,0).
+struct_dt_elem_i([ 26,71,105 ],11,type,[ 4,7,2 ]).
+struct_dt_elem_i([ 26,71,105 ],11,pic,'ZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],11,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],11,'ExternalName','RetailProfit').
+struct_dt_elem_i([ 26,71,105 ],11,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],11,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],11,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],11,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],11,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],11,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],11,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],11,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],12,name,'Newretailprofit').
+struct_dt_elem_i([ 26,71,105 ],12,camelname,'NewRetailProfit').
+struct_dt_elem_i([ 26,71,105 ],12,basedon,130).
+struct_dt_elem_i([ 26,71,105 ],12,length,7).
+struct_dt_elem_i([ 26,71,105 ],12,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],12,sign,0).
+struct_dt_elem_i([ 26,71,105 ],12,type,[ 4,7,2 ]).
+struct_dt_elem_i([ 26,71,105 ],12,pic,'ZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],12,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],12,'ExternalName','NewRetailProfit').
+struct_dt_elem_i([ 26,71,105 ],12,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],12,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],12,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],12,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],12,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],12,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],12,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],12,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],13,name,'Retailprice').
+struct_dt_elem_i([ 26,71,105 ],13,camelname,'RetailPrice').
+struct_dt_elem_i([ 26,71,105 ],13,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],13,length,18).
+struct_dt_elem_i([ 26,71,105 ],13,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],13,sign,0).
+struct_dt_elem_i([ 26,71,105 ],13,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],13,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],13,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],13,'ExternalName','RetailPrice').
+struct_dt_elem_i([ 26,71,105 ],13,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],13,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],13,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],13,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],13,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],13,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],13,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],13,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],14,name,'Wholesaleprofit').
+struct_dt_elem_i([ 26,71,105 ],14,camelname,'WholesaleProfit').
+struct_dt_elem_i([ 26,71,105 ],14,basedon,130).
+struct_dt_elem_i([ 26,71,105 ],14,length,7).
+struct_dt_elem_i([ 26,71,105 ],14,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],14,sign,0).
+struct_dt_elem_i([ 26,71,105 ],14,type,[ 4,7,2 ]).
+struct_dt_elem_i([ 26,71,105 ],14,pic,'ZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],14,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],14,'ExternalName','WholesaleProfit').
+struct_dt_elem_i([ 26,71,105 ],14,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],14,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],14,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],14,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],14,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],14,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],14,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],14,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],15,name,'Newwholesaleprofit').
+struct_dt_elem_i([ 26,71,105 ],15,camelname,'NewWholeSaleProfit').
+struct_dt_elem_i([ 26,71,105 ],15,basedon,130).
+struct_dt_elem_i([ 26,71,105 ],15,length,7).
+struct_dt_elem_i([ 26,71,105 ],15,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],15,sign,0).
+struct_dt_elem_i([ 26,71,105 ],15,type,[ 4,7,2 ]).
+struct_dt_elem_i([ 26,71,105 ],15,pic,'ZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],15,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],15,'ExternalName','NewWholeSaleProfit').
+struct_dt_elem_i([ 26,71,105 ],15,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],15,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],15,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],15,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],15,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],15,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],15,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],15,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],16,name,'Wholesaleprice').
+struct_dt_elem_i([ 26,71,105 ],16,camelname,'WholesalePrice').
+struct_dt_elem_i([ 26,71,105 ],16,basedon,94).
+struct_dt_elem_i([ 26,71,105 ],16,length,18).
+struct_dt_elem_i([ 26,71,105 ],16,decimals,2).
+struct_dt_elem_i([ 26,71,105 ],16,sign,0).
+struct_dt_elem_i([ 26,71,105 ],16,type,[ 4,18,2 ]).
+struct_dt_elem_i([ 26,71,105 ],16,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],16,collection,'False').
+struct_dt_elem_i([ 26,71,105 ],16,'ExternalName','WholesalePrice').
+struct_dt_elem_i([ 26,71,105 ],16,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,71,105 ],16,'XmlType','Element').
+struct_dt_elem_i([ 26,71,105 ],16,'XmlName','').
+struct_dt_elem_i([ 26,71,105 ],16,'XmlNamespace','').
+struct_dt_elem_i([ 26,71,105 ],16,soaptype,'').
+struct_dt_elem_i([ 26,71,105 ],16,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,71,105 ],16,'JsonName','').
+struct_dt_elem_i([ 26,71,105 ],16,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],1,name,'Userid').
+struct_dt_elem_i([ 26,93,0 ],1,camelname,'UserId').
+struct_dt_elem_i([ 26,93,0 ],1,basedon,92).
+struct_dt_elem_i([ 26,93,0 ],1,length,6).
+struct_dt_elem_i([ 26,93,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],1,sign,0).
+struct_dt_elem_i([ 26,93,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 26,93,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,93,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalName','UserId').
+struct_dt_elem_i([ 26,93,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,93,0 ],2,name,'Username').
+struct_dt_elem_i([ 26,93,0 ],2,camelname,'UserName').
+struct_dt_elem_i([ 26,93,0 ],2,length,20).
+struct_dt_elem_i([ 26,93,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,93,0 ],2,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,93,0 ],2,pic,'').
+struct_dt_elem_i([ 26,93,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalName','UserName').
+struct_dt_elem_i([ 26,93,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,93,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,93,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,93,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,93,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,71,105 ],2,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 26,71,105 ],3,pic,'ZZZ9').
+struct_dt_elem_i([ 26,71,105 ],6,pic,'ZZZ9').
+struct_dt_elem_i([ 26,71,105 ],7,pic,'ZZZ9').
+struct_dt_elem_i([ 26,71,105 ],8,pic,'ZZZ9').
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(web,112,'WPLOGIN',[],[]).
+pgm_parm_i(proc,54,'GETCONTEXT',[ [ o('General\UI\SDTContextSession'),0,0,0 ],[ boolean,4,0,0 ] ],[ [ 'Context',out,[] ],[ 'AllOk',inout,[] ] ]).
+pgm_parm_i(proc,39,'UPDATELOADONEPRODUCT',[ [ int,6,0,0 ],[ o('SDTProductsSelected.SDTProductsSelectedItem'),0,0,0 ] ],[ [ 'ProductId',in,[] ],[ 'OneProduct',out,[] ] ]).
+ 
+pgm_callprotocol_i(proc,43,'UPDATESELECTALL','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,112,'WPLOGIN','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,54,'GETCONTEXT','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,39,'UPDATELOADONEPRODUCT','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

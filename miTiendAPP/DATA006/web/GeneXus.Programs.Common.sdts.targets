@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<ItemGroup>
+</ItemGroup>
+
+<ItemGroup>
+ 	<Compile Include="$(WebDirectory)\general\ui\type_SdtProgramNames_ProgramName.cs" />
+ 	<Compile Include="$(WebDirectory)\general\ui\type_SdtSDTContextSession.cs" />
+ 	<Compile Include="$(WebDirectory)\general\ui\type_SdtTransactionContext.cs" />
+ 	<Compile Include="$(WebDirectory)\general\ui\type_SdtTransactionContext_Attribute.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGoogleChart.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGoogleChart_Series.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTCarProducts_SDTCarProductsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTInvoiceAddPaymentMethod_SDTInvoiceAddPaymentMethodItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTInvoiceStatisticsTop_SDTInvoiceStatisticsTopItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTPermission_SDTPermissionItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTProductsFiltered_SDTProductsFilteredItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTProductsRankingPurchases_SDTProductsRankingPurchasesItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTProductsSelected_SDTProductsSelectedItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTPurchaseOrderDetails_SDTPurchaseOrderDetailsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTPurchaseOrderGenerateList_SDTPurchaseOrderGenerateListItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTRankingProducts_SDTRankingProductsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTStatisticsAccountStatement_SDTStatisticsAccountStatementItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTUser_SDTUserItem.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtTimeSerie_Category.cs" />
+
+</ItemGroup>
+
+</Project>

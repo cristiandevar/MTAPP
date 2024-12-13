@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\purchaseordercancelconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\purchaseordercancelconfirm.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\refint\purchaseordercancelconfirm.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\purchaseordercancelconfirm.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\purchaseordercancelconfirm\obj\Release\net6.0\ref\purchaseordercancelconfirm.dll

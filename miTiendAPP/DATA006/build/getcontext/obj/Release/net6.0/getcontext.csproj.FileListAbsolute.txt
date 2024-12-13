@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\getcontext.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\getcontext.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\refint\getcontext.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\getcontext.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\getcontext\obj\Release\net6.0\ref\getcontext.dll

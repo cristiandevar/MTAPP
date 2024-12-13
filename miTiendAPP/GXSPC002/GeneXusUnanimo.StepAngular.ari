@@ -1,0 +1,10 @@
+usercontrol_directory_i('genexusunanimo.stepangular', ['UserControls']).
+usercontrol_i('genexusunanimo.stepangular', ['GeneXusUnanimo.StepAngular','Genexusunanimo.stepangular']).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'StepItems', 'Stepitems', 'Stepitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'SelectedItem', 'Selecteditem', 'Selecteditem', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'SetStepItems', 'Setstepitems', 'Setstepitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.stepangular', 'GetStepItems', 'Getstepitems', 'Getstepitems', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.stepangular', 'Itemclick', 'ItemClick').

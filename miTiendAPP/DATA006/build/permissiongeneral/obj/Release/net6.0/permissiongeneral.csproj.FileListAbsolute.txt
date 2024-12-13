@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\permissiongeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\permissiongeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\refint\permissiongeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\permissiongeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\permissiongeneral\obj\Release\net6.0\ref\permissiongeneral.dll

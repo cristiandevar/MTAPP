@@ -1,0 +1,46 @@
+{
+	"Name": "GeneXusUnanimo.Switch",
+	"Target": "",
+	"IsControlType": true,
+	"Template": "<div class=\"switch-container stack-top-l\">    <input id=\"switch{{id}}\" name=\"gxSwitch{{id}}\" type=\"checkbox\" {{DataElement}} {{^Enabled}}disabled{{/Enabled}}/>    <label for=\"switch{{id}}\"></label></div>", 
+	"Events": [
+	],
+	"Properties": [
+		{
+			"Id": "id",
+			"Name": "id",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Enabled",
+			"Name": "Enabled",
+			"Type": "boolean",
+			"Default": "True"
+		} ,
+		{
+			"Id": "AttID",
+			"Name": "Attribute",
+			"Type": "boolean",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

@@ -1,0 +1,17 @@
+usercontrol_directory_i('genexusunanimo.dropdownangular', ['UserControls']).
+usercontrol_i('genexusunanimo.dropdownangular', ['GeneXusUnanimo.DropdownAngular','Genexusunanimo.dropdownangular']).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'UserPhoto', 'Userphoto', 'Userphoto', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'UserFullName', 'Userfullname', 'Userfullname', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'UserCompany', 'Usercompany', 'Usercompany', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'DisplayType', 'Displaytype', 'Displaytype', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'DropdownItems', 'Dropdownitems', 'Dropdownitems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'SelectedItemId', 'Selecteditemid', 'Selecteditemid', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'SelectedItemTarget', 'Selecteditemtarget', 'Selecteditemtarget', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'LogoutIcon', 'Logouticon', 'Logouticon', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'SetDropdownItems', 'Setdropdownitems', 'Setdropdownitems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('genexusunanimo.dropdownangular', 'GetDropdownItems', 'Getdropdownitems', 'Getdropdownitems', [char,1024,0,0], 1, any).
+usercontrol_event_mapping_i('genexusunanimo.dropdownangular', 'Logout', 'Logout').
+usercontrol_event_mapping_i('genexusunanimo.dropdownangular', 'Itemclick', 'ItemClick').

@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\apurchaseordervoucher.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\apurchaseordervoucher.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\refint\apurchaseordervoucher.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\apurchaseordervoucher.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\apurchaseordervoucher\obj\Release\net6.0\ref\apurchaseordervoucher.dll

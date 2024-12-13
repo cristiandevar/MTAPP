@@ -1,0 +1,567 @@
+{ 
+    "ResourcesLocation" : "Resources",
+    "Language" : "Spanish",
+    "Theme" : "GeneXusUnanimo.Unanimo",
+    "Images" : [ { 
+        "Name" : "GeneXusUnanimo.show_more",
+        "Type" : "I",
+        "Guid" : "4f19426c-8435-4c2c-875e-81f26ea9237e",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.show_more.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.show_more",
+        "Type" : "I",
+        "Guid" : "4f19426c-8435-4c2c-875e-81f26ea9237e",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.show_more.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.error_ico",
+        "Type" : "I",
+        "Guid" : "10599004-74f9-430d-8160-8acac0d2c571",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.error_ico.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.warning_ico",
+        "Type" : "I",
+        "Guid" : "7752fdfa-ae65-4a92-9f86-dfec2f0c542a",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.warning_ico.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_first",
+        "Type" : "I",
+        "Guid" : "14b3b6c4-0c0b-400b-852f-35ab7e668fcd",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_first.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_first",
+        "Type" : "I",
+        "Guid" : "14b3b6c4-0c0b-400b-852f-35ab7e668fcd",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_first.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_left",
+        "Type" : "I",
+        "Guid" : "0e9084a3-4c7e-41d3-b17b-5fb61ea2e505",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_left.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_right",
+        "Type" : "I",
+        "Guid" : "fcb2f9db-8428-4965-bd73-8ca5c1de5b7a",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_right.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_right",
+        "Type" : "I",
+        "Guid" : "fcb2f9db-8428-4965-bd73-8ca5c1de5b7a",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_right.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_last",
+        "Type" : "I",
+        "Guid" : "c35b93f5-f237-4900-b231-8f5cd257456d",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_last.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_last",
+        "Type" : "I",
+        "Guid" : "c35b93f5-f237-4900-b231-8f5cd257456d",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_last.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.resize_ico",
+        "Type" : "I",
+        "Guid" : "54d75404-e4b6-42c6-9f5f-ff1af3c3788c",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.resize_ico.png",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.close_ico",
+        "Type" : "I",
+        "Guid" : "4b78ffc9-3fe7-423b-815e-aa116a4d611d",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.close_ico.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.close_ico",
+        "Type" : "I",
+        "Guid" : "4b78ffc9-3fe7-423b-815e-aa116a4d611d",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.close_ico.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_desc",
+        "Type" : "I",
+        "Guid" : "57a8d607-e9ef-4ed2-828c-cfe7001a0ddd",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_desc.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_asc",
+        "Type" : "I",
+        "Guid" : "fe9c47b7-ec5c-4cef-9dff-d83030a58cf5",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_asc.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.search",
+        "Type" : "I",
+        "Guid" : "93826c10-77f5-403a-85b6-e2120b538928",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.search.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.search",
+        "Type" : "I",
+        "Guid" : "93826c10-77f5-403a-85b6-e2120b538928",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.search.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.password_show",
+        "Type" : "I",
+        "Guid" : "1e4276a2-9ca4-4e79-804c-b202ae644373",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.password_show.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.password_show",
+        "Type" : "I",
+        "Guid" : "1e4276a2-9ca4-4e79-804c-b202ae644373",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.password_show.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.password_hidden",
+        "Type" : "I",
+        "Guid" : "818b3ba7-c6cb-41ff-80cc-661ab2fcfc08",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.password_hidden.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.password_hidden",
+        "Type" : "I",
+        "Guid" : "818b3ba7-c6cb-41ff-80cc-661ab2fcfc08",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.password_hidden.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.dot_green",
+        "Type" : "I",
+        "Guid" : "900c0d45-a2ef-428a-b986-0df5249d6cd4",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_green.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.dot_yellow",
+        "Type" : "I",
+        "Guid" : "5c544720-8f82-4a74-8b67-985a4c95c9c7",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_yellow.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.dot_red",
+        "Type" : "I",
+        "Guid" : "2b6bc6be-466d-4099-bd41-4a6e52072142",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_red.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.dot_purple",
+        "Type" : "I",
+        "Guid" : "54df45fe-2db8-4b20-a091-e55c4de49673",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_purple.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.dot_gray",
+        "Type" : "I",
+        "Guid" : "befe5baf-d2dc-4c21-b043-8e7db4f78357",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_gray.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.edit_light",
+        "Type" : "I",
+        "Guid" : "f20f0a60-bf65-4ff0-a2d0-9392c759340b",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.edit_light.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.edit_light",
+        "Type" : "I",
+        "Guid" : "f20f0a60-bf65-4ff0-a2d0-9392c759340b",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.edit_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.delete_light",
+        "Type" : "I",
+        "Guid" : "db0f63cd-dde8-4bf7-aca2-01cdf8d3c157",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.delete_light.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.delete_light",
+        "Type" : "I",
+        "Guid" : "db0f63cd-dde8-4bf7-aca2-01cdf8d3c157",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.delete_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.video",
+        "Type" : "I",
+        "Guid" : "b4f387f6-282b-4ee6-81ce-85c0a0ea91d4",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.video.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.calendar_ico",
+        "Type" : "I",
+        "Guid" : "ae3bc23c-719f-4a1f-a1bc-e08fc7e60fe1",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.calendar_ico.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.calendar_ico",
+        "Type" : "I",
+        "Guid" : "ae3bc23c-719f-4a1f-a1bc-e08fc7e60fe1",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.calendar_ico.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.minus_light",
+        "Type" : "I",
+        "Guid" : "886184c5-4265-4d51-889b-99e105a3fdf9",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.minus_light.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.minus_light",
+        "Type" : "I",
+        "Guid" : "886184c5-4265-4d51-889b-99e105a3fdf9",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.minus_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.plus_light",
+        "Type" : "I",
+        "Guid" : "ffb2d733-4b3c-4fee-91ec-5384e1cc54d4",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.plus_light.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.plus_light",
+        "Type" : "I",
+        "Guid" : "ffb2d733-4b3c-4fee-91ec-5384e1cc54d4",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.plus_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.prompt_ico",
+        "Type" : "I",
+        "Guid" : "09a678b3-246c-4e6d-b4c9-25d5753ec542",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.prompt_ico.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.featured_green",
+        "Type" : "I",
+        "Guid" : "af7f81cc-394c-4184-95e4-f6c46e6a69de",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.featured_green.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.filter",
+        "Type" : "I",
+        "Guid" : "8bed030f-4afc-4b01-9b38-5be6ea80623d",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.filter.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.send",
+        "Type" : "I",
+        "Guid" : "db54626e-5526-4c4c-9b60-a79009e01744",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.send.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.filter_applied",
+        "Type" : "I",
+        "Guid" : "076b9304-e605-4aad-b008-156356d43efc",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.filter_applied.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_left_light",
+        "Type" : "I",
+        "Guid" : "edc3514e-71ed-4220-ba07-94c409287da0",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_left_light.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.arrow_left_light",
+        "Type" : "I",
+        "Guid" : "edc3514e-71ed-4220-ba07-94c409287da0",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_left_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.info_ico_purple",
+        "Type" : "I",
+        "Guid" : "b21dc1b3-b96d-4c02-bbdd-14e2b54cccc4",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.info_ico_purple.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.success_ico_green",
+        "Type" : "I",
+        "Guid" : "6fd3e0f8-1dd9-4c27-92ba-e1ca84150b0a",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.success_ico_green.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.plus",
+        "Type" : "I",
+        "Guid" : "702db114-2ce7-41cd-8bd5-4b96ec670a51",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.plus.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.minus",
+        "Type" : "I",
+        "Guid" : "89a82f9f-71d8-4f56-8cc8-3e6cdc5c0ea5",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.minus.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.filter_light",
+        "Type" : "I",
+        "Guid" : "b13e6239-269f-48a7-95f7-a6278ca9e118",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.filter_light.svg",
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.filter_light",
+        "Type" : "I",
+        "Guid" : "b13e6239-269f-48a7-95f7-a6278ca9e118",
+        "Location" : "GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.filter_light.svg",
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.refresh",
+        "Type" : "I",
+        "Guid" : "8e85bfc5-1ee5-4ebb-84bb-c06b4f8db295",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.refresh.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.settings",
+        "Type" : "I",
+        "Guid" : "38f2973e-0b74-49c7-aeec-66ea64e3ddeb",
+        "Location" : "GeneXusUnanimo.Unanimo/GeneXusUnanimo.settings.svg",
+        "Density" : 1,
+        "Style" : "GeneXusUnanimo.Unanimo",
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    } ]
+}

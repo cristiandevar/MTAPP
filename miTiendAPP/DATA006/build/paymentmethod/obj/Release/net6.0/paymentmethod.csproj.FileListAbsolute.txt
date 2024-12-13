@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\paymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\paymentmethod.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\refint\paymentmethod.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\paymentmethod.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\paymentmethod\obj\Release\net6.0\ref\paymentmethod.dll

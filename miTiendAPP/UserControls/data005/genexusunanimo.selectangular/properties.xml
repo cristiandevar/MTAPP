@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="GeneXusUnanimo.SelectAngular">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>Name</Id>
+					<Name>Name</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Class</Id>
+					<Name>Class</Name>
+					<Type>Text</Type>
+					<Default>ch-select</Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Height</Id>
+					<Name>Height</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>OptionHeight</Id>
+					<Name>OptionHeight</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>Icon</Id>
+					<Name>Icon</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>ArrowIcon</Id>
+					<Name>ArrowIcon</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>IconAutoColor</Id>
+					<Name>IconAutoColor</Name>
+					<Type>Boolean</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>SelectedItem</Id>
+					<Name>SelectedItem</Name>
+					<Type>Text</Type>
+					<Default></Default>
+					<Values></Values>
+				</Prop>
+				<Prop>
+					<Id>SelectItems</Id>
+					<Name>SelectItems</Name>
+					<Type>Custom</Type>
+					<Default></Default>
+					<Values></Values>
+					<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+					<Metadata>
+						<Value name="FlagScope">Designtime</Value>
+						<Value name="FlagSetValueMethod">setSelectItems</Value>
+						<Value name="FlagGetValueMethod">getSelectItems</Value>
+						<Value name="FlagHideAttributes">True</Value>
+						<Value name="FlagDataTypeFilter"></Value>
+					</Metadata>
+				</Prop>
+			</Children>
+		</Group>
+	</Object>
+</Content>

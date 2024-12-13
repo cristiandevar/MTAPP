@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpupdatepriceandprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpupdatepriceandprofit.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\refint\wpupdatepriceandprofit.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\wpupdatepriceandprofit.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpupdatepriceandprofit\obj\Release\net6.0\ref\wpupdatepriceandprofit.dll

@@ -1,0 +1,12 @@
+14.0
+10
+1       SQLINT              0       4       ""   1     ModelId                                                        ""
+2       SQLINT              0       4       ""   2     EntityTypeId                                                   ""
+3       SQLINT              0       4       ""   3     EntityId                                                       ""
+4       SQLINT              0       4       ""   4     EntityVersionId                                                ""
+5       SQLDATETIME         0       8       ""   5     ModelEntityVersionTimestamp                                    ""
+6       SQLNCHAR            2       256     ""   6     ModelEntityVersionName                                         Latin1_General_100_CI_AS_SC_UTF8
+7       SQLNCHAR            2       512     ""   7     ModelEntityVersionDescription                                  Latin1_General_100_CI_AS_SC_UTF8
+8       SQLINT              0       4       ""   8     ModelParentEntityTypeId                                        ""
+9       SQLINT              0       4       ""   9     ModelParentEntityId                                            ""
+10      SQLINT              0       4       ""   10    ModelUserId                                                    ""

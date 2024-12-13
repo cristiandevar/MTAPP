@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\gx00j1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\gx00j1.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\refint\gx00j1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\gx00j1.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\gx00j1\obj\Release\net6.0\ref\gx00j1.dll

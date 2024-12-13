@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwhistoryofdircardedproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wwhistoryofdircardedproducts.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\refint\wwhistoryofdircardedproducts.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\wwhistoryofdircardedproducts.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wwhistoryofdircardedproducts\obj\Release\net6.0\ref\wwhistoryofdircardedproducts.dll

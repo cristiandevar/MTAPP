@@ -1,0 +1,314 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>6</ObjId>
+<ObjName>Invoice</ObjName>
+<ObjDesc>Invoice</ObjDesc>
+<ObjPgmName>Invoice</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>6</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>4</TableId>
+<TableName>Employee</TableName>
+<Description>Employee</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceProductQuantity navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>InvoiceDate</AttriName>
+<Description>Invoice Date</Description></Attribute>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>InvoiceDate</AttriName>
+<Description>Invoice Date</Description></Attribute>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>13</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<DynamicLoads></DynamicLoads>
+<Rules></Rules>
+<AfterAttributeRules></AfterAttributeRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<AfterInsertRules></AfterInsertRules>
+<AfterUpdateRules></AfterUpdateRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>Gx0050</ObjName>
+<ObjPgmName>Gx0050</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>56</ObjId>
+<ObjName>Gx00D1</ObjName>
+<ObjPgmName>Gx00D1</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>4</TableId>
+<TableName>Employee</TableName>
+<Description>Employee</Description></Table>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>6</ObjId>
+<ObjName>Gx0040</ObjName>
+<ObjPgmName>Gx0040</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>EmployeeId</AttriName>
+<Description>Employee Id</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

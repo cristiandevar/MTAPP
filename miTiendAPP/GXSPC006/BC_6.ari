@@ -1,0 +1,26 @@
+bc_dt_elem_i([ 0,6,0 ],'Invoiceid',allownulls,no).
+bc_dt_elem_i([ 0,6,0 ],'Invoicecreateddate',allownulls,no).
+bc_dt_elem_i([ 0,6,0 ],'Userid',allownulls,no).
+bc_dt_elem_i([ 0,6,0 ],'Username',readonly,yes).
+bc_dt_elem_i([ 0,6,0 ],'Username',allownulls,no).
+bc_dt_elem_i([ 0,6,0 ],'Invoiceactive',allownulls,no).
+bc_dt_elem_i([ 0,6,0 ],'Invoicetotalreceivable',readonly,yes).
+bc_dt_elem_i([ 0,6,0 ],'Invoiceproductquantity',readonly,yes).
+bc_dt_elem_i([ 0,6,0 ],'Invoicelastdetailid',readonly,yes).
+bc_dt_elem_i([ 0,6,0 ],'Invoicelastpaymentmethodid',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Invoicedetailid',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Productid',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Productname',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Productname',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Productstock',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Invoicedetailquantity',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Invoicedetailhistoricprice',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,25 ] ],'Invoicedetailiswholesale',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Invoicepaymentmethodid',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethoddescription',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethoddescription',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethoddiscount',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethoddiscount',allownulls,no).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethodrecarge',readonly,yes).
+bc_dt_elem_i([ 0,6,[ 20,118 ] ],'Paymentmethodrecarge',allownulls,no).
+ 

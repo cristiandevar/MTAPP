@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\aproductsrankingpurchasesubtotal1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\aproductsrankingpurchasesubtotal1.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\refint\aproductsrankingpurchasesubtotal1.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\aproductsrankingpurchasesubtotal1.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\aproductsrankingpurchasesubtotal1\obj\Release\net6.0\ref\aproductsrankingpurchasesubtotal1.dll

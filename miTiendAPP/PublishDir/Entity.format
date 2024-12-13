@@ -1,0 +1,6 @@
+14.0
+4
+1       SQLINT              0       4       ""   1     EntityTypeId                               ""
+2       SQLINT              0       4       ""   2     EntityId                                   ""
+3       SQLNCHAR            2       120     ""   3     EntityGuid                                 Latin1_General_100_CI_AS_SC_UTF8
+4       SQLINT              0       4       ""   4     EntityLastVersionId                        ""

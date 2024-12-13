@@ -1,0 +1,176 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>47</ObjId>
+<ObjName>PurchaseOrderCargePosibleNewDetails</ObjName>
+<ObjDesc>Purchase Order Carge Posible New Details</ObjDesc>
+<ObjPgmName>PurchaseOrderCargePosibleNewDetails</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Details</VarId>
+<VarName>&amp;Details</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>3</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPURCHASEORDERDETAIL</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>@PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>@PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>23</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Purchaseorder</VarId>
+<VarName>&amp;PurchaseOrder</VarName></Variable>
+<Token>.</Token>
+<Token>Supplierid</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Purchaseorder</VarId>
+<VarName>&amp;PurchaseOrder</VarName></Variable>
+<Token>.</Token>
+<Token>Supplierid</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Token>not</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Token>IN</Token>
+<Variable>
+<VarId>Productids</VarId>
+<VarName>&amp;ProductIds</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

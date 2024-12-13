@@ -1,0 +1,4 @@
+<div class="switch-container stack-top-l">
+    <input id="switch{{gxTpr_id}}{{id}}" name="gxSwitch{{gxTpr_id}}{{id}}" type="checkbox" data-gx-binding="checked" {{^Enabled}}disabled{{/Enabled}}/>
+    <label for="switch{{gxTpr_id}}{{id}}"></label>
+</div>

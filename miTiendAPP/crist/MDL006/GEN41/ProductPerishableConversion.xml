@@ -1,0 +1,247 @@
+
+<ReorgSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>ProductPerishable needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>Yes</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description>
+<TakesValueFrom>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>6</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description>
+<TakesValueFrom>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>ProductPerishableBatchDate</AttriName>
+<Description>Product Perishable Batch Date</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>D</DataType>
+<Presicion>8</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description>
+<TakesValueFrom>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>72</AttriId>
+<AttriName>ProductPerishableExpirationDat</AttriName>
+<Description>Product Perishable Expiration Date</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>D</DataType>
+<Presicion>8</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>ProductPerishableCreatedDate</AttriName>
+<Description>Product Perishable Created Date</Description>
+<AttriType>
+<DataType>D</DataType>
+<Presicion>8</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>del</AttriChangeType></Attribute>
+<Attribute>
+<AttriId>74</AttriId>
+<AttriName>ProductPerishableModifiedDate</AttriName>
+<Description>Product Perishable Modified Date</Description>
+<AttriType>
+<DataType>D</DataType>
+<Presicion>8</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>del</AttriChangeType></Attribute></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>14</TableId>
+<TableName>ProductPerishable</TableName>
+<Description>Product Perishable</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IPRODUCTPERISHABLE</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>ProductPerishableId</AttriName>
+<Description>Product Perishable Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index>
+<Index>
+<IndexName>IPRODUCTPERISHABLE1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></Indices></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Statements>
+<Statement>ALTER TABLE [ProductPerishable] DROP COLUMN [ProductPerishableCreatedDate], [ProductPerishableModifiedDate]</Statement></Statements>
+<NeedReorganizationProgram>False</NeedReorganizationProgram>
+<Warnings></Warnings>
+<Errors></Errors>
+<Information>
+<InfoMsg>
+<MsgCode>nfo0003</MsgCode>
+<Message>
+<Token>The reorganization for this table makes the schema not backward compatible.</Token></Message>
+<AdditionalInfo>
+<Title>The following operations are not backward compatible:</Title>
+<Info>
+<Token>Delete</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>ProductPerishableCreatedDate</AttriName>
+<Description>Product Perishable Created Date</Description></Attribute></Info>
+<Info>
+<Token>Delete</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>74</AttriId>
+<AttriName>ProductPerishableModifiedDate</AttriName>
+<Description>Product Perishable Modified Date</Description></Attribute></Info></AdditionalInfo></InfoMsg></Information></ReorgSpec>

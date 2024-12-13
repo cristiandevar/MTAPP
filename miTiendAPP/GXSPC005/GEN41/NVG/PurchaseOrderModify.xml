@@ -1,0 +1,121 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>84a12160-f59b-4ad7-a683-ea4481ac23e9</ObjClsGuid>
+<ObjCls>1</ObjCls>
+<ObjId>48</ObjId>
+<ObjName>PurchaseOrderModify</ObjName>
+<ObjDesc>Purchase Order Modify</ObjDesc>
+<ObjPgmName>PurchaseOrderModify</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0060</MsgCode>
+<Message>
+<Token>The program may be called by another program and the Commit on Exit property is set to YES</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Parameter>
+<Parameter>
+<IO>inout</IO>
+<Variable>
+<VarId>Detailsedit</VarId>
+<VarName>&amp;DetailsEdit</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Allok</VarId>
+<VarName>&amp;AllOk</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>6</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPURCHASEORDERDETAIL</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>@PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>@PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PurchaseOrderDetailId</AttriName>
+<Description>Purchase Order Detail Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>12</TableId>
+<TableName>PurchaseOrderDetail</TableName>
+<Description>Detail</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>PurchaseOrderDetailQuantityOrd</AttriName>
+<Description>Purchase Order Detail Quantity Ordered</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

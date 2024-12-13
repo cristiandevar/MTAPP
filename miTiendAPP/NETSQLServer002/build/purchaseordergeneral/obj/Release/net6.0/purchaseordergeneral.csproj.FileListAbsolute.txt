@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\purchaseordergeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\web\bin\purchaseordergeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\refint\purchaseordergeneral.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\purchaseordergeneral.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\NETSQLServer002\build\purchaseordergeneral\obj\Release\net6.0\ref\purchaseordergeneral.dll

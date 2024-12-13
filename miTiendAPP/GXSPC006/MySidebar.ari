@@ -1,0 +1,29 @@
+usercontrol_directory_i('mysidebar', ['UserControls']).
+usercontrol_i('mysidebar', ['MySidebar','Mysidebar']).
+usercontrol_method_i('mysidebar', 'getactiveitem', [object], []).
+usercontrol_property_mapping_i('mysidebar', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'ConstructorName', 'Constructorname', 'Constructorname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'ShowMethodName', 'Showmethodname', 'Showmethodname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'ControlName', 'Controlname', 'Controlname', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'Title', 'Title', 'Title', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'FooterText', 'Footertext', 'Footertext', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'DistanceToTop', 'Distancetotop', 'Distancetotop', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'Collapsible', 'Collapsible', 'Collapsible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'MySidebarItems', 'Mysidebaritems', 'Mysidebaritems', [unknown,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'SidebarItemsCurrentIndex', 'Sidebaritemscurrentindex', 'Sidebaritemscurrentindex', [int,9,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'ActiveItemId', 'Activeitemid', 'Activeitemid', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'SelectedItemTarget', 'Selecteditemtarget', 'Selecteditemtarget', [char,1024,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'isCollapsed', 'Iscollapsed', 'Iscollapsed', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'IconAutoColor', 'Iconautocolor', 'Iconautocolor', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'SetMySidebarItems', 'Setmysidebaritems', 'Setmysidebaritems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'GetMySidebarItems', 'Getmysidebaritems', 'Getmysidebaritems', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'Visible', 'Visible', 'Visible', [boolean,0,0,0], 0, any).
+usercontrol_property_mapping_i('mysidebar', 'CssSupportFiles', 'Csssupportfiles', 'Csssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('mysidebar', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_method_mapping_i('mysidebar', 'getactiveitem', 'GetActiveItem').
+usercontrol_event_mapping_i('mysidebar', 'Itemclick', 'ItemClick').
+usercontrol_event_mapping_i('mysidebar', 'Getstate', 'GetState').

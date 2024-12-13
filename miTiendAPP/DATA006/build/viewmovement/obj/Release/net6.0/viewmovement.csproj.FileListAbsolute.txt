@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\viewmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\viewmovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\refint\viewmovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\viewmovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\viewmovement\obj\Release\net6.0\ref\viewmovement.dll

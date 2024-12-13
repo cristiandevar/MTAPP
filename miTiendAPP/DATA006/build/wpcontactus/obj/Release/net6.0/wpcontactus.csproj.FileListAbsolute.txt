@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpcontactus.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpcontactus.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\refint\wpcontactus.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\wpcontactus.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpcontactus\obj\Release\net6.0\ref\wpcontactus.dll

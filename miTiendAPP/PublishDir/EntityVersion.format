@@ -1,0 +1,15 @@
+14.0
+13
+1       SQLINT              0       4       ""   1     EntityTypeId                                         ""
+2       SQLINT              0       4       ""   2     EntityId                                             ""
+3       SQLINT              0       4       ""   3     EntityVersionId                                      ""
+4       SQLNCHAR            2       256     ""   4     EntityVersionName                                    Latin1_General_100_CI_AS_SC_UTF8
+5       SQLNCHAR            2       512     ""   5     EntityVersionDescription                             Latin1_General_100_CI_AS_SC_UTF8
+6       SQLINT              0       4       ""   6     UserId                                               ""
+7       SQLDATETIME         0       8       ""   7     EntityVersionTimestamp                               ""
+8       SQLINT              0       4       ""   8     ParentVersionId                                      ""
+9       SQLNCHAR            8       0       ""   9     EntityVersionComment                                 Latin1_General_100_CI_AS_SC_UTF8
+10      SQLNCHAR            8       0       ""   10    EntityVersionCategories                              Latin1_General_100_CI_AS_SC_UTF8
+11      SQLNCHAR            8       0       ""   11    EntityVersionProperties                              Latin1_General_100_CI_AS_SC_UTF8
+12      SQLINT              0       4       ""   12    TypeVersionId                                        ""
+13      SQLBINARY           8       0       ""   13    EntityVersionData                                    ""

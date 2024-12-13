@@ -1,0 +1,471 @@
+{ 
+    "Tokens" : [ { 
+        "Values" : { 
+            "borders_extra-small" : "1dip",
+            "borders_small" : "2dip",
+            "fonts_primary-light" : "SourceSansPro-Light",
+            "fonts_primary-regular" : "SourceSansPro-Regular",
+            "fonts_primary-semibold" : "SourceSansPro-SemiBold",
+            "fonts_primary-bold" : "SourceSansPro-Bold",
+            "fontsizes_xs" : "11dip",
+            "fontsizes_s" : "14dip",
+            "fontsizes_m" : "18dip",
+            "fontsizes_l" : "22dip",
+            "fontsizes_xl" : "28dip",
+            "radius_xs" : "1dip",
+            "radius_s" : "2dip",
+            "radius_m" : "3dip",
+            "radius_l" : "4dip",
+            "radius_xl" : "6dip",
+            "shadows_xxxs" : "0px 1px 1px 0px rgba(0, 0, 0, 0.14)",
+            "shadows_xxs" : "0px 2px 2px 0px rgba(0, 0, 0, 0.14)",
+            "shadows_xs" : "0px 3px 4px 0px rgba(0, 0, 0, 0.14)",
+            "shadows_s" : "0px 4px 5px 0px rgba(0, 0, 0, 0.14)",
+            "shadows_m" : "0px 6px 10px 0px rgba(0, 0, 0, 0.14)",
+            "shadows_l" : "0px 8px 10px 1px rgba(0, 0, 0, 0.14)",
+            "shadows_xl" : "0px 9px 12px 1px rgba(0, 0, 0, 0.14)",
+            "shadows_xxl" : "0px 12px 17px 2px rgba(0, 0, 0, 0.14)",
+            "spacing_inset-xs" : "4dip",
+            "spacing_inset-s" : "8dip",
+            "spacing_inset-m" : "16dip",
+            "spacing_inset-l" : "32dip",
+            "spacing_stack-xs" : "2dip",
+            "spacing_stack-s" : "4dip",
+            "spacing_stack-m" : "8dip",
+            "spacing_stack-l" : "16dip",
+            "spacing_stack-xl" : "24dip",
+            "spacing_stack-xxl" : "32dip",
+            "spacing_stack-xxxl" : "64dip",
+            "spacing_stack-xxxxl" : "128dip",
+            "spacing_inline-xs" : "2dip",
+            "spacing_inline-m" : "4dip",
+            "spacing_inline-l" : "8dip",
+            "spacing_inline-xl" : "16dip",
+            "spacing_inline-xxl" : "24dip",
+            "spacing_inline-xxxl" : "32dip",
+            "spacing_letter-spacing-xs" : "0.2dip",
+            "spacing_letter-spacing-s" : "0.4dip",
+            "spacing_letter-spacing-m" : "0.8dip",
+            "spacing_letter-spacing-l" : "1.6dip",
+            "spacing_letter-spacing-xl" : "3.2dip"
+        }
+    }, { 
+        "Options" : { 
+            "color-scheme" : "light"
+        },
+        "Values" : { 
+            "colors_primary" : "#696EF2",
+            "colors_secondary" : "#13142C",
+            "colors_surface" : "#FFFFFF",
+            "colors_alt-surface" : "#F3F4F6",
+            "colors_surface-negative" : "#121212",
+            "colors_elevation-01" : "#FFFFFF",
+            "colors_elevation-02" : "#FFFFFF",
+            "colors_elevation-03" : "#FFFFFF",
+            "colors_elevation-04" : "#FFFFFF",
+            "colors_primary-enabled" : "#696EF2",
+            "colors_primary-active" : "#3015B0",
+            "colors_primary-hover" : "#413CD4",
+            "colors_primary-hover-20" : "#D9DAF3",
+            "colors_primary-disabled" : "#939498",
+            "colors_secondary-enabled" : "#13142C",
+            "colors_secondary-active" : "#2A2C5F",
+            "colors_secondary-hover" : "#202143",
+            "colors_secondary-disabled" : "#939498",
+            "colors_gray01" : "#E0E0E0",
+            "colors_gray02" : "#C3C4C8",
+            "colors_gray03" : "#939498",
+            "colors_gray04" : "#575965",
+            "colors_error-dark" : "#F02031",
+            "colors_error-light" : "#FFEAEE",
+            "colors_warning-dark" : "#FF8000",
+            "colors_warning-light" : "#FFE7E6",
+            "colors_success-dark" : "#02A08B",
+            "colors_success-light" : "#E1F3F1",
+            "colors_destructive" : "#F44336",
+            "colors_zebra-grid" : "#FAFAFA",
+            "colors_on-primary" : "#FFFFFF",
+            "colors_on-secondary" : "#FFFFFF",
+            "colors_on-background" : "#000000",
+            "colors_on-alert" : "#121212",
+            "colors_on-disabled" : "#C3C4C8",
+            "colors_border-primary-enabled" : "#696EF2",
+            "colors_border-primary-active" : "#3015B0",
+            "colors_border-primary-hover" : "#413CD4",
+            "colors_border-primary-disabled" : "#939498",
+            "colors_border-secondary-enabled" : "#13142C",
+            "colors_border-secondary-active" : "#2A2C5F",
+            "colors_border-secondary-hover" : "#202143",
+            "colors_border-secondary-disabled" : "#939498",
+            "colors_border-gray-01" : "#E0E0E0",
+            "colors_border-gray-02" : "#C3C4C8",
+            "colors_border-gray-03" : "#939498",
+            "colors_border-gray-04" : "#575965",
+            "colors_border-error" : "#F02031",
+            "colors_border-warning" : "#FF8000",
+            "colors_border-success" : "#02A08B"
+        }
+    }, { 
+        "Options" : { 
+            "color-scheme" : "dark"
+        },
+        "Values" : { 
+            "colors_primary" : "#A9ACF8",
+            "colors_secondary" : "#34334E",
+            "colors_surface" : "#121212",
+            "colors_alt-surface" : "#1C1C1E",
+            "colors_surface-negative" : "#FFFFFF",
+            "colors_elevation-01" : "#242426",
+            "colors_elevation-02" : "#2C2C2E",
+            "colors_elevation-03" : "#353537",
+            "colors_elevation-04" : "#3E3E40",
+            "colors_primary-enabled" : "#A9ACF8",
+            "colors_primary-active" : "#858AF6",
+            "colors_primary-hover" : "#CCCCFB",
+            "colors_primary-hover-20" : "#5A5EDC33",
+            "colors_primary-disabled" : "#C3C4C8",
+            "colors_secondary-enabled" : "#34334E",
+            "colors_secondary-active" : "#666483",
+            "colors_secondary-hover" : "#53516E",
+            "colors_secondary-disabled" : "#C3C4C8",
+            "colors_gray01" : "#575965",
+            "colors_gray02" : "#939498",
+            "colors_gray03" : "#C3C4C8",
+            "colors_gray04" : "#E0E0E0",
+            "colors_error-dark" : "#F9464E",
+            "colors_error-light" : "#FFEAEE",
+            "colors_warning-dark" : "#FFAB13",
+            "colors_warning-light" : "#FFE7E6",
+            "colors_success-dark" : "#50BEAE",
+            "colors_success-light" : "#E1F3F1",
+            "colors_destructive" : "#EF5350",
+            "colors_zebra-grid" : "#323234",
+            "colors_on-primary" : "#121212",
+            "colors_on-secondary" : "#E9E9E9",
+            "colors_on-background" : "#E9E9E9",
+            "colors_on-alert" : "#121212",
+            "colors_on-disabled" : "#939498",
+            "colors_border-primary-enabled" : "#A9ACF8",
+            "colors_border-primary-active" : "#858AF6",
+            "colors_border-primary-hover" : "#CCCCFB",
+            "colors_border-primary-disabled" : "#C3C4C8",
+            "colors_border-secondary-enabled" : "#34334E",
+            "colors_border-secondary-active" : "#666483",
+            "colors_border-secondary-hover" : "#53516E",
+            "colors_border-secondary-disabled" : "#C3C4C8",
+            "colors_border-gray-01" : "#E0E0E0",
+            "colors_border-gray-02" : "#C3C4C8",
+            "colors_border-gray-03" : "#939498",
+            "colors_border-gray-04" : "#575965",
+            "colors_border-error" : "#F9464E",
+            "colors_border-warning" : "#FFAB13",
+            "colors_border-success" : "#50BEAE"
+        }
+    } ],
+    "TokensDefaultOptions" : { 
+        "color-scheme" : "light"
+    },
+    "Styles" : [ { 
+        "Name" : "-1876271376",
+        "Selector" : "[type=button]",
+        "-webkit-appearance" : "none",
+        "-moz-appearance" : "none",
+        "appearance" : "none"
+    }, { 
+        "Name" : "Button",
+        "white-space" : "normal",
+        "sd_height_withPercentage" : "28dip",
+        "height" : "28dip",
+        "padding_left" : "$spacing_inset-m",
+        "padding_right" : "$spacing_inset-m",
+        "border_top_left_radius" : "$radius_s",
+        "border_top_right_radius" : "$radius_s",
+        "border_bottom_right_radius" : "$radius_s",
+        "border_bottom_left_radius" : "$radius_s",
+        "min-width" : "80px"
+    }, { 
+        "Name" : "button-primary",
+        "background_color" : "$colors_primary",
+        "BackgroundColor" : "$colors_primary",
+        "SDPageControllerBackgroundColor" : "$colors_primary",
+        "font_size" : "$fontsizes_s",
+        "font_family" : "$fonts_primary-semibold",
+        "color" : "$colors_on-primary",
+        "font_all_caps" : "true",
+        "border" : "none",
+        "ThemeButtonHoveredClassReference" : "button-primary--hover",
+        "ThemeButtonFocusedClassReference" : "button-primary--focused",
+        "ThemeButtonHighlightedClassReference" : "button-primary--active",
+        "ThemeButtonDisabledClassReference" : "button-primary--disabled"
+    }, { 
+        "Name" : "button-primary--hover",
+        "background_color" : "$colors_primary-hover",
+        "BackgroundColor" : "$colors_primary-hover",
+        "SDPageControllerBackgroundColor" : "$colors_primary-hover"
+    }, { 
+        "Name" : "button-primary--active",
+        "background_color" : "$colors_primary-active",
+        "BackgroundColor" : "$colors_primary-active",
+        "SDPageControllerBackgroundColor" : "$colors_primary-active",
+        "box-shadow" : "none",
+        "outline" : "none"
+    }, { 
+        "Name" : "button-primary--focused",
+        "background_color" : "$colors_primary",
+        "BackgroundColor" : "$colors_primary",
+        "SDPageControllerBackgroundColor" : "$colors_primary",
+        "outline-width" : "$borders_small",
+        "outline-style" : "solid",
+        "outline-color" : "$colors_secondary-enabled",
+        "outline-offset" : "-2px"
+    }, { 
+        "Name" : "button-primary--disabled",
+        "background_color" : "$colors_gray03",
+        "BackgroundColor" : "$colors_gray03",
+        "SDPageControllerBackgroundColor" : "$colors_gray03",
+        "color" : "$colors_on-disabled",
+        "cursor" : "auto"
+    }, { 
+        "Name" : "button-secondary",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "font_size" : "$fontsizes_s",
+        "font_family" : "$fonts_primary-semibold",
+        "color" : "$colors_primary",
+        "font_all_caps" : "true",
+        "border" : "none",
+        "ThemeButtonHoveredClassReference" : "button-secondary--hover",
+        "ThemeButtonFocusedClassReference" : "button-secondary--focused",
+        "ThemeButtonHighlightedClassReference" : "button-secondary--active",
+        "ThemeButtonDisabledClassReference" : "button-secondary--disabled"
+    }, { 
+        "Name" : "button-secondary--hover",
+        "background_color" : "$colors_primary-hover-20",
+        "BackgroundColor" : "$colors_primary-hover-20",
+        "SDPageControllerBackgroundColor" : "$colors_primary-hover-20"
+    }, { 
+        "Name" : "button-secondary--focused",
+        "border" : "none",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "outline-width" : "$borders_small",
+        "outline-style" : "solid",
+        "outline-color" : "$colors_secondary-enabled",
+        "outline-offset" : "-2px",
+        "color" : "$colors_primary"
+    }, { 
+        "Name" : "button-secondary-focused-highlighted",
+        "outline" : "none",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00"
+    }, { 
+        "Name" : "button-secondary--active",
+        "color" : "$colors_secondary-active",
+        "outline" : "none",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "box-shadow" : "none",
+        "AttributeFocused" : "button-secondary-focused-highlighted"
+    }, { 
+        "Name" : "button-secondary--disabled",
+        "color" : "$colors_on-disabled",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "cursor" : "auto"
+    }, { 
+        "Name" : "button-tertiary",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "font_size" : "$fontsizes_s",
+        "font_family" : "$fonts_primary-semibold",
+        "color" : "$colors_primary",
+        "font_all_caps" : "true",
+        "border_style" : "solid",
+        "border_width" : "$borders_extra-small",
+        "border_color" : "$colors_border-primary-enabled",
+        "ThemeButtonHoveredClassReference" : "button-tertiary--hover",
+        "ThemeButtonFocusedClassReference" : "button-tertiary--focused",
+        "ThemeButtonHighlightedClassReference" : "button-tertiary--active",
+        "ThemeButtonDisabledClassReference" : "button-tertiary--disabled"
+    }, { 
+        "Name" : "button-tertiary--hover",
+        "background_color" : "#696EF219",
+        "BackgroundColor" : "#696EF219",
+        "SDPageControllerBackgroundColor" : "#696EF219"
+    }, { 
+        "Name" : "button-tertiary--focused",
+        "outline" : "none",
+        "outline-width" : "$borders_small",
+        "outline-style" : "solid",
+        "outline-color" : "$colors_secondary-enabled",
+        "outline-offset" : "-2px"
+    }, { 
+        "Name" : "button-tertiary--active",
+        "border_color" : "$colors_border-primary-active",
+        "color" : "$colors_primary-active",
+        "box-shadow" : "none",
+        "outline" : "none"
+    }, { 
+        "Name" : "button-tertiary--disabled",
+        "color" : "$colors_on-disabled",
+        "border_color" : "$colors_border-primary-disabled",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "cursor" : "auto"
+    }, { 
+        "Name" : "button-rounded",
+        "background_color" : "$colors_primary",
+        "BackgroundColor" : "$colors_primary",
+        "SDPageControllerBackgroundColor" : "$colors_primary",
+        "font_size" : "0dip",
+        "color" : "$colors_on-primary",
+        "border" : "none",
+        "border_top_left_radius" : "50%",
+        "border_top_right_radius" : "50%",
+        "border_bottom_right_radius" : "50%",
+        "border_bottom_left_radius" : "50%",
+        "sd_height_withPercentage" : "40dip",
+        "height" : "40dip",
+        "sd_width_withPercentage" : "40dip",
+        "width" : "40dip",
+        "padding_top" : "2dip",
+        "padding_left" : "8dip",
+        "min-width" : "auto"
+    }, { 
+        "Name" : "button-rounded--hover",
+        "background_color" : "$colors_primary-hover",
+        "BackgroundColor" : "$colors_primary-hover",
+        "SDPageControllerBackgroundColor" : "$colors_primary-hover"
+    }, { 
+        "Name" : "button-rounded--focused",
+        "background_color" : "$colors_primary",
+        "BackgroundColor" : "$colors_primary",
+        "SDPageControllerBackgroundColor" : "$colors_primary",
+        "outline" : "none",
+        "border_color" : "$colors_secondary-enabled",
+        "border_width" : "$borders_small",
+        "border_style" : "solid",
+        "padding_left" : "6dip"
+    }, { 
+        "Name" : "button-rounded--active",
+        "background_color" : "$colors_primary-active",
+        "BackgroundColor" : "$colors_primary-active",
+        "SDPageControllerBackgroundColor" : "$colors_primary-active",
+        "box-shadow" : "none",
+        "outline" : "none",
+        "border" : "none",
+        "padding_left" : "8dip"
+    }, { 
+        "Name" : "button-rounded--disabled",
+        "background_color" : "$colors_gray03",
+        "BackgroundColor" : "$colors_gray03",
+        "SDPageControllerBackgroundColor" : "$colors_gray03",
+        "color" : "$colors_on-disabled",
+        "cursor" : "auto"
+    }, { 
+        "Name" : "button-auxiliary",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "font_size" : "0dip",
+        "color" : "$colors_on-primary",
+        "border" : "none",
+        "border_top_left_radius" : "$radius_s",
+        "border_top_right_radius" : "$radius_s",
+        "border_bottom_right_radius" : "$radius_s",
+        "border_bottom_left_radius" : "$radius_s",
+        "sd_height_withPercentage" : "28dip",
+        "height" : "28dip",
+        "sd_width_withPercentage" : "28dip",
+        "width" : "28dip",
+        "min-width" : "28px",
+        "ThemeButtonHoveredClassReference" : "button-auxiliary--hover",
+        "ThemeButtonFocusedClassReference" : "button-auxiliary--focused",
+        "ThemeButtonHighlightedClassReference" : "button-auxiliary--active",
+        "ThemeButtonDisabledClassReference" : "button-auxiliary--disabled"
+    }, { 
+        "Name" : "button-auxiliary--hover",
+        "background_color" : "$colors_primary-hover-20",
+        "BackgroundColor" : "$colors_primary-hover-20",
+        "SDPageControllerBackgroundColor" : "$colors_primary-hover-20"
+    }, { 
+        "Name" : "button-auxiliary--focused",
+        "border" : "none",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "outline-width" : "$borders_small",
+        "outline-style" : "solid",
+        "outline-color" : "$colors_secondary-enabled",
+        "outline-offset" : "-2px",
+        "color" : "$colors_primary"
+    }, { 
+        "Name" : "button-auxiliary--active",
+        "color" : "$colors_secondary-active",
+        "outline" : "none",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "box-shadow" : "none"
+    }, { 
+        "Name" : "button-auxiliary--disabled",
+        "color" : "$colors_on-disabled",
+        "background_color" : "#FFFFFF00",
+        "BackgroundColor" : "#FFFFFF00",
+        "SDPageControllerBackgroundColor" : "#FFFFFF00",
+        "cursor" : "auto"
+    }, { 
+        "Name" : "button-icon",
+        "line-height" : "25px",
+        "cursor" : "pointer"
+    }, { 
+        "Name" : "Button-1644536279",
+        "Selector" : ".Button.button-primary.button-icon",
+        "padding_left" : "12dip"
+    }, { 
+        "Name" : "Button-2025059733",
+        "Selector" : ".Button.button-secondary.button-icon",
+        "padding_left" : "10dip"
+    }, { 
+        "Name" : "Button-24230958",
+        "Selector" : ".Button.button-tertiary.button-icon",
+        "padding_left" : "10dip"
+    }, { 
+        "Name" : "icon-only",
+        "padding_left" : "2dip",
+        "padding_right" : "2dip",
+        "sd_width_withPercentage" : "28dip",
+        "width" : "28dip",
+        "min-width" : "28px",
+        "overflow" : "hidden",
+        "font_size" : "0dip"
+    } ],
+    "Fonts" : [ { 
+        "Name" : "SourceSansPro-Light",
+        "InternalName" : "Source Sans Pro-Light",
+        "FileName" : "SourceSansPro-Light.ttf",
+        "File" : "GeneXusUnanimo.Unanimo_SourceSansPro-Light_ttf"
+    }, { 
+        "Name" : "SourceSansPro-Regular",
+        "InternalName" : "Source Sans Pro-Regular",
+        "FileName" : "SourceSansPro-Regular.ttf",
+        "File" : "GeneXusUnanimo.Unanimo_SourceSansPro-Regular_ttf"
+    }, { 
+        "Name" : "SourceSansPro-SemiBold",
+        "InternalName" : "Source Sans Pro-SemiBold",
+        "FileName" : "SourceSansPro-SemiBold.ttf",
+        "File" : "GeneXusUnanimo.Unanimo_SourceSansPro-SemiBold_ttf"
+    }, { 
+        "Name" : "SourceSansPro-Bold",
+        "InternalName" : "Source Sans Pro-Bold",
+        "FileName" : "SourceSansPro-Bold.ttf",
+        "File" : "GeneXusUnanimo.Unanimo_SourceSansPro-Bold_ttf"
+    } ]
+}

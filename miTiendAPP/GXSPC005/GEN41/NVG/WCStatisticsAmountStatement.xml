@@ -1,0 +1,46 @@
+
+<ObjectSpec>
+<SpecVersion>18_0_2-169539</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>145</ObjId>
+<ObjName>WCStatisticsAmountStatement</ObjName>
+<ObjDesc>WCStatistics Amount Statement</ObjDesc>
+<ObjPgmName>WCStatisticsAmountStatement</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0047</MsgCode>
+<Message>
+<Token>Variable </Token>
+<Token>Year</Token>
+<Token> not defined; </Token>
+<Token>N(10.2)</Token>
+<Token> assumed.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0047</MsgCode>
+<Message>
+<Token>Variable </Token>
+<Token>Month</Token>
+<Token> not defined; </Token>
+<Token>N(10.2)</Token>
+<Token> assumed.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>Refresh</EventName></Event>
+<Event>
+<EventName>'PROCESSSDT'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>
