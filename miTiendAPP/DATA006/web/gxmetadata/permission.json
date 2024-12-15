@@ -1,0 +1,4 @@
+{
+
+"GxObject":{"ObjectType":"BusinessComponent","Name":"Permission","idConnectivitySupport":"idInherit","Structure":{"Levels":[{"Name":"Permission","ParentLevel":"","LevelName":"Permission","Description":"Permission","Attributes":[{"Name":"PermissionId","Caption":"Permission Id","default":"0","AutoNumber":"true","IsKey":"true","ReadOnly":"false","AttributeType":"int","Description":"Permission Id","Length":"6","Decimals":"0","Signed":"false","AllowDBNulls":"false","Domain":"Id","InternalName":"PermissionId","InputPicture":"ZZZZZ9","Type":"xs:int"},{"Name":"PermissionName","Caption":"Permission Name","default":"","IsKey":"false","ReadOnly":"false","AttributeType":"svchar","Description":"Permission Name","Length":"60","Decimals":"0","Signed":"false","AllowDBNulls":"false","Domain":"Name","InternalName":"PermissionName","DescriptionAtt":"true","InputPicture":"","Type":"xs:string"}]}]},"Relations":{"ManyToOne":{"references":[]}}}
+}
