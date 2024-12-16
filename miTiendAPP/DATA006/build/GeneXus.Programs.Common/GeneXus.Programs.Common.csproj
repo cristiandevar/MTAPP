@@ -26,7 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include = "$(WebDirectory)\type_SdtPermission.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomaininvoicetype.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtSupplier.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainproductstate.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtRole_Permission.cs" />
@@ -37,8 +37,8 @@
 		<Compile Include = "$(WebDirectory)\type_SdtPurchaseOrder.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtInvoice_Detail.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainorderoptionorderpurchase.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtPermission.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtPaymentMethod.cs" />
-		<Compile Include = "$(WebDirectory)\gxdomaininvoicetype.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtProduct.cs" />
 		<Compile Include = "$(WebDirectory)\GxFullTextSearchReindexer.cs" />
 		<Compile Include = "$(WebDirectory)\GxModelInfoProvider.cs" />

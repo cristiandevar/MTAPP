@@ -9,7 +9,7 @@
 <ObjDesc>WCStatistics Supplier Top Sold</ObjDesc>
 <ObjPgmName>WCStatisticsSupplierTopSold</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

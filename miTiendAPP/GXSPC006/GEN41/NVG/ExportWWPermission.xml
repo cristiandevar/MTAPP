@@ -9,7 +9,7 @@
 <ObjDesc>Export Permissions</ObjDesc>
 <ObjPgmName>ExportWWPermission</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>
@@ -93,11 +93,6 @@
 <AttriId>106</AttriId>
 <AttriName>PermissionId</AttriName>
 <Description>Permission Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>107</AttriId>
-<AttriName>PermissionName</AttriName>
-<Description>Permission Name</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

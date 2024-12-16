@@ -9,7 +9,7 @@
 <ObjDesc>View Payment Method</ObjDesc>
 <ObjPgmName>ViewPaymentMethod</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -97,6 +97,15 @@
 <AttriId>115</AttriId>
 <AttriName>PaymentMethodId</AttriName>
 <Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -178,6 +187,15 @@
 <AttriId>115</AttriId>
 <AttriName>PaymentMethodId</AttriName>
 <Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

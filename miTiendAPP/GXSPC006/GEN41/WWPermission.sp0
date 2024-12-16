@@ -8,7 +8,7 @@ tw_i(2,[]).
  
 lwi_i(2,[ [] ]).
  
-cond_constraint_i(2,[ [ t(107,2),t('.LIKE.',10),t('Permissionname',23) ],[ 107 ],[ t('.NOT.',8),t('null(',1),t('Permissionname',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(107,2),t('.LIKE.',10),t('''%''',3),t(+,5),t('Permissionname',23),t(+,5),t('''%''',3) ],[ 107 ],[ t('.NOT.',8),t('null(',1),t('Permissionname',23),t(')',4) ],[] ]).
  
  
 level_option_i(2,server_paging,[ y,[] ]).

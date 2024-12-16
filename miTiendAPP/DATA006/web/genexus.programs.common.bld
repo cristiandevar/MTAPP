@@ -5,7 +5,6 @@ SoapParm.cs
 GxFullTextSearchReindexer.cs
 GxModelInfoProvider.cs
 @genexus.programs.sdt.bld
-type_SdtPermission.cs
 type_SdtPaymentMethod.cs
 type_SdtRole.cs
 type_SdtRole_Permission.cs
@@ -17,6 +16,7 @@ type_SdtProduct.cs
 type_SdtSupplier.cs
 type_SdtPurchaseOrder.cs
 type_SdtPurchaseOrder_Detail.cs
+type_SdtPermission.cs
 gxdomainorderoptionsearchproducts.cs
 gxdomainoptionupdateprice.cs
 gxdomainorderoptionorderpurchase.cs

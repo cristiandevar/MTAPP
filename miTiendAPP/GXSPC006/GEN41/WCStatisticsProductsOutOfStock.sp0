@@ -326,7 +326,7 @@ html_comp_i(9,'Exporttoxls',0,d,[ bool ]).
 html_comp_i(9,'Exporttoxlsx',-1,d,[ bool ]).
 html_comp_i(9,'Exporttopdf',-1,d,[ bool ]).
 html_comp_i(9,'Type','Chart',d,[ str ]).
-html_comp_i(9,'Title','Product out of Stock / Most sold in the month',d,[ str ]).
+html_comp_i(9,'Title','Product out of Stock ',d,[ str ]).
 html_comp_i(9,'Showvalues',-1,d,[ bool ]).
 html_comp_i(9,'Maplibrary','ECharts',d,[ str ]).
 html_comp_i(9,'Charttype','Column',d,[ str ]).

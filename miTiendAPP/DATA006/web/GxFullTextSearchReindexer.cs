@@ -21,9 +21,6 @@ namespace GeneXus.Programs {
          GxSilentTrnSdt obj;
          IGxSilentTrn trn;
          bool result;
-         obj = new SdtPermission(context);
-         trn = obj.getTransaction();
-         result = trn.Reindex();
          obj = new SdtPaymentMethod(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
@@ -43,6 +40,9 @@ namespace GeneXus.Programs {
          trn = obj.getTransaction();
          result = trn.Reindex();
          obj = new SdtPurchaseOrder(context);
+         trn = obj.getTransaction();
+         result = trn.Reindex();
+         obj = new SdtPermission(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
          return 1 ;

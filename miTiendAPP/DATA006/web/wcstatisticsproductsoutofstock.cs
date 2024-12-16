@@ -1129,7 +1129,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112312253172", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121421163075", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1147,7 +1147,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("wcstatisticsproductsoutofstock.js", "?2024112312253172", false, true);
+            context.AddJavascriptSource("wcstatisticsproductsoutofstock.js", "?2024121421163075", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerCommon.js", "", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerRender.js", "", false, true);
          }
@@ -1181,7 +1181,7 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
-         Queryviewer1_Title = "Product out of Stock / Most sold in the month";
+         Queryviewer1_Title = "Product out of Stock ";
          Queryviewer1_Objectname = "QStatisticsProductsOutOfStock";
          if ( StringUtil.Len( sPrefix) == 0 )
          {

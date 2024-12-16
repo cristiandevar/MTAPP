@@ -343,7 +343,7 @@ html_comp_i(9,'Charttype','ColumnLine',v,[ str ]).
 html_comp_i(9,'Plotseries','InTheSameChart',d,[ str ]).
 html_comp_i(9,'Xaxislabels','Horizontally',d,[ str ]).
 html_comp_i(9,'Xaxisintersectionatzero',0,d,[ bool ]).
-html_comp_i(9,'Xaxistitle','Suppliers',d,[ str ]).
+html_comp_i(9,'Xaxistitle','',v,[ str ]).
 html_comp_i(9,'Yaxistitle','Total Raised',d,[ str ]).
 html_comp_i(9,'Itemclickdata',[ t('Itemclickdata',23) ],v,[ params ]).
 html_comp_i(9,'Itemdoubleclickdata',[ t('Itemdoubleclickdata',23) ],v,[ params ]).

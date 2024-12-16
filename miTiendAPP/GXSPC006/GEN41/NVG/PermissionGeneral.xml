@@ -9,7 +9,7 @@
 <ObjDesc>Permission General</ObjDesc>
 <ObjPgmName>PermissionGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0024</MsgCode>

@@ -282,7 +282,7 @@ b_line_i([ 143,2 ],1,1,cmd,54,[ t('',107,141,0),t([ t('Gxm2rootcol',23,143,0),t(
 b_line_i(146,1,1,cmd,57,[ t('',107,143,0),t([ t('Gxm1sidebaritems',23,57,0),t('Id',3,57,0) ],29,57,0),t(=,10,57,0),t('"SubmenuStatistics"',3,57,0) ]).
 b_line_i(147,1,1,cmd,57,[ t('',107,144,0),t([ t('Gxm1sidebaritems',23,57,0),t('Title',3,57,0) ],29,57,0),t(=,10,57,0),t('"Statistics"',3,57,0) ]).
 b_line_i(148,1,1,cmd,57,[ t('',107,145,0),t([ t('Gxm1sidebaritems',23,57,0),t('Hassubitems',3,57,0) ],29,57,0),t(=,10,57,0),t('TRUE',40,57,0) ]).
-b_line_i(151,1,1,cmd,57,[ t('',109,150,0),t('udp(',1,152,31),t(o(1,'HasPermission'),28,152,18),t(',',7,57,0),t('''ranking view''',3,152,32),t(')',4,57,0) ]).
+b_line_i(151,1,1,cmd,57,[ t('',109,150,0),t('udp(',1,152,31),t(o(1,'HasPermission'),28,152,18),t(',',7,57,0),t('''statistics graphs''',3,152,32),t(')',4,57,0) ]).
 b_line_i([ 151,1 ],1,1,cmd,57,[ t('',107,150,0),t('Gxm3sidebaritems_sidebarsubitems',23,57,0),t(=,10,57,0),t([ 'GeneXusUnanimo\SidebarItems.SidebarItem.SubItem',[ t('(',0,151,0),t(')',4,151,0) ],n ],46,57,0) ]).
 b_line_i([ 151,2 ],1,1,cmd,57,[ t('',107,150,0),t([ t('Gxm1sidebaritems',23,151,0),t('Sidebarsubitems',3,151,0),t('add(',1,151,0) ],31,151,0),t('Gxm3sidebaritems_sidebarsubitems',23,57,0),t(')',4,57,0) ]).
 b_line_i(154,1,1,cmd,60,[ t('',107,152,0),t([ t('Gxm3sidebaritems_sidebarsubitems',23,60,0),t('Id',3,60,0) ],29,60,0),t(=,10,60,0),t('"WPStatisticsGraphs"',3,60,0) ]).
@@ -290,7 +290,7 @@ b_line_i(155,1,1,cmd,60,[ t('',107,153,0),t([ t('Gxm3sidebaritems_sidebarsubitem
 b_line_i(156,1,1,cmd,60,[ t('',107,154,0),t([ t('Gxm3sidebaritems_sidebarsubitems',23,60,0),t('Target',3,60,0) ],29,60,0),t(=,10,60,0),t('link(',1,60,0),t(o(13,'WPStatisticsGraphs'),28,60,0),t(')',4,60,0) ]).
 b_line_i(157,1,1,cmd,60,[ t('',107,155,0),t([ t('Gxm3sidebaritems_sidebarsubitems',23,60,0),t('Hassubitems',3,60,0) ],29,60,0),t(=,10,60,0),t('FALSE',41,60,0) ]).
 b_line_i(158,1,1,cmd,60,[ t('',111,156,0) ]).
-b_line_i(159,1,1,cmd,60,[ t('',109,158,0),t('udp(',1,160,31),t(o(1,'HasPermission'),28,160,18),t(',',7,60,0),t('''ranking view''',3,160,32),t(')',4,60,0) ]).
+b_line_i(159,1,1,cmd,60,[ t('',109,158,0),t('udp(',1,160,31),t(o(1,'HasPermission'),28,160,18),t(',',7,60,0),t('''statistics ranking''',3,160,32),t(')',4,60,0) ]).
 b_line_i([ 159,1 ],1,1,cmd,60,[ t('',107,158,0),t('Gxm3sidebaritems_sidebarsubitems',23,60,0),t(=,10,60,0),t([ 'GeneXusUnanimo\SidebarItems.SidebarItem.SubItem',[ t('(',0,159,0),t(')',4,159,0) ],n ],46,60,0) ]).
 b_line_i([ 159,2 ],1,1,cmd,60,[ t('',107,158,0),t([ t('Gxm1sidebaritems',23,159,0),t('Sidebarsubitems',3,159,0),t('add(',1,159,0) ],31,159,0),t('Gxm3sidebaritems_sidebarsubitems',23,60,0),t(')',4,60,0) ]).
 b_line_i(162,1,1,cmd,63,[ t('',107,160,0),t([ t('Gxm3sidebaritems_sidebarsubitems',23,63,0),t('Id',3,63,0) ],29,63,0),t(=,10,63,0),t('"WPRanking"',3,63,0) ]).

@@ -962,6 +962,7 @@ usercontrol_property_mapping_i('queryviewer', 'CssSupportFiles', 'Csssupportfile
 usercontrol_property_mapping_i('queryviewer', 'JsSupportFiles', 'Jssupportfiles', 'Jssupportfiles', [char,1024,0,0], 1, any).
 usercontrol_property_mapping_i('queryviewer', 'CssSharedSupportFiles', 'Csssharedsupportfiles', 'Csssharedsupportfiles', [char,1024,0,0], 1, any).
 usercontrol_property_mapping_i('queryviewer', 'JsSharedSupportFiles', 'Jssharedsupportfiles', 'Jssharedsupportfiles', [char,1024,0,0], 1, any).
+usercontrol_property_mapping_i('queryviewer', 'Gx Control Type', 'Gx control type', 'Gxcontroltype', [int,9,0,0], 0, any).
 usercontrol_property_mapping_i('rating', 'Class', 'Class', 'Class', [char,1024,0,0], 0, any).
 usercontrol_property_mapping_i('rating', 'Enabled', 'Enabled', 'Enabled', [boolean,0,0,0], 0, any).
 usercontrol_property_mapping_i('rating', 'UserControlType', 'Usercontroltype', 'Usercontroltype', [char,1024,0,0], 1, any).

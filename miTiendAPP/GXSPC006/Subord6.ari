@@ -10,4 +10,6 @@ dir_subordinates_i(6,6,[ [ 13,[ 20 ] ],[ 21,[ 20 ] ] ]).
 dir_subordinates_i(6,21,[]).
 dir_subordinates_i(6,18,[ [ 19,[ 106 ] ] ]).
 dir_subordinates_i(6,19,[]).
+dir_subordinates_i(6,20,[ [ 21,[ 115 ] ] ]).
+dir_subordinates_i(6,17,[ [ 19,[ 104 ] ],[ 16,[ 104 ] ] ]).
  

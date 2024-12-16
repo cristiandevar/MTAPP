@@ -210,9 +210,9 @@ b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,1).
 b_group_i(2,3,nvg,3,7,7).
 b_group_i(3,1,lit,0,8,8).
-b_group_i(2,4,lit,0,14,31).
-b_group_i(2,5,lit,0,32,37).
-b_group_i(2,6,lit,0,38,0).
+b_group_i(2,4,lit,0,14,32).
+b_group_i(2,5,lit,0,33,38).
+b_group_i(2,6,lit,0,39,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(3,2,2,cmd,1,[ t('',109,3,0),t('.NOT.',8,1,5),t('udp(',1,3,23),t(o(1,'General\Security\IsAuthorized'),28,3,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
@@ -236,27 +236,27 @@ b_line_i(21,2,4,cmd,8,[ t('',107,21,0),t('Selectedtabcode',23,8,0),t(=,10,8,0),t
 b_line_i(22,2,4,cmd,8,[ t('',107,22,0),t([ t('Tab',3,8,0),t('Activepagecontrolname',3,8,0) ],29,8,0),t(=,10,8,0),t('Selectedtabcode',23,8,0) ]).
 b_line_i(23,2,4,cmd,8,[ t('',145,23,0),t('''LOAD TAB''',3,23,6) ]).
 b_line_i(24,2,4,cmd,8,[ t('',111,24,0) ]).
-b_line_i(25,2,4,cmd,8,[ t('',109,25,0),t('.NOT.',8,8,5),t('udp(',1,25,24),t(o(1,'HasPermission'),28,25,11),t(',',7,8,0),t('''invoice view''',3,25,25),t(')',4,8,0) ]).
-b_line_i(26,2,4,cmd,8,[ t('',107,26,0),t([ t('Paymentmethodwc',3,8,0),t('Visible',3,8,0) ],29,8,0),t(=,10,8,0),t('0',3,8,0) ]).
-b_line_i(27,2,4,cmd,8,[ t('',111,27,0) ]).
-b_line_i(29,2,4,cmd,8,[ t('',147,29,0) ]).
-b_line_i(31,2,4,cmd,8,[ t('',146,31,0),t([ t('Tab',3,31,7),t('Tabchanged',3,31,11) ],29,31,11) ]).
-b_line_i(32,2,5,cmd,8,[ t('',107,32,0),t('Selectedtabcode',23,8,0),t(=,10,8,0),t([ t('Tab',3,8,0),t('Activepagecontrolname',3,8,0) ],29,8,0) ]).
-b_line_i(33,2,5,cmd,8,[ t('',107,33,0),t('Loadalltabs',23,8,0),t(=,10,8,0),t('FALSE',41,8,0) ]).
-b_line_i(34,2,5,cmd,8,[ t('',145,34,0),t('''LOAD TAB''',3,34,5) ]).
-b_line_i(35,2,5,cmd,8,[ t('',147,35,0) ]).
-b_line_i(37,2,5,cmd,8,[ t('',143,37,0),t('''LOAD TAB''',3,37,5) ]).
-b_line_i(38,2,6,cmd,8,[ t('',109,38,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,38,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,38,68) ]).
-b_line_i(39,2,6,cmd,8,[ t('',107,39,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'PaymentMethodGeneral'),28,8,0),t(',',7,8,0),t('Paymentmethodid',23,8,0),t(')',4,8,0) ]).
-b_line_i(40,2,6,cmd,8,[ t('',111,40,0) ]).
-b_line_i(41,2,6,cmd,8,[ t('',109,41,0),t('udp(',1,41,18),t(o(1,'HasPermission'),28,41,5),t(',',7,8,0),t('''invoice view''',3,41,19),t(')',4,8,0) ]).
-b_line_i(42,2,6,cmd,8,[ t('',109,42,0),t('Loadalltabs',23,8,6),t('.OR.',9,8,19),t('Selectedtabcode',23,8,24),t(=,10,8,41),t('"PaymentMethod"',3,42,43) ]).
-b_line_i(43,2,6,cmd,8,[ t('',107,43,0),t([ t('Paymentmethodwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'PaymentMethodPaymentMethodWC'),28,8,0),t(',',7,8,0),t('Paymentmethodid',23,8,0),t(')',4,8,0) ]).
-b_line_i(44,2,6,cmd,8,[ t('',111,44,0) ]).
+b_line_i(26,2,4,cmd,8,[ t('',109,26,0),t('.NOT.',8,8,5),t('udp(',1,26,24),t(o(1,'HasPermission'),28,26,11),t(',',7,8,0),t('''invoice view''',3,26,25),t(')',4,8,0) ]).
+b_line_i(27,2,4,cmd,8,[ t('',107,27,0),t([ t('Paymentmethodwc',3,8,0),t('Visible',3,8,0) ],29,8,0),t(=,10,8,0),t('0',3,8,0) ]).
+b_line_i(28,2,4,cmd,8,[ t('',111,28,0) ]).
+b_line_i(30,2,4,cmd,8,[ t('',147,30,0) ]).
+b_line_i(32,2,4,cmd,8,[ t('',146,32,0),t([ t('Tab',3,32,7),t('Tabchanged',3,32,11) ],29,32,11) ]).
+b_line_i(33,2,5,cmd,8,[ t('',107,33,0),t('Selectedtabcode',23,8,0),t(=,10,8,0),t([ t('Tab',3,8,0),t('Activepagecontrolname',3,8,0) ],29,8,0) ]).
+b_line_i(34,2,5,cmd,8,[ t('',107,34,0),t('Loadalltabs',23,8,0),t(=,10,8,0),t('FALSE',41,8,0) ]).
+b_line_i(35,2,5,cmd,8,[ t('',145,35,0),t('''LOAD TAB''',3,35,5) ]).
+b_line_i(36,2,5,cmd,8,[ t('',147,36,0) ]).
+b_line_i(38,2,5,cmd,8,[ t('',143,38,0),t('''LOAD TAB''',3,38,5) ]).
+b_line_i(39,2,6,cmd,8,[ t('',109,39,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,39,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,39,68) ]).
+b_line_i(40,2,6,cmd,8,[ t('',107,40,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'PaymentMethodGeneral'),28,8,0),t(',',7,8,0),t('Paymentmethodid',23,8,0),t(')',4,8,0) ]).
+b_line_i(41,2,6,cmd,8,[ t('',111,41,0) ]).
+b_line_i(42,2,6,cmd,8,[ t('',109,42,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"PaymentMethod"',3,42,42) ]).
+b_line_i(43,2,6,cmd,8,[ t('',109,43,0),t('udp(',1,43,19),t(o(1,'HasPermission'),28,43,6),t(',',7,8,0),t('''invoice view''',3,43,20),t(')',4,8,0) ]).
+b_line_i(44,2,6,cmd,8,[ t('',107,44,0),t([ t('Paymentmethodwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'PaymentMethodPaymentMethodWC'),28,8,0),t(',',7,8,0),t('Paymentmethodid',23,8,0),t(')',4,8,0) ]).
 b_line_i(45,2,6,cmd,8,[ t('',110,45,0) ]).
-b_line_i(46,2,6,cmd,8,[ t('',104,46,0),t(o(13,'ViewPaymentMethod'),28,8,3),t('Paymentmethodid',23,8,21),t(',',7,8,0),t('''''',3,46,38) ]).
+b_line_i(46,2,6,cmd,8,[ t('',104,46,0),t(o(13,'ViewPaymentMethod'),28,8,4),t('Paymentmethodid',23,8,22),t(',',7,8,0),t('''''',3,46,39) ]).
 b_line_i(47,2,6,cmd,8,[ t('',111,47,0) ]).
-b_line_i(48,2,6,cmd,8,[ t('',144,48,0) ]).
+b_line_i(48,2,6,cmd,8,[ t('',111,48,0) ]).
+b_line_i(49,2,6,cmd,8,[ t('',144,49,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,6,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,6,cmd,0,[ t('',147,0,0) ]).
@@ -686,8 +686,8 @@ var_prop_i(6,'Paymentmethodid',idBasedOn,'',v).
  
  
  
-sub_info_i(146,'Start',1,29,[ [ 'Pgmname',115,'Paymentmethodid',116,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Paymentmethodwc',3),t('Visible',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Paymentmethodwc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,31,7),t('Tabchanged',3,31,11) ],31,35,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Paymentmethodid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Paymentmethodwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,30,[ [ 'Pgmname',115,'Paymentmethodid',116,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Paymentmethodwc',3),t('Visible',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Paymentmethodwc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,32,7),t('Tabchanged',3,32,11) ],32,36,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Paymentmethodid' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Paymentmethodwc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,154,'VIEWPAYMENTMETHOD',[ [ int,6,0,0 ],[ char,50,0,0 ] ],[ [ 'PaymentMethodId',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).

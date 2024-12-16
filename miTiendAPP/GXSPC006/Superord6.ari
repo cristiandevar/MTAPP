@@ -9,4 +9,7 @@ dir_superordinates_i(6,6,[ [ 16,[ 99 ] ] ]).
 dir_superordinates_i(6,21,[ [ 20,[ 115 ] ],[ 6,[ 20 ] ] ]).
 dir_superordinates_i(6,13,[ [ 5,[ 15 ] ],[ 6,[ 20 ] ] ]).
 dir_superordinates_i(6,18,[]).
+dir_superordinates_i(6,19,[ [ 18,[ 106 ] ],[ 17,[ 104 ] ] ]).
+dir_superordinates_i(6,20,[]).
+dir_superordinates_i(6,17,[]).
  

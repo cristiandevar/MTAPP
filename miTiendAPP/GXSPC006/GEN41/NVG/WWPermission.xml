@@ -82,9 +82,17 @@
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
+<Token>'%'</Token>
+<Sp></Sp>
+<Token>+</Token>
+<Sp></Sp>
 <Variable>
 <VarId>Permissionname</VarId>
-<VarName>&amp;PermissionName</VarName></Variable></Constraint>
+<VarName>&amp;PermissionName</VarName></Variable>
+<Sp></Sp>
+<Token>+</Token>
+<Sp></Sp>
+<Token>'%'</Token></Constraint>
 <Condition>
 <Token>not</Token>
 <Sp></Sp>
@@ -105,15 +113,6 @@
 <AttriId>106</AttriId>
 <AttriName>PermissionId</AttriName>
 <Description>Permission Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>106</AttriId>
-<AttriName>PermissionId</AttriName>
-<Description>Permission Id</Description></Attribute>
-<Attribute>
-<AttriId>107</AttriId>
-<AttriName>PermissionName</AttriName>
-<Description>Permission Name</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

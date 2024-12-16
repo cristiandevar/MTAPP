@@ -398,7 +398,9 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, sPrefix+"vMONTH", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV26Month), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Objectname", StringUtil.RTrim( Queryvieweramountstatement_Objectname));
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Type", StringUtil.RTrim( Queryvieweramountstatement_Type));
+         GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Title", StringUtil.RTrim( Queryvieweramountstatement_Title));
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Charttype", StringUtil.RTrim( Queryvieweramountstatement_Charttype));
+         GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Yaxistitle", StringUtil.RTrim( Queryvieweramountstatement_Yaxistitle));
       }
 
       protected void RenderHtmlCloseForm412( )
@@ -502,6 +504,7 @@ namespace GeneXus.Programs {
             ucQueryvieweramountstatement.SetProperty("Type", Queryvieweramountstatement_Type);
             ucQueryvieweramountstatement.SetProperty("Title", Queryvieweramountstatement_Title);
             ucQueryvieweramountstatement.SetProperty("ChartType", Queryvieweramountstatement_Charttype);
+            ucQueryvieweramountstatement.SetProperty("YAxisTitle", Queryvieweramountstatement_Yaxistitle);
             ucQueryvieweramountstatement.SetProperty("ItemClickData", AV15ItemClickData);
             ucQueryvieweramountstatement.SetProperty("ItemDoubleClickData", AV16ItemDoubleClickData);
             ucQueryvieweramountstatement.SetProperty("DragAndDropData", AV11DragAndDropData);
@@ -853,7 +856,9 @@ namespace GeneXus.Programs {
             wcpOAV26Month = (short)(Math.Round(context.localUtil.CToN( cgiGet( sPrefix+"wcpOAV26Month"), ".", ","), 18, MidpointRounding.ToEven));
             Queryvieweramountstatement_Objectname = cgiGet( sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Objectname");
             Queryvieweramountstatement_Type = cgiGet( sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Type");
+            Queryvieweramountstatement_Title = cgiGet( sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Title");
             Queryvieweramountstatement_Charttype = cgiGet( sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Charttype");
+            Queryvieweramountstatement_Yaxistitle = cgiGet( sPrefix+"QUERYVIEWERAMOUNTSTATEMENT_Yaxistitle");
             /* Read variables values. */
             /* Read subfile selected row values. */
             /* Read hidden variables. */
@@ -1135,7 +1140,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202411161572161", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412149595532", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1153,7 +1158,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("wcstatisticsamountstatement.js", "?202411161572161", false, true);
+            context.AddJavascriptSource("wcstatisticsamountstatement.js", "?202412149595532", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerCommon.js", "", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerRender.js", "", false, true);
          }
@@ -1187,8 +1192,9 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
-         Queryvieweramountstatement_Title = "";
+         Queryvieweramountstatement_Yaxistitle = "Amount";
          Queryvieweramountstatement_Charttype = "SmoothTimeline";
+         Queryvieweramountstatement_Title = "Sales/Purchases per period";
          Queryvieweramountstatement_Type = "Chart";
          Queryvieweramountstatement_Objectname = "DPStatisticsAmountStatement";
          if ( StringUtil.Len( sPrefix) == 0 )
@@ -1287,11 +1293,12 @@ namespace GeneXus.Programs {
       private string GXKey ;
       private string Queryvieweramountstatement_Objectname ;
       private string Queryvieweramountstatement_Type ;
+      private string Queryvieweramountstatement_Title ;
       private string Queryvieweramountstatement_Charttype ;
+      private string Queryvieweramountstatement_Yaxistitle ;
       private string GX_FocusControl ;
       private string divMaintable_Internalname ;
       private string divTable1_Internalname ;
-      private string Queryvieweramountstatement_Title ;
       private string Queryvieweramountstatement_Internalname ;
       private string sXEvt ;
       private string sEvt ;

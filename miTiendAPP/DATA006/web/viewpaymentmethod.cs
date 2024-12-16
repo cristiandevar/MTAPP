@@ -978,9 +978,9 @@ namespace GeneXus.Programs {
                context.httpAjaxContext.ajax_rspEndCmp();
             }
          }
-         if ( new haspermission(context).executeUdp(  "invoice view") )
+         if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "PaymentMethod") == 0 ) )
          {
-            if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "PaymentMethod") == 0 ) )
+            if ( new haspermission(context).executeUdp(  "invoice view") )
             {
                /* Object Property */
                if ( true )
@@ -1007,11 +1007,11 @@ namespace GeneXus.Programs {
                   context.httpAjaxContext.ajax_rspEndCmp();
                }
             }
-         }
-         else
-         {
-            CallWebObject(formatLink("viewpaymentmethod.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(AV12PaymentMethodId,6,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"PaymentMethodId","TabCode"}) );
-            context.wjLocDisableFrm = 1;
+            else
+            {
+               CallWebObject(formatLink("viewpaymentmethod.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(AV12PaymentMethodId,6,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"PaymentMethodId","TabCode"}) );
+               context.wjLocDisableFrm = 1;
+            }
          }
       }
 
@@ -1085,7 +1085,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202411212354202", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121410245038", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1101,7 +1101,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewpaymentmethod.js", "?202411212354202", false, true);
+         context.AddJavascriptSource("viewpaymentmethod.js", "?2024121410245039", false, true);
          context.AddJavascriptSource("shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("shared/HistoryManager/rsh/rsh.js", "", false, true);
