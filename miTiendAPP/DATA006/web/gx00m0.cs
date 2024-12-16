@@ -141,9 +141,9 @@ namespace GeneXus.Programs {
 
       protected void gxnrGrid1_newrow_invoke( )
       {
-         nRC_GXsfl_64 = (int)(Math.Round(NumberUtil.Val( GetPar( "nRC_GXsfl_64"), "."), 18, MidpointRounding.ToEven));
-         nGXsfl_64_idx = (int)(Math.Round(NumberUtil.Val( GetPar( "nGXsfl_64_idx"), "."), 18, MidpointRounding.ToEven));
-         sGXsfl_64_idx = GetPar( "sGXsfl_64_idx");
+         nRC_GXsfl_54 = (int)(Math.Round(NumberUtil.Val( GetPar( "nRC_GXsfl_54"), "."), 18, MidpointRounding.ToEven));
+         nGXsfl_54_idx = (int)(Math.Round(NumberUtil.Val( GetPar( "nGXsfl_54_idx"), "."), 18, MidpointRounding.ToEven));
+         sGXsfl_54_idx = GetPar( "sGXsfl_54_idx");
          setAjaxCallMode();
          if ( ! IsValidAjaxCall( true) )
          {
@@ -161,7 +161,6 @@ namespace GeneXus.Programs {
          cmbavCmovementtype.FromJSonString( GetNextPar( ));
          AV7cMovementType = (short)(Math.Round(NumberUtil.Val( GetPar( "cMovementType"), "."), 18, MidpointRounding.ToEven));
          AV8cMovementCreatedDate = context.localUtil.ParseDateParm( GetPar( "cMovementCreatedDate"));
-         AV9cMovementQuantity = (short)(Math.Round(NumberUtil.Val( GetPar( "cMovementQuantity"), "."), 18, MidpointRounding.ToEven));
          AV10cMovementKeyAditional = (int)(Math.Round(NumberUtil.Val( GetPar( "cMovementKeyAditional"), "."), 18, MidpointRounding.ToEven));
          setAjaxCallMode();
          if ( ! IsValidAjaxCall( true) )
@@ -169,7 +168,7 @@ namespace GeneXus.Programs {
             GxWebError = 1;
             return  ;
          }
-         gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+         gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          AddString( context.getJSONResponse( )) ;
          /* End function gxgrGrid1_refresh_invoke */
       }
@@ -311,11 +310,10 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GXH_vCMOVEMENTID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV6cMovementId), 6, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GXH_vCMOVEMENTTYPE", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV7cMovementType), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GXH_vCMOVEMENTCREATEDDATE", context.localUtil.Format(AV8cMovementCreatedDate, "99/99/99"));
-         GxWebStd.gx_hidden_field( context, "GXH_vCMOVEMENTQUANTITY", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV9cMovementQuantity), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GXH_vCMOVEMENTKEYADITIONAL", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV10cMovementKeyAditional), 6, 0, ".", "")));
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_64", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_64), 8, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_54", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_54), 8, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "vPMOVEMENTID", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV11pMovementId), 6, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID1_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nEOF), 1, 0, ".", "")));
@@ -324,7 +322,6 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "MOVEMENTIDFILTERCONTAINER_Class", StringUtil.RTrim( divMovementidfiltercontainer_Class));
          GxWebStd.gx_hidden_field( context, "MOVEMENTTYPEFILTERCONTAINER_Class", StringUtil.RTrim( divMovementtypefiltercontainer_Class));
          GxWebStd.gx_hidden_field( context, "MOVEMENTCREATEDDATEFILTERCONTAINER_Class", StringUtil.RTrim( divMovementcreateddatefiltercontainer_Class));
-         GxWebStd.gx_hidden_field( context, "MOVEMENTQUANTITYFILTERCONTAINER_Class", StringUtil.RTrim( divMovementquantityfiltercontainer_Class));
          GxWebStd.gx_hidden_field( context, "MOVEMENTKEYADITIONALFILTERCONTAINER_Class", StringUtil.RTrim( divMovementkeyaditionalfiltercontainer_Class));
       }
 
@@ -439,7 +436,7 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavCmovementid_Internalname, "Movement Id", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_64_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_54_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCmovementid_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(AV6cMovementId), 6, 0, ".", "")), StringUtil.LTrim( ((edtavCmovementid_Enabled!=0) ? context.localUtil.Format( (decimal)(AV6cMovementId), "ZZZZZ9") : context.localUtil.Format( (decimal)(AV6cMovementId), "ZZZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCmovementid_Jsonclick, 0, "Attribute", "", "", "", "", edtavCmovementid_Visible, edtavCmovementid_Enabled, 0, "text", "1", 6, "chr", 1, "row", 6, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -469,7 +466,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, cmbavCmovementtype_Internalname, "Movement Type", "col-sm-3 AttributeLabel", 0, true, "");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_64_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_54_idx + "',0)\"";
             /* ComboBox */
             GxWebStd.gx_combobox_ctrl1( context, cmbavCmovementtype, cmbavCmovementtype_Internalname, StringUtil.Trim( StringUtil.Str( (decimal)(AV7cMovementType), 4, 0)), 1, cmbavCmovementtype_Jsonclick, 0, "'"+""+"'"+",false,"+"'"+""+"'", "int", "", cmbavCmovementtype.Visible, cmbavCmovementtype.Enabled, 0, 0, 0, "em", 0, "", "", "Attribute", "", "", TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "", true, 0, "HLP_Gx00M0.htm");
             cmbavCmovementtype.CurrentValue = StringUtil.Trim( StringUtil.Str( (decimal)(AV7cMovementType), 4, 0));
@@ -503,41 +500,10 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavCmovementcreateddate_Internalname, "Movement Created Date", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 36,'',false,'" + sGXsfl_64_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 36,'',false,'" + sGXsfl_54_idx + "',0)\"";
             context.WriteHtmlText( "<div id=\""+edtavCmovementcreateddate_Internalname+"_dp_container\" class=\"dp_container\" style=\"white-space:nowrap;display:inline;\">") ;
             GxWebStd.gx_single_line_edit( context, edtavCmovementcreateddate_Internalname, context.localUtil.Format(AV8cMovementCreatedDate, "99/99/99"), context.localUtil.Format( AV8cMovementCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,36);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCmovementcreateddate_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtavCmovementcreateddate_Enabled, 0, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Gx00M0.htm");
             context.WriteHtmlTextNl( "</div>") ;
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, divMovementquantityfiltercontainer_Internalname, 1, 0, "px", 0, "px", divMovementquantityfiltercontainer_Class, "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblmovementquantityfilter_Internalname, "Movement Quantity", "", "", lblLblmovementquantityfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e14481_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx00M0.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 WWFiltersCell", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
-            /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavCmovementquantity_Internalname, "Movement Quantity", "col-sm-3 AttributeLabel", 0, true, "");
-            /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 46,'',false,'" + sGXsfl_64_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavCmovementquantity_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(AV9cMovementQuantity), 4, 0, ".", "")), StringUtil.LTrim( ((edtavCmovementquantity_Enabled!=0) ? context.localUtil.Format( (decimal)(AV9cMovementQuantity), "ZZZ9") : context.localUtil.Format( (decimal)(AV9cMovementQuantity), "ZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,46);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCmovementquantity_Jsonclick, 0, "Attribute", "", "", "", "", edtavCmovementquantity_Visible, edtavCmovementquantity_Enabled, 0, "text", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -555,7 +521,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblmovementkeyaditionalfilter_Internalname, "Movement Key Aditional", "", "", lblLblmovementkeyaditionalfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e15481_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx00M0.htm");
+            GxWebStd.gx_label_ctrl( context, lblLblmovementkeyaditionalfilter_Internalname, "Movement Key Aditional", "", "", lblLblmovementkeyaditionalfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e14481_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -567,8 +533,8 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavCmovementkeyaditional_Internalname, "Movement Key Aditional", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 56,'',false,'" + sGXsfl_64_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavCmovementkeyaditional_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(AV10cMovementKeyAditional), 6, 0, ".", "")), StringUtil.LTrim( ((edtavCmovementkeyaditional_Enabled!=0) ? context.localUtil.Format( (decimal)(AV10cMovementKeyAditional), "ZZZZZ9") : context.localUtil.Format( (decimal)(AV10cMovementKeyAditional), "ZZZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,56);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCmovementkeyaditional_Jsonclick, 0, "Attribute", "", "", "", "", edtavCmovementkeyaditional_Visible, edtavCmovementkeyaditional_Enabled, 0, "text", "1", 6, "chr", 1, "row", 6, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Gx00M0.htm");
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 46,'',false,'" + sGXsfl_54_idx + "',0)\"";
+            GxWebStd.gx_single_line_edit( context, edtavCmovementkeyaditional_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(AV10cMovementKeyAditional), 6, 0, ".", "")), StringUtil.LTrim( ((edtavCmovementkeyaditional_Enabled!=0) ? context.localUtil.Format( (decimal)(AV10cMovementKeyAditional), "ZZZZZ9") : context.localUtil.Format( (decimal)(AV10cMovementKeyAditional), "ZZZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,46);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCmovementkeyaditional_Jsonclick, 0, "Attribute", "", "", "", "", edtavCmovementkeyaditional_Visible, edtavCmovementkeyaditional_Enabled, 0, "text", "1", 6, "chr", 1, "row", 6, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -585,10 +551,10 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 hidden-sm hidden-md hidden-lg ToggleCell", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 61,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 51,'',false,'',0)\"";
             ClassString = bttBtntoggle_Class;
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtntoggle_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(64), 2, 0)+","+"null"+");", "|||", bttBtntoggle_Jsonclick, 7, "|||", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e16481_client"+"'", TempTags, "", 2, "HLP_Gx00M0.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtntoggle_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(54), 2, 0)+","+"null"+");", "|||", bttBtntoggle_Jsonclick, 7, "|||", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e15481_client"+"'", TempTags, "", 2, "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -597,12 +563,12 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /*  Grid Control  */
             Grid1Container.SetWrapped(nGXWrapped);
-            StartGridControl64( ) ;
+            StartGridControl54( ) ;
          }
-         if ( wbEnd == 64 )
+         if ( wbEnd == 54 )
          {
             wbEnd = 0;
-            nRC_GXsfl_64 = (int)(nGXsfl_64_idx-1);
+            nRC_GXsfl_54 = (int)(nGXsfl_54_idx-1);
             if ( Grid1Container.GetWrapped() == 1 )
             {
                context.WriteHtmlText( "</table>") ;
@@ -634,10 +600,10 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 73,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 62,'',false,'',0)\"";
             ClassString = "BtnCancel";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(64), 2, 0)+","+"null"+");", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Gx00M0.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(54), 2, 0)+","+"null"+");", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Gx00M0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -646,7 +612,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
          }
-         if ( wbEnd == 64 )
+         if ( wbEnd == 54 )
          {
             wbEnd = 0;
             if ( isFullAjaxMode( ) )
@@ -772,18 +738,17 @@ namespace GeneXus.Programs {
                            sEvt = StringUtil.Left( sEvt, (short)(StringUtil.Len( sEvt)-4));
                            if ( ( StringUtil.StrCmp(StringUtil.Left( sEvt, 5), "START") == 0 ) || ( StringUtil.StrCmp(StringUtil.Left( sEvt, 4), "LOAD") == 0 ) || ( StringUtil.StrCmp(StringUtil.Left( sEvt, 5), "ENTER") == 0 ) )
                            {
-                              nGXsfl_64_idx = (int)(Math.Round(NumberUtil.Val( sEvtType, "."), 18, MidpointRounding.ToEven));
-                              sGXsfl_64_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_64_idx), 4, 0), 4, "0");
-                              SubsflControlProps_642( ) ;
+                              nGXsfl_54_idx = (int)(Math.Round(NumberUtil.Val( sEvtType, "."), 18, MidpointRounding.ToEven));
+                              sGXsfl_54_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_54_idx), 4, 0), 4, "0");
+                              SubsflControlProps_542( ) ;
                               AV5LinkSelection = cgiGet( edtavLinkselection_Internalname);
-                              AssignProp("", false, edtavLinkselection_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)) ? AV15Linkselection_GXI : context.convertURL( context.PathToRelativeUrl( AV5LinkSelection))), !bGXsfl_64_Refreshing);
+                              AssignProp("", false, edtavLinkselection_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)) ? AV15Linkselection_GXI : context.convertURL( context.PathToRelativeUrl( AV5LinkSelection))), !bGXsfl_54_Refreshing);
                               AssignProp("", false, edtavLinkselection_Internalname, "SrcSet", context.GetImageSrcSet( AV5LinkSelection), true);
                               A123MovementId = (int)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementId_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                               cmbMovementType.Name = cmbMovementType_Internalname;
                               cmbMovementType.CurrentValue = cgiGet( cmbMovementType_Internalname);
                               A124MovementType = (short)(Math.Round(NumberUtil.Val( cgiGet( cmbMovementType_Internalname), "."), 18, MidpointRounding.ToEven));
                               A125MovementCreatedDate = DateTimeUtil.ResetTime(context.localUtil.CToT( cgiGet( edtMovementCreatedDate_Internalname), 0));
-                              A127MovementQuantity = (short)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementQuantity_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                               A128MovementKeyAditional = (int)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementKeyAditional_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                               sEvtType = StringUtil.Right( sEvt, 1);
                               if ( StringUtil.StrCmp(sEvtType, ".") == 0 )
@@ -794,14 +759,14 @@ namespace GeneXus.Programs {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Start */
-                                    E17482 ();
+                                    E16482 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                                  {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Load */
-                                    E18482 ();
+                                    E17482 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                                  {
@@ -824,11 +789,6 @@ namespace GeneXus.Programs {
                                        {
                                           Rfr0gs = true;
                                        }
-                                       /* Set Refresh If Cmovementquantity Changed */
-                                       if ( ( context.localUtil.CToN( cgiGet( "GXH_vCMOVEMENTQUANTITY"), ".", ",") != Convert.ToDecimal( AV9cMovementQuantity )) )
-                                       {
-                                          Rfr0gs = true;
-                                       }
                                        /* Set Refresh If Cmovementkeyaditional Changed */
                                        if ( ( context.localUtil.CToN( cgiGet( "GXH_vCMOVEMENTKEYADITIONAL"), ".", ",") != Convert.ToDecimal( AV10cMovementKeyAditional )) )
                                        {
@@ -837,7 +797,7 @@ namespace GeneXus.Programs {
                                        if ( ! Rfr0gs )
                                        {
                                           /* Execute user event: Enter */
-                                          E19482 ();
+                                          E18482 ();
                                        }
                                        dynload_actions( ) ;
                                     }
@@ -911,13 +871,13 @@ namespace GeneXus.Programs {
       protected void gxnrGrid1_newrow( )
       {
          GxWebStd.set_html_headers( context, 0, "", "");
-         SubsflControlProps_642( ) ;
-         while ( nGXsfl_64_idx <= nRC_GXsfl_64 )
+         SubsflControlProps_542( ) ;
+         while ( nGXsfl_54_idx <= nRC_GXsfl_54 )
          {
-            sendrow_642( ) ;
-            nGXsfl_64_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_64_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_64_idx+1);
-            sGXsfl_64_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_64_idx), 4, 0), 4, "0");
-            SubsflControlProps_642( ) ;
+            sendrow_542( ) ;
+            nGXsfl_54_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_54_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_54_idx+1);
+            sGXsfl_54_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_54_idx), 4, 0), 4, "0");
+            SubsflControlProps_542( ) ;
          }
          AddString( context.httpAjaxContext.getJSONContainerResponse( Grid1Container)) ;
          /* End function gxnrGrid1_newrow */
@@ -927,7 +887,6 @@ namespace GeneXus.Programs {
                                         int AV6cMovementId ,
                                         short AV7cMovementType ,
                                         DateTime AV8cMovementCreatedDate ,
-                                        short AV9cMovementQuantity ,
                                         int AV10cMovementKeyAditional )
       {
          initialize_formulas( ) ;
@@ -993,11 +952,11 @@ namespace GeneXus.Programs {
          {
             Grid1Container.ClearRows();
          }
-         wbStart = 64;
-         nGXsfl_64_idx = 1;
-         sGXsfl_64_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_64_idx), 4, 0), 4, "0");
-         SubsflControlProps_642( ) ;
-         bGXsfl_64_Refreshing = true;
+         wbStart = 54;
+         nGXsfl_54_idx = 1;
+         sGXsfl_54_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_54_idx), 4, 0), 4, "0");
+         SubsflControlProps_542( ) ;
+         bGXsfl_54_Refreshing = true;
          Grid1Container.AddObjectProperty("GridName", "Grid1");
          Grid1Container.AddObjectProperty("CmpContext", "");
          Grid1Container.AddObjectProperty("InMasterPage", "false");
@@ -1011,51 +970,48 @@ namespace GeneXus.Programs {
          gxdyncontrolsrefreshing = false;
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            SubsflControlProps_642( ) ;
+            SubsflControlProps_542( ) ;
             GXPagingFrom2 = (int)(GRID1_nFirstRecordOnPage);
             GXPagingTo2 = (int)(subGrid1_fnc_Recordsperpage( )+1);
             pr_default.dynParam(0, new Object[]{ new Object[]{
                                                  AV7cMovementType ,
                                                  AV8cMovementCreatedDate ,
-                                                 AV9cMovementQuantity ,
                                                  AV10cMovementKeyAditional ,
                                                  A124MovementType ,
                                                  A125MovementCreatedDate ,
-                                                 A127MovementQuantity ,
                                                  A128MovementKeyAditional ,
                                                  AV6cMovementId } ,
                                                  new int[]{
-                                                 TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.SHORT, TypeConstants.INT, TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.SHORT, TypeConstants.INT, TypeConstants.INT
+                                                 TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.INT, TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.INT, TypeConstants.INT
                                                  }
             });
             /* Using cursor H00482 */
-            pr_default.execute(0, new Object[] {AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
-            nGXsfl_64_idx = 1;
-            sGXsfl_64_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_64_idx), 4, 0), 4, "0");
-            SubsflControlProps_642( ) ;
+            pr_default.execute(0, new Object[] {AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
+            nGXsfl_54_idx = 1;
+            sGXsfl_54_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_54_idx), 4, 0), 4, "0");
+            SubsflControlProps_542( ) ;
             while ( ( (pr_default.getStatus(0) != 101) ) && ( ( GRID1_nCurrentRecord < subGrid1_fnc_Recordsperpage( ) ) ) )
             {
                A128MovementKeyAditional = H00482_A128MovementKeyAditional[0];
-               A127MovementQuantity = H00482_A127MovementQuantity[0];
                A125MovementCreatedDate = H00482_A125MovementCreatedDate[0];
                A124MovementType = H00482_A124MovementType[0];
                A123MovementId = H00482_A123MovementId[0];
                /* Execute user event: Load */
-               E18482 ();
+               E17482 ();
                pr_default.readNext(0);
             }
             GRID1_nEOF = (short)(((pr_default.getStatus(0) == 101) ? 1 : 0));
             GxWebStd.gx_hidden_field( context, "GRID1_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nEOF), 1, 0, ".", "")));
             pr_default.close(0);
-            wbEnd = 64;
+            wbEnd = 54;
             WB480( ) ;
          }
-         bGXsfl_64_Refreshing = true;
+         bGXsfl_54_Refreshing = true;
       }
 
       protected void send_integrity_lvl_hashes482( )
       {
-         GxWebStd.gx_hidden_field( context, "gxhash_MOVEMENTID"+"_"+sGXsfl_64_idx, GetSecureSignedToken( sGXsfl_64_idx, context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "gxhash_MOVEMENTID"+"_"+sGXsfl_54_idx, GetSecureSignedToken( sGXsfl_54_idx, context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"), context));
       }
 
       protected int subGrid1_fnc_Pagecount( )
@@ -1073,19 +1029,17 @@ namespace GeneXus.Programs {
          pr_default.dynParam(1, new Object[]{ new Object[]{
                                               AV7cMovementType ,
                                               AV8cMovementCreatedDate ,
-                                              AV9cMovementQuantity ,
                                               AV10cMovementKeyAditional ,
                                               A124MovementType ,
                                               A125MovementCreatedDate ,
-                                              A127MovementQuantity ,
                                               A128MovementKeyAditional ,
                                               AV6cMovementId } ,
                                               new int[]{
-                                              TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.SHORT, TypeConstants.INT, TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.SHORT, TypeConstants.INT, TypeConstants.INT
+                                              TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.INT, TypeConstants.SHORT, TypeConstants.DATE, TypeConstants.INT, TypeConstants.INT
                                               }
          });
          /* Using cursor H00483 */
-         pr_default.execute(1, new Object[] {AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional});
+         pr_default.execute(1, new Object[] {AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional});
          GRID1_nRecordCount = H00483_AGRID1_nRecordCount[0];
          pr_default.close(1);
          return (int)(GRID1_nRecordCount) ;
@@ -1107,7 +1061,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1128,7 +1082,7 @@ namespace GeneXus.Programs {
          Grid1Container.AddObjectProperty("GRID1_nFirstRecordOnPage", GRID1_nFirstRecordOnPage);
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          }
          send_integrity_footer_hashes( ) ;
          return (short)(((GRID1_nEOF==0) ? 0 : 2)) ;
@@ -1147,7 +1101,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1174,7 +1128,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1193,7 +1147,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV9cMovementQuantity, AV10cMovementKeyAditional) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cMovementId, AV7cMovementType, AV8cMovementCreatedDate, AV10cMovementKeyAditional) ;
          }
          send_integrity_footer_hashes( ) ;
          return (int)(0) ;
@@ -1212,14 +1166,14 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E17482 ();
+         E16482 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
             /* Read saved SDTs. */
             /* Read saved values. */
-            nRC_GXsfl_64 = (int)(Math.Round(context.localUtil.CToN( cgiGet( "nRC_GXsfl_64"), ".", ","), 18, MidpointRounding.ToEven));
+            nRC_GXsfl_54 = (int)(Math.Round(context.localUtil.CToN( cgiGet( "nRC_GXsfl_54"), ".", ","), 18, MidpointRounding.ToEven));
             GRID1_nFirstRecordOnPage = (long)(Math.Round(context.localUtil.CToN( cgiGet( "GRID1_nFirstRecordOnPage"), ".", ","), 18, MidpointRounding.ToEven));
             GRID1_nEOF = (short)(Math.Round(context.localUtil.CToN( cgiGet( "GRID1_nEOF"), ".", ","), 18, MidpointRounding.ToEven));
             /* Read variables values. */
@@ -1255,20 +1209,6 @@ namespace GeneXus.Programs {
                AV8cMovementCreatedDate = context.localUtil.CToD( cgiGet( edtavCmovementcreateddate_Internalname), 1);
                AssignAttri("", false, "AV8cMovementCreatedDate", context.localUtil.Format(AV8cMovementCreatedDate, "99/99/99"));
             }
-            if ( ( ( context.localUtil.CToN( cgiGet( edtavCmovementquantity_Internalname), ".", ",") < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtavCmovementquantity_Internalname), ".", ",") > Convert.ToDecimal( 9999 )) ) )
-            {
-               GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "vCMOVEMENTQUANTITY");
-               GX_FocusControl = edtavCmovementquantity_Internalname;
-               AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-               wbErr = true;
-               AV9cMovementQuantity = 0;
-               AssignAttri("", false, "AV9cMovementQuantity", StringUtil.LTrimStr( (decimal)(AV9cMovementQuantity), 4, 0));
-            }
-            else
-            {
-               AV9cMovementQuantity = (short)(Math.Round(context.localUtil.CToN( cgiGet( edtavCmovementquantity_Internalname), ".", ","), 18, MidpointRounding.ToEven));
-               AssignAttri("", false, "AV9cMovementQuantity", StringUtil.LTrimStr( (decimal)(AV9cMovementQuantity), 4, 0));
-            }
             if ( ( ( context.localUtil.CToN( cgiGet( edtavCmovementkeyaditional_Internalname), ".", ",") < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtavCmovementkeyaditional_Internalname), ".", ",") > Convert.ToDecimal( 999999 )) ) )
             {
                GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "vCMOVEMENTKEYADITIONAL");
@@ -1299,10 +1239,6 @@ namespace GeneXus.Programs {
             {
                GRID1_nFirstRecordOnPage = 0;
             }
-            if ( ( context.localUtil.CToN( cgiGet( "GXH_vCMOVEMENTQUANTITY"), ".", ",") != Convert.ToDecimal( AV9cMovementQuantity )) )
-            {
-               GRID1_nFirstRecordOnPage = 0;
-            }
             if ( ( context.localUtil.CToN( cgiGet( "GXH_vCMOVEMENTKEYADITIONAL"), ".", ",") != Convert.ToDecimal( AV10cMovementKeyAditional )) )
             {
                GRID1_nFirstRecordOnPage = 0;
@@ -1317,7 +1253,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E17482 ();
+         E16482 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1325,7 +1261,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E17482( )
+      protected void E16482( )
       {
          /* Start Routine */
          returnInSub = false;
@@ -1334,7 +1270,7 @@ namespace GeneXus.Programs {
          AV12ADVANCED_LABEL_TEMPLATE = "%1 <strong>%2</strong>";
       }
 
-      private void E18482( )
+      private void E17482( )
       {
          /* Load Routine */
          returnInSub = false;
@@ -1342,18 +1278,18 @@ namespace GeneXus.Programs {
          AV5LinkSelection = context.GetImagePath( "3914535b-0c03-44c5-9538-906a99cdd2bc", "", context.GetTheme( ));
          AssignAttri("", false, edtavLinkselection_Internalname, AV5LinkSelection);
          AV15Linkselection_GXI = GXDbFile.PathToUrl( context.GetImagePath( "3914535b-0c03-44c5-9538-906a99cdd2bc", "", context.GetTheme( )));
-         sendrow_642( ) ;
+         sendrow_542( ) ;
          GRID1_nCurrentRecord = (long)(GRID1_nCurrentRecord+1);
-         if ( isFullAjaxMode( ) && ! bGXsfl_64_Refreshing )
+         if ( isFullAjaxMode( ) && ! bGXsfl_54_Refreshing )
          {
-            DoAjaxLoad(64, Grid1Row);
+            DoAjaxLoad(54, Grid1Row);
          }
       }
 
       public void GXEnter( )
       {
          /* Execute user event: Enter */
-         E19482 ();
+         E18482 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1361,7 +1297,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E19482( )
+      protected void E18482( )
       {
          /* Enter Routine */
          returnInSub = false;
@@ -1418,7 +1354,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20241120091972", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121520492343", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1434,35 +1370,33 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx00m0.js", "?20241120091972", false, true);
+         context.AddJavascriptSource("gx00m0.js", "?2024121520492343", false, true);
          /* End function include_jscripts */
       }
 
-      protected void SubsflControlProps_642( )
+      protected void SubsflControlProps_542( )
       {
-         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_64_idx;
-         edtMovementId_Internalname = "MOVEMENTID_"+sGXsfl_64_idx;
-         cmbMovementType_Internalname = "MOVEMENTTYPE_"+sGXsfl_64_idx;
-         edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE_"+sGXsfl_64_idx;
-         edtMovementQuantity_Internalname = "MOVEMENTQUANTITY_"+sGXsfl_64_idx;
-         edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL_"+sGXsfl_64_idx;
+         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_54_idx;
+         edtMovementId_Internalname = "MOVEMENTID_"+sGXsfl_54_idx;
+         cmbMovementType_Internalname = "MOVEMENTTYPE_"+sGXsfl_54_idx;
+         edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE_"+sGXsfl_54_idx;
+         edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL_"+sGXsfl_54_idx;
       }
 
-      protected void SubsflControlProps_fel_642( )
+      protected void SubsflControlProps_fel_542( )
       {
-         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_64_fel_idx;
-         edtMovementId_Internalname = "MOVEMENTID_"+sGXsfl_64_fel_idx;
-         cmbMovementType_Internalname = "MOVEMENTTYPE_"+sGXsfl_64_fel_idx;
-         edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE_"+sGXsfl_64_fel_idx;
-         edtMovementQuantity_Internalname = "MOVEMENTQUANTITY_"+sGXsfl_64_fel_idx;
-         edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL_"+sGXsfl_64_fel_idx;
+         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_54_fel_idx;
+         edtMovementId_Internalname = "MOVEMENTID_"+sGXsfl_54_fel_idx;
+         cmbMovementType_Internalname = "MOVEMENTTYPE_"+sGXsfl_54_fel_idx;
+         edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE_"+sGXsfl_54_fel_idx;
+         edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL_"+sGXsfl_54_fel_idx;
       }
 
-      protected void sendrow_642( )
+      protected void sendrow_542( )
       {
-         SubsflControlProps_642( ) ;
+         SubsflControlProps_542( ) ;
          WB480( ) ;
-         if ( ( 10 * 1 == 0 ) || ( nGXsfl_64_idx <= subGrid1_fnc_Recordsperpage( ) * 1 ) )
+         if ( ( 10 * 1 == 0 ) || ( nGXsfl_54_idx <= subGrid1_fnc_Recordsperpage( ) * 1 ) )
          {
             Grid1Row = GXWebRow.GetNew(context,Grid1Container);
             if ( subGrid1_Backcolorstyle == 0 )
@@ -1498,7 +1432,7 @@ namespace GeneXus.Programs {
             {
                /* Report style subfile background logic. */
                subGrid1_Backstyle = 1;
-               if ( ((int)((nGXsfl_64_idx) % (2))) == 0 )
+               if ( ((int)((nGXsfl_54_idx) % (2))) == 0 )
                {
                   subGrid1_Backcolor = (int)(0x0);
                   if ( StringUtil.StrCmp(subGrid1_Class, "") != 0 )
@@ -1519,7 +1453,7 @@ namespace GeneXus.Programs {
             {
                context.WriteHtmlText( "<tr ") ;
                context.WriteHtmlText( " class=\""+"PromptGrid"+"\" style=\""+""+"\"") ;
-               context.WriteHtmlText( " gxrow=\""+sGXsfl_64_idx+"\">") ;
+               context.WriteHtmlText( " gxrow=\""+sGXsfl_54_idx+"\">") ;
             }
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
@@ -1528,7 +1462,7 @@ namespace GeneXus.Programs {
             }
             /* Static Bitmap Variable */
             edtavLinkselection_Link = "javascript:gx.popup.gxReturn(["+"'"+GXUtil.EncodeJSConstant( StringUtil.LTrim( StringUtil.NToC( (decimal)(A123MovementId), 6, 0, ".", "")))+"'"+"]);";
-            AssignProp("", false, edtavLinkselection_Internalname, "Link", edtavLinkselection_Link, !bGXsfl_64_Refreshing);
+            AssignProp("", false, edtavLinkselection_Internalname, "Link", edtavLinkselection_Link, !bGXsfl_54_Refreshing);
             ClassString = "SelectionAttribute" + " " + ((StringUtil.StrCmp(edtavLinkselection_gximage, "")==0) ? "" : "GX_Image_"+edtavLinkselection_gximage+"_Class");
             StyleString = "";
             AV5LinkSelection_IsBlob = (bool)((String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection))&&String.IsNullOrEmpty(StringUtil.RTrim( AV15Linkselection_GXI)))||!String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)));
@@ -1541,7 +1475,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementId_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A123MovementId), 6, 0, ".", "")),StringUtil.LTrim( context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9")),(string)" inputmode=\"numeric\" pattern=\"[0-9]*\""+"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementId_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)6,(short)0,(short)0,(short)64,(short)0,(short)-1,(short)0,(bool)true,(string)"Id",(string)"right",(bool)false,(string)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementId_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A123MovementId), 6, 0, ".", "")),StringUtil.LTrim( context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9")),(string)" inputmode=\"numeric\" pattern=\"[0-9]*\""+"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementId_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)6,(short)0,(short)0,(short)54,(short)0,(short)-1,(short)0,(bool)true,(string)"Id",(string)"right",(bool)false,(string)""});
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
             {
@@ -1549,11 +1483,12 @@ namespace GeneXus.Programs {
             }
             if ( ( cmbMovementType.ItemCount == 0 ) && isAjaxCallMode( ) )
             {
-               GXCCtl = "MOVEMENTTYPE_" + sGXsfl_64_idx;
+               GXCCtl = "MOVEMENTTYPE_" + sGXsfl_54_idx;
                cmbMovementType.Name = GXCCtl;
                cmbMovementType.WebTags = "";
                cmbMovementType.addItem("1", "Product Discard", 0);
                cmbMovementType.addItem("2", "Product Added", 0);
+               cmbMovementType.addItem("3", "Invoice Cancel", 0);
                if ( cmbMovementType.ItemCount > 0 )
                {
                   A124MovementType = (short)(Math.Round(NumberUtil.Val( cmbMovementType.getValidValue(StringUtil.Trim( StringUtil.Str( (decimal)(A124MovementType), 4, 0))), "."), 18, MidpointRounding.ToEven));
@@ -1562,7 +1497,7 @@ namespace GeneXus.Programs {
             /* ComboBox */
             Grid1Row.AddColumnProperties("combobox", 2, isAjaxCallMode( ), new Object[] {(GXCombobox)cmbMovementType,(string)cmbMovementType_Internalname,StringUtil.Trim( StringUtil.Str( (decimal)(A124MovementType), 4, 0)),(short)1,(string)cmbMovementType_Jsonclick,(short)0,(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"int",(string)"",(short)-1,(short)0,(short)0,(short)0,(short)0,(string)"px",(short)0,(string)"px",(string)"",(string)"DescriptionAttribute",(string)"WWColumn",(string)"",(string)"",(string)"",(bool)true,(short)0});
             cmbMovementType.CurrentValue = StringUtil.Trim( StringUtil.Str( (decimal)(A124MovementType), 4, 0));
-            AssignProp("", false, cmbMovementType_Internalname, "Values", (string)(cmbMovementType.ToJavascriptSource()), !bGXsfl_64_Refreshing);
+            AssignProp("", false, cmbMovementType_Internalname, "Values", (string)(cmbMovementType.ToJavascriptSource()), !bGXsfl_54_Refreshing);
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
             {
@@ -1570,7 +1505,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementCreatedDate_Internalname,context.localUtil.Format(A125MovementCreatedDate, "99/99/99"),context.localUtil.Format( A125MovementCreatedDate, "99/99/99"),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementCreatedDate_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)8,(short)0,(short)0,(short)64,(short)0,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementCreatedDate_Internalname,context.localUtil.Format(A125MovementCreatedDate, "99/99/99"),context.localUtil.Format( A125MovementCreatedDate, "99/99/99"),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementCreatedDate_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)8,(short)0,(short)0,(short)54,(short)0,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
             {
@@ -1578,22 +1513,14 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementQuantity_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A127MovementQuantity), 4, 0, ".", "")),StringUtil.LTrim( context.localUtil.Format( (decimal)(A127MovementQuantity), "ZZZ9")),(string)" inputmode=\"numeric\" pattern=\"[0-9]*\""+"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementQuantity_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)4,(short)0,(short)0,(short)64,(short)0,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
-            /* Subfile cell */
-            if ( Grid1Container.GetWrapped() == 1 )
-            {
-               context.WriteHtmlText( "<td valign=\"middle\" align=\""+"right"+"\""+" style=\""+""+"\">") ;
-            }
-            /* Single line edit */
-            ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementKeyAditional_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A128MovementKeyAditional), 6, 0, ".", "")),StringUtil.LTrim( context.localUtil.Format( (decimal)(A128MovementKeyAditional), "ZZZZZ9")),(string)" inputmode=\"numeric\" pattern=\"[0-9]*\""+"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementKeyAditional_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)6,(short)0,(short)0,(short)64,(short)0,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtMovementKeyAditional_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A128MovementKeyAditional), 6, 0, ".", "")),StringUtil.LTrim( context.localUtil.Format( (decimal)(A128MovementKeyAditional), "ZZZZZ9")),(string)" inputmode=\"numeric\" pattern=\"[0-9]*\""+"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtMovementKeyAditional_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)6,(short)0,(short)0,(short)54,(short)0,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
             send_integrity_lvl_hashes482( ) ;
             Grid1Container.AddRow(Grid1Row);
-            nGXsfl_64_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_64_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_64_idx+1);
-            sGXsfl_64_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_64_idx), 4, 0), 4, "0");
-            SubsflControlProps_642( ) ;
+            nGXsfl_54_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_54_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_54_idx+1);
+            sGXsfl_54_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_54_idx), 4, 0), 4, "0");
+            SubsflControlProps_542( ) ;
          }
-         /* End function sendrow_642 */
+         /* End function sendrow_542 */
       }
 
       protected void init_web_controls( )
@@ -1602,16 +1529,18 @@ namespace GeneXus.Programs {
          cmbavCmovementtype.WebTags = "";
          cmbavCmovementtype.addItem("1", "Product Discard", 0);
          cmbavCmovementtype.addItem("2", "Product Added", 0);
+         cmbavCmovementtype.addItem("3", "Invoice Cancel", 0);
          if ( cmbavCmovementtype.ItemCount > 0 )
          {
             AV7cMovementType = (short)(Math.Round(NumberUtil.Val( cmbavCmovementtype.getValidValue(StringUtil.Trim( StringUtil.Str( (decimal)(AV7cMovementType), 4, 0))), "."), 18, MidpointRounding.ToEven));
             AssignAttri("", false, "AV7cMovementType", StringUtil.LTrimStr( (decimal)(AV7cMovementType), 4, 0));
          }
-         GXCCtl = "MOVEMENTTYPE_" + sGXsfl_64_idx;
+         GXCCtl = "MOVEMENTTYPE_" + sGXsfl_54_idx;
          cmbMovementType.Name = GXCCtl;
          cmbMovementType.WebTags = "";
          cmbMovementType.addItem("1", "Product Discard", 0);
          cmbMovementType.addItem("2", "Product Added", 0);
+         cmbMovementType.addItem("3", "Invoice Cancel", 0);
          if ( cmbMovementType.ItemCount > 0 )
          {
             A124MovementType = (short)(Math.Round(NumberUtil.Val( cmbMovementType.getValidValue(StringUtil.Trim( StringUtil.Str( (decimal)(A124MovementType), 4, 0))), "."), 18, MidpointRounding.ToEven));
@@ -1619,11 +1548,11 @@ namespace GeneXus.Programs {
          /* End function init_web_controls */
       }
 
-      protected void StartGridControl64( )
+      protected void StartGridControl54( )
       {
          if ( Grid1Container.GetWrapped() == 1 )
          {
-            context.WriteHtmlText( "<div id=\""+"Grid1Container"+"DivS\" data-gxgridid=\"64\">") ;
+            context.WriteHtmlText( "<div id=\""+"Grid1Container"+"DivS\" data-gxgridid=\"54\">") ;
             sStyleString = "";
             GxWebStd.gx_table_start( context, subGrid1_Internalname, subGrid1_Internalname, "", "PromptGrid", 0, "", "", 1, 2, sStyleString, "", "", 0);
             /* Subfile titles */
@@ -1669,9 +1598,6 @@ namespace GeneXus.Programs {
             context.SendWebValue( "Created Date") ;
             context.WriteHtmlTextNl( "</th>") ;
             context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-            context.SendWebValue( "Quantity") ;
-            context.WriteHtmlTextNl( "</th>") ;
-            context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
             context.SendWebValue( "Key Aditional") ;
             context.WriteHtmlTextNl( "</th>") ;
             context.WriteHtmlTextNl( "</tr>") ;
@@ -1711,9 +1637,6 @@ namespace GeneXus.Programs {
             Grid1Column.AddObjectProperty("Value", GXUtil.ValueEncode( context.localUtil.Format(A125MovementCreatedDate, "99/99/99")));
             Grid1Container.AddColumnProperties(Grid1Column);
             Grid1Column = GXWebColumn.GetNew(isAjaxCallMode( ));
-            Grid1Column.AddObjectProperty("Value", GXUtil.ValueEncode( StringUtil.LTrim( StringUtil.NToC( (decimal)(A127MovementQuantity), 4, 0, ".", ""))));
-            Grid1Container.AddColumnProperties(Grid1Column);
-            Grid1Column = GXWebColumn.GetNew(isAjaxCallMode( ));
             Grid1Column.AddObjectProperty("Value", GXUtil.ValueEncode( StringUtil.LTrim( StringUtil.NToC( (decimal)(A128MovementKeyAditional), 6, 0, ".", ""))));
             Grid1Container.AddColumnProperties(Grid1Column);
             Grid1Container.AddObjectProperty("Selectedindex", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid1_Selectedindex), 4, 0, ".", "")));
@@ -1737,9 +1660,6 @@ namespace GeneXus.Programs {
          lblLblmovementcreateddatefilter_Internalname = "LBLMOVEMENTCREATEDDATEFILTER";
          edtavCmovementcreateddate_Internalname = "vCMOVEMENTCREATEDDATE";
          divMovementcreateddatefiltercontainer_Internalname = "MOVEMENTCREATEDDATEFILTERCONTAINER";
-         lblLblmovementquantityfilter_Internalname = "LBLMOVEMENTQUANTITYFILTER";
-         edtavCmovementquantity_Internalname = "vCMOVEMENTQUANTITY";
-         divMovementquantityfiltercontainer_Internalname = "MOVEMENTQUANTITYFILTERCONTAINER";
          lblLblmovementkeyaditionalfilter_Internalname = "LBLMOVEMENTKEYADITIONALFILTER";
          edtavCmovementkeyaditional_Internalname = "vCMOVEMENTKEYADITIONAL";
          divMovementkeyaditionalfiltercontainer_Internalname = "MOVEMENTKEYADITIONALFILTERCONTAINER";
@@ -1749,7 +1669,6 @@ namespace GeneXus.Programs {
          edtMovementId_Internalname = "MOVEMENTID";
          cmbMovementType_Internalname = "MOVEMENTTYPE";
          edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE";
-         edtMovementQuantity_Internalname = "MOVEMENTQUANTITY";
          edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL";
          bttBtn_cancel_Internalname = "BTN_CANCEL";
          divGridtable_Internalname = "GRIDTABLE";
@@ -1771,7 +1690,6 @@ namespace GeneXus.Programs {
          cmbMovementType.Link = "";
          subGrid1_Header = "";
          edtMovementKeyAditional_Jsonclick = "";
-         edtMovementQuantity_Jsonclick = "";
          edtMovementCreatedDate_Jsonclick = "";
          cmbMovementType_Jsonclick = "";
          edtMovementId_Jsonclick = "";
@@ -1782,9 +1700,6 @@ namespace GeneXus.Programs {
          edtavCmovementkeyaditional_Jsonclick = "";
          edtavCmovementkeyaditional_Enabled = 1;
          edtavCmovementkeyaditional_Visible = 1;
-         edtavCmovementquantity_Jsonclick = "";
-         edtavCmovementquantity_Enabled = 1;
-         edtavCmovementquantity_Visible = 1;
          edtavCmovementcreateddate_Jsonclick = "";
          edtavCmovementcreateddate_Enabled = 1;
          cmbavCmovementtype_Jsonclick = "";
@@ -1794,7 +1709,6 @@ namespace GeneXus.Programs {
          edtavCmovementid_Enabled = 1;
          edtavCmovementid_Visible = 1;
          divMovementkeyaditionalfiltercontainer_Class = "AdvancedContainerItem";
-         divMovementquantityfiltercontainer_Class = "AdvancedContainerItem";
          divMovementcreateddatefiltercontainer_Class = "AdvancedContainerItem";
          divMovementtypefiltercontainer_Class = "AdvancedContainerItem";
          divMovementidfiltercontainer_Class = "AdvancedContainerItem";
@@ -1819,9 +1733,9 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV9cMovementQuantity',fld:'vCMOVEMENTQUANTITY',pic:'ZZZ9'},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("'TOGGLE'","{handler:'E16481',iparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]");
+         setEventMetadata("'TOGGLE'","{handler:'E15481',iparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]");
          setEventMetadata("'TOGGLE'",",oparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]}");
          setEventMetadata("LBLMOVEMENTIDFILTER.CLICK","{handler:'E11481',iparms:[{av:'divMovementidfiltercontainer_Class',ctrl:'MOVEMENTIDFILTERCONTAINER',prop:'Class'}]");
          setEventMetadata("LBLMOVEMENTIDFILTER.CLICK",",oparms:[{av:'divMovementidfiltercontainer_Class',ctrl:'MOVEMENTIDFILTERCONTAINER',prop:'Class'},{av:'edtavCmovementid_Visible',ctrl:'vCMOVEMENTID',prop:'Visible'}]}");
@@ -1829,19 +1743,17 @@ namespace GeneXus.Programs {
          setEventMetadata("LBLMOVEMENTTYPEFILTER.CLICK",",oparms:[{av:'divMovementtypefiltercontainer_Class',ctrl:'MOVEMENTTYPEFILTERCONTAINER',prop:'Class'},{av:'cmbavCmovementtype'}]}");
          setEventMetadata("LBLMOVEMENTCREATEDDATEFILTER.CLICK","{handler:'E13481',iparms:[{av:'divMovementcreateddatefiltercontainer_Class',ctrl:'MOVEMENTCREATEDDATEFILTERCONTAINER',prop:'Class'}]");
          setEventMetadata("LBLMOVEMENTCREATEDDATEFILTER.CLICK",",oparms:[{av:'divMovementcreateddatefiltercontainer_Class',ctrl:'MOVEMENTCREATEDDATEFILTERCONTAINER',prop:'Class'}]}");
-         setEventMetadata("LBLMOVEMENTQUANTITYFILTER.CLICK","{handler:'E14481',iparms:[{av:'divMovementquantityfiltercontainer_Class',ctrl:'MOVEMENTQUANTITYFILTERCONTAINER',prop:'Class'}]");
-         setEventMetadata("LBLMOVEMENTQUANTITYFILTER.CLICK",",oparms:[{av:'divMovementquantityfiltercontainer_Class',ctrl:'MOVEMENTQUANTITYFILTERCONTAINER',prop:'Class'},{av:'edtavCmovementquantity_Visible',ctrl:'vCMOVEMENTQUANTITY',prop:'Visible'}]}");
-         setEventMetadata("LBLMOVEMENTKEYADITIONALFILTER.CLICK","{handler:'E15481',iparms:[{av:'divMovementkeyaditionalfiltercontainer_Class',ctrl:'MOVEMENTKEYADITIONALFILTERCONTAINER',prop:'Class'}]");
+         setEventMetadata("LBLMOVEMENTKEYADITIONALFILTER.CLICK","{handler:'E14481',iparms:[{av:'divMovementkeyaditionalfiltercontainer_Class',ctrl:'MOVEMENTKEYADITIONALFILTERCONTAINER',prop:'Class'}]");
          setEventMetadata("LBLMOVEMENTKEYADITIONALFILTER.CLICK",",oparms:[{av:'divMovementkeyaditionalfiltercontainer_Class',ctrl:'MOVEMENTKEYADITIONALFILTERCONTAINER',prop:'Class'},{av:'edtavCmovementkeyaditional_Visible',ctrl:'vCMOVEMENTKEYADITIONAL',prop:'Visible'}]}");
-         setEventMetadata("ENTER","{handler:'E19482',iparms:[{av:'A123MovementId',fld:'MOVEMENTID',pic:'ZZZZZ9',hsh:true}]");
+         setEventMetadata("ENTER","{handler:'E18482',iparms:[{av:'A123MovementId',fld:'MOVEMENTID',pic:'ZZZZZ9',hsh:true}]");
          setEventMetadata("ENTER",",oparms:[{av:'AV11pMovementId',fld:'vPMOVEMENTID',pic:'ZZZZZ9'}]}");
-         setEventMetadata("GRID1_FIRSTPAGE","{handler:'subgrid1_firstpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV9cMovementQuantity',fld:'vCMOVEMENTQUANTITY',pic:'ZZZ9'},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
+         setEventMetadata("GRID1_FIRSTPAGE","{handler:'subgrid1_firstpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
          setEventMetadata("GRID1_FIRSTPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_PREVPAGE","{handler:'subgrid1_previouspage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV9cMovementQuantity',fld:'vCMOVEMENTQUANTITY',pic:'ZZZ9'},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
+         setEventMetadata("GRID1_PREVPAGE","{handler:'subgrid1_previouspage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
          setEventMetadata("GRID1_PREVPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_NEXTPAGE","{handler:'subgrid1_nextpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV9cMovementQuantity',fld:'vCMOVEMENTQUANTITY',pic:'ZZZ9'},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
+         setEventMetadata("GRID1_NEXTPAGE","{handler:'subgrid1_nextpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
          setEventMetadata("GRID1_NEXTPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_LASTPAGE","{handler:'subgrid1_lastpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV9cMovementQuantity',fld:'vCMOVEMENTQUANTITY',pic:'ZZZ9'},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
+         setEventMetadata("GRID1_LASTPAGE","{handler:'subgrid1_lastpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cMovementId',fld:'vCMOVEMENTID',pic:'ZZZZZ9'},{av:'cmbavCmovementtype'},{av:'AV7cMovementType',fld:'vCMOVEMENTTYPE',pic:'ZZZ9'},{av:'AV8cMovementCreatedDate',fld:'vCMOVEMENTCREATEDDATE',pic:''},{av:'AV10cMovementKeyAditional',fld:'vCMOVEMENTKEYADITIONAL',pic:'ZZZZZ9'}]");
          setEventMetadata("GRID1_LASTPAGE",",oparms:[]}");
          setEventMetadata("VALIDV_CMOVEMENTTYPE","{handler:'Validv_Cmovementtype',iparms:[]");
          setEventMetadata("VALIDV_CMOVEMENTTYPE",",oparms:[]}");
@@ -1882,7 +1794,6 @@ namespace GeneXus.Programs {
          TempTags = "";
          lblLblmovementtypefilter_Jsonclick = "";
          lblLblmovementcreateddatefilter_Jsonclick = "";
-         lblLblmovementquantityfilter_Jsonclick = "";
          lblLblmovementkeyaditionalfilter_Jsonclick = "";
          ClassString = "";
          StyleString = "";
@@ -1899,7 +1810,6 @@ namespace GeneXus.Programs {
          A125MovementCreatedDate = DateTime.MinValue;
          scmdbuf = "";
          H00482_A128MovementKeyAditional = new int[1] ;
-         H00482_A127MovementQuantity = new short[1] ;
          H00482_A125MovementCreatedDate = new DateTime[] {DateTime.MinValue} ;
          H00482_A124MovementType = new short[1] ;
          H00482_A123MovementId = new int[1] ;
@@ -1916,7 +1826,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.gx00m0__default(),
             new Object[][] {
                 new Object[] {
-               H00482_A128MovementKeyAditional, H00482_A127MovementQuantity, H00482_A125MovementCreatedDate, H00482_A124MovementType, H00482_A123MovementId
+               H00482_A128MovementKeyAditional, H00482_A125MovementCreatedDate, H00482_A124MovementType, H00482_A123MovementId
                }
                , new Object[] {
                H00483_AGRID1_nRecordCount
@@ -1931,13 +1841,11 @@ namespace GeneXus.Programs {
       private short nGotPars ;
       private short GxWebError ;
       private short AV7cMovementType ;
-      private short AV9cMovementQuantity ;
       private short initialized ;
       private short gxajaxcallmode ;
       private short wbEnd ;
       private short wbStart ;
       private short A124MovementType ;
-      private short A127MovementQuantity ;
       private short nDonePA ;
       private short gxcookieaux ;
       private short subGrid1_Backcolorstyle ;
@@ -1949,16 +1857,14 @@ namespace GeneXus.Programs {
       private short subGrid1_Allowcollapsing ;
       private short subGrid1_Collapsed ;
       private int AV11pMovementId ;
-      private int nRC_GXsfl_64 ;
+      private int nRC_GXsfl_54 ;
       private int subGrid1_Rows ;
-      private int nGXsfl_64_idx=1 ;
+      private int nGXsfl_54_idx=1 ;
       private int AV6cMovementId ;
       private int AV10cMovementKeyAditional ;
       private int edtavCmovementid_Enabled ;
       private int edtavCmovementid_Visible ;
       private int edtavCmovementcreateddate_Enabled ;
-      private int edtavCmovementquantity_Enabled ;
-      private int edtavCmovementquantity_Visible ;
       private int edtavCmovementkeyaditional_Enabled ;
       private int edtavCmovementkeyaditional_Visible ;
       private int A123MovementId ;
@@ -1981,11 +1887,10 @@ namespace GeneXus.Programs {
       private string divMovementidfiltercontainer_Class ;
       private string divMovementtypefiltercontainer_Class ;
       private string divMovementcreateddatefiltercontainer_Class ;
-      private string divMovementquantityfiltercontainer_Class ;
       private string divMovementkeyaditionalfiltercontainer_Class ;
       private string gxfirstwebparm ;
       private string gxfirstwebparm_bkp ;
-      private string sGXsfl_64_idx="0001" ;
+      private string sGXsfl_54_idx="0001" ;
       private string sDynURL ;
       private string FormProcess ;
       private string bodyStyle ;
@@ -2010,11 +1915,6 @@ namespace GeneXus.Programs {
       private string lblLblmovementcreateddatefilter_Jsonclick ;
       private string edtavCmovementcreateddate_Internalname ;
       private string edtavCmovementcreateddate_Jsonclick ;
-      private string divMovementquantityfiltercontainer_Internalname ;
-      private string lblLblmovementquantityfilter_Internalname ;
-      private string lblLblmovementquantityfilter_Jsonclick ;
-      private string edtavCmovementquantity_Internalname ;
-      private string edtavCmovementquantity_Jsonclick ;
       private string divMovementkeyaditionalfiltercontainer_Internalname ;
       private string lblLblmovementkeyaditionalfilter_Internalname ;
       private string lblLblmovementkeyaditionalfilter_Jsonclick ;
@@ -2037,12 +1937,11 @@ namespace GeneXus.Programs {
       private string edtMovementId_Internalname ;
       private string cmbMovementType_Internalname ;
       private string edtMovementCreatedDate_Internalname ;
-      private string edtMovementQuantity_Internalname ;
       private string edtMovementKeyAditional_Internalname ;
       private string scmdbuf ;
       private string AV12ADVANCED_LABEL_TEMPLATE ;
       private string edtavLinkselection_gximage ;
-      private string sGXsfl_64_fel_idx="0001" ;
+      private string sGXsfl_54_fel_idx="0001" ;
       private string subGrid1_Class ;
       private string subGrid1_Linesclass ;
       private string edtavLinkselection_Link ;
@@ -2052,7 +1951,6 @@ namespace GeneXus.Programs {
       private string GXCCtl ;
       private string cmbMovementType_Jsonclick ;
       private string edtMovementCreatedDate_Jsonclick ;
-      private string edtMovementQuantity_Jsonclick ;
       private string edtMovementKeyAditional_Jsonclick ;
       private string subGrid1_Header ;
       private DateTime AV8cMovementCreatedDate ;
@@ -2062,7 +1960,7 @@ namespace GeneXus.Programs {
       private bool wbLoad ;
       private bool Rfr0gs ;
       private bool wbErr ;
-      private bool bGXsfl_64_Refreshing=false ;
+      private bool bGXsfl_54_Refreshing=false ;
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
       private bool AV5LinkSelection_IsBlob ;
@@ -2076,7 +1974,6 @@ namespace GeneXus.Programs {
       private GXCombobox cmbMovementType ;
       private IDataStoreProvider pr_default ;
       private int[] H00482_A128MovementKeyAditional ;
-      private short[] H00482_A127MovementQuantity ;
       private DateTime[] H00482_A125MovementCreatedDate ;
       private short[] H00482_A124MovementType ;
       private int[] H00482_A123MovementId ;
@@ -2092,22 +1989,20 @@ namespace GeneXus.Programs {
       protected Object[] conditional_H00482( IGxContext context ,
                                              short AV7cMovementType ,
                                              DateTime AV8cMovementCreatedDate ,
-                                             short AV9cMovementQuantity ,
                                              int AV10cMovementKeyAditional ,
                                              short A124MovementType ,
                                              DateTime A125MovementCreatedDate ,
-                                             short A127MovementQuantity ,
                                              int A128MovementKeyAditional ,
                                              int AV6cMovementId )
       {
          System.Text.StringBuilder sWhereString = new System.Text.StringBuilder();
          string scmdbuf;
-         short[] GXv_int1 = new short[8];
+         short[] GXv_int1 = new short[7];
          Object[] GXv_Object2 = new Object[2];
          string sSelectString;
          string sFromString;
          string sOrderString;
-         sSelectString = " [MovementKeyAditional], [MovementQuantity], [MovementCreatedDate], [MovementType], [MovementId]";
+         sSelectString = " [MovementKeyAditional], [MovementCreatedDate], [MovementType], [MovementId]";
          sFromString = " FROM [Movement]";
          sOrderString = "";
          AddWhere(sWhereString, "([MovementId] >= @AV6cMovementId)");
@@ -2127,21 +2022,13 @@ namespace GeneXus.Programs {
          {
             GXv_int1[2] = 1;
          }
-         if ( ! (0==AV9cMovementQuantity) )
-         {
-            AddWhere(sWhereString, "([MovementQuantity] >= @AV9cMovementQuantity)");
-         }
-         else
-         {
-            GXv_int1[3] = 1;
-         }
          if ( ! (0==AV10cMovementKeyAditional) )
          {
             AddWhere(sWhereString, "([MovementKeyAditional] >= @AV10cMovementKeyAditional)");
          }
          else
          {
-            GXv_int1[4] = 1;
+            GXv_int1[3] = 1;
          }
          sOrderString += " ORDER BY [MovementId]";
          scmdbuf = "SELECT " + sSelectString + sFromString + sWhereString + sOrderString + "" + " OFFSET " + "@GXPagingFrom2" + " ROWS FETCH NEXT CAST((SELECT CASE WHEN " + "@GXPagingTo2" + " > 0 THEN " + "@GXPagingTo2" + " ELSE 1e9 END) AS INTEGER) ROWS ONLY";
@@ -2153,17 +2040,15 @@ namespace GeneXus.Programs {
       protected Object[] conditional_H00483( IGxContext context ,
                                              short AV7cMovementType ,
                                              DateTime AV8cMovementCreatedDate ,
-                                             short AV9cMovementQuantity ,
                                              int AV10cMovementKeyAditional ,
                                              short A124MovementType ,
                                              DateTime A125MovementCreatedDate ,
-                                             short A127MovementQuantity ,
                                              int A128MovementKeyAditional ,
                                              int AV6cMovementId )
       {
          System.Text.StringBuilder sWhereString = new System.Text.StringBuilder();
          string scmdbuf;
-         short[] GXv_int3 = new short[5];
+         short[] GXv_int3 = new short[4];
          Object[] GXv_Object4 = new Object[2];
          scmdbuf = "SELECT COUNT(*) FROM [Movement]";
          AddWhere(sWhereString, "([MovementId] >= @AV6cMovementId)");
@@ -2183,21 +2068,13 @@ namespace GeneXus.Programs {
          {
             GXv_int3[2] = 1;
          }
-         if ( ! (0==AV9cMovementQuantity) )
-         {
-            AddWhere(sWhereString, "([MovementQuantity] >= @AV9cMovementQuantity)");
-         }
-         else
-         {
-            GXv_int3[3] = 1;
-         }
          if ( ! (0==AV10cMovementKeyAditional) )
          {
             AddWhere(sWhereString, "([MovementKeyAditional] >= @AV10cMovementKeyAditional)");
          }
          else
          {
-            GXv_int3[4] = 1;
+            GXv_int3[3] = 1;
          }
          scmdbuf += sWhereString;
          GXv_Object4[0] = scmdbuf;
@@ -2212,9 +2089,9 @@ namespace GeneXus.Programs {
          switch ( cursor )
          {
                case 0 :
-                     return conditional_H00482(context, (short)dynConstraints[0] , (DateTime)dynConstraints[1] , (short)dynConstraints[2] , (int)dynConstraints[3] , (short)dynConstraints[4] , (DateTime)dynConstraints[5] , (short)dynConstraints[6] , (int)dynConstraints[7] , (int)dynConstraints[8] );
+                     return conditional_H00482(context, (short)dynConstraints[0] , (DateTime)dynConstraints[1] , (int)dynConstraints[2] , (short)dynConstraints[3] , (DateTime)dynConstraints[4] , (int)dynConstraints[5] , (int)dynConstraints[6] );
                case 1 :
-                     return conditional_H00483(context, (short)dynConstraints[0] , (DateTime)dynConstraints[1] , (short)dynConstraints[2] , (int)dynConstraints[3] , (short)dynConstraints[4] , (DateTime)dynConstraints[5] , (short)dynConstraints[6] , (int)dynConstraints[7] , (int)dynConstraints[8] );
+                     return conditional_H00483(context, (short)dynConstraints[0] , (DateTime)dynConstraints[1] , (int)dynConstraints[2] , (short)dynConstraints[3] , (DateTime)dynConstraints[4] , (int)dynConstraints[5] , (int)dynConstraints[6] );
          }
          return base.getDynamicStatement(cursor, context, dynConstraints);
       }
@@ -2238,7 +2115,6 @@ namespace GeneXus.Programs {
           new ParDef("@AV6cMovementId",GXType.Int32,6,0) ,
           new ParDef("@AV7cMovementType",GXType.Int16,4,0) ,
           new ParDef("@AV8cMovementCreatedDate",GXType.Date,8,0) ,
-          new ParDef("@AV9cMovementQuantity",GXType.Int16,4,0) ,
           new ParDef("@AV10cMovementKeyAditional",GXType.Int32,6,0) ,
           new ParDef("@GXPagingFrom2",GXType.Int32,9,0) ,
           new ParDef("@GXPagingTo2",GXType.Int32,9,0) ,
@@ -2249,7 +2125,6 @@ namespace GeneXus.Programs {
           new ParDef("@AV6cMovementId",GXType.Int32,6,0) ,
           new ParDef("@AV7cMovementType",GXType.Int16,4,0) ,
           new ParDef("@AV8cMovementCreatedDate",GXType.Date,8,0) ,
-          new ParDef("@AV9cMovementQuantity",GXType.Int16,4,0) ,
           new ParDef("@AV10cMovementKeyAditional",GXType.Int32,6,0)
           };
           def= new CursorDef[] {
@@ -2267,10 +2142,9 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((int[]) buf[0])[0] = rslt.getInt(1);
-                ((short[]) buf[1])[0] = rslt.getShort(2);
-                ((DateTime[]) buf[2])[0] = rslt.getGXDate(3);
-                ((short[]) buf[3])[0] = rslt.getShort(4);
-                ((int[]) buf[4])[0] = rslt.getInt(5);
+                ((DateTime[]) buf[1])[0] = rslt.getGXDate(2);
+                ((short[]) buf[2])[0] = rslt.getShort(3);
+                ((int[]) buf[3])[0] = rslt.getInt(4);
                 return;
              case 1 :
                 ((long[]) buf[0])[0] = rslt.getLong(1);

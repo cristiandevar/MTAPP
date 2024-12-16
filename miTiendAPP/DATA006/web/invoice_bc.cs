@@ -1483,7 +1483,7 @@ namespace GeneXus.Programs {
          A17ProductStock = BC000613_A17ProductStock[0];
          n17ProductStock = BC000613_n17ProductStock[0];
          pr_default.close(7);
-         if ( A26InvoiceDetailQuantity > A17ProductStock )
+         if ( ( ( A26InvoiceDetailQuantity > A17ProductStock ) ) && A94InvoiceActive )
          {
             GX_msglist.addItem("Quantity must be lower or equal than Stock", 1, "");
             AnyError = 1;

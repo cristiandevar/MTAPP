@@ -640,7 +640,7 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 14,'',false,'',0)\"";
             ClassString = "BtnEnter";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttSelectall_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(35), 2, 0)+","+"null"+");", "Select All", bttSelectall_Jsonclick, 5, "Select All", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'SELECTALL\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_WPRegisterSale.htm");
+            GxWebStd.gx_button_ctrl( context, bttSelectall_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(35), 2, 0)+","+"null"+");", "Select All", bttSelectall_Jsonclick, 5, "Select All", "", StyleString, ClassString, bttSelectall_Visible, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'SELECTALL\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_WPRegisterSale.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-3", "left", "top", "", "", "div");
@@ -2689,6 +2689,8 @@ namespace GeneXus.Programs {
          AssignAttri("", false, "AV18Name", AV18Name);
          AssignAttri("", false, "AV45Sector", StringUtil.LTrimStr( (decimal)(AV45Sector), 6, 0));
          AssignAttri("", false, "AV16Brand", StringUtil.LTrimStr( (decimal)(AV16Brand), 6, 0));
+         bttSelectall_Visible = 0;
+         AssignProp("", false, bttSelectall_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(bttSelectall_Visible), 5, 0), true);
       }
 
       protected void E171T2( )
@@ -3209,7 +3211,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112314242810", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121511282159", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -3226,7 +3228,7 @@ namespace GeneXus.Programs {
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
          context.AddJavascriptSource("gxdec.js", "?"+context.GetBuildNumber( 1853160), false, true);
-         context.AddJavascriptSource("wpregistersale.js", "?2024112314242812", false, true);
+         context.AddJavascriptSource("wpregistersale.js", "?2024121511282160", false, true);
          /* End function include_jscripts */
       }
 
@@ -4250,6 +4252,7 @@ namespace GeneXus.Programs {
          edtavCode_Enabled = 1;
          edtavName_Jsonclick = "";
          edtavName_Enabled = 1;
+         bttSelectall_Visible = 1;
          subCarproducts_Class = "PromptGrid";
          subAllproductsfiltered_Collapsed = 0;
          Form.Headerrawhtml = "";
@@ -4511,6 +4514,7 @@ namespace GeneXus.Programs {
       private int nGXsfl_79_idx=1 ;
       private int nGXsfl_139_idx=1 ;
       private int AV30Position ;
+      private int bttSelectall_Visible ;
       private int edtavName_Enabled ;
       private int edtavCode_Enabled ;
       private int AV71GXV1 ;

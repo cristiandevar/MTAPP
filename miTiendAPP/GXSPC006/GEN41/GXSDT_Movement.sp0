@@ -1,0 +1,83 @@
+ 
+spec_i([ sdt,[ 0,15,0 ],'Movement','Movement',0,eng,'18_0_2-169539' ]).
+ 
+struct_dt_i([ 0,15,0 ],name,'Movement').
+struct_dt_i([ 0,15,0 ],namespace,mtaKB).
+struct_dt_i([ 0,15,0 ],significantName,'Movement').
+struct_dt_i([ 0,15,0 ],'ObjName','Movement').
+struct_dt_i([ 0,15,0 ],'ObjDesc','Movement').
+struct_dt_i([ 0,15,0 ],'ExternalName','Movement').
+struct_dt_i([ 0,15,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,15,0 ],key,[ 123 ]).
+struct_dt_i([ 0,15,0 ],lvl,22).
+struct_dt_i([ 0,15,0 ],fullname,'Movement').
+ 
+struct_dt_elem_i([ 0,15,0 ],1,name,'Movementid').
+struct_dt_elem_i([ 0,15,0 ],1,camelname,'MovementId').
+struct_dt_elem_i([ 0,15,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,15,0 ],1,length,6).
+struct_dt_elem_i([ 0,15,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,15,0 ],1,sign,0).
+struct_dt_elem_i([ 0,15,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,15,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,15,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,15,0 ],1,attributeid,'123').
+struct_dt_elem_i([ 0,15,0 ],1,'ExternalName','MovementId').
+struct_dt_elem_i([ 0,15,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,15,0 ],2,name,'Movementtype').
+struct_dt_elem_i([ 0,15,0 ],2,camelname,'MovementType').
+struct_dt_elem_i([ 0,15,0 ],2,basedon,144).
+struct_dt_elem_i([ 0,15,0 ],2,length,4).
+struct_dt_elem_i([ 0,15,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,15,0 ],2,sign,0).
+struct_dt_elem_i([ 0,15,0 ],2,type,[ 4,4,0 ]).
+struct_dt_elem_i([ 0,15,0 ],2,pic,'ZZZ9').
+struct_dt_elem_i([ 0,15,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,15,0 ],2,attributeid,'124').
+struct_dt_elem_i([ 0,15,0 ],2,'ExternalName','MovementType').
+struct_dt_elem_i([ 0,15,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,15,0 ],3,name,'Movementcreateddate').
+struct_dt_elem_i([ 0,15,0 ],3,camelname,'MovementCreatedDate').
+struct_dt_elem_i([ 0,15,0 ],3,length,8).
+struct_dt_elem_i([ 0,15,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,15,0 ],3,type,[ 6,8,0 ]).
+struct_dt_elem_i([ 0,15,0 ],3,pic,'99/99/99').
+struct_dt_elem_i([ 0,15,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,15,0 ],3,attributeid,'125').
+struct_dt_elem_i([ 0,15,0 ],3,'ExternalName','MovementCreatedDate').
+struct_dt_elem_i([ 0,15,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,15,0 ],4,name,'Movementkeyaditional').
+struct_dt_elem_i([ 0,15,0 ],4,camelname,'MovementKeyAditional').
+struct_dt_elem_i([ 0,15,0 ],4,length,6).
+struct_dt_elem_i([ 0,15,0 ],4,decimals,0).
+struct_dt_elem_i([ 0,15,0 ],4,sign,0).
+struct_dt_elem_i([ 0,15,0 ],4,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,15,0 ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,15,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,15,0 ],4,attributeid,'128').
+struct_dt_elem_i([ 0,15,0 ],4,'ExternalName','MovementKeyAditional').
+struct_dt_elem_i([ 0,15,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,15,0 ],5,name,'Movementdescription').
+struct_dt_elem_i([ 0,15,0 ],5,camelname,'MovementDescription').
+struct_dt_elem_i([ 0,15,0 ],5,basedon,88).
+struct_dt_elem_i([ 0,15,0 ],5,length,200).
+struct_dt_elem_i([ 0,15,0 ],5,decimals,0).
+struct_dt_elem_i([ 0,15,0 ],5,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,15,0 ],5,pic,'').
+struct_dt_elem_i([ 0,15,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,15,0 ],5,attributeid,'140').
+struct_dt_elem_i([ 0,15,0 ],5,'ExternalName','MovementDescription').
+struct_dt_elem_i([ 0,15,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,15,0 ],5,pic,'ZZZZZZZZZZZZZZ9.99').
+ 
+ 
+ 
+ 
+ 
+ 
+module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').

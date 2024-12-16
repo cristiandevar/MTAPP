@@ -1,0 +1,10 @@
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpregistermovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\web\bin\wpregistermovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.csproj.AssemblyReference.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.csproj.CoreCompileInputs.cache
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.csproj.CopyComplete
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\refint\wpregistermovement.dll
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\wpregistermovement.pdb
+C:\Universidad\Seminario Tecnico Profesional\KB\mtaKB\Data006\build\wpregistermovement\obj\Release\net6.0\ref\wpregistermovement.dll

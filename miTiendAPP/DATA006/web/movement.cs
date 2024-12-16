@@ -342,13 +342,13 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 form__cell-advanced", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtMovementId_Internalname+"\"", "", "div");
+         GxWebStd.gx_div_start( context, "", edtMovementId_Visible, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtMovementId_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
          GxWebStd.gx_label_element( context, edtMovementId_Internalname, "Id", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         GxWebStd.gx_single_line_edit( context, edtMovementId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A123MovementId), 6, 0, ".", "")), StringUtil.LTrim( ((edtMovementId_Enabled!=0) ? context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9") : context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtMovementId_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtMovementId_Enabled, 0, "text", "1", 6, "chr", 1, "row", 6, 0, 0, 0, 0, -1, 0, true, "Id", "right", false, "", "HLP_Movement.htm");
+         GxWebStd.gx_single_line_edit( context, edtMovementId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A123MovementId), 6, 0, ".", "")), StringUtil.LTrim( ((edtMovementId_Enabled!=0) ? context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9") : context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtMovementId_Jsonclick, 0, "Attribute", "", "", "", "", edtMovementId_Visible, edtMovementId_Enabled, 0, "text", "1", 6, "chr", 1, "row", 6, 0, 0, 0, 0, -1, 0, true, "Id", "right", false, "", "HLP_Movement.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -383,9 +383,8 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
          context.WriteHtmlText( "<div id=\""+edtMovementCreatedDate_Internalname+"_dp_container\" class=\"dp_container\" style=\"white-space:nowrap;display:inline;\">") ;
-         GxWebStd.gx_single_line_edit( context, edtMovementCreatedDate_Internalname, context.localUtil.Format(A125MovementCreatedDate, "99/99/99"), context.localUtil.Format( A125MovementCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,44);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtMovementCreatedDate_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtMovementCreatedDate_Enabled, 0, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Movement.htm");
+         GxWebStd.gx_single_line_edit( context, edtMovementCreatedDate_Internalname, context.localUtil.Format(A125MovementCreatedDate, "99/99/99"), context.localUtil.Format( A125MovementCreatedDate, "99/99/99"), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtMovementCreatedDate_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtMovementCreatedDate_Enabled, 0, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Movement.htm");
          GxWebStd.gx_bitmap( context, edtMovementCreatedDate_Internalname+"_dp_trigger", context.GetImagePath( "", "", context.GetTheme( )), "", "", "", "", ((1==0)||(edtMovementCreatedDate_Enabled==0) ? 0 : 1), 0, "Date selector", "Date selector", 0, 1, 0, "", 0, "", 0, 0, 0, "", "", "cursor: pointer;", "", "", "", "", "", "", "", "", 1, false, false, "", "HLP_Movement.htm");
          context.WriteHtmlTextNl( "</div>") ;
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -414,14 +413,18 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 form__cell", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtMovementQuantity_Internalname+"\"", "", "div");
+         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtMovementDescription_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtMovementQuantity_Internalname, "Quantity", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtMovementDescription_Internalname, "Description", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-         /* Single line edit */
+         /* Multiple line edit */
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 54,'',false,'',0)\"";
-         GxWebStd.gx_single_line_edit( context, edtMovementQuantity_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A127MovementQuantity), 4, 0, ".", "")), StringUtil.LTrim( ((edtMovementQuantity_Enabled!=0) ? context.localUtil.Format( (decimal)(A127MovementQuantity), "ZZZ9") : context.localUtil.Format( (decimal)(A127MovementQuantity), "ZZZ9"))), " inputmode=\"numeric\" pattern=\"[0-9]*\""+TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,54);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtMovementQuantity_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtMovementQuantity_Enabled, 0, "text", "1", 4, "chr", 1, "row", 4, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_Movement.htm");
+         ClassString = "Attribute";
+         StyleString = "";
+         ClassString = "Attribute";
+         StyleString = "";
+         GxWebStd.gx_html_textarea( context, edtMovementDescription_Internalname, A140MovementDescription, "", TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,54);\"", 0, 1, edtMovementDescription_Enabled, 0, 80, "chr", 3, "row", 0, StyleString, ClassString, "", "", "200", -1, 0, "", "", -1, true, "GeneXusUnanimo\\Description", "'"+""+"'"+",false,"+"'"+""+"'", 0, "HLP_Movement.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -500,10 +503,10 @@ namespace GeneXus.Programs {
                /* Read saved SDTs. */
                /* Read saved values. */
                Z123MovementId = (int)(Math.Round(context.localUtil.CToN( cgiGet( "Z123MovementId"), ".", ","), 18, MidpointRounding.ToEven));
-               Z124MovementType = (short)(Math.Round(context.localUtil.CToN( cgiGet( "Z124MovementType"), ".", ","), 18, MidpointRounding.ToEven));
                Z125MovementCreatedDate = context.localUtil.CToD( cgiGet( "Z125MovementCreatedDate"), 0);
+               Z124MovementType = (short)(Math.Round(context.localUtil.CToN( cgiGet( "Z124MovementType"), ".", ","), 18, MidpointRounding.ToEven));
                Z128MovementKeyAditional = (int)(Math.Round(context.localUtil.CToN( cgiGet( "Z128MovementKeyAditional"), ".", ","), 18, MidpointRounding.ToEven));
-               Z127MovementQuantity = (short)(Math.Round(context.localUtil.CToN( cgiGet( "Z127MovementQuantity"), ".", ","), 18, MidpointRounding.ToEven));
+               Z140MovementDescription = cgiGet( "Z140MovementDescription");
                IsConfirmed = (short)(Math.Round(context.localUtil.CToN( cgiGet( "IsConfirmed"), ".", ","), 18, MidpointRounding.ToEven));
                IsModified = (short)(Math.Round(context.localUtil.CToN( cgiGet( "IsModified"), ".", ","), 18, MidpointRounding.ToEven));
                Gx_mode = cgiGet( "Mode");
@@ -515,21 +518,8 @@ namespace GeneXus.Programs {
                cmbMovementType.CurrentValue = cgiGet( cmbMovementType_Internalname);
                A124MovementType = (short)(Math.Round(NumberUtil.Val( cgiGet( cmbMovementType_Internalname), "."), 18, MidpointRounding.ToEven));
                AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
-               if ( context.localUtil.VCDate( cgiGet( edtMovementCreatedDate_Internalname), 1) == 0 )
-               {
-                  GX_msglist.addItem(context.GetMessage( "GXM_faildate", new   object[]  {"Movement Created Date"}), 1, "MOVEMENTCREATEDDATE");
-                  AnyError = 1;
-                  GX_FocusControl = edtMovementCreatedDate_Internalname;
-                  AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                  wbErr = true;
-                  A125MovementCreatedDate = DateTime.MinValue;
-                  AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
-               }
-               else
-               {
-                  A125MovementCreatedDate = context.localUtil.CToD( cgiGet( edtMovementCreatedDate_Internalname), 1);
-                  AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
-               }
+               A125MovementCreatedDate = context.localUtil.CToD( cgiGet( edtMovementCreatedDate_Internalname), 1);
+               AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
                if ( ( ( context.localUtil.CToN( cgiGet( edtMovementKeyAditional_Internalname), ".", ",") < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtMovementKeyAditional_Internalname), ".", ",") > Convert.ToDecimal( 999999 )) ) )
                {
                   GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "MOVEMENTKEYADITIONAL");
@@ -545,21 +535,8 @@ namespace GeneXus.Programs {
                   A128MovementKeyAditional = (int)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementKeyAditional_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                   AssignAttri("", false, "A128MovementKeyAditional", StringUtil.LTrimStr( (decimal)(A128MovementKeyAditional), 6, 0));
                }
-               if ( ( ( context.localUtil.CToN( cgiGet( edtMovementQuantity_Internalname), ".", ",") < Convert.ToDecimal( 0 )) ) || ( ( context.localUtil.CToN( cgiGet( edtMovementQuantity_Internalname), ".", ",") > Convert.ToDecimal( 9999 )) ) )
-               {
-                  GX_msglist.addItem(context.GetMessage( "GXM_badnum", ""), 1, "MOVEMENTQUANTITY");
-                  AnyError = 1;
-                  GX_FocusControl = edtMovementQuantity_Internalname;
-                  AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-                  wbErr = true;
-                  A127MovementQuantity = 0;
-                  AssignAttri("", false, "A127MovementQuantity", StringUtil.LTrimStr( (decimal)(A127MovementQuantity), 4, 0));
-               }
-               else
-               {
-                  A127MovementQuantity = (short)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementQuantity_Internalname), ".", ","), 18, MidpointRounding.ToEven));
-                  AssignAttri("", false, "A127MovementQuantity", StringUtil.LTrimStr( (decimal)(A127MovementQuantity), 4, 0));
-               }
+               A140MovementDescription = cgiGet( edtMovementDescription_Internalname);
+               AssignAttri("", false, "A140MovementDescription", A140MovementDescription);
                /* Read subfile selected row values. */
                /* Read hidden variables. */
                GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
@@ -568,6 +545,9 @@ namespace GeneXus.Programs {
                A123MovementId = (int)(Math.Round(context.localUtil.CToN( cgiGet( edtMovementId_Internalname), ".", ","), 18, MidpointRounding.ToEven));
                AssignAttri("", false, "A123MovementId", StringUtil.LTrimStr( (decimal)(A123MovementId), 6, 0));
                forbiddenHiddens.Add("MovementId", context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"));
+               A125MovementCreatedDate = context.localUtil.CToD( cgiGet( edtMovementCreatedDate_Internalname), 1);
+               AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
+               forbiddenHiddens.Add("MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
                forbiddenHiddens.Add("Gx_mode", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")));
                hsh = cgiGet( "hsh");
                if ( ( ! ( ( A123MovementId != Z123MovementId ) ) || ( StringUtil.StrCmp(Gx_mode, "INS") == 0 ) ) && ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
@@ -812,6 +792,8 @@ namespace GeneXus.Programs {
             bttBtn_enter_Tooltiptext = "Delete";
             AssignProp("", false, bttBtn_enter_Internalname, "Tooltiptext", bttBtn_enter_Tooltiptext, true);
          }
+         edtMovementId_Visible = 0;
+         AssignProp("", false, edtMovementId_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(edtMovementId_Visible), 5, 0), true);
       }
 
       protected void E120F2( )
@@ -833,30 +815,30 @@ namespace GeneXus.Programs {
 
       protected void ZM0F22( short GX_JID )
       {
-         if ( ( GX_JID == 5 ) || ( GX_JID == 0 ) )
+         if ( ( GX_JID == 6 ) || ( GX_JID == 0 ) )
          {
             if ( ! IsIns( ) )
             {
-               Z124MovementType = T000F3_A124MovementType[0];
                Z125MovementCreatedDate = T000F3_A125MovementCreatedDate[0];
+               Z124MovementType = T000F3_A124MovementType[0];
                Z128MovementKeyAditional = T000F3_A128MovementKeyAditional[0];
-               Z127MovementQuantity = T000F3_A127MovementQuantity[0];
+               Z140MovementDescription = T000F3_A140MovementDescription[0];
             }
             else
             {
-               Z124MovementType = A124MovementType;
                Z125MovementCreatedDate = A125MovementCreatedDate;
+               Z124MovementType = A124MovementType;
                Z128MovementKeyAditional = A128MovementKeyAditional;
-               Z127MovementQuantity = A127MovementQuantity;
+               Z140MovementDescription = A140MovementDescription;
             }
          }
-         if ( GX_JID == -5 )
+         if ( GX_JID == -6 )
          {
             Z123MovementId = A123MovementId;
-            Z124MovementType = A124MovementType;
             Z125MovementCreatedDate = A125MovementCreatedDate;
+            Z124MovementType = A124MovementType;
             Z128MovementKeyAditional = A128MovementKeyAditional;
-            Z127MovementQuantity = A127MovementQuantity;
+            Z140MovementDescription = A140MovementDescription;
          }
       }
 
@@ -864,8 +846,12 @@ namespace GeneXus.Programs {
       {
          edtMovementId_Enabled = 0;
          AssignProp("", false, edtMovementId_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementId_Enabled), 5, 0), true);
+         edtMovementCreatedDate_Enabled = 0;
+         AssignProp("", false, edtMovementCreatedDate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementCreatedDate_Enabled), 5, 0), true);
          edtMovementId_Enabled = 0;
          AssignProp("", false, edtMovementId_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementId_Enabled), 5, 0), true);
+         edtMovementCreatedDate_Enabled = 0;
+         AssignProp("", false, edtMovementCreatedDate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementCreatedDate_Enabled), 5, 0), true);
          bttBtn_delete_Enabled = 0;
          AssignProp("", false, bttBtn_delete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(bttBtn_delete_Enabled), 5, 0), true);
          if ( ! (0==AV7MovementId) )
@@ -877,6 +863,11 @@ namespace GeneXus.Programs {
 
       protected void standaloneModal( )
       {
+         if ( StringUtil.StrCmp(Gx_mode, "INS") == 0 )
+         {
+            A125MovementCreatedDate = DateTimeUtil.ServerDate( context, pr_default);
+            AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
+         }
          if ( StringUtil.StrCmp(Gx_mode, "DSP") == 0 )
          {
             bttBtn_enter_Enabled = 0;
@@ -896,15 +887,15 @@ namespace GeneXus.Programs {
          if ( (pr_default.getStatus(2) != 101) )
          {
             RcdFound22 = 1;
-            A124MovementType = T000F4_A124MovementType[0];
-            AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
             A125MovementCreatedDate = T000F4_A125MovementCreatedDate[0];
             AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
+            A124MovementType = T000F4_A124MovementType[0];
+            AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
             A128MovementKeyAditional = T000F4_A128MovementKeyAditional[0];
             AssignAttri("", false, "A128MovementKeyAditional", StringUtil.LTrimStr( (decimal)(A128MovementKeyAditional), 6, 0));
-            A127MovementQuantity = T000F4_A127MovementQuantity[0];
-            AssignAttri("", false, "A127MovementQuantity", StringUtil.LTrimStr( (decimal)(A127MovementQuantity), 4, 0));
-            ZM0F22( -5) ;
+            A140MovementDescription = T000F4_A140MovementDescription[0];
+            AssignAttri("", false, "A140MovementDescription", A140MovementDescription);
+            ZM0F22( -6) ;
          }
          pr_default.close(2);
          OnLoadActions0F22( ) ;
@@ -923,18 +914,11 @@ namespace GeneXus.Programs {
          standaloneModal( ) ;
          AV11Pgmname = "Movement";
          AssignAttri("", false, "AV11Pgmname", AV11Pgmname);
-         if ( ! ( ( A124MovementType == 1 ) || ( A124MovementType == 2 ) ) )
+         if ( ! ( ( A124MovementType == 1 ) || ( A124MovementType == 2 ) || ( A124MovementType == 3 ) ) )
          {
             GX_msglist.addItem("Field Movement Type is out of range", "OutOfRange", 1, "MOVEMENTTYPE");
             AnyError = 1;
             GX_FocusControl = cmbMovementType_Internalname;
-            AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
-         }
-         if ( ! ( (DateTime.MinValue==A125MovementCreatedDate) || ( DateTimeUtil.ResetTime ( A125MovementCreatedDate ) >= DateTimeUtil.ResetTime ( context.localUtil.YMDToD( 1753, 1, 1) ) ) ) )
-         {
-            GX_msglist.addItem("Field Movement Created Date is out of range", "OutOfRange", 1, "MOVEMENTCREATEDDATE");
-            AnyError = 1;
-            GX_FocusControl = edtMovementCreatedDate_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
          }
       }
@@ -968,18 +952,18 @@ namespace GeneXus.Programs {
          pr_default.execute(1, new Object[] {A123MovementId});
          if ( (pr_default.getStatus(1) != 101) )
          {
-            ZM0F22( 5) ;
+            ZM0F22( 6) ;
             RcdFound22 = 1;
             A123MovementId = T000F3_A123MovementId[0];
             AssignAttri("", false, "A123MovementId", StringUtil.LTrimStr( (decimal)(A123MovementId), 6, 0));
-            A124MovementType = T000F3_A124MovementType[0];
-            AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
             A125MovementCreatedDate = T000F3_A125MovementCreatedDate[0];
             AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
+            A124MovementType = T000F3_A124MovementType[0];
+            AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
             A128MovementKeyAditional = T000F3_A128MovementKeyAditional[0];
             AssignAttri("", false, "A128MovementKeyAditional", StringUtil.LTrimStr( (decimal)(A128MovementKeyAditional), 6, 0));
-            A127MovementQuantity = T000F3_A127MovementQuantity[0];
-            AssignAttri("", false, "A127MovementQuantity", StringUtil.LTrimStr( (decimal)(A127MovementQuantity), 4, 0));
+            A140MovementDescription = T000F3_A140MovementDescription[0];
+            AssignAttri("", false, "A140MovementDescription", A140MovementDescription);
             Z123MovementId = A123MovementId;
             sMode22 = Gx_mode;
             Gx_mode = "DSP";
@@ -1188,19 +1172,19 @@ namespace GeneXus.Programs {
                AnyError = 1;
                return  ;
             }
-            if ( (pr_default.getStatus(0) == 101) || ( Z124MovementType != T000F2_A124MovementType[0] ) || ( DateTimeUtil.ResetTime ( Z125MovementCreatedDate ) != DateTimeUtil.ResetTime ( T000F2_A125MovementCreatedDate[0] ) ) || ( Z128MovementKeyAditional != T000F2_A128MovementKeyAditional[0] ) || ( Z127MovementQuantity != T000F2_A127MovementQuantity[0] ) )
+            if ( (pr_default.getStatus(0) == 101) || ( DateTimeUtil.ResetTime ( Z125MovementCreatedDate ) != DateTimeUtil.ResetTime ( T000F2_A125MovementCreatedDate[0] ) ) || ( Z124MovementType != T000F2_A124MovementType[0] ) || ( Z128MovementKeyAditional != T000F2_A128MovementKeyAditional[0] ) || ( StringUtil.StrCmp(Z140MovementDescription, T000F2_A140MovementDescription[0]) != 0 ) )
             {
-               if ( Z124MovementType != T000F2_A124MovementType[0] )
-               {
-                  GXUtil.WriteLog("movement:[seudo value changed for attri]"+"MovementType");
-                  GXUtil.WriteLogRaw("Old: ",Z124MovementType);
-                  GXUtil.WriteLogRaw("Current: ",T000F2_A124MovementType[0]);
-               }
                if ( DateTimeUtil.ResetTime ( Z125MovementCreatedDate ) != DateTimeUtil.ResetTime ( T000F2_A125MovementCreatedDate[0] ) )
                {
                   GXUtil.WriteLog("movement:[seudo value changed for attri]"+"MovementCreatedDate");
                   GXUtil.WriteLogRaw("Old: ",Z125MovementCreatedDate);
                   GXUtil.WriteLogRaw("Current: ",T000F2_A125MovementCreatedDate[0]);
+               }
+               if ( Z124MovementType != T000F2_A124MovementType[0] )
+               {
+                  GXUtil.WriteLog("movement:[seudo value changed for attri]"+"MovementType");
+                  GXUtil.WriteLogRaw("Old: ",Z124MovementType);
+                  GXUtil.WriteLogRaw("Current: ",T000F2_A124MovementType[0]);
                }
                if ( Z128MovementKeyAditional != T000F2_A128MovementKeyAditional[0] )
                {
@@ -1208,11 +1192,11 @@ namespace GeneXus.Programs {
                   GXUtil.WriteLogRaw("Old: ",Z128MovementKeyAditional);
                   GXUtil.WriteLogRaw("Current: ",T000F2_A128MovementKeyAditional[0]);
                }
-               if ( Z127MovementQuantity != T000F2_A127MovementQuantity[0] )
+               if ( StringUtil.StrCmp(Z140MovementDescription, T000F2_A140MovementDescription[0]) != 0 )
                {
-                  GXUtil.WriteLog("movement:[seudo value changed for attri]"+"MovementQuantity");
-                  GXUtil.WriteLogRaw("Old: ",Z127MovementQuantity);
-                  GXUtil.WriteLogRaw("Current: ",T000F2_A127MovementQuantity[0]);
+                  GXUtil.WriteLog("movement:[seudo value changed for attri]"+"MovementDescription");
+                  GXUtil.WriteLogRaw("Old: ",Z140MovementDescription);
+                  GXUtil.WriteLogRaw("Current: ",T000F2_A140MovementDescription[0]);
                }
                GX_msglist.addItem(context.GetMessage( "GXM_waschg", new   object[]  {"Movement"}), "RecordWasChanged", 1, "");
                AnyError = 1;
@@ -1241,7 +1225,7 @@ namespace GeneXus.Programs {
                   if ( AnyError == 0 )
                   {
                      /* Using cursor T000F8 */
-                     pr_default.execute(6, new Object[] {A124MovementType, A125MovementCreatedDate, A128MovementKeyAditional, A127MovementQuantity});
+                     pr_default.execute(6, new Object[] {A125MovementCreatedDate, A124MovementType, A128MovementKeyAditional, A140MovementDescription});
                      A123MovementId = T000F8_A123MovementId[0];
                      AssignAttri("", false, "A123MovementId", StringUtil.LTrimStr( (decimal)(A123MovementId), 6, 0));
                      pr_default.close(6);
@@ -1294,7 +1278,7 @@ namespace GeneXus.Programs {
                   if ( AnyError == 0 )
                   {
                      /* Using cursor T000F9 */
-                     pr_default.execute(7, new Object[] {A124MovementType, A125MovementCreatedDate, A128MovementKeyAditional, A127MovementQuantity, A123MovementId});
+                     pr_default.execute(7, new Object[] {A125MovementCreatedDate, A124MovementType, A128MovementKeyAditional, A140MovementDescription, A123MovementId});
                      pr_default.close(7);
                      pr_default.SmartCacheProvider.SetUpdated("Movement");
                      if ( (pr_default.getStatus(7) == 103) )
@@ -1506,8 +1490,8 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtMovementCreatedDate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementCreatedDate_Enabled), 5, 0), true);
          edtMovementKeyAditional_Enabled = 0;
          AssignProp("", false, edtMovementKeyAditional_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementKeyAditional_Enabled), 5, 0), true);
-         edtMovementQuantity_Enabled = 0;
-         AssignProp("", false, edtMovementQuantity_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementQuantity_Enabled), 5, 0), true);
+         edtMovementDescription_Enabled = 0;
+         AssignProp("", false, edtMovementDescription_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtMovementDescription_Enabled), 5, 0), true);
       }
 
       protected void send_integrity_lvl_hashes0F22( )
@@ -1597,6 +1581,7 @@ namespace GeneXus.Programs {
          forbiddenHiddens = new GXProperties();
          forbiddenHiddens.Add("hshsalt", "hsh"+"Movement");
          forbiddenHiddens.Add("MovementId", context.localUtil.Format( (decimal)(A123MovementId), "ZZZZZ9"));
+         forbiddenHiddens.Add("MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
          forbiddenHiddens.Add("Gx_mode", StringUtil.RTrim( context.localUtil.Format( Gx_mode, "@!")));
          GxWebStd.gx_hidden_field( context, "hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
          GXUtil.WriteLogInfo("movement:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
@@ -1608,10 +1593,10 @@ namespace GeneXus.Programs {
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
          GxWebStd.gx_hidden_field( context, "Z123MovementId", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z123MovementId), 6, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "Z124MovementType", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z124MovementType), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "Z125MovementCreatedDate", context.localUtil.DToC( Z125MovementCreatedDate, 0, "/"));
+         GxWebStd.gx_hidden_field( context, "Z124MovementType", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z124MovementType), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "Z128MovementKeyAditional", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z128MovementKeyAditional), 6, 0, ".", "")));
-         GxWebStd.gx_hidden_field( context, "Z127MovementQuantity", StringUtil.LTrim( StringUtil.NToC( (decimal)(Z127MovementQuantity), 4, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "Z140MovementDescription", Z140MovementDescription);
          GxWebStd.gx_hidden_field( context, "IsConfirmed", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsConfirmed), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "IsModified", StringUtil.LTrim( StringUtil.NToC( (decimal)(IsModified), 4, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "Mode", StringUtil.RTrim( Gx_mode));
@@ -1701,18 +1686,18 @@ namespace GeneXus.Programs {
 
       protected void InitializeNonKey0F22( )
       {
-         A124MovementType = 0;
-         AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
          A125MovementCreatedDate = DateTime.MinValue;
          AssignAttri("", false, "A125MovementCreatedDate", context.localUtil.Format(A125MovementCreatedDate, "99/99/99"));
+         A124MovementType = 0;
+         AssignAttri("", false, "A124MovementType", StringUtil.LTrimStr( (decimal)(A124MovementType), 4, 0));
          A128MovementKeyAditional = 0;
          AssignAttri("", false, "A128MovementKeyAditional", StringUtil.LTrimStr( (decimal)(A128MovementKeyAditional), 6, 0));
-         A127MovementQuantity = 0;
-         AssignAttri("", false, "A127MovementQuantity", StringUtil.LTrimStr( (decimal)(A127MovementQuantity), 4, 0));
-         Z124MovementType = 0;
+         A140MovementDescription = "";
+         AssignAttri("", false, "A140MovementDescription", A140MovementDescription);
          Z125MovementCreatedDate = DateTime.MinValue;
+         Z124MovementType = 0;
          Z128MovementKeyAditional = 0;
-         Z127MovementQuantity = 0;
+         Z140MovementDescription = "";
       }
 
       protected void InitAll0F22( )
@@ -1738,7 +1723,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20241120046189", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121520493412", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1754,7 +1739,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("movement.js", "?20241120046189", false, true);
+         context.AddJavascriptSource("movement.js", "?2024121520493412", false, true);
          /* End function include_jscripts */
       }
 
@@ -1772,7 +1757,7 @@ namespace GeneXus.Programs {
          cmbMovementType_Internalname = "MOVEMENTTYPE";
          edtMovementCreatedDate_Internalname = "MOVEMENTCREATEDDATE";
          edtMovementKeyAditional_Internalname = "MOVEMENTKEYADITIONAL";
-         edtMovementQuantity_Internalname = "MOVEMENTQUANTITY";
+         edtMovementDescription_Internalname = "MOVEMENTDESCRIPTION";
          divFormcontainer_Internalname = "FORMCONTAINER";
          bttBtn_enter_Internalname = "BTN_ENTER";
          bttBtn_cancel_Internalname = "BTN_CANCEL";
@@ -1801,16 +1786,16 @@ namespace GeneXus.Programs {
          bttBtn_enter_Caption = "Confirm";
          bttBtn_enter_Enabled = 1;
          bttBtn_enter_Visible = 1;
-         edtMovementQuantity_Jsonclick = "";
-         edtMovementQuantity_Enabled = 1;
+         edtMovementDescription_Enabled = 1;
          edtMovementKeyAditional_Jsonclick = "";
          edtMovementKeyAditional_Enabled = 1;
          edtMovementCreatedDate_Jsonclick = "";
-         edtMovementCreatedDate_Enabled = 1;
+         edtMovementCreatedDate_Enabled = 0;
          cmbMovementType_Jsonclick = "";
          cmbMovementType.Enabled = 1;
          edtMovementId_Jsonclick = "";
          edtMovementId_Enabled = 0;
+         edtMovementId_Visible = 1;
          bttBtn_select_Visible = 1;
          bttBtn_last_Visible = 1;
          bttBtn_next_Visible = 1;
@@ -1834,6 +1819,7 @@ namespace GeneXus.Programs {
          cmbMovementType.WebTags = "";
          cmbMovementType.addItem("1", "Product Discard", 0);
          cmbMovementType.addItem("2", "Product Added", 0);
+         cmbMovementType.addItem("3", "Invoice Cancel", 0);
          if ( cmbMovementType.ItemCount > 0 )
          {
             A124MovementType = (short)(Math.Round(NumberUtil.Val( cmbMovementType.getValidValue(StringUtil.Trim( StringUtil.Str( (decimal)(A124MovementType), 4, 0))), "."), 18, MidpointRounding.ToEven));
@@ -1871,7 +1857,7 @@ namespace GeneXus.Programs {
       {
          setEventMetadata("ENTER","{handler:'UserMainFullajax',iparms:[{postForm:true},{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV7MovementId',fld:'vMOVEMENTID',pic:'ZZZZZ9',hsh:true}]");
          setEventMetadata("ENTER",",oparms:[]}");
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV9TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true},{av:'AV7MovementId',fld:'vMOVEMENTID',pic:'ZZZZZ9',hsh:true},{av:'A123MovementId',fld:'MOVEMENTID',pic:'ZZZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV9TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true},{av:'AV7MovementId',fld:'vMOVEMENTID',pic:'ZZZZZ9',hsh:true},{av:'A123MovementId',fld:'MOVEMENTID',pic:'ZZZZZ9'},{av:'A125MovementCreatedDate',fld:'MOVEMENTCREATEDDATE',pic:''}]");
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("AFTER TRN","{handler:'E120F2',iparms:[{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV9TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true}]");
          setEventMetadata("AFTER TRN",",oparms:[]}");
@@ -1879,8 +1865,6 @@ namespace GeneXus.Programs {
          setEventMetadata("VALID_MOVEMENTID",",oparms:[]}");
          setEventMetadata("VALID_MOVEMENTTYPE","{handler:'Valid_Movementtype',iparms:[]");
          setEventMetadata("VALID_MOVEMENTTYPE",",oparms:[]}");
-         setEventMetadata("VALID_MOVEMENTCREATEDDATE","{handler:'Valid_Movementcreateddate',iparms:[]");
-         setEventMetadata("VALID_MOVEMENTCREATEDDATE",",oparms:[]}");
          return  ;
       }
 
@@ -1904,6 +1888,7 @@ namespace GeneXus.Programs {
          sPrefix = "";
          wcpOGx_mode = "";
          Z125MovementCreatedDate = DateTime.MinValue;
+         Z140MovementDescription = "";
          scmdbuf = "";
          gxfirstwebparm = "";
          gxfirstwebparm_bkp = "";
@@ -1922,6 +1907,7 @@ namespace GeneXus.Programs {
          bttBtn_last_Jsonclick = "";
          bttBtn_select_Jsonclick = "";
          A125MovementCreatedDate = DateTime.MinValue;
+         A140MovementDescription = "";
          bttBtn_enter_Jsonclick = "";
          bttBtn_cancel_Jsonclick = "";
          bttBtn_delete_Jsonclick = "";
@@ -1938,23 +1924,23 @@ namespace GeneXus.Programs {
          AV9TrnContext = new GeneXus.Programs.general.ui.SdtTransactionContext(context);
          AV10WebSession = context.GetSession();
          T000F4_A123MovementId = new int[1] ;
-         T000F4_A124MovementType = new short[1] ;
          T000F4_A125MovementCreatedDate = new DateTime[] {DateTime.MinValue} ;
+         T000F4_A124MovementType = new short[1] ;
          T000F4_A128MovementKeyAditional = new int[1] ;
-         T000F4_A127MovementQuantity = new short[1] ;
+         T000F4_A140MovementDescription = new string[] {""} ;
          T000F5_A123MovementId = new int[1] ;
          T000F3_A123MovementId = new int[1] ;
-         T000F3_A124MovementType = new short[1] ;
          T000F3_A125MovementCreatedDate = new DateTime[] {DateTime.MinValue} ;
+         T000F3_A124MovementType = new short[1] ;
          T000F3_A128MovementKeyAditional = new int[1] ;
-         T000F3_A127MovementQuantity = new short[1] ;
+         T000F3_A140MovementDescription = new string[] {""} ;
          T000F6_A123MovementId = new int[1] ;
          T000F7_A123MovementId = new int[1] ;
          T000F2_A123MovementId = new int[1] ;
-         T000F2_A124MovementType = new short[1] ;
          T000F2_A125MovementCreatedDate = new DateTime[] {DateTime.MinValue} ;
+         T000F2_A124MovementType = new short[1] ;
          T000F2_A128MovementKeyAditional = new int[1] ;
-         T000F2_A127MovementQuantity = new short[1] ;
+         T000F2_A140MovementDescription = new string[] {""} ;
          T000F8_A123MovementId = new int[1] ;
          T000F11_A123MovementId = new int[1] ;
          sDynURL = "";
@@ -1963,13 +1949,13 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.movement__default(),
             new Object[][] {
                 new Object[] {
-               T000F2_A123MovementId, T000F2_A124MovementType, T000F2_A125MovementCreatedDate, T000F2_A128MovementKeyAditional, T000F2_A127MovementQuantity
+               T000F2_A123MovementId, T000F2_A125MovementCreatedDate, T000F2_A124MovementType, T000F2_A128MovementKeyAditional, T000F2_A140MovementDescription
                }
                , new Object[] {
-               T000F3_A123MovementId, T000F3_A124MovementType, T000F3_A125MovementCreatedDate, T000F3_A128MovementKeyAditional, T000F3_A127MovementQuantity
+               T000F3_A123MovementId, T000F3_A125MovementCreatedDate, T000F3_A124MovementType, T000F3_A128MovementKeyAditional, T000F3_A140MovementDescription
                }
                , new Object[] {
-               T000F4_A123MovementId, T000F4_A124MovementType, T000F4_A125MovementCreatedDate, T000F4_A128MovementKeyAditional, T000F4_A127MovementQuantity
+               T000F4_A123MovementId, T000F4_A125MovementCreatedDate, T000F4_A124MovementType, T000F4_A128MovementKeyAditional, T000F4_A140MovementDescription
                }
                , new Object[] {
                T000F5_A123MovementId
@@ -1996,7 +1982,6 @@ namespace GeneXus.Programs {
       }
 
       private short Z124MovementType ;
-      private short Z127MovementQuantity ;
       private short GxWebError ;
       private short gxcookieaux ;
       private short IsConfirmed ;
@@ -2005,7 +1990,6 @@ namespace GeneXus.Programs {
       private short nKeyPressed ;
       private short initialized ;
       private short A124MovementType ;
-      private short A127MovementQuantity ;
       private short RcdFound22 ;
       private short GX_JID ;
       private short nIsDirty_22 ;
@@ -2021,12 +2005,13 @@ namespace GeneXus.Programs {
       private int bttBtn_next_Visible ;
       private int bttBtn_last_Visible ;
       private int bttBtn_select_Visible ;
+      private int edtMovementId_Visible ;
       private int A123MovementId ;
       private int edtMovementId_Enabled ;
       private int edtMovementCreatedDate_Enabled ;
       private int A128MovementKeyAditional ;
       private int edtMovementKeyAditional_Enabled ;
-      private int edtMovementQuantity_Enabled ;
+      private int edtMovementDescription_Enabled ;
       private int bttBtn_enter_Visible ;
       private int bttBtn_enter_Enabled ;
       private int bttBtn_cancel_Visible ;
@@ -2070,8 +2055,7 @@ namespace GeneXus.Programs {
       private string edtMovementCreatedDate_Jsonclick ;
       private string edtMovementKeyAditional_Internalname ;
       private string edtMovementKeyAditional_Jsonclick ;
-      private string edtMovementQuantity_Internalname ;
-      private string edtMovementQuantity_Jsonclick ;
+      private string edtMovementDescription_Internalname ;
       private string bttBtn_enter_Internalname ;
       private string bttBtn_enter_Caption ;
       private string bttBtn_enter_Jsonclick ;
@@ -2098,29 +2082,31 @@ namespace GeneXus.Programs {
       private bool toggleJsOutput ;
       private bool wbErr ;
       private bool returnInSub ;
+      private string Z140MovementDescription ;
+      private string A140MovementDescription ;
       private IGxSession AV10WebSession ;
       private GXProperties forbiddenHiddens ;
       private IGxDataStore dsDefault ;
       private GXCombobox cmbMovementType ;
       private IDataStoreProvider pr_default ;
       private int[] T000F4_A123MovementId ;
-      private short[] T000F4_A124MovementType ;
       private DateTime[] T000F4_A125MovementCreatedDate ;
+      private short[] T000F4_A124MovementType ;
       private int[] T000F4_A128MovementKeyAditional ;
-      private short[] T000F4_A127MovementQuantity ;
+      private string[] T000F4_A140MovementDescription ;
       private int[] T000F5_A123MovementId ;
       private int[] T000F3_A123MovementId ;
-      private short[] T000F3_A124MovementType ;
       private DateTime[] T000F3_A125MovementCreatedDate ;
+      private short[] T000F3_A124MovementType ;
       private int[] T000F3_A128MovementKeyAditional ;
-      private short[] T000F3_A127MovementQuantity ;
+      private string[] T000F3_A140MovementDescription ;
       private int[] T000F6_A123MovementId ;
       private int[] T000F7_A123MovementId ;
       private int[] T000F2_A123MovementId ;
-      private short[] T000F2_A124MovementType ;
       private DateTime[] T000F2_A125MovementCreatedDate ;
+      private short[] T000F2_A124MovementType ;
       private int[] T000F2_A128MovementKeyAditional ;
-      private short[] T000F2_A127MovementQuantity ;
+      private string[] T000F2_A140MovementDescription ;
       private int[] T000F8_A123MovementId ;
       private int[] T000F11_A123MovementId ;
       private GXWebForm Form ;
@@ -2177,17 +2163,17 @@ namespace GeneXus.Programs {
           };
           Object[] prmT000F8;
           prmT000F8 = new Object[] {
-          new ParDef("@MovementType",GXType.Int16,4,0) ,
           new ParDef("@MovementCreatedDate",GXType.Date,8,0) ,
+          new ParDef("@MovementType",GXType.Int16,4,0) ,
           new ParDef("@MovementKeyAditional",GXType.Int32,6,0) ,
-          new ParDef("@MovementQuantity",GXType.Int16,4,0)
+          new ParDef("@MovementDescription",GXType.NVarChar,200,0)
           };
           Object[] prmT000F9;
           prmT000F9 = new Object[] {
-          new ParDef("@MovementType",GXType.Int16,4,0) ,
           new ParDef("@MovementCreatedDate",GXType.Date,8,0) ,
+          new ParDef("@MovementType",GXType.Int16,4,0) ,
           new ParDef("@MovementKeyAditional",GXType.Int32,6,0) ,
-          new ParDef("@MovementQuantity",GXType.Int16,4,0) ,
+          new ParDef("@MovementDescription",GXType.NVarChar,200,0) ,
           new ParDef("@MovementId",GXType.Int32,6,0)
           };
           Object[] prmT000F10;
@@ -2198,14 +2184,14 @@ namespace GeneXus.Programs {
           prmT000F11 = new Object[] {
           };
           def= new CursorDef[] {
-              new CursorDef("T000F2", "SELECT [MovementId], [MovementType], [MovementCreatedDate], [MovementKeyAditional], [MovementQuantity] FROM [Movement] WITH (UPDLOCK) WHERE [MovementId] = @MovementId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000F2,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000F3", "SELECT [MovementId], [MovementType], [MovementCreatedDate], [MovementKeyAditional], [MovementQuantity] FROM [Movement] WHERE [MovementId] = @MovementId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000F3,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000F4", "SELECT TM1.[MovementId], TM1.[MovementType], TM1.[MovementCreatedDate], TM1.[MovementKeyAditional], TM1.[MovementQuantity] FROM [Movement] TM1 WHERE TM1.[MovementId] = @MovementId ORDER BY TM1.[MovementId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F4,100, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("T000F2", "SELECT [MovementId], [MovementCreatedDate], [MovementType], [MovementKeyAditional], [MovementDescription] FROM [Movement] WITH (UPDLOCK) WHERE [MovementId] = @MovementId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000F2,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000F3", "SELECT [MovementId], [MovementCreatedDate], [MovementType], [MovementKeyAditional], [MovementDescription] FROM [Movement] WHERE [MovementId] = @MovementId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000F3,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000F4", "SELECT TM1.[MovementId], TM1.[MovementCreatedDate], TM1.[MovementType], TM1.[MovementKeyAditional], TM1.[MovementDescription] FROM [Movement] TM1 WHERE TM1.[MovementId] = @MovementId ORDER BY TM1.[MovementId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F4,100, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000F5", "SELECT [MovementId] FROM [Movement] WHERE [MovementId] = @MovementId  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F5,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000F6", "SELECT TOP 1 [MovementId] FROM [Movement] WHERE ( [MovementId] > @MovementId) ORDER BY [MovementId]  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F6,1, GxCacheFrequency.OFF ,true,true )
              ,new CursorDef("T000F7", "SELECT TOP 1 [MovementId] FROM [Movement] WHERE ( [MovementId] < @MovementId) ORDER BY [MovementId] DESC  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F7,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T000F8", "INSERT INTO [Movement]([MovementType], [MovementCreatedDate], [MovementKeyAditional], [MovementQuantity]) VALUES(@MovementType, @MovementCreatedDate, @MovementKeyAditional, @MovementQuantity); SELECT SCOPE_IDENTITY()",true, GxErrorMask.GX_NOMASK, false, this,prmT000F8,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T000F9", "UPDATE [Movement] SET [MovementType]=@MovementType, [MovementCreatedDate]=@MovementCreatedDate, [MovementKeyAditional]=@MovementKeyAditional, [MovementQuantity]=@MovementQuantity  WHERE [MovementId] = @MovementId", GxErrorMask.GX_NOMASK,prmT000F9)
+             ,new CursorDef("T000F8", "INSERT INTO [Movement]([MovementCreatedDate], [MovementType], [MovementKeyAditional], [MovementDescription]) VALUES(@MovementCreatedDate, @MovementType, @MovementKeyAditional, @MovementDescription); SELECT SCOPE_IDENTITY()",true, GxErrorMask.GX_NOMASK, false, this,prmT000F8,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000F9", "UPDATE [Movement] SET [MovementCreatedDate]=@MovementCreatedDate, [MovementType]=@MovementType, [MovementKeyAditional]=@MovementKeyAditional, [MovementDescription]=@MovementDescription  WHERE [MovementId] = @MovementId", GxErrorMask.GX_NOMASK,prmT000F9)
              ,new CursorDef("T000F10", "DELETE FROM [Movement]  WHERE [MovementId] = @MovementId", GxErrorMask.GX_NOMASK,prmT000F10)
              ,new CursorDef("T000F11", "SELECT [MovementId] FROM [Movement] ORDER BY [MovementId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000F11,100, GxCacheFrequency.OFF ,true,false )
           };
@@ -2220,24 +2206,24 @@ namespace GeneXus.Programs {
        {
              case 0 :
                 ((int[]) buf[0])[0] = rslt.getInt(1);
-                ((short[]) buf[1])[0] = rslt.getShort(2);
-                ((DateTime[]) buf[2])[0] = rslt.getGXDate(3);
+                ((DateTime[]) buf[1])[0] = rslt.getGXDate(2);
+                ((short[]) buf[2])[0] = rslt.getShort(3);
                 ((int[]) buf[3])[0] = rslt.getInt(4);
-                ((short[]) buf[4])[0] = rslt.getShort(5);
+                ((string[]) buf[4])[0] = rslt.getVarchar(5);
                 return;
              case 1 :
                 ((int[]) buf[0])[0] = rslt.getInt(1);
-                ((short[]) buf[1])[0] = rslt.getShort(2);
-                ((DateTime[]) buf[2])[0] = rslt.getGXDate(3);
+                ((DateTime[]) buf[1])[0] = rslt.getGXDate(2);
+                ((short[]) buf[2])[0] = rslt.getShort(3);
                 ((int[]) buf[3])[0] = rslt.getInt(4);
-                ((short[]) buf[4])[0] = rslt.getShort(5);
+                ((string[]) buf[4])[0] = rslt.getVarchar(5);
                 return;
              case 2 :
                 ((int[]) buf[0])[0] = rslt.getInt(1);
-                ((short[]) buf[1])[0] = rslt.getShort(2);
-                ((DateTime[]) buf[2])[0] = rslt.getGXDate(3);
+                ((DateTime[]) buf[1])[0] = rslt.getGXDate(2);
+                ((short[]) buf[2])[0] = rslt.getShort(3);
                 ((int[]) buf[3])[0] = rslt.getInt(4);
-                ((short[]) buf[4])[0] = rslt.getShort(5);
+                ((string[]) buf[4])[0] = rslt.getVarchar(5);
                 return;
              case 3 :
                 ((int[]) buf[0])[0] = rslt.getInt(1);

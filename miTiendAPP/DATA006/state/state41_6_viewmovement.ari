@@ -33,4 +33,6 @@ ij_usercontrol_directory_i(shared).
  
  
  
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  

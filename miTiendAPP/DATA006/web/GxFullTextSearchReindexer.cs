@@ -27,9 +27,6 @@ namespace GeneXus.Programs {
          obj = new SdtRole(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
-         obj = new SdtInvoice(context);
-         trn = obj.getTransaction();
-         result = trn.Reindex();
          obj = new SdtUser(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
@@ -43,6 +40,12 @@ namespace GeneXus.Programs {
          trn = obj.getTransaction();
          result = trn.Reindex();
          obj = new SdtPermission(context);
+         trn = obj.getTransaction();
+         result = trn.Reindex();
+         obj = new SdtMovement(context);
+         trn = obj.getTransaction();
+         result = trn.Reindex();
+         obj = new SdtInvoice(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
          return 1 ;

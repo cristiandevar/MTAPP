@@ -15,6 +15,7 @@ ext_sdt_map_i(41,'GeneXus.dll',[ 0,12,[ 104,106 ] ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,12,0 ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,13,0 ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,14,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,15,0 ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,2,0 ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,4,0 ]).
 ext_sdt_map_i(41,'GeneXus.dll',[ 0,5,0 ]).
@@ -26,6 +27,7 @@ ext_sdt_map_i(41,'GeneXus.dll',[ 0,7,0 ]).
 sdt_map_i(41,'Invoice',[ 0,6,0 ]).
 sdt_map_i(41,'Invoice.Detail',[ 0,6,[ 20,25 ] ]).
 sdt_map_i(41,'Invoice.PaymentMethod',[ 0,6,[ 20,118 ] ]).
+sdt_map_i(41,'Movement',[ 0,15,0 ]).
 sdt_map_i(41,'PaymentMethod',[ 0,14,0 ]).
 sdt_map_i(41,'Permission',[ 0,13,0 ]).
 sdt_map_i(41,'Product',[ 0,5,0 ]).

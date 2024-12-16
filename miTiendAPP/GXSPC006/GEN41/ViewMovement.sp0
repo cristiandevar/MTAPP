@@ -196,6 +196,7 @@ enumerated_i(6,124,144).
  
 enum_value_i(6,144,'1','ProductDiscard','"Product Discard"',[ none ]).
 enum_value_i(6,144,'2','ProductAdded','"Product Added"',[ none ]).
+enum_value_i(6,144,'3','InvoiceCancel','"Invoice Cancel"',[ none ]).
  
 enum_value_info_i(6,144,'MovementType').
  
@@ -203,6 +204,7 @@ enum_type_i(6,144,int,4,0).
  
 dom_info_i(144,[ 'MovementType' ]).
 dom_info_i(92,[ 'Id' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
 dom_info_i(96,[ 'General\TabCode' ]).
  
  
@@ -425,7 +427,7 @@ html_comp_i(15,'Captionposition','None',v,[ str ]).
 html_comp_i(15,'Captionvalue','Type',d,[ str ]).
 html_comp_i(15,'Layoutclass','',v,[ str ]).
 html_comp_i(15,'Controltype',0,d,[ num ]).
-html_comp_i(15,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],d,[ values ]).
+html_comp_i(15,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],d,[ values ]).
 html_comp_i(15,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(15,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(15,'Emptyasnull','Yes',d,[ str ]).
@@ -558,9 +560,10 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-ctrl_info_i(1,15,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],[ '' ] ]).
+ctrl_info_i(1,15,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],[ '' ] ]).
  
  
+calling_main_i(1,37).
  
 att_prop_i(6,124,'ExternalName','MovementType',d).
 att_prop_i(6,124,'ExternalNamespace',mtaKB,d).
@@ -623,6 +626,8 @@ pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Unsecure'
  
  
  
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  
  
  

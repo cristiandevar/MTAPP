@@ -35,4 +35,6 @@ module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
 module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  

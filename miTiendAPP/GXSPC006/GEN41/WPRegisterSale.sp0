@@ -419,11 +419,11 @@ index_i(20,[ 'IPAYMENTMETHOD',u,[ 115 ],'IPaymentMethod' ]).
  
  
  
-function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],yes,udp,o(1,'RoundValue'),[],300,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],[ [ t([ t('Sdtinvoiceaddpaymentmethod',23),[ t('item(',1),t('Position',23),t(')',4) ],t('Invoicepaymentmethodimport',3) ],29),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethodrecarge',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
-function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],yes,udp,o(1,'RoundValue'),[],299,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],[ [ t([ t('Sdtinvoiceaddpaymentmethod',23),[ t('item(',1),t('Position',23),t(')',4) ],t('Invoicepaymentmethodimport',3) ],29),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethoddiscount',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
-function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],yes,udp,o(1,'RoundValue'),[],293,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],[ [ t('Invoicepaymentmethodimport',23),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethodrecarge',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
-function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],yes,udp,o(1,'RoundValue'),[],292,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],[ [ t('Invoicepaymentmethodimport',23),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethoddiscount',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
-function_i(2,'Car',yes,udp,o(1,'RegisterSaleSelectAll'),[],187,'Car',[ [ t('Code',23),t(',',7),t('Name',23),t(',',7),t('nullvalue(',1),t('Supplier',23),t(')',4),t(',',7),t('Brand',23),t(',',7),t('Sector',23) ] ]).
+function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],yes,udp,o(1,'RoundValue'),[],301,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],[ [ t([ t('Sdtinvoiceaddpaymentmethod',23),[ t('item(',1),t('Position',23),t(')',4) ],t('Invoicepaymentmethodimport',3) ],29),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethodrecarge',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],yes,udp,o(1,'RoundValue'),[],300,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],[ [ t([ t('Sdtinvoiceaddpaymentmethod',23),[ t('item(',1),t('Position',23),t(')',4) ],t('Invoicepaymentmethodimport',3) ],29),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethoddiscount',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],yes,udp,o(1,'RoundValue'),[],294,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],[ [ t('Invoicepaymentmethodimport',23),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethodrecarge',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(2,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],yes,udp,o(1,'RoundValue'),[],293,[ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],[ [ t('Invoicepaymentmethodimport',23),t(*,6),t('(',0),t([ t('Paymentmethod',23),t('Paymentmethoddiscount',3) ],29),t(/,6),t('100',3),t(')',4) ] ]).
+function_i(2,'Car',yes,udp,o(1,'RegisterSaleSelectAll'),[],188,'Car',[ [ t('Code',23),t(',',7),t('Name',23),t(',',7),t('nullvalue(',1),t('Supplier',23),t(')',4),t(',',7),t('Brand',23),t(',',7),t('Sector',23) ] ]).
 function_i(2,'Caritem',yes,udp,o(1,'RegisterSaleChargeProduct'),[],34,'Caritem',[ [ t('Productid',23) ] ]).
  
  
@@ -485,24 +485,24 @@ b_group_i(2,3,lit,0,63,87).
 b_group_i(2,4,lit,0,88,104).
 b_group_i(2,5,lit,0,105,115).
 b_group_i(2,6,lit,0,116,127).
-b_group_i(2,7,lit,0,128,146).
-b_group_i(2,8,lit,0,147,152).
-b_group_i(2,9,lit,0,153,160).
-b_group_i(2,10,lit,0,161,170).
-b_group_i(2,11,lit,0,171,175).
-b_group_i(2,12,lit,0,176,180).
-b_group_i(2,13,lit,0,181,185).
-b_group_i(2,14,lit,0,186,193).
-b_group_i(2,15,lit,0,194,213).
-b_group_i(2,16,lit,0,214,278).
-b_group_i(2,17,lit,0,279,314).
-b_group_i(2,18,lit,0,315,319).
-b_group_i(2,19,lit,0,320,326).
-b_group_i(2,20,lit,0,327,354).
-b_group_i(2,21,lit,0,355,370).
-b_group_i(2,22,lit,0,371,384).
-b_group_i(2,23,lit,0,385,396).
-b_group_i(2,24,lit,0,397,0).
+b_group_i(2,7,lit,0,128,147).
+b_group_i(2,8,lit,0,148,153).
+b_group_i(2,9,lit,0,154,161).
+b_group_i(2,10,lit,0,162,171).
+b_group_i(2,11,lit,0,172,176).
+b_group_i(2,12,lit,0,177,181).
+b_group_i(2,13,lit,0,182,186).
+b_group_i(2,14,lit,0,187,194).
+b_group_i(2,15,lit,0,195,214).
+b_group_i(2,16,lit,0,215,279).
+b_group_i(2,17,lit,0,280,315).
+b_group_i(2,18,lit,0,316,320).
+b_group_i(2,19,lit,0,321,327).
+b_group_i(2,20,lit,0,328,355).
+b_group_i(2,21,lit,0,356,371).
+b_group_i(2,22,lit,0,372,385).
+b_group_i(2,23,lit,0,386,397).
+b_group_i(2,24,lit,0,398,0).
 b_group_i(3,1,lit,0,1003,1005).
 b_group_i(4,1,lit,0,1006,1008).
  
@@ -596,170 +596,171 @@ b_line_i(140,2,7,cmd,33,[ t('',107,140,0),t([ t('Tablepaymentmethod',3,33,0),t('
 b_line_i(141,2,7,cmd,33,[ t('',145,141,0),t('''CLEARPAYMENTMETHOD''',3,141,5) ]).
 b_line_i(142,2,7,cmd,33,[ t('',107,142,0),t('Sdtproductfiltered',23,33,0),t(=,10,33,0),t([ 'SDTProductsFiltered',[ t('(',0,142,27),t(')',4,142,28) ],n ],46,33,0) ]).
 b_line_i(143,2,7,cmd,33,[ t('',104,143,0),t(o(1,'InvoiceRegisterGetProductsFiltered'),28,33,2),t('Code',23,33,37),t(',',7,33,0),t('Name',23,33,44),t(',',7,33,0),t('nullvalue(',1,33,51),t('Supplier',23,33,62),t(')',4,33,71),t(',',7,33,0),t('Sector',23,33,74),t(',',7,33,0),t('Brand',23,33,83),t(',',7,33,0),t('Sdtproductfiltered',23,33,90) ]).
-b_line_i(144,2,7,cmd,33,[ t('',147,144,0) ]).
-b_line_i(146,2,7,cmd,33,[ t('',146,146,0),t([ t('Carproducts',3,146,7),t('Refresh',3,146,19) ],29,146,19) ]).
-b_line_i(147,2,8,cmd,33,[ t('',145,147,0),t('''CALCULATETOTAL''',3,147,5) ]).
-b_line_i(148,2,8,cmd,33,[ t('',145,148,0),t('''CALCULATEREMAINING''',3,148,5) ]).
-b_line_i(149,2,8,cmd,33,[ t('',107,149,0),t([ t('Remove',23,149,2),t('fromimage(',1,149,10) ],31,149,2),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,33,21),t(')',4,33,33) ]).
-b_line_i([ 149,1 ],2,8,cmd,33,[ t('',107,149,0),t('Remove_GXI',23,33,0),t(=,10,33,0),t('urifromurl(',1,33,0),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,33,0),t(')',4,33,0) ]).
-b_line_i(150,2,8,cmd,34,[ t('',147,150,0) ]).
-b_line_i(152,2,8,cmd,34,[ t('',143,152,0),t('''CALCULATETOTAL''',3,152,5) ]).
-b_line_i(153,2,9,cmd,34,[ t('',107,153,0),t('Total',23,34,0),t(=,10,34,0),t('0',3,34,0) ]).
-b_line_i(154,2,9,cmd,34,[ t('',107,154,0),t('GXV23',23,34,0),t(=,10,34,0),t(1,3,34,0) ]).
-b_line_i([ 154,2 ],2,9,cmd,34,[ t('',114,154,0),t('GXV23',23,34,0),t(<=,10,34,0),t([ t('Car',23,154,18),t('Count',3,154,0) ],29,154,0) ]).
-b_line_i([ 154,3 ],2,9,cmd,34,[ t('',107,154,0),t('Caritem',23,34,0),t(=,10,34,0),t([ t('Car',23,34,0),t('item(',1,34,0) ],31,34,0),t('GXV23',23,34,0),t(')',4,34,0) ]).
-b_line_i(155,2,9,cmd,35,[ t('',107,155,0),t([ t('Caritem',23,35,0),t('Subtotal',3,35,0) ],29,35,0),t(=,10,35,0),t([ t('Caritem',23,35,0),t('Quantity',3,35,0) ],29,35,0),t(*,6,35,0),t([ t('Caritem',23,35,0),t('Unitprice',3,35,0) ],29,35,0) ]).
-b_line_i(156,2,9,cmd,35,[ t('',107,156,0),t('Total',23,35,0),t(=,10,35,0),t('Total',23,35,0),t(+,5,35,0),t('(',0,35,0),t([ t('Caritem',23,35,0),t('Subtotal',3,35,0) ],29,35,0),t(')',4,35,0) ]).
-b_line_i([ 157,1 ],2,9,cmd,35,[ t('',107,157,0),t('GXV23',23,35,0),t(=,10,35,0),t('GXV23',23,35,0),t(+,5,35,0),t(1,3,35,0) ]).
-b_line_i([ 157,2 ],2,9,cmd,35,[ t('',115,157,0) ]).
-b_line_i(158,2,9,cmd,36,[ t('',144,158,0) ]).
-b_line_i(160,2,9,cmd,36,[ t('',146,160,0),t([ t('Brand',23,160,7),t('Controlvaluechanged',3,160,14) ],29,160,14) ]).
-b_line_i(162,2,10,cmd,36,[ t('',107,162,0),t([ t('Allproductsfiltered',3,162,2),t('refresh(',1,162,22) ],31,162,22),t(')',4,36,31) ]).
-b_line_i(163,2,10,cmd,36,[ t('',147,163,0) ]).
-b_line_i(170,2,10,cmd,36,[ t('',146,170,0),t([ t('Name',23,170,7),t('Controlvaluechanging',3,170,13) ],29,170,13),t('(',0,36,33),t('Newname',23,36,34),t(')',4,36,42) ]).
-b_line_i(172,2,11,cmd,36,[ t('',107,172,0),t([ t('Allproductsfiltered',3,172,2),t('refresh(',1,172,22) ],31,172,22),t(')',4,36,31) ]).
-b_line_i(173,2,11,cmd,36,[ t('',147,173,0) ]).
-b_line_i(175,2,11,cmd,36,[ t('',146,175,0),t([ t('Code',23,175,7),t('Controlvaluechanging',3,175,13) ],29,175,13),t('(',0,36,33),t('Newcode',23,36,34),t(')',4,36,42) ]).
-b_line_i(177,2,12,cmd,36,[ t('',107,177,0),t([ t('Allproductsfiltered',3,177,2),t('refresh(',1,177,22) ],31,177,22),t(')',4,36,31) ]).
-b_line_i(178,2,12,cmd,36,[ t('',147,178,0) ]).
-b_line_i(180,2,12,cmd,36,[ t('',146,180,0),t([ t('Sector',23,180,7),t('Controlvaluechanged',3,180,15) ],29,180,15) ]).
-b_line_i(182,2,13,cmd,36,[ t('',107,182,0),t([ t('Allproductsfiltered',3,182,2),t('refresh(',1,182,22) ],31,182,22),t(')',4,36,31) ]).
-b_line_i(183,2,13,cmd,36,[ t('',147,183,0) ]).
-b_line_i(185,2,13,cmd,36,[ t('',146,185,0),t('''SelectAll''',3,185,7) ]).
-b_line_i(186,2,14,cmd,36,[ t('',107,186,0),t('Car',23,36,0),t(=,10,36,0),t([ 'SDTCarProducts',[ t('(',0,186,12),t(')',4,186,13) ],n ],46,36,0) ]).
-b_line_i(187,2,14,cmd,36,[ t('',107,187,0),t('Car',23,36,0),t(=,10,36,0),t('udp(',1,36,0),t('Car',3,36,0),t(187,3,36,0),t('Code',23,36,0),t(',',7,36,0),t('Name',23,36,0),t(',',7,36,0),t('nullvalue(',1,36,0),t('Supplier',23,36,0),t(')',4,36,0),t(',',7,36,0),t('Brand',23,36,0),t(',',7,36,0),t('Sector',23,36,0),t(')',4,36,0) ]).
-b_line_i(188,2,14,cmd,36,[ t('',107,188,0),t([ t('Tablenewsale',3,36,0),t('Visible',3,36,0) ],29,36,0),t(=,10,36,0),t('TRUE',40,36,0) ]).
-b_line_i(189,2,14,cmd,36,[ t('',107,189,0),t([ t('Tablepaymentmethod',3,36,0),t('Visible',3,36,0) ],29,36,0),t(=,10,36,0),t('TRUE',40,36,0) ]).
-b_line_i(190,2,14,cmd,36,[ t('',145,190,0),t('''CLEARPAYMENTMETHOD''',3,190,5) ]).
-b_line_i(191,2,14,cmd,36,[ t('',147,191,0) ]).
-b_line_i(193,2,14,cmd,36,[ t('',143,193,0),t('''CONTROL''',3,193,5) ]).
-b_line_i(194,2,15,cmd,36,[ t('',107,194,0),t('GXV24',23,36,0),t(=,10,36,0),t(1,3,36,0) ]).
-b_line_i([ 194,2 ],2,15,cmd,36,[ t('',114,194,0),t('GXV24',23,36,0),t(<=,10,36,0),t([ t('Car',23,194,18),t('Count',3,194,0) ],29,194,0) ]).
-b_line_i([ 194,3 ],2,15,cmd,36,[ t('',107,194,0),t('Caritem',23,36,0),t(=,10,36,0),t([ t('Car',23,36,0),t('item(',1,36,0) ],31,36,0),t('GXV24',23,36,0),t(')',4,36,0) ]).
-b_line_i(195,2,15,cmd,37,[ t('',109,195,0),t([ t('Caritem',23,195,6),t('Quantity',3,195,15) ],29,195,15),t(=,10,37,24),t('0',3,37,26),t('.OR.',9,37,28),t([ t('Caritem',23,195,33),t('Quantity',3,195,42) ],29,195,42),t(>,10,37,51),t([ t('Caritem',23,195,53),t('Stock',3,195,62) ],29,195,62) ]).
-b_line_i(196,2,15,cmd,37,[ t('',107,196,0),t('Allok',23,37,0),t(=,10,37,0),t('FALSE',41,37,0) ]).
-b_line_i(197,2,15,cmd,37,[ t('',141,197,0),t('''Some Quantity is invalid!''',3,197,8),t(')',4,37,35) ]).
-b_line_i(198,2,15,cmd,37,[ t('',140,198,0) ]).
-b_line_i(199,2,15,cmd,37,[ t('',111,199,0) ]).
-b_line_i([ 200,1 ],2,15,cmd,37,[ t('',107,200,0),t('GXV24',23,37,0),t(=,10,37,0),t('GXV24',23,37,0),t(+,5,37,0),t(1,3,37,0) ]).
-b_line_i([ 200,2 ],2,15,cmd,37,[ t('',115,200,0) ]).
-b_line_i(202,2,15,cmd,39,[ t('',109,202,0),t([ t('Car',23,202,5),t('Count',3,202,10) ],29,202,10),t(<=,10,39,16),t('0',3,39,19),t('.AND.',9,39,21),t('Allok',23,39,27) ]).
-b_line_i(203,2,15,cmd,39,[ t('',107,203,0),t('Allok',23,39,0),t(=,10,39,0),t('FALSE',41,39,0) ]).
-b_line_i(204,2,15,cmd,39,[ t('',141,204,0),t('''Choose at least one product before register a sale''',3,204,7),t(')',4,39,59) ]).
-b_line_i(205,2,15,cmd,39,[ t('',111,205,0) ]).
-b_line_i(207,2,15,cmd,39,[ t('',109,207,0),t('Remainingamount',23,39,5),t(<>,10,39,22),t('Total',23,39,25),t('.AND.',9,39,32),t('Remainingamount',23,39,38),t(<>,10,39,55),t('0',3,39,58) ]).
-b_line_i(208,2,15,cmd,39,[ t('',107,208,0),t('Allok',23,39,0),t(=,10,39,0),t('FALSE',41,39,0) ]).
-b_line_i(209,2,15,cmd,39,[ t('',141,209,0),t('''The total of the payment method does not match the remaining amount''',3,209,7),t(')',4,39,76) ]).
-b_line_i(210,2,15,cmd,39,[ t('',111,210,0) ]).
-b_line_i(211,2,15,cmd,39,[ t('',144,211,0) ]).
-b_line_i(213,2,15,cmd,39,[ t('',146,213,0),t([ t('Allproductsfiltered',3,213,7),t('Refresh',3,213,27) ],29,213,27) ]).
-b_line_i(215,2,16,cmd,39,[ t('',107,215,0),t('Sdtproductfiltered',23,39,0),t(=,10,39,0),t([ 'SDTProductsFiltered',[ t('(',0,215,27),t(')',4,215,28) ],n ],46,39,0) ]).
-b_line_i(216,2,16,cmd,39,[ t('',104,216,0),t(o(1,'InvoiceRegisterGetProductsFiltered'),28,39,2),t('Code',23,39,37),t(',',7,39,0),t('Name',23,39,44),t(',',7,39,0),t('nullvalue(',1,39,51),t('Supplier',23,39,62),t(')',4,39,71),t(',',7,39,0),t('Sector',23,39,74),t(',',7,39,0),t('Brand',23,39,83),t(',',7,39,0),t('Sdtproductfiltered',23,39,91) ]).
-b_line_i(217,2,16,cmd,39,[ t('',147,217,0) ]).
-b_line_i(278,2,16,cmd,39,[ t('',146,278,0),t('''AddPaymentMethod''',3,278,7) ]).
-b_line_i(279,2,17,cmd,39,[ t('',109,279,0),t('.NOT.',8,39,5),t('null(',1,279,28),t('Paymentmethodid',23,39,11),t(')',4,39,37),t('.AND.',9,39,39),t('Invoicepaymentmethodimport',23,39,45),t(<=,10,39,73),t('Remainingamount',23,39,76),t('.AND.',9,39,93),t('Invoicepaymentmethodimport',23,39,99),t(>,10,39,127),t('0',3,39,129) ]).
-b_line_i(281,2,17,cmd,39,[ t('',107,281,0),t([ t('Paymentmethod',23,281,3),t('load(',1,281,18) ],31,281,3),t('Paymentmethodid',23,39,24),t(')',4,39,40) ]).
-b_line_i(282,2,17,cmd,39,[ t('',145,282,0),t('''PAYMENTMETHODWASUSED''',3,282,6) ]).
-b_line_i(284,2,17,cmd,39,[ t('',109,284,0),t('.NOT.',8,39,6),t('Wasused',23,39,12) ]).
-b_line_i(286,2,17,cmd,39,[ t('',107,286,0),t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t(=,10,39,0),t([ 'SDTInvoiceAddPaymentMethod.SDTInvoiceAddPaymentMethodItem',[ t('(',0,286,41),t(')',4,286,42) ],n ],46,39,0) ]).
-b_line_i(287,2,17,cmd,39,[ t('',107,287,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethodid',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodid',3,39,0) ],29,39,0) ]).
-b_line_i(288,2,17,cmd,39,[ t('',107,288,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethoddescription',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddescription',3,39,0) ],29,39,0) ]).
-b_line_i(289,2,17,cmd,39,[ t('',107,289,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0) ]).
-b_line_i(290,2,17,cmd,39,[ t('',107,290,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0) ]).
-b_line_i(291,2,17,cmd,39,[ t('',107,291,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(=,10,39,0),t('Invoicepaymentmethodimport',23,39,0) ]).
-b_line_i(292,2,17,cmd,39,[ t('',107,292,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethoddiscountimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],3,39,0),t(292,3,39,0),t('Invoicepaymentmethodimport',23,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
-b_line_i(293,2,17,cmd,39,[ t('',107,293,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodrechargeimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],3,39,0),t(293,3,39,0),t('Invoicepaymentmethodimport',23,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
-b_line_i(295,2,17,cmd,39,[ t('',107,295,0),t([ t('Sdtinvoiceaddpaymentmethod',23,295,4),t('add(',1,295,32) ],31,295,4),t('Sdtinvoiceaddpaymentmethoditem',23,39,37),t(')',4,39,68) ]).
-b_line_i(296,2,17,cmd,39,[ t('',110,296,0) ]).
-b_line_i(297,2,17,cmd,39,[ t('',145,297,0),t('''PAYMENTMETHODPOSITION''',3,297,7) ]).
-b_line_i(298,2,17,cmd,39,[ t('',107,298,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(+,5,39,0),t('Invoicepaymentmethodimport',23,39,0) ]).
-b_line_i(299,2,17,cmd,39,[ t('',107,299,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethoddiscountimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],3,39,0),t(299,3,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
-b_line_i(300,2,17,cmd,39,[ t('',107,300,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodrechargeimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],3,39,0),t(300,3,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
-b_line_i(301,2,17,cmd,39,[ t('',111,301,0) ]).
-b_line_i(302,2,17,cmd,39,[ t('',110,302,0) ]).
-b_line_i(303,2,17,cmd,39,[ t('',152,303,0) ]).
-b_line_i(304,2,17,cmd,39,[ t('',153,304,0),t('null(',1,304,26),t('Paymentmethodid',23,39,9),t(')',4,39,35) ]).
-b_line_i(305,2,17,cmd,39,[ t('',141,305,0),t('''Choose a Payment Method first!''',3,305,9),t(')',4,39,41) ]).
-b_line_i(306,2,17,cmd,39,[ t('',153,306,0),t('Invoicepaymentmethodimport',23,39,9),t(>,10,39,37),t('Remainingamount',23,39,39) ]).
-b_line_i(307,2,17,cmd,39,[ t('',141,307,0),t('''Import of Payment Methods must be less or equal to Remaining Amount''',3,307,9),t(')',4,39,78) ]).
-b_line_i(308,2,17,cmd,39,[ t('',153,308,0),t('Invoicepaymentmethodimport',23,39,9),t(<=,10,39,37),t('0',3,39,40) ]).
-b_line_i(309,2,17,cmd,39,[ t('',141,309,0),t('''Import of Payment Methods must be higher to zero''',3,309,9),t(')',4,39,59) ]).
-b_line_i(310,2,17,cmd,39,[ t('',154,310,0) ]).
-b_line_i(311,2,17,cmd,39,[ t('',111,311,0) ]).
-b_line_i(312,2,17,cmd,39,[ t('',147,312,0) ]).
-b_line_i(314,2,17,cmd,39,[ t('',146,314,0),t([ t('Gridinvoiceaddpaymentmethod',3,314,7),t('Refresh',3,314,35) ],29,314,35) ]).
-b_line_i(315,2,18,cmd,39,[ t('',145,315,0),t('''CALCULATEREMAINING''',3,315,5) ]).
-b_line_i(316,2,18,cmd,39,[ t('',107,316,0),t([ t('Paymentmethodremove',23,316,2),t('fromimage(',1,316,23) ],31,316,2),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,39,34),t(')',4,39,46) ]).
-b_line_i([ 316,1 ],2,18,cmd,39,[ t('',107,316,0),t('Paymentmethodremove_GXI',23,39,0),t(=,10,39,0),t('urifromurl(',1,39,0),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,39,0),t(')',4,39,0) ]).
-b_line_i(317,2,18,cmd,40,[ t('',147,317,0) ]).
-b_line_i(319,2,18,cmd,40,[ t('',146,319,0),t([ t('Paymentmethodremove',23,319,7),t('Click',3,319,28) ],29,319,28) ]).
-b_line_i(320,2,19,cmd,40,[ t('',107,320,0),t('Position',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('indexof(',1,40,0) ],31,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0) ],29,40,0),t(')',4,40,0) ]).
-b_line_i(321,2,19,cmd,40,[ t('',107,321,0),t([ t('Sdtinvoiceaddpaymentmethod',23,321,2),t('remove(',1,321,30) ],31,321,2),t('Position',23,40,38),t(')',4,40,47) ]).
-b_line_i(322,2,19,cmd,40,[ t('',145,322,0),t('''CALCULATEREMAINING''',3,322,5) ]).
-b_line_i(323,2,19,cmd,40,[ t('',107,323,0),t([ t('Gridinvoiceaddpaymentmethod',3,323,2),t('refresh(',1,323,30) ],31,323,30),t(')',4,40,39) ]).
-b_line_i(324,2,19,cmd,40,[ t('',147,324,0) ]).
-b_line_i(326,2,19,cmd,40,[ t('',143,326,0),t('''CLEARPAYMENTMETHOD''',3,326,5) ]).
-b_line_i(327,2,20,cmd,40,[ t('',107,327,0),t('Sdtinvoiceaddpaymentmethod',23,40,0),t(=,10,40,0),t([ 'SDTInvoiceAddPaymentMethod',[ t('(',0,327,37),t(')',4,327,38) ],n ],46,40,0) ]).
-b_line_i(328,2,20,cmd,40,[ t('',107,328,0),t('Sdtinvoiceaddpaymentmethoditem',23,40,0),t(=,10,40,0),t([ 'SDTInvoiceAddPaymentMethod.SDTInvoiceAddPaymentMethodItem',[ t('(',0,328,40),t(')',4,328,41) ],n ],46,40,0) ]).
-b_line_i(329,2,20,cmd,40,[ t('',107,329,0),t('Remainingamount',23,40,0),t(=,10,40,0),t('Total',23,40,0) ]).
-b_line_i(330,2,20,cmd,40,[ t('',107,330,0),t('Amountreceivable',23,40,0),t(=,10,40,0),t('Total',23,40,0) ]).
-b_line_i(331,2,20,cmd,40,[ t('',107,331,0),t([ t('Paymentmethodid',23,331,2),t('setempty(',1,331,19) ],31,331,2),t(')',4,40,29) ]).
-b_line_i(332,2,20,cmd,40,[ t('',107,332,0),t([ t('Invoicepaymentmethodimport',23,332,2),t('setempty(',1,332,30) ],31,332,2),t(')',4,40,40) ]).
-b_line_i(333,2,20,cmd,40,[ t('',144,333,0) ]).
-b_line_i(354,2,20,cmd,40,[ t('',146,354,0),t([ t('Ctlinvoicepaymentmethodimport',3,354,7),t('Controlvaluechanged',3,354,37) ],29,354,37) ]).
-b_line_i(355,2,21,cmd,40,[ t('',107,355,0),t('Importaux',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0) ]).
-b_line_i(357,2,21,cmd,40,[ t('',109,357,0),t('.NOT.',8,40,5),t('Importaux',23,40,11),t(<=,10,40,22),t('0',3,40,25),t('.AND.',9,40,27),t('Importaux',23,40,33),t(<=,10,40,44),t('Remainingamount',23,40,47) ]).
-b_line_i(358,2,21,cmd,40,[ t('',107,358,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0),t(=,10,40,0),t('Importaux',23,40,0) ]).
-b_line_i(359,2,21,cmd,40,[ t('',145,359,0),t('''CALCULATEREMAINING''',3,359,6) ]).
-b_line_i(360,2,21,cmd,40,[ t('',110,360,0) ]).
-b_line_i(361,2,21,cmd,40,[ t('',109,361,0),t('.NOT.',8,40,6),t('Importaux',23,40,12),t(<=,10,40,23),t('0',3,40,26) ]).
-b_line_i(362,2,21,cmd,40,[ t('',141,362,0),t('''Import of Payment must be less or equal to Remaining Amount''',3,362,8),t(')',4,40,69) ]).
-b_line_i(363,2,21,cmd,40,[ t('',110,363,0) ]).
-b_line_i(364,2,21,cmd,40,[ t('',141,364,0),t('''Import must be higher to zero''',3,364,8),t(')',4,40,39) ]).
-b_line_i(365,2,21,cmd,40,[ t('',111,365,0) ]).
-b_line_i(366,2,21,cmd,40,[ t('',107,366,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0),t(=,10,40,0),t('Remainingamount',23,40,0) ]).
-b_line_i(367,2,21,cmd,40,[ t('',111,367,0) ]).
-b_line_i(368,2,21,cmd,40,[ t('',147,368,0) ]).
-b_line_i(370,2,21,cmd,40,[ t('',143,370,0),t('''CALCULATEREMAINING''',3,370,5) ]).
-b_line_i(371,2,22,cmd,40,[ t('',107,371,0),t('Importaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
-b_line_i(372,2,22,cmd,40,[ t('',107,372,0),t('Discountimportaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
-b_line_i(373,2,22,cmd,40,[ t('',107,373,0),t('Rechargeimportaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
-b_line_i(374,2,22,cmd,40,[ t('',107,374,0),t('GXV25',23,40,0),t(=,10,40,0),t(1,3,40,0) ]).
-b_line_i([ 374,2 ],2,22,cmd,40,[ t('',114,374,0),t('GXV25',23,40,0),t(<=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,374,41),t('Count',3,374,0) ],29,374,0) ]).
-b_line_i([ 374,3 ],2,22,cmd,40,[ t('',107,374,0),t('Sdtinvoiceaddpaymentmethoditem',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('item(',1,40,0) ],31,40,0),t('GXV25',23,40,0),t(')',4,40,0) ]).
-b_line_i(375,2,22,cmd,41,[ t('',107,375,0),t('Importaux',23,41,0),t(=,10,41,0),t('Importaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethodimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
-b_line_i(376,2,22,cmd,41,[ t('',107,376,0),t('Discountimportaux',23,41,0),t(=,10,41,0),t('Discountimportaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethoddiscountimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
-b_line_i(377,2,22,cmd,41,[ t('',107,377,0),t('Rechargeimportaux',23,41,0),t(=,10,41,0),t('Rechargeimportaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethodrechargeimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
-b_line_i([ 378,1 ],2,22,cmd,41,[ t('',107,378,0),t('GXV25',23,41,0),t(=,10,41,0),t('GXV25',23,41,0),t(+,5,41,0),t(1,3,41,0) ]).
-b_line_i([ 378,2 ],2,22,cmd,41,[ t('',115,378,0) ]).
-b_line_i(379,2,22,cmd,42,[ t('',107,379,0),t('Remainingamount',23,42,0),t(=,10,42,0),t('Total',23,42,0),t(-,5,42,0),t('Importaux',23,42,0) ]).
-b_line_i(380,2,22,cmd,42,[ t('',107,380,0),t('Amountreceivable',23,42,0),t(=,10,42,0),t('Total',23,42,0),t(+,5,42,0),t('Rechargeimportaux',23,42,0),t(-,5,42,0),t('Discountimportaux',23,42,0) ]).
-b_line_i(381,2,22,cmd,42,[ t('',107,381,0),t('Invoicepaymentmethodimport',23,42,0),t(=,10,42,0),t('Remainingamount',23,42,0) ]).
-b_line_i(382,2,22,cmd,42,[ t('',144,382,0) ]).
-b_line_i(384,2,22,cmd,42,[ t('',143,384,0),t('''PAYMENTMETHODWASUSED''',3,384,5) ]).
-b_line_i(385,2,23,cmd,42,[ t('',107,385,0),t('Wasused',23,42,0),t(=,10,42,0),t('FALSE',41,42,0) ]).
-b_line_i(387,2,23,cmd,42,[ t('',107,387,0),t('GXV26',23,42,0),t(=,10,42,0),t(1,3,42,0) ]).
-b_line_i([ 387,2 ],2,23,cmd,42,[ t('',114,387,0),t('GXV26',23,42,0),t(<=,10,42,0),t([ t('Sdtinvoiceaddpaymentmethod',23,387,41),t('Count',3,387,0) ],29,387,0) ]).
-b_line_i([ 387,3 ],2,23,cmd,42,[ t('',107,387,0),t('Sdtinvoiceaddpaymentmethoditem',23,42,0),t(=,10,42,0),t([ t('Sdtinvoiceaddpaymentmethod',23,42,0),t('item(',1,42,0) ],31,42,0),t('GXV26',23,42,0),t(')',4,42,0) ]).
-b_line_i(388,2,23,cmd,43,[ t('',109,388,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,388,6),t('Paymentmethodid',3,388,38) ],29,388,38),t(=,10,43,54),t('Paymentmethodid',23,43,56) ]).
-b_line_i(389,2,23,cmd,43,[ t('',107,389,0),t('Wasused',23,43,0),t(=,10,43,0),t('TRUE',40,43,0) ]).
-b_line_i(390,2,23,cmd,43,[ t('',140,390,0) ]).
-b_line_i(391,2,23,cmd,43,[ t('',111,391,0) ]).
-b_line_i([ 392,1 ],2,23,cmd,43,[ t('',107,392,0),t('GXV26',23,43,0),t(=,10,43,0),t('GXV26',23,43,0),t(+,5,43,0),t(1,3,43,0) ]).
-b_line_i([ 392,2 ],2,23,cmd,43,[ t('',115,392,0) ]).
-b_line_i(394,2,23,cmd,45,[ t('',144,394,0) ]).
-b_line_i(396,2,23,cmd,45,[ t('',143,396,0),t('''PAYMENTMETHODPOSITION''',3,396,5) ]).
-b_line_i(397,2,24,cmd,45,[ t('',107,397,0),t('Position',23,45,0),t(=,10,45,0),t('0',3,45,0) ]).
-b_line_i(398,2,24,cmd,45,[ t('',107,398,0),t('GXV27',23,45,0),t(=,10,45,0),t(1,3,45,0) ]).
-b_line_i([ 398,2 ],2,24,cmd,45,[ t('',114,398,0),t('GXV27',23,45,0),t(<=,10,45,0),t([ t('Sdtinvoiceaddpaymentmethod',23,398,41),t('Count',3,398,0) ],29,398,0) ]).
-b_line_i([ 398,3 ],2,24,cmd,45,[ t('',107,398,0),t('Sdtinvoiceaddpaymentmethoditem',23,45,0),t(=,10,45,0),t([ t('Sdtinvoiceaddpaymentmethod',23,45,0),t('item(',1,45,0) ],31,45,0),t('GXV27',23,45,0),t(')',4,45,0) ]).
-b_line_i(399,2,24,cmd,46,[ t('',107,399,0),t('Position',23,46,0),t(=,10,46,0),t('Position',23,46,0),t(+,5,46,0),t('1',3,46,0) ]).
-b_line_i(400,2,24,cmd,46,[ t('',109,400,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,400,6),t('Paymentmethodid',3,400,38) ],29,400,38),t(=,10,46,54),t('Paymentmethodid',23,46,56) ]).
-b_line_i(401,2,24,cmd,46,[ t('',140,401,0) ]).
-b_line_i(402,2,24,cmd,46,[ t('',111,402,0) ]).
-b_line_i([ 403,1 ],2,24,cmd,46,[ t('',107,403,0),t('GXV27',23,46,0),t(=,10,46,0),t('GXV27',23,46,0),t(+,5,46,0),t(1,3,46,0) ]).
-b_line_i([ 403,2 ],2,24,cmd,46,[ t('',115,403,0) ]).
-b_line_i(404,2,24,cmd,47,[ t('',144,404,0) ]).
+b_line_i(144,2,7,cmd,33,[ t('',107,144,0),t([ t('Selectall',3,33,0),t('Visible',3,33,0) ],29,33,0),t(=,10,33,0),t('0',3,33,0) ]).
+b_line_i(145,2,7,cmd,33,[ t('',147,145,0) ]).
+b_line_i(147,2,7,cmd,33,[ t('',146,147,0),t([ t('Carproducts',3,147,7),t('Refresh',3,147,19) ],29,147,19) ]).
+b_line_i(148,2,8,cmd,33,[ t('',145,148,0),t('''CALCULATETOTAL''',3,148,5) ]).
+b_line_i(149,2,8,cmd,33,[ t('',145,149,0),t('''CALCULATEREMAINING''',3,149,5) ]).
+b_line_i(150,2,8,cmd,33,[ t('',107,150,0),t([ t('Remove',23,150,2),t('fromimage(',1,150,10) ],31,150,2),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,33,21),t(')',4,33,33) ]).
+b_line_i([ 150,1 ],2,8,cmd,33,[ t('',107,150,0),t('Remove_GXI',23,33,0),t(=,10,33,0),t('urifromurl(',1,33,0),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,33,0),t(')',4,33,0) ]).
+b_line_i(151,2,8,cmd,34,[ t('',147,151,0) ]).
+b_line_i(153,2,8,cmd,34,[ t('',143,153,0),t('''CALCULATETOTAL''',3,153,5) ]).
+b_line_i(154,2,9,cmd,34,[ t('',107,154,0),t('Total',23,34,0),t(=,10,34,0),t('0',3,34,0) ]).
+b_line_i(155,2,9,cmd,34,[ t('',107,155,0),t('GXV23',23,34,0),t(=,10,34,0),t(1,3,34,0) ]).
+b_line_i([ 155,2 ],2,9,cmd,34,[ t('',114,155,0),t('GXV23',23,34,0),t(<=,10,34,0),t([ t('Car',23,155,18),t('Count',3,155,0) ],29,155,0) ]).
+b_line_i([ 155,3 ],2,9,cmd,34,[ t('',107,155,0),t('Caritem',23,34,0),t(=,10,34,0),t([ t('Car',23,34,0),t('item(',1,34,0) ],31,34,0),t('GXV23',23,34,0),t(')',4,34,0) ]).
+b_line_i(156,2,9,cmd,35,[ t('',107,156,0),t([ t('Caritem',23,35,0),t('Subtotal',3,35,0) ],29,35,0),t(=,10,35,0),t([ t('Caritem',23,35,0),t('Quantity',3,35,0) ],29,35,0),t(*,6,35,0),t([ t('Caritem',23,35,0),t('Unitprice',3,35,0) ],29,35,0) ]).
+b_line_i(157,2,9,cmd,35,[ t('',107,157,0),t('Total',23,35,0),t(=,10,35,0),t('Total',23,35,0),t(+,5,35,0),t('(',0,35,0),t([ t('Caritem',23,35,0),t('Subtotal',3,35,0) ],29,35,0),t(')',4,35,0) ]).
+b_line_i([ 158,1 ],2,9,cmd,35,[ t('',107,158,0),t('GXV23',23,35,0),t(=,10,35,0),t('GXV23',23,35,0),t(+,5,35,0),t(1,3,35,0) ]).
+b_line_i([ 158,2 ],2,9,cmd,35,[ t('',115,158,0) ]).
+b_line_i(159,2,9,cmd,36,[ t('',144,159,0) ]).
+b_line_i(161,2,9,cmd,36,[ t('',146,161,0),t([ t('Brand',23,161,7),t('Controlvaluechanged',3,161,14) ],29,161,14) ]).
+b_line_i(163,2,10,cmd,36,[ t('',107,163,0),t([ t('Allproductsfiltered',3,163,2),t('refresh(',1,163,22) ],31,163,22),t(')',4,36,31) ]).
+b_line_i(164,2,10,cmd,36,[ t('',147,164,0) ]).
+b_line_i(171,2,10,cmd,36,[ t('',146,171,0),t([ t('Name',23,171,7),t('Controlvaluechanging',3,171,13) ],29,171,13),t('(',0,36,33),t('Newname',23,36,34),t(')',4,36,42) ]).
+b_line_i(173,2,11,cmd,36,[ t('',107,173,0),t([ t('Allproductsfiltered',3,173,2),t('refresh(',1,173,22) ],31,173,22),t(')',4,36,31) ]).
+b_line_i(174,2,11,cmd,36,[ t('',147,174,0) ]).
+b_line_i(176,2,11,cmd,36,[ t('',146,176,0),t([ t('Code',23,176,7),t('Controlvaluechanging',3,176,13) ],29,176,13),t('(',0,36,33),t('Newcode',23,36,34),t(')',4,36,42) ]).
+b_line_i(178,2,12,cmd,36,[ t('',107,178,0),t([ t('Allproductsfiltered',3,178,2),t('refresh(',1,178,22) ],31,178,22),t(')',4,36,31) ]).
+b_line_i(179,2,12,cmd,36,[ t('',147,179,0) ]).
+b_line_i(181,2,12,cmd,36,[ t('',146,181,0),t([ t('Sector',23,181,7),t('Controlvaluechanged',3,181,15) ],29,181,15) ]).
+b_line_i(183,2,13,cmd,36,[ t('',107,183,0),t([ t('Allproductsfiltered',3,183,2),t('refresh(',1,183,22) ],31,183,22),t(')',4,36,31) ]).
+b_line_i(184,2,13,cmd,36,[ t('',147,184,0) ]).
+b_line_i(186,2,13,cmd,36,[ t('',146,186,0),t('''SelectAll''',3,186,7) ]).
+b_line_i(187,2,14,cmd,36,[ t('',107,187,0),t('Car',23,36,0),t(=,10,36,0),t([ 'SDTCarProducts',[ t('(',0,187,12),t(')',4,187,13) ],n ],46,36,0) ]).
+b_line_i(188,2,14,cmd,36,[ t('',107,188,0),t('Car',23,36,0),t(=,10,36,0),t('udp(',1,36,0),t('Car',3,36,0),t(188,3,36,0),t('Code',23,36,0),t(',',7,36,0),t('Name',23,36,0),t(',',7,36,0),t('nullvalue(',1,36,0),t('Supplier',23,36,0),t(')',4,36,0),t(',',7,36,0),t('Brand',23,36,0),t(',',7,36,0),t('Sector',23,36,0),t(')',4,36,0) ]).
+b_line_i(189,2,14,cmd,36,[ t('',107,189,0),t([ t('Tablenewsale',3,36,0),t('Visible',3,36,0) ],29,36,0),t(=,10,36,0),t('TRUE',40,36,0) ]).
+b_line_i(190,2,14,cmd,36,[ t('',107,190,0),t([ t('Tablepaymentmethod',3,36,0),t('Visible',3,36,0) ],29,36,0),t(=,10,36,0),t('TRUE',40,36,0) ]).
+b_line_i(191,2,14,cmd,36,[ t('',145,191,0),t('''CLEARPAYMENTMETHOD''',3,191,5) ]).
+b_line_i(192,2,14,cmd,36,[ t('',147,192,0) ]).
+b_line_i(194,2,14,cmd,36,[ t('',143,194,0),t('''CONTROL''',3,194,5) ]).
+b_line_i(195,2,15,cmd,36,[ t('',107,195,0),t('GXV24',23,36,0),t(=,10,36,0),t(1,3,36,0) ]).
+b_line_i([ 195,2 ],2,15,cmd,36,[ t('',114,195,0),t('GXV24',23,36,0),t(<=,10,36,0),t([ t('Car',23,195,18),t('Count',3,195,0) ],29,195,0) ]).
+b_line_i([ 195,3 ],2,15,cmd,36,[ t('',107,195,0),t('Caritem',23,36,0),t(=,10,36,0),t([ t('Car',23,36,0),t('item(',1,36,0) ],31,36,0),t('GXV24',23,36,0),t(')',4,36,0) ]).
+b_line_i(196,2,15,cmd,37,[ t('',109,196,0),t([ t('Caritem',23,196,6),t('Quantity',3,196,15) ],29,196,15),t(=,10,37,24),t('0',3,37,26),t('.OR.',9,37,28),t([ t('Caritem',23,196,33),t('Quantity',3,196,42) ],29,196,42),t(>,10,37,51),t([ t('Caritem',23,196,53),t('Stock',3,196,62) ],29,196,62) ]).
+b_line_i(197,2,15,cmd,37,[ t('',107,197,0),t('Allok',23,37,0),t(=,10,37,0),t('FALSE',41,37,0) ]).
+b_line_i(198,2,15,cmd,37,[ t('',141,198,0),t('''Some Quantity is invalid!''',3,198,8),t(')',4,37,35) ]).
+b_line_i(199,2,15,cmd,37,[ t('',140,199,0) ]).
+b_line_i(200,2,15,cmd,37,[ t('',111,200,0) ]).
+b_line_i([ 201,1 ],2,15,cmd,37,[ t('',107,201,0),t('GXV24',23,37,0),t(=,10,37,0),t('GXV24',23,37,0),t(+,5,37,0),t(1,3,37,0) ]).
+b_line_i([ 201,2 ],2,15,cmd,37,[ t('',115,201,0) ]).
+b_line_i(203,2,15,cmd,39,[ t('',109,203,0),t([ t('Car',23,203,5),t('Count',3,203,10) ],29,203,10),t(<=,10,39,16),t('0',3,39,19),t('.AND.',9,39,21),t('Allok',23,39,27) ]).
+b_line_i(204,2,15,cmd,39,[ t('',107,204,0),t('Allok',23,39,0),t(=,10,39,0),t('FALSE',41,39,0) ]).
+b_line_i(205,2,15,cmd,39,[ t('',141,205,0),t('''Choose at least one product before register a sale''',3,205,7),t(')',4,39,59) ]).
+b_line_i(206,2,15,cmd,39,[ t('',111,206,0) ]).
+b_line_i(208,2,15,cmd,39,[ t('',109,208,0),t('Remainingamount',23,39,5),t(<>,10,39,22),t('Total',23,39,25),t('.AND.',9,39,32),t('Remainingamount',23,39,38),t(<>,10,39,55),t('0',3,39,58) ]).
+b_line_i(209,2,15,cmd,39,[ t('',107,209,0),t('Allok',23,39,0),t(=,10,39,0),t('FALSE',41,39,0) ]).
+b_line_i(210,2,15,cmd,39,[ t('',141,210,0),t('''The total of the payment method does not match the remaining amount''',3,210,7),t(')',4,39,76) ]).
+b_line_i(211,2,15,cmd,39,[ t('',111,211,0) ]).
+b_line_i(212,2,15,cmd,39,[ t('',144,212,0) ]).
+b_line_i(214,2,15,cmd,39,[ t('',146,214,0),t([ t('Allproductsfiltered',3,214,7),t('Refresh',3,214,27) ],29,214,27) ]).
+b_line_i(216,2,16,cmd,39,[ t('',107,216,0),t('Sdtproductfiltered',23,39,0),t(=,10,39,0),t([ 'SDTProductsFiltered',[ t('(',0,216,27),t(')',4,216,28) ],n ],46,39,0) ]).
+b_line_i(217,2,16,cmd,39,[ t('',104,217,0),t(o(1,'InvoiceRegisterGetProductsFiltered'),28,39,2),t('Code',23,39,37),t(',',7,39,0),t('Name',23,39,44),t(',',7,39,0),t('nullvalue(',1,39,51),t('Supplier',23,39,62),t(')',4,39,71),t(',',7,39,0),t('Sector',23,39,74),t(',',7,39,0),t('Brand',23,39,83),t(',',7,39,0),t('Sdtproductfiltered',23,39,91) ]).
+b_line_i(218,2,16,cmd,39,[ t('',147,218,0) ]).
+b_line_i(279,2,16,cmd,39,[ t('',146,279,0),t('''AddPaymentMethod''',3,279,7) ]).
+b_line_i(280,2,17,cmd,39,[ t('',109,280,0),t('.NOT.',8,39,5),t('null(',1,280,28),t('Paymentmethodid',23,39,11),t(')',4,39,37),t('.AND.',9,39,39),t('Invoicepaymentmethodimport',23,39,45),t(<=,10,39,73),t('Remainingamount',23,39,76),t('.AND.',9,39,93),t('Invoicepaymentmethodimport',23,39,99),t(>,10,39,127),t('0',3,39,129) ]).
+b_line_i(282,2,17,cmd,39,[ t('',107,282,0),t([ t('Paymentmethod',23,282,3),t('load(',1,282,18) ],31,282,3),t('Paymentmethodid',23,39,24),t(')',4,39,40) ]).
+b_line_i(283,2,17,cmd,39,[ t('',145,283,0),t('''PAYMENTMETHODWASUSED''',3,283,6) ]).
+b_line_i(285,2,17,cmd,39,[ t('',109,285,0),t('.NOT.',8,39,6),t('Wasused',23,39,12) ]).
+b_line_i(287,2,17,cmd,39,[ t('',107,287,0),t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t(=,10,39,0),t([ 'SDTInvoiceAddPaymentMethod.SDTInvoiceAddPaymentMethodItem',[ t('(',0,287,41),t(')',4,287,42) ],n ],46,39,0) ]).
+b_line_i(288,2,17,cmd,39,[ t('',107,288,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethodid',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodid',3,39,0) ],29,39,0) ]).
+b_line_i(289,2,17,cmd,39,[ t('',107,289,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethoddescription',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddescription',3,39,0) ],29,39,0) ]).
+b_line_i(290,2,17,cmd,39,[ t('',107,290,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0) ]).
+b_line_i(291,2,17,cmd,39,[ t('',107,291,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0) ]).
+b_line_i(292,2,17,cmd,39,[ t('',107,292,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(=,10,39,0),t('Invoicepaymentmethodimport',23,39,0) ]).
+b_line_i(293,2,17,cmd,39,[ t('',107,293,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethoddiscountimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],3,39,0),t(293,3,39,0),t('Invoicepaymentmethodimport',23,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
+b_line_i(294,2,17,cmd,39,[ t('',107,294,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodrechargeimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],3,39,0),t(294,3,39,0),t('Invoicepaymentmethodimport',23,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
+b_line_i(296,2,17,cmd,39,[ t('',107,296,0),t([ t('Sdtinvoiceaddpaymentmethod',23,296,4),t('add(',1,296,32) ],31,296,4),t('Sdtinvoiceaddpaymentmethoditem',23,39,37),t(')',4,39,68) ]).
+b_line_i(297,2,17,cmd,39,[ t('',110,297,0) ]).
+b_line_i(298,2,17,cmd,39,[ t('',145,298,0),t('''PAYMENTMETHODPOSITION''',3,298,7) ]).
+b_line_i(299,2,17,cmd,39,[ t('',107,299,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(=,10,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(+,5,39,0),t('Invoicepaymentmethodimport',23,39,0) ]).
+b_line_i(300,2,17,cmd,39,[ t('',107,300,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethoddiscountimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethoddiscountimport',3) ],3,39,0),t(300,3,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethoddiscount',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
+b_line_i(301,2,17,cmd,39,[ t('',107,301,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,39,0),t('Invoicepaymentmethodrechargeimport',3,39,0) ],29,39,0),t(=,10,39,0),t('udp(',1,39,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23),t('Invoicepaymentmethodrechargeimport',3) ],3,39,0),t(301,3,39,0),t([ t('Sdtinvoiceaddpaymentmethod',23,39,0),[ t('item(',1,39,0),t('Position',23,39,0),t(')',4,39,0) ],t('Invoicepaymentmethodimport',3,39,0) ],29,39,0),t(*,6,39,0),t('(',0,39,0),t([ t('Paymentmethod',23,39,0),t('Paymentmethodrecarge',3,39,0) ],29,39,0),t(/,6,39,0),t('100',3,39,0),t(')',4,39,0),t(')',4,39,0) ]).
+b_line_i(302,2,17,cmd,39,[ t('',111,302,0) ]).
+b_line_i(303,2,17,cmd,39,[ t('',110,303,0) ]).
+b_line_i(304,2,17,cmd,39,[ t('',152,304,0) ]).
+b_line_i(305,2,17,cmd,39,[ t('',153,305,0),t('null(',1,305,26),t('Paymentmethodid',23,39,9),t(')',4,39,35) ]).
+b_line_i(306,2,17,cmd,39,[ t('',141,306,0),t('''Choose a Payment Method first!''',3,306,9),t(')',4,39,41) ]).
+b_line_i(307,2,17,cmd,39,[ t('',153,307,0),t('Invoicepaymentmethodimport',23,39,9),t(>,10,39,37),t('Remainingamount',23,39,39) ]).
+b_line_i(308,2,17,cmd,39,[ t('',141,308,0),t('''Import of Payment Methods must be less or equal to Remaining Amount''',3,308,9),t(')',4,39,78) ]).
+b_line_i(309,2,17,cmd,39,[ t('',153,309,0),t('Invoicepaymentmethodimport',23,39,9),t(<=,10,39,37),t('0',3,39,40) ]).
+b_line_i(310,2,17,cmd,39,[ t('',141,310,0),t('''Import of Payment Methods must be higher to zero''',3,310,9),t(')',4,39,59) ]).
+b_line_i(311,2,17,cmd,39,[ t('',154,311,0) ]).
+b_line_i(312,2,17,cmd,39,[ t('',111,312,0) ]).
+b_line_i(313,2,17,cmd,39,[ t('',147,313,0) ]).
+b_line_i(315,2,17,cmd,39,[ t('',146,315,0),t([ t('Gridinvoiceaddpaymentmethod',3,315,7),t('Refresh',3,315,35) ],29,315,35) ]).
+b_line_i(316,2,18,cmd,39,[ t('',145,316,0),t('''CALCULATEREMAINING''',3,316,5) ]).
+b_line_i(317,2,18,cmd,39,[ t('',107,317,0),t([ t('Paymentmethodremove',23,317,2),t('fromimage(',1,317,23) ],31,317,2),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,39,34),t(')',4,39,46) ]).
+b_line_i([ 317,1 ],2,18,cmd,39,[ t('',107,317,0),t('Paymentmethodremove_GXI',23,39,0),t(=,10,39,0),t('urifromurl(',1,39,0),t(i(98,'db0f63cd-dde8-4bf7-aca2-01cdf8d3c157'),69,39,0),t(')',4,39,0) ]).
+b_line_i(318,2,18,cmd,40,[ t('',147,318,0) ]).
+b_line_i(320,2,18,cmd,40,[ t('',146,320,0),t([ t('Paymentmethodremove',23,320,7),t('Click',3,320,28) ],29,320,28) ]).
+b_line_i(321,2,19,cmd,40,[ t('',107,321,0),t('Position',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('indexof(',1,40,0) ],31,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0) ],29,40,0),t(')',4,40,0) ]).
+b_line_i(322,2,19,cmd,40,[ t('',107,322,0),t([ t('Sdtinvoiceaddpaymentmethod',23,322,2),t('remove(',1,322,30) ],31,322,2),t('Position',23,40,38),t(')',4,40,47) ]).
+b_line_i(323,2,19,cmd,40,[ t('',145,323,0),t('''CALCULATEREMAINING''',3,323,5) ]).
+b_line_i(324,2,19,cmd,40,[ t('',107,324,0),t([ t('Gridinvoiceaddpaymentmethod',3,324,2),t('refresh(',1,324,30) ],31,324,30),t(')',4,40,39) ]).
+b_line_i(325,2,19,cmd,40,[ t('',147,325,0) ]).
+b_line_i(327,2,19,cmd,40,[ t('',143,327,0),t('''CLEARPAYMENTMETHOD''',3,327,5) ]).
+b_line_i(328,2,20,cmd,40,[ t('',107,328,0),t('Sdtinvoiceaddpaymentmethod',23,40,0),t(=,10,40,0),t([ 'SDTInvoiceAddPaymentMethod',[ t('(',0,328,37),t(')',4,328,38) ],n ],46,40,0) ]).
+b_line_i(329,2,20,cmd,40,[ t('',107,329,0),t('Sdtinvoiceaddpaymentmethoditem',23,40,0),t(=,10,40,0),t([ 'SDTInvoiceAddPaymentMethod.SDTInvoiceAddPaymentMethodItem',[ t('(',0,329,40),t(')',4,329,41) ],n ],46,40,0) ]).
+b_line_i(330,2,20,cmd,40,[ t('',107,330,0),t('Remainingamount',23,40,0),t(=,10,40,0),t('Total',23,40,0) ]).
+b_line_i(331,2,20,cmd,40,[ t('',107,331,0),t('Amountreceivable',23,40,0),t(=,10,40,0),t('Total',23,40,0) ]).
+b_line_i(332,2,20,cmd,40,[ t('',107,332,0),t([ t('Paymentmethodid',23,332,2),t('setempty(',1,332,19) ],31,332,2),t(')',4,40,29) ]).
+b_line_i(333,2,20,cmd,40,[ t('',107,333,0),t([ t('Invoicepaymentmethodimport',23,333,2),t('setempty(',1,333,30) ],31,333,2),t(')',4,40,40) ]).
+b_line_i(334,2,20,cmd,40,[ t('',144,334,0) ]).
+b_line_i(355,2,20,cmd,40,[ t('',146,355,0),t([ t('Ctlinvoicepaymentmethodimport',3,355,7),t('Controlvaluechanged',3,355,37) ],29,355,37) ]).
+b_line_i(356,2,21,cmd,40,[ t('',107,356,0),t('Importaux',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0) ]).
+b_line_i(358,2,21,cmd,40,[ t('',109,358,0),t('.NOT.',8,40,5),t('Importaux',23,40,11),t(<=,10,40,22),t('0',3,40,25),t('.AND.',9,40,27),t('Importaux',23,40,33),t(<=,10,40,44),t('Remainingamount',23,40,47) ]).
+b_line_i(359,2,21,cmd,40,[ t('',107,359,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0),t(=,10,40,0),t('Importaux',23,40,0) ]).
+b_line_i(360,2,21,cmd,40,[ t('',145,360,0),t('''CALCULATEREMAINING''',3,360,6) ]).
+b_line_i(361,2,21,cmd,40,[ t('',110,361,0) ]).
+b_line_i(362,2,21,cmd,40,[ t('',109,362,0),t('.NOT.',8,40,6),t('Importaux',23,40,12),t(<=,10,40,23),t('0',3,40,26) ]).
+b_line_i(363,2,21,cmd,40,[ t('',141,363,0),t('''Import of Payment must be less or equal to Remaining Amount''',3,363,8),t(')',4,40,69) ]).
+b_line_i(364,2,21,cmd,40,[ t('',110,364,0) ]).
+b_line_i(365,2,21,cmd,40,[ t('',141,365,0),t('''Import must be higher to zero''',3,365,8),t(')',4,40,39) ]).
+b_line_i(366,2,21,cmd,40,[ t('',111,366,0) ]).
+b_line_i(367,2,21,cmd,40,[ t('',107,367,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('Currentitem',3,40,0),t('Invoicepaymentmethodimport',3,40,0) ],29,40,0),t(=,10,40,0),t('Remainingamount',23,40,0) ]).
+b_line_i(368,2,21,cmd,40,[ t('',111,368,0) ]).
+b_line_i(369,2,21,cmd,40,[ t('',147,369,0) ]).
+b_line_i(371,2,21,cmd,40,[ t('',143,371,0),t('''CALCULATEREMAINING''',3,371,5) ]).
+b_line_i(372,2,22,cmd,40,[ t('',107,372,0),t('Importaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
+b_line_i(373,2,22,cmd,40,[ t('',107,373,0),t('Discountimportaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
+b_line_i(374,2,22,cmd,40,[ t('',107,374,0),t('Rechargeimportaux',23,40,0),t(=,10,40,0),t('0',3,40,0) ]).
+b_line_i(375,2,22,cmd,40,[ t('',107,375,0),t('GXV25',23,40,0),t(=,10,40,0),t(1,3,40,0) ]).
+b_line_i([ 375,2 ],2,22,cmd,40,[ t('',114,375,0),t('GXV25',23,40,0),t(<=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,375,41),t('Count',3,375,0) ],29,375,0) ]).
+b_line_i([ 375,3 ],2,22,cmd,40,[ t('',107,375,0),t('Sdtinvoiceaddpaymentmethoditem',23,40,0),t(=,10,40,0),t([ t('Sdtinvoiceaddpaymentmethod',23,40,0),t('item(',1,40,0) ],31,40,0),t('GXV25',23,40,0),t(')',4,40,0) ]).
+b_line_i(376,2,22,cmd,41,[ t('',107,376,0),t('Importaux',23,41,0),t(=,10,41,0),t('Importaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethodimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
+b_line_i(377,2,22,cmd,41,[ t('',107,377,0),t('Discountimportaux',23,41,0),t(=,10,41,0),t('Discountimportaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethoddiscountimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
+b_line_i(378,2,22,cmd,41,[ t('',107,378,0),t('Rechargeimportaux',23,41,0),t(=,10,41,0),t('Rechargeimportaux',23,41,0),t(+,5,41,0),t('(',0,41,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,41,0),t('Invoicepaymentmethodrechargeimport',3,41,0) ],29,41,0),t(')',4,41,0) ]).
+b_line_i([ 379,1 ],2,22,cmd,41,[ t('',107,379,0),t('GXV25',23,41,0),t(=,10,41,0),t('GXV25',23,41,0),t(+,5,41,0),t(1,3,41,0) ]).
+b_line_i([ 379,2 ],2,22,cmd,41,[ t('',115,379,0) ]).
+b_line_i(380,2,22,cmd,42,[ t('',107,380,0),t('Remainingamount',23,42,0),t(=,10,42,0),t('Total',23,42,0),t(-,5,42,0),t('Importaux',23,42,0) ]).
+b_line_i(381,2,22,cmd,42,[ t('',107,381,0),t('Amountreceivable',23,42,0),t(=,10,42,0),t('Total',23,42,0),t(+,5,42,0),t('Rechargeimportaux',23,42,0),t(-,5,42,0),t('Discountimportaux',23,42,0) ]).
+b_line_i(382,2,22,cmd,42,[ t('',107,382,0),t('Invoicepaymentmethodimport',23,42,0),t(=,10,42,0),t('Remainingamount',23,42,0) ]).
+b_line_i(383,2,22,cmd,42,[ t('',144,383,0) ]).
+b_line_i(385,2,22,cmd,42,[ t('',143,385,0),t('''PAYMENTMETHODWASUSED''',3,385,5) ]).
+b_line_i(386,2,23,cmd,42,[ t('',107,386,0),t('Wasused',23,42,0),t(=,10,42,0),t('FALSE',41,42,0) ]).
+b_line_i(388,2,23,cmd,42,[ t('',107,388,0),t('GXV26',23,42,0),t(=,10,42,0),t(1,3,42,0) ]).
+b_line_i([ 388,2 ],2,23,cmd,42,[ t('',114,388,0),t('GXV26',23,42,0),t(<=,10,42,0),t([ t('Sdtinvoiceaddpaymentmethod',23,388,41),t('Count',3,388,0) ],29,388,0) ]).
+b_line_i([ 388,3 ],2,23,cmd,42,[ t('',107,388,0),t('Sdtinvoiceaddpaymentmethoditem',23,42,0),t(=,10,42,0),t([ t('Sdtinvoiceaddpaymentmethod',23,42,0),t('item(',1,42,0) ],31,42,0),t('GXV26',23,42,0),t(')',4,42,0) ]).
+b_line_i(389,2,23,cmd,43,[ t('',109,389,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,389,6),t('Paymentmethodid',3,389,38) ],29,389,38),t(=,10,43,54),t('Paymentmethodid',23,43,56) ]).
+b_line_i(390,2,23,cmd,43,[ t('',107,390,0),t('Wasused',23,43,0),t(=,10,43,0),t('TRUE',40,43,0) ]).
+b_line_i(391,2,23,cmd,43,[ t('',140,391,0) ]).
+b_line_i(392,2,23,cmd,43,[ t('',111,392,0) ]).
+b_line_i([ 393,1 ],2,23,cmd,43,[ t('',107,393,0),t('GXV26',23,43,0),t(=,10,43,0),t('GXV26',23,43,0),t(+,5,43,0),t(1,3,43,0) ]).
+b_line_i([ 393,2 ],2,23,cmd,43,[ t('',115,393,0) ]).
+b_line_i(395,2,23,cmd,45,[ t('',144,395,0) ]).
+b_line_i(397,2,23,cmd,45,[ t('',143,397,0),t('''PAYMENTMETHODPOSITION''',3,397,5) ]).
+b_line_i(398,2,24,cmd,45,[ t('',107,398,0),t('Position',23,45,0),t(=,10,45,0),t('0',3,45,0) ]).
+b_line_i(399,2,24,cmd,45,[ t('',107,399,0),t('GXV27',23,45,0),t(=,10,45,0),t(1,3,45,0) ]).
+b_line_i([ 399,2 ],2,24,cmd,45,[ t('',114,399,0),t('GXV27',23,45,0),t(<=,10,45,0),t([ t('Sdtinvoiceaddpaymentmethod',23,399,41),t('Count',3,399,0) ],29,399,0) ]).
+b_line_i([ 399,3 ],2,24,cmd,45,[ t('',107,399,0),t('Sdtinvoiceaddpaymentmethoditem',23,45,0),t(=,10,45,0),t([ t('Sdtinvoiceaddpaymentmethod',23,45,0),t('item(',1,45,0) ],31,45,0),t('GXV27',23,45,0),t(')',4,45,0) ]).
+b_line_i(400,2,24,cmd,46,[ t('',107,400,0),t('Position',23,46,0),t(=,10,46,0),t('Position',23,46,0),t(+,5,46,0),t('1',3,46,0) ]).
+b_line_i(401,2,24,cmd,46,[ t('',109,401,0),t([ t('Sdtinvoiceaddpaymentmethoditem',23,401,6),t('Paymentmethodid',3,401,38) ],29,401,38),t(=,10,46,54),t('Paymentmethodid',23,46,56) ]).
+b_line_i(402,2,24,cmd,46,[ t('',140,402,0) ]).
+b_line_i(403,2,24,cmd,46,[ t('',111,403,0) ]).
+b_line_i([ 404,1 ],2,24,cmd,46,[ t('',107,404,0),t('GXV27',23,46,0),t(=,10,46,0),t('GXV27',23,46,0),t(+,5,46,0),t(1,3,46,0) ]).
+b_line_i([ 404,2 ],2,24,cmd,46,[ t('',115,404,0) ]).
+b_line_i(405,2,24,cmd,47,[ t('',144,405,0) ]).
 b_line_i([ 1000,1 ],2,24,cmd,0,[ t('',146,0,0),t([ t('Allproductsfiltered',3,0,0),t('Load',3,0,0) ],29,0,0) ]).
 b_line_i([ 1000,2 ],2,24,cmd,0,[ t('',107,0,0),t('GXV1',23,0,0),t(=,10,0,0),t(1,3,0,0) ]).
 b_line_i([ 1000,3 ],2,24,cmd,0,[ t('',114,0,0),t('GXV1',23,0,0),t(<=,10,0,0),t([ t('Sdtproductfiltered',23,0,0),t('Count',3,0,0) ],29,0,0) ]).
@@ -4599,18 +4600,18 @@ sub_info_i(146,'''RegisterSale''',62,85,[ [ ctrl('Allproductsfiltered','refresh(
 sub_info_i(146,[ t('Ctlquantity1',3,87,7),t('Controlvaluechanged',3,87,20) ],87,102,[ [ 'Car','Total' ],[ 'Car','Total','Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
 sub_info_i(146,'''ClearSale''',104,113,[ [ 'Total' ],[ 'Total','Remainingamount','Car','Selectedid',[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
 sub_info_i(146,[ t('Remove',23,115,7),t('Click',3,115,15) ],115,125,[ [ 'Car','Selectedid','Total' ],[ 'Position','Selectedid','Car',[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,'Start',127,144,[ [ 'Code','Name','Supplier','Sector','Brand','Total' ],[ 'Total',[ t('Total',23),t('Visible',3) ],[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtproductfiltered','Brand','Sector','Supplier','Name','Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,[ t('Carproducts',3,146,7),t('Refresh',3,146,19) ],146,150,[ [ 'Car','Sdtinvoiceaddpaymentmethod','Total' ],[ 'Remove','Total','Car','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,[ t('Brand',23,160,7),t('Controlvaluechanged',3,160,14) ],160,163,[ [ ctrl('Allproductsfiltered','refresh(') ],[] ]).
-sub_info_i(146,[ t('Name',23,170,7),t('Controlvaluechanging',3,170,13) ],170,173,[ [ ctrl('Allproductsfiltered','refresh('),'Newname' ],[] ]).
-sub_info_i(146,[ t('Code',23,175,7),t('Controlvaluechanging',3,175,13) ],175,178,[ [ ctrl('Allproductsfiltered','refresh('),'Newcode' ],[] ]).
-sub_info_i(146,[ t('Sector',23,180,7),t('Controlvaluechanged',3,180,15) ],180,183,[ [ ctrl('Allproductsfiltered','refresh(') ],[] ]).
-sub_info_i(146,'''SelectAll''',185,191,[ [ 'Code','Name','Supplier','Brand','Sector','Total' ],[ 'Car','Sector','Brand','Supplier','Name',[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,[ t('Allproductsfiltered',3,213,7),t('Refresh',3,213,27) ],213,217,[ [ 'Code','Name','Supplier','Sector','Brand' ],[ 'Sdtproductfiltered','Brand','Sector','Supplier','Name' ] ]).
-sub_info_i(146,'''AddPaymentMethod''',278,312,[ [ 'Paymentmethodid','Remainingamount','Invoicepaymentmethodimport','Wasused','Sdtinvoiceaddpaymentmethod','Position','Sdtinvoiceaddpaymentmethoditem' ],[ 'Sdtinvoiceaddpaymentmethoditem','Sdtinvoiceaddpaymentmethod','Wasused','Position' ] ]).
-sub_info_i(146,[ t('Gridinvoiceaddpaymentmethod',3,314,7),t('Refresh',3,314,35) ],314,317,[ [ 'Sdtinvoiceaddpaymentmethod','Total' ],[ 'Paymentmethodremove','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,[ t('Paymentmethodremove',23,319,7),t('Click',3,319,28) ],319,324,[ [ ctrl('Gridinvoiceaddpaymentmethod','refresh('),'Sdtinvoiceaddpaymentmethod','Total' ],[ 'Position','Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
-sub_info_i(146,[ t('Ctlinvoicepaymentmethodimport',3,354,7),t('Controlvaluechanged',3,354,37) ],354,368,[ [ 'Sdtinvoiceaddpaymentmethod','Remainingamount','Total' ],[ 'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,'Start',127,145,[ [ 'Code','Name','Supplier','Sector','Brand','Total' ],[ 'Total',[ t('Total',23),t('Visible',3) ],[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtproductfiltered','Brand','Sector','Supplier','Name',[ t('Selectall',3),t('Visible',3) ],'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,[ t('Carproducts',3,147,7),t('Refresh',3,147,19) ],147,151,[ [ 'Car','Sdtinvoiceaddpaymentmethod','Total' ],[ 'Remove','Total','Car','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,[ t('Brand',23,161,7),t('Controlvaluechanged',3,161,14) ],161,164,[ [ ctrl('Allproductsfiltered','refresh(') ],[] ]).
+sub_info_i(146,[ t('Name',23,171,7),t('Controlvaluechanging',3,171,13) ],171,174,[ [ ctrl('Allproductsfiltered','refresh('),'Newname' ],[] ]).
+sub_info_i(146,[ t('Code',23,176,7),t('Controlvaluechanging',3,176,13) ],176,179,[ [ ctrl('Allproductsfiltered','refresh('),'Newcode' ],[] ]).
+sub_info_i(146,[ t('Sector',23,181,7),t('Controlvaluechanged',3,181,15) ],181,184,[ [ ctrl('Allproductsfiltered','refresh(') ],[] ]).
+sub_info_i(146,'''SelectAll''',186,192,[ [ 'Code','Name','Supplier','Brand','Sector','Total' ],[ 'Car','Sector','Brand','Supplier','Name',[ t('Tablenewsale',3),t('Visible',3) ],[ t('Tablepaymentmethod',3),t('Visible',3) ],'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Paymentmethodid','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,[ t('Allproductsfiltered',3,214,7),t('Refresh',3,214,27) ],214,218,[ [ 'Code','Name','Supplier','Sector','Brand' ],[ 'Sdtproductfiltered','Brand','Sector','Supplier','Name' ] ]).
+sub_info_i(146,'''AddPaymentMethod''',279,313,[ [ 'Paymentmethodid','Remainingamount','Invoicepaymentmethodimport','Wasused','Sdtinvoiceaddpaymentmethod','Position','Sdtinvoiceaddpaymentmethoditem' ],[ 'Sdtinvoiceaddpaymentmethoditem','Sdtinvoiceaddpaymentmethod','Wasused','Position' ] ]).
+sub_info_i(146,[ t('Gridinvoiceaddpaymentmethod',3,315,7),t('Refresh',3,315,35) ],315,318,[ [ 'Sdtinvoiceaddpaymentmethod','Total' ],[ 'Paymentmethodremove','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,[ t('Paymentmethodremove',23,320,7),t('Click',3,320,28) ],320,325,[ [ ctrl('Gridinvoiceaddpaymentmethod','refresh('),'Sdtinvoiceaddpaymentmethod','Total' ],[ 'Position','Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
+sub_info_i(146,[ t('Ctlinvoicepaymentmethodimport',3,355,7),t('Controlvaluechanged',3,355,37) ],355,369,[ [ 'Sdtinvoiceaddpaymentmethod','Remainingamount','Total' ],[ 'Sdtinvoiceaddpaymentmethod','Sdtinvoiceaddpaymentmethoditem','Remainingamount','Amountreceivable','Invoicepaymentmethodimport' ] ]).
  
 pgm_parm_i(proc,98,'INVOICEREGISTERGETPRODUCTSFILTERED',[ [ svchar,100,0,0 ],[ svchar,60,0,0 ],[ int,6,0,0 ],[ int,6,0,0 ],[ int,6,0,0 ],[ o(objectcollection('SDTProductsFiltered.SDTProductsFilteredItem')),0,0,0 ] ],[ [ 'Code',in,[] ],[ 'Name',inout,[] ],[ 'SupplierId',inout,[] ],[ 'SectorId',inout,[] ],[ 'BrandId',inout,[] ],[ 'SDTProductsFiltered',out,[] ] ]).
 pgm_parm_i(proc,59,'CHECKAUTHENTICATION',[ [ o('General\UI\SDTContextSession'),0,0,0 ] ],[ [ 'Context',out,[] ] ]).

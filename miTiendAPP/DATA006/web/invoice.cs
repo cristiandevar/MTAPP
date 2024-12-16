@@ -3408,7 +3408,7 @@ namespace GeneXus.Programs {
          A17ProductStock = T000613_A17ProductStock[0];
          n17ProductStock = T000613_n17ProductStock[0];
          pr_default.close(7);
-         if ( A26InvoiceDetailQuantity > A17ProductStock )
+         if ( ( ( A26InvoiceDetailQuantity > A17ProductStock ) ) && A94InvoiceActive )
          {
             GXCCtl = "INVOICEDETAILQUANTITY_" + sGXsfl_88_idx;
             GX_msglist.addItem("Quantity must be lower or equal than Stock", 1, GXCCtl);
@@ -5325,7 +5325,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20241261113168", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412160491690", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -5342,7 +5342,7 @@ namespace GeneXus.Programs {
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
          context.AddJavascriptSource("gxdec.js", "?"+context.GetBuildNumber( 1853160), false, true);
-         context.AddJavascriptSource("invoice.js", "?20241261113169", false, true);
+         context.AddJavascriptSource("invoice.js", "?202412160491690", false, true);
          /* End function include_jscripts */
       }
 
@@ -5835,6 +5835,8 @@ namespace GeneXus.Programs {
          setEventMetadata("VALID_USERID",",oparms:[{av:'A100UserName',fld:'USERNAME',pic:''},{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]}");
          setEventMetadata("VALID_INVOICEMODIFIEDDATE","{handler:'Valid_Invoicemodifieddate',iparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]");
          setEventMetadata("VALID_INVOICEMODIFIEDDATE",",oparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]}");
+         setEventMetadata("VALID_INVOICEACTIVE","{handler:'Valid_Invoiceactive',iparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]");
+         setEventMetadata("VALID_INVOICEACTIVE",",oparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]}");
          setEventMetadata("VALID_INVOICELASTDETAILID","{handler:'Valid_Invoicelastdetailid',iparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]");
          setEventMetadata("VALID_INVOICELASTDETAILID",",oparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]}");
          setEventMetadata("VALID_INVOICELASTPAYMENTMETHODID","{handler:'Valid_Invoicelastpaymentmethodid',iparms:[{av:'A94InvoiceActive',fld:'INVOICEACTIVE',pic:''}]");

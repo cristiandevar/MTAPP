@@ -74,8 +74,6 @@ pgm_prop_i(web,103,'PRODUCTPRODUCTPERISHABLEWC','URLAccess','No').
 pgm_prop_i(web,59,'PRODUCTPERISHABLEGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,59,'PRODUCTPERISHABLEGENERAL','URLAccess','No').
 pgm_prop_i(web,2,'GENERAL\UI\MASTERPROMPT','WEB_COMP','Master').
-pgm_prop_i(web,159,'MOVEMENTGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,159,'MOVEMENTGENERAL','URLAccess','No').
 pgm_prop_i(web,81,'INVOICEDETAILWC','WEB_COMP','Yes').
 pgm_prop_i(web,81,'INVOICEDETAILWC','URLAccess','No').
 pgm_prop_i(web,150,'INVOICEPAYMENTMETHODWC','WEB_COMP','Yes').
@@ -117,7 +115,6 @@ pgm_prop_i(web,118,'ROLEUSERWC','URLAccess','No').
 pgm_prop_i(web,107,'USERGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,107,'USERGENERAL','URLAccess','No').
 pgm_prop_i(trn,12,'ROLE',idISBUSINESSCOMPONENT,'-1').
-pgm_prop_i(trn,6,'INVOICE',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(trn,4,'USER',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,1,'GENERAL\UI\MASTERUNANIMOSIDEBAR','WEB_COMP','Master').
 pgm_prop_i(web,53,'PURCHASEORDERDETAILWC','WEB_COMP','Yes').
@@ -154,7 +151,6 @@ pgm_prop_i(web,145,'WCSTATISTICSAMOUNTSTATEMENT','WEB_COMP','Yes').
 pgm_prop_i(web,145,'WCSTATISTICSAMOUNTSTATEMENT','URLAccess','No').
 pgm_prop_i(web,121,'PERMISSIONGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,121,'PERMISSIONGENERAL','URLAccess','No').
-pgm_prop_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','OutputSDT',o(26,'GeneXusUnanimo\SidebarItems')).
 pgm_prop_i(web,122,'PERMISSIONROLEWC','WEB_COMP','Yes').
 pgm_prop_i(web,122,'PERMISSIONROLEWC','URLAccess','No').
 pgm_prop_i(trn,13,'PERMISSION',idISBUSINESSCOMPONENT,'-1').
@@ -176,6 +172,11 @@ pgm_prop_i(web,146,'WCSTATISTICSPRODUCTSOUTOFSTOCK','WEB_COMP','Yes').
 pgm_prop_i(web,146,'WCSTATISTICSPRODUCTSOUTOFSTOCK','URLAccess','No').
 pgm_prop_i(web,147,'WCSTATISTICSSUPPLIERTOPSOLD','WEB_COMP','Yes').
 pgm_prop_i(web,147,'WCSTATISTICSSUPPLIERTOPSOLD','URLAccess','No').
+pgm_prop_i(web,159,'MOVEMENTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,159,'MOVEMENTGENERAL','URLAccess','No').
+pgm_prop_i(trn,15,'MOVEMENT',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(trn,6,'INVOICE',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','OutputSDT',o(26,'GeneXusUnanimo\SidebarItems')).
  
 model_wrkinfo_i([ 'NETSQLServer','Data006' ]).
  
@@ -247,7 +248,7 @@ lng_prop_i(1,'LangTimeFormat','12',v).
 lng_prop_i(1,'LangDecimalPoint','.',v).
 lng_prop_i(1,'FullyQualifiedName','English',d).
  
-ver_stamp('20241209.055552').
+ver_stamp('20241215.213830').
  
-ver_stamp(date(2024,12,11),time(23,59,47,30)).
+ver_stamp(date(2024,12,15),time(19,0,7,90)).
  

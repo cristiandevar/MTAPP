@@ -6,16 +6,27 @@
 <TableName>Movement</TableName>
 <Description>Movement</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>new</ReorgCode>
-<ReorgMsg>Movement is new</ReorgMsg>
-<ReorgAction>*</ReorgAction>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>Movement needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
 <AttriId>123</AttriId>
 <AttriName>MovementId</AttriName>
 <Description>Movement Id</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>123</AttriId>
+<AttriName>MovementId</AttriName>
+<Description>Movement Id</Description></Attribute></FromValue></TakesValueFrom>
 <OnPrimaryKey>Yes</OnPrimaryKey>
 <AttriType>
 <DataType>N</DataType>
@@ -35,7 +46,18 @@
 <AttriId>124</AttriId>
 <AttriName>MovementType</AttriName>
 <Description>Movement Type</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>124</AttriId>
+<AttriName>MovementType</AttriName>
+<Description>Movement Type</Description></Attribute></FromValue></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
 <Presicion>4</Presicion>
@@ -54,7 +76,18 @@
 <AttriId>125</AttriId>
 <AttriName>MovementCreatedDate</AttriName>
 <Description>Movement Created Date</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>125</AttriId>
+<AttriName>MovementCreatedDate</AttriName>
+<Description>Movement Created Date</Description></Attribute></FromValue></TakesValueFrom>
 <AttriType>
 <DataType>D</DataType>
 <Presicion>8</Presicion>
@@ -70,29 +103,21 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>127</AttriId>
-<AttriName>MovementQuantity</AttriName>
-<Description>Movement Quantity</Description>
-<TakesValueFrom></TakesValueFrom>
-<AttriType>
-<DataType>N</DataType>
-<Presicion>4</Presicion>
-<Scale>0</Scale>
-<Properties>
-<Property>
-<Name>Autonumber</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>Autogenerate</Name>
-<Value>No</Value></Property>
-<Property>
-<Name>AllowNulls</Name>
-<Value>No</Value></Property></Properties></AttriType></Attribute>
-<Attribute>
 <AttriId>128</AttriId>
 <AttriName>MovementKeyAditional</AttriName>
 <Description>Movement Key Aditional</Description>
-<TakesValueFrom></TakesValueFrom>
+<TakesValueFrom>
+<Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>128</AttriId>
+<AttriName>MovementKeyAditional</AttriName>
+<Description>Movement Key Aditional</Description></Attribute></FromValue></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
 <Presicion>6</Presicion>
@@ -106,9 +131,66 @@
 <Value>No</Value></Property>
 <Property>
 <Name>AllowNulls</Name>
-<Value>No</Value></Property></Properties></AttriType></Attribute></AttrisInTable>
-<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>140</AttriId>
+<AttriName>MovementDescription</AttriName>
+<Description>Movement Description</Description>
+<TakesValueFrom>
+<FromValue>
+<Token>' '</Token></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>V</DataType>
+<Presicion>200</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>NLS</Name>
+<Value>Yes</Value></Property></Properties></AttriType>
+<AttriChangeType>ni</AttriChangeType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable>
+<Attribute>
+<AttriId>127</AttriId>
+<AttriName>MovementQuantity</AttriName>
+<Description>Movement Quantity</Description>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>4</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>Autogenerate</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>del</AttriChangeType></Attribute></AttrisNoLongerInTable>
 <AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>123</AttriId>
+<AttriName>MovementId</AttriName>
+<Description>Movement Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
 <TableIndices>
 <Indices>
 <Index>
@@ -123,7 +205,39 @@
 <Clustered>Yes</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
 <Statements>
-<Statement>CREATE TABLE [Movement] ([MovementId] int NOT NULL IDENTITY(1,1), [MovementType] smallint NOT NULL , [MovementCreatedDate] datetime NOT NULL , [MovementQuantity] smallint NOT NULL , [MovementKeyAditional] int NOT NULL , PRIMARY KEY([MovementId])) </Statement></Statements>
+<Statement>ALTER TABLE [Movement] ADD [MovementDescription] nvarchar(200) NOT NULL CONSTRAINT MovementDescriptionMovement_DEFAULT DEFAULT ''</Statement>
+<Statement>ALTER TABLE [Movement] DROP CONSTRAINT MovementDescriptionMovement_DEFAULT</Statement>
+<Statement>ALTER TABLE [Movement] DROP COLUMN [MovementQuantity]</Statement></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
-<Warnings></Warnings>
-<Errors></Errors></ReorgSpec>
+<Warnings>
+<Warning>
+<MsgCode>rgz0007</MsgCode>
+<Message>
+<Token>Attribute </Token>
+<Attribute>
+<AttriId>140</AttriId>
+<AttriName>MovementDescription</AttriName>
+<Description>Movement Description</Description></Attribute>
+<Token> does not allow nulls and does not have an Initial Value. An empty default value will be used.</Token></Message></Warning></Warnings>
+<Errors></Errors>
+<Information>
+<InfoMsg>
+<MsgCode>nfo0003</MsgCode>
+<Message>
+<Token>The reorganization for this table makes the schema not backward compatible.</Token></Message>
+<AdditionalInfo>
+<Title>The following operations are not backward compatible:</Title>
+<Info>
+<Token>Add not null</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>140</AttriId>
+<AttriName>MovementDescription</AttriName>
+<Description>Movement Description</Description></Attribute></Info>
+<Info>
+<Token>Delete</Token>
+<Token>attribute</Token>
+<Attribute>
+<AttriId>127</AttriId>
+<AttriName>MovementQuantity</AttriName>
+<Description></Description></Attribute></Info></AdditionalInfo></InfoMsg></Information></ReorgSpec>

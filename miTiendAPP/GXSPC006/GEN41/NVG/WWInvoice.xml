@@ -9,7 +9,7 @@
 <ObjDesc>Work With Invoice</ObjDesc>
 <ObjPgmName>WWInvoice</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0024</MsgCode>
@@ -359,6 +359,23 @@
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
 <Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute>
+<Attribute>
+<AttriId>94</AttriId>
+<AttriName>InvoiceActive</AttriName>
+<Description>Invoice Active</Description></Attribute>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>16</TableId>
@@ -370,13 +387,75 @@
 <AttriId>99</AttriId>
 <AttriName>UserId</AttriName>
 <Description>User Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute></Into>
 <Tables></Tables></Table>
 <Table>
 <TableId>6</TableId>
 <TableName>InvoiceTotalReceivable navigation</TableName>
 <Description>Invoice</Description>
 <RecordsToRead>one</RecordsToRead>
-<Tables>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>*</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>-</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>+</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
 <Table>
 <TableId>6</TableId>
 <TableName>Invoice</TableName>
@@ -423,11 +502,7 @@
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
 <Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
-<TablesToUpdate></TablesToUpdate>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree></Formula></AggSelFormulas></Formulas></ImplicitForEach></Event>
 <Event>
 <EventName>'PREPARETRANSACTION'</EventName>
 <EventType>Subrutine</EventType></Event>

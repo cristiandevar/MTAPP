@@ -4215,6 +4215,24 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "wpregistermovement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GeneXus.Classes.Web.Core": "[1.22.0]",
+          "GeneXus.PdfReportsCS.Core": "[1.22.0]",
+          "GeneXus.Programs.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/wpregistermovement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/wpregistermovement.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "wpregistersale/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10092,6 +10110,11 @@
       "path": "../wprankings/wprankings.csproj",
       "msbuildProject": "../wprankings/wprankings.csproj"
     },
+    "wpregistermovement/1.0.0": {
+      "type": "project",
+      "path": "../wpregistermovement/wpregistermovement.csproj",
+      "msbuildProject": "../wpregistermovement/wpregistermovement.csproj"
+    },
     "wpregistersale/1.0.0": {
       "type": "project",
       "path": "../wpregistersale/wpregistersale.csproj",
@@ -10311,6 +10334,7 @@
       "wppurchaseorderdetails >= 1.0.0",
       "wppurchaseordergenerated >= 1.0.0",
       "wprankings >= 1.0.0",
+      "wpregistermovement >= 1.0.0",
       "wpregistersale >= 1.0.0",
       "wpregistersalenew >= 1.0.0",
       "wproleassignpermission >= 1.0.0",
@@ -10659,6 +10683,9 @@
             },
             "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wprankings\\wprankings.csproj": {
               "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wprankings\\wprankings.csproj"
+            },
+            "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wpregistermovement\\wpregistermovement.csproj": {
+              "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wpregistermovement\\wpregistermovement.csproj"
             },
             "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wpregistersalenew\\wpregistersalenew.csproj": {
               "projectPath": "C:\\Universidad\\Seminario Tecnico Profesional\\KB\\mtaKB\\Data006\\build\\wpregistersalenew\\wpregistersalenew.csproj"

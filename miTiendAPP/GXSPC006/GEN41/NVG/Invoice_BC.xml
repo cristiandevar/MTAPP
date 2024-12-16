@@ -9,7 +9,7 @@
 <ObjDesc>Invoice</ObjDesc>
 <ObjPgmName>Invoice_BC</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0024</MsgCode>
@@ -37,95 +37,308 @@
 <TableId>6</TableId>
 <TableName>Invoice</TableName>
 <Description>Invoice</Description></Table></BaseTable>
-<NavigationTree>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>Pgmname</VarId>
+<VarName>&amp;Pgmname</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>&quot;Invoice_BC&quot;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>today(</Token>
+<Token>)</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable>
+<Token>IF</Token>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable>
+<Token>=</Token>
+<Token>TrnMode</Token>
+<Token>.Insert</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Today</VarId>
+<VarName>&amp;Today</VarName></Variable>
+<Token>IF</Token>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable>
+<Token>=</Token>
+<Token>TrnMode</Token>
+<Token>.Insert</Token>
+<Token>or</Token>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable>
+<Token>=</Token>
+<Token>TrnMode</Token>
+<Token>.Update</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
 <Table>
 <TableId>6</TableId>
 <TableName>Invoice</TableName>
-<Description>Invoice</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables>
-<Table>
-<TableId>16</TableId>
-<TableName>User</TableName>
-<Description>User</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute>
+<Attribute>
+<AttriId>94</AttriId>
+<AttriName>InvoiceActive</AttriName>
+<Description>Invoice Active</Description></Attribute>
 <Attribute>
 <AttriId>99</AttriId>
 <AttriName>UserId</AttriName>
-<Description>User Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table>
-<Table>
-<TableId>6</TableId>
-<TableName>InvoiceProductQuantity, InvoiceLastDetailId navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>one</RecordsToRead>
-<JoinType>Outer</JoinType>
-<Tables>
-<Table>
-<TableId>13</TableId>
-<TableName>InvoiceDetail</TableName>
-<Description>Detail</Description>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>20</AttriId>
-<AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table>
-<Table>
-<TableId>6</TableId>
-<TableName>InvoiceLastPaymentMethodId navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>one</RecordsToRead>
-<JoinType>Outer</JoinType>
-<Tables>
-<Table>
-<TableId>21</TableId>
-<TableName>InvoicePaymentMethod</TableName>
-<Description>Payment Method</Description>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
-<Attribute>
-<AttriId>20</AttriId>
-<AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></Tables></Table>
+<Description>User Id</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>ReadTable</ActionType>
 <Table>
 <TableId>6</TableId>
 <TableName>InvoiceTotalReceivable navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
+<Description>Invoice</Description></Table>
+<JoinConditions>
 <Table>
 <TableId>6</TableId>
-<TableName>sum( InvoicePaymentMethodDiscountIm ) , sum( InvoicePaymentMethodRechargeIm )  navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description></Table></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
 <Table>
-<TableId>21</TableId>
-<TableName>InvoicePaymentMethod</TableName>
-<Description>Payment Method</Description>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<TableId>6</TableId>
+<TableName>InvoiceProductQuantity, InvoiceLastDetailId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceProductQuantity, InvoiceLastDetailId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas>
-<DynamicLoads></DynamicLoads>
-<Rules></Rules>
-<AfterAttributeRules></AfterAttributeRules>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute>
+<Attribute>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceLastPaymentMethodId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceLastPaymentMethodId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>16</TableId>
+<TableName>User</TableName>
+<Description>User</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>99</AttriId>
+<AttriName>UserId</AttriName>
+<Description>User Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>100</AttriId>
+<AttriName>UserName</AttriName>
+<Description>User Name</Description></Attribute></Into></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Invoice Modified Date is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>InvoiceModifiedDate</AttriName>
+<Description>Invoice Modified Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>ymdtod(</Token>
+<Sp></Sp>
+<Token>1753</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Invoice Created Date is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>38</AttriId>
+<AttriName>InvoiceCreatedDate</AttriName>
+<Description>Invoice Created Date</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>ymdtod(</Token>
+<Sp></Sp>
+<Token>1753</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
 <TableToUpdate>
@@ -181,9 +394,13 @@
 <Description>Invoice</Description></Table>
 <TableAction>delete</TableAction>
 <AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
 <AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
 <AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
 <AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
 <TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels>
 <Level>
@@ -194,63 +411,250 @@
 <TableId>13</TableId>
 <TableName>InvoiceDetail</TableName>
 <Description>Detail</Description></Table></BaseTable>
-<NavigationTree>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
 <Table>
 <TableId>13</TableId>
 <TableName>InvoiceDetail</TableName>
-<Description>Detail</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Detail</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>25</AttriId>
 <AttriName>InvoiceDetailId</AttriName>
-<Description>Invoice Detail Id</Description></Attribute></KeyAttributes>
-<Tables>
-<Table>
-<TableId>5</TableId>
-<TableName>Product</TableName>
-<Description>Product</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
+<Description>Invoice Detail Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Attribute>
+<AttriId>98</AttriId>
+<AttriName>InvoiceDetailIsWholesale</AttriName>
+<Description>Invoice Detail Is Wholesale</Description></Attribute>
 <Attribute>
 <AttriId>15</AttriId>
 <AttriName>ProductId</AttriName>
-<Description>Product Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table>
-<Table>
-<TableId>6</TableId>
-<TableName>InvoiceTotalReceivable navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
-<Table>
-<TableId>6</TableId>
-<TableName>sum( InvoicePaymentMethodDiscountIm ) , sum( InvoicePaymentMethodRechargeIm )  navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
-<Table>
-<TableId>21</TableId>
-<TableName>InvoicePaymentMethod</TableName>
-<Description>Payment Method</Description>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Product Id</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
 <Attribute>
-<AttriId>20</AttriId>
-<AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas>
-<DynamicLoads></DynamicLoads>
-<Rules></Rules>
-<AfterAttributeRules></AfterAttributeRules>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>+</Token>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>+</Token>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>IF</Token>
+<Token>update</Token>
+<Token>;</Token>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>-</Token>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>delete</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Quantity must be positive number'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>0</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Invalid Price&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>0</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999999999999999.99</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>ProductName</AttriName>
+<Description>Product Name</Description></Attribute>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute></Into></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Quantity must be lower or equal than Stock'</Token></Expression>
+<Condition>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>ProductStock</AttriName>
+<Description>Product Stock</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>94</AttriId>
+<AttriName>InvoiceActive</AttriName>
+<Description>Invoice Active</Description></Attribute></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
 <TableToUpdate>
@@ -314,12 +718,67 @@
 <Description>Detail</Description></Table>
 <TableAction>delete</TableAction>
 <AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
 <AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
 <AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
 <AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
 <TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels></Levels>
-<AfterLevelRules></AfterLevelRules></Level>
+<AfterLevelRules>
+<After>level</After>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description></Table></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceProductQuantity, InvoiceLastDetailId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceProductQuantity, InvoiceLastDetailId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute></Into></Action></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level>
 <Level>
 <LevelType>Trn</LevelType>
 <LevelNumber>21</LevelNumber>
@@ -328,65 +787,270 @@
 <TableId>21</TableId>
 <TableName>InvoicePaymentMethod</TableName>
 <Description>Payment Method</Description></Table></BaseTable>
-<NavigationTree>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
 <Table>
 <TableId>21</TableId>
 <TableName>InvoicePaymentMethod</TableName>
-<Description>Payment Method</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Payment Method</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description></Table>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>118</AttriId>
 <AttriName>InvoicePaymentMethodId</AttriName>
-<Description>Invoice Payment Method Id</Description></Attribute></KeyAttributes>
-<Tables>
-<Table>
-<TableId>20</TableId>
-<TableName>PaymentMethod</TableName>
-<Description>Payment Method of Invoices</Description>
-<RecordsToRead>one</RecordsToRead>
-<KeyAttributes>
+<Description>Invoice Payment Method Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>120</AttriId>
+<AttriName>InvoicePaymentMethodImport</AttriName>
+<Description>Invoice Payment Method Import</Description></Attribute>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
 <Attribute>
 <AttriId>115</AttriId>
 <AttriName>PaymentMethodId</AttriName>
-<Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<Description>Payment Method Id</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute>
+<Token>.</Token>
+<Token>getoldvalue(</Token>
+<Token>)</Token>
+<Token>+</Token>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Invalid Price&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>120</AttriId>
+<AttriName>InvoicePaymentMethodImport</AttriName>
+<Description>Invoice Payment Method Import</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>0</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>120</AttriId>
+<AttriName>InvoicePaymentMethodImport</AttriName>
+<Description>Invoice Payment Method Import</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999999999999999.99</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>120</AttriId>
+<AttriName>InvoicePaymentMethodImport</AttriName>
+<Description>Invoice Payment Method Import</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Invalid Price&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>0</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999999999999999.99</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Invalid Price&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>0</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999999999999999.99</Token>
+<Token>)</Token>
+<Sp></Sp>
+<Token>or</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
 <JoinType>Outer</JoinType>
-<Tables></Tables></Table></Tables></Table>
 <Table>
-<TableId>6</TableId>
-<TableName>InvoiceTotalReceivable navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<JoinConditions>
 <Table>
-<TableId>6</TableId>
-<TableName>sum( InvoicePaymentMethodDiscountIm ) , sum( InvoicePaymentMethodRechargeIm )  navigation</TableName>
-<Description>Invoice</Description>
-<RecordsToRead>many</RecordsToRead>
-<Tables>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></AttributeTo>
 <Table>
 <TableId>21</TableId>
 <TableName>InvoicePaymentMethod</TableName>
-<Description>Payment Method</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Payment Method</Description></Table>
+<AttributeFrom>
 <Attribute>
-<AttriId>20</AttriId>
-<AttriName>InvoiceId</AttriName>
-<Description>Invoice Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas>
-<DynamicLoads></DynamicLoads>
-<Rules></Rules>
-<AfterAttributeRules></AfterAttributeRules>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute></Into></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
 <TableToUpdate>
@@ -450,12 +1114,252 @@
 <Description>Payment Method</Description></Table>
 <TableAction>delete</TableAction>
 <AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
 <AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
 <AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
 <AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
 <TablesToControlOnDelete></TablesToControlOnDelete>
 <Levels></Levels>
-<AfterLevelRules></AfterLevelRules></Level></Levels>
+<AfterLevelRules>
+<After>level</After>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceTotalReceivable navigation</TableName>
+<Description>Invoice</Description></Table></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceLastPaymentMethodId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>InvoiceLastPaymentMethodId navigation</TableName>
+<Description>Invoice</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute></Into></Action></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
+<BeforeTrnRules></BeforeTrnRules>
 <AfterTrnRules></AfterTrnRules>
-<AfterLevelRules></AfterLevelRules></Level></Levels>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>131</AttriId>
+<AttriName>InvoiceLastPaymentMethodId</AttriName>
+<Description>Invoice Last Payment Method Id</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>max(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>97</AttriId>
+<AttriName>InvoiceLastDetailId</AttriName>
+<Description>Invoice Last Detail Id</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>max(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>InvoiceProductQuantity</AttriName>
+<Description>Invoice Product Quantity</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>count(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaGroupByAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGroupByAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<Tables></Tables></Table></NavigationTree></Formula>
+<Formula>
+<FormulaAttri>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>InvoiceTotalReceivable</AttriName>
+<Description>Invoice Total Receivable</Description></Attribute></FormulaAttri>
+<FormulaType>aggsel</FormulaType>
+<FormulaExpression>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>InvoiceDetailQuantity</AttriName>
+<Description>Invoice Detail Quantity</Description></Attribute>
+<Sp></Sp>
+<Token>*</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>InvoiceDetailHistoricPrice</AttriName>
+<Description>Invoice Detail Historic Price</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>-</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>133</AttriId>
+<AttriName>InvoicePaymentMethodDiscountIm</AttriName>
+<Description>Invoice Payment Method Discount Import</Description></Attribute>
+<Token>)</Token>
+<Sp></Sp>
+<Token>+</Token>
+<Sp></Sp>
+<Token>sum(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>132</AttriId>
+<AttriName>InvoicePaymentMethodRechargeIm</AttriName>
+<Description>Invoice Payment Method Recharge Import</Description></Attribute>
+<Token>)</Token></FormulaExpression>
+<FormulaGivenAttris>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></FormulaGivenAttris>
+<FormulaIndex>IINVOICE</FormulaIndex>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>sum( InvoicePaymentMethodDiscountIm ) , sum( InvoicePaymentMethodRechargeIm )  navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<Tables>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table>
+<Table>
+<TableId>6</TableId>
+<TableName>sum( InvoiceDetailQuantity * InvoiceDetailHistoricPrice )  navigation</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>one</RecordsToRead>
+<Tables>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree></Formula></AggSelFormulas></Formulas></Level></Levels>
 <Suggests></Suggests></ObjectSpec>

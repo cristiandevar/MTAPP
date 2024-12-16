@@ -28,9 +28,12 @@ ij_object_dependency(movement,[],[],[],15).
 obj_parms_i([ 'string aP0_Gx_mode','int aP1_MovementId' ],[ [ 'Mode',in ],[ 'Movementid',in ] ]).
  
  
+has_silent_trn_i(movement_bc).
  
  
  
 module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  

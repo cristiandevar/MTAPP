@@ -2,7 +2,7 @@ spec_i([ web,158,'Movements','WWMovement',0,eng,'18_0_2-169539' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete','Movementtype' ],[]).
  
-level_i(2,[ 22,[ [ 22,many ] ],[],[],[ [ [ 22 ],[ 127,128,125,124,123 ] ] ],[ [ [ 22 ],[] ] ],[ 124 ],'',[],[] ]).
+level_i(2,[ 22,[ [ 22,many ] ],[],[],[ [ [ 22 ],[ 140,128,125,124,123 ] ] ],[ [ [ 22 ],[] ] ],[ 124 ],'',[],[] ]).
  
 tw_i(2,[]).
  
@@ -13,27 +13,27 @@ cond_constraint_i(2,[ [ t(124,2),t(>=,10),t('Movementtype',23) ],[ 124 ],[ t('.N
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 22,127 ],[ 22,128 ],[ 22,125 ],[ 22,124 ],[ 22,123 ] ] ]).
+ta_i(2,[ [ [ 22,140 ],[ 22,128 ],[ 22,125 ],[ 22,124 ],[ 22,123 ] ] ]).
  
-las_i(2,[ [ 'Movementtype','Update','Delete',127,128,125,124,123 ] ]).
+las_i(2,[ [ 'Movementtype','Update','Delete',140,128,125,124,123 ] ]).
  
 lac_i(2,[ [ 'Movementtype','Update','Delete' ] ]).
  
  
 lits_i('Movements',5,10).
  
-cls_i([ 0,0 ],[ 5,73 ]).
+cls_i([ 0,0 ],[ 5,269 ]).
  
 pos_i('Movementtype',[ 0,0,0 ]).
 pos_i(123,[ 1,2,0 ]).
 pos_i(124,[ 1,2,7 ]).
 pos_i(125,[ 1,2,12 ]).
 pos_i(128,[ 1,2,21 ]).
-pos_i(127,[ 1,2,28 ]).
-pos_i('Update',[ 1,2,33 ]).
-pos_i('Delete',[ 1,2,54 ]).
+pos_i(140,[ 1,2,28 ]).
+pos_i('Update',[ 1,2,229 ]).
+pos_i('Delete',[ 1,2,250 ]).
  
-repeat_i(2,[ 1,2,[ 123,124,125,128,127,'Update','Delete' ],[ 'Update','Delete' ] ]).
+repeat_i(2,[ 1,2,[ 123,124,125,128,140,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWMovement"')).
  
@@ -126,13 +126,13 @@ rule_i(0,prop('Theme',o(102,mtaKB))).
 rule_i(0,prop('ObjDesc','Movements')).
 rule_i(0,prop('ObjName','WWMovement')).
 rule_i(0,maingen(41)).
-rule_i(2,rule([ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('Movementtype',23),t(=,10),t('1',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('2',3),t('.OR.',9),t('null(',1),t('Movementtype',23),t(')',4),t(')',4) ],[ insert,update ],[ 'Movementtype' ])).
+rule_i(2,rule([ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('Movementtype',23),t(=,10),t('1',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('2',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('3',3),t('.OR.',9),t('null(',1),t('Movementtype',23),t(')',4),t(')',4) ],[ insert,update ],[ 'Movementtype' ])).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWMovement"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
 a_i(3,2,t,22,[],[ [],'',[] ]).
-a_i(4,2,b,0,[],[ [],[ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('Movementtype',23),t(=,10),t('1',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('2',3),t('.OR.',9),t('null(',1),t('Movementtype',23),t(')',4),t(')',4) ] ]).
+a_i(4,2,b,0,[],[ [],[ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('Movementtype',23),t(=,10),t('1',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('2',3),t('.OR.',9),t('Movementtype',23),t(=,10),t('3',3),t('.OR.',9),t('null(',1),t('Movementtype',23),t(')',4),t(')',4) ] ]).
 a_i(5,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(6,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
@@ -141,7 +141,7 @@ v_i(f,o,1,'Pgmname').
 v_i(f,i,2,[]).
 v_i(f,o,2,'Err').
 v_i(t,i,3,[]).
-v_i(t,o,3,127).
+v_i(t,o,3,140).
 v_i(t,o,3,128).
 v_i(t,o,3,125).
 v_i(t,o,3,124).
@@ -158,7 +158,7 @@ v_i(f,o,6,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
-attri_i(127,[ 'MovementQuantity',int,4,0,'ZZZ9',0,'Movement Quantity','',0 ]).
+attri_i(140,[ 'MovementDescription',svchar,200,0,'',0,'Movement Description','',0 ]).
 attri_i(128,[ 'MovementKeyAditional',int,6,0,'ZZZZZ9',0,'Movement Key Aditional','',0 ]).
 attri_i(125,[ 'MovementCreatedDate',date,8,0,'99/99/99',0,'Movement Created Date','',0 ]).
 attri_i(124,[ 'MovementType',int,4,0,'ZZZ9',0,'Movement Type','',0 ]).
@@ -177,7 +177,7 @@ attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7
 attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(22,[ 'Movement',[ 123,124,125,127,128 ],'Movement','Movement' ]).
+table_i(22,[ 'Movement',[ 123,124,125,128,140 ],'Movement','Movement' ]).
  
 index_i(22,[ '',a,[ 124 ],'' ]).
 index_i(22,[ 'IMOVEMENT',u,[ 123 ],'IMovement' ]).
@@ -207,6 +207,7 @@ enumerated_i(6,124,144).
  
 enum_value_i(6,144,'1','ProductDiscard','"Product Discard"',[ none ]).
 enum_value_i(6,144,'2','ProductAdded','"Product Added"',[ none ]).
+enum_value_i(6,144,'3','InvoiceCancel','"Invoice Cancel"',[ none ]).
 enum_value_i(6,43,'"INS"','Insert','"Insert"',[ none ]).
 enum_value_i(6,43,'"UPD"','Update','"Update"',[ none ]).
 enum_value_i(6,43,'"DLT"','Delete','"Delete"',[ none ]).
@@ -220,10 +221,11 @@ enum_type_i(6,43,char,3,0).
  
 dom_info_i(92,[ 'Id' ]).
 dom_info_i(144,[ 'MovementType' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
  
-a_ctrl_i('Movementtype',c,[ '1','2' ]).
+a_ctrl_i('Movementtype',c,[ '1','2','3' ]).
  
-break_i(2,nvg,1,[ 124 ],[ [ 123,124,125,128,127 ],[],[] ]).
+break_i(2,nvg,1,[ 124 ],[ [ 123,124,125,128,140 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,17).
@@ -465,7 +467,7 @@ html_comp_i(18,'Captionposition','None',v,[ str ]).
 html_comp_i(18,'Captionvalue','Movement Type',d,[ str ]).
 html_comp_i(18,'Layoutclass','',v,[ str ]).
 html_comp_i(18,'Controltype',0,d,[ num ]).
-html_comp_i(18,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],d,[ values ]).
+html_comp_i(18,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],d,[ values ]).
 html_comp_i(18,'Addemptyitem',-1,d,[ bool ]).
 html_comp_i(18,'Emptyitemtext','(All)',d,[ str ]).
 html_comp_i(18,'Notifycontextchange',0,d,[ bool ]).
@@ -612,7 +614,7 @@ html_comp_i(29,'Class','attribute-description',v,[ str ]).
 html_comp_i(29,'Columnclass',column,v,[ str ]).
 html_comp_i(29,'Returnonclick',0,d,[ bool ]).
 html_comp_i(29,'Controltype',0,d,[ num ]).
-html_comp_i(29,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],d,[ values ]).
+html_comp_i(29,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],d,[ values ]).
 html_comp_i(29,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(29,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(29,'Colreadonly',-1,d,[ bool ]).
@@ -688,15 +690,18 @@ html_comp_i(31,'Colvisible',-1,v,[ bool ]).
 html_comp_i(31,'Title','',d,[ str ]).
 html_comp_i(31,'Invitemsg','',d,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Colcount',4,d,[ num ]).
-html_comp_i(32,'Colattid',127,v,[ num ]).
-html_comp_i(32,'Controlname','Movementquantity',d,[ str ]).
+html_comp_i(32,'Colcount',80,d,[ num ]).
+html_comp_i(32,'Colattid',140,v,[ num ]).
+html_comp_i(32,'Controlname','Movementdescription',d,[ str ]).
 html_comp_i(32,'Class','Attribute',v,[ str ]).
 html_comp_i(32,'Columnclass','column WWOptionalColumn',v,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
 html_comp_i(32,'Eventgx','',d,[ str ]).
 html_comp_i(32,'Controltype',2,d,[ num ]).
 html_comp_i(32,'Inputtype',0,d,[ num ]).
+html_comp_i(32,'Editautocomplete',0,d,[ num ]).
+html_comp_i(32,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(32,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(32,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(32,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(32,'Autocomplete',-1,d,[ bool ]).
@@ -707,10 +712,10 @@ html_comp_i(32,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(32,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(32,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(32,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(32,'Coltitle','Quantity',d,[ str ]).
+html_comp_i(32,'Coltitle','Description',d,[ str ]).
 html_comp_i(32,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(32,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(32,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(32,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(32,'Gxformat',0,d,[ num ]).
 html_comp_i(32,'Colvisible',-1,v,[ bool ]).
 html_comp_i(32,'Title','',d,[ str ]).
@@ -806,10 +811,10 @@ lit_i(28,1,s(t(123,2),27),[ ctlname(123),ctrltype(edit,28),pos(28),readonly,ispw
 lit_i(29,1,s(t(124,2),27),[ ctlname(124),ctrltype(combo,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(30,1,s(t(125,2),27),[ ctlname(125),ctrltype(edit,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(31,1,s(t(128,2),27),[ ctlname(128),ctrltype(edit,31),pos(31),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(32,1,s(t(127,2),27),[ ctlname(127),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(32,1,s(t(140,2),27),[ ctlname(140),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(33,1,s(t('Update',23),27),[ ctlname('&Update'),ctrltype(edit,33),pos(33),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(34,1,s(t('Delete',23),27),[ ctlname('&Delete'),ctrltype(edit,34),pos(34),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(27,1,s(27),[ ctlname('Grid'),el([ t(123,2),t(124,2),t(125,2),t(128,2),t(127,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(27,1,s(27),[ ctlname('Grid'),el([ t(123,2),t(124,2),t(125,2),t(128,2),t(140,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(26,1,div(26),[ ctlname('') ]).
 lit_i(25,1,div(25),[ ctlname('') ]).
 lit_i(24,1,div(24),[ ctlname('Gridcontainer') ]).
@@ -827,10 +832,11 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-ctrl_info_i(1,18,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],[ '' ] ]).
-ctrl_info_i(1,29,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],[ '' ] ]).
+ctrl_info_i(1,18,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],[ '' ] ]).
+ctrl_info_i(1,29,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],[ '' ] ]).
  
  
+calling_main_i(1,37).
  
 att_prop_i(6,123,'ExternalName','MovementId',d).
 att_prop_i(6,123,'ExternalNamespace',mtaKB,d).
@@ -878,25 +884,25 @@ att_prop_i(6,128,'AttValidationFailedMsg','',d).
 att_prop_i(6,128,'DownloadOffline','0',d).
 att_prop_i(6,128,'VarServiceExtName','',d).
 att_prop_i(6,128,'FullName','MovementKeyAditional',v).
-att_prop_i(6,127,'ExternalName','MovementQuantity',d).
-att_prop_i(6,127,'ExternalNamespace',mtaKB,d).
-att_prop_i(6,127,'EmptyAsNull','Yes',d).
-att_prop_i(6,127,idBasedOn,'',d).
-att_prop_i(6,127,'AUTONUMBER','0',d).
-att_prop_i(6,127,'ATT_INITIAL_VALUE','',d).
-att_prop_i(6,127,'AttRegEx','',d).
-att_prop_i(6,127,'AttValidationFailedMsg','',d).
-att_prop_i(6,127,'DownloadOffline','0',d).
-att_prop_i(6,127,'VarServiceExtName','',d).
-att_prop_i(6,127,'FullName','MovementQuantity',v).
+att_prop_i(6,140,'ExternalName','MovementDescription',d).
+att_prop_i(6,140,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,140,'EmptyAsNull','Yes',d).
+att_prop_i(6,140,idBasedOn,88,v).
+att_prop_i(6,140,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,140,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,140,'AttRegEx','',d).
+att_prop_i(6,140,'AttValidationFailedMsg','',d).
+att_prop_i(6,140,'DownloadOffline','0',d).
+att_prop_i(6,140,'VarServiceExtName','',d).
+att_prop_i(6,140,'FullName','MovementDescription',v).
  
  
 tbl_att_prop_i(6,22,123,'AllowNulls',n).
 tbl_att_prop_i(6,22,123,'AUTONUMBER',y).
 tbl_att_prop_i(6,22,124,'AllowNulls',n).
 tbl_att_prop_i(6,22,125,'AllowNulls',n).
-tbl_att_prop_i(6,22,127,'AllowNulls',n).
 tbl_att_prop_i(6,22,128,'AllowNulls',n).
+tbl_att_prop_i(6,22,140,'AllowNulls',n).
  
 var_prop_i(6,'Movementtype',idBasedOn,'',v).
 var_prop_i(6,'Movementtype','AttValidationFailedMsg','GXSPC_OutOfRange',d).
@@ -1155,6 +1161,8 @@ module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
 module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  
  
  
