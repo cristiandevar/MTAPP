@@ -6,7 +6,7 @@
 <ObjCls>13</ObjCls>
 <ObjId>164</ObjId>
 <ObjName>WPRegisterMovement</ObjName>
-<ObjDesc>WPRegister Movement</ObjDesc>
+<ObjDesc>Cancel Sale</ObjDesc>
 <ObjPgmName>WPRegisterMovement</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Result>genreq</Result>
@@ -225,6 +225,8 @@
 <Event>
 <EventName>&amp;CancelInvoice.Click</EventName></Event>
 <Event>
+<EventName>&amp;EditInvoice.Click</EventName></Event>
+<Event>
 <EventName>'Cancel'</EventName></Event>
 <Event>
 <EventName>&amp;FilterNro.Controlvaluechanged</EventName></Event>
@@ -233,12 +235,10 @@
 <Event>
 <EventName>&amp;FilterCreatedDateTo.Controlvaluechanged</EventName></Event>
 <Event>
-<EventName>'ConfirmRegister'</EventName></Event>
-<Event>
 <EventName>'HIDETABLES'</EventName>
 <EventType>Subrutine</EventType></Event>
 <Event>
-<EventName>'CLEARSDT'</EventName>
+<EventName>'CLEARSDTS'</EventName>
 <EventType>Subrutine</EventType></Event>
 <Event>
 <EventName>'PREPAREINVOICECANCEL'</EventName>
@@ -249,7 +249,7 @@
 <Type>FirstRows</Type>
 <MaxRows>1</MaxRows></Optimization></Optimizations>
 <LevelType>For First</LevelType>
-<LevelBeginRow>86</LevelBeginRow>
+<LevelBeginRow>92</LevelBeginRow>
 <BaseTable>
 <Table>
 <TableId>6</TableId>
@@ -308,7 +308,7 @@
 <Level>
 <Optimizations></Optimizations>
 <LevelType>For Each</LevelType>
-<LevelBeginRow>89</LevelBeginRow>
+<LevelBeginRow>95</LevelBeginRow>
 <BaseTable>
 <Table>
 <TableId>13</TableId>
@@ -381,10 +381,307 @@
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>108</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICEPAYMENTMETHOD</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas></Level></Level></Event>
 <Event>
-<EventName>'CONFIRMINVOICECANCEL'</EventName>
+<EventName>'PREPAREINVOICEEDIT'</EventName>
 <EventType>Subrutine</EventType>
+<Level>
+<Optimizations>
+<Optimization>
+<Type>FirstRows</Type>
+<MaxRows>1</MaxRows></Optimization></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>133</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICE</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>Invoice</TableName>
+<Description>Invoice</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>136</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICEDETAIL</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>InvoiceDetail</TableName>
+<Description>Detail</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>InvoiceDetailId</AttriName>
+<Description>Invoice Detail Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>5</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>149</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IINVOICEPAYMENTMETHOD</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>@InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>21</TableId>
+<TableName>InvoicePaymentMethod</TableName>
+<Description>Payment Method</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>InvoiceId</AttriName>
+<Description>Invoice Id</Description></Attribute>
+<Attribute>
+<AttriId>118</AttriId>
+<AttriName>InvoicePaymentMethodId</AttriName>
+<Description>Invoice Payment Method Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></KeyAttributes>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Level></Event>
+<Event>
+<EventName>'ConfirmCancel'</EventName>
 <Command>
 <Expression>
 <Variable>
@@ -394,8 +691,8 @@
 <Token>load(</Token>
 <Sp></Sp>
 <Variable>
-<VarId>Movementkeyaditional</VarId>
-<VarName>&amp;MovementKeyAditional</VarName></Variable>
+<VarId>Invoiceid</VarId>
+<VarName>&amp;InvoiceId</VarName></Variable>
 <Token>)</Token></Expression></Command>
 <Command>
 <Expression>
@@ -439,12 +736,38 @@
 <EventName>'CONTROLINVOICECANCEL'</EventName>
 <EventType>Subrutine</EventType></Event>
 <Event>
+<EventName>'CONTROLINVOICEEDIT'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
+<EventName>'CLEARVARIABLES'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
 <EventName>'RESETWEBPANEL'</EventName>
 <EventType>Subrutine</EventType></Event>
 <Event>
-<EventName>Gridinvoicedetails.Load</EventName>
+<EventName>'ConfirmEdit'</EventName></Event>
+<Event>
+<EventName>Gridpaymentedit.Load</EventName>
 <Binding>
 <Variable>
-<VarId>Sdtcarproducts</VarId>
-<VarName>&amp;SDTCarProducts</VarName></Variable></Binding></Event>
+<VarId>Sdtinvoiceaddpaymentmethod</VarId>
+<VarName>&amp;SDTInvoiceAddPaymentMethod</VarName></Variable></Binding></Event>
+<Event>
+<EventName>Gridinvoicedetailsedit.Load</EventName>
+<Binding>
+<Variable>
+<VarId>Sdtcarproducts_edit</VarId>
+<VarName>&amp;SDTCarProducts_Edit</VarName></Variable></Binding></Event>
+<Event>
+<EventName>Gridpaymentcancel.Load</EventName>
+<Binding>
+<Variable>
+<VarId>Sdtinvoiceaddpaymentmethod_cancel</VarId>
+<VarName>&amp;SDTInvoiceAddPaymentMethod_Cancel</VarName></Variable></Binding></Event>
+<Event>
+<EventName>Gridinvoicedetailscancel.Load</EventName>
+<Binding>
+<Variable>
+<VarId>Sdtcarproducts_cancel</VarId>
+<VarName>&amp;SDTCarProducts_Cancel</VarName></Variable></Binding></Event>
 <Suggests></Suggests></ObjectSpec>

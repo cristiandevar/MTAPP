@@ -5,28 +5,90 @@
     <Part>c44bd5ff-f918-415b-98e6-aca44fed84fa</Part>
   </Object>
   <Object>
+<<<<<<< Updated upstream
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>45</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
     <Type>c9584656-94b6-4ccd-890f-332d11fc2c25</Type>
     <Id>74</Id>
     <Part>d24a58ad-57ba-41b7-9e6e-eaca3543c778</Part>
+=======
+    <Type>447527b5-9210-4523-898b-5dccb17be60a</Type>
+    <Id>68</Id>
+    <Part>5c2aa9da-8fc4-4b6b-ae02-8db4fa48976a</Part>
   </Object>
   <Object>
-    <Type>2a9e9aba-d2de-4801-ae7f-5e3819222daf</Type>
-    <Id>1</Id>
-    <Part>1d8aeb5a-6e98-45a7-92d2-d8de7384e432</Part>
+    <Type>926a06b9-3417-4ab4-9f8c-09c2f626bb1c</Type>
+    <Id>20</Id>
+    <Part>447a71af-018d-4f65-9579-3f9216f7c854</Part>
+  </Object>
+  <Object>
+    <Type>926a06b9-3417-4ab4-9f8c-09c2f626bb1c</Type>
+    <Id>17</Id>
+    <Part>447a71af-018d-4f65-9579-3f9216f7c854</Part>
+>>>>>>> Stashed changes
   </Object>
   <Object>
     <Type>c9584656-94b6-4ccd-890f-332d11fc2c25</Type>
-    <Id>79</Id>
+    <Id>95</Id>
     <Part>c44bd5ff-f918-415b-98e6-aca44fed84fa</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>49</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
+    <Type>c9584656-94b6-4ccd-890f-332d11fc2c25</Type>
+<<<<<<< Updated upstream
+    <Id>128</Id>
+    <Part>d24a58ad-57ba-41b7-9e6e-eaca3543c778</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>46</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>48</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
+    <Type>926a06b9-3417-4ab4-9f8c-09c2f626bb1c</Type>
+    <Id>13</Id>
+    <Part>447a71af-018d-4f65-9579-3f9216f7c854</Part>
+  </Object>
+  <Object>
+    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
+    <Id>7</Id>
+    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+  </Object>
+  <Object>
+    <Type>280c149c-48b2-4284-a532-0c999df9e006</Type>
+    <Id>1</Id>
+    <Part>a5e6a251-2df0-44d8-adab-1da237574326</Part>
+  </Object>
+  <Object>
+    <Type>280c149c-48b2-4284-a532-0c999df9e006</Type>
+    <Id>2</Id>
+    <Part>a5e6a251-2df0-44d8-adab-1da237574326</Part>
+=======
+    <Id>74</Id>
+    <Part>d24a58ad-57ba-41b7-9e6e-eaca3543c778</Part>
+>>>>>>> Stashed changes
   </Object>
   <Recent>
     <RecentKBObjectsList>
       <MaximumItems>10</MaximumItems>
       <RecentKBObjects>
         <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-100</Key>
-          <Name>InvoiceActiveDeactive</Name>
-          <LastAccess>2024-12-16T03:46:46.7137018-03:00</LastAccess>
+<<<<<<< Updated upstream
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-112</Key>
+          <Name>WPLogIn</Name>
+          <LastAccess>2024-12-11T23:54:31.8479166-03:00</LastAccess>
         </RecentKBObject>
         <RecentKBObject>
           <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-79</Key>
@@ -69,9 +131,59 @@
           <LastAccess>2024-12-16T00:42:17.8560274-03:00</LastAccess>
         </RecentKBObject>
         <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-59</Key>
-          <Name>CheckAuthentication</Name>
-          <LastAccess>2024-12-16T00:04:53.961982-03:00</LastAccess>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-49</Key>
+          <Name>PurchaseOrderRegister</Name>
+          <LastAccess>2024-12-08T15:48:16.1548796-03:00</LastAccess>
+=======
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-74</Key>
+          <Name>WPManagePurchase</Name>
+          <LastAccess>2024-12-18T01:58:41.7374413-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>2a9e9aba-d2de-4801-ae7f-5e3819222daf-1</Key>
+          <Name>SidebarItemsDP</Name>
+          <LastAccess>2024-12-18T00:58:44.6042906-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>926a06b9-3417-4ab4-9f8c-09c2f626bb1c-17</Key>
+          <Name>QPaymentMethodHistory</Name>
+          <LastAccess>2024-12-18T00:36:25.0594106-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>926a06b9-3417-4ab4-9f8c-09c2f626bb1c-20</Key>
+          <Name>QPaymentMethodInvoice</Name>
+          <LastAccess>2024-12-18T00:36:01.9193874-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>447527b5-9210-4523-898b-5dccb17be60a-68</Key>
+          <Name>SDTCarProducts</Name>
+          <LastAccess>2024-12-17T23:17:24.4261244-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>447527b5-9210-4523-898b-5dccb17be60a-99</Key>
+          <Name>SDTInvoiceAddPaymentMethod</Name>
+          <LastAccess>2024-12-17T20:40:10.0073495-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-65</Key>
+          <Name>WPRegisterSale</Name>
+          <LastAccess>2024-12-17T20:37:18.2466594-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-164</Key>
+          <Name>WPRegisterMovement</Name>
+          <LastAccess>2024-12-17T19:23:06.5883517-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-163</Key>
+          <Name>WPStatisticsGraphs</Name>
+          <LastAccess>2024-12-17T00:26:58.5774766-03:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-113</Key>
+          <Name>WPHome</Name>
+          <LastAccess>2024-12-17T00:26:36.8190743-03:00</LastAccess>
+>>>>>>> Stashed changes
         </RecentKBObject>
       </RecentKBObjects>
     </RecentKBObjectsList>

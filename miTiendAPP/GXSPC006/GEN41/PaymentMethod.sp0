@@ -193,9 +193,9 @@ attri_i(118,[ 'InvoicePaymentMethodId',int,6,0,'ZZZZZ9',0,'Invoice Payment Metho
 attri_i(20,[ 'InvoiceId',int,6,0,'ZZZZZ9',0,'Invoice Id','',0 ]).
 attri_i(130,[ 'PaymentMethodRecarge',int,8,2,'ZZZZ9.99',1,'Payment Method Recarge','',0 ]).
 attri_i(129,[ 'PaymentMethodDiscount',int,8,2,'ZZZZ9.99',1,'Payment Method Discount','',0 ]).
-attri_i(117,[ 'PaymentMethodActive',boolean,4,0,'',0,'Payment Method Active','',0 ]).
 attri_i(116,[ 'PaymentMethodDescription',svchar,200,0,'',0,'Payment Method Description','',0 ]).
 attri_i(115,[ 'PaymentMethodId',int,6,0,'ZZZZZ9',0,'Payment Method Id','',0 ]).
+attri_i(117,[ 'PaymentMethodActive',boolean,4,0,'',0,'Payment Method Active','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
@@ -253,8 +253,8 @@ dom_info_i(94,[ 'Price' ]).
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,20).
-b_group_i(2,3,lit,0,21,0).
+b_group_i(2,2,lit,0,2,21).
+b_group_i(2,3,lit,0,22,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(5,2,2,cmd,1,[ t('',109,5,0),t('.NOT.',8,1,5),t('udp(',1,5,23),t(o(1,'General\Security\IsAuthorized'),28,5,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
@@ -262,13 +262,14 @@ b_line_i(6,2,2,cmd,1,[ t('',104,6,0),t(o(13,'General\Security\NotAuthorized'),28
 b_line_i(7,2,2,cmd,1,[ t('',111,7,0) ]).
 b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Trncontext',23,9,2),t('fromxml(',1,9,14) ],31,9,2),t([ t('Websession',23,1,23),t('get(',1,1,35) ],31,9,35),t('"TrnContext"',3,9,40),t(')',4,1,53),t(')',4,1,54) ]).
 b_line_i(16,2,2,cmd,1,[ t('',107,16,0),t([ t(115,2,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('0',3,1,0) ]).
-b_line_i(18,2,2,cmd,1,[ t('',147,18,0) ]).
-b_line_i(20,2,2,cmd,1,[ t('',146,20,0),t('After Trn',3,20,7) ]).
-b_line_i(24,2,3,cmd,1,[ t('',109,24,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 43,'Delete' ],44,24,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,24,41),t('Callerondelete',3,24,53) ],29,24,53),t(')',4,1,67) ]).
-b_line_i(25,2,3,cmd,1,[ t('',104,25,0),t(o(13,'WWPaymentMethod'),28,1,3) ]).
-b_line_i(26,2,3,cmd,1,[ t('',111,26,0) ]).
-b_line_i(28,2,3,cmd,1,[ t('',118,28,0) ]).
-b_line_i(31,2,3,cmd,1,[ t('',147,31,0) ]).
+b_line_i(17,2,2,cmd,1,[ t('',107,17,0),t([ t(117,2,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('0',3,1,0) ]).
+b_line_i(19,2,2,cmd,1,[ t('',147,19,0) ]).
+b_line_i(21,2,2,cmd,1,[ t('',146,21,0),t('After Trn',3,21,7) ]).
+b_line_i(25,2,3,cmd,1,[ t('',109,25,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 43,'Delete' ],44,25,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,25,41),t('Callerondelete',3,25,53) ],29,25,53),t(')',4,1,67) ]).
+b_line_i(26,2,3,cmd,1,[ t('',104,26,0),t(o(13,'WWPaymentMethod'),28,1,3) ]).
+b_line_i(27,2,3,cmd,1,[ t('',111,27,0) ]).
+b_line_i(29,2,3,cmd,1,[ t('',118,29,0) ]).
+b_line_i(32,2,3,cmd,1,[ t('',147,32,0) ]).
  
  
  
@@ -1104,6 +1105,18 @@ ctrl_info_i(1,44,[ [ true,false,'' ] ]).
  
 calling_main_i(1,37).
  
+att_prop_i(6,117,'HORIZONTAL_DESCRIPTION','Payment Method Active',d).
+att_prop_i(6,117,'ExternalName','PaymentMethodActive',d).
+att_prop_i(6,117,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,117,'EmptyAsNull','Yes',d).
+att_prop_i(6,117,'ExternalStorage','-1',d).
+att_prop_i(6,117,idBasedOn,'',d).
+att_prop_i(6,117,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,117,'AttRegEx','',d).
+att_prop_i(6,117,'AttValidationFailedMsg','',d).
+att_prop_i(6,117,'DownloadOffline','0',d).
+att_prop_i(6,117,'VarServiceExtName','',d).
+att_prop_i(6,117,'FullName','PaymentMethodActive',v).
 att_prop_i(6,115,'HORIZONTAL_DESCRIPTION','Payment Method Id',d).
 att_prop_i(6,115,'ExternalName','PaymentMethodId',d).
 att_prop_i(6,115,'ExternalNamespace',mtaKB,d).
@@ -1131,18 +1144,6 @@ att_prop_i(6,116,'AttValidationFailedMsg','',d).
 att_prop_i(6,116,'DownloadOffline','0',d).
 att_prop_i(6,116,'VarServiceExtName','',d).
 att_prop_i(6,116,'FullName','PaymentMethodDescription',v).
-att_prop_i(6,117,'HORIZONTAL_DESCRIPTION','Payment Method Active',d).
-att_prop_i(6,117,'ExternalName','PaymentMethodActive',d).
-att_prop_i(6,117,'ExternalNamespace',mtaKB,d).
-att_prop_i(6,117,'EmptyAsNull','Yes',d).
-att_prop_i(6,117,'ExternalStorage','-1',d).
-att_prop_i(6,117,idBasedOn,'',d).
-att_prop_i(6,117,'ATT_INITIAL_VALUE','',d).
-att_prop_i(6,117,'AttRegEx','',d).
-att_prop_i(6,117,'AttValidationFailedMsg','',d).
-att_prop_i(6,117,'DownloadOffline','0',d).
-att_prop_i(6,117,'VarServiceExtName','',d).
-att_prop_i(6,117,'FullName','PaymentMethodActive',v).
 att_prop_i(6,129,'HORIZONTAL_DESCRIPTION','Payment Method Discount',d).
 att_prop_i(6,129,'ExternalName','PaymentMethodDiscount',d).
 att_prop_i(6,129,'ExternalNamespace',mtaKB,d).
@@ -1353,8 +1354,8 @@ struct_dt_elem_i([ 26,61,0 ],3,pic,'99/99/99').
  
  
  
-sub_info_i(146,'Start',1,18,[ [ 'Pgmname','Websession' ],[ 'Trncontext',[ t(115,2),t('Visible',3) ] ] ]).
-sub_info_i(146,'After Trn',20,31,[ [ 'Mode','Trncontext' ],[] ]).
+sub_info_i(146,'Start',1,19,[ [ 'Pgmname','Websession' ],[ 'Trncontext',[ t(115,2),t('Visible',3) ],[ t(117,2),t('Visible',3) ] ] ]).
+sub_info_i(146,'After Trn',21,32,[ [ 'Mode','Trncontext' ],[] ]).
  
 pgm_parm_i(web,155,'WWPAYMENTMETHOD',[],[]).
 pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).

@@ -56,7 +56,15 @@
       <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
       <add  key="HTTP_PROTOCOL" value="Unsecure"/>
       <add  key="SAMESITE_COOKIE" value="Lax"/>
+<<<<<<< HEAD
       <add  key="CACHE_INVALIDATION_TOKEN" value="202412163563982"/>
+=======
+<<<<<<< Updated upstream
+      <add  key="CACHE_INVALIDATION_TOKEN" value="2024121220444840"/>
+=======
+      <add  key="CACHE_INVALIDATION_TOKEN" value="202412182101130"/>
+>>>>>>> Stashed changes
+>>>>>>> main
       <add  key="CORS_ALLOW_ORIGIN" value=""/>
       <add  key="MaxFileUploadSize" value="528000000"/>
    </appSettings>

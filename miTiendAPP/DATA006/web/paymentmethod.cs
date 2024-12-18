@@ -371,7 +371,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 form__cell", "left", "top", "", "", "div");
          /* Div Control */
-         GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+chkPaymentMethodActive_Internalname+"\"", "", "div");
+         GxWebStd.gx_div_start( context, "", chkPaymentMethodActive.Visible, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+chkPaymentMethodActive_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
          GxWebStd.gx_label_element( context, chkPaymentMethodActive_Internalname, "Active", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
@@ -380,7 +380,7 @@ namespace GeneXus.Programs {
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
          ClassString = "Attribute";
          StyleString = "";
-         GxWebStd.gx_checkbox_ctrl( context, chkPaymentMethodActive_Internalname, StringUtil.BoolToStr( A117PaymentMethodActive), "", "Active", 1, chkPaymentMethodActive.Enabled, "true", "", StyleString, ClassString, "", "", TempTags+" onclick="+"\"gx.fn.checkboxClick(44, this, 'true', 'false',"+"''"+");"+"gx.evt.onchange(this, event);\""+" onblur=\""+""+";gx.evt.onblur(this,44);\"");
+         GxWebStd.gx_checkbox_ctrl( context, chkPaymentMethodActive_Internalname, StringUtil.BoolToStr( A117PaymentMethodActive), "", "Active", chkPaymentMethodActive.Visible, chkPaymentMethodActive.Enabled, "true", "", StyleString, ClassString, "", "", TempTags+" onclick="+"\"gx.fn.checkboxClick(44, this, 'true', 'false',"+"''"+");"+"gx.evt.onchange(this, event);\""+" onblur=\""+""+";gx.evt.onblur(this,44);\"");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -789,6 +789,8 @@ namespace GeneXus.Programs {
          AV9TrnContext.FromXml(AV10WebSession.Get("TrnContext"), null, "", "");
          edtPaymentMethodId_Visible = 0;
          AssignProp("", false, edtPaymentMethodId_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(edtPaymentMethodId_Visible), 5, 0), true);
+         chkPaymentMethodActive.Visible = 0;
+         AssignProp("", false, chkPaymentMethodActive_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(chkPaymentMethodActive.Visible), 5, 0), true);
       }
 
       protected void E120E2( )
@@ -1732,7 +1734,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112315032", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412162233752", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1748,7 +1750,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("paymentmethod.js", "?2024112315032", false, true);
+         context.AddJavascriptSource("paymentmethod.js", "?202412162233752", false, true);
          /* End function include_jscripts */
       }
 
@@ -1798,6 +1800,7 @@ namespace GeneXus.Programs {
          edtPaymentMethodDiscount_Jsonclick = "";
          edtPaymentMethodDiscount_Enabled = 1;
          chkPaymentMethodActive.Enabled = 1;
+         chkPaymentMethodActive.Visible = 1;
          edtPaymentMethodDescription_Enabled = 1;
          edtPaymentMethodId_Jsonclick = "";
          edtPaymentMethodId_Enabled = 0;
