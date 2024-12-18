@@ -107,9 +107,6 @@ pgm_prop_i(mnproc,5,'DPPRODUCTSRANKINGSALES','OutputSDT',o(26,'SDTRankingProduct
 pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD',idISWEBSERVICE,'-1').
 pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD','DPRV_WSPROTOCOL','SOAP').
 pgm_prop_i(mnproc,11,'DPSTATISTICSTOPPRODUCTSOLD','OutputSDT',o(26,'SDTInvoiceStatisticsTop')).
-pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','URLAccess','No').
-pgm_prop_i(trn,14,'PAYMENTMETHOD',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(proc,77,'APURCHASEORDERGENERATEATTACH','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,77,'PURCHASEORDERGENERATEATTACH','CALL_PROTOCOL','HTTP').
 pgm_prop_i(web,129,'GENERAL\UI\MASTERGUEST','WEB_COMP','Master').
@@ -176,6 +173,9 @@ pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT',idISWEBSERVICE,'-1').
 pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT','DPRV_WSPROTOCOL','SOAP').
 pgm_prop_i(mnproc,13,'DPSTATISTICSAMOUNTSTATEMENT','OutputSDT',o(26,'SDTStatisticsAccountStatement')).
 pgm_prop_i(mnproc,1,'GENERAL\UI\SIDEBARITEMSDP','OutputSDT',o(26,'GeneXusUnanimo\SidebarItems')).
+pgm_prop_i(trn,14,'PAYMENTMETHOD',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,156,'PAYMENTMETHODGENERAL','URLAccess','No').
  
 model_wrkinfo_i([ 'NETSQLServer','Data006' ]).
  

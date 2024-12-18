@@ -306,6 +306,23 @@
 <AttriId>50</AttriId>
 <AttriName>PurchaseOrderId</AttriName>
 <Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>PurchaseOrderTotalPaid</AttriName>
+<Description>Purchase Order Total Paid</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>2</TableId>
@@ -317,6 +334,15 @@
 <AttriId>4</AttriId>
 <AttriName>SupplierId</AttriName>
 <Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -450,6 +476,15 @@
 <AttriId>50</AttriId>
 <AttriName>PurchaseOrderId</AttriName>
 <Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>2</TableId>
@@ -461,6 +496,15 @@
 <AttriId>4</AttriId>
 <AttriName>SupplierId</AttriName>
 <Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -594,6 +638,19 @@
 <AttriId>50</AttriId>
 <AttriName>PurchaseOrderId</AttriName>
 <Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>2</TableId>
@@ -605,6 +662,15 @@
 <AttriId>4</AttriId>
 <AttriName>SupplierId</AttriName>
 <Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -768,6 +834,19 @@
 <AttriId>50</AttriId>
 <AttriName>PurchaseOrderId</AttriName>
 <Description>Purchase Order Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>SupplierId</AttriName>
+<Description>Supplier Id</Description></Attribute>
+<Attribute>
+<AttriId>50</AttriId>
+<AttriName>PurchaseOrderId</AttriName>
+<Description>Purchase Order Id</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PurchaseOrderCreatedDate</AttriName>
+<Description>Purchase Order Created Date</Description></Attribute></Into>
 <Tables>
 <Table>
 <TableId>2</TableId>
@@ -779,6 +858,15 @@
 <AttriId>4</AttriId>
 <AttriName>SupplierId</AttriName>
 <Description>Supplier Id</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>8</AttriId>
+<AttriName>SupplierEmail</AttriName>
+<Description>Supplier Email</Description></Attribute>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>SupplierName</AttriName>
+<Description>Supplier Name</Description></Attribute></Into>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

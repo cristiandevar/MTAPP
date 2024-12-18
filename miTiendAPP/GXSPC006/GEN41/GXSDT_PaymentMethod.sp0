@@ -70,8 +70,6 @@ struct_dt_elem_i([ 0,14,0 ],5,attributeid,'130').
 struct_dt_elem_i([ 0,14,0 ],5,'ExternalName','PaymentMethodRecarge').
 struct_dt_elem_i([ 0,14,0 ],5,'ExternalNamespace',mtaKB).
 struct_dt_elem_i([ 0,14,0 ],2,pic,'ZZZZZZZZZZZZZZ9.99').
-struct_dt_elem_i([ 0,14,0 ],4,pic,'ZZZ9').
-struct_dt_elem_i([ 0,14,0 ],5,pic,'ZZZ9').
  
  
  

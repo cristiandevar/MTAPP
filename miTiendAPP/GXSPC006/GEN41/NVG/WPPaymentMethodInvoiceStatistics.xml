@@ -26,5 +26,12 @@
 <Event>
 <EventName>Start</EventName></Event>
 <Event>
+<EventName>&amp;FilterDateFrom.Controlvaluechanged</EventName></Event>
+<Event>
+<EventName>&amp;FilterDateTo.Controlvaluechanged</EventName></Event>
+<Event>
+<EventName>'CHARGEPARAMETERS'</EventName>
+<EventType>Subrutine</EventType></Event>
+<Event>
 <EventName>Load</EventName></Event>
 <Suggests></Suggests></ObjectSpec>

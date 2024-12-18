@@ -81,7 +81,7 @@ lac_i(4,[ [ 'Purchaseorderidaux','Supplier','Fromdate','Todate','Orderby','Desce
 lac_i(3,[ [ 'Purchaseorderidaux','Supplier','Fromdate','Todate','Orderby','Descending','Totalpaid','Isowed','Purchaseordercanceleddescription','Totaltopay' ] ]).
  
  
-lits_i('Register Purchase Orders',5,10).
+lits_i('Manage Purchase Orders',5,10).
 lits_i('Code',5,10).
 lits_i('Product',5,10).
 lits_i('Curr. Stock',5,10).
@@ -1522,7 +1522,7 @@ html_i(2,div(2)).
 html_sub_i(2,3,html_i(0,div(3))).
 html_sub_i(3,4,html_i(0,div(4))).
 html_sub_i(4,5,html_i(0,div(5))).
-html_sub_i(5,6,html_i(0,t('Register Purchase Orders',3))).
+html_sub_i(5,6,html_i(0,t('Manage Purchase Orders',3))).
 html_sub_i(3,7,html_i(1,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,0,html_i(0,html('<hr/>'))).
@@ -1934,7 +1934,7 @@ html_comp_i(5,'Semanticcontent',div,d,[ str ]).
 html_comp_i(5,'Align','Center',v,[ str ]).
 html_comp_i(5,'Valign','Middle',v,[ str ]).
 html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Caption','Register Purchase Orders',d,[ str ]).
+html_comp_i(6,'Caption','Manage Purchase Orders',d,[ str ]).
 html_comp_i(6,'Id','Textblock1',v,[ str ]).
 html_comp_i(6,'Class','heading-02',v,[ str ]).
 html_comp_i(6,'Event','',d,[ str ]).
@@ -5916,7 +5916,7 @@ html_comp_i(309,'Invitemsg','',d,[ str ]).
  
  
  
-lit_i(6,1,t('Register Purchase Orders',3),[ ctlname('Textblock1') ]).
+lit_i(6,1,t('Manage Purchase Orders',3),[ ctlname('Textblock1') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
@@ -7506,8 +7506,6 @@ struct_dt_elem_i([ 0,7,0 ],10,pic,'ZZZZZZZZZZZZZZ9.99').
 struct_dt_elem_i([ 0,7,[ 50,61 ] ],3,pic,'ZZZ9').
 struct_dt_elem_i([ 0,5,0 ],2,pic,'ZZZZ9.99').
 struct_dt_elem_i([ 0,5,0 ],3,pic,'ZZZ9').
-struct_dt_elem_i([ 0,5,0 ],5,pic,'ZZZ9').
-struct_dt_elem_i([ 0,5,0 ],7,pic,'ZZZ9').
 struct_dt_elem_i([ 0,5,0 ],10,pic,'ZZZ9').
 struct_dt_elem_i([ 0,5,0 ],12,pic,'ZZZ9').
 struct_dt_elem_i([ 0,5,0 ],14,pic,'ZZZ9').

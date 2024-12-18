@@ -320,6 +320,7 @@ namespace GeneXus.Programs {
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
          GxWebStd.gx_hidden_field( context, "nRC_GXsfl_27", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_27), 8, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "vERRORMESSAGE", AV16ErrorMessage);
          GxWebStd.gx_hidden_field( context, "GRID_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nFirstRecordOnPage), 15, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nEOF), 1, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID_Rows", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Rows), 6, 0, ".", "")));
@@ -851,7 +852,7 @@ namespace GeneXus.Programs {
       protected void initialize_formulas( )
       {
          /* GeneXus formulas. */
-         AV20Pgmname = "WWPaymentMethod";
+         AV22Pgmname = "WWPaymentMethod";
          context.Gx_err = 0;
          edtavUpdate_Enabled = 0;
          AssignProp("", false, edtavUpdate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavUpdate_Enabled), 5, 0), !bGXsfl_27_Refreshing);
@@ -1098,7 +1099,7 @@ namespace GeneXus.Programs {
 
       protected void before_start_formulas( )
       {
-         AV20Pgmname = "WWPaymentMethod";
+         AV22Pgmname = "WWPaymentMethod";
          context.Gx_err = 0;
          edtavUpdate_Enabled = 0;
          AssignProp("", false, edtavUpdate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavUpdate_Enabled), 5, 0), !bGXsfl_27_Refreshing);
@@ -1159,9 +1160,9 @@ namespace GeneXus.Programs {
       {
          /* Start Routine */
          returnInSub = false;
-         if ( ! new GeneXus.Programs.general.security.isauthorized(context).executeUdp(  AV20Pgmname) )
+         if ( ! new GeneXus.Programs.general.security.isauthorized(context).executeUdp(  AV22Pgmname) )
          {
-            CallWebObject(formatLink("general.security.notauthorized.aspx", new object[] {UrlEncode(StringUtil.RTrim(AV20Pgmname))}, new string[] {"GxObject"}) );
+            CallWebObject(formatLink("general.security.notauthorized.aspx", new object[] {UrlEncode(StringUtil.RTrim(AV22Pgmname))}, new string[] {"GxObject"}) );
             context.wjLocDisableFrm = 1;
          }
          subGrid_Rows = 10;
@@ -1286,7 +1287,7 @@ namespace GeneXus.Programs {
          /* 'PREPARETRANSACTION' Routine */
          returnInSub = false;
          AV9TrnContext = new GeneXus.Programs.general.ui.SdtTransactionContext(context);
-         AV9TrnContext.gxTpr_Callerobject = AV20Pgmname;
+         AV9TrnContext.gxTpr_Callerobject = AV22Pgmname;
          AV9TrnContext.gxTpr_Callerondelete = true;
          AV9TrnContext.gxTpr_Callerurl = AV7HTTPRequest.ScriptName+"?"+AV7HTTPRequest.QueryString;
          AV9TrnContext.gxTpr_Transactionname = "PaymentMethod";
@@ -1297,17 +1298,34 @@ namespace GeneXus.Programs {
       {
          /* Delete_Click Routine */
          returnInSub = false;
-         new paymentmethodactivedeactive(context ).execute(  A115PaymentMethodId,  !A117PaymentMethodActive, out  AV15AllOk, out  AV16ErrorMessage) ;
+         AV19PaymentMethod.Load(A115PaymentMethodId);
+         AV19PaymentMethod.gxTpr_Paymentmethodactive = (bool)(!A117PaymentMethodActive);
+         AV19PaymentMethod.Update();
+         if ( AV19PaymentMethod.Success() )
+         {
+            AV15AllOk = true;
+            context.CommitDataStores("wwpaymentmethod",pr_default);
+         }
+         else
+         {
+            AV15AllOk = false;
+            AV16ErrorMessage = AV19PaymentMethod.GetMessages().ToJSonString(false);
+            AssignAttri("", false, "AV16ErrorMessage", AV16ErrorMessage);
+            context.RollbackDataStores("wwpaymentmethod",pr_default);
+         }
          if ( AV15AllOk )
          {
             AV16ErrorMessage = "";
+            AssignAttri("", false, "AV16ErrorMessage", AV16ErrorMessage);
             if ( A117PaymentMethodActive )
             {
                AV16ErrorMessage = "active";
+               AssignAttri("", false, "AV16ErrorMessage", AV16ErrorMessage);
             }
             else
             {
                AV16ErrorMessage = "deactive";
+               AssignAttri("", false, "AV16ErrorMessage", AV16ErrorMessage);
             }
             GX_msglist.addItem("Payment Method "+AV16ErrorMessage+" successfully");
             context.DoAjaxRefresh();
@@ -1367,7 +1385,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112316175148", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412162233918", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1385,7 +1403,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwpaymentmethod.js", "?2024112316175148", false, true);
+            context.AddJavascriptSource("wwpaymentmethod.js", "?202412162233919", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1756,8 +1774,8 @@ namespace GeneXus.Programs {
          setEventMetadata("GRID.LOAD",",oparms:[{av:'edtavUpdate_Link',ctrl:'vUPDATE',prop:'Link'},{av:'edtavDelete_Link',ctrl:'vDELETE',prop:'Link'},{av:'edtPaymentMethodDescription_Link',ctrl:'PAYMENTMETHODDESCRIPTION',prop:'Link'}]}");
          setEventMetadata("'DOINSERT'","{handler:'E114B2',iparms:[{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9',hsh:true}]");
          setEventMetadata("'DOINSERT'",",oparms:[]}");
-         setEventMetadata("VDELETE.CLICK","{handler:'E154B2',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV11PaymentMethodDescription',fld:'vPAYMENTMETHODDESCRIPTION',pic:''},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'edtavUpdate_Enabled',ctrl:'vUPDATE',prop:'Enabled'},{av:'edtavUpdate_Visible',ctrl:'vUPDATE',prop:'Visible'},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'edtavDelete_Enabled',ctrl:'vDELETE',prop:'Enabled'},{av:'edtavDelete_Visible',ctrl:'vDELETE',prop:'Visible'},{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9',hsh:true},{av:'A117PaymentMethodActive',fld:'PAYMENTMETHODACTIVE',pic:'',hsh:true}]");
-         setEventMetadata("VDELETE.CLICK",",oparms:[{ctrl:'BTNINSERT',prop:'Enabled'}]}");
+         setEventMetadata("VDELETE.CLICK","{handler:'E154B2',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV11PaymentMethodDescription',fld:'vPAYMENTMETHODDESCRIPTION',pic:''},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'edtavUpdate_Enabled',ctrl:'vUPDATE',prop:'Enabled'},{av:'edtavUpdate_Visible',ctrl:'vUPDATE',prop:'Visible'},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'edtavDelete_Enabled',ctrl:'vDELETE',prop:'Enabled'},{av:'edtavDelete_Visible',ctrl:'vDELETE',prop:'Visible'},{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9',hsh:true},{av:'A117PaymentMethodActive',fld:'PAYMENTMETHODACTIVE',pic:'',hsh:true},{av:'AV16ErrorMessage',fld:'vERRORMESSAGE',pic:''}]");
+         setEventMetadata("VDELETE.CLICK",",oparms:[{av:'AV16ErrorMessage',fld:'vERRORMESSAGE',pic:''},{ctrl:'BTNINSERT',prop:'Enabled'}]}");
          setEventMetadata("GRID_FIRSTPAGE","{handler:'subgrid_firstpage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV11PaymentMethodDescription',fld:'vPAYMENTMETHODDESCRIPTION',pic:''},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'edtavUpdate_Enabled',ctrl:'vUPDATE',prop:'Enabled'},{av:'edtavUpdate_Visible',ctrl:'vUPDATE',prop:'Visible'},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'edtavDelete_Enabled',ctrl:'vDELETE',prop:'Enabled'},{av:'edtavDelete_Visible',ctrl:'vDELETE',prop:'Visible'}]");
          setEventMetadata("GRID_FIRSTPAGE",",oparms:[{ctrl:'BTNINSERT',prop:'Enabled'}]}");
          setEventMetadata("GRID_PREVPAGE","{handler:'subgrid_previouspage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV11PaymentMethodDescription',fld:'vPAYMENTMETHODDESCRIPTION',pic:''},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'edtavUpdate_Enabled',ctrl:'vUPDATE',prop:'Enabled'},{av:'edtavUpdate_Visible',ctrl:'vUPDATE',prop:'Visible'},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'edtavDelete_Enabled',ctrl:'vDELETE',prop:'Enabled'},{av:'edtavDelete_Visible',ctrl:'vDELETE',prop:'Visible'}]");
@@ -1796,6 +1814,7 @@ namespace GeneXus.Programs {
          FormProcess = "";
          bodyStyle = "";
          GXKey = "";
+         AV16ErrorMessage = "";
          GX_FocusControl = "";
          Form = new GXWebForm();
          sPrefix = "";
@@ -1811,7 +1830,7 @@ namespace GeneXus.Programs {
          EvtRowId = "";
          sEvtType = "";
          A116PaymentMethodDescription = "";
-         AV20Pgmname = "";
+         AV22Pgmname = "";
          GridState = new GXGridStateHandler(context,"Grid",GetPgmname(),subgrid_varsfromstate,subgrid_varstostate);
          scmdbuf = "";
          lV11PaymentMethodDescription = "";
@@ -1825,7 +1844,7 @@ namespace GeneXus.Programs {
          AV9TrnContext = new GeneXus.Programs.general.ui.SdtTransactionContext(context);
          AV7HTTPRequest = new GxHttpRequest( context);
          AV6Session = context.GetSession();
-         AV16ErrorMessage = "";
+         AV19PaymentMethod = new SdtPaymentMethod(context);
          AV17ErrorMessageAux = "";
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
@@ -1843,9 +1862,9 @@ namespace GeneXus.Programs {
                }
             }
          );
-         AV20Pgmname = "WWPaymentMethod";
+         AV22Pgmname = "WWPaymentMethod";
          /* GeneXus formulas. */
-         AV20Pgmname = "WWPaymentMethod";
+         AV22Pgmname = "WWPaymentMethod";
          context.Gx_err = 0;
          edtavUpdate_Enabled = 0;
          edtavDelete_Enabled = 0;
@@ -1931,7 +1950,7 @@ namespace GeneXus.Programs {
       private string edtPaymentMethodDiscount_Internalname ;
       private string edtPaymentMethodRecarge_Internalname ;
       private string chkPaymentMethodActive_Internalname ;
-      private string AV20Pgmname ;
+      private string AV22Pgmname ;
       private string scmdbuf ;
       private string edtavUpdate_Link ;
       private string edtavDelete_Link ;
@@ -1960,9 +1979,9 @@ namespace GeneXus.Programs {
       private bool gx_refresh_fired ;
       private bool AV15AllOk ;
       private string AV11PaymentMethodDescription ;
+      private string AV16ErrorMessage ;
       private string A116PaymentMethodDescription ;
       private string lV11PaymentMethodDescription ;
-      private string AV16ErrorMessage ;
       private string AV17ErrorMessageAux ;
       private GXWebGrid GridContainer ;
       private GXGridStateHandler GridState ;
@@ -1983,6 +2002,7 @@ namespace GeneXus.Programs {
       private IGxSession AV6Session ;
       private GXWebForm Form ;
       private GeneXus.Programs.general.ui.SdtTransactionContext AV9TrnContext ;
+      private SdtPaymentMethod AV19PaymentMethod ;
    }
 
    public class wwpaymentmethod__default : DataStoreHelperBase, IDataStoreHelper

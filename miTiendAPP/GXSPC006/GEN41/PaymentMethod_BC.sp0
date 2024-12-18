@@ -226,13 +226,13 @@ dom_info_i(94,[ 'Price' ]).
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,20).
-b_group_i(2,3,lit,0,21,0).
+b_group_i(2,2,lit,0,2,21).
+b_group_i(2,3,lit,0,22,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
-b_line_i(18,2,2,cmd,1,[ t('',147,18,0) ]).
-b_line_i(20,2,2,cmd,1,[ t('',146,20,0),t('After Trn',3,20,7) ]).
-b_line_i(31,2,3,cmd,1,[ t('',147,31,0) ]).
+b_line_i(19,2,2,cmd,1,[ t('',147,19,0) ]).
+b_line_i(21,2,2,cmd,1,[ t('',146,21,0),t('After Trn',3,21,7) ]).
+b_line_i(32,2,3,cmd,1,[ t('',147,32,0) ]).
  
  
  
@@ -656,15 +656,13 @@ struct_dt_elem_i([ 26,13,30 ],3,'JsonName','').
 struct_dt_elem_i([ 26,13,30 ],3,'JsonInclude',idJsonEmpty).
 struct_dt_elem_i([ 26,61,0 ],3,pic,'99/99/99').
 struct_dt_elem_i([ 0,14,0 ],2,pic,'ZZZZZZZZZZZZZZ9.99').
-struct_dt_elem_i([ 0,14,0 ],4,pic,'ZZZ9').
-struct_dt_elem_i([ 0,14,0 ],5,pic,'ZZZ9').
  
  
  
  
  
-sub_info_i(146,'Start',1,18,[ [],[] ]).
-sub_info_i(146,'After Trn',20,31,[ [],[] ]).
+sub_info_i(146,'Start',1,19,[ [],[] ]).
+sub_info_i(146,'After Trn',21,32,[ [],[] ]).
  
  
 pgm_callprotocol_i(trn,14,'PAYMENTMETHOD_BC','INTERNAL','Unsecure').

@@ -78,4 +78,7 @@
   <Object name="QPurchaseThrowTime" id="19" type="Query" xmlns="qv">
     <DefaultOutput type="OutputTypeChartSmoothTimeline" xmlns="qv" />
   </Object>
+  <Object name="QPaymentMethodInvoice" id="20" type="Query" xmlns="qv">
+    <DefaultOutput type="OutputTypeChartPie" xmlns="qv" />
+  </Object>
 </Objects>
