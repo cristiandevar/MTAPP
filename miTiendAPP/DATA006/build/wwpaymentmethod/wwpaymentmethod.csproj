@@ -35,12 +35,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\haspermission.cs" />
 		<Compile Include = "$(WebDirectory)\paymentmethod_bc.cs" />
 		<Compile Include = "$(WebDirectory)\wwpaymentmethod.cs" />
-		<Compile Include = "$(WebDirectory)\general\security\isauthorized.cs" />
 		<Compile Include = "$(WebDirectory)\getcontext.cs" />
-		<Compile Include = "$(WebDirectory)\paymentmethodactivedeactive.cs" />
-		<Compile Include = "$(WebDirectory)\haspermission.cs" />
+		<Compile Include = "$(WebDirectory)\general\security\isauthorized.cs" />
 
 	</ItemGroup>
 	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">

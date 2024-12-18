@@ -176,7 +176,7 @@ namespace GeneXus.Programs {
             if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
             {
                /* GeneXus formulas. */
-               AV13Pgmname = "PaymentMethodGeneral";
+               AV16Pgmname = "PaymentMethodGeneral";
                context.Gx_err = 0;
                WS4C2( ) ;
                if ( ! isAjaxCallMode( ) )
@@ -314,7 +314,16 @@ namespace GeneXus.Programs {
 
       protected void send_integrity_footer_hashes( )
       {
+         GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
+         forbiddenHiddens = new GXProperties();
+         forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"PaymentMethodGeneral");
+         A117PaymentMethodActive = StringUtil.StrToBool( StringUtil.BoolToStr( A117PaymentMethodActive));
+         AssignAttri(sPrefix, false, "A117PaymentMethodActive", A117PaymentMethodActive);
+         GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
+         forbiddenHiddens.Add("PaymentMethodActive", StringUtil.BoolToStr( A117PaymentMethodActive));
+         GxWebStd.gx_hidden_field( context, sPrefix+"hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
+         GXUtil.WriteLogInfo("paymentmethodgeneral:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
       }
 
       protected void SendCloseFormHiddens( )
@@ -323,6 +332,7 @@ namespace GeneXus.Programs {
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
          GxWebStd.gx_hidden_field( context, sPrefix+"wcpOA115PaymentMethodId", StringUtil.LTrim( StringUtil.NToC( (decimal)(wcpOA115PaymentMethodId), 6, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, sPrefix+"vERRORMESSAGE", AV12ErrorMessage);
       }
 
       protected void RenderHtmlCloseForm4C2( )
@@ -416,6 +426,13 @@ namespace GeneXus.Programs {
             ClassString = "Button button-primary";
             StyleString = "";
             GxWebStd.gx_button_ctrl( context, bttBtnupdate_Internalname, "", "Update", bttBtnupdate_Jsonclick, 7, "Update", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+"e114c1_client"+"'", TempTags, "", 2, "HLP_PaymentMethodGeneral.htm");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 10,'" + sPrefix + "',false,'',0)\"";
+            ClassString = "Button button-secondary";
+            StyleString = "";
+            GxWebStd.gx_button_ctrl( context, bttBtndeactive_Internalname, "", "Deactive", bttBtndeactive_Jsonclick, 5, "Deactive", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+sPrefix+"E\\'DEACTIVE\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_PaymentMethodGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "Right", "top", "div");
@@ -635,6 +652,23 @@ namespace GeneXus.Programs {
                                  }
                               }
                            }
+                           else if ( StringUtil.StrCmp(sEvt, "'DEACTIVE'") == 0 )
+                           {
+                              if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
+                              {
+                                 STRUP4C0( ) ;
+                              }
+                              if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
+                              {
+                                 context.wbHandled = 1;
+                                 if ( ! wbErr )
+                                 {
+                                    dynload_actions( ) ;
+                                    /* Execute user event: 'Deactive' */
+                                    E144C2 ();
+                                 }
+                              }
+                           }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
@@ -763,6 +797,7 @@ namespace GeneXus.Programs {
       {
          A117PaymentMethodActive = StringUtil.StrToBool( StringUtil.BoolToStr( A117PaymentMethodActive));
          AssignAttri(sPrefix, false, "A117PaymentMethodActive", A117PaymentMethodActive);
+         GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
       }
 
       public void Refresh( )
@@ -778,7 +813,7 @@ namespace GeneXus.Programs {
       protected void initialize_formulas( )
       {
          /* GeneXus formulas. */
-         AV13Pgmname = "PaymentMethodGeneral";
+         AV16Pgmname = "PaymentMethodGeneral";
          context.Gx_err = 0;
       }
 
@@ -797,6 +832,7 @@ namespace GeneXus.Programs {
             {
                A117PaymentMethodActive = H004C2_A117PaymentMethodActive[0];
                AssignAttri(sPrefix, false, "A117PaymentMethodActive", A117PaymentMethodActive);
+               GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
                A130PaymentMethodRecarge = H004C2_A130PaymentMethodRecarge[0];
                AssignAttri(sPrefix, false, "A130PaymentMethodRecarge", StringUtil.LTrimStr( A130PaymentMethodRecarge, 8, 2));
                A129PaymentMethodDiscount = H004C2_A129PaymentMethodDiscount[0];
@@ -815,11 +851,12 @@ namespace GeneXus.Programs {
 
       protected void send_integrity_lvl_hashes4C2( )
       {
+         GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
       }
 
       protected void before_start_formulas( )
       {
-         AV13Pgmname = "PaymentMethodGeneral";
+         AV16Pgmname = "PaymentMethodGeneral";
          context.Gx_err = 0;
          fix_multi_value_controls( ) ;
       }
@@ -850,9 +887,28 @@ namespace GeneXus.Programs {
             AssignAttri(sPrefix, false, "A130PaymentMethodRecarge", StringUtil.LTrimStr( A130PaymentMethodRecarge, 8, 2));
             A117PaymentMethodActive = StringUtil.StrToBool( cgiGet( chkPaymentMethodActive_Internalname));
             AssignAttri(sPrefix, false, "A117PaymentMethodActive", A117PaymentMethodActive);
+            GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
+            forbiddenHiddens = new GXProperties();
+            forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"PaymentMethodGeneral");
+            A117PaymentMethodActive = StringUtil.StrToBool( cgiGet( chkPaymentMethodActive_Internalname));
+            AssignAttri(sPrefix, false, "A117PaymentMethodActive", A117PaymentMethodActive);
+            GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_PAYMENTMETHODACTIVE", GetSecureSignedToken( sPrefix, A117PaymentMethodActive, context));
+            forbiddenHiddens.Add("PaymentMethodActive", StringUtil.BoolToStr( A117PaymentMethodActive));
+            hsh = cgiGet( sPrefix+"hsh");
+            if ( ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
+            {
+               GXUtil.WriteLogError("paymentmethodgeneral:[ SecurityCheckFailed (403 Forbidden) value for]"+forbiddenHiddens.ToJSonString());
+               GxWebError = 1;
+               context.HttpContext.Response.StatusCode = 403;
+               context.WriteHtmlText( "<title>403 Forbidden</title>") ;
+               context.WriteHtmlText( "<h1>403 Forbidden</h1>") ;
+               context.WriteHtmlText( "<p /><hr />") ;
+               GXUtil.WriteLog("send_http_error_code " + 403.ToString());
+               return  ;
+            }
          }
          else
          {
@@ -875,9 +931,9 @@ namespace GeneXus.Programs {
       {
          /* Start Routine */
          returnInSub = false;
-         if ( ! new GeneXus.Programs.general.security.isauthorized(context).executeUdp(  AV13Pgmname) )
+         if ( ! new GeneXus.Programs.general.security.isauthorized(context).executeUdp(  AV16Pgmname) )
          {
-            CallWebObject(formatLink("general.security.notauthorized.aspx", new object[] {UrlEncode(StringUtil.RTrim(AV13Pgmname))}, new string[] {"GxObject"}) );
+            CallWebObject(formatLink("general.security.notauthorized.aspx", new object[] {UrlEncode(StringUtil.RTrim(AV16Pgmname))}, new string[] {"GxObject"}) );
             context.wjLocDisableFrm = 1;
          }
          /* Execute user subroutine: 'PREPARETRANSACTION' */
@@ -906,7 +962,7 @@ namespace GeneXus.Programs {
          /* 'PREPARETRANSACTION' Routine */
          returnInSub = false;
          AV7TrnContext = new GeneXus.Programs.general.ui.SdtTransactionContext(context);
-         AV7TrnContext.gxTpr_Callerobject = AV13Pgmname;
+         AV7TrnContext.gxTpr_Callerobject = AV16Pgmname;
          AV7TrnContext.gxTpr_Callerondelete = false;
          AV7TrnContext.gxTpr_Callerurl = AV10HTTPRequest.ScriptName+"?"+AV10HTTPRequest.QueryString;
          AV7TrnContext.gxTpr_Transactionname = "PaymentMethod";
@@ -915,6 +971,57 @@ namespace GeneXus.Programs {
          AV8TrnContextAtt.gxTpr_Attributevalue = StringUtil.Str( (decimal)(AV6PaymentMethodId), 6, 0);
          AV7TrnContext.gxTpr_Attributes.Add(AV8TrnContextAtt, 0);
          AV9Session.Set("TrnContext", AV7TrnContext.ToXml(false, true, "", ""));
+      }
+
+      protected void E144C2( )
+      {
+         /* 'Deactive' Routine */
+         returnInSub = false;
+         AV13PaymentMethod.Load(A115PaymentMethodId);
+         AV13PaymentMethod.gxTpr_Paymentmethodactive = (bool)(!A117PaymentMethodActive);
+         AV13PaymentMethod.Update();
+         if ( AV13PaymentMethod.Success() )
+         {
+            AV11AllOk = true;
+            context.CommitDataStores("paymentmethodgeneral",pr_default);
+         }
+         else
+         {
+            AV11AllOk = false;
+            AV12ErrorMessage = AV13PaymentMethod.GetMessages().ToJSonString(false);
+            AssignAttri(sPrefix, false, "AV12ErrorMessage", AV12ErrorMessage);
+            context.RollbackDataStores("paymentmethodgeneral",pr_default);
+         }
+         if ( AV11AllOk )
+         {
+            AV12ErrorMessage = "";
+            AssignAttri(sPrefix, false, "AV12ErrorMessage", AV12ErrorMessage);
+            if ( A117PaymentMethodActive )
+            {
+               AV12ErrorMessage = "active";
+               AssignAttri(sPrefix, false, "AV12ErrorMessage", AV12ErrorMessage);
+            }
+            else
+            {
+               AV12ErrorMessage = "deactive";
+               AssignAttri(sPrefix, false, "AV12ErrorMessage", AV12ErrorMessage);
+            }
+            GX_msglist.addItem("Payment Method "+AV12ErrorMessage+" successfully");
+         }
+         else
+         {
+            AV17Errormessageaux = "";
+            if ( A117PaymentMethodActive )
+            {
+               AV17Errormessageaux = "deactive";
+            }
+            else
+            {
+               AV17Errormessageaux = "active";
+            }
+            GX_msglist.addItem("Payment Method "+AV17Errormessageaux+" failed! : "+AV12ErrorMessage);
+         }
+         /*  Sending Event outputs  */
       }
 
       public override void setparameters( Object[] obj )
@@ -1113,7 +1220,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112314501570", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121622405252", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1129,7 +1236,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("paymentmethodgeneral.js", "?2024112314501570", false, true);
+         context.AddJavascriptSource("paymentmethodgeneral.js", "?2024121622405252", false, true);
          /* End function include_jscripts */
       }
 
@@ -1146,6 +1253,7 @@ namespace GeneXus.Programs {
       protected void init_default_properties( )
       {
          bttBtnupdate_Internalname = sPrefix+"BTNUPDATE";
+         bttBtndeactive_Internalname = sPrefix+"BTNDEACTIVE";
          edtPaymentMethodDescription_Internalname = sPrefix+"PAYMENTMETHODDESCRIPTION";
          edtPaymentMethodDiscount_Internalname = sPrefix+"PAYMENTMETHODDISCOUNT";
          edtPaymentMethodRecarge_Internalname = sPrefix+"PAYMENTMETHODRECARGE";
@@ -1196,10 +1304,12 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9'},{av:'A117PaymentMethodActive',fld:'PAYMENTMETHODACTIVE',pic:''}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9'},{av:'A117PaymentMethodActive',fld:'PAYMENTMETHODACTIVE',pic:'',hsh:true}]");
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("'DOUPDATE'","{handler:'E114C1',iparms:[{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9'}]");
          setEventMetadata("'DOUPDATE'",",oparms:[]}");
+         setEventMetadata("'DEACTIVE'","{handler:'E144C2',iparms:[{av:'A115PaymentMethodId',fld:'PAYMENTMETHODID',pic:'ZZZZZ9'},{av:'A117PaymentMethodActive',fld:'PAYMENTMETHODACTIVE',pic:'',hsh:true},{av:'AV12ErrorMessage',fld:'vERRORMESSAGE',pic:''}]");
+         setEventMetadata("'DEACTIVE'",",oparms:[{av:'AV12ErrorMessage',fld:'vERRORMESSAGE',pic:''}]}");
          setEventMetadata("VALID_PAYMENTMETHODID","{handler:'Valid_Paymentmethodid',iparms:[]");
          setEventMetadata("VALID_PAYMENTMETHODID",",oparms:[]}");
          return  ;
@@ -1224,16 +1334,19 @@ namespace GeneXus.Programs {
          gxfirstwebparm = "";
          gxfirstwebparm_bkp = "";
          sPrefix = "";
-         AV13Pgmname = "";
+         AV16Pgmname = "";
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
          GXKey = "";
+         forbiddenHiddens = new GXProperties();
+         AV12ErrorMessage = "";
          GX_FocusControl = "";
          TempTags = "";
          ClassString = "";
          StyleString = "";
          bttBtnupdate_Jsonclick = "";
+         bttBtndeactive_Jsonclick = "";
          A116PaymentMethodDescription = "";
          Form = new GXWebForm();
          sXEvt = "";
@@ -1247,10 +1360,13 @@ namespace GeneXus.Programs {
          H004C2_A130PaymentMethodRecarge = new decimal[1] ;
          H004C2_A129PaymentMethodDiscount = new decimal[1] ;
          H004C2_A116PaymentMethodDescription = new string[] {""} ;
+         hsh = "";
          AV7TrnContext = new GeneXus.Programs.general.ui.SdtTransactionContext(context);
          AV10HTTPRequest = new GxHttpRequest( context);
          AV8TrnContextAtt = new GeneXus.Programs.general.ui.SdtTransactionContext_Attribute(context);
          AV9Session = context.GetSession();
+         AV13PaymentMethod = new SdtPaymentMethod(context);
+         AV17Errormessageaux = "";
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
          sCtrlA115PaymentMethodId = "";
@@ -1261,9 +1377,9 @@ namespace GeneXus.Programs {
                }
             }
          );
-         AV13Pgmname = "PaymentMethodGeneral";
+         AV16Pgmname = "PaymentMethodGeneral";
          /* GeneXus formulas. */
-         AV13Pgmname = "PaymentMethodGeneral";
+         AV16Pgmname = "PaymentMethodGeneral";
          context.Gx_err = 0;
       }
 
@@ -1294,7 +1410,7 @@ namespace GeneXus.Programs {
       private string sPrefix ;
       private string sCompPrefix ;
       private string sSFPrefix ;
-      private string AV13Pgmname ;
+      private string AV16Pgmname ;
       private string sDynURL ;
       private string FormProcess ;
       private string bodyStyle ;
@@ -1306,6 +1422,8 @@ namespace GeneXus.Programs {
       private string StyleString ;
       private string bttBtnupdate_Internalname ;
       private string bttBtnupdate_Jsonclick ;
+      private string bttBtndeactive_Internalname ;
+      private string bttBtndeactive_Jsonclick ;
       private string divAttributestable_Internalname ;
       private string edtPaymentMethodDescription_Internalname ;
       private string edtPaymentMethodDiscount_Internalname ;
@@ -1321,16 +1439,21 @@ namespace GeneXus.Programs {
       private string EvtRowId ;
       private string sEvtType ;
       private string scmdbuf ;
+      private string hsh ;
+      private string AV17Errormessageaux ;
       private string sCtrlA115PaymentMethodId ;
       private bool entryPointCalled ;
       private bool toggleJsOutput ;
-      private bool wbLoad ;
       private bool A117PaymentMethodActive ;
+      private bool wbLoad ;
       private bool Rfr0gs ;
       private bool wbErr ;
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
+      private bool AV11AllOk ;
+      private string AV12ErrorMessage ;
       private string A116PaymentMethodDescription ;
+      private GXProperties forbiddenHiddens ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
       private GXCheckbox chkPaymentMethodActive ;
@@ -1346,6 +1469,7 @@ namespace GeneXus.Programs {
       private IGxSession AV9Session ;
       private GeneXus.Programs.general.ui.SdtTransactionContext AV7TrnContext ;
       private GeneXus.Programs.general.ui.SdtTransactionContext_Attribute AV8TrnContextAtt ;
+      private SdtPaymentMethod AV13PaymentMethod ;
    }
 
    public class paymentmethodgeneral__default : DataStoreHelperBase, IDataStoreHelper

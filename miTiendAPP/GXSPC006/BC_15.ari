@@ -1,0 +1,7 @@
+bc_dt_elem_i([ 0,15,0 ],'Movementid',allownulls,no).
+bc_dt_elem_i([ 0,15,0 ],'Movementtype',allownulls,no).
+bc_dt_elem_i([ 0,15,0 ],'Movementcreateddate',readonly,yes).
+bc_dt_elem_i([ 0,15,0 ],'Movementcreateddate',allownulls,no).
+bc_dt_elem_i([ 0,15,0 ],'Movementkeyaditional',allownulls,no).
+bc_dt_elem_i([ 0,15,0 ],'Movementdescription',allownulls,no).
+ 

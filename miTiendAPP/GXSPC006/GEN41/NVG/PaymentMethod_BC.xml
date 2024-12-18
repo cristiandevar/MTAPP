@@ -26,25 +26,119 @@
 <TableId>20</TableId>
 <TableName>PaymentMethod</TableName>
 <Description>Payment Method of Invoices</Description></Table></BaseTable>
-<NavigationTree>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
 <Table>
 <TableId>20</TableId>
 <TableName>PaymentMethod</TableName>
-<Description>Payment Method of Invoices</Description>
-<Updated>Yes</Updated>
-<RecordsToRead>many</RecordsToRead>
-<KeyAttributes>
+<Description>Payment Method of Invoices</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>20</TableId>
+<TableName>PaymentMethod</TableName>
+<Description>Payment Method of Invoices</Description></Table>
+<JoinCondition>
+<AttributeTo>
 <Attribute>
 <AttriId>115</AttriId>
 <AttriName>PaymentMethodId</AttriName>
-<Description>Payment Method Id</Description></Attribute></KeyAttributes>
-<Tables></Tables></Table></NavigationTree>
-<Formulas>
-<VerticalFormulas></VerticalFormulas>
-<AggSelFormulas></AggSelFormulas></Formulas>
-<DynamicLoads></DynamicLoads>
-<Rules></Rules>
-<AfterAttributeRules></AfterAttributeRules>
+<Description>Payment Method Id</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>115</AttriId>
+<AttriName>PaymentMethodId</AttriName>
+<Description>Payment Method Id</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>116</AttriId>
+<AttriName>PaymentMethodDescription</AttriName>
+<Description>Payment Method Description</Description></Attribute>
+<Attribute>
+<AttriId>117</AttriId>
+<AttriName>PaymentMethodActive</AttriName>
+<Description>Payment Method Active</Description></Attribute>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Payment Method Recarge is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>-999</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>130</AttriId>
+<AttriName>PaymentMethodRecarge</AttriName>
+<Description>Payment Method Recarge</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Payment Method Discount is out of range&quot;</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>not</Token>
+<Token>(</Token>
+<Token>(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Sp></Sp>
+<Token>&gt;=</Token>
+<Sp></Sp>
+<Token>-999</Token>
+<Sp></Sp>
+<Token>and</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>129</AttriId>
+<AttriName>PaymentMethodDiscount</AttriName>
+<Description>Payment Method Discount</Description></Attribute>
+<Sp></Sp>
+<Token>&lt;=</Token>
+<Sp></Sp>
+<Token>999</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
 <AfterConfirmRules></AfterConfirmRules>
 <TablesToUpdate>
 <TableToUpdate>
@@ -100,9 +194,13 @@
 <Description>Payment Method of Invoices</Description></Table>
 <TableAction>delete</TableAction>
 <AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
 <AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
 <AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
 <AfterDeleteRules></AfterDeleteRules>
+<AfterDisplayRules></AfterDisplayRules>
 <TablesToControlOnDelete>
 <Table>
 <TableId>21</TableId>
@@ -115,6 +213,9 @@
 <AttriName>PaymentMethodId</AttriName>
 <Description>Payment Method Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
 <AfterTrnRules></AfterTrnRules>
-<AfterLevelRules></AfterLevelRules></Level></Levels>
+<AfterLevelRules></AfterLevelRules>
+<Formulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></Levels>
 <Suggests></Suggests></ObjectSpec>

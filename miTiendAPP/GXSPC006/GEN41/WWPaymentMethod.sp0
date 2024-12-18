@@ -159,9 +159,10 @@ attri_i(130,[ 'PaymentMethodRecarge',int,8,2,'ZZZZ9.99',1,'Payment Method Recarg
 attri_i(129,[ 'PaymentMethodDiscount',int,8,2,'ZZZZ9.99',1,'Payment Method Discount','',0 ]).
 attri_i(116,[ 'PaymentMethodDescription',svchar,200,0,'',0,'Payment Method Description','',0 ]).
 attri_i(115,[ 'PaymentMethodId',int,6,0,'ZZZZZ9',0,'Payment Method Id','',0 ]).
-attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',20 ]).
-attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',19 ]).
-attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',18 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',22 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',21 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',20 ]).
+attri_i('Paymentmethod',[ 'PaymentMethod',o('PaymentMethod'),0,0,'',0,'Payment Method','',19 ]).
 attri_i('Errormessageaux',[ 'ErrorMessageAux',svchar,40,0,'',0,'Error Message Aux','',17 ]).
 attri_i('Errormessage',[ 'ErrorMessage',svchar,512,0,'',0,'Error Message','',16 ]).
 attri_i('Allok',[ 'AllOk',boolean,4,0,'',0,'All Ok','',15 ]).
@@ -285,26 +286,36 @@ b_line_i(65,2,7,cmd,1,[ t('',107,65,0),t([ t('Trncontext',23,1,0),t('Transaction
 b_line_i(67,2,7,cmd,1,[ t('',107,67,0),t([ t('Session',23,67,2),t('set(',1,67,11) ],31,67,2),t('"TrnContext"',3,67,16),t(',',7,1,29),t([ t('Trncontext',23,1,31),t('toxml(',1,1,43) ],31,67,43),t(')',4,1,50),t(')',4,1,51) ]).
 b_line_i(68,2,7,cmd,1,[ t('',144,68,0) ]).
 b_line_i(70,2,7,cmd,1,[ t('',146,70,0),t([ t('Delete',23,70,7),t('Click',3,70,15) ],29,70,15) ]).
-b_line_i(71,2,8,cmd,1,[ t('',104,71,0),t(o(1,'PaymentMethodActiveDeactive'),28,1,2),t(115,2,1,36),t(',',7,1,0),t('.NOT.',8,1,53),t(117,2,1,59),t(',',7,1,0),t('Allok',23,1,80),t(',',7,1,0),t('Errormessage',23,1,88) ]).
-b_line_i(73,2,8,cmd,1,[ t('',109,73,0),t('Allok',23,1,5) ]).
-b_line_i(74,2,8,cmd,1,[ t('',107,74,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''''',3,1,0) ]).
-b_line_i(75,2,8,cmd,1,[ t('',109,75,0),t(117,2,1,6) ]).
-b_line_i(76,2,8,cmd,1,[ t('',107,76,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''active''',3,1,0) ]).
-b_line_i(77,2,8,cmd,1,[ t('',110,77,0) ]).
-b_line_i(78,2,8,cmd,1,[ t('',107,78,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''deactive''',3,1,0) ]).
-b_line_i(79,2,8,cmd,1,[ t('',111,79,0) ]).
-b_line_i(81,2,8,cmd,1,[ t('',141,81,0),t('''Payment Method ''',3,81,7),t(+,5,1,24),t('Errormessage',23,1,26),t(+,5,1,40),t(''' successfully''',3,81,41),t(')',4,1,56) ]).
-b_line_i(82,2,8,cmd,1,[ t('',148,82,0) ]).
-b_line_i(83,2,8,cmd,1,[ t('',110,83,0) ]).
-b_line_i(84,2,8,cmd,1,[ t('',107,84,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''''',3,1,0) ]).
-b_line_i(85,2,8,cmd,1,[ t('',109,85,0),t(117,2,1,6) ]).
-b_line_i(86,2,8,cmd,1,[ t('',107,86,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''deactive''',3,1,0) ]).
-b_line_i(87,2,8,cmd,1,[ t('',110,87,0) ]).
-b_line_i(88,2,8,cmd,1,[ t('',107,88,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''active''',3,1,0) ]).
-b_line_i(89,2,8,cmd,1,[ t('',111,89,0) ]).
-b_line_i(91,2,8,cmd,1,[ t('',141,91,0),t('''Payment Method ''',3,91,7),t(+,5,1,24),t('Errormessageaux',23,1,26),t(+,5,1,43),t(''' failed! : ''',3,91,44),t(+,5,1,58),t('Errormessage',23,1,60),t(')',4,1,73) ]).
+b_line_i(73,2,8,cmd,1,[ t('',107,73,0),t([ t('Paymentmethod',23,73,2),t('load(',1,73,17) ],31,73,2),t(115,2,1,23),t(')',4,1,38) ]).
+b_line_i(74,2,8,cmd,1,[ t('',107,74,0),t([ t('Paymentmethod',23,1,0),t('Paymentmethodactive',3,1,0) ],29,1,0),t(=,10,1,0),t('.NOT.',8,1,0),t(117,2,1,0) ]).
+b_line_i(75,2,8,cmd,1,[ t('',107,75,0),t([ t('Paymentmethod',23,75,2),t('update(',1,75,17) ],31,75,2),t(')',4,1,25) ]).
+b_line_i(77,2,8,cmd,1,[ t('',109,77,0),t([ t('Paymentmethod',23,1,5),t('success(',1,1,20) ],31,77,20),t(')',4,1,29) ]).
+b_line_i(78,2,8,cmd,1,[ t('',107,78,0),t('Allok',23,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(79,2,8,cmd,1,[ t('',132,79,0) ]).
+b_line_i(80,2,8,cmd,1,[ t('',110,80,0) ]).
+b_line_i(81,2,8,cmd,1,[ t('',107,81,0),t('Allok',23,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(82,2,8,cmd,1,[ t('',107,82,0),t('Errormessage',23,1,0),t(=,10,1,0),t([ t([ t('Paymentmethod',23,1,0),t('getmessages(',1,1,0) ],31,1,0),t(')',4,1,0),t('tojson(',1,1,0) ],31,1,0),t(')',4,1,0) ]).
+b_line_i(83,2,8,cmd,1,[ t('',157,83,0) ]).
+b_line_i(84,2,8,cmd,1,[ t('',111,84,0) ]).
+b_line_i(86,2,8,cmd,1,[ t('',109,86,0),t('Allok',23,1,5) ]).
+b_line_i(87,2,8,cmd,1,[ t('',107,87,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''''',3,1,0) ]).
+b_line_i(88,2,8,cmd,1,[ t('',109,88,0),t(117,2,1,6) ]).
+b_line_i(89,2,8,cmd,1,[ t('',107,89,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''active''',3,1,0) ]).
+b_line_i(90,2,8,cmd,1,[ t('',110,90,0) ]).
+b_line_i(91,2,8,cmd,1,[ t('',107,91,0),t('Errormessage',23,1,0),t(=,10,1,0),t('''deactive''',3,1,0) ]).
 b_line_i(92,2,8,cmd,1,[ t('',111,92,0) ]).
-b_line_i(94,2,8,cmd,1,[ t('',147,94,0) ]).
+b_line_i(94,2,8,cmd,1,[ t('',141,94,0),t('''Payment Method ''',3,94,7),t(+,5,1,24),t('Errormessage',23,1,26),t(+,5,1,40),t(''' successfully''',3,94,41),t(')',4,1,56) ]).
+b_line_i(95,2,8,cmd,1,[ t('',148,95,0) ]).
+b_line_i(96,2,8,cmd,1,[ t('',110,96,0) ]).
+b_line_i(97,2,8,cmd,1,[ t('',107,97,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''''',3,1,0) ]).
+b_line_i(98,2,8,cmd,1,[ t('',109,98,0),t(117,2,1,6) ]).
+b_line_i(99,2,8,cmd,1,[ t('',107,99,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''deactive''',3,1,0) ]).
+b_line_i(100,2,8,cmd,1,[ t('',110,100,0) ]).
+b_line_i(101,2,8,cmd,1,[ t('',107,101,0),t('Errormessageaux',23,1,0),t(=,10,1,0),t('''active''',3,1,0) ]).
+b_line_i(102,2,8,cmd,1,[ t('',111,102,0) ]).
+b_line_i(104,2,8,cmd,1,[ t('',141,104,0),t('''Payment Method ''',3,104,7),t(+,5,1,24),t('Errormessageaux',23,1,26),t(+,5,1,43),t(''' failed! : ''',3,104,44),t(+,5,1,58),t('Errormessage',23,1,60),t(')',4,1,73) ]).
+b_line_i(105,2,8,cmd,1,[ t('',111,105,0) ]).
+b_line_i(107,2,8,cmd,1,[ t('',147,107,0) ]).
  
 sf_break_i(27,2).
  
@@ -974,10 +985,43 @@ struct_dt_i([ 26,61,0 ],'JsonInputFormat','JsonInputWrapped').
 struct_dt_i([ 26,61,0 ],'JsonInclude',idJsonNoProperty).
 struct_dt_i([ 26,61,95 ],name,'Attribute').
 struct_dt_i([ 26,61,95 ],namespace,'mtaKB.TransactionContext').
+struct_dt_i([ 0,14,0 ],name,'PaymentMethod').
+struct_dt_i([ 0,14,0 ],namespace,mtaKB).
+struct_dt_i([ 0,14,0 ],significantName,'PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ObjName','PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ObjDesc','Payment Method of Sale').
+struct_dt_i([ 0,14,0 ],'ExternalName','PaymentMethod').
+struct_dt_i([ 0,14,0 ],'ExternalNamespace',mtaKB).
+struct_dt_i([ 0,14,0 ],key,[ 115 ]).
+struct_dt_i([ 0,14,0 ],lvl,20).
+struct_dt_i([ 26,13,0 ],name,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,0 ],namespace,'GeneXus').
+struct_dt_i([ 26,13,0 ],'ObjName','Messages').
+struct_dt_i([ 26,13,0 ],'ObjDesc','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalName','Messages').
+struct_dt_i([ 26,13,0 ],'ExternalNamespace','GeneXus').
+struct_dt_i([ 26,13,0 ],'JsonInputFormat','JsonInputWrapped').
+struct_dt_i([ 26,13,0 ],collection,'True').
+struct_dt_i([ 26,13,0 ],datatype,[ 26,13,30 ]).
+struct_dt_i([ 26,13,0 ],'CollectionItemName','Message').
+struct_dt_i([ 26,13,0 ],'XmlName','').
+struct_dt_i([ 26,13,0 ],'XmlCollectionItemName','').
+struct_dt_i([ 26,13,0 ],'XmlNamespace','').
+struct_dt_i([ 26,13,0 ],'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],'XmlInclude',idXmlIncludeAlways).
+struct_dt_i([ 26,13,0 ],'JsonName','').
+struct_dt_i([ 26,13,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,13,0 ],'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_i([ 26,13,0 ],isexternal,'True').
+struct_dt_i([ 26,13,30 ],name,'Message').
+struct_dt_i([ 26,13,30 ],namespace,'GeneXus.Messages').
 struct_dt_i([ 26,20,0 ],fullname,'GeneXus\Common\GridState').
 struct_dt_i([ 26,20,39 ],fullname,'GeneXus\Common\GridState.InputValuesItem').
 struct_dt_i([ 26,61,0 ],fullname,'General\UI\TransactionContext').
 struct_dt_i([ 26,61,95 ],fullname,'General\UI\TransactionContext.Attribute').
+struct_dt_i([ 0,14,0 ],fullname,'PaymentMethod').
+struct_dt_i([ 26,13,0 ],fullname,'GeneXus\Common\Messages').
+struct_dt_i([ 26,13,30 ],fullname,'GeneXus\Common\Messages.Message').
  
 struct_dt_elem_i([ 26,20,0 ],1,name,'Currentpage').
 struct_dt_elem_i([ 26,20,0 ],1,camelname,'CurrentPage').
@@ -1176,7 +1220,115 @@ struct_dt_elem_i([ 26,61,95 ],2,soaptype,'').
 struct_dt_elem_i([ 26,61,95 ],2,'XmlInclude',idXmlIncludeAlways).
 struct_dt_elem_i([ 26,61,95 ],2,'JsonName','').
 struct_dt_elem_i([ 26,61,95 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 0,14,0 ],1,name,'Paymentmethodid').
+struct_dt_elem_i([ 0,14,0 ],1,camelname,'PaymentMethodId').
+struct_dt_elem_i([ 0,14,0 ],1,basedon,92).
+struct_dt_elem_i([ 0,14,0 ],1,length,6).
+struct_dt_elem_i([ 0,14,0 ],1,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],1,sign,0).
+struct_dt_elem_i([ 0,14,0 ],1,type,[ 4,6,0 ]).
+struct_dt_elem_i([ 0,14,0 ],1,pic,'ZZZZZ9').
+struct_dt_elem_i([ 0,14,0 ],1,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],1,attributeid,'115').
+struct_dt_elem_i([ 0,14,0 ],1,'ExternalName','PaymentMethodId').
+struct_dt_elem_i([ 0,14,0 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],2,name,'Paymentmethoddescription').
+struct_dt_elem_i([ 0,14,0 ],2,camelname,'PaymentMethodDescription').
+struct_dt_elem_i([ 0,14,0 ],2,basedon,88).
+struct_dt_elem_i([ 0,14,0 ],2,length,200).
+struct_dt_elem_i([ 0,14,0 ],2,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],2,type,[ 13,200,0 ]).
+struct_dt_elem_i([ 0,14,0 ],2,pic,'').
+struct_dt_elem_i([ 0,14,0 ],2,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],2,attributeid,'116').
+struct_dt_elem_i([ 0,14,0 ],2,'ExternalName','PaymentMethodDescription').
+struct_dt_elem_i([ 0,14,0 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],3,name,'Paymentmethodactive').
+struct_dt_elem_i([ 0,14,0 ],3,camelname,'PaymentMethodActive').
+struct_dt_elem_i([ 0,14,0 ],3,length,4).
+struct_dt_elem_i([ 0,14,0 ],3,decimals,0).
+struct_dt_elem_i([ 0,14,0 ],3,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 0,14,0 ],3,pic,'').
+struct_dt_elem_i([ 0,14,0 ],3,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],3,attributeid,'117').
+struct_dt_elem_i([ 0,14,0 ],3,'ExternalName','PaymentMethodActive').
+struct_dt_elem_i([ 0,14,0 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],4,name,'Paymentmethoddiscount').
+struct_dt_elem_i([ 0,14,0 ],4,camelname,'PaymentMethodDiscount').
+struct_dt_elem_i([ 0,14,0 ],4,basedon,127).
+struct_dt_elem_i([ 0,14,0 ],4,length,8).
+struct_dt_elem_i([ 0,14,0 ],4,decimals,2).
+struct_dt_elem_i([ 0,14,0 ],4,sign,1).
+struct_dt_elem_i([ 0,14,0 ],4,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,14,0 ],4,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,14,0 ],4,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],4,attributeid,'129').
+struct_dt_elem_i([ 0,14,0 ],4,'ExternalName','PaymentMethodDiscount').
+struct_dt_elem_i([ 0,14,0 ],4,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 0,14,0 ],5,name,'Paymentmethodrecarge').
+struct_dt_elem_i([ 0,14,0 ],5,camelname,'PaymentMethodRecarge').
+struct_dt_elem_i([ 0,14,0 ],5,basedon,127).
+struct_dt_elem_i([ 0,14,0 ],5,length,8).
+struct_dt_elem_i([ 0,14,0 ],5,decimals,2).
+struct_dt_elem_i([ 0,14,0 ],5,sign,1).
+struct_dt_elem_i([ 0,14,0 ],5,type,[ 4,8,2 ]).
+struct_dt_elem_i([ 0,14,0 ],5,pic,'ZZZZ9.99').
+struct_dt_elem_i([ 0,14,0 ],5,collection,'False').
+struct_dt_elem_i([ 0,14,0 ],5,attributeid,'130').
+struct_dt_elem_i([ 0,14,0 ],5,'ExternalName','PaymentMethodRecarge').
+struct_dt_elem_i([ 0,14,0 ],5,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,name,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,camelname,'Id').
+struct_dt_elem_i([ 26,13,30 ],1,length,128).
+struct_dt_elem_i([ 26,13,30 ],1,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,13,30 ],1,pic,'').
+struct_dt_elem_i([ 26,13,30 ],1,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalName','Id').
+struct_dt_elem_i([ 26,13,30 ],1,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],1,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],1,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],2,name,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,camelname,'Type').
+struct_dt_elem_i([ 26,13,30 ],2,basedon,51).
+struct_dt_elem_i([ 26,13,30 ],2,length,2).
+struct_dt_elem_i([ 26,13,30 ],2,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],2,sign,0).
+struct_dt_elem_i([ 26,13,30 ],2,type,[ 4,2,0 ]).
+struct_dt_elem_i([ 26,13,30 ],2,pic,'Z9').
+struct_dt_elem_i([ 26,13,30 ],2,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalName','Type').
+struct_dt_elem_i([ 26,13,30 ],2,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],2,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],2,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,13,30 ],3,name,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,camelname,'Description').
+struct_dt_elem_i([ 26,13,30 ],3,length,256).
+struct_dt_elem_i([ 26,13,30 ],3,decimals,0).
+struct_dt_elem_i([ 26,13,30 ],3,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,13,30 ],3,pic,'').
+struct_dt_elem_i([ 26,13,30 ],3,collection,'False').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalName','Description').
+struct_dt_elem_i([ 26,13,30 ],3,'ExternalNamespace',mtaKB).
+struct_dt_elem_i([ 26,13,30 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlName','').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,13,30 ],3,soaptype,'').
+struct_dt_elem_i([ 26,13,30 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,13,30 ],3,'JsonName','').
+struct_dt_elem_i([ 26,13,30 ],3,'JsonInclude',idJsonEmpty).
 struct_dt_elem_i([ 26,61,0 ],3,pic,'99/99/99').
+struct_dt_elem_i([ 0,14,0 ],2,pic,'ZZZZZZZZZZZZZZ9.99').
  
  
  
@@ -1186,9 +1338,8 @@ sub_info_i(146,'Start',1,27,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',
 sub_info_i(146,'Refresh',29,32,[ [],[ [ t('Btninsert',3),t('Enabled',3) ] ] ]).
 sub_info_i(146,[ t('Grid',3,42,7),t('Load',3,42,12) ],42,54,[ [ 115 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(116,2),t('Link',3) ] ] ]).
 sub_info_i(146,'''DoInsert''',56,58,[ [ 115 ],[] ]).
-sub_info_i(146,[ t('Delete',23,70,7),t('Click',3,70,15) ],70,94,[ [ ctrl('Grid','refresh('),115,117 ],[] ]).
+sub_info_i(146,[ t('Delete',23,70,7),t('Click',3,70,15) ],70,107,[ [ ctrl('Grid','refresh('),115,117,'Errormessage' ],[ 'Errormessage','Errormessage' ] ]).
  
-pgm_parm_i(proc,106,'PAYMENTMETHODACTIVEDEACTIVE',[ [ int,6,0,0 ],[ boolean,4,0,0 ],[ boolean,4,0,0 ],[ svchar,512,0,0 ] ],[ [ 'PaymentMethodId',in,[] ],[ 'PaymentMethodActive',in,[] ],[ 'AllOk',out,[] ],[ 'ErrorMessage',out,[] ] ]).
 pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
 pgm_parm_i(web,154,'VIEWPAYMENTMETHOD',[ [ int,6,0,0 ],[ char,50,0,0 ] ],[ [ 'PaymentMethodId',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(trn,14,'PAYMENTMETHOD',[ [ char,3,0,0 ],[ int,6,0,0 ] ],[ [ 'Mode',in,[] ],[ 'PaymentMethodId',in,[] ] ]).
@@ -1196,7 +1347,6 @@ pgm_parm_i(proc,58,'HASPERMISSION',[ [ svchar,60,0,0 ],[ boolean,4,0,0 ] ],[ [ '
 pgm_parm_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,155,'WWPAYMENTMETHOD','INTERNAL','Unsecure').
-pgm_callprotocol_i(proc,106,'PAYMENTMETHODACTIVEDEACTIVE','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,154,'VIEWPAYMENTMETHOD','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,14,'PAYMENTMETHOD','INTERNAL','Unsecure').

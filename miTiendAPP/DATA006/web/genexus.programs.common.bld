@@ -5,8 +5,11 @@ SoapParm.cs
 GxFullTextSearchReindexer.cs
 GxModelInfoProvider.cs
 @genexus.programs.sdt.bld
+<<<<<<< Updated upstream
 type_SdtPermission.cs
 type_SdtPaymentMethod.cs
+=======
+>>>>>>> Stashed changes
 type_SdtRole.cs
 type_SdtRole_Permission.cs
 type_SdtInvoice.cs
@@ -17,6 +20,15 @@ type_SdtProduct.cs
 type_SdtSupplier.cs
 type_SdtPurchaseOrder.cs
 type_SdtPurchaseOrder_Detail.cs
+<<<<<<< Updated upstream
+=======
+type_SdtPermission.cs
+type_SdtMovement.cs
+type_SdtInvoice.cs
+type_SdtInvoice_Detail.cs
+type_SdtInvoice_PaymentMethod.cs
+type_SdtPaymentMethod.cs
+>>>>>>> Stashed changes
 gxdomainorderoptionsearchproducts.cs
 gxdomainoptionupdateprice.cs
 gxdomainorderoptionorderpurchase.cs
