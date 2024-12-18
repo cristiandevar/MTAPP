@@ -11,22 +11,22 @@ lwi_i(22,[ [] ]).
  
  
  
-ta_i(22,[ [ [ 22,123 ],[ 22,124 ],[ 22,125 ],[ 22,128 ],[ 22,127 ] ] ]).
+ta_i(22,[ [ [ 22,123 ],[ 22,125 ],[ 22,124 ],[ 22,128 ],[ 22,140 ] ] ]).
  
-las_i(22,[ [ 'Pgmname','Trncontext','Mode','Movementid','Websession',123,124,125,128,127 ] ]).
+las_i(22,[ [ 'Pgmname','Trncontext','Mode','Movementid','Websession',123,125,124,128,140 ] ]).
  
-lac_i(22,[ [ 123,124,125,128,127 ] ]).
+lac_i(22,[ [ 123,124,128,140 ] ]).
  
  
 lits_i('Movement',5,10).
  
-cls_i([ 0,0 ],[ 5,17 ]).
+cls_i([ 0,0 ],[ 5,199 ]).
  
 pos_i(123,[ 0,0,0 ]).
 pos_i(124,[ 0,0,0 ]).
 pos_i(125,[ 0,0,0 ]).
 pos_i(128,[ 0,0,0 ]).
-pos_i(127,[ 0,0,0 ]).
+pos_i(140,[ 0,0,0 ]).
  
  
 default_i(e('Pgmname',2,2,'"Movement"')).
@@ -85,6 +85,8 @@ rule_i(0,prop('PWFCallable','0')).
 rule_i(0,prop('ObjectVisibility','Public')).
 rule_i(0,prop('FullyQualifiedName','Movement')).
 rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('SEARCH_VIEWER',o(13,'ViewMovement'))).
+rule_i(0,prop('SEARCHABLE','UMPV')).
 rule_i(0,prop('MTIER_OPT','Yes')).
 rule_i(0,prop('Hint_firstrows','UMPV')).
 rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
@@ -133,13 +135,18 @@ rule_i(0,prop('MasterPage',o(13,'General.UI.MasterUnanimoSidebar'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop(idFormLayout,'UnanimoTemplate')).
 rule_i(0,prop('Theme',o(102,mtaKB))).
+rule_i(0,prop('WS_Delete','-1')).
+rule_i(0,prop('WS_Update','-1')).
+rule_i(0,prop('WS_Insert','-1')).
+rule_i(0,prop('WS_View','-1')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
 rule_i(0,prop('ExternalNamespace',mtaKB)).
 rule_i(0,prop('ExternalName','Movement')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
 rule_i(0,prop(idConnectivitySupport,idInherit)).
 rule_i(0,prop('OBJECT_METADATA','')).
-rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
-rule_i(0,prop(idBC,'0')).
+rule_i(0,prop(idBC,'-1')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','Movement')).
 rule_i(0,prop('ObjName','Movement')).
@@ -147,44 +154,49 @@ rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
 rule_i(0,rule([ a(10,[ 'Mode','Movementid' ]) ],[],[ insert,update,delete,display ],[])).
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Movementid',in ] ])).
-rule_i(22,rule([ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(124,2),t(=,10),t('1',3),t('.OR.',9),t(124,2),t(=,10),t('2',3),t(')',4) ],[ insert,update ],[ 124 ])).
-rule_i(22,rule([ a(1,msg([ t('"Field Movement Created Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(125,2),t(')',4),t('.OR.',9),t(125,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 125 ])).
+rule_i(22,rule([ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(124,2),t(=,10),t('1',3),t('.OR.',9),t(124,2),t(=,10),t('2',3),t('.OR.',9),t(124,2),t(=,10),t('3',3),t(')',4) ],[ insert,update ],[ 124 ])).
 rule_i(22,rule([ a(3,[ t(123,2) ]) ],[],[ insert,update,delete,display ],[ 123 ])).
 rule_i(22,rule([ a(21,[ [ 123 ] ]) ],[],[ insert,update,delete,display ],[ 123 ])).
+rule_i(22,rule([ a(3,[ t(125,2) ]) ],[],[ insert,update,delete,display ],[ 125 ])).
  
-a_i(1,22,b,0,[],[ [],[ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(124,2),t(=,10),t('1',3),t('.OR.',9),t(124,2),t(=,10),t('2',3),t(')',4) ] ]).
-a_i(2,22,b,0,[],[ [],[ a(1,msg([ t('"Field Movement Created Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(125,2),t(')',4),t('.OR.',9),t(125,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
-a_i(3,22,f,123,[],[ [],[ t('Movementid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Movementid',23),t(')',4),t(';',18) ] ]).
-a_i(4,22,f,[ t(123,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(5,22,t,22,[],[ [ [ [],123,123 ] ],'IMOVEMENT',[] ]).
-a_i(6,22,f,'Pgmname',[],[ [],[ t('"Movement"',3) ] ]).
+a_i(1,22,b,0,[],[ [],[ a(1,msg([ t('"Field Movement Type is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t(124,2),t(=,10),t('1',3),t('.OR.',9),t(124,2),t(=,10),t('2',3),t('.OR.',9),t(124,2),t(=,10),t('3',3),t(')',4) ] ]).
+a_i(2,22,f,123,[],[ [],[ t('Movementid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Movementid',23),t(')',4),t(';',18) ] ]).
+a_i(3,22,f,[ t(123,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(4,22,f,125,[],[ [],[ t('serverdate(',1),t(')',4),t('IF',17),t('Mode',23),t(=,10),t([ 43,'Insert' ],44),t(';',18) ] ]).
+a_i(5,22,f,[ t(125,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(6,22,t,22,[],[ [ [ [],123,123 ] ],'IMOVEMENT',[] ]).
+a_i(7,22,f,'Pgmname',[],[ [],[ t('"Movement"',3) ] ]).
  
 v_i(b,i,1,124).
 v_i(b,o,1,[]).
-v_i(b,i,2,125).
-v_i(b,o,2,[]).
-v_i(f,i,3,'Movementid').
-v_i(f,o,3,123).
+v_i(f,i,2,'Movementid').
+v_i(f,o,2,123).
+v_i(f,i,3,[]).
+v_i(f,o,3,[ t(123,2),t('Enabled',3) ]).
 v_i(f,i,4,[]).
-v_i(f,o,4,[ t(123,2),t('Enabled',3) ]).
-v_i(t,i,5,123).
-v_i(t,o,5,124).
-v_i(t,o,5,125).
-v_i(t,o,5,128).
-v_i(t,o,5,127).
-v_i(f,i,6,[]).
-v_i(f,o,6,'Pgmname').
+v_i(f,o,4,125).
+v_i(f,i,5,[]).
+v_i(f,o,5,[ t(125,2),t('Enabled',3) ]).
+v_i(t,i,6,123).
+v_i(t,o,6,125).
+v_i(t,o,6,124).
+v_i(t,o,6,128).
+v_i(t,o,6,140).
+v_i(f,i,7,[]).
+v_i(f,o,7,'Pgmname').
  
-act_info_i(3,[ [ 123 ] ]).
+act_info_i(2,[ [ 123 ] ]).
+act_info_i(4,[ [ 125 ] ]).
+ 
+ca_i(4,125).
  
  
  
  
- 
-attri_i(127,[ 'MovementQuantity',int,4,0,'ZZZ9',0,'Movement Quantity','',0 ]).
+attri_i(140,[ 'MovementDescription',svchar,200,0,'',0,'Movement Description','',0 ]).
 attri_i(128,[ 'MovementKeyAditional',int,6,0,'ZZZZZ9',0,'Movement Key Aditional','',0 ]).
-attri_i(125,[ 'MovementCreatedDate',date,8,0,'99/99/99',0,'Movement Created Date','',0 ]).
 attri_i(124,[ 'MovementType',int,4,0,'ZZZ9',0,'Movement Type','',0 ]).
+attri_i(125,[ 'MovementCreatedDate',date,8,0,'99/99/99',0,'Movement Created Date','',0 ]).
 attri_i(123,[ 'MovementId',int,6,0,'ZZZZZ9',0,'Movement Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
@@ -194,7 +206,7 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Movementid',[ 'MovementId',int,6,0,'ZZZZZ9',0,'Movement Id','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(22,[ 'Movement',[ 123,124,125,127,128 ],'Movement','Movement' ]).
+table_i(22,[ 'Movement',[ 123,124,125,128,140 ],'Movement','Movement' ]).
  
 index_i(22,[ 'IMOVEMENT',u,[ 123 ],'IMovement' ]).
  
@@ -210,8 +222,8 @@ index_i(22,[ 'IMOVEMENT',u,[ 123 ],'IMovement' ]).
  
  
  
-upd_i(22,22,i,[ [ 124,125,128,127 ],[],'IMOVEMENT',[ [ [],123,123 ] ] ]).
-upd_i(22,22,u,[ [ 124,125,128,127 ],[],'IMOVEMENT',[] ]).
+upd_i(22,22,i,[ [ 125,124,128,140 ],[],'IMOVEMENT',[ [ [],123,123 ] ] ]).
+upd_i(22,22,u,[ [ 125,124,128,140 ],[],'IMOVEMENT',[] ]).
 upd_i(22,22,d,[ [],[],'IMOVEMENT',[] ]).
  
  
@@ -229,6 +241,7 @@ enum_value_i(6,43,'"DLT"','Delete','"Delete"',[ none ]).
 enum_value_i(6,43,'"DSP"','Display','"Display"',[ none ]).
 enum_value_i(6,144,'1','ProductDiscard','"Product Discard"',[ none ]).
 enum_value_i(6,144,'2','ProductAdded','"Product Added"',[ none ]).
+enum_value_i(6,144,'3','InvoiceCancel','"Invoice Cancel"',[ none ]).
  
 enum_value_info_i(6,43,'GeneXus\TrnMode').
 enum_value_info_i(6,144,'MovementType').
@@ -238,14 +251,15 @@ enum_type_i(6,144,int,4,0).
  
 dom_info_i(92,[ 'Id' ]).
 dom_info_i(144,[ 'MovementType' ]).
+dom_info_i(88,[ 'GeneXusUnanimo\Description' ]).
  
-a_ctrl_i(124,c,[ '1','2' ]).
+a_ctrl_i(124,c,[ '1','2','3' ]).
  
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,19).
-b_group_i(2,3,lit,0,20,0).
+b_group_i(2,2,lit,0,2,25).
+b_group_i(2,3,lit,0,26,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(5,2,2,cmd,1,[ t('',109,5,0),t('.NOT.',8,1,5),t('udp(',1,5,23),t(o(1,'General\Security\IsAuthorized'),28,5,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
@@ -256,13 +270,14 @@ b_line_i(11,2,2,cmd,1,[ t('',109,11,0),t('Mode',23,1,5),t(=,10,1,11),t([ 43,'Del
 b_line_i(12,2,2,cmd,1,[ t('',107,12,0),t([ t('Btn_enter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Delete"',3,1,0) ]).
 b_line_i(13,2,2,cmd,1,[ t('',107,13,0),t([ t('Btn_enter',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Delete"',3,1,0) ]).
 b_line_i(14,2,2,cmd,1,[ t('',111,14,0) ]).
-b_line_i(17,2,2,cmd,1,[ t('',147,17,0) ]).
-b_line_i(19,2,2,cmd,1,[ t('',146,19,0),t('After Trn',3,19,7) ]).
-b_line_i(23,2,3,cmd,1,[ t('',109,23,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 43,'Delete' ],44,23,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,23,41),t('Callerondelete',3,23,53) ],29,23,53),t(')',4,1,67) ]).
-b_line_i(24,2,3,cmd,1,[ t('',104,24,0),t(o(13,'WWMovement'),28,1,3) ]).
-b_line_i(25,2,3,cmd,1,[ t('',111,25,0) ]).
-b_line_i(27,2,3,cmd,1,[ t('',118,27,0) ]).
-b_line_i(30,2,3,cmd,1,[ t('',147,30,0) ]).
+b_line_i(20,2,2,cmd,1,[ t('',107,20,0),t([ t(123,2,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('0',3,1,0) ]).
+b_line_i(23,2,2,cmd,1,[ t('',147,23,0) ]).
+b_line_i(25,2,2,cmd,1,[ t('',146,25,0),t('After Trn',3,25,7) ]).
+b_line_i(29,2,3,cmd,1,[ t('',109,29,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 43,'Delete' ],44,29,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,29,41),t('Callerondelete',3,29,53) ],29,29,53),t(')',4,1,67) ]).
+b_line_i(30,2,3,cmd,1,[ t('',104,30,0),t(o(13,'WWMovement'),28,1,3) ]).
+b_line_i(31,2,3,cmd,1,[ t('',111,31,0) ]).
+b_line_i(33,2,3,cmd,1,[ t('',118,33,0) ]).
+b_line_i(36,2,3,cmd,1,[ t('',147,36,0) ]).
  
  
  
@@ -330,7 +345,7 @@ html_sub_i(15,50,html_i(5,div(50))).
 html_sub_i(50,51,html_i(0,div(51))).
 html_sub_i(51,52,html_i(0,div(52))).
 html_sub_i(52,53,html_i(0,div(53))).
-html_sub_i(53,54,html_i(0,t(127,2))).
+html_sub_i(53,54,html_i(0,t(140,2))).
 html_sub_i(3,55,html_i(2,div(55))).
 html_sub_i(55,56,html_i(0,div(56))).
 html_sub_i(56,57,html_i(0,div(57))).
@@ -359,8 +374,8 @@ html_tags_i(42,'data-gx-att','att:125').
 html_tags_i(44,'data-gx-att','att:125').
 html_tags_i(47,'data-gx-att','att:128').
 html_tags_i(49,'data-gx-att','att:128').
-html_tags_i(52,'data-gx-att','att:127').
-html_tags_i(54,'data-gx-att','att:127').
+html_tags_i(52,'data-gx-att','att:140').
+html_tags_i(54,'data-gx-att','att:140').
 html_tags_i(57,'data-gx-actiongroup-type',toolbar).
 html_tags_i(59,'ControlType','').
 html_tags_i(61,'ControlType','').
@@ -721,7 +736,7 @@ html_comp_i(39,'Captionposition','Left',v,[ str ]).
 html_comp_i(39,'Captionvalue','Type',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',0,d,[ num ]).
-html_comp_i(39,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],d,[ values ]).
+html_comp_i(39,'Controlvalues',[ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],d,[ values ]).
 html_comp_i(39,'Addemptyitem',0,d,[ bool ]).
 html_comp_i(39,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(39,'Emptyasnull','Yes',d,[ str ]).
@@ -898,33 +913,36 @@ html_comp_i(53,'Semanticcontent',div,d,[ str ]).
 html_comp_i(53,'Align',left,d,[ str ]).
 html_comp_i(53,'Valign',top,d,[ str ]).
 html_comp_i(54,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(54,'Colcount',4,d,[ num ]).
-html_comp_i(54,'Attid',127,v,[ num ]).
+html_comp_i(54,'Colcount',80,d,[ num ]).
+html_comp_i(54,'Attid',140,v,[ num ]).
 html_comp_i(54,'Class','Attribute',v,[ str ]).
-html_comp_i(54,'Controlname','Movementquantity',d,[ str ]).
+html_comp_i(54,'Controlname','Movementdescription',d,[ str ]).
 html_comp_i(54,'Returnonclick',0,v,[ bool ]).
 html_comp_i(54,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(54,'Captionstyle','',v,[ str ]).
 html_comp_i(54,'Captionposition','Left',v,[ str ]).
-html_comp_i(54,'Captionvalue','Quantity',d,[ str ]).
+html_comp_i(54,'Captionvalue','Description',d,[ str ]).
 html_comp_i(54,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(54,'Controltype',2,d,[ num ]).
 html_comp_i(54,'Inputtype',0,d,[ num ]).
+html_comp_i(54,'Editautocomplete',0,d,[ num ]).
+html_comp_i(54,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(54,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(54,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(54,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(54,'Readonly',0,v,[ bool ]).
 html_comp_i(54,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(54,'Ispassword',0,d,[ bool ]).
 html_comp_i(54,'Autoresize',-1,d,[ bool ]).
-html_comp_i(54,'Gxwidth',measure(4,chr),d,[ measure ]).
-html_comp_i(54,'Gxheight',measure(1,row),d,[ measure ]).
-html_comp_i(54,'Ismultiline',0,d,[ bool ]).
+html_comp_i(54,'Gxwidth',measure(80,chr),d,[ measure ]).
+html_comp_i(54,'Gxheight',measure(3,row),d,[ measure ]).
+html_comp_i(54,'Ismultiline',-1,d,[ bool ]).
 html_comp_i(54,'Maxtextnumberlines',0,d,[ num ]).
 html_comp_i(54,'Fill',-1,d,[ bool ]).
 html_comp_i(54,'Backcolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(54,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(54,'Font',font('Verdana',12,[]),d,[ font ]).
-html_comp_i(54,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(54,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(54,'Gxformat',0,d,[ num ]).
 html_comp_i(54,'Title','',d,[ str ]).
 html_comp_i(54,'Invitemsg','',v,[ str ]).
@@ -1064,7 +1082,7 @@ lit_i(48,1,div(48),[ ctlname('') ]).
 lit_i(47,1,div(47),[ ctlname('') ]).
 lit_i(46,1,div(46),[ ctlname('') ]).
 lit_i(45,1,div(45),[ ctlname('') ]).
-lit_i(54,1,t(127,2),[ ctlname(127),ctrltype(edit,54),pos(54),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(54,1,t(140,2),[ ctlname(140),ctrltype(edit,54),pos(54),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(53,1,div(53),[ ctlname('') ]).
 lit_i(52,1,div(52),[ ctlname('') ]).
 lit_i(51,1,div(51),[ ctlname('') ]).
@@ -1090,10 +1108,12 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-ctrl_info_i(1,39,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ] ],[ '' ] ]).
+ctrl_info_i(1,39,[ [ [ 'Product Discard','1' ],[ 'Product Added','2' ],[ 'Invoice Cancel','3' ] ],[ '' ] ]).
  
  
+calling_main_i(1,37).
  
+att_prop_i(6,123,'HORIZONTAL_DESCRIPTION','Movement Id',d).
 att_prop_i(6,123,'ExternalName','MovementId',d).
 att_prop_i(6,123,'ExternalNamespace',mtaKB,d).
 att_prop_i(6,123,'EmptyAsNull','Yes',d).
@@ -1108,6 +1128,7 @@ att_prop_i(6,123,'AttValidationFailedMsg','',d).
 att_prop_i(6,123,'DownloadOffline','0',d).
 att_prop_i(6,123,'VarServiceExtName','',d).
 att_prop_i(6,123,'FullName','MovementId',v).
+att_prop_i(6,124,'HORIZONTAL_DESCRIPTION','Movement Type',d).
 att_prop_i(6,124,'ExternalName','MovementType',d).
 att_prop_i(6,124,'ExternalNamespace',mtaKB,d).
 att_prop_i(6,124,'EmptyAsNull','Yes',d).
@@ -1118,6 +1139,7 @@ att_prop_i(6,124,'AttValidationFailedMsg','GXSPC_OutOfRange',d).
 att_prop_i(6,124,'DownloadOffline','0',d).
 att_prop_i(6,124,'VarServiceExtName','',d).
 att_prop_i(6,124,'FullName','MovementType',v).
+att_prop_i(6,125,'HORIZONTAL_DESCRIPTION','Movement Created Date',d).
 att_prop_i(6,125,'ExternalName','MovementCreatedDate',d).
 att_prop_i(6,125,'ExternalNamespace',mtaKB,d).
 att_prop_i(6,125,'EmptyAsNull','Yes',d).
@@ -1129,6 +1151,7 @@ att_prop_i(6,125,idDATEFORMAT,idDATEFORMAT_SHORT,d).
 att_prop_i(6,125,'DownloadOffline','0',d).
 att_prop_i(6,125,'VarServiceExtName','',d).
 att_prop_i(6,125,'FullName','MovementCreatedDate',v).
+att_prop_i(6,128,'HORIZONTAL_DESCRIPTION','Movement Key Aditional',d).
 att_prop_i(6,128,'ExternalName','MovementKeyAditional',d).
 att_prop_i(6,128,'ExternalNamespace',mtaKB,d).
 att_prop_i(6,128,'EmptyAsNull','Yes',d).
@@ -1140,32 +1163,33 @@ att_prop_i(6,128,'AttValidationFailedMsg','',d).
 att_prop_i(6,128,'DownloadOffline','0',d).
 att_prop_i(6,128,'VarServiceExtName','',d).
 att_prop_i(6,128,'FullName','MovementKeyAditional',v).
-att_prop_i(6,127,'ExternalName','MovementQuantity',d).
-att_prop_i(6,127,'ExternalNamespace',mtaKB,d).
-att_prop_i(6,127,'EmptyAsNull','Yes',d).
-att_prop_i(6,127,idBasedOn,'',d).
-att_prop_i(6,127,'AUTONUMBER','0',d).
-att_prop_i(6,127,'ATT_INITIAL_VALUE','',d).
-att_prop_i(6,127,'AttRegEx','',d).
-att_prop_i(6,127,'AttValidationFailedMsg','',d).
-att_prop_i(6,127,'DownloadOffline','0',d).
-att_prop_i(6,127,'VarServiceExtName','',d).
-att_prop_i(6,127,'FullName','MovementQuantity',v).
+att_prop_i(6,140,'HORIZONTAL_DESCRIPTION','Movement Description',d).
+att_prop_i(6,140,'ExternalName','MovementDescription',d).
+att_prop_i(6,140,'ExternalNamespace',mtaKB,d).
+att_prop_i(6,140,'EmptyAsNull','Yes',d).
+att_prop_i(6,140,idBasedOn,88,v).
+att_prop_i(6,140,'ATT_INITIAL_VALUE','',d).
+att_prop_i(6,140,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(6,140,'AttRegEx','',d).
+att_prop_i(6,140,'AttValidationFailedMsg','',d).
+att_prop_i(6,140,'DownloadOffline','0',d).
+att_prop_i(6,140,'VarServiceExtName','',d).
+att_prop_i(6,140,'FullName','MovementDescription',v).
  
  
 tbl_att_prop_i(6,22,124,'AllowNulls',n).
 tbl_att_prop_i(6,22,123,'AllowNulls',n).
 tbl_att_prop_i(6,22,123,'AUTONUMBER',y).
 tbl_att_prop_i(6,22,125,'AllowNulls',n).
-tbl_att_prop_i(6,22,127,'AllowNulls',n).
 tbl_att_prop_i(6,22,128,'AllowNulls',n).
+tbl_att_prop_i(6,22,140,'AllowNulls',n).
  
 var_prop_i(6,'Movementid',idBasedOn,'',v).
  
  
  
  
-trn_level_i(22,[ [ 123,124,125,128,127 ],'Movement','Movement','Movement','',124 ]).
+trn_level_i(22,[ [ 123,124,125,128,140 ],'Movement','Movement','Movement','',124 ]).
  
 struct_dt_i([ 26,61,0 ],name,'General\UI\TransactionContext').
 struct_dt_i([ 26,61,0 ],namespace,mtaKB).
@@ -1301,8 +1325,8 @@ struct_dt_elem_i([ 26,61,0 ],3,pic,'99/99/99').
  
  
  
-sub_info_i(146,'Start',1,17,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext',[ t('Btn_enter',3),t('Caption',3) ],[ t('Btn_enter',3),t('Tooltiptext',3) ] ] ]).
-sub_info_i(146,'After Trn',19,30,[ [ 'Mode','Trncontext' ],[] ]).
+sub_info_i(146,'Start',1,23,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext',[ t('Btn_enter',3),t('Caption',3) ],[ t('Btn_enter',3),t('Tooltiptext',3) ],[ t(123,2),t('Visible',3) ] ] ]).
+sub_info_i(146,'After Trn',25,36,[ [ 'Mode','Trncontext' ],[] ]).
  
 pgm_parm_i(web,158,'WWMOVEMENT',[],[]).
 pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
@@ -1318,6 +1342,8 @@ pgm_callprotocol_i(proc,13,'GENERAL\SECURITY\ISAUTHORIZED','INTERNAL','Unsecure'
  
 module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  
  
  

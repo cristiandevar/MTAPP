@@ -655,7 +655,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Right", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 74,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 73,'',false,'',0)\"";
             ClassString = "filters-container__close";
             StyleString = "";
             GxWebStd.gx_button_ctrl( context, bttBtntoggleontable_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(62), 2, 0)+","+"null"+");", "Hide Filters", bttBtntoggleontable_Jsonclick, 7, "Hide Filters", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e11271_client"+"'", TempTags, "", 2, "HLP_WWInvoice.htm");
@@ -671,9 +671,9 @@ namespace GeneXus.Programs {
             GxWebStd.gx_label_element( context, cmbavOrderedby_Internalname, "Ordered By", "col-xs-12 attribute-comboLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 gx-attribute", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 79,'',false,'" + sGXsfl_62_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 78,'',false,'" + sGXsfl_62_idx + "',0)\"";
             /* ComboBox */
-            GxWebStd.gx_combobox_ctrl1( context, cmbavOrderedby, cmbavOrderedby_Internalname, StringUtil.Trim( StringUtil.Str( (decimal)(AV24OrderedBy), 4, 0)), 1, cmbavOrderedby_Jsonclick, 0, "'"+""+"'"+",false,"+"'"+""+"'", "int", "", cmbavOrderedby.Visible, cmbavOrderedby.Enabled, 1, 0, 0, "em", 0, "", "", "attribute-combo", "", "", TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,79);\"", "", true, 0, "HLP_WWInvoice.htm");
+            GxWebStd.gx_combobox_ctrl1( context, cmbavOrderedby, cmbavOrderedby_Internalname, StringUtil.Trim( StringUtil.Str( (decimal)(AV24OrderedBy), 4, 0)), 1, cmbavOrderedby_Jsonclick, 0, "'"+""+"'"+",false,"+"'"+""+"'", "int", "", cmbavOrderedby.Visible, cmbavOrderedby.Enabled, 1, 0, 0, "em", 0, "", "", "attribute-combo", "", "", TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,78);\"", "", true, 0, "HLP_WWInvoice.htm");
             cmbavOrderedby.CurrentValue = StringUtil.Trim( StringUtil.Str( (decimal)(AV24OrderedBy), 4, 0));
             AssignProp("", false, cmbavOrderedby_Internalname, "Values", (string)(cmbavOrderedby.ToJavascriptSource()), true);
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -703,9 +703,9 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavFrominvoicecreateddate_Internalname, "From Invoice Created Date", "col-sm-3 attribute-comboLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 89,'',false,'" + sGXsfl_62_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 88,'',false,'" + sGXsfl_62_idx + "',0)\"";
             context.WriteHtmlText( "<div id=\""+edtavFrominvoicecreateddate_Internalname+"_dp_container\" class=\"dp_container\" style=\"white-space:nowrap;display:inline;\">") ;
-            GxWebStd.gx_single_line_edit( context, edtavFrominvoicecreateddate_Internalname, context.localUtil.Format(AV32FromInvoiceCreatedDate, "99/99/99"), context.localUtil.Format( AV32FromInvoiceCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,89);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavFrominvoicecreateddate_Jsonclick, 0, "attribute-combo", "", "", "", "", edtavFrominvoicecreateddate_Visible, edtavFrominvoicecreateddate_Enabled, 1, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_WWInvoice.htm");
+            GxWebStd.gx_single_line_edit( context, edtavFrominvoicecreateddate_Internalname, context.localUtil.Format(AV32FromInvoiceCreatedDate, "99/99/99"), context.localUtil.Format( AV32FromInvoiceCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,88);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavFrominvoicecreateddate_Jsonclick, 0, "attribute-combo", "", "", "", "", edtavFrominvoicecreateddate_Visible, edtavFrominvoicecreateddate_Enabled, 1, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_WWInvoice.htm");
             GxWebStd.gx_bitmap( context, edtavFrominvoicecreateddate_Internalname+"_dp_trigger", context.GetImagePath( "", "", context.GetTheme( )), "", "", "", "", ((edtavFrominvoicecreateddate_Visible==0)||(edtavFrominvoicecreateddate_Enabled==0) ? 0 : 1), 0, "Date selector", "Date selector", 0, 1, 0, "", 0, "", 0, 0, 0, "", "", "cursor: pointer;", "", "", "", "", "", "", "", "", 1, false, false, "", "HLP_WWInvoice.htm");
             context.WriteHtmlTextNl( "</div>") ;
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -737,9 +737,9 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavToinvoicecreateddate_Internalname, "To Invoice Created Date", "col-sm-3 attribute-comboLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 99,'',false,'" + sGXsfl_62_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 98,'',false,'" + sGXsfl_62_idx + "',0)\"";
             context.WriteHtmlText( "<div id=\""+edtavToinvoicecreateddate_Internalname+"_dp_container\" class=\"dp_container\" style=\"white-space:nowrap;display:inline;\">") ;
-            GxWebStd.gx_single_line_edit( context, edtavToinvoicecreateddate_Internalname, context.localUtil.Format(AV33ToInvoiceCreatedDate, "99/99/99"), context.localUtil.Format( AV33ToInvoiceCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,99);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavToinvoicecreateddate_Jsonclick, 0, "attribute-combo", "", "", "", "", edtavToinvoicecreateddate_Visible, edtavToinvoicecreateddate_Enabled, 1, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_WWInvoice.htm");
+            GxWebStd.gx_single_line_edit( context, edtavToinvoicecreateddate_Internalname, context.localUtil.Format(AV33ToInvoiceCreatedDate, "99/99/99"), context.localUtil.Format( AV33ToInvoiceCreatedDate, "99/99/99"), TempTags+" onchange=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.date.valid_date(this, 8,'MDY',0,12,'eng',false,0);"+";gx.evt.onblur(this,98);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavToinvoicecreateddate_Jsonclick, 0, "attribute-combo", "", "", "", "", edtavToinvoicecreateddate_Visible, edtavToinvoicecreateddate_Enabled, 1, "text", "", 8, "chr", 1, "row", 8, 0, 0, 0, 0, -1, 0, true, "", "right", false, "", "HLP_WWInvoice.htm");
             GxWebStd.gx_bitmap( context, edtavToinvoicecreateddate_Internalname+"_dp_trigger", context.GetImagePath( "", "", context.GetTheme( )), "", "", "", "", ((edtavToinvoicecreateddate_Visible==0)||(edtavToinvoicecreateddate_Enabled==0) ? 0 : 1), 0, "Date selector", "Date selector", 0, 1, 0, "", 0, "", 0, 0, 0, "", "", "cursor: pointer;", "", "", "", "", "", "", "", "", 1, false, false, "", "HLP_WWInvoice.htm");
             context.WriteHtmlTextNl( "</div>") ;
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -940,8 +940,6 @@ namespace GeneXus.Programs {
                               AssignAttri("", false, edtavState_Internalname, AV21State);
                               AV22Details = cgiGet( edtavDetails_Internalname);
                               AssignAttri("", false, edtavDetails_Internalname, AV22Details);
-                              AV45Cancel = cgiGet( edtavCancel_Internalname);
-                              AssignAttri("", false, edtavCancel_Internalname, AV45Cancel);
                               sEvtType = StringUtil.Right( sEvt, 1);
                               if ( StringUtil.StrCmp(sEvtType, ".") == 0 )
                               {
@@ -1174,8 +1172,6 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtavState_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavState_Enabled), 5, 0), !bGXsfl_62_Refreshing);
          edtavDetails_Enabled = 0;
          AssignProp("", false, edtavDetails_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavDetails_Enabled), 5, 0), !bGXsfl_62_Refreshing);
-         edtavCancel_Enabled = 0;
-         AssignProp("", false, edtavCancel_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavCancel_Enabled), 5, 0), !bGXsfl_62_Refreshing);
       }
 
       protected void RF272( )
@@ -1461,8 +1457,6 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtavState_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavState_Enabled), 5, 0), !bGXsfl_62_Refreshing);
          edtavDetails_Enabled = 0;
          AssignProp("", false, edtavDetails_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavDetails_Enabled), 5, 0), !bGXsfl_62_Refreshing);
-         edtavCancel_Enabled = 0;
-         AssignProp("", false, edtavCancel_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavCancel_Enabled), 5, 0), !bGXsfl_62_Refreshing);
          fix_multi_value_controls( ) ;
       }
 
@@ -1636,7 +1630,7 @@ namespace GeneXus.Programs {
          AssignProp("", false, edtavFrominvoicecreateddate_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(edtavFrominvoicecreateddate_Visible), 5, 0), true);
          edtavToinvoicecreateddate_Visible = 0;
          AssignProp("", false, edtavToinvoicecreateddate_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(edtavToinvoicecreateddate_Visible), 5, 0), true);
-         Form.Caption = "Invoices";
+         Form.Caption = "Sales";
          AssignProp("", false, "FORM", "Caption", Form.Caption, true);
          AV14ADVANCED_LABEL_TEMPLATE = "%1 <strong>%2</strong>";
          AssignAttri("", false, "AV14ADVANCED_LABEL_TEMPLATE", AV14ADVANCED_LABEL_TEMPLATE);
@@ -2053,7 +2047,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20241261111731", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412163563536", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2070,7 +2064,7 @@ namespace GeneXus.Programs {
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
          context.AddJavascriptSource("gxdec.js", "?"+context.GetBuildNumber( 1853160), false, true);
-         context.AddJavascriptSource("wwinvoice.js", "?20241261111731", false, true);
+         context.AddJavascriptSource("wwinvoice.js", "?202412163563537", false, true);
          /* End function include_jscripts */
       }
 
@@ -2082,7 +2076,6 @@ namespace GeneXus.Programs {
          edtUserName_Internalname = "USERNAME_"+sGXsfl_62_idx;
          edtavState_Internalname = "vSTATE_"+sGXsfl_62_idx;
          edtavDetails_Internalname = "vDETAILS_"+sGXsfl_62_idx;
-         edtavCancel_Internalname = "vCANCEL_"+sGXsfl_62_idx;
       }
 
       protected void SubsflControlProps_fel_622( )
@@ -2093,7 +2086,6 @@ namespace GeneXus.Programs {
          edtUserName_Internalname = "USERNAME_"+sGXsfl_62_fel_idx;
          edtavState_Internalname = "vSTATE_"+sGXsfl_62_fel_idx;
          edtavDetails_Internalname = "vDETAILS_"+sGXsfl_62_fel_idx;
-         edtavCancel_Internalname = "vCANCEL_"+sGXsfl_62_fel_idx;
       }
 
       protected void sendrow_622( )
@@ -2209,15 +2201,6 @@ namespace GeneXus.Programs {
             TempTags = " " + ((edtavDetails_Enabled!=0)&&(edtavDetails_Visible!=0) ? " onfocus=\"gx.evt.onfocus(this, 68,'',false,'"+sGXsfl_62_idx+"',62)\"" : " ");
             ROClassString = "TextActionAttribute TextLikeLink";
             GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtavDetails_Internalname,(string)AV22Details,(string)"",TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+((edtavDetails_Enabled!=0)&&(edtavDetails_Visible!=0) ? " onblur=\""+""+";gx.evt.onblur(this,68);\"" : " "),(string)"'"+""+"'"+",false,"+"'"+"e25272_client"+"'",(string)"",(string)"",(string)"",(string)"",(string)edtavDetails_Jsonclick,(short)7,(string)"TextActionAttribute TextLikeLink",(string)"",(string)ROClassString,(string)"WWTextActionColumn",(string)"",(short)-1,(int)edtavDetails_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)40,(short)0,(short)0,(short)62,(short)0,(short)-1,(short)-1,(bool)true,(string)"InvoiceDetailsLink",(string)"left",(bool)true,(string)""});
-            /* Subfile cell */
-            if ( GridContainer.GetWrapped() == 1 )
-            {
-               context.WriteHtmlText( "<td valign=\"middle\" align=\""+"left"+"\""+" style=\""+"display:none;"+"\">") ;
-            }
-            /* Single line edit */
-            TempTags = " " + ((edtavCancel_Enabled!=0)&&(edtavCancel_Visible!=0) ? " onfocus=\"gx.evt.onfocus(this, 69,'',false,'"+sGXsfl_62_idx+"',62)\"" : " ");
-            ROClassString = "TextActionAttribute TextLikeLink";
-            GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtavCancel_Internalname,(string)AV45Cancel,(string)"",TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+((edtavCancel_Enabled!=0)&&(edtavCancel_Visible!=0) ? " onblur=\""+""+";gx.evt.onblur(this,69);\"" : " "),(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtavCancel_Jsonclick,(short)0,(string)"TextActionAttribute TextLikeLink",(string)"",(string)ROClassString,(string)"WWTextActionColumn",(string)"",(short)0,(int)edtavCancel_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)40,(short)0,(short)0,(short)62,(short)0,(short)-1,(short)-1,(bool)true,(string)"",(string)"left",(bool)true,(string)""});
             send_integrity_lvl_hashes272( ) ;
             GridContainer.AddRow(GridRow);
             nGXsfl_62_idx = ((subGrid_Islastpage==1)&&(nGXsfl_62_idx+1>subGrid_fnc_Recordsperpage( )) ? 1 : nGXsfl_62_idx+1);
@@ -2327,9 +2310,6 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"TextActionAttribute TextLikeLink"+"\" "+" style=\""+""+""+"\" "+">") ;
             context.SendWebValue( "") ;
             context.WriteHtmlTextNl( "</th>") ;
-            context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"TextActionAttribute TextLikeLink"+"\" "+" style=\""+"display:none;"+""+"\" "+">") ;
-            context.SendWebValue( "") ;
-            context.WriteHtmlTextNl( "</th>") ;
             context.WriteHtmlTextNl( "</tr>") ;
             GridContainer.AddObjectProperty("GridName", "Grid");
          }
@@ -2372,10 +2352,6 @@ namespace GeneXus.Programs {
             GridColumn.AddObjectProperty("Value", GXUtil.ValueEncode( AV22Details));
             GridColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtavDetails_Enabled), 5, 0, ".", "")));
             GridContainer.AddColumnProperties(GridColumn);
-            GridColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-            GridColumn.AddObjectProperty("Value", GXUtil.ValueEncode( AV45Cancel));
-            GridColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtavCancel_Enabled), 5, 0, ".", "")));
-            GridContainer.AddColumnProperties(GridColumn);
             GridContainer.AddObjectProperty("Selectedindex", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Selectedindex), 4, 0, ".", "")));
             GridContainer.AddObjectProperty("Allowselection", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Allowselection), 1, 0, ".", "")));
             GridContainer.AddObjectProperty("Selectioncolor", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Selectioncolor), 9, 0, ".", "")));
@@ -2407,7 +2383,6 @@ namespace GeneXus.Programs {
          edtUserName_Internalname = "USERNAME";
          edtavState_Internalname = "vSTATE";
          edtavDetails_Internalname = "vDETAILS";
-         edtavCancel_Internalname = "vCANCEL";
          divGridcontainer_Internalname = "GRIDCONTAINER";
          divGridtable_Internalname = "GRIDTABLE";
          divGridcell_Internalname = "GRIDCELL";
@@ -2437,9 +2412,6 @@ namespace GeneXus.Programs {
          subGrid_Allowselection = 0;
          subGrid_Header = "";
          chkavFilterorderdesc.Caption = "Order Desc";
-         edtavCancel_Jsonclick = "";
-         edtavCancel_Visible = 0;
-         edtavCancel_Enabled = 1;
          edtavDetails_Jsonclick = "";
          edtavDetails_Visible = -1;
          edtavDetails_Enabled = 1;
@@ -2556,7 +2528,7 @@ namespace GeneXus.Programs {
          setEventMetadata("VALIDV_TOINVOICECREATEDDATE",",oparms:[]}");
          setEventMetadata("VALID_INVOICEID","{handler:'Valid_Invoiceid',iparms:[]");
          setEventMetadata("VALID_INVOICEID",",oparms:[]}");
-         setEventMetadata("NULL","{handler:'Validv_Cancel',iparms:[]");
+         setEventMetadata("NULL","{handler:'Validv_Details',iparms:[]");
          setEventMetadata("NULL",",oparms:[]}");
          return  ;
       }
@@ -2614,7 +2586,6 @@ namespace GeneXus.Programs {
          A100UserName = "";
          AV21State = "";
          AV22Details = "";
-         AV45Cancel = "";
          AV49Pgmname = "";
          GridState = new GXGridStateHandler(context,"Grid",GetPgmname(),subgrid_varsfromstate,subgrid_varstostate);
          scmdbuf = "";
@@ -2656,7 +2627,6 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
          edtavState_Enabled = 0;
          edtavDetails_Enabled = 0;
-         edtavCancel_Enabled = 0;
       }
 
       private short GRID_nEOF ;
@@ -2699,7 +2669,6 @@ namespace GeneXus.Programs {
       private int subGrid_Islastpage ;
       private int edtavState_Enabled ;
       private int edtavDetails_Enabled ;
-      private int edtavCancel_Enabled ;
       private int GXPagingFrom2 ;
       private int GXPagingTo2 ;
       private int A99UserId ;
@@ -2709,7 +2678,6 @@ namespace GeneXus.Programs {
       private int subGrid_Allbackcolor ;
       private int edtavState_Visible ;
       private int edtavDetails_Visible ;
-      private int edtavCancel_Visible ;
       private int subGrid_Titlebackcolor ;
       private int subGrid_Selectedindex ;
       private int subGrid_Selectioncolor ;
@@ -2794,7 +2762,6 @@ namespace GeneXus.Programs {
       private string edtUserName_Internalname ;
       private string edtavState_Internalname ;
       private string edtavDetails_Internalname ;
-      private string edtavCancel_Internalname ;
       private string AV49Pgmname ;
       private string scmdbuf ;
       private string sGXsfl_62_fel_idx="0001" ;
@@ -2807,7 +2774,6 @@ namespace GeneXus.Programs {
       private string edtUserName_Jsonclick ;
       private string edtavState_Jsonclick ;
       private string edtavDetails_Jsonclick ;
-      private string edtavCancel_Jsonclick ;
       private string subGrid_Header ;
       private DateTime AV32FromInvoiceCreatedDate ;
       private DateTime AV33ToInvoiceCreatedDate ;
@@ -2833,7 +2799,6 @@ namespace GeneXus.Programs {
       private string A100UserName ;
       private string AV21State ;
       private string AV22Details ;
-      private string AV45Cancel ;
       private string lV23UserName ;
       private string AV42InvoiceStateValue ;
       private string AV19ExcelFilename ;

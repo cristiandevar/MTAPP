@@ -710,6 +710,14 @@ namespace GeneXus.Programs {
          AV6Parameter.gxTpr_Name = "PaymentMethodId";
          AV6Parameter.gxTpr_Value = StringUtil.Str( (decimal)(AV16PaymentMethodId), 6, 0);
          AV5Parameters.Add(AV6Parameter, 0);
+         AV6Parameter = new GeneXus.Programs.genexusreporting.SdtQueryViewerParameters_Parameter(context);
+         AV6Parameter.gxTpr_Name = "FromDate";
+         AV6Parameter.gxTpr_Value = "";
+         AV5Parameters.Add(AV6Parameter, 0);
+         AV6Parameter = new GeneXus.Programs.genexusreporting.SdtQueryViewerParameters_Parameter(context);
+         AV6Parameter.gxTpr_Name = "ToDate";
+         AV6Parameter.gxTpr_Value = "";
+         AV5Parameters.Add(AV6Parameter, 0);
       }
 
       protected void nextLoad( )
@@ -764,7 +772,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112316175155", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412149311582", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -782,7 +790,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wppaymentmethodinvoicestatistics.js", "?2024112316175156", false, true);
+            context.AddJavascriptSource("wppaymentmethodinvoicestatistics.js", "?202412149311584", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerCommon.js", "", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerRender.js", "", false, true);
          }

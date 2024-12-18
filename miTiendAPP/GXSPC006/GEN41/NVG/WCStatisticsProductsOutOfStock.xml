@@ -9,7 +9,7 @@
 <ObjDesc>WCStatistics Products Out Of Stock</ObjDesc>
 <ObjPgmName>WCStatisticsProductsOutOfStock</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

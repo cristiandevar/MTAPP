@@ -1,15 +1,15 @@
 
 @echo off 
 
-set source=FolderWhereCreateYouKB\mtaKB\
-set destination=FolderWhereStoreYouAPPDeploy\miTiendAPP
+set source=FolderWhereCreateYouKB\mtaKB
+set destination=.\miTiendAPP
 
 :start_bat
 
 robocopy "%source%" "%destination%" /MIR /XO 
 
 
-echo 'Copy completed.' 
+echo 'Deploy completed.' 
 pause
 
 timeout /t 1 >nul

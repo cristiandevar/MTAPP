@@ -318,8 +318,6 @@ struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,'ExternalName','InvoicePaymentMethodDiscou
 struct_dt_elem_i([ 0,6,[ 20,118 ] ],8,'ExternalNamespace',mtaKB).
 struct_dt_elem_i([ 0,6,[ 20,25 ] ],3,pic,'ZZZ9').
 struct_dt_elem_i([ 0,6,[ 20,118 ] ],3,pic,'ZZZZZZZZZZZZZZ9.99').
-struct_dt_elem_i([ 0,6,[ 20,118 ] ],4,pic,'ZZZ9').
-struct_dt_elem_i([ 0,6,[ 20,118 ] ],5,pic,'ZZZ9').
  
  
  

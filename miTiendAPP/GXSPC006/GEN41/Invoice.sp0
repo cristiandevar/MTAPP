@@ -1,7 +1,7 @@
 spec_i([ trn,6,'Invoice','Invoice',[],eng,'18_0_2-169539' ]).
  
 struct_i(6,0,[ 'Pgmname','Trncontext','Insert_userid','GXV1','Context','Allok','Trncontextatt','Mode','Invoiceid','Websession' ],[]).
-struct_i(13,6,[ 'Pgmname','Trncontext','Insert_userid','GXV1','Context','Allok','Trncontextatt',20,97,80,68,'GxBScreen' ],[ 97,68 ]).
+struct_i(13,6,[ 'Pgmname','Trncontext','Insert_userid','GXV1','Context','Allok','Trncontextatt',20,97,80,68,'GxBScreen',94 ],[ 97,68 ]).
 struct_i(21,6,[ 'Pgmname','Trncontext','Insert_userid','GXV1','Context','Allok','Trncontextatt',20,131,80,'GxBScreen' ],[ 131 ]).
  
 level_i(21,[ 21,[ [ 21,many ],[ 20,one ] ],[ 20,118 ],[],[],[],[ 20,118 ],'IINVOICEPAYMENTMETHOD',[ 21,[ [ [],20,20 ] ] ],[] ]).
@@ -24,7 +24,7 @@ ta_i(13,[ [ [ 13,20 ],[ 13,25 ],[ 5,16 ],[ 5,17 ],[ 13,26 ],[ 13,65 ],[ 13,98 ],
 ta_i(6,[ [ [ 6,20 ],[ 6,38 ],[ 16,100 ],[ 6,39 ],[ 6,94 ],[ 6,99 ],[ 2002,se(80,[ [ 2002,80 ] ],[ t('coalesce(',1),t(80,2),t(',',7),t('0',3),t(')',4) ]) ],[ 2003,se(68,[ [ 2003,68 ] ],[ t('coalesce(',1),t(68,2),t(',',7),t('0',3),t(')',4) ]) ],[ 2003,se(97,[ [ 2003,97 ] ],[ t('coalesce(',1),t(97,2),t(',',7),t('0',3),t(')',4) ]) ],[ 2004,se(131,[ [ 2004,131 ] ],[ t('coalesce(',1),t(131,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
  
 las_i(21,[ [ 20,118,131,80,'GxBScreen',115,116,129,130,120,132,133 ] ]).
-las_i(13,[ [ 20,25,97,80,68,'GxBScreen',15,16,17,26,65,98 ] ]).
+las_i(13,[ [ 20,25,97,80,68,'GxBScreen',94,15,16,17,26,65,98 ] ]).
 las_i(6,[ [ 'Pgmname','Trncontext','Insert_userid','GXV1','Context','Allok','Trncontextatt','Mode','Invoiceid','Websession',20,99,'Today','GxBScreen',38,100,39,94,80,68,97,131 ] ]).
  
 lac_i(21,[ [ 118,115,120,132,133 ] ]).
@@ -219,7 +219,7 @@ rule_i(6,rule([ a(19,[ [ 99 ],msg([ t('"No matching ''User''."',3) ],[ t('Foreig
 rule_i(13,rule([ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(65,2),t(>=,10),t('0',3),t('.AND.',9),t(65,2),t(<=,10),t('999999999999999.99',3),t(')',4),t(')',4) ],[ insert,update ],[ 65 ])).
 rule_i(13,rule([ a(3,[ t(97,2) ]) ],[],[ insert,update,delete,display ],[ 97 ])).
 rule_i(13,rule([ a(1,[ t('''Quantity must be positive number''',3) ]) ],[ t(26,2),t(<=,10),t('0',3) ],[ insert,update,delete,display ],[ 26 ])).
-rule_i(13,rule([ a(1,[ t('''Quantity must be lower or equal than Stock''',3) ]) ],[ t(26,2),t(>,10),t(17,2) ],[ insert,update,delete,display ],[ 26,17 ])).
+rule_i(13,rule([ a(1,[ t('''Quantity must be lower or equal than Stock''',3) ]) ],[ t('(',0),t(26,2),t(>,10),t(17,2),t(')',4),t('.AND.',9),t(94,2) ],[ insert,update,delete,display ],[ 26,17,94 ])).
 rule_i(13,rule([ a(19,[ [ 15 ],msg([ t('"No matching ''Product''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 15 ])).
 rule_i(21,rule([ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(120,2),t(>=,10),t('0',3),t('.AND.',9),t(120,2),t(<=,10),t('999999999999999.99',3),t(')',4),t('.OR.',9),t('null(',1),t(120,2),t(')',4),t(')',4) ],[ insert,update ],[ 120 ])).
 rule_i(21,rule([ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(132,2),t(>=,10),t('0',3),t('.AND.',9),t(132,2),t(<=,10),t('999999999999999.99',3),t(')',4),t('.OR.',9),t('null(',1),t(132,2),t(')',4),t(')',4) ],[ insert,update ],[ 132 ])).
@@ -245,7 +245,7 @@ a_i(16,13,f,97,[],[ [ insert ],[ t('old(',1),t(97,2),t(')',4),t(+,5),t('1',3),t(
 a_i(17,13,f,25,[],[ [ insert ],[ t(97,2),t('IF',17),t(insert,1),t('AND',9),t('GxBScreen',23),t(=,10),t(1,3),t(';',18) ] ]).
 a_i(18,13,f,[ t(97,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(19,13,b,15,[],[ [],[ a(1,[ t('''Quantity must be positive number''',3) ]) ],[ t(26,2),t(<=,10),t('0',3) ] ]).
-a_i(20,13,b,16,[],[ [],[ a(1,[ t('''Quantity must be lower or equal than Stock''',3) ]) ],[ t(26,2),t(>,10),t(17,2) ] ]).
+a_i(20,13,b,16,[],[ [],[ a(1,[ t('''Quantity must be lower or equal than Stock''',3) ]) ],[ t('(',0),t(26,2),t(>,10),t(17,2),t(')',4),t('.AND.',9),t(94,2) ] ]).
 a_i(21,21,b,0,[],[ [],[ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(120,2),t(>=,10),t('0',3),t('.AND.',9),t(120,2),t(<=,10),t('999999999999999.99',3),t(')',4),t('.OR.',9),t('null(',1),t(120,2),t(')',4),t(')',4) ] ]).
 a_i(22,21,b,0,[],[ [],[ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(132,2),t(>=,10),t('0',3),t('.AND.',9),t(132,2),t(<=,10),t('999999999999999.99',3),t(')',4),t('.OR.',9),t('null(',1),t(132,2),t(')',4),t(')',4) ] ]).
 a_i(23,21,b,0,[],[ [],[ a(1,msg([ t('"Invalid Price"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('(',0),t(133,2),t(>=,10),t('0',3),t('.AND.',9),t(133,2),t(<=,10),t('999999999999999.99',3),t(')',4),t('.OR.',9),t('null(',1),t(133,2),t(')',4),t(')',4) ] ]).
@@ -305,6 +305,7 @@ v_i(b,i,19,26).
 v_i(b,o,19,[]).
 v_i(b,i,20,26).
 v_i(b,i,20,17).
+v_i(b,i,20,94).
 v_i(b,o,20,[]).
 v_i(b,i,21,120).
 v_i(b,o,21,[]).

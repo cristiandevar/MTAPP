@@ -24,6 +24,7 @@
 		<ProjectReference Include=".\..\sector\sector.csproj" />
 		<ProjectReference Include=".\..\supplier\supplier.csproj" />
 		<ProjectReference Include=".\..\brand\brand.csproj" />
+		<ProjectReference Include=".\..\wpregistermovement\wpregistermovement.csproj" />
 		<ProjectReference Include=".\..\wpstatisticsgraphs\wpstatisticsgraphs.csproj" />
 		<ProjectReference Include=".\..\wppurchaseordergenerated\wppurchaseordergenerated.csproj" />
 		<ProjectReference Include=".\..\wppaymentmethodinvoicestatistics\wppaymentmethodinvoicestatistics.csproj" />

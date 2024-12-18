@@ -165,4 +165,10 @@
       <ObjDesc>WPStatistics Graphs</ObjDesc>
       <ObjLink>wpstatisticsgraphs.aspx</ObjLink>
    </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WPRegisterMovement</ObjName>
+      <ObjDesc>Cancel Sale</ObjDesc>
+      <ObjLink>wpregistermovement.aspx</ObjLink>
+   </Object>
 </Objects>

@@ -33,6 +33,7 @@
 		<Compile Include = "$(WebDirectory)\type_SdtRole.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainuserstate.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtInvoice.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtMovement.cs" />
 		<Compile Include = "$(WebDirectory)\gxdomainsupplierstate.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtPurchaseOrder.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtInvoice_Detail.cs" />

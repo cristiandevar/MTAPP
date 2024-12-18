@@ -34,8 +34,6 @@
 <Event>
 <EventName>Lblmovementcreateddatefilter.Click</EventName></Event>
 <Event>
-<EventName>Lblmovementquantityfilter.Click</EventName></Event>
-<Event>
 <EventName>Lblmovementkeyaditionalfilter.Click</EventName></Event>
 <Event>
 <EventName>Load</EventName>
@@ -121,27 +119,6 @@
 <ConditionalConstraint>
 <Constraint>
 <Attribute>
-<AttriId>127</AttriId>
-<AttriName>MovementQuantity</AttriName>
-<Description>Movement Quantity</Description></Attribute>
-<Sp></Sp>
-<Token>&gt;=</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cmovementquantity</VarId>
-<VarName>&amp;cMovementQuantity</VarName></Variable></Constraint>
-<Condition>
-<Token>not</Token>
-<Sp></Sp>
-<Variable>
-<VarId>Cmovementquantity</VarId>
-<VarName>&amp;cMovementQuantity</VarName></Variable>
-<Token>.</Token>
-<Token>isempty(</Token>
-<Token>)</Token></Condition></ConditionalConstraint>
-<ConditionalConstraint>
-<Constraint>
-<Attribute>
 <AttriId>128</AttriId>
 <AttriName>MovementKeyAditional</AttriName>
 <Description>Movement Key Aditional</Description></Attribute>
@@ -171,27 +148,6 @@
 <AttriId>123</AttriId>
 <AttriName>MovementId</AttriName>
 <Description>Movement Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>128</AttriId>
-<AttriName>MovementKeyAditional</AttriName>
-<Description>Movement Key Aditional</Description></Attribute>
-<Attribute>
-<AttriId>127</AttriId>
-<AttriName>MovementQuantity</AttriName>
-<Description>Movement Quantity</Description></Attribute>
-<Attribute>
-<AttriId>125</AttriId>
-<AttriName>MovementCreatedDate</AttriName>
-<Description>Movement Created Date</Description></Attribute>
-<Attribute>
-<AttriId>124</AttriId>
-<AttriName>MovementType</AttriName>
-<Description>Movement Type</Description></Attribute>
-<Attribute>
-<AttriId>123</AttriId>
-<AttriName>MovementId</AttriName>
-<Description>Movement Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

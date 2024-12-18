@@ -1327,7 +1327,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121220314173", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121410173217", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1345,7 +1345,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwpermission.js", "?2024121220314173", false, true);
+            context.AddJavascriptSource("wwpermission.js", "?2024121410173217", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1872,7 +1872,7 @@ namespace GeneXus.Programs {
          sOrderString = "";
          if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV11PermissionName)) )
          {
-            AddWhere(sWhereString, "([PermissionName] like @lV11PermissionName)");
+            AddWhere(sWhereString, "([PermissionName] like '%' + @lV11PermissionName + '%')");
          }
          else
          {
@@ -1896,7 +1896,7 @@ namespace GeneXus.Programs {
          scmdbuf = "SELECT COUNT(*) FROM [Permission]";
          if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV11PermissionName)) )
          {
-            AddWhere(sWhereString, "([PermissionName] like @lV11PermissionName)");
+            AddWhere(sWhereString, "([PermissionName] like '%' + @lV11PermissionName + '%')");
          }
          else
          {

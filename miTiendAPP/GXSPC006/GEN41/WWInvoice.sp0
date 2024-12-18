@@ -27,16 +27,16 @@ level_option_i(2,server_paging,[ y,[ orderf = 80 ] ]).
  
 ta_i(2,[ [ [ 6,99 ],[ 6,94 ],[ 16,100 ],[ 6,38 ],[ 6,20 ],[ 2002,se(80,[ [ 2002,80 ] ],[ t('coalesce(',1),t(80,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
  
-las_i(2,[ [ 'Username','Filternro','Filtercreatedfrom','Filtercreatedto','Filterseller','Filterstate','Filterorder','Filterorderdesc','State','Details','Cancel','Orderedby','Frominvoicecreateddate','Toinvoicecreateddate',94,100,38,20,80,99 ] ]).
+las_i(2,[ [ 'Username','Filternro','Filtercreatedfrom','Filtercreatedto','Filterseller','Filterstate','Filterorder','Filterorderdesc','State','Details','Orderedby','Frominvoicecreateddate','Toinvoicecreateddate',94,100,38,20,80,99 ] ]).
  
-lac_i(2,[ [ 'Username','Filternro','Filtercreatedfrom','Filtercreatedto','Filterseller','Filterstate','Filterorder','Filterorderdesc','State','Details','Cancel','Orderedby','Frominvoicecreateddate','Toinvoicecreateddate' ] ]).
+lac_i(2,[ [ 'Username','Filternro','Filtercreatedfrom','Filtercreatedto','Filterseller','Filterstate','Filterorder','Filterorderdesc','State','Details','Orderedby','Frominvoicecreateddate','Toinvoicecreateddate' ] ]).
  
  
 lits_i('Sales',5,10).
 lits_i('Date From',5,10).
 lits_i('Date To',5,10).
  
-cls_i([ 0,0 ],[ 5,177 ]).
+cls_i([ 0,0 ],[ 5,136 ]).
  
 pos_i('Username',[ 0,0,0 ]).
 pos_i('Filternro',[ 0,0,0 ]).
@@ -52,12 +52,11 @@ pos_i(80,[ 1,2,16 ]).
 pos_i(100,[ 1,2,35 ]).
 pos_i('State',[ 1,2,56 ]).
 pos_i('Details',[ 1,2,97 ]).
-pos_i('Cancel',[ 1,2,138 ]).
 pos_i('Orderedby',[ 0,0,0 ]).
 pos_i('Frominvoicecreateddate',[ 0,0,0 ]).
 pos_i('Toinvoicecreateddate',[ 0,0,0 ]).
  
-repeat_i(2,[ 1,2,[ 20,38,80,100,'State','Details','Cancel' ],[ 'State','Details','Cancel' ] ]).
+repeat_i(2,[ 1,2,[ 20,38,80,100,'State','Details' ],[ 'State','Details' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWInvoice"')).
  
@@ -170,7 +169,6 @@ a_i(9,2,b,0,[],[ [],[ a(1,msg([ t('"Field From Invoice Created Date is out of ra
 a_i(10,2,b,0,[],[ [],[ a(1,msg([ t('"Field To Invoice Created Date is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t('Toinvoicecreateddate',2),t(')',4),t('.OR.',9),t('Toinvoicecreateddate',2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(11,1,f,[ t('&State',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(12,1,f,[ t('&Details',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(13,1,f,[ t('&Cancel',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
@@ -199,8 +197,6 @@ v_i(f,i,11,[]).
 v_i(f,o,11,[ t('&State',23),t('Enabled',3) ]).
 v_i(f,i,12,[]).
 v_i(f,o,12,[ t('&Details',23),t('Enabled',3) ]).
-v_i(f,i,13,[]).
-v_i(f,o,13,[ t('&Cancel',23),t('Enabled',3) ]).
  
  
  
@@ -322,23 +318,23 @@ a_ctrl_i('Filterstate',c,[ '''Confirmated''','''Canceled''' ]).
 break_i(2,nvg,1,[],[ [ 20,38,80,100,94 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,45).
-b_group_i(2,3,lit,0,46,63).
-b_group_i(2,4,lit,0,64,75).
-b_group_i(2,5,lit,0,76,85).
-b_group_i(2,6,lit,0,86,102).
-b_group_i(2,7,lit,0,103,125).
-b_group_i(2,8,lit,0,126,135).
-b_group_i(2,9,lit,0,136,146).
-b_group_i(2,10,lit,0,147,166).
-b_group_i(2,11,lit,0,167,170).
-b_group_i(2,12,lit,0,171,174).
-b_group_i(2,13,lit,0,175,178).
-b_group_i(2,14,lit,0,179,190).
-b_group_i(2,15,lit,0,191,202).
-b_group_i(2,16,lit,0,203,206).
-b_group_i(2,17,lit,0,207,211).
-b_group_i(2,18,lit,0,212,0).
+b_group_i(2,2,lit,0,2,40).
+b_group_i(2,3,lit,0,41,58).
+b_group_i(2,4,lit,0,59,70).
+b_group_i(2,5,lit,0,71,80).
+b_group_i(2,6,lit,0,81,97).
+b_group_i(2,7,lit,0,98,110).
+b_group_i(2,8,lit,0,111,120).
+b_group_i(2,9,lit,0,121,131).
+b_group_i(2,10,lit,0,132,139).
+b_group_i(2,11,lit,0,140,143).
+b_group_i(2,12,lit,0,144,147).
+b_group_i(2,13,lit,0,148,151).
+b_group_i(2,14,lit,0,152,163).
+b_group_i(2,15,lit,0,164,175).
+b_group_i(2,16,lit,0,176,179).
+b_group_i(2,17,lit,0,180,184).
+b_group_i(2,18,lit,0,185,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(2,2,2,cmd,1,[ t('',104,2,0),t(o(1,'CheckAuthentication'),28,1,2) ]).
@@ -348,188 +344,188 @@ b_line_i(6,2,2,cmd,1,[ t('',111,6,0) ]).
 b_line_i(9,2,2,cmd,1,[ t('',109,9,0),t('.NOT.',8,1,5),t('udp(',1,9,23),t(o(1,'General\Security\IsAuthorized'),28,9,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
 b_line_i(10,2,2,cmd,1,[ t('',104,10,0),t(o(13,'General\Security\NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(11,2,2,cmd,1,[ t('',111,11,0) ]).
-b_line_i(18,2,2,cmd,1,[ t('',107,18,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
-b_line_i(19,2,2,cmd,1,[ t('',107,19,0),t('Orderedby',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
-b_line_i(20,2,2,cmd,1,[ t('',107,20,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(21,2,2,cmd,1,[ t('',107,21,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(22,2,2,cmd,1,[ t('',107,22,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Invoices''',3,1,0) ]).
-b_line_i(23,2,2,cmd,1,[ t('',107,23,0),t('Advanced_label_template',23,1,0),t(=,10,1,0),t('"%1 <strong>%2</strong>"',3,1,0) ]).
-b_line_i(25,2,2,cmd,1,[ t('',145,25,0),t('''PREPARETRANSACTION''',3,25,5) ]).
-b_line_i(26,2,2,cmd,1,[ t('',107,26,0),t([ t('Grid',3,26,2),t('loadsessionstate(',1,26,7) ],31,26,7),t(')',4,1,25) ]).
-b_line_i(28,2,2,cmd,1,[ t('',107,28,0),t([ t('Btntoggle',3,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(29,2,2,cmd,1,[ t('',107,29,0),t([ t('Btntoggle',3,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(31,2,2,cmd,1,[ t('',107,31,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(32,2,2,cmd,1,[ t('',107,32,0),t([ t('Frominvoicecreateddate',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(34,2,2,cmd,1,[ t('',107,34,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(35,2,2,cmd,1,[ t('',107,35,0),t([ t('Toinvoicecreateddate',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(37,2,2,cmd,1,[ t('',107,37,0),t([ t('Username',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(38,2,2,cmd,1,[ t('',107,38,0),t([ t('Username',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(40,2,2,cmd,1,[ t('',107,40,0),t([ t('Orderedby',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(41,2,2,cmd,1,[ t('',107,41,0),t([ t('Orderedby',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(43,2,2,cmd,1,[ t('',147,43,0) ]).
-b_line_i(45,2,2,cmd,1,[ t('',146,45,0),t('''Toggle''',3,45,7) ]).
-b_line_i(46,2,3,cmd,1,[ t('',109,46,0),t([ t('Filterscontainer',3,46,5),t('Class',3,46,22) ],29,46,22),t(=,10,1,28),t('"filters-container"',3,46,77) ]).
-b_line_i(47,2,3,cmd,1,[ t('',107,47,0),t([ t('Filterscontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container--visible"',3,1,0) ]).
-b_line_i(48,2,3,cmd,1,[ t('',107,48,0),t([ t('Gridcell',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__grid-cell"',3,1,0),t(+,5,1,0),t('" col-xs-12 col-sm-9 col-md-10"',3,1,0) ]).
-b_line_i(49,2,3,cmd,1,[ t('',107,49,0),t([ t('Btntoggle',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__button-filters--hide"',3,1,0) ]).
-b_line_i(50,2,3,cmd,1,[ t('',107,50,0),t([ t('Btntoggle',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Hide Filters"',3,1,0) ]).
-b_line_i(51,2,3,cmd,1,[ t('',107,51,0),t([ t('Btntoggle',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Hide Filters"',3,1,0) ]).
-b_line_i(52,2,3,cmd,1,[ t('',110,52,0) ]).
-b_line_i(53,2,3,cmd,1,[ t('',107,53,0),t([ t('Filterscontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container"',3,1,0) ]).
-b_line_i(54,2,3,cmd,1,[ t('',107,54,0),t([ t('Gridcell',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__grid-cell--expanded"',3,1,0),t(+,5,1,0),t('" col-xs-12 col-sm-3 col-md-2"',3,1,0) ]).
-b_line_i(55,2,3,cmd,1,[ t('',107,55,0),t([ t('Btntoggle',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__button-filters--show"',3,1,0) ]).
-b_line_i(56,2,3,cmd,1,[ t('',107,56,0),t([ t('Btntoggle',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Show Filters"',3,1,0) ]).
-b_line_i(57,2,3,cmd,1,[ t('',107,57,0),t([ t('Btntoggle',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Show Filters"',3,1,0) ]).
-b_line_i(58,2,3,cmd,1,[ t('',111,58,0) ]).
-b_line_i(59,2,3,cmd,1,[ t('',147,59,0) ]).
-b_line_i(63,2,3,cmd,1,[ t('',146,63,0),t([ t('Lblfrominvoicecreateddatefilter',3,63,7),t('Click',3,63,39) ],29,63,39) ]).
-b_line_i(64,2,4,cmd,1,[ t('',109,64,0),t([ t('Frominvoicecreateddatefiltercontainer',3,64,5),t('Class',3,64,43) ],29,64,43),t(=,10,1,49),t('"filters-container__item"',3,64,98) ]).
-b_line_i(65,2,4,cmd,1,[ t('',107,65,0),t([ t('Frominvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container__item--expanded"',3,1,0) ]).
-b_line_i(66,2,4,cmd,1,[ t('',107,66,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
-b_line_i(67,2,4,cmd,1,[ t('',110,67,0) ]).
-b_line_i(68,2,4,cmd,1,[ t('',107,68,0),t([ t('Frominvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0) ]).
-b_line_i(69,2,4,cmd,1,[ t('',107,69,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(70,2,4,cmd,1,[ t('',111,70,0) ]).
-b_line_i(71,2,4,cmd,1,[ t('',147,71,0) ]).
-b_line_i(75,2,4,cmd,1,[ t('',146,75,0),t([ t('Lbltoinvoicecreateddatefilter',3,75,7),t('Click',3,75,37) ],29,75,37) ]).
-b_line_i(76,2,5,cmd,1,[ t('',109,76,0),t([ t('Toinvoicecreateddatefiltercontainer',3,76,5),t('Class',3,76,41) ],29,76,41),t(=,10,1,47),t('"filters-container__item"',3,76,96) ]).
-b_line_i(77,2,5,cmd,1,[ t('',107,77,0),t([ t('Toinvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container__item--expanded"',3,1,0) ]).
-b_line_i(78,2,5,cmd,1,[ t('',107,78,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
-b_line_i(79,2,5,cmd,1,[ t('',110,79,0) ]).
-b_line_i(80,2,5,cmd,1,[ t('',107,80,0),t([ t('Toinvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0) ]).
-b_line_i(81,2,5,cmd,1,[ t('',107,81,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
-b_line_i(82,2,5,cmd,1,[ t('',111,82,0) ]).
-b_line_i(83,2,5,cmd,1,[ t('',147,83,0) ]).
-b_line_i(85,2,5,cmd,1,[ t('',146,85,0),t('Refresh',3,85,7) ]).
-b_line_i(86,2,6,cmd,1,[ t('',107,86,0),t([ t('Grid',3,86,2),t('savesessionstate(',1,86,7) ],31,86,7),t(')',4,1,25) ]).
-b_line_i(89,2,6,cmd,1,[ t('',109,89,0),t('null(',1,89,29),t('Frominvoicecreateddate',23,1,5),t(')',4,1,38) ]).
-b_line_i(90,2,6,cmd,1,[ t('',107,90,0),t([ t('Lblfrominvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Date From"',3,1,0) ]).
-b_line_i(91,2,6,cmd,1,[ t('',110,91,0) ]).
-b_line_i(92,2,6,cmd,1,[ t('',107,92,0),t([ t('Lblfrominvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('format(',1,1,0),t('Advanced_label_template',23,1,0),t(',',7,1,0),t('"Date From"',3,1,0),t(',',7,1,0),t('Frominvoicecreateddate',23,1,0),t(')',4,1,0) ]).
-b_line_i(93,2,6,cmd,1,[ t('',111,93,0) ]).
-b_line_i(95,2,6,cmd,1,[ t('',109,95,0),t('null(',1,95,27),t('Toinvoicecreateddate',23,1,5),t(')',4,1,36) ]).
-b_line_i(96,2,6,cmd,1,[ t('',107,96,0),t([ t('Lbltoinvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Date To"',3,1,0) ]).
-b_line_i(97,2,6,cmd,1,[ t('',110,97,0) ]).
-b_line_i(98,2,6,cmd,1,[ t('',107,98,0),t([ t('Lbltoinvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('format(',1,1,0),t('Advanced_label_template',23,1,0),t(',',7,1,0),t('"Date To"',3,1,0),t(',',7,1,0),t('Toinvoicecreateddate',23,1,0),t(')',4,1,0) ]).
-b_line_i(99,2,6,cmd,1,[ t('',111,99,0) ]).
-b_line_i(100,2,6,cmd,1,[ t('',147,100,0) ]).
-b_line_i(102,2,6,cmd,1,[ t('',146,102,0),t([ t('Grid',3,102,7),t('Load',3,102,12) ],29,102,12) ]).
-b_line_i(106,2,7,cmd,1,[ t('',109,106,0),t(94,2,1,5) ]).
-b_line_i(107,2,7,cmd,1,[ t('',107,107,0),t('State',23,1,0),t(=,10,1,0),t([ 134,'Confirmated' ],44,1,0) ]).
-b_line_i(108,2,7,cmd,1,[ t('',110,108,0) ]).
-b_line_i(109,2,7,cmd,1,[ t('',107,109,0),t('State',23,1,0),t(=,10,1,0),t([ 134,'Canceled' ],44,1,0) ]).
-b_line_i(110,2,7,cmd,1,[ t('',111,110,0) ]).
-b_line_i(122,2,7,cmd,1,[ t('',107,122,0),t('Details',23,1,0),t(=,10,1,0),t('''Details''',3,1,0) ]).
-b_line_i(123,2,7,cmd,1,[ t('',107,123,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
-b_line_i(123,2,7,cmd,1,[ t('',147,123,0) ]).
-b_line_i(125,2,7,cmd,1,[ t('',143,125,0),t('''PREPARETRANSACTION''',3,125,5) ]).
-b_line_i(126,2,8,cmd,1,[ t('',107,126,0),t('Trncontext',23,1,0),t(=,10,1,0),t([ 'General\UI\TransactionContext',[ t('(',0,126,19),t(')',4,126,20) ],n ],46,1,0) ]).
-b_line_i(127,2,8,cmd,1,[ t('',107,127,0),t([ t('Trncontext',23,1,0),t('Callerobject',3,1,0) ],29,1,0),t(=,10,1,0),t('Pgmname',23,1,0) ]).
-b_line_i(128,2,8,cmd,1,[ t('',107,128,0),t([ t('Trncontext',23,1,0),t('Callerondelete',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
-b_line_i(129,2,8,cmd,1,[ t('',107,129,0),t([ t('Trncontext',23,1,0),t('Callerurl',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Scriptname',3,1,0) ],29,1,0),t(+,5,1,0),t('"?"',3,1,0),t(+,5,1,0),t([ t('Httprequest',23,1,0),t('Querystring',3,1,0) ],29,1,0) ]).
-b_line_i(130,2,8,cmd,1,[ t('',107,130,0),t([ t('Trncontext',23,1,0),t('Transactionname',3,1,0) ],29,1,0),t(=,10,1,0),t('"Invoice"',3,1,0) ]).
-b_line_i(132,2,8,cmd,1,[ t('',107,132,0),t([ t('Session',23,132,2),t('set(',1,132,11) ],31,132,2),t('"TrnContext"',3,132,16),t(',',7,1,29),t([ t('Trncontext',23,1,31),t('toxml(',1,1,43) ],31,132,43),t(')',4,1,50),t(')',4,1,51) ]).
-b_line_i(133,2,8,cmd,1,[ t('',144,133,0) ]).
-b_line_i(135,2,8,cmd,1,[ t('',146,135,0),t('''DoExport''',3,135,7) ]).
-b_line_i(137,2,9,cmd,1,[ t('',104,137,0),t(o(1,'ExportWWInvoice'),28,1,2),t('Invoiceid',23,1,18),t(',',7,1,0),t('Invoicestate',23,1,30),t(',',7,1,0),t('Username',23,1,45),t(',',7,1,0),t('Frominvoicecreateddate',23,1,56),t(',',7,1,0),t('Toinvoicecreateddate',23,1,81),t(',',7,1,0),t('Orderedby',23,1,104),t(',',7,1,0),t('Excelfilename',23,1,116),t(',',7,1,0),t('Errormessage',23,1,132) ]).
-b_line_i(138,2,9,cmd,1,[ t('',109,138,0),t('(',0,1,5),t('Excelfilename',23,1,6),t(<>,10,1,21),t('""',3,138,24),t(')',4,1,26) ]).
-b_line_i(139,2,9,cmd,1,[ t('',171,139,0),t('Excelfilename',23,1,8) ]).
-b_line_i(140,2,9,cmd,1,[ t('',110,140,0) ]).
-b_line_i(141,2,9,cmd,1,[ t('',141,141,0),t('Errormessage',23,1,7),t(')',4,1,20) ]).
-b_line_i(142,2,9,cmd,1,[ t('',111,142,0) ]).
-b_line_i(143,2,9,cmd,1,[ t('',147,143,0) ]).
-b_line_i(146,2,9,cmd,1,[ t('',146,146,0),t([ t('Details',23,146,7),t('Click',3,146,16) ],29,146,16) ]).
-b_line_i(148,2,10,cmd,1,[ t('',107,148,0),t([ t('Window',23,1,0),t('Object',3,1,0) ],29,1,0),t(=,10,1,0),t('create(',1,1,0),t(o(13,'WPInvoiceDetails'),28,1,0),t(',',7,1,0),t(20,2,1,0),t(')',4,1,0) ]).
-b_line_i(149,2,10,cmd,1,[ t('',107,149,0),t([ t('Window',23,1,0),t('Height',3,1,0) ],29,1,0),t(=,10,1,0),t('500',3,1,0) ]).
-b_line_i(150,2,10,cmd,1,[ t('',107,150,0),t([ t('Window',23,1,0),t('Width',3,1,0) ],29,1,0),t(=,10,1,0),t('500',3,1,0) ]).
-b_line_i(151,2,10,cmd,1,[ t('',107,151,0),t([ t('Window',23,151,2),t('open(',1,151,10) ],31,151,10),t(')',4,1,16) ]).
-b_line_i(152,2,10,cmd,1,[ t('',147,152,0) ]).
-b_line_i(166,2,10,cmd,1,[ t('',146,166,0),t([ t('Filternro',23,166,7),t('Controlvaluechanged',3,166,18) ],29,166,18) ]).
-b_line_i(167,2,11,cmd,1,[ t('',145,167,0),t('''UPDVARIABLES''',3,167,5) ]).
-b_line_i(168,2,11,cmd,1,[ t('',147,168,0) ]).
-b_line_i(170,2,11,cmd,1,[ t('',146,170,0),t([ t('Filterstate',23,170,7),t('Controlvaluechanged',3,170,20) ],29,170,20) ]).
-b_line_i(171,2,12,cmd,1,[ t('',145,171,0),t('''UPDVARIABLES''',3,171,5) ]).
-b_line_i(172,2,12,cmd,1,[ t('',147,172,0) ]).
-b_line_i(174,2,12,cmd,1,[ t('',146,174,0),t([ t('Filterseller',23,174,7),t('Controlvaluechanged',3,174,21) ],29,174,21) ]).
-b_line_i(175,2,13,cmd,1,[ t('',145,175,0),t('''UPDVARIABLES''',3,175,5) ]).
-b_line_i(176,2,13,cmd,1,[ t('',147,176,0) ]).
-b_line_i(178,2,13,cmd,1,[ t('',146,178,0),t([ t('Filtercreatedfrom',23,178,7),t('Controlvaluechanged',3,178,26) ],29,178,26) ]).
-b_line_i(179,2,14,cmd,1,[ t('',109,179,0),t('(',0,1,5),t('.NOT.',8,1,6),t('null(',1,179,29),t('Filtercreatedto',23,1,12),t(')',4,1,38),t(')',4,1,39),t('.AND.',9,1,41),t('(',0,1,47),t('Filtercreatedfrom',23,1,48),t(<=,10,1,67),t('Filtercreatedto',23,1,70),t(')',4,1,86) ]).
-b_line_i(180,2,14,cmd,1,[ t('',145,180,0),t('''UPDVARIABLES''',3,180,6) ]).
-b_line_i(181,2,14,cmd,1,[ t('',110,181,0) ]).
-b_line_i(182,2,14,cmd,1,[ t('',109,182,0),t('.NOT.',8,1,6),t('null(',1,182,29),t('Filtercreatedto',23,1,12),t(')',4,1,38) ]).
-b_line_i(183,2,14,cmd,1,[ t('',107,183,0),t('Filtercreatedfrom',23,1,0),t(=,10,1,0),t('Filtercreatedto',23,1,0) ]).
-b_line_i(184,2,14,cmd,1,[ t('',110,184,0) ]).
-b_line_i(185,2,14,cmd,1,[ t('',145,185,0),t('''UPDVARIABLES''',3,185,7) ]).
-b_line_i(186,2,14,cmd,1,[ t('',111,186,0) ]).
-b_line_i(187,2,14,cmd,1,[ t('',111,187,0) ]).
-b_line_i(188,2,14,cmd,1,[ t('',147,188,0) ]).
-b_line_i(190,2,14,cmd,1,[ t('',146,190,0),t([ t('Filtercreatedto',23,190,7),t('Controlvaluechanged',3,190,24) ],29,190,24) ]).
-b_line_i(191,2,15,cmd,1,[ t('',109,191,0),t('(',0,1,5),t('.NOT.',8,1,6),t('null(',1,191,31),t('Filtercreatedfrom',23,1,12),t(')',4,1,40),t(')',4,1,41),t('.AND.',9,1,43),t('(',0,1,49),t('Filtercreatedfrom',23,1,50),t(<=,10,1,69),t('Filtercreatedto',23,1,72),t(')',4,1,88) ]).
-b_line_i(192,2,15,cmd,1,[ t('',145,192,0),t('''UPDVARIABLES''',3,192,6) ]).
-b_line_i(193,2,15,cmd,1,[ t('',110,193,0) ]).
-b_line_i(194,2,15,cmd,1,[ t('',109,194,0),t('.NOT.',8,1,6),t('null(',1,194,31),t('Filtercreatedfrom',23,1,12),t(')',4,1,40) ]).
-b_line_i(195,2,15,cmd,1,[ t('',107,195,0),t('Filtercreatedto',23,1,0),t(=,10,1,0),t('Filtercreatedfrom',23,1,0) ]).
-b_line_i(196,2,15,cmd,1,[ t('',110,196,0) ]).
-b_line_i(197,2,15,cmd,1,[ t('',145,197,0),t('''UPDVARIABLES''',3,197,7) ]).
-b_line_i(198,2,15,cmd,1,[ t('',111,198,0) ]).
-b_line_i(199,2,15,cmd,1,[ t('',111,199,0) ]).
-b_line_i(200,2,15,cmd,1,[ t('',147,200,0) ]).
-b_line_i(202,2,15,cmd,1,[ t('',146,202,0),t([ t('Filterorder',23,202,7),t('Controlvaluechanged',3,202,20) ],29,202,20) ]).
-b_line_i(203,2,16,cmd,1,[ t('',145,203,0),t('''UPDVARIABLES''',3,203,5) ]).
-b_line_i(204,2,16,cmd,1,[ t('',147,204,0) ]).
-b_line_i(206,2,16,cmd,1,[ t('',146,206,0),t([ t('Filterorderdesc',23,206,7),t('Controlvaluechanged',3,206,24) ],29,206,24) ]).
-b_line_i(207,2,17,cmd,1,[ t('',145,207,0),t('''UPDVARIABLES''',3,207,5) ]).
-b_line_i(208,2,17,cmd,1,[ t('',147,208,0) ]).
-b_line_i(211,2,17,cmd,1,[ t('',143,211,0),t('''UPDVARIABLES''',3,211,5) ]).
-b_line_i(212,2,18,cmd,1,[ t('',109,212,0),t('.NOT.',8,1,5),t('null(',1,212,24),t('Filterstate',23,1,11),t(')',4,1,33) ]).
-b_line_i(213,2,18,cmd,1,[ t('',107,213,0),t('Invoicestatevalue',23,1,0),t(=,10,1,0),t('Filterstate',23,1,0) ]).
-b_line_i(214,2,18,cmd,1,[ t('',110,214,0) ]).
-b_line_i(215,2,18,cmd,1,[ t('',107,215,0),t([ t('Invoicestatevalue',23,215,3),t('setempty(',1,215,22) ],31,215,3),t(')',4,1,32) ]).
-b_line_i(216,2,18,cmd,1,[ t('',111,216,0) ]).
-b_line_i(218,2,18,cmd,1,[ t('',109,218,0),t('.NOT.',8,1,5),t('null(',1,218,30),t('Filtercreatedfrom',23,1,11),t(')',4,1,39) ]).
-b_line_i(219,2,18,cmd,1,[ t('',107,219,0),t('Frominvoicecreateddate',23,219,3),t(=,10,219,3),t('ctod(',1,219,3),t('dtoc(',1,219,58),t('Filtercreatedfrom',23,1,39),t(')',4,1,68),t(')',4,1,69) ]).
-b_line_i(220,2,18,cmd,1,[ t('',110,220,0) ]).
-b_line_i(221,2,18,cmd,1,[ t('',107,221,0),t([ t('Frominvoicecreateddate',23,221,3),t('setempty(',1,221,27) ],31,221,3),t(')',4,1,37) ]).
-b_line_i(222,2,18,cmd,1,[ t('',111,222,0) ]).
-b_line_i(224,2,18,cmd,1,[ t('',109,224,0),t('.NOT.',8,1,5),t('null(',1,224,28),t('Filtercreatedto',23,1,11),t(')',4,1,37) ]).
-b_line_i(225,2,18,cmd,1,[ t('',107,225,0),t('Toinvoicecreateddate',23,225,3),t(=,10,225,3),t('ctod(',1,225,3),t('dtoc(',1,225,54),t('Filtercreatedto',23,1,37),t(')',4,1,64),t(')',4,1,65) ]).
+b_line_i(13,2,2,cmd,1,[ t('',107,13,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
+b_line_i(14,2,2,cmd,1,[ t('',107,14,0),t('Orderedby',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(15,2,2,cmd,1,[ t('',107,15,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(16,2,2,cmd,1,[ t('',107,16,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(17,2,2,cmd,1,[ t('',107,17,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Sales''',3,1,0) ]).
+b_line_i(18,2,2,cmd,1,[ t('',107,18,0),t('Advanced_label_template',23,1,0),t(=,10,1,0),t('"%1 <strong>%2</strong>"',3,1,0) ]).
+b_line_i(20,2,2,cmd,1,[ t('',145,20,0),t('''PREPARETRANSACTION''',3,20,5) ]).
+b_line_i(21,2,2,cmd,1,[ t('',107,21,0),t([ t('Grid',3,21,2),t('loadsessionstate(',1,21,7) ],31,21,7),t(')',4,1,25) ]).
+b_line_i(23,2,2,cmd,1,[ t('',107,23,0),t([ t('Btntoggle',3,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(24,2,2,cmd,1,[ t('',107,24,0),t([ t('Btntoggle',3,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(26,2,2,cmd,1,[ t('',107,26,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(27,2,2,cmd,1,[ t('',107,27,0),t([ t('Frominvoicecreateddate',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(29,2,2,cmd,1,[ t('',107,29,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(30,2,2,cmd,1,[ t('',107,30,0),t([ t('Toinvoicecreateddate',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(32,2,2,cmd,1,[ t('',107,32,0),t([ t('Username',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(33,2,2,cmd,1,[ t('',107,33,0),t([ t('Username',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(35,2,2,cmd,1,[ t('',107,35,0),t([ t('Orderedby',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(36,2,2,cmd,1,[ t('',107,36,0),t([ t('Orderedby',23,1,0),t('Enabled',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(38,2,2,cmd,1,[ t('',147,38,0) ]).
+b_line_i(40,2,2,cmd,1,[ t('',146,40,0),t('''Toggle''',3,40,7) ]).
+b_line_i(41,2,3,cmd,1,[ t('',109,41,0),t([ t('Filterscontainer',3,41,5),t('Class',3,41,22) ],29,41,22),t(=,10,1,28),t('"filters-container"',3,41,77) ]).
+b_line_i(42,2,3,cmd,1,[ t('',107,42,0),t([ t('Filterscontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container--visible"',3,1,0) ]).
+b_line_i(43,2,3,cmd,1,[ t('',107,43,0),t([ t('Gridcell',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__grid-cell"',3,1,0),t(+,5,1,0),t('" col-xs-12 col-sm-9 col-md-10"',3,1,0) ]).
+b_line_i(44,2,3,cmd,1,[ t('',107,44,0),t([ t('Btntoggle',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__button-filters--hide"',3,1,0) ]).
+b_line_i(45,2,3,cmd,1,[ t('',107,45,0),t([ t('Btntoggle',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Hide Filters"',3,1,0) ]).
+b_line_i(46,2,3,cmd,1,[ t('',107,46,0),t([ t('Btntoggle',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Hide Filters"',3,1,0) ]).
+b_line_i(47,2,3,cmd,1,[ t('',110,47,0) ]).
+b_line_i(48,2,3,cmd,1,[ t('',107,48,0),t([ t('Filterscontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container"',3,1,0) ]).
+b_line_i(49,2,3,cmd,1,[ t('',107,49,0),t([ t('Gridcell',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__grid-cell--expanded"',3,1,0),t(+,5,1,0),t('" col-xs-12 col-sm-3 col-md-2"',3,1,0) ]).
+b_line_i(50,2,3,cmd,1,[ t('',107,50,0),t([ t('Btntoggle',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"ww__button-filters--show"',3,1,0) ]).
+b_line_i(51,2,3,cmd,1,[ t('',107,51,0),t([ t('Btntoggle',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Show Filters"',3,1,0) ]).
+b_line_i(52,2,3,cmd,1,[ t('',107,52,0),t([ t('Btntoggle',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Show Filters"',3,1,0) ]).
+b_line_i(53,2,3,cmd,1,[ t('',111,53,0) ]).
+b_line_i(54,2,3,cmd,1,[ t('',147,54,0) ]).
+b_line_i(58,2,3,cmd,1,[ t('',146,58,0),t([ t('Lblfrominvoicecreateddatefilter',3,58,7),t('Click',3,58,39) ],29,58,39) ]).
+b_line_i(59,2,4,cmd,1,[ t('',109,59,0),t([ t('Frominvoicecreateddatefiltercontainer',3,59,5),t('Class',3,59,43) ],29,59,43),t(=,10,1,49),t('"filters-container__item"',3,59,98) ]).
+b_line_i(60,2,4,cmd,1,[ t('',107,60,0),t([ t('Frominvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container__item--expanded"',3,1,0) ]).
+b_line_i(61,2,4,cmd,1,[ t('',107,61,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(62,2,4,cmd,1,[ t('',110,62,0) ]).
+b_line_i(63,2,4,cmd,1,[ t('',107,63,0),t([ t('Frominvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0) ]).
+b_line_i(64,2,4,cmd,1,[ t('',107,64,0),t([ t('Frominvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(65,2,4,cmd,1,[ t('',111,65,0) ]).
+b_line_i(66,2,4,cmd,1,[ t('',147,66,0) ]).
+b_line_i(70,2,4,cmd,1,[ t('',146,70,0),t([ t('Lbltoinvoicecreateddatefilter',3,70,7),t('Click',3,70,37) ],29,70,37) ]).
+b_line_i(71,2,5,cmd,1,[ t('',109,71,0),t([ t('Toinvoicecreateddatefiltercontainer',3,71,5),t('Class',3,71,41) ],29,71,41),t(=,10,1,47),t('"filters-container__item"',3,71,96) ]).
+b_line_i(72,2,5,cmd,1,[ t('',107,72,0),t([ t('Toinvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0),t(+,5,1,0),t('" "',3,1,0),t(+,5,1,0),t('"filters-container__item--expanded"',3,1,0) ]).
+b_line_i(73,2,5,cmd,1,[ t('',107,73,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(74,2,5,cmd,1,[ t('',110,74,0) ]).
+b_line_i(75,2,5,cmd,1,[ t('',107,75,0),t([ t('Toinvoicecreateddatefiltercontainer',3,1,0),t('Class',3,1,0) ],29,1,0),t(=,10,1,0),t('"filters-container__item"',3,1,0) ]).
+b_line_i(76,2,5,cmd,1,[ t('',107,76,0),t([ t('Toinvoicecreateddate',23,1,0),t('Visible',3,1,0) ],29,1,0),t(=,10,1,0),t('FALSE',41,1,0) ]).
+b_line_i(77,2,5,cmd,1,[ t('',111,77,0) ]).
+b_line_i(78,2,5,cmd,1,[ t('',147,78,0) ]).
+b_line_i(80,2,5,cmd,1,[ t('',146,80,0),t('Refresh',3,80,7) ]).
+b_line_i(81,2,6,cmd,1,[ t('',107,81,0),t([ t('Grid',3,81,2),t('savesessionstate(',1,81,7) ],31,81,7),t(')',4,1,25) ]).
+b_line_i(84,2,6,cmd,1,[ t('',109,84,0),t('null(',1,84,29),t('Frominvoicecreateddate',23,1,5),t(')',4,1,38) ]).
+b_line_i(85,2,6,cmd,1,[ t('',107,85,0),t([ t('Lblfrominvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Date From"',3,1,0) ]).
+b_line_i(86,2,6,cmd,1,[ t('',110,86,0) ]).
+b_line_i(87,2,6,cmd,1,[ t('',107,87,0),t([ t('Lblfrominvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('format(',1,1,0),t('Advanced_label_template',23,1,0),t(',',7,1,0),t('"Date From"',3,1,0),t(',',7,1,0),t('Frominvoicecreateddate',23,1,0),t(')',4,1,0) ]).
+b_line_i(88,2,6,cmd,1,[ t('',111,88,0) ]).
+b_line_i(90,2,6,cmd,1,[ t('',109,90,0),t('null(',1,90,27),t('Toinvoicecreateddate',23,1,5),t(')',4,1,36) ]).
+b_line_i(91,2,6,cmd,1,[ t('',107,91,0),t([ t('Lbltoinvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Date To"',3,1,0) ]).
+b_line_i(92,2,6,cmd,1,[ t('',110,92,0) ]).
+b_line_i(93,2,6,cmd,1,[ t('',107,93,0),t([ t('Lbltoinvoicecreateddatefilter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('format(',1,1,0),t('Advanced_label_template',23,1,0),t(',',7,1,0),t('"Date To"',3,1,0),t(',',7,1,0),t('Toinvoicecreateddate',23,1,0),t(')',4,1,0) ]).
+b_line_i(94,2,6,cmd,1,[ t('',111,94,0) ]).
+b_line_i(95,2,6,cmd,1,[ t('',147,95,0) ]).
+b_line_i(97,2,6,cmd,1,[ t('',146,97,0),t([ t('Grid',3,97,7),t('Load',3,97,12) ],29,97,12) ]).
+b_line_i(100,2,7,cmd,1,[ t('',109,100,0),t(94,2,1,5) ]).
+b_line_i(101,2,7,cmd,1,[ t('',107,101,0),t('State',23,1,0),t(=,10,1,0),t([ 134,'Confirmated' ],44,1,0) ]).
+b_line_i(102,2,7,cmd,1,[ t('',110,102,0) ]).
+b_line_i(103,2,7,cmd,1,[ t('',107,103,0),t('State',23,1,0),t(=,10,1,0),t([ 134,'Canceled' ],44,1,0) ]).
+b_line_i(104,2,7,cmd,1,[ t('',111,104,0) ]).
+b_line_i(107,2,7,cmd,1,[ t('',107,107,0),t('Details',23,1,0),t(=,10,1,0),t('''Details''',3,1,0) ]).
+b_line_i(108,2,7,cmd,1,[ t('',107,108,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
+b_line_i(108,2,7,cmd,1,[ t('',147,108,0) ]).
+b_line_i(110,2,7,cmd,1,[ t('',143,110,0),t('''PREPARETRANSACTION''',3,110,5) ]).
+b_line_i(111,2,8,cmd,1,[ t('',107,111,0),t('Trncontext',23,1,0),t(=,10,1,0),t([ 'General\UI\TransactionContext',[ t('(',0,111,19),t(')',4,111,20) ],n ],46,1,0) ]).
+b_line_i(112,2,8,cmd,1,[ t('',107,112,0),t([ t('Trncontext',23,1,0),t('Callerobject',3,1,0) ],29,1,0),t(=,10,1,0),t('Pgmname',23,1,0) ]).
+b_line_i(113,2,8,cmd,1,[ t('',107,113,0),t([ t('Trncontext',23,1,0),t('Callerondelete',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(114,2,8,cmd,1,[ t('',107,114,0),t([ t('Trncontext',23,1,0),t('Callerurl',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Scriptname',3,1,0) ],29,1,0),t(+,5,1,0),t('"?"',3,1,0),t(+,5,1,0),t([ t('Httprequest',23,1,0),t('Querystring',3,1,0) ],29,1,0) ]).
+b_line_i(115,2,8,cmd,1,[ t('',107,115,0),t([ t('Trncontext',23,1,0),t('Transactionname',3,1,0) ],29,1,0),t(=,10,1,0),t('"Invoice"',3,1,0) ]).
+b_line_i(117,2,8,cmd,1,[ t('',107,117,0),t([ t('Session',23,117,2),t('set(',1,117,11) ],31,117,2),t('"TrnContext"',3,117,16),t(',',7,1,29),t([ t('Trncontext',23,1,31),t('toxml(',1,1,43) ],31,117,43),t(')',4,1,50),t(')',4,1,51) ]).
+b_line_i(118,2,8,cmd,1,[ t('',144,118,0) ]).
+b_line_i(120,2,8,cmd,1,[ t('',146,120,0),t('''DoExport''',3,120,7) ]).
+b_line_i(122,2,9,cmd,1,[ t('',104,122,0),t(o(1,'ExportWWInvoice'),28,1,2),t('Invoiceid',23,1,18),t(',',7,1,0),t('Invoicestate',23,1,30),t(',',7,1,0),t('Username',23,1,45),t(',',7,1,0),t('Frominvoicecreateddate',23,1,56),t(',',7,1,0),t('Toinvoicecreateddate',23,1,81),t(',',7,1,0),t('Orderedby',23,1,104),t(',',7,1,0),t('Excelfilename',23,1,116),t(',',7,1,0),t('Errormessage',23,1,132) ]).
+b_line_i(123,2,9,cmd,1,[ t('',109,123,0),t('(',0,1,5),t('Excelfilename',23,1,6),t(<>,10,1,21),t('""',3,123,24),t(')',4,1,26) ]).
+b_line_i(124,2,9,cmd,1,[ t('',171,124,0),t('Excelfilename',23,1,8) ]).
+b_line_i(125,2,9,cmd,1,[ t('',110,125,0) ]).
+b_line_i(126,2,9,cmd,1,[ t('',141,126,0),t('Errormessage',23,1,7),t(')',4,1,20) ]).
+b_line_i(127,2,9,cmd,1,[ t('',111,127,0) ]).
+b_line_i(128,2,9,cmd,1,[ t('',147,128,0) ]).
+b_line_i(131,2,9,cmd,1,[ t('',146,131,0),t([ t('Details',23,131,7),t('Click',3,131,16) ],29,131,16) ]).
+b_line_i(133,2,10,cmd,1,[ t('',107,133,0),t([ t('Window',23,1,0),t('Object',3,1,0) ],29,1,0),t(=,10,1,0),t('create(',1,1,0),t(o(13,'WPInvoiceDetails'),28,1,0),t(',',7,1,0),t(20,2,1,0),t(')',4,1,0) ]).
+b_line_i(134,2,10,cmd,1,[ t('',107,134,0),t([ t('Window',23,1,0),t('Height',3,1,0) ],29,1,0),t(=,10,1,0),t('500',3,1,0) ]).
+b_line_i(135,2,10,cmd,1,[ t('',107,135,0),t([ t('Window',23,1,0),t('Width',3,1,0) ],29,1,0),t(=,10,1,0),t('500',3,1,0) ]).
+b_line_i(136,2,10,cmd,1,[ t('',107,136,0),t([ t('Window',23,136,2),t('open(',1,136,10) ],31,136,10),t(')',4,1,16) ]).
+b_line_i(137,2,10,cmd,1,[ t('',147,137,0) ]).
+b_line_i(139,2,10,cmd,1,[ t('',146,139,0),t([ t('Filternro',23,139,7),t('Controlvaluechanged',3,139,18) ],29,139,18) ]).
+b_line_i(140,2,11,cmd,1,[ t('',145,140,0),t('''UPDVARIABLES''',3,140,5) ]).
+b_line_i(141,2,11,cmd,1,[ t('',147,141,0) ]).
+b_line_i(143,2,11,cmd,1,[ t('',146,143,0),t([ t('Filterstate',23,143,7),t('Controlvaluechanged',3,143,20) ],29,143,20) ]).
+b_line_i(144,2,12,cmd,1,[ t('',145,144,0),t('''UPDVARIABLES''',3,144,5) ]).
+b_line_i(145,2,12,cmd,1,[ t('',147,145,0) ]).
+b_line_i(147,2,12,cmd,1,[ t('',146,147,0),t([ t('Filterseller',23,147,7),t('Controlvaluechanged',3,147,21) ],29,147,21) ]).
+b_line_i(148,2,13,cmd,1,[ t('',145,148,0),t('''UPDVARIABLES''',3,148,5) ]).
+b_line_i(149,2,13,cmd,1,[ t('',147,149,0) ]).
+b_line_i(151,2,13,cmd,1,[ t('',146,151,0),t([ t('Filtercreatedfrom',23,151,7),t('Controlvaluechanged',3,151,26) ],29,151,26) ]).
+b_line_i(152,2,14,cmd,1,[ t('',109,152,0),t('(',0,1,5),t('.NOT.',8,1,6),t('null(',1,152,29),t('Filtercreatedto',23,1,12),t(')',4,1,38),t(')',4,1,39),t('.AND.',9,1,41),t('(',0,1,47),t('Filtercreatedfrom',23,1,48),t(<=,10,1,67),t('Filtercreatedto',23,1,70),t(')',4,1,86) ]).
+b_line_i(153,2,14,cmd,1,[ t('',145,153,0),t('''UPDVARIABLES''',3,153,6) ]).
+b_line_i(154,2,14,cmd,1,[ t('',110,154,0) ]).
+b_line_i(155,2,14,cmd,1,[ t('',109,155,0),t('.NOT.',8,1,6),t('null(',1,155,29),t('Filtercreatedto',23,1,12),t(')',4,1,38) ]).
+b_line_i(156,2,14,cmd,1,[ t('',107,156,0),t('Filtercreatedfrom',23,1,0),t(=,10,1,0),t('Filtercreatedto',23,1,0) ]).
+b_line_i(157,2,14,cmd,1,[ t('',110,157,0) ]).
+b_line_i(158,2,14,cmd,1,[ t('',145,158,0),t('''UPDVARIABLES''',3,158,7) ]).
+b_line_i(159,2,14,cmd,1,[ t('',111,159,0) ]).
+b_line_i(160,2,14,cmd,1,[ t('',111,160,0) ]).
+b_line_i(161,2,14,cmd,1,[ t('',147,161,0) ]).
+b_line_i(163,2,14,cmd,1,[ t('',146,163,0),t([ t('Filtercreatedto',23,163,7),t('Controlvaluechanged',3,163,24) ],29,163,24) ]).
+b_line_i(164,2,15,cmd,1,[ t('',109,164,0),t('(',0,1,5),t('.NOT.',8,1,6),t('null(',1,164,31),t('Filtercreatedfrom',23,1,12),t(')',4,1,40),t(')',4,1,41),t('.AND.',9,1,43),t('(',0,1,49),t('Filtercreatedfrom',23,1,50),t(<=,10,1,69),t('Filtercreatedto',23,1,72),t(')',4,1,88) ]).
+b_line_i(165,2,15,cmd,1,[ t('',145,165,0),t('''UPDVARIABLES''',3,165,6) ]).
+b_line_i(166,2,15,cmd,1,[ t('',110,166,0) ]).
+b_line_i(167,2,15,cmd,1,[ t('',109,167,0),t('.NOT.',8,1,6),t('null(',1,167,31),t('Filtercreatedfrom',23,1,12),t(')',4,1,40) ]).
+b_line_i(168,2,15,cmd,1,[ t('',107,168,0),t('Filtercreatedto',23,1,0),t(=,10,1,0),t('Filtercreatedfrom',23,1,0) ]).
+b_line_i(169,2,15,cmd,1,[ t('',110,169,0) ]).
+b_line_i(170,2,15,cmd,1,[ t('',145,170,0),t('''UPDVARIABLES''',3,170,7) ]).
+b_line_i(171,2,15,cmd,1,[ t('',111,171,0) ]).
+b_line_i(172,2,15,cmd,1,[ t('',111,172,0) ]).
+b_line_i(173,2,15,cmd,1,[ t('',147,173,0) ]).
+b_line_i(175,2,15,cmd,1,[ t('',146,175,0),t([ t('Filterorder',23,175,7),t('Controlvaluechanged',3,175,20) ],29,175,20) ]).
+b_line_i(176,2,16,cmd,1,[ t('',145,176,0),t('''UPDVARIABLES''',3,176,5) ]).
+b_line_i(177,2,16,cmd,1,[ t('',147,177,0) ]).
+b_line_i(179,2,16,cmd,1,[ t('',146,179,0),t([ t('Filterorderdesc',23,179,7),t('Controlvaluechanged',3,179,24) ],29,179,24) ]).
+b_line_i(180,2,17,cmd,1,[ t('',145,180,0),t('''UPDVARIABLES''',3,180,5) ]).
+b_line_i(181,2,17,cmd,1,[ t('',147,181,0) ]).
+b_line_i(184,2,17,cmd,1,[ t('',143,184,0),t('''UPDVARIABLES''',3,184,5) ]).
+b_line_i(185,2,18,cmd,1,[ t('',109,185,0),t('.NOT.',8,1,5),t('null(',1,185,24),t('Filterstate',23,1,11),t(')',4,1,33) ]).
+b_line_i(186,2,18,cmd,1,[ t('',107,186,0),t('Invoicestatevalue',23,1,0),t(=,10,1,0),t('Filterstate',23,1,0) ]).
+b_line_i(187,2,18,cmd,1,[ t('',110,187,0) ]).
+b_line_i(188,2,18,cmd,1,[ t('',107,188,0),t([ t('Invoicestatevalue',23,188,3),t('setempty(',1,188,22) ],31,188,3),t(')',4,1,32) ]).
+b_line_i(189,2,18,cmd,1,[ t('',111,189,0) ]).
+b_line_i(191,2,18,cmd,1,[ t('',109,191,0),t('.NOT.',8,1,5),t('null(',1,191,30),t('Filtercreatedfrom',23,1,11),t(')',4,1,39) ]).
+b_line_i(192,2,18,cmd,1,[ t('',107,192,0),t('Frominvoicecreateddate',23,192,3),t(=,10,192,3),t('ctod(',1,192,3),t('dtoc(',1,192,58),t('Filtercreatedfrom',23,1,39),t(')',4,1,68),t(')',4,1,69) ]).
+b_line_i(193,2,18,cmd,1,[ t('',110,193,0) ]).
+b_line_i(194,2,18,cmd,1,[ t('',107,194,0),t([ t('Frominvoicecreateddate',23,194,3),t('setempty(',1,194,27) ],31,194,3),t(')',4,1,37) ]).
+b_line_i(195,2,18,cmd,1,[ t('',111,195,0) ]).
+b_line_i(197,2,18,cmd,1,[ t('',109,197,0),t('.NOT.',8,1,5),t('null(',1,197,28),t('Filtercreatedto',23,1,11),t(')',4,1,37) ]).
+b_line_i(198,2,18,cmd,1,[ t('',107,198,0),t('Toinvoicecreateddate',23,198,3),t(=,10,198,3),t('ctod(',1,198,3),t('dtoc(',1,198,54),t('Filtercreatedto',23,1,37),t(')',4,1,64),t(')',4,1,65) ]).
+b_line_i(199,2,18,cmd,1,[ t('',110,199,0) ]).
+b_line_i(200,2,18,cmd,1,[ t('',107,200,0),t([ t('Toinvoicecreateddate',23,200,3),t('setempty(',1,200,25) ],31,200,3),t(')',4,1,35) ]).
+b_line_i(201,2,18,cmd,1,[ t('',111,201,0) ]).
+b_line_i(203,2,18,cmd,1,[ t('',109,203,0),t('.NOT.',8,1,5),t('null(',1,203,25),t('Filterseller',23,1,11),t(')',4,1,34) ]).
+b_line_i(204,2,18,cmd,1,[ t('',107,204,0),t('Username',23,1,0),t(=,10,1,0),t('Filterseller',23,1,0) ]).
+b_line_i(205,2,18,cmd,1,[ t('',110,205,0) ]).
+b_line_i(206,2,18,cmd,1,[ t('',107,206,0),t([ t('Username',23,206,3),t('setempty(',1,206,13) ],31,206,3),t(')',4,1,23) ]).
+b_line_i(207,2,18,cmd,1,[ t('',111,207,0) ]).
+b_line_i(209,2,18,cmd,1,[ t('',109,209,0),t('.NOT.',8,1,5),t('null(',1,209,22),t('Filternro',23,1,11),t(')',4,1,31) ]).
+b_line_i(210,2,18,cmd,1,[ t('',107,210,0),t('Invoiceid',23,1,0),t(=,10,1,0),t('Filternro',23,1,0) ]).
+b_line_i(211,2,18,cmd,1,[ t('',110,211,0) ]).
+b_line_i(212,2,18,cmd,1,[ t('',107,212,0),t([ t('Invoiceid',23,212,3),t('setempty(',1,212,14) ],31,212,3),t(')',4,1,24) ]).
+b_line_i(213,2,18,cmd,1,[ t('',111,213,0) ]).
+b_line_i(215,2,18,cmd,1,[ t('',152,215,0) ]).
+b_line_i(216,2,18,cmd,1,[ t('',153,216,0),t('Filterorder',23,1,8),t(=,10,1,21),t('1',3,1,23) ]).
+b_line_i(217,2,18,cmd,1,[ t('',109,217,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
+b_line_i(218,2,18,cmd,1,[ t('',107,218,0),t('Orderedby',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
+b_line_i(219,2,18,cmd,1,[ t('',110,219,0) ]).
+b_line_i(220,2,18,cmd,1,[ t('',107,220,0),t('Orderedby',23,1,0),t(=,10,1,0),t('2',3,1,0) ]).
+b_line_i(221,2,18,cmd,1,[ t('',111,221,0) ]).
+b_line_i(223,2,18,cmd,1,[ t('',153,223,0),t('Filterorder',23,1,8),t(=,10,1,21),t('2',3,1,23) ]).
+b_line_i(224,2,18,cmd,1,[ t('',109,224,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
+b_line_i(225,2,18,cmd,1,[ t('',107,225,0),t('Orderedby',23,1,0),t(=,10,1,0),t('3',3,1,0) ]).
 b_line_i(226,2,18,cmd,1,[ t('',110,226,0) ]).
-b_line_i(227,2,18,cmd,1,[ t('',107,227,0),t([ t('Toinvoicecreateddate',23,227,3),t('setempty(',1,227,25) ],31,227,3),t(')',4,1,35) ]).
+b_line_i(227,2,18,cmd,1,[ t('',107,227,0),t('Orderedby',23,1,0),t(=,10,1,0),t('4',3,1,0) ]).
 b_line_i(228,2,18,cmd,1,[ t('',111,228,0) ]).
-b_line_i(230,2,18,cmd,1,[ t('',109,230,0),t('.NOT.',8,1,5),t('null(',1,230,25),t('Filterseller',23,1,11),t(')',4,1,34) ]).
-b_line_i(231,2,18,cmd,1,[ t('',107,231,0),t('Username',23,1,0),t(=,10,1,0),t('Filterseller',23,1,0) ]).
-b_line_i(232,2,18,cmd,1,[ t('',110,232,0) ]).
-b_line_i(233,2,18,cmd,1,[ t('',107,233,0),t([ t('Username',23,233,3),t('setempty(',1,233,13) ],31,233,3),t(')',4,1,23) ]).
-b_line_i(234,2,18,cmd,1,[ t('',111,234,0) ]).
-b_line_i(236,2,18,cmd,1,[ t('',109,236,0),t('.NOT.',8,1,5),t('null(',1,236,22),t('Filternro',23,1,11),t(')',4,1,31) ]).
-b_line_i(237,2,18,cmd,1,[ t('',107,237,0),t('Invoiceid',23,1,0),t(=,10,1,0),t('Filternro',23,1,0) ]).
-b_line_i(238,2,18,cmd,1,[ t('',110,238,0) ]).
-b_line_i(239,2,18,cmd,1,[ t('',107,239,0),t([ t('Invoiceid',23,239,3),t('setempty(',1,239,14) ],31,239,3),t(')',4,1,24) ]).
-b_line_i(240,2,18,cmd,1,[ t('',111,240,0) ]).
-b_line_i(242,2,18,cmd,1,[ t('',152,242,0) ]).
-b_line_i(243,2,18,cmd,1,[ t('',153,243,0),t('Filterorder',23,1,8),t(=,10,1,21),t('1',3,1,23) ]).
-b_line_i(244,2,18,cmd,1,[ t('',109,244,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
-b_line_i(245,2,18,cmd,1,[ t('',107,245,0),t('Orderedby',23,1,0),t(=,10,1,0),t('1',3,1,0) ]).
-b_line_i(246,2,18,cmd,1,[ t('',110,246,0) ]).
-b_line_i(247,2,18,cmd,1,[ t('',107,247,0),t('Orderedby',23,1,0),t(=,10,1,0),t('2',3,1,0) ]).
-b_line_i(248,2,18,cmd,1,[ t('',111,248,0) ]).
-b_line_i(250,2,18,cmd,1,[ t('',153,250,0),t('Filterorder',23,1,8),t(=,10,1,21),t('2',3,1,23) ]).
-b_line_i(251,2,18,cmd,1,[ t('',109,251,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
-b_line_i(252,2,18,cmd,1,[ t('',107,252,0),t('Orderedby',23,1,0),t(=,10,1,0),t('3',3,1,0) ]).
-b_line_i(253,2,18,cmd,1,[ t('',110,253,0) ]).
-b_line_i(254,2,18,cmd,1,[ t('',107,254,0),t('Orderedby',23,1,0),t(=,10,1,0),t('4',3,1,0) ]).
-b_line_i(255,2,18,cmd,1,[ t('',111,255,0) ]).
-b_line_i(257,2,18,cmd,1,[ t('',153,257,0),t('Filterorder',23,1,8),t(=,10,1,21),t('3',3,1,23) ]).
-b_line_i(258,2,18,cmd,1,[ t('',109,258,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
-b_line_i(259,2,18,cmd,1,[ t('',107,259,0),t('Orderedby',23,1,0),t(=,10,1,0),t('5',3,1,0) ]).
-b_line_i(260,2,18,cmd,1,[ t('',110,260,0) ]).
-b_line_i(261,2,18,cmd,1,[ t('',107,261,0),t('Orderedby',23,1,0),t(=,10,1,0),t('6',3,1,0) ]).
-b_line_i(262,2,18,cmd,1,[ t('',111,262,0) ]).
-b_line_i(263,2,18,cmd,1,[ t('',154,263,0) ]).
-b_line_i(266,2,18,cmd,1,[ t('',107,266,0),t([ t('Grid',3,266,2),t('firstpage(',1,266,7) ],31,266,7),t(')',4,1,18) ]).
-b_line_i(267,2,18,cmd,1,[ t('',107,267,0),t([ t('Grid',3,267,2),t('refresh(',1,267,7) ],31,267,7),t(')',4,1,16) ]).
-b_line_i(268,2,18,cmd,1,[ t('',144,268,0) ]).
+b_line_i(230,2,18,cmd,1,[ t('',153,230,0),t('Filterorder',23,1,8),t(=,10,1,21),t('3',3,1,23) ]).
+b_line_i(231,2,18,cmd,1,[ t('',109,231,0),t('.NOT.',8,1,7),t('Filterorderdesc',23,1,13) ]).
+b_line_i(232,2,18,cmd,1,[ t('',107,232,0),t('Orderedby',23,1,0),t(=,10,1,0),t('5',3,1,0) ]).
+b_line_i(233,2,18,cmd,1,[ t('',110,233,0) ]).
+b_line_i(234,2,18,cmd,1,[ t('',107,234,0),t('Orderedby',23,1,0),t(=,10,1,0),t('6',3,1,0) ]).
+b_line_i(235,2,18,cmd,1,[ t('',111,235,0) ]).
+b_line_i(236,2,18,cmd,1,[ t('',154,236,0) ]).
+b_line_i(239,2,18,cmd,1,[ t('',107,239,0),t([ t('Grid',3,239,2),t('firstpage(',1,239,7) ],31,239,7),t(')',4,1,18) ]).
+b_line_i(240,2,18,cmd,1,[ t('',107,240,0),t([ t('Grid',3,240,2),t('refresh(',1,240,7) ],31,240,7),t(')',4,1,16) ]).
+b_line_i(241,2,18,cmd,1,[ t('',144,241,0) ]).
  
 sf_break_i(62,2).
  
@@ -607,36 +603,36 @@ html_sub_i(58,59,html_i(0,div(59))).
 html_sub_i(59,60,html_i(0,div(60))).
 html_sub_i(60,61,html_i(0,div(61))).
 html_sub_i(61,62,html_i(0,s(62))).
-html_sub_i(4,70,html_i(1,div(70))).
+html_sub_i(4,69,html_i(1,div(69))).
+html_sub_i(69,70,html_i(0,div(70))).
 html_sub_i(70,71,html_i(0,div(71))).
 html_sub_i(71,72,html_i(0,div(72))).
-html_sub_i(72,73,html_i(0,div(73))).
-html_sub_i(73,74,html_i(0,button('''Toggle'''))).
-html_sub_i(71,75,html_i(1,div(75))).
+html_sub_i(72,73,html_i(0,button('''Toggle'''))).
+html_sub_i(70,74,html_i(1,div(74))).
+html_sub_i(74,75,html_i(0,div(75))).
 html_sub_i(75,76,html_i(0,div(76))).
 html_sub_i(76,77,html_i(0,div(77))).
-html_sub_i(77,78,html_i(0,div(78))).
-html_sub_i(78,79,html_i(0,t('Orderedby',23))).
-html_sub_i(71,80,html_i(2,div(80))).
+html_sub_i(77,78,html_i(0,t('Orderedby',23))).
+html_sub_i(70,79,html_i(2,div(79))).
+html_sub_i(79,80,html_i(0,div(80))).
 html_sub_i(80,81,html_i(0,div(81))).
 html_sub_i(81,82,html_i(0,div(82))).
 html_sub_i(82,83,html_i(0,div(83))).
-html_sub_i(83,84,html_i(0,div(84))).
-html_sub_i(84,85,html_i(0,t('Date From',3))).
-html_sub_i(82,86,html_i(1,div(86))).
+html_sub_i(83,84,html_i(0,t('Date From',3))).
+html_sub_i(81,85,html_i(1,div(85))).
+html_sub_i(85,86,html_i(0,div(86))).
 html_sub_i(86,87,html_i(0,div(87))).
-html_sub_i(87,88,html_i(0,div(88))).
-html_sub_i(88,89,html_i(0,t('Frominvoicecreateddate',23))).
-html_sub_i(71,90,html_i(3,div(90))).
+html_sub_i(87,88,html_i(0,t('Frominvoicecreateddate',23))).
+html_sub_i(70,89,html_i(3,div(89))).
+html_sub_i(89,90,html_i(0,div(90))).
 html_sub_i(90,91,html_i(0,div(91))).
 html_sub_i(91,92,html_i(0,div(92))).
 html_sub_i(92,93,html_i(0,div(93))).
-html_sub_i(93,94,html_i(0,div(94))).
-html_sub_i(94,95,html_i(0,t('Date To',3))).
-html_sub_i(92,96,html_i(1,div(96))).
+html_sub_i(93,94,html_i(0,t('Date To',3))).
+html_sub_i(91,95,html_i(1,div(95))).
+html_sub_i(95,96,html_i(0,div(96))).
 html_sub_i(96,97,html_i(0,div(97))).
-html_sub_i(97,98,html_i(0,div(98))).
-html_sub_i(98,99,html_i(0,t('Toinvoicecreateddate',23))).
+html_sub_i(97,98,html_i(0,t('Toinvoicecreateddate',23))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',none).
@@ -662,13 +658,13 @@ html_tags_i(50,'data-gx-att','var:39').
 html_tags_i(52,'data-gx-att','var:39').
 html_tags_i(54,'data-gx-att','var:40').
 html_tags_i(56,'data-gx-att','var:40').
-html_tags_i(74,'ControlType','').
-html_tags_i(77,'data-gx-att','var:24').
-html_tags_i(79,'data-gx-att','var:24').
-html_tags_i(85,'ControlType','').
-html_tags_i(89,'data-gx-att','var:32').
-html_tags_i(95,'ControlType','').
-html_tags_i(99,'data-gx-att','var:33').
+html_tags_i(73,'ControlType','').
+html_tags_i(76,'data-gx-att','var:24').
+html_tags_i(78,'data-gx-att','var:24').
+html_tags_i(84,'ControlType','').
+html_tags_i(88,'data-gx-att','var:32').
+html_tags_i(94,'ControlType','').
+html_tags_i(98,'data-gx-att','var:33').
  
 html_comp_i(23,'Backcolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
@@ -1559,82 +1555,59 @@ html_comp_i(68,'Colvisible',-1,v,[ bool ]).
 html_comp_i(68,'Title','',d,[ str ]).
 html_comp_i(68,'Invitemsg','',d,[ str ]).
 html_comp_i(69,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(69,'Colcount',40,d,[ num ]).
-html_comp_i(69,'Colattid',-45,v,[ num ]).
-html_comp_i(69,'Controlname','&Cancel',d,[ str ]).
-html_comp_i(69,'Class','TextActionAttribute TextLikeLink',v,[ str ]).
-html_comp_i(69,'Columnclass','WWTextActionColumn',v,[ str ]).
-html_comp_i(69,'Returnonclick',0,d,[ bool ]).
-html_comp_i(69,'Eventgx','',d,[ str ]).
-html_comp_i(69,'Controltype',2,d,[ num ]).
-html_comp_i(69,'Inputtype',0,d,[ num ]).
-html_comp_i(69,'Editautocomplete',0,d,[ num ]).
-html_comp_i(69,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(69,'Autocapitalization','FirstWord',d,[ str ]).
-html_comp_i(69,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(69,'Colreadonly',-1,v,[ bool ]).
-html_comp_i(69,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(69,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(69,'Ispassword',0,d,[ bool ]).
-html_comp_i(69,'Colautoresize',-1,d,[ bool ]).
-html_comp_i(69,'Colwidth',measure(0,px),d,[ measure ]).
-html_comp_i(69,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(69,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
-html_comp_i(69,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(69,'Coltitle','',d,[ str ]).
-html_comp_i(69,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
-html_comp_i(69,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(69,'Horizontalalignment',left,d,[ str ]).
-html_comp_i(69,'Gxformat',0,d,[ num ]).
-html_comp_i(69,'Colvisible',0,v,[ bool ]).
-html_comp_i(69,'Title','',d,[ str ]).
-html_comp_i(69,'Invitemsg','',d,[ str ]).
+html_comp_i(69,'Class','col-xs-12 col-sm-3 col-md-2 ww__filters-cell',v,[ str ]).
+html_comp_i(69,'Id','',d,[ str ]).
+html_comp_i(69,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(69,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(69,'Semanticcontent',div,d,[ str ]).
+html_comp_i(69,'Align',left,d,[ str ]).
+html_comp_i(69,'Valign',top,d,[ str ]).
 html_comp_i(70,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(70,'Class','col-xs-12 col-sm-3 col-md-2 ww__filters-cell',v,[ str ]).
-html_comp_i(70,'Id','',d,[ str ]).
+html_comp_i(70,'Class','filters-container',v,[ str ]).
+html_comp_i(70,'Id','Filterscontainer',v,[ str ]).
 html_comp_i(70,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(70,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(70,'Semanticcontent',div,d,[ str ]).
 html_comp_i(70,'Align',left,d,[ str ]).
 html_comp_i(70,'Valign',top,d,[ str ]).
 html_comp_i(71,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(71,'Class','filters-container',v,[ str ]).
-html_comp_i(71,'Id','Filterscontainer',v,[ str ]).
+html_comp_i(71,'Class',row,v,[ str ]).
+html_comp_i(71,'Id','',d,[ str ]).
 html_comp_i(71,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(71,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(71,'Semanticcontent',div,d,[ str ]).
 html_comp_i(71,'Align',left,d,[ str ]).
 html_comp_i(71,'Valign',top,d,[ str ]).
 html_comp_i(72,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(72,'Class',row,v,[ str ]).
+html_comp_i(72,'Class','col-xs-12',v,[ str ]).
 html_comp_i(72,'Id','',d,[ str ]).
 html_comp_i(72,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(72,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(72,'Semanticcontent',div,d,[ str ]).
-html_comp_i(72,'Align',left,d,[ str ]).
+html_comp_i(72,'Align','Right',v,[ str ]).
 html_comp_i(72,'Valign',top,d,[ str ]).
 html_comp_i(73,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(73,'Class','col-xs-12',v,[ str ]).
-html_comp_i(73,'Id','',d,[ str ]).
-html_comp_i(73,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(73,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(73,'Semanticcontent',div,d,[ str ]).
-html_comp_i(73,'Align','Right',v,[ str ]).
-html_comp_i(73,'Valign',top,d,[ str ]).
+html_comp_i(73,'Controlname','Btntoggleontable',v,[ str ]).
+html_comp_i(73,'Class','filters-container__close',v,[ str ]).
+html_comp_i(73,'Event','''Toggle''',v,[ str ]).
+html_comp_i(73,'Caption','Hide Filters',d,[ str ]).
+html_comp_i(73,'Title','Hide Filters',d,[ str ]).
+html_comp_i(73,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
+html_comp_i(73,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(73,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(73,'Border','2',d,[ str ]).
+html_comp_i(73,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(73,'Buttonborderstyle',standard,d,[ str ]).
 html_comp_i(74,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(74,'Controlname','Btntoggleontable',v,[ str ]).
-html_comp_i(74,'Class','filters-container__close',v,[ str ]).
-html_comp_i(74,'Event','''Toggle''',v,[ str ]).
-html_comp_i(74,'Caption','Hide Filters',d,[ str ]).
-html_comp_i(74,'Title','Hide Filters',d,[ str ]).
-html_comp_i(74,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
-html_comp_i(74,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(74,'Backcolor',rgb(240,240,240),d,[ color ]).
-html_comp_i(74,'Border','2',d,[ str ]).
-html_comp_i(74,'Bordercolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(74,'Buttonborderstyle',standard,d,[ str ]).
+html_comp_i(74,'Class',row,v,[ str ]).
+html_comp_i(74,'Id','',d,[ str ]).
+html_comp_i(74,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(74,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(74,'Semanticcontent',div,d,[ str ]).
+html_comp_i(74,'Align',left,d,[ str ]).
+html_comp_i(74,'Valign',top,d,[ str ]).
 html_comp_i(75,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(75,'Class',row,v,[ str ]).
+html_comp_i(75,'Class','col-xs-12',v,[ str ]).
 html_comp_i(75,'Id','',d,[ str ]).
 html_comp_i(75,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(75,'Width',measure(0,px),d,[ measure ]).
@@ -1642,7 +1615,7 @@ html_comp_i(75,'Semanticcontent',div,d,[ str ]).
 html_comp_i(75,'Align',left,d,[ str ]).
 html_comp_i(75,'Valign',top,d,[ str ]).
 html_comp_i(76,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(76,'Class','col-xs-12',v,[ str ]).
+html_comp_i(76,'Class','form-group gx-form-group ',v,[ str ]).
 html_comp_i(76,'Id','',d,[ str ]).
 html_comp_i(76,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(76,'Width',measure(0,px),d,[ measure ]).
@@ -1650,7 +1623,7 @@ html_comp_i(76,'Semanticcontent',div,d,[ str ]).
 html_comp_i(76,'Align',left,d,[ str ]).
 html_comp_i(76,'Valign',top,d,[ str ]).
 html_comp_i(77,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(77,'Class','form-group gx-form-group ',v,[ str ]).
+html_comp_i(77,'Class','col-xs-12 gx-attribute',v,[ str ]).
 html_comp_i(77,'Id','',d,[ str ]).
 html_comp_i(77,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(77,'Width',measure(0,px),d,[ measure ]).
@@ -1658,44 +1631,44 @@ html_comp_i(77,'Semanticcontent',div,d,[ str ]).
 html_comp_i(77,'Align',left,d,[ str ]).
 html_comp_i(77,'Valign',top,d,[ str ]).
 html_comp_i(78,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(78,'Class','col-xs-12 gx-attribute',v,[ str ]).
-html_comp_i(78,'Id','',d,[ str ]).
-html_comp_i(78,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(78,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(78,'Semanticcontent',div,d,[ str ]).
-html_comp_i(78,'Align',left,d,[ str ]).
-html_comp_i(78,'Valign',top,d,[ str ]).
+html_comp_i(78,'Colcount',4,d,[ num ]).
+html_comp_i(78,'Attid',-24,v,[ num ]).
+html_comp_i(78,'Class','attribute-combo',v,[ str ]).
+html_comp_i(78,'Controlname','&Orderedby',d,[ str ]).
+html_comp_i(78,'Returnonclick',0,v,[ bool ]).
+html_comp_i(78,'Captionclass','col-xs-12 attribute-comboLabel',v,[ str ]).
+html_comp_i(78,'Captionstyle','',v,[ str ]).
+html_comp_i(78,'Captionposition','Top',v,[ str ]).
+html_comp_i(78,'Captionvalue','Ordered By',d,[ str ]).
+html_comp_i(78,'Layoutclass','col-xs-12',v,[ str ]).
+html_comp_i(78,'Controltype',0,d,[ num ]).
+html_comp_i(78,'Controlvalues',[ [ 'Created Date Asc','1' ],[ 'Created Date Desc','2' ],[ 'Seller Name Asc','3' ],[ 'Seller Name Desc','4' ],[ 'Total Receivable Asc','5' ],[ 'Total Receivable Desc','6' ] ],d,[ values ]).
+html_comp_i(78,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(78,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(78,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(78,'Readonly',0,v,[ bool ]).
+html_comp_i(78,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(78,'Autoresize',-1,d,[ bool ]).
+html_comp_i(78,'Gxwidth',measure(4,chr),d,[ measure ]).
+html_comp_i(78,'Ismultiline',0,d,[ bool ]).
+html_comp_i(78,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(78,'Fill',-1,d,[ bool ]).
+html_comp_i(78,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(78,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(78,'Font',font('Verdana',12,[]),d,[ font ]).
+html_comp_i(78,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(78,'Title','',d,[ str ]).
+html_comp_i(78,'Invitemsg','',v,[ str ]).
 html_comp_i(79,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(79,'Colcount',4,d,[ num ]).
-html_comp_i(79,'Attid',-24,v,[ num ]).
-html_comp_i(79,'Class','attribute-combo',v,[ str ]).
-html_comp_i(79,'Controlname','&Orderedby',d,[ str ]).
-html_comp_i(79,'Returnonclick',0,v,[ bool ]).
-html_comp_i(79,'Captionclass','col-xs-12 attribute-comboLabel',v,[ str ]).
-html_comp_i(79,'Captionstyle','',v,[ str ]).
-html_comp_i(79,'Captionposition','Top',v,[ str ]).
-html_comp_i(79,'Captionvalue','Ordered By',d,[ str ]).
-html_comp_i(79,'Layoutclass','col-xs-12',v,[ str ]).
-html_comp_i(79,'Controltype',0,d,[ num ]).
-html_comp_i(79,'Controlvalues',[ [ 'Created Date Asc','1' ],[ 'Created Date Desc','2' ],[ 'Seller Name Asc','3' ],[ 'Seller Name Desc','4' ],[ 'Total Receivable Asc','5' ],[ 'Total Receivable Desc','6' ] ],d,[ values ]).
-html_comp_i(79,'Addemptyitem',0,d,[ bool ]).
-html_comp_i(79,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(79,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(79,'Readonly',0,v,[ bool ]).
-html_comp_i(79,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(79,'Autoresize',-1,d,[ bool ]).
-html_comp_i(79,'Gxwidth',measure(4,chr),d,[ measure ]).
-html_comp_i(79,'Ismultiline',0,d,[ bool ]).
-html_comp_i(79,'Maxtextnumberlines',0,d,[ num ]).
-html_comp_i(79,'Fill',-1,d,[ bool ]).
-html_comp_i(79,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(79,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(79,'Font',font('Verdana',12,[]),d,[ font ]).
-html_comp_i(79,'Horizontalalignment',right,d,[ str ]).
-html_comp_i(79,'Title','',d,[ str ]).
-html_comp_i(79,'Invitemsg','',v,[ str ]).
+html_comp_i(79,'Class',row,v,[ str ]).
+html_comp_i(79,'Id','',d,[ str ]).
+html_comp_i(79,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(79,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(79,'Semanticcontent',div,d,[ str ]).
+html_comp_i(79,'Align',left,d,[ str ]).
+html_comp_i(79,'Valign',top,d,[ str ]).
 html_comp_i(80,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(80,'Class',row,v,[ str ]).
+html_comp_i(80,'Class','col-xs-12',v,[ str ]).
 html_comp_i(80,'Id','',d,[ str ]).
 html_comp_i(80,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(80,'Width',measure(0,px),d,[ measure ]).
@@ -1703,23 +1676,23 @@ html_comp_i(80,'Semanticcontent',div,d,[ str ]).
 html_comp_i(80,'Align',left,d,[ str ]).
 html_comp_i(80,'Valign',top,d,[ str ]).
 html_comp_i(81,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(81,'Class','col-xs-12',v,[ str ]).
-html_comp_i(81,'Id','',d,[ str ]).
+html_comp_i(81,'Class','filters-container__item',v,[ str ]).
+html_comp_i(81,'Id','Frominvoicecreateddatefiltercontainer',v,[ str ]).
 html_comp_i(81,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(81,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(81,'Semanticcontent',div,d,[ str ]).
 html_comp_i(81,'Align',left,d,[ str ]).
 html_comp_i(81,'Valign',top,d,[ str ]).
 html_comp_i(82,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(82,'Class','filters-container__item',v,[ str ]).
-html_comp_i(82,'Id','Frominvoicecreateddatefiltercontainer',v,[ str ]).
+html_comp_i(82,'Class',row,v,[ str ]).
+html_comp_i(82,'Id','',d,[ str ]).
 html_comp_i(82,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(82,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(82,'Semanticcontent',div,d,[ str ]).
 html_comp_i(82,'Align',left,d,[ str ]).
 html_comp_i(82,'Valign',top,d,[ str ]).
 html_comp_i(83,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(83,'Class',row,v,[ str ]).
+html_comp_i(83,'Class','col-xs-12',v,[ str ]).
 html_comp_i(83,'Id','',d,[ str ]).
 html_comp_i(83,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(83,'Width',measure(0,px),d,[ measure ]).
@@ -1727,27 +1700,27 @@ html_comp_i(83,'Semanticcontent',div,d,[ str ]).
 html_comp_i(83,'Align',left,d,[ str ]).
 html_comp_i(83,'Valign',top,d,[ str ]).
 html_comp_i(84,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(84,'Class','col-xs-12',v,[ str ]).
-html_comp_i(84,'Id','',d,[ str ]).
-html_comp_i(84,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(84,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(84,'Semanticcontent',div,d,[ str ]).
-html_comp_i(84,'Align',left,d,[ str ]).
-html_comp_i(84,'Valign',top,d,[ str ]).
+html_comp_i(84,'Caption','Date From',d,[ str ]).
+html_comp_i(84,'Id','Lblfrominvoicecreateddatefilter',v,[ str ]).
+html_comp_i(84,'Class','filter-item__label',v,[ str ]).
+html_comp_i(84,'Event','',d,[ str ]).
+html_comp_i(84,'Returnonclick',0,d,[ bool ]).
+html_comp_i(84,'Gxformat',1,v,[ num ]).
+html_comp_i(84,'Title','',d,[ str ]).
+html_comp_i(84,'Fill',-1,d,[ bool ]).
+html_comp_i(84,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(84,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(84,'Font','',d,[ str ]).
 html_comp_i(85,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(85,'Caption','Date From',d,[ str ]).
-html_comp_i(85,'Id','Lblfrominvoicecreateddatefilter',v,[ str ]).
-html_comp_i(85,'Class','filter-item__label',v,[ str ]).
-html_comp_i(85,'Event','',d,[ str ]).
-html_comp_i(85,'Returnonclick',0,d,[ bool ]).
-html_comp_i(85,'Gxformat',1,v,[ num ]).
-html_comp_i(85,'Title','',d,[ str ]).
-html_comp_i(85,'Fill',-1,d,[ bool ]).
-html_comp_i(85,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(85,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(85,'Font','',d,[ str ]).
+html_comp_i(85,'Class',row,v,[ str ]).
+html_comp_i(85,'Id','',d,[ str ]).
+html_comp_i(85,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(85,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(85,'Semanticcontent',div,d,[ str ]).
+html_comp_i(85,'Align',left,d,[ str ]).
+html_comp_i(85,'Valign',top,d,[ str ]).
 html_comp_i(86,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(86,'Class',row,v,[ str ]).
+html_comp_i(86,'Class','col-xs-12 filter-item__cell',v,[ str ]).
 html_comp_i(86,'Id','',d,[ str ]).
 html_comp_i(86,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(86,'Width',measure(0,px),d,[ measure ]).
@@ -1755,7 +1728,7 @@ html_comp_i(86,'Semanticcontent',div,d,[ str ]).
 html_comp_i(86,'Align',left,d,[ str ]).
 html_comp_i(86,'Valign',top,d,[ str ]).
 html_comp_i(87,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(87,'Class','col-xs-12 filter-item__cell',v,[ str ]).
+html_comp_i(87,'Class',' gx-attribute',v,[ str ]).
 html_comp_i(87,'Id','',d,[ str ]).
 html_comp_i(87,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(87,'Width',measure(0,px),d,[ measure ]).
@@ -1763,47 +1736,47 @@ html_comp_i(87,'Semanticcontent',div,d,[ str ]).
 html_comp_i(87,'Align',left,d,[ str ]).
 html_comp_i(87,'Valign',top,d,[ str ]).
 html_comp_i(88,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(88,'Class',' gx-attribute',v,[ str ]).
-html_comp_i(88,'Id','',d,[ str ]).
-html_comp_i(88,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(88,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(88,'Semanticcontent',div,d,[ str ]).
-html_comp_i(88,'Align',left,d,[ str ]).
-html_comp_i(88,'Valign',top,d,[ str ]).
+html_comp_i(88,'Colcount',8,d,[ num ]).
+html_comp_i(88,'Attid',-32,v,[ num ]).
+html_comp_i(88,'Class','attribute-combo',v,[ str ]).
+html_comp_i(88,'Controlname','&Frominvoicecreateddate',d,[ str ]).
+html_comp_i(88,'Returnonclick',0,v,[ bool ]).
+html_comp_i(88,'Captionclass','col-sm-3 attribute-comboLabel',v,[ str ]).
+html_comp_i(88,'Captionstyle','',v,[ str ]).
+html_comp_i(88,'Captionposition','None',v,[ str ]).
+html_comp_i(88,'Captionvalue','From Invoice Created Date',d,[ str ]).
+html_comp_i(88,'Layoutclass','',v,[ str ]).
+html_comp_i(88,'Controltype',2,d,[ num ]).
+html_comp_i(88,'Inputtype',0,d,[ num ]).
+html_comp_i(88,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(88,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(88,'Readonly',0,v,[ bool ]).
+html_comp_i(88,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(88,'Ispassword',0,d,[ bool ]).
+html_comp_i(88,'Autoresize',-1,d,[ bool ]).
+html_comp_i(88,'Gxwidth',measure(8,chr),d,[ measure ]).
+html_comp_i(88,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(88,'Ismultiline',0,d,[ bool ]).
+html_comp_i(88,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(88,'Fill',-1,d,[ bool ]).
+html_comp_i(88,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(88,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(88,'Font',font('Verdana',12,[]),d,[ font ]).
+html_comp_i(88,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(88,'Gxformat',0,d,[ num ]).
+html_comp_i(88,'Title','',d,[ str ]).
+html_comp_i(88,'Use_datepicker',-1,d,[ bool ]).
+html_comp_i(88,'Flat_datepicker',0,d,[ bool ]).
 html_comp_i(89,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(89,'Colcount',8,d,[ num ]).
-html_comp_i(89,'Attid',-32,v,[ num ]).
-html_comp_i(89,'Class','attribute-combo',v,[ str ]).
-html_comp_i(89,'Controlname','&Frominvoicecreateddate',d,[ str ]).
-html_comp_i(89,'Returnonclick',0,v,[ bool ]).
-html_comp_i(89,'Captionclass','col-sm-3 attribute-comboLabel',v,[ str ]).
-html_comp_i(89,'Captionstyle','',v,[ str ]).
-html_comp_i(89,'Captionposition','None',v,[ str ]).
-html_comp_i(89,'Captionvalue','From Invoice Created Date',d,[ str ]).
-html_comp_i(89,'Layoutclass','',v,[ str ]).
-html_comp_i(89,'Controltype',2,d,[ num ]).
-html_comp_i(89,'Inputtype',0,d,[ num ]).
-html_comp_i(89,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(89,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(89,'Readonly',0,v,[ bool ]).
-html_comp_i(89,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(89,'Ispassword',0,d,[ bool ]).
-html_comp_i(89,'Autoresize',-1,d,[ bool ]).
-html_comp_i(89,'Gxwidth',measure(8,chr),d,[ measure ]).
-html_comp_i(89,'Gxheight',measure(1,row),d,[ measure ]).
-html_comp_i(89,'Ismultiline',0,d,[ bool ]).
-html_comp_i(89,'Maxtextnumberlines',0,d,[ num ]).
-html_comp_i(89,'Fill',-1,d,[ bool ]).
-html_comp_i(89,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(89,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(89,'Font',font('Verdana',12,[]),d,[ font ]).
-html_comp_i(89,'Horizontalalignment',right,d,[ str ]).
-html_comp_i(89,'Gxformat',0,d,[ num ]).
-html_comp_i(89,'Title','',d,[ str ]).
-html_comp_i(89,'Use_datepicker',-1,d,[ bool ]).
-html_comp_i(89,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(89,'Class',row,v,[ str ]).
+html_comp_i(89,'Id','',d,[ str ]).
+html_comp_i(89,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(89,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(89,'Semanticcontent',div,d,[ str ]).
+html_comp_i(89,'Align',left,d,[ str ]).
+html_comp_i(89,'Valign',top,d,[ str ]).
 html_comp_i(90,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(90,'Class',row,v,[ str ]).
+html_comp_i(90,'Class','col-xs-12',v,[ str ]).
 html_comp_i(90,'Id','',d,[ str ]).
 html_comp_i(90,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(90,'Width',measure(0,px),d,[ measure ]).
@@ -1811,23 +1784,23 @@ html_comp_i(90,'Semanticcontent',div,d,[ str ]).
 html_comp_i(90,'Align',left,d,[ str ]).
 html_comp_i(90,'Valign',top,d,[ str ]).
 html_comp_i(91,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(91,'Class','col-xs-12',v,[ str ]).
-html_comp_i(91,'Id','',d,[ str ]).
+html_comp_i(91,'Class','filters-container__item',v,[ str ]).
+html_comp_i(91,'Id','Toinvoicecreateddatefiltercontainer',v,[ str ]).
 html_comp_i(91,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(91,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(91,'Semanticcontent',div,d,[ str ]).
 html_comp_i(91,'Align',left,d,[ str ]).
 html_comp_i(91,'Valign',top,d,[ str ]).
 html_comp_i(92,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(92,'Class','filters-container__item',v,[ str ]).
-html_comp_i(92,'Id','Toinvoicecreateddatefiltercontainer',v,[ str ]).
+html_comp_i(92,'Class',row,v,[ str ]).
+html_comp_i(92,'Id','',d,[ str ]).
 html_comp_i(92,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(92,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(92,'Semanticcontent',div,d,[ str ]).
 html_comp_i(92,'Align',left,d,[ str ]).
 html_comp_i(92,'Valign',top,d,[ str ]).
 html_comp_i(93,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(93,'Class',row,v,[ str ]).
+html_comp_i(93,'Class','col-xs-12',v,[ str ]).
 html_comp_i(93,'Id','',d,[ str ]).
 html_comp_i(93,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(93,'Width',measure(0,px),d,[ measure ]).
@@ -1835,27 +1808,27 @@ html_comp_i(93,'Semanticcontent',div,d,[ str ]).
 html_comp_i(93,'Align',left,d,[ str ]).
 html_comp_i(93,'Valign',top,d,[ str ]).
 html_comp_i(94,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(94,'Class','col-xs-12',v,[ str ]).
-html_comp_i(94,'Id','',d,[ str ]).
-html_comp_i(94,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(94,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(94,'Semanticcontent',div,d,[ str ]).
-html_comp_i(94,'Align',left,d,[ str ]).
-html_comp_i(94,'Valign',top,d,[ str ]).
+html_comp_i(94,'Caption','Date To',d,[ str ]).
+html_comp_i(94,'Id','Lbltoinvoicecreateddatefilter',v,[ str ]).
+html_comp_i(94,'Class','filter-item__label',v,[ str ]).
+html_comp_i(94,'Event','',d,[ str ]).
+html_comp_i(94,'Returnonclick',0,d,[ bool ]).
+html_comp_i(94,'Gxformat',1,v,[ num ]).
+html_comp_i(94,'Title','',d,[ str ]).
+html_comp_i(94,'Fill',-1,d,[ bool ]).
+html_comp_i(94,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(94,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(94,'Font','',d,[ str ]).
 html_comp_i(95,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(95,'Caption','Date To',d,[ str ]).
-html_comp_i(95,'Id','Lbltoinvoicecreateddatefilter',v,[ str ]).
-html_comp_i(95,'Class','filter-item__label',v,[ str ]).
-html_comp_i(95,'Event','',d,[ str ]).
-html_comp_i(95,'Returnonclick',0,d,[ bool ]).
-html_comp_i(95,'Gxformat',1,v,[ num ]).
-html_comp_i(95,'Title','',d,[ str ]).
-html_comp_i(95,'Fill',-1,d,[ bool ]).
-html_comp_i(95,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(95,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(95,'Font','',d,[ str ]).
+html_comp_i(95,'Class',row,v,[ str ]).
+html_comp_i(95,'Id','',d,[ str ]).
+html_comp_i(95,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(95,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(95,'Semanticcontent',div,d,[ str ]).
+html_comp_i(95,'Align',left,d,[ str ]).
+html_comp_i(95,'Valign',top,d,[ str ]).
 html_comp_i(96,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(96,'Class',row,v,[ str ]).
+html_comp_i(96,'Class','col-xs-12 filter-item__cell',v,[ str ]).
 html_comp_i(96,'Id','',d,[ str ]).
 html_comp_i(96,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(96,'Width',measure(0,px),d,[ measure ]).
@@ -1863,7 +1836,7 @@ html_comp_i(96,'Semanticcontent',div,d,[ str ]).
 html_comp_i(96,'Align',left,d,[ str ]).
 html_comp_i(96,'Valign',top,d,[ str ]).
 html_comp_i(97,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(97,'Class','col-xs-12 filter-item__cell',v,[ str ]).
+html_comp_i(97,'Class',' gx-attribute',v,[ str ]).
 html_comp_i(97,'Id','',d,[ str ]).
 html_comp_i(97,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(97,'Width',measure(0,px),d,[ measure ]).
@@ -1871,45 +1844,37 @@ html_comp_i(97,'Semanticcontent',div,d,[ str ]).
 html_comp_i(97,'Align',left,d,[ str ]).
 html_comp_i(97,'Valign',top,d,[ str ]).
 html_comp_i(98,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(98,'Class',' gx-attribute',v,[ str ]).
-html_comp_i(98,'Id','',d,[ str ]).
-html_comp_i(98,'Height',measure(0,px),d,[ measure ]).
-html_comp_i(98,'Width',measure(0,px),d,[ measure ]).
-html_comp_i(98,'Semanticcontent',div,d,[ str ]).
-html_comp_i(98,'Align',left,d,[ str ]).
-html_comp_i(98,'Valign',top,d,[ str ]).
-html_comp_i(99,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(99,'Colcount',8,d,[ num ]).
-html_comp_i(99,'Attid',-33,v,[ num ]).
-html_comp_i(99,'Class','attribute-combo',v,[ str ]).
-html_comp_i(99,'Controlname','&Toinvoicecreateddate',d,[ str ]).
-html_comp_i(99,'Returnonclick',0,v,[ bool ]).
-html_comp_i(99,'Captionclass','col-sm-3 attribute-comboLabel',v,[ str ]).
-html_comp_i(99,'Captionstyle','',v,[ str ]).
-html_comp_i(99,'Captionposition','None',v,[ str ]).
-html_comp_i(99,'Captionvalue','To Invoice Created Date',d,[ str ]).
-html_comp_i(99,'Layoutclass','',v,[ str ]).
-html_comp_i(99,'Controltype',2,d,[ num ]).
-html_comp_i(99,'Inputtype',0,d,[ num ]).
-html_comp_i(99,'Notifycontextchange',0,d,[ bool ]).
-html_comp_i(99,'Emptyasnull','Yes',d,[ str ]).
-html_comp_i(99,'Readonly',0,v,[ bool ]).
-html_comp_i(99,'Autocomplete',-1,d,[ bool ]).
-html_comp_i(99,'Ispassword',0,d,[ bool ]).
-html_comp_i(99,'Autoresize',-1,d,[ bool ]).
-html_comp_i(99,'Gxwidth',measure(8,chr),d,[ measure ]).
-html_comp_i(99,'Gxheight',measure(1,row),d,[ measure ]).
-html_comp_i(99,'Ismultiline',0,d,[ bool ]).
-html_comp_i(99,'Maxtextnumberlines',0,d,[ num ]).
-html_comp_i(99,'Fill',-1,d,[ bool ]).
-html_comp_i(99,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(99,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(99,'Font',font('Verdana',12,[]),d,[ font ]).
-html_comp_i(99,'Horizontalalignment',right,d,[ str ]).
-html_comp_i(99,'Gxformat',0,d,[ num ]).
-html_comp_i(99,'Title','',d,[ str ]).
-html_comp_i(99,'Use_datepicker',-1,d,[ bool ]).
-html_comp_i(99,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(98,'Colcount',8,d,[ num ]).
+html_comp_i(98,'Attid',-33,v,[ num ]).
+html_comp_i(98,'Class','attribute-combo',v,[ str ]).
+html_comp_i(98,'Controlname','&Toinvoicecreateddate',d,[ str ]).
+html_comp_i(98,'Returnonclick',0,v,[ bool ]).
+html_comp_i(98,'Captionclass','col-sm-3 attribute-comboLabel',v,[ str ]).
+html_comp_i(98,'Captionstyle','',v,[ str ]).
+html_comp_i(98,'Captionposition','None',v,[ str ]).
+html_comp_i(98,'Captionvalue','To Invoice Created Date',d,[ str ]).
+html_comp_i(98,'Layoutclass','',v,[ str ]).
+html_comp_i(98,'Controltype',2,d,[ num ]).
+html_comp_i(98,'Inputtype',0,d,[ num ]).
+html_comp_i(98,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(98,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(98,'Readonly',0,v,[ bool ]).
+html_comp_i(98,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(98,'Ispassword',0,d,[ bool ]).
+html_comp_i(98,'Autoresize',-1,d,[ bool ]).
+html_comp_i(98,'Gxwidth',measure(8,chr),d,[ measure ]).
+html_comp_i(98,'Gxheight',measure(1,row),d,[ measure ]).
+html_comp_i(98,'Ismultiline',0,d,[ bool ]).
+html_comp_i(98,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(98,'Fill',-1,d,[ bool ]).
+html_comp_i(98,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(98,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(98,'Font',font('Verdana',12,[]),d,[ font ]).
+html_comp_i(98,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(98,'Gxformat',0,d,[ num ]).
+html_comp_i(98,'Title','',d,[ str ]).
+html_comp_i(98,'Use_datepicker',-1,d,[ bool ]).
+html_comp_i(98,'Flat_datepicker',0,d,[ bool ]).
  
  
  
@@ -1976,8 +1941,7 @@ lit_i(65,1,s(t(80,2),62),[ ctlname(80),ctrltype(edit,65),pos(65),readonly,ispwd(
 lit_i(66,1,s(t(100,2),62),[ ctlname(100),ctrltype(edit,66),pos(66),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(67,1,s(t('State',23),62),[ ctlname('&State'),ctrltype(edit,67),pos(67),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(68,1,s(t('Details',23),62),[ ctlname('&Details'),ctrltype(edit,68),pos(68),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(69,1,s(t('Cancel',23),62),[ ctlname('&Cancel'),ctrltype(edit,69),pos(69),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(62,1,s(62),[ ctlname('Grid'),el([ t(20,2),t(38,2),t(80,2),t(100,2),t('State',23),t('Details',23),t('Cancel',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(62,1,s(62),[ ctlname('Grid'),el([ t(20,2),t(38,2),t(80,2),t(100,2),t('State',23),t('Details',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(61,1,div(61),[ ctlname('') ]).
 lit_i(60,1,div(60),[ ctlname('') ]).
 lit_i(59,1,div(59),[ ctlname('Gridcontainer') ]).
@@ -1985,36 +1949,36 @@ lit_i(58,1,div(58),[ ctlname('') ]).
 lit_i(57,1,div(57),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Gridtable') ]).
 lit_i(5,1,div(5),[ ctlname('Gridcell') ]).
-lit_i(74,1,button('''Toggle'''),[ ctlname('Btntoggleontable'),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(73,1,div(73),[ ctlname('') ]).
+lit_i(73,1,button('''Toggle'''),[ ctlname('Btntoggleontable'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(72,1,div(72),[ ctlname('') ]).
-lit_i(79,1,t('Orderedby',23),[ ctlname('&Orderedby'),ctrltype(combo,79),pos(79),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(78,1,div(78),[ ctlname('') ]).
+lit_i(71,1,div(71),[ ctlname('') ]).
+lit_i(78,1,t('Orderedby',23),[ ctlname('&Orderedby'),ctrltype(combo,78),pos(78),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(77,1,div(77),[ ctlname('') ]).
 lit_i(76,1,div(76),[ ctlname('') ]).
 lit_i(75,1,div(75),[ ctlname('') ]).
-lit_i(85,1,t('Date From',3),[ ctlname('Lblfrominvoicecreateddatefilter') ]).
-lit_i(84,1,div(84),[ ctlname('') ]).
+lit_i(74,1,div(74),[ ctlname('') ]).
+lit_i(84,1,t('Date From',3),[ ctlname('Lblfrominvoicecreateddatefilter') ]).
 lit_i(83,1,div(83),[ ctlname('') ]).
-lit_i(89,1,t('Frominvoicecreateddate',23),[ ctlname('&Frominvoicecreateddate'),ctrltype(edit,89),pos(89),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(88,1,div(88),[ ctlname('') ]).
+lit_i(82,1,div(82),[ ctlname('') ]).
+lit_i(88,1,t('Frominvoicecreateddate',23),[ ctlname('&Frominvoicecreateddate'),ctrltype(edit,88),pos(88),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(87,1,div(87),[ ctlname('') ]).
 lit_i(86,1,div(86),[ ctlname('') ]).
-lit_i(82,1,div(82),[ ctlname('Frominvoicecreateddatefiltercontainer') ]).
-lit_i(81,1,div(81),[ ctlname('') ]).
+lit_i(85,1,div(85),[ ctlname('') ]).
+lit_i(81,1,div(81),[ ctlname('Frominvoicecreateddatefiltercontainer') ]).
 lit_i(80,1,div(80),[ ctlname('') ]).
-lit_i(95,1,t('Date To',3),[ ctlname('Lbltoinvoicecreateddatefilter') ]).
-lit_i(94,1,div(94),[ ctlname('') ]).
+lit_i(79,1,div(79),[ ctlname('') ]).
+lit_i(94,1,t('Date To',3),[ ctlname('Lbltoinvoicecreateddatefilter') ]).
 lit_i(93,1,div(93),[ ctlname('') ]).
-lit_i(99,1,t('Toinvoicecreateddate',23),[ ctlname('&Toinvoicecreateddate'),ctrltype(edit,99),pos(99),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(98,1,div(98),[ ctlname('') ]).
+lit_i(92,1,div(92),[ ctlname('') ]).
+lit_i(98,1,t('Toinvoicecreateddate',23),[ ctlname('&Toinvoicecreateddate'),ctrltype(edit,98),pos(98),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(97,1,div(97),[ ctlname('') ]).
 lit_i(96,1,div(96),[ ctlname('') ]).
-lit_i(92,1,div(92),[ ctlname('Toinvoicecreateddatefiltercontainer') ]).
-lit_i(91,1,div(91),[ ctlname('') ]).
+lit_i(95,1,div(95),[ ctlname('') ]).
+lit_i(91,1,div(91),[ ctlname('Toinvoicecreateddatefiltercontainer') ]).
 lit_i(90,1,div(90),[ ctlname('') ]).
-lit_i(71,1,div(71),[ ctlname('Filterscontainer') ]).
-lit_i(70,1,div(70),[ ctlname('') ]).
+lit_i(89,1,div(89),[ ctlname('') ]).
+lit_i(70,1,div(70),[ ctlname('Filterscontainer') ]).
+lit_i(69,1,div(69),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
@@ -2028,7 +1992,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
 ctrl_info_i(1,48,[ [ [ 'Confirmated','Confirmated' ],[ 'Canceled','Canceled' ] ],[ '' ] ]).
 ctrl_info_i(1,52,[ [ [ 'Created Date','1' ],[ 'Seller','2' ],[ 'Received','3' ] ],[ '' ] ]).
 ctrl_info_i(1,56,[ [ true,false,'' ] ]).
-ctrl_info_i(1,79,[ [ [ 'Created Date Asc','1' ],[ 'Created Date Desc','2' ],[ 'Seller Name Asc','3' ],[ 'Seller Name Desc','4' ],[ 'Total Receivable Asc','5' ],[ 'Total Receivable Desc','6' ] ],[ '' ] ]).
+ctrl_info_i(1,78,[ [ [ 'Created Date Asc','1' ],[ 'Created Date Desc','2' ],[ 'Seller Name Asc','3' ],[ 'Seller Name Desc','4' ],[ 'Total Receivable Asc','5' ],[ 'Total Receivable Desc','6' ] ],[ '' ] ]).
  
  
 calling_main_i(1,37).
@@ -2544,21 +2508,21 @@ struct_dt_elem_i([ 26,93,0 ],2,'JsonInclude',idJsonEmpty).
  
  
  
-sub_info_i(146,'Start',1,43,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Orderedby',[ t('Frominvoicecreateddate',23),t('Visible',3) ],[ t('Toinvoicecreateddate',23),t('Visible',3) ],[ t('Form',3),t('Caption',3) ],'Advanced_label_template',[ t('Btntoggle',3),t('Visible',3) ],[ t('Btntoggle',3),t('Enabled',3) ],[ t('Frominvoicecreateddate',23),t('Enabled',3) ],[ t('Toinvoicecreateddate',23),t('Enabled',3) ],[ t('Username',23),t('Visible',3) ],[ t('Username',23),t('Enabled',3) ],[ t('Orderedby',23),t('Visible',3) ],[ t('Orderedby',23),t('Enabled',3) ] ] ]).
-sub_info_i(146,'''Toggle''',45,59,[ [ [ t('Filterscontainer',3),t('Class',3) ] ],[ [ t('Filterscontainer',3),t('Class',3) ],[ t('Gridcell',3),t('Class',3) ],[ t('Btntoggle',3),t('Class',3) ],[ t('Btntoggle',3),t('Caption',3) ],[ t('Btntoggle',3),t('Tooltiptext',3) ] ] ]).
-sub_info_i(146,[ t('Lblfrominvoicecreateddatefilter',3,63,7),t('Click',3,63,39) ],63,71,[ [ [ t('Frominvoicecreateddatefiltercontainer',3),t('Class',3) ] ],[ [ t('Frominvoicecreateddatefiltercontainer',3),t('Class',3) ],[ t('Frominvoicecreateddate',23),t('Visible',3) ] ] ]).
-sub_info_i(146,[ t('Lbltoinvoicecreateddatefilter',3,75,7),t('Click',3,75,37) ],75,83,[ [ [ t('Toinvoicecreateddatefiltercontainer',3),t('Class',3) ] ],[ [ t('Toinvoicecreateddatefiltercontainer',3),t('Class',3) ],[ t('Toinvoicecreateddate',23),t('Visible',3) ] ] ]).
-sub_info_i(146,'Refresh',85,100,[ [ 'Frominvoicecreateddate','Advanced_label_template','Toinvoicecreateddate' ],[ [ t('Lblfrominvoicecreateddatefilter',3),t('Caption',3) ],[ t('Lbltoinvoicecreateddatefilter',3),t('Caption',3) ] ] ]).
-sub_info_i(146,[ t('Grid',3,102,7),t('Load',3,102,12) ],102,123,[ [ 94 ],[ 'State','Details' ] ]).
-sub_info_i(146,'''DoExport''',135,143,[ [ 'Invoiceid','Invoicestate','Username','Frominvoicecreateddate','Toinvoicecreateddate','Orderedby' ],[] ]).
-sub_info_i(146,[ t('Details',23,146,7),t('Click',3,146,16) ],146,152,[ [ 20,'Window' ],[ 'Window' ] ]).
-sub_info_i(146,[ t('Filternro',23,166,7),t('Controlvaluechanged',3,166,18) ],166,168,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filterstate',23,170,7),t('Controlvaluechanged',3,170,20) ],170,172,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filterseller',23,174,7),t('Controlvaluechanged',3,174,21) ],174,176,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filtercreatedfrom',23,178,7),t('Controlvaluechanged',3,178,26) ],178,188,[ [ 'Filtercreatedfrom','Filtercreatedto',ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Filtercreatedfrom','Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filtercreatedto',23,190,7),t('Controlvaluechanged',3,190,24) ],190,200,[ [ 'Filtercreatedfrom','Filtercreatedto',ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Filtercreatedto','Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filterorder',23,202,7),t('Controlvaluechanged',3,202,20) ],202,204,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
-sub_info_i(146,[ t('Filterorderdesc',23,206,7),t('Controlvaluechanged',3,206,24) ],206,208,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,'Start',1,38,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Orderedby',[ t('Frominvoicecreateddate',23),t('Visible',3) ],[ t('Toinvoicecreateddate',23),t('Visible',3) ],[ t('Form',3),t('Caption',3) ],'Advanced_label_template',[ t('Btntoggle',3),t('Visible',3) ],[ t('Btntoggle',3),t('Enabled',3) ],[ t('Frominvoicecreateddate',23),t('Enabled',3) ],[ t('Toinvoicecreateddate',23),t('Enabled',3) ],[ t('Username',23),t('Visible',3) ],[ t('Username',23),t('Enabled',3) ],[ t('Orderedby',23),t('Visible',3) ],[ t('Orderedby',23),t('Enabled',3) ] ] ]).
+sub_info_i(146,'''Toggle''',40,54,[ [ [ t('Filterscontainer',3),t('Class',3) ] ],[ [ t('Filterscontainer',3),t('Class',3) ],[ t('Gridcell',3),t('Class',3) ],[ t('Btntoggle',3),t('Class',3) ],[ t('Btntoggle',3),t('Caption',3) ],[ t('Btntoggle',3),t('Tooltiptext',3) ] ] ]).
+sub_info_i(146,[ t('Lblfrominvoicecreateddatefilter',3,58,7),t('Click',3,58,39) ],58,66,[ [ [ t('Frominvoicecreateddatefiltercontainer',3),t('Class',3) ] ],[ [ t('Frominvoicecreateddatefiltercontainer',3),t('Class',3) ],[ t('Frominvoicecreateddate',23),t('Visible',3) ] ] ]).
+sub_info_i(146,[ t('Lbltoinvoicecreateddatefilter',3,70,7),t('Click',3,70,37) ],70,78,[ [ [ t('Toinvoicecreateddatefiltercontainer',3),t('Class',3) ] ],[ [ t('Toinvoicecreateddatefiltercontainer',3),t('Class',3) ],[ t('Toinvoicecreateddate',23),t('Visible',3) ] ] ]).
+sub_info_i(146,'Refresh',80,95,[ [ 'Frominvoicecreateddate','Advanced_label_template','Toinvoicecreateddate' ],[ [ t('Lblfrominvoicecreateddatefilter',3),t('Caption',3) ],[ t('Lbltoinvoicecreateddatefilter',3),t('Caption',3) ] ] ]).
+sub_info_i(146,[ t('Grid',3,97,7),t('Load',3,97,12) ],97,108,[ [ 94 ],[ 'State','Details' ] ]).
+sub_info_i(146,'''DoExport''',120,128,[ [ 'Invoiceid','Invoicestate','Username','Frominvoicecreateddate','Toinvoicecreateddate','Orderedby' ],[] ]).
+sub_info_i(146,[ t('Details',23,131,7),t('Click',3,131,16) ],131,137,[ [ 20,'Window' ],[ 'Window' ] ]).
+sub_info_i(146,[ t('Filternro',23,139,7),t('Controlvaluechanged',3,139,18) ],139,141,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filterstate',23,143,7),t('Controlvaluechanged',3,143,20) ],143,145,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filterseller',23,147,7),t('Controlvaluechanged',3,147,21) ],147,149,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filtercreatedfrom',23,151,7),t('Controlvaluechanged',3,151,26) ],151,161,[ [ 'Filtercreatedfrom','Filtercreatedto',ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Filtercreatedfrom','Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filtercreatedto',23,163,7),t('Controlvaluechanged',3,163,24) ],163,173,[ [ 'Filtercreatedfrom','Filtercreatedto',ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Filtercreatedto','Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filterorder',23,175,7),t('Controlvaluechanged',3,175,20) ],175,177,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
+sub_info_i(146,[ t('Filterorderdesc',23,179,7),t('Controlvaluechanged',3,179,24) ],179,181,[ [ ctrl('Grid','refresh('),ctrl('Grid','firstpage('),'Filterstate','Filtercreatedfrom','Filtercreatedto','Filterseller','Filternro','Filterorder','Filterorderdesc' ],[ 'Invoicestatevalue','Frominvoicecreateddate','Toinvoicecreateddate','Username','Invoiceid','Orderedby' ] ]).
  
 pgm_parm_i(proc,67,'EXPORTWWINVOICE',[ [ int,6,0,0 ],[ svchar,40,0,0 ],[ svchar,20,0,0 ],[ date,8,0,0 ],[ date,8,0,0 ],[ int,4,0,0 ],[ svchar,1000,0,0 ],[ svchar,512,0,0 ] ],[ [ 'InvoiceId',in,[] ],[ 'InvoiceState',in,[] ],[ 'UserName',in,[] ],[ 'DateFrom',in,[] ],[ 'DateTo',in,[] ],[ 'OrderedBy',in,[] ],[ 'Filename',out,[] ],[ 'ErrorMessage',out,[] ] ]).
 pgm_parm_i(web,13,'GENERAL\SECURITY\NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).

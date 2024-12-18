@@ -341,7 +341,7 @@ html_comp_i(9,'Exporttoxls',0,d,[ bool ]).
 html_comp_i(9,'Exporttoxlsx',-1,d,[ bool ]).
 html_comp_i(9,'Exporttopdf',-1,d,[ bool ]).
 html_comp_i(9,'Type','Chart',v,[ str ]).
-html_comp_i(9,'Title','',d,[ str ]).
+html_comp_i(9,'Title','Sales/Purchases per period',v,[ str ]).
 html_comp_i(9,'Showvalues',-1,d,[ bool ]).
 html_comp_i(9,'Maplibrary','ECharts',d,[ str ]).
 html_comp_i(9,'Charttype','SmoothTimeline',v,[ str ]).
@@ -349,7 +349,7 @@ html_comp_i(9,'Plotseries','InTheSameChart',d,[ str ]).
 html_comp_i(9,'Xaxislabels','Horizontally',d,[ str ]).
 html_comp_i(9,'Xaxisintersectionatzero',0,d,[ bool ]).
 html_comp_i(9,'Xaxistitle','',d,[ str ]).
-html_comp_i(9,'Yaxistitle','',d,[ str ]).
+html_comp_i(9,'Yaxistitle','Amount',v,[ str ]).
 html_comp_i(9,'Itemclickdata',[ t('Itemclickdata',23) ],v,[ params ]).
 html_comp_i(9,'Itemdoubleclickdata',[ t('Itemdoubleclickdata',23) ],v,[ params ]).
 html_comp_i(9,'Draganddropdata',[ t('Draganddropdata',23) ],v,[ params ]).
@@ -2226,9 +2226,15 @@ struct_dt_elem_i([ 26,75,110 ],2,'CollectionSerialization',idXmlCollectionWrappe
 struct_dt_elem_i([ 26,75,110 ],2,'JsonName','').
 struct_dt_elem_i([ 26,75,110 ],2,'JsonInclude',idJsonNoProperty).
 struct_dt_elem_i([ 26,75,110 ],2,'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,83,122 ],5,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,83,123 ],1,pic,'ZZZZZ9').
 struct_dt_elem_i([ 26,83,126 ],2,pic,'99/99/99').
+struct_dt_elem_i([ 26,83,128 ],1,pic,'ZZZZZ9').
 struct_dt_elem_i([ 26,83,131 ],1,pic,'ZZZZZ9').
 struct_dt_elem_i([ 26,83,131 ],4,pic,'ZZZZZ9').
+struct_dt_elem_i([ 26,84,0 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,80,0 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
+struct_dt_elem_i([ 26,78,0 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
  
  
  

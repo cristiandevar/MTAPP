@@ -201,8 +201,16 @@ b_line_i(53,2,2,cmd,52,[ t('',107,53,0),t('Parameters',23,52,0),t(=,10,52,0),t([
 b_line_i(55,2,2,cmd,52,[ t('',107,55,0),t('Parameter',23,52,0),t(=,10,52,0),t([ 'GeneXusReporting\QueryViewerParameters.Parameter',[ t('(',0,55,18),t(')',4,55,19) ],n ],46,52,0) ]).
 b_line_i(56,2,2,cmd,52,[ t('',107,56,0),t([ t('Parameter',23,52,0),t('Name',3,52,0) ],29,52,0),t(=,10,52,0),t('''PaymentMethodId''',3,52,0) ]).
 b_line_i(57,2,2,cmd,52,[ t('',107,57,0),t([ t('Parameter',23,52,0),t('Value',3,52,0) ],29,52,0),t(=,10,52,0),t('str(',1,52,0),t('Paymentmethodid',23,52,0),t(',',7,52,0),t(6,3,52,0),t(',',7,52,0),t(0,3,52,0),t(')',4,52,0) ]).
-b_line_i(59,2,2,cmd,52,[ t('',107,59,0),t([ t('Parameters',23,59,2),t('add(',1,59,14) ],31,59,2),t('Parameter',23,52,19),t(')',4,52,29) ]).
-b_line_i(61,2,2,cmd,52,[ t('',147,61,0) ]).
+b_line_i(58,2,2,cmd,52,[ t('',107,58,0),t([ t('Parameters',23,58,2),t('add(',1,58,14) ],31,58,2),t('Parameter',23,52,19),t(')',4,52,29) ]).
+b_line_i(60,2,2,cmd,52,[ t('',107,60,0),t('Parameter',23,52,0),t(=,10,52,0),t([ 'GeneXusReporting\QueryViewerParameters.Parameter',[ t('(',0,60,18),t(')',4,60,19) ],n ],46,52,0) ]).
+b_line_i(61,2,2,cmd,52,[ t('',107,61,0),t([ t('Parameter',23,52,0),t('Name',3,52,0) ],29,52,0),t(=,10,52,0),t('''FromDate''',3,52,0) ]).
+b_line_i(62,2,2,cmd,52,[ t('',107,62,0),t([ t('Parameter',23,52,0),t('Value',3,52,0) ],29,52,0),t(=,10,52,0),t('''''',3,52,0) ]).
+b_line_i(63,2,2,cmd,52,[ t('',107,63,0),t([ t('Parameters',23,63,2),t('add(',1,63,14) ],31,63,2),t('Parameter',23,52,19),t(')',4,52,29) ]).
+b_line_i(65,2,2,cmd,52,[ t('',107,65,0),t('Parameter',23,52,0),t(=,10,52,0),t([ 'GeneXusReporting\QueryViewerParameters.Parameter',[ t('(',0,65,18),t(')',4,65,19) ],n ],46,52,0) ]).
+b_line_i(66,2,2,cmd,52,[ t('',107,66,0),t([ t('Parameter',23,52,0),t('Name',3,52,0) ],29,52,0),t(=,10,52,0),t('''ToDate''',3,52,0) ]).
+b_line_i(67,2,2,cmd,52,[ t('',107,67,0),t([ t('Parameter',23,52,0),t('Value',3,52,0) ],29,52,0),t(=,10,52,0),t('''''',3,52,0) ]).
+b_line_i(68,2,2,cmd,52,[ t('',107,68,0),t([ t('Parameters',23,68,2),t('add(',1,68,14) ],31,68,2),t('Parameter',23,52,19),t(')',4,52,29) ]).
+b_line_i(70,2,2,cmd,52,[ t('',147,70,0) ]).
 b_line_i(1000,2,2,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,2,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,2,cmd,0,[ t('',147,0,0) ]).
@@ -1940,7 +1948,7 @@ struct_dt_elem_i([ 26,78,0 ],3,pic,'ZZZZZZZZZZZZZZ9.99').
  
  
  
-sub_info_i(146,'Start',52,61,[ [ 'Paymentmethodid' ],[ 'Parameters' ] ]).
+sub_info_i(146,'Start',52,70,[ [ 'Paymentmethodid' ],[ 'Parameters' ] ]).
  
  
 pgm_callprotocol_i(web,161,'WPPAYMENTMETHODINVOICESTATISTICS','INTERNAL','Unsecure').

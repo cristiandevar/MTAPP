@@ -399,6 +399,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERSALE_Objectname", StringUtil.RTrim( Queryviewersale_Objectname));
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERSALE_Type", StringUtil.RTrim( Queryviewersale_Type));
          GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERSALE_Charttype", StringUtil.RTrim( Queryviewersale_Charttype));
+         GxWebStd.gx_hidden_field( context, sPrefix+"QUERYVIEWERSALE_Xaxistitle", StringUtil.RTrim( Queryviewersale_Xaxistitle));
       }
 
       protected void RenderHtmlCloseForm432( )
@@ -502,6 +503,7 @@ namespace GeneXus.Programs {
             ucQueryviewersale.SetProperty("Type", Queryviewersale_Type);
             ucQueryviewersale.SetProperty("Title", Queryviewersale_Title);
             ucQueryviewersale.SetProperty("ChartType", Queryviewersale_Charttype);
+            ucQueryviewersale.SetProperty("XAxisTitle", Queryviewersale_Xaxistitle);
             ucQueryviewersale.SetProperty("ItemClickData", AV10ItemClickData);
             ucQueryviewersale.SetProperty("ItemDoubleClickData", AV12ItemDoubleClickData);
             ucQueryviewersale.SetProperty("DragAndDropData", AV6DragAndDropData);
@@ -854,6 +856,7 @@ namespace GeneXus.Programs {
             Queryviewersale_Objectname = cgiGet( sPrefix+"QUERYVIEWERSALE_Objectname");
             Queryviewersale_Type = cgiGet( sPrefix+"QUERYVIEWERSALE_Type");
             Queryviewersale_Charttype = cgiGet( sPrefix+"QUERYVIEWERSALE_Charttype");
+            Queryviewersale_Xaxistitle = cgiGet( sPrefix+"QUERYVIEWERSALE_Xaxistitle");
             /* Read variables values. */
             /* Read subfile selected row values. */
             /* Read hidden variables. */
@@ -1135,7 +1138,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112312253178", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121422192735", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1153,7 +1156,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("wcstatisticssuppliertopsold.js", "?2024112312253178", false, true);
+            context.AddJavascriptSource("wcstatisticssuppliertopsold.js", "?2024121422192736", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerCommon.js", "", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerRender.js", "", false, true);
          }
@@ -1188,6 +1191,7 @@ namespace GeneXus.Programs {
          }
          init_default_properties( ) ;
          Queryviewersale_Title = "Top Raised for Supplier";
+         Queryviewersale_Xaxistitle = "";
          Queryviewersale_Charttype = "ColumnLine";
          Queryviewersale_Type = "Chart";
          Queryviewersale_Objectname = "QStatisticsSupplierTopSold";
@@ -1288,6 +1292,7 @@ namespace GeneXus.Programs {
       private string Queryviewersale_Objectname ;
       private string Queryviewersale_Type ;
       private string Queryviewersale_Charttype ;
+      private string Queryviewersale_Xaxistitle ;
       private string GX_FocusControl ;
       private string divMaintable_Internalname ;
       private string divTable1_Internalname ;

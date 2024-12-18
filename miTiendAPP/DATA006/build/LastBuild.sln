@@ -291,6 +291,8 @@ Project("9A19103F-16F7-4668-BE54-9A1E7A4F7556") = "wppurchaseordergenerated", "w
 EndProject
 Project("9A19103F-16F7-4668-BE54-9A1E7A4F7556") = "wpstatisticsgraphs", "wpstatisticsgraphs\wpstatisticsgraphs.csproj", "{1d818083-c070-4e6c-9ddc-698979aee2a2}"
 EndProject
+Project("9A19103F-16F7-4668-BE54-9A1E7A4F7556") = "wpregistermovement", "wpregistermovement\wpregistermovement.csproj", "{181b79f8-1510-4af2-977b-06720ab5536e}"
+EndProject
 Project("9A19103F-16F7-4668-BE54-9A1E7A4F7556") = "dpstatisticstopproductsold", "dpstatisticstopproductsold\dpstatisticstopproductsold.csproj", "{2de5d1ad-cba8-434a-a61c-4c1787b1adeb}"
 EndProject
 Project("9A19103F-16F7-4668-BE54-9A1E7A4F7556") = "dpstatisticsamountstatement", "dpstatisticsamountstatement\dpstatisticsamountstatement.csproj", "{4a74251c-3c3c-4ac4-aac4-05e8c9370eaf}"
@@ -880,6 +882,10 @@ Global
 	{1d818083-c070-4e6c-9ddc-698979aee2a2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	{1d818083-c070-4e6c-9ddc-698979aee2a2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	{1d818083-c070-4e6c-9ddc-698979aee2a2}.Release|Any CPU.Build.0 = Release|Any CPU
+	{181b79f8-1510-4af2-977b-06720ab5536e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+	{181b79f8-1510-4af2-977b-06720ab5536e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	{181b79f8-1510-4af2-977b-06720ab5536e}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	{181b79f8-1510-4af2-977b-06720ab5536e}.Release|Any CPU.Build.0 = Release|Any CPU
 	{2de5d1ad-cba8-434a-a61c-4c1787b1adeb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 	{2de5d1ad-cba8-434a-a61c-4c1787b1adeb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	{2de5d1ad-cba8-434a-a61c-4c1787b1adeb}.Release|Any CPU.ActiveCfg = Release|Any CPU

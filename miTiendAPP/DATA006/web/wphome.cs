@@ -292,9 +292,9 @@ namespace GeneXus.Programs {
          {
             WebComp_Wcproductstopsold.componentjscripts();
          }
-         if ( ! ( WebComp_Wcproductsoutofstock == null ) )
+         if ( ! ( WebComp_Wcproductstoppurchase == null ) )
          {
-            WebComp_Wcproductsoutofstock.componentjscripts();
+            WebComp_Wcproductstoppurchase.componentjscripts();
          }
          if ( ! ( WebComp_Wcproductsleastsold == null ) )
          {
@@ -304,13 +304,13 @@ namespace GeneXus.Programs {
          {
             WebComp_Wcproductsleastpurchased.componentjscripts();
          }
+         if ( ! ( WebComp_Wcproductsoutofstock == null ) )
+         {
+            WebComp_Wcproductsoutofstock.componentjscripts();
+         }
          if ( ! ( WebComp_Wcsuppliertopsold == null ) )
          {
             WebComp_Wcsuppliertopsold.componentjscripts();
-         }
-         if ( ! ( WebComp_Wcproductstoppurchase == null ) )
-         {
-            WebComp_Wcproductstoppurchase.componentjscripts();
          }
       }
 
@@ -423,6 +423,13 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<hr/>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, divTable3_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
@@ -430,7 +437,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable10_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTableamountstatement_Internalname, divTableamountstatement_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -438,16 +445,16 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0024"+"", StringUtil.RTrim( WebComp_Wcamountstatement_Component));
+               GxWebStd.gx_hidden_field( context, "W0026"+"", StringUtil.RTrim( WebComp_Wcamountstatement_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0024"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0026"+""+"\""+((WebComp_Wcamountstatement_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
                if ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 )
                {
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcamountstatement), StringUtil.Lower( WebComp_Wcamountstatement_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0024"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0026"+"");
                   }
                   WebComp_Wcamountstatement.componentdraw();
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcamountstatement), StringUtil.Lower( WebComp_Wcamountstatement_Component)) != 0 )
@@ -465,9 +472,16 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<hr/>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable5_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTableproductstopsold_Internalname, divTableproductstopsold_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -475,16 +489,16 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0030"+"", StringUtil.RTrim( WebComp_Wcproductstopsold_Component));
+               GxWebStd.gx_hidden_field( context, "W0034"+"", StringUtil.RTrim( WebComp_Wcproductstopsold_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0030"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0034"+""+"\""+((WebComp_Wcproductstopsold_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
                if ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 )
                {
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstopsold), StringUtil.Lower( WebComp_Wcproductstopsold_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0030"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0034"+"");
                   }
                   WebComp_Wcproductstopsold.componentdraw();
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstopsold), StringUtil.Lower( WebComp_Wcproductstopsold_Component)) != 0 )
@@ -501,7 +515,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable8_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTableproducttoppurchased_Internalname, divTableproducttoppurchased_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -509,19 +523,19 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0035"+"", StringUtil.RTrim( WebComp_Wcproductsoutofstock_Component));
+               GxWebStd.gx_hidden_field( context, "W0039"+"", StringUtil.RTrim( WebComp_Wcproductstoppurchase_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0035"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0039"+""+"\""+((WebComp_Wcproductstoppurchase_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
-               if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
                {
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsoutofstock), StringUtil.Lower( WebComp_Wcproductsoutofstock_Component)) != 0 )
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstoppurchase), StringUtil.Lower( WebComp_Wcproductstoppurchase_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0035"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0039"+"");
                   }
-                  WebComp_Wcproductsoutofstock.componentdraw();
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsoutofstock), StringUtil.Lower( WebComp_Wcproductsoutofstock_Component)) != 0 )
+                  WebComp_Wcproductstoppurchase.componentdraw();
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstoppurchase), StringUtil.Lower( WebComp_Wcproductstoppurchase_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspEndCmp();
                   }
@@ -536,9 +550,16 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<hr/>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable6_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTableproductsleastsold_Internalname, divTableproductsleastsold_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -546,16 +567,16 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0041"+"", StringUtil.RTrim( WebComp_Wcproductsleastsold_Component));
+               GxWebStd.gx_hidden_field( context, "W0047"+"", StringUtil.RTrim( WebComp_Wcproductsleastsold_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0041"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0047"+""+"\""+((WebComp_Wcproductsleastsold_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
                if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
                {
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsleastsold), StringUtil.Lower( WebComp_Wcproductsleastsold_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0041"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0047"+"");
                   }
                   WebComp_Wcproductsleastsold.componentdraw();
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsleastsold), StringUtil.Lower( WebComp_Wcproductsleastsold_Component)) != 0 )
@@ -572,7 +593,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable11_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTableproductsleastpurchased_Internalname, divTableproductsleastpurchased_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -580,16 +601,16 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0046"+"", StringUtil.RTrim( WebComp_Wcproductsleastpurchased_Component));
+               GxWebStd.gx_hidden_field( context, "W0052"+"", StringUtil.RTrim( WebComp_Wcproductsleastpurchased_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0046"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0052"+""+"\""+((WebComp_Wcproductsleastpurchased_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
                if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
                {
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsleastpurchased), StringUtil.Lower( WebComp_Wcproductsleastpurchased_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
                   }
                   WebComp_Wcproductsleastpurchased.componentdraw();
                   if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsleastpurchased), StringUtil.Lower( WebComp_Wcproductsleastpurchased_Component)) != 0 )
@@ -607,9 +628,16 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<hr/>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable1_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, divTableproductsoutofstock_Internalname, divTableproductsoutofstock_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -617,19 +645,19 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0052"+"", StringUtil.RTrim( WebComp_Wcsuppliertopsold_Component));
+               GxWebStd.gx_hidden_field( context, "W0060"+"", StringUtil.RTrim( WebComp_Wcproductsoutofstock_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0052"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0060"+""+"\""+((WebComp_Wcproductsoutofstock_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
-               if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
                {
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcsuppliertopsold), StringUtil.Lower( WebComp_Wcsuppliertopsold_Component)) != 0 )
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsoutofstock), StringUtil.Lower( WebComp_Wcproductsoutofstock_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0060"+"");
                   }
-                  WebComp_Wcsuppliertopsold.componentdraw();
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcsuppliertopsold), StringUtil.Lower( WebComp_Wcsuppliertopsold_Component)) != 0 )
+                  WebComp_Wcproductsoutofstock.componentdraw();
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductsoutofstock), StringUtil.Lower( WebComp_Wcproductsoutofstock_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspEndCmp();
                   }
@@ -640,10 +668,20 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTable2_Internalname, 1, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            context.WriteHtmlText( "<hr/>") ;
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, divTablesuppliertopsold_Internalname, divTablesuppliertopsold_Visible, 0, "px", 0, "px", "Table", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -651,19 +689,19 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0057"+"", StringUtil.RTrim( WebComp_Wcproductstoppurchase_Component));
+               GxWebStd.gx_hidden_field( context, "W0068"+"", StringUtil.RTrim( WebComp_Wcsuppliertopsold_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
-               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0057"+""+"\""+"") ;
+               context.WriteHtmlText( " id=\""+"gxHTMLWrpW0068"+""+"\""+((WebComp_Wcsuppliertopsold_Visible==1) ? "" : " style=\"display:none;\"")) ;
                context.WriteHtmlText( ">") ;
-               if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
                {
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstoppurchase), StringUtil.Lower( WebComp_Wcproductstoppurchase_Component)) != 0 )
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcsuppliertopsold), StringUtil.Lower( WebComp_Wcsuppliertopsold_Component)) != 0 )
                   {
-                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0057"+"");
+                     context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0068"+"");
                   }
-                  WebComp_Wcproductstoppurchase.componentdraw();
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcproductstoppurchase), StringUtil.Lower( WebComp_Wcproductstoppurchase_Component)) != 0 )
+                  WebComp_Wcsuppliertopsold.componentdraw();
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldWcsuppliertopsold), StringUtil.Lower( WebComp_Wcsuppliertopsold_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspEndCmp();
                   }
@@ -753,12 +791,18 @@ namespace GeneXus.Programs {
                               dynload_actions( ) ;
                               E12352 ();
                            }
+                           else if ( StringUtil.StrCmp(sEvt, "VMONTH.CONTROLVALUECHANGED") == 0 )
+                           {
+                              context.wbHandled = 1;
+                              dynload_actions( ) ;
+                              E13352 ();
+                           }
                            else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Load */
-                              E13352 ();
+                              E14352 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
@@ -789,9 +833,9 @@ namespace GeneXus.Programs {
                         sEvtType = StringUtil.Left( sEvt, 4);
                         sEvt = StringUtil.Right( sEvt, (short)(StringUtil.Len( sEvt)-4));
                         nCmpId = (short)(Math.Round(NumberUtil.Val( sEvtType, "."), 18, MidpointRounding.ToEven));
-                        if ( nCmpId == 24 )
+                        if ( nCmpId == 26 )
                         {
-                           OldWcamountstatement = cgiGet( "W0024");
+                           OldWcamountstatement = cgiGet( "W0026");
                            if ( ( StringUtil.Len( OldWcamountstatement) == 0 ) || ( StringUtil.StrCmp(OldWcamountstatement, WebComp_Wcamountstatement_Component) != 0 ) )
                            {
                               WebComp_Wcamountstatement = getWebComponent(GetType(), "GeneXus.Programs", OldWcamountstatement, new Object[] {context} );
@@ -801,13 +845,13 @@ namespace GeneXus.Programs {
                            }
                            if ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 )
                            {
-                              WebComp_Wcamountstatement.componentprocess("W0024", "", sEvt);
+                              WebComp_Wcamountstatement.componentprocess("W0026", "", sEvt);
                            }
                            WebComp_Wcamountstatement_Component = OldWcamountstatement;
                         }
-                        else if ( nCmpId == 30 )
+                        else if ( nCmpId == 34 )
                         {
-                           OldWcproductstopsold = cgiGet( "W0030");
+                           OldWcproductstopsold = cgiGet( "W0034");
                            if ( ( StringUtil.Len( OldWcproductstopsold) == 0 ) || ( StringUtil.StrCmp(OldWcproductstopsold, WebComp_Wcproductstopsold_Component) != 0 ) )
                            {
                               WebComp_Wcproductstopsold = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductstopsold, new Object[] {context} );
@@ -817,77 +861,13 @@ namespace GeneXus.Programs {
                            }
                            if ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 )
                            {
-                              WebComp_Wcproductstopsold.componentprocess("W0030", "", sEvt);
+                              WebComp_Wcproductstopsold.componentprocess("W0034", "", sEvt);
                            }
                            WebComp_Wcproductstopsold_Component = OldWcproductstopsold;
                         }
-                        else if ( nCmpId == 35 )
+                        else if ( nCmpId == 39 )
                         {
-                           OldWcproductsoutofstock = cgiGet( "W0035");
-                           if ( ( StringUtil.Len( OldWcproductsoutofstock) == 0 ) || ( StringUtil.StrCmp(OldWcproductsoutofstock, WebComp_Wcproductsoutofstock_Component) != 0 ) )
-                           {
-                              WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsoutofstock, new Object[] {context} );
-                              WebComp_Wcproductsoutofstock.ComponentInit();
-                              WebComp_Wcproductsoutofstock.Name = "OldWcproductsoutofstock";
-                              WebComp_Wcproductsoutofstock_Component = OldWcproductsoutofstock;
-                           }
-                           if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
-                           {
-                              WebComp_Wcproductsoutofstock.componentprocess("W0035", "", sEvt);
-                           }
-                           WebComp_Wcproductsoutofstock_Component = OldWcproductsoutofstock;
-                        }
-                        else if ( nCmpId == 41 )
-                        {
-                           OldWcproductsleastsold = cgiGet( "W0041");
-                           if ( ( StringUtil.Len( OldWcproductsleastsold) == 0 ) || ( StringUtil.StrCmp(OldWcproductsleastsold, WebComp_Wcproductsleastsold_Component) != 0 ) )
-                           {
-                              WebComp_Wcproductsleastsold = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsleastsold, new Object[] {context} );
-                              WebComp_Wcproductsleastsold.ComponentInit();
-                              WebComp_Wcproductsleastsold.Name = "OldWcproductsleastsold";
-                              WebComp_Wcproductsleastsold_Component = OldWcproductsleastsold;
-                           }
-                           if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
-                           {
-                              WebComp_Wcproductsleastsold.componentprocess("W0041", "", sEvt);
-                           }
-                           WebComp_Wcproductsleastsold_Component = OldWcproductsleastsold;
-                        }
-                        else if ( nCmpId == 46 )
-                        {
-                           OldWcproductsleastpurchased = cgiGet( "W0046");
-                           if ( ( StringUtil.Len( OldWcproductsleastpurchased) == 0 ) || ( StringUtil.StrCmp(OldWcproductsleastpurchased, WebComp_Wcproductsleastpurchased_Component) != 0 ) )
-                           {
-                              WebComp_Wcproductsleastpurchased = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsleastpurchased, new Object[] {context} );
-                              WebComp_Wcproductsleastpurchased.ComponentInit();
-                              WebComp_Wcproductsleastpurchased.Name = "OldWcproductsleastpurchased";
-                              WebComp_Wcproductsleastpurchased_Component = OldWcproductsleastpurchased;
-                           }
-                           if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
-                           {
-                              WebComp_Wcproductsleastpurchased.componentprocess("W0046", "", sEvt);
-                           }
-                           WebComp_Wcproductsleastpurchased_Component = OldWcproductsleastpurchased;
-                        }
-                        else if ( nCmpId == 52 )
-                        {
-                           OldWcsuppliertopsold = cgiGet( "W0052");
-                           if ( ( StringUtil.Len( OldWcsuppliertopsold) == 0 ) || ( StringUtil.StrCmp(OldWcsuppliertopsold, WebComp_Wcsuppliertopsold_Component) != 0 ) )
-                           {
-                              WebComp_Wcsuppliertopsold = getWebComponent(GetType(), "GeneXus.Programs", OldWcsuppliertopsold, new Object[] {context} );
-                              WebComp_Wcsuppliertopsold.ComponentInit();
-                              WebComp_Wcsuppliertopsold.Name = "OldWcsuppliertopsold";
-                              WebComp_Wcsuppliertopsold_Component = OldWcsuppliertopsold;
-                           }
-                           if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
-                           {
-                              WebComp_Wcsuppliertopsold.componentprocess("W0052", "", sEvt);
-                           }
-                           WebComp_Wcsuppliertopsold_Component = OldWcsuppliertopsold;
-                        }
-                        else if ( nCmpId == 57 )
-                        {
-                           OldWcproductstoppurchase = cgiGet( "W0057");
+                           OldWcproductstoppurchase = cgiGet( "W0039");
                            if ( ( StringUtil.Len( OldWcproductstoppurchase) == 0 ) || ( StringUtil.StrCmp(OldWcproductstoppurchase, WebComp_Wcproductstoppurchase_Component) != 0 ) )
                            {
                               WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductstoppurchase, new Object[] {context} );
@@ -897,9 +877,73 @@ namespace GeneXus.Programs {
                            }
                            if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
                            {
-                              WebComp_Wcproductstoppurchase.componentprocess("W0057", "", sEvt);
+                              WebComp_Wcproductstoppurchase.componentprocess("W0039", "", sEvt);
                            }
                            WebComp_Wcproductstoppurchase_Component = OldWcproductstoppurchase;
+                        }
+                        else if ( nCmpId == 47 )
+                        {
+                           OldWcproductsleastsold = cgiGet( "W0047");
+                           if ( ( StringUtil.Len( OldWcproductsleastsold) == 0 ) || ( StringUtil.StrCmp(OldWcproductsleastsold, WebComp_Wcproductsleastsold_Component) != 0 ) )
+                           {
+                              WebComp_Wcproductsleastsold = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsleastsold, new Object[] {context} );
+                              WebComp_Wcproductsleastsold.ComponentInit();
+                              WebComp_Wcproductsleastsold.Name = "OldWcproductsleastsold";
+                              WebComp_Wcproductsleastsold_Component = OldWcproductsleastsold;
+                           }
+                           if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
+                           {
+                              WebComp_Wcproductsleastsold.componentprocess("W0047", "", sEvt);
+                           }
+                           WebComp_Wcproductsleastsold_Component = OldWcproductsleastsold;
+                        }
+                        else if ( nCmpId == 52 )
+                        {
+                           OldWcproductsleastpurchased = cgiGet( "W0052");
+                           if ( ( StringUtil.Len( OldWcproductsleastpurchased) == 0 ) || ( StringUtil.StrCmp(OldWcproductsleastpurchased, WebComp_Wcproductsleastpurchased_Component) != 0 ) )
+                           {
+                              WebComp_Wcproductsleastpurchased = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsleastpurchased, new Object[] {context} );
+                              WebComp_Wcproductsleastpurchased.ComponentInit();
+                              WebComp_Wcproductsleastpurchased.Name = "OldWcproductsleastpurchased";
+                              WebComp_Wcproductsleastpurchased_Component = OldWcproductsleastpurchased;
+                           }
+                           if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
+                           {
+                              WebComp_Wcproductsleastpurchased.componentprocess("W0052", "", sEvt);
+                           }
+                           WebComp_Wcproductsleastpurchased_Component = OldWcproductsleastpurchased;
+                        }
+                        else if ( nCmpId == 60 )
+                        {
+                           OldWcproductsoutofstock = cgiGet( "W0060");
+                           if ( ( StringUtil.Len( OldWcproductsoutofstock) == 0 ) || ( StringUtil.StrCmp(OldWcproductsoutofstock, WebComp_Wcproductsoutofstock_Component) != 0 ) )
+                           {
+                              WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", OldWcproductsoutofstock, new Object[] {context} );
+                              WebComp_Wcproductsoutofstock.ComponentInit();
+                              WebComp_Wcproductsoutofstock.Name = "OldWcproductsoutofstock";
+                              WebComp_Wcproductsoutofstock_Component = OldWcproductsoutofstock;
+                           }
+                           if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+                           {
+                              WebComp_Wcproductsoutofstock.componentprocess("W0060", "", sEvt);
+                           }
+                           WebComp_Wcproductsoutofstock_Component = OldWcproductsoutofstock;
+                        }
+                        else if ( nCmpId == 68 )
+                        {
+                           OldWcsuppliertopsold = cgiGet( "W0068");
+                           if ( ( StringUtil.Len( OldWcsuppliertopsold) == 0 ) || ( StringUtil.StrCmp(OldWcsuppliertopsold, WebComp_Wcsuppliertopsold_Component) != 0 ) )
+                           {
+                              WebComp_Wcsuppliertopsold = getWebComponent(GetType(), "GeneXus.Programs", OldWcsuppliertopsold, new Object[] {context} );
+                              WebComp_Wcsuppliertopsold.ComponentInit();
+                              WebComp_Wcsuppliertopsold.Name = "OldWcsuppliertopsold";
+                              WebComp_Wcsuppliertopsold_Component = OldWcsuppliertopsold;
+                           }
+                           if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
+                           {
+                              WebComp_Wcsuppliertopsold.componentprocess("W0068", "", sEvt);
+                           }
+                           WebComp_Wcsuppliertopsold_Component = OldWcsuppliertopsold;
                         }
                      }
                      context.wbHandled = 1;
@@ -1030,16 +1074,16 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcamountstatement_Component, "WCStatisticsAmountStatement") == 0 ) )
             {
                WebComp_Wcamountstatement.setjustcreated();
-               WebComp_Wcamountstatement.componentprepare(new Object[] {(string)"W0024",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcamountstatement.componentprepare(new Object[] {(string)"W0026",(string)"",(short)AV18Year,(short)AV21Month});
                WebComp_Wcamountstatement.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcamountstatement )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0024"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0026"+"");
                WebComp_Wcamountstatement.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcamountstatement_Visible != 0 )
             {
                if ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 )
                {
@@ -1059,16 +1103,16 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductstopsold_Component, "WCStatisticsProductsTopSold") == 0 ) )
             {
                WebComp_Wcproductstopsold.setjustcreated();
-               WebComp_Wcproductstopsold.componentprepare(new Object[] {(string)"W0030",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductstopsold.componentprepare(new Object[] {(string)"W0034",(string)"",(short)AV18Year,(short)AV21Month});
                WebComp_Wcproductstopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstopsold )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0030"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0034"+"");
                WebComp_Wcproductstopsold.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcproductstopsold_Visible != 0 )
             {
                if ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 )
                {
@@ -1078,30 +1122,30 @@ namespace GeneXus.Programs {
          }
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            if ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "") == 0 )
+            if ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "") == 0 )
             {
-               WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
-               WebComp_Wcproductsoutofstock.ComponentInit();
-               WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
-               WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
+               WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
+               WebComp_Wcproductstoppurchase.ComponentInit();
+               WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
+               WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
             }
-            if ( ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "WCStatisticsProductsOutOfStock") == 0 ) )
+            if ( ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "WCStatisticsProductsTopPurchased") == 0 ) )
             {
-               WebComp_Wcproductsoutofstock.setjustcreated();
-               WebComp_Wcproductsoutofstock.componentprepare(new Object[] {(string)"W0035",(string)"",(short)AV18Year,(short)AV21Month});
-               WebComp_Wcproductsoutofstock.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+               WebComp_Wcproductstoppurchase.setjustcreated();
+               WebComp_Wcproductstoppurchase.componentprepare(new Object[] {(string)"W0039",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductstoppurchase.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
-            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsoutofstock )
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstoppurchase )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0035"+"");
-               WebComp_Wcproductsoutofstock.componentdraw();
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0039"+"");
+               WebComp_Wcproductstoppurchase.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcproductstoppurchase_Visible != 0 )
             {
-               if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
                {
-                  WebComp_Wcproductsoutofstock.componentstart();
+                  WebComp_Wcproductstoppurchase.componentstart();
                }
             }
          }
@@ -1117,16 +1161,16 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductsleastsold_Component, "WCStatisticsProductsLeastSold") == 0 ) )
             {
                WebComp_Wcproductsleastsold.setjustcreated();
-               WebComp_Wcproductsleastsold.componentprepare(new Object[] {(string)"W0041",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsleastsold.componentprepare(new Object[] {(string)"W0047",(string)"",(short)AV18Year,(short)AV21Month});
                WebComp_Wcproductsleastsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastsold )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0041"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0047"+"");
                WebComp_Wcproductsleastsold.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcproductsleastsold_Visible != 0 )
             {
                if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
                {
@@ -1146,20 +1190,49 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductsleastpurchased_Component, "WCStatisticsProductsLeastPurchased") == 0 ) )
             {
                WebComp_Wcproductsleastpurchased.setjustcreated();
-               WebComp_Wcproductsleastpurchased.componentprepare(new Object[] {(string)"W0046",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsleastpurchased.componentprepare(new Object[] {(string)"W0052",(string)"",(short)AV18Year,(short)AV21Month});
                WebComp_Wcproductsleastpurchased.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastpurchased )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
                WebComp_Wcproductsleastpurchased.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcproductsleastpurchased_Visible != 0 )
             {
                if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
                {
                   WebComp_Wcproductsleastpurchased.componentstart();
+               }
+            }
+         }
+         if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
+         {
+            if ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "") == 0 )
+            {
+               WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
+               WebComp_Wcproductsoutofstock.ComponentInit();
+               WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
+               WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
+            }
+            if ( ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "WCStatisticsProductsOutOfStock") == 0 ) )
+            {
+               WebComp_Wcproductsoutofstock.setjustcreated();
+               WebComp_Wcproductsoutofstock.componentprepare(new Object[] {(string)"W0060",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsoutofstock.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsoutofstock )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0060"+"");
+               WebComp_Wcproductsoutofstock.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
+            if ( WebComp_Wcproductsoutofstock_Visible != 0 )
+            {
+               if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+               {
+                  WebComp_Wcproductsoutofstock.componentstart();
                }
             }
          }
@@ -1175,49 +1248,20 @@ namespace GeneXus.Programs {
             if ( ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcsuppliertopsold_Component, "WCStatisticsSupplierTopSold") == 0 ) )
             {
                WebComp_Wcsuppliertopsold.setjustcreated();
-               WebComp_Wcsuppliertopsold.componentprepare(new Object[] {(string)"W0052",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcsuppliertopsold.componentprepare(new Object[] {(string)"W0068",(string)"",(short)AV18Year,(short)AV21Month});
                WebComp_Wcsuppliertopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcsuppliertopsold )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0068"+"");
                WebComp_Wcsuppliertopsold.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
-            if ( 1 != 0 )
+            if ( WebComp_Wcsuppliertopsold_Visible != 0 )
             {
                if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
                {
                   WebComp_Wcsuppliertopsold.componentstart();
-               }
-            }
-         }
-         if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
-         {
-            if ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "") == 0 )
-            {
-               WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
-               WebComp_Wcproductstoppurchase.ComponentInit();
-               WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
-               WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
-            }
-            if ( ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 ) && ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "WCStatisticsProductsTopPurchased") == 0 ) )
-            {
-               WebComp_Wcproductstoppurchase.setjustcreated();
-               WebComp_Wcproductstoppurchase.componentprepare(new Object[] {(string)"W0057",(string)"",(short)AV18Year,(short)AV21Month});
-               WebComp_Wcproductstoppurchase.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-            }
-            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstoppurchase )
-            {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0057"+"");
-               WebComp_Wcproductstoppurchase.componentdraw();
-               context.httpAjaxContext.ajax_rspEndCmp();
-            }
-            if ( 1 != 0 )
-            {
-               if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
-               {
-                  WebComp_Wcproductstoppurchase.componentstart();
                }
             }
          }
@@ -1227,7 +1271,7 @@ namespace GeneXus.Programs {
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
             /* Execute user event: Load */
-            E13352 ();
+            E14352 ();
             WB350( ) ;
          }
       }
@@ -1315,6 +1359,16 @@ namespace GeneXus.Programs {
          context.httpAjaxContext.ajax_rsp_assign_sdt_attri("", false, "AV24Months", AV24Months);
          cmbavMonth.CurrentValue = StringUtil.Trim( StringUtil.Str( (decimal)(AV21Month), 4, 0));
          AssignProp("", false, cmbavMonth_Internalname, "Values", cmbavMonth.ToJavascriptSource(), true);
+      }
+
+      protected void E13352( )
+      {
+         /* Month_Controlvaluechanged Routine */
+         returnInSub = false;
+         /* Execute user subroutine: 'CHARGEWEBCOMPONENTS' */
+         S132 ();
+         if (returnInSub) return;
+         /*  Sending Event outputs  */
       }
 
       protected void S142( )
@@ -1463,173 +1517,259 @@ namespace GeneXus.Programs {
       {
          /* 'CHARGEWEBCOMPONENTS' Routine */
          returnInSub = false;
-         /* Object Property */
-         if ( true )
+         if ( new haspermission(context).executeUdp(  "invoice view") && new haspermission(context).executeUdp(  "purchaseorder view") )
          {
-            bDynCreated_Wcamountstatement = true;
+            divTableamountstatement_Visible = 1;
+            AssignProp("", false, divTableamountstatement_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableamountstatement_Visible), 5, 0), true);
+            WebComp_Wcamountstatement_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0026"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcamountstatement_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcamountstatement = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcamountstatement_Component), StringUtil.Lower( "WCStatisticsAmountStatement")) != 0 )
+            {
+               WebComp_Wcamountstatement = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsamountstatement", new Object[] {context} );
+               WebComp_Wcamountstatement.ComponentInit();
+               WebComp_Wcamountstatement.Name = "WCStatisticsAmountStatement";
+               WebComp_Wcamountstatement_Component = "WCStatisticsAmountStatement";
+            }
+            if ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 )
+            {
+               WebComp_Wcamountstatement.setjustcreated();
+               WebComp_Wcamountstatement.componentprepare(new Object[] {(string)"W0026",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcamountstatement.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcamountstatement )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0026"+"");
+               WebComp_Wcamountstatement.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
          }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcamountstatement_Component), StringUtil.Lower( "WCStatisticsAmountStatement")) != 0 )
+         else
          {
-            WebComp_Wcamountstatement = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsamountstatement", new Object[] {context} );
-            WebComp_Wcamountstatement.ComponentInit();
-            WebComp_Wcamountstatement.Name = "WCStatisticsAmountStatement";
-            WebComp_Wcamountstatement_Component = "WCStatisticsAmountStatement";
+            divTableamountstatement_Visible = 0;
+            AssignProp("", false, divTableamountstatement_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableamountstatement_Visible), 5, 0), true);
+            WebComp_Wcamountstatement_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0026"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcamountstatement_Visible), 5, 0), true);
          }
-         if ( StringUtil.Len( WebComp_Wcamountstatement_Component) != 0 )
+         if ( new haspermission(context).executeUdp(  "product view") && new haspermission(context).executeUdp(  "invoice view") )
          {
-            WebComp_Wcamountstatement.setjustcreated();
-            WebComp_Wcamountstatement.componentprepare(new Object[] {(string)"W0024",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcamountstatement.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            divTableproductstopsold_Visible = 1;
+            AssignProp("", false, divTableproductstopsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductstopsold_Visible), 5, 0), true);
+            WebComp_Wcproductstopsold_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0034"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstopsold_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcproductstopsold = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductstopsold_Component), StringUtil.Lower( "WCStatisticsProductsTopSold")) != 0 )
+            {
+               WebComp_Wcproductstopsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstopsold", new Object[] {context} );
+               WebComp_Wcproductstopsold.ComponentInit();
+               WebComp_Wcproductstopsold.Name = "WCStatisticsProductsTopSold";
+               WebComp_Wcproductstopsold_Component = "WCStatisticsProductsTopSold";
+            }
+            if ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 )
+            {
+               WebComp_Wcproductstopsold.setjustcreated();
+               WebComp_Wcproductstopsold.componentprepare(new Object[] {(string)"W0034",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductstopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstopsold )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0034"+"");
+               WebComp_Wcproductstopsold.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
+            divTableproductsleastsold_Visible = 1;
+            AssignProp("", false, divTableproductsleastsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsleastsold_Visible), 5, 0), true);
+            WebComp_Wcproductsleastsold_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0047"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastsold_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcproductsleastsold = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsleastsold_Component), StringUtil.Lower( "WCStatisticsProductsLeastSold")) != 0 )
+            {
+               WebComp_Wcproductsleastsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsleastsold", new Object[] {context} );
+               WebComp_Wcproductsleastsold.ComponentInit();
+               WebComp_Wcproductsleastsold.Name = "WCStatisticsProductsLeastSold";
+               WebComp_Wcproductsleastsold_Component = "WCStatisticsProductsLeastSold";
+            }
+            if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
+            {
+               WebComp_Wcproductsleastsold.setjustcreated();
+               WebComp_Wcproductsleastsold.componentprepare(new Object[] {(string)"W0047",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsleastsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastsold )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0047"+"");
+               WebComp_Wcproductsleastsold.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
          }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcamountstatement )
+         else
          {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0024"+"");
-            WebComp_Wcamountstatement.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
+            divTableproductstopsold_Visible = 0;
+            AssignProp("", false, divTableproductstopsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductstopsold_Visible), 5, 0), true);
+            WebComp_Wcproductstopsold_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0034"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstopsold_Visible), 5, 0), true);
+            divTableproductsleastsold_Visible = 0;
+            AssignProp("", false, divTableproductsleastsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsleastsold_Visible), 5, 0), true);
+            WebComp_Wcproductsleastsold_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0047"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastsold_Visible), 5, 0), true);
          }
-         /* Object Property */
-         if ( true )
+         if ( new haspermission(context).executeUdp(  "product view") && new haspermission(context).executeUdp(  "purchaseorder view") )
          {
-            bDynCreated_Wcproductstopsold = true;
+            divTableproducttoppurchased_Visible = 1;
+            AssignProp("", false, divTableproducttoppurchased_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproducttoppurchased_Visible), 5, 0), true);
+            WebComp_Wcproductstoppurchase_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0039"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstoppurchase_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcproductstoppurchase = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductstoppurchase_Component), StringUtil.Lower( "WCStatisticsProductsTopPurchased")) != 0 )
+            {
+               WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
+               WebComp_Wcproductstoppurchase.ComponentInit();
+               WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
+               WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
+            }
+            if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
+            {
+               WebComp_Wcproductstoppurchase.setjustcreated();
+               WebComp_Wcproductstoppurchase.componentprepare(new Object[] {(string)"W0039",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductstoppurchase.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstoppurchase )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0039"+"");
+               WebComp_Wcproductstoppurchase.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
+            divTableproductsleastpurchased_Visible = 1;
+            AssignProp("", false, divTableproductsleastpurchased_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsleastpurchased_Visible), 5, 0), true);
+            WebComp_Wcproductsleastpurchased_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0052"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastpurchased_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcproductsleastpurchased = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsleastpurchased_Component), StringUtil.Lower( "WCStatisticsProductsLeastPurchased")) != 0 )
+            {
+               WebComp_Wcproductsleastpurchased = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsleastpurchased", new Object[] {context} );
+               WebComp_Wcproductsleastpurchased.ComponentInit();
+               WebComp_Wcproductsleastpurchased.Name = "WCStatisticsProductsLeastPurchased";
+               WebComp_Wcproductsleastpurchased_Component = "WCStatisticsProductsLeastPurchased";
+            }
+            if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
+            {
+               WebComp_Wcproductsleastpurchased.setjustcreated();
+               WebComp_Wcproductsleastpurchased.componentprepare(new Object[] {(string)"W0052",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsleastpurchased.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastpurchased )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
+               WebComp_Wcproductsleastpurchased.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
          }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductstopsold_Component), StringUtil.Lower( "WCStatisticsProductsTopSold")) != 0 )
+         else
          {
-            WebComp_Wcproductstopsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstopsold", new Object[] {context} );
-            WebComp_Wcproductstopsold.ComponentInit();
-            WebComp_Wcproductstopsold.Name = "WCStatisticsProductsTopSold";
-            WebComp_Wcproductstopsold_Component = "WCStatisticsProductsTopSold";
+            divTableproducttoppurchased_Visible = 0;
+            AssignProp("", false, divTableproducttoppurchased_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproducttoppurchased_Visible), 5, 0), true);
+            WebComp_Wcproductstoppurchase_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0039"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstoppurchase_Visible), 5, 0), true);
+            divTableproductsleastpurchased_Visible = 0;
+            AssignProp("", false, divTableproductsleastpurchased_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsleastpurchased_Visible), 5, 0), true);
+            WebComp_Wcproductsleastpurchased_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0052"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastpurchased_Visible), 5, 0), true);
          }
-         if ( StringUtil.Len( WebComp_Wcproductstopsold_Component) != 0 )
+         if ( new haspermission(context).executeUdp(  "supplier view") && new haspermission(context).executeUdp(  "invoice view") )
          {
-            WebComp_Wcproductstopsold.setjustcreated();
-            WebComp_Wcproductstopsold.componentprepare(new Object[] {(string)"W0030",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcproductstopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            divTablesuppliertopsold_Visible = 1;
+            AssignProp("", false, divTablesuppliertopsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTablesuppliertopsold_Visible), 5, 0), true);
+            WebComp_Wcsuppliertopsold_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0068"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcsuppliertopsold_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcsuppliertopsold = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcsuppliertopsold_Component), StringUtil.Lower( "WCStatisticsSupplierTopSold")) != 0 )
+            {
+               WebComp_Wcsuppliertopsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticssuppliertopsold", new Object[] {context} );
+               WebComp_Wcsuppliertopsold.ComponentInit();
+               WebComp_Wcsuppliertopsold.Name = "WCStatisticsSupplierTopSold";
+               WebComp_Wcsuppliertopsold_Component = "WCStatisticsSupplierTopSold";
+            }
+            if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
+            {
+               WebComp_Wcsuppliertopsold.setjustcreated();
+               WebComp_Wcsuppliertopsold.componentprepare(new Object[] {(string)"W0068",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcsuppliertopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcsuppliertopsold )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0068"+"");
+               WebComp_Wcsuppliertopsold.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
          }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstopsold )
+         else
          {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0030"+"");
-            WebComp_Wcproductstopsold.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
+            divTablesuppliertopsold_Visible = 0;
+            AssignProp("", false, divTablesuppliertopsold_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTablesuppliertopsold_Visible), 5, 0), true);
+            WebComp_Wcsuppliertopsold_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0068"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcsuppliertopsold_Visible), 5, 0), true);
          }
-         /* Object Property */
-         if ( true )
+         if ( new haspermission(context).executeUdp(  "product view") )
          {
-            bDynCreated_Wcproductsoutofstock = true;
+            divTableproductsoutofstock_Visible = 1;
+            AssignProp("", false, divTableproductsoutofstock_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsoutofstock_Visible), 5, 0), true);
+            WebComp_Wcproductsoutofstock_Visible = 1;
+            AssignProp("", false, "gxHTMLWrpW0060"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsoutofstock_Visible), 5, 0), true);
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Wcproductsoutofstock = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsoutofstock_Component), StringUtil.Lower( "WCStatisticsProductsOutOfStock")) != 0 )
+            {
+               WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
+               WebComp_Wcproductsoutofstock.ComponentInit();
+               WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
+               WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
+            }
+            if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+            {
+               WebComp_Wcproductsoutofstock.setjustcreated();
+               WebComp_Wcproductsoutofstock.componentprepare(new Object[] {(string)"W0060",(string)"",(short)AV18Year,(short)AV21Month});
+               WebComp_Wcproductsoutofstock.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsoutofstock )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0060"+"");
+               WebComp_Wcproductsoutofstock.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
          }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsoutofstock_Component), StringUtil.Lower( "WCStatisticsProductsOutOfStock")) != 0 )
+         else
          {
-            WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
-            WebComp_Wcproductsoutofstock.ComponentInit();
-            WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
-            WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
-         }
-         if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
-         {
-            WebComp_Wcproductsoutofstock.setjustcreated();
-            WebComp_Wcproductsoutofstock.componentprepare(new Object[] {(string)"W0035",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcproductsoutofstock.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-         }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsoutofstock )
-         {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0035"+"");
-            WebComp_Wcproductsoutofstock.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
-         }
-         /* Object Property */
-         if ( true )
-         {
-            bDynCreated_Wcproductsleastsold = true;
-         }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsleastsold_Component), StringUtil.Lower( "WCStatisticsProductsLeastSold")) != 0 )
-         {
-            WebComp_Wcproductsleastsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsleastsold", new Object[] {context} );
-            WebComp_Wcproductsleastsold.ComponentInit();
-            WebComp_Wcproductsleastsold.Name = "WCStatisticsProductsLeastSold";
-            WebComp_Wcproductsleastsold_Component = "WCStatisticsProductsLeastSold";
-         }
-         if ( StringUtil.Len( WebComp_Wcproductsleastsold_Component) != 0 )
-         {
-            WebComp_Wcproductsleastsold.setjustcreated();
-            WebComp_Wcproductsleastsold.componentprepare(new Object[] {(string)"W0041",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcproductsleastsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-         }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastsold )
-         {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0041"+"");
-            WebComp_Wcproductsleastsold.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
-         }
-         /* Object Property */
-         if ( true )
-         {
-            bDynCreated_Wcproductsleastpurchased = true;
-         }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductsleastpurchased_Component), StringUtil.Lower( "WCStatisticsProductsLeastPurchased")) != 0 )
-         {
-            WebComp_Wcproductsleastpurchased = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsleastpurchased", new Object[] {context} );
-            WebComp_Wcproductsleastpurchased.ComponentInit();
-            WebComp_Wcproductsleastpurchased.Name = "WCStatisticsProductsLeastPurchased";
-            WebComp_Wcproductsleastpurchased_Component = "WCStatisticsProductsLeastPurchased";
-         }
-         if ( StringUtil.Len( WebComp_Wcproductsleastpurchased_Component) != 0 )
-         {
-            WebComp_Wcproductsleastpurchased.setjustcreated();
-            WebComp_Wcproductsleastpurchased.componentprepare(new Object[] {(string)"W0046",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcproductsleastpurchased.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-         }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductsleastpurchased )
-         {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
-            WebComp_Wcproductsleastpurchased.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
-         }
-         /* Object Property */
-         if ( true )
-         {
-            bDynCreated_Wcproductstoppurchase = true;
-         }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcproductstoppurchase_Component), StringUtil.Lower( "WCStatisticsProductsTopPurchased")) != 0 )
-         {
-            WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
-            WebComp_Wcproductstoppurchase.ComponentInit();
-            WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
-            WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
-         }
-         if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
-         {
-            WebComp_Wcproductstoppurchase.setjustcreated();
-            WebComp_Wcproductstoppurchase.componentprepare(new Object[] {(string)"W0057",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcproductstoppurchase.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-         }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcproductstoppurchase )
-         {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0057"+"");
-            WebComp_Wcproductstoppurchase.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
-         }
-         /* Object Property */
-         if ( true )
-         {
-            bDynCreated_Wcsuppliertopsold = true;
-         }
-         if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Wcsuppliertopsold_Component), StringUtil.Lower( "WCStatisticsSupplierTopSold")) != 0 )
-         {
-            WebComp_Wcsuppliertopsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticssuppliertopsold", new Object[] {context} );
-            WebComp_Wcsuppliertopsold.ComponentInit();
-            WebComp_Wcsuppliertopsold.Name = "WCStatisticsSupplierTopSold";
-            WebComp_Wcsuppliertopsold_Component = "WCStatisticsSupplierTopSold";
-         }
-         if ( StringUtil.Len( WebComp_Wcsuppliertopsold_Component) != 0 )
-         {
-            WebComp_Wcsuppliertopsold.setjustcreated();
-            WebComp_Wcsuppliertopsold.componentprepare(new Object[] {(string)"W0052",(string)"",(short)AV18Year,(short)AV21Month});
-            WebComp_Wcsuppliertopsold.componentbind(new Object[] {(string)"vYEAR",(string)"vMONTH"});
-         }
-         if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Wcsuppliertopsold )
-         {
-            context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0052"+"");
-            WebComp_Wcsuppliertopsold.componentdraw();
-            context.httpAjaxContext.ajax_rspEndCmp();
+            divTableproductsoutofstock_Visible = 0;
+            AssignProp("", false, divTableproductsoutofstock_Internalname, "Visible", StringUtil.LTrimStr( (decimal)(divTableproductsoutofstock_Visible), 5, 0), true);
+            WebComp_Wcproductsoutofstock_Visible = 0;
+            AssignProp("", false, "gxHTMLWrpW0060"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsoutofstock_Visible), 5, 0), true);
          }
       }
 
@@ -1637,7 +1777,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E13352( )
+      protected void E14352( )
       {
          /* Load Routine */
          returnInSub = false;
@@ -1702,18 +1842,18 @@ namespace GeneXus.Programs {
                WebComp_Wcproductstopsold.componentthemes();
             }
          }
-         if ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "") == 0 )
+         if ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "") == 0 )
          {
-            WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
-            WebComp_Wcproductsoutofstock.ComponentInit();
-            WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
-            WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
+            WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
+            WebComp_Wcproductstoppurchase.ComponentInit();
+            WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
+            WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
          }
-         if ( ! ( WebComp_Wcproductsoutofstock == null ) )
+         if ( ! ( WebComp_Wcproductstoppurchase == null ) )
          {
-            if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+            if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
             {
-               WebComp_Wcproductsoutofstock.componentthemes();
+               WebComp_Wcproductstoppurchase.componentthemes();
             }
          }
          if ( StringUtil.StrCmp(WebComp_Wcproductsleastsold_Component, "") == 0 )
@@ -1744,6 +1884,20 @@ namespace GeneXus.Programs {
                WebComp_Wcproductsleastpurchased.componentthemes();
             }
          }
+         if ( StringUtil.StrCmp(WebComp_Wcproductsoutofstock_Component, "") == 0 )
+         {
+            WebComp_Wcproductsoutofstock = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductsoutofstock", new Object[] {context} );
+            WebComp_Wcproductsoutofstock.ComponentInit();
+            WebComp_Wcproductsoutofstock.Name = "WCStatisticsProductsOutOfStock";
+            WebComp_Wcproductsoutofstock_Component = "WCStatisticsProductsOutOfStock";
+         }
+         if ( ! ( WebComp_Wcproductsoutofstock == null ) )
+         {
+            if ( StringUtil.Len( WebComp_Wcproductsoutofstock_Component) != 0 )
+            {
+               WebComp_Wcproductsoutofstock.componentthemes();
+            }
+         }
          if ( StringUtil.StrCmp(WebComp_Wcsuppliertopsold_Component, "") == 0 )
          {
             WebComp_Wcsuppliertopsold = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticssuppliertopsold", new Object[] {context} );
@@ -1758,20 +1912,6 @@ namespace GeneXus.Programs {
                WebComp_Wcsuppliertopsold.componentthemes();
             }
          }
-         if ( StringUtil.StrCmp(WebComp_Wcproductstoppurchase_Component, "") == 0 )
-         {
-            WebComp_Wcproductstoppurchase = getWebComponent(GetType(), "GeneXus.Programs", "wcstatisticsproductstoppurchased", new Object[] {context} );
-            WebComp_Wcproductstoppurchase.ComponentInit();
-            WebComp_Wcproductstoppurchase.Name = "WCStatisticsProductsTopPurchased";
-            WebComp_Wcproductstoppurchase_Component = "WCStatisticsProductsTopPurchased";
-         }
-         if ( ! ( WebComp_Wcproductstoppurchase == null ) )
-         {
-            if ( StringUtil.Len( WebComp_Wcproductstoppurchase_Component) != 0 )
-            {
-               WebComp_Wcproductstoppurchase.componentthemes();
-            }
-         }
          bool outputEnabled = isOutputEnabled( );
          if ( context.isSpaRequest( ) )
          {
@@ -1780,7 +1920,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202412714404883", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121421263485", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1796,7 +1936,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("wphome.js", "?202412714404883", false, true);
+         context.AddJavascriptSource("wphome.js", "?2024121421263486", false, true);
          /* End function include_jscripts */
       }
 
@@ -1825,13 +1965,13 @@ namespace GeneXus.Programs {
          cmbavYear_Internalname = "vYEAR";
          cmbavMonth_Internalname = "vMONTH";
          divTable12_Internalname = "TABLE12";
-         divTable10_Internalname = "TABLE10";
-         divTable5_Internalname = "TABLE5";
-         divTable8_Internalname = "TABLE8";
-         divTable6_Internalname = "TABLE6";
-         divTable11_Internalname = "TABLE11";
-         divTable1_Internalname = "TABLE1";
-         divTable2_Internalname = "TABLE2";
+         divTableamountstatement_Internalname = "TABLEAMOUNTSTATEMENT";
+         divTableproductstopsold_Internalname = "TABLEPRODUCTSTOPSOLD";
+         divTableproducttoppurchased_Internalname = "TABLEPRODUCTTOPPURCHASED";
+         divTableproductsleastsold_Internalname = "TABLEPRODUCTSLEASTSOLD";
+         divTableproductsleastpurchased_Internalname = "TABLEPRODUCTSLEASTPURCHASED";
+         divTableproductsoutofstock_Internalname = "TABLEPRODUCTSOUTOFSTOCK";
+         divTablesuppliertopsold_Internalname = "TABLESUPPLIERTOPSOLD";
          divTable3_Internalname = "TABLE3";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
@@ -1845,6 +1985,27 @@ namespace GeneXus.Programs {
             disableJsOutput();
          }
          init_default_properties( ) ;
+         WebComp_Wcsuppliertopsold_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0068"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcsuppliertopsold_Visible), 5, 0), true);
+         divTablesuppliertopsold_Visible = 1;
+         WebComp_Wcproductsoutofstock_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0060"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsoutofstock_Visible), 5, 0), true);
+         divTableproductsoutofstock_Visible = 1;
+         WebComp_Wcproductsleastpurchased_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0052"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastpurchased_Visible), 5, 0), true);
+         divTableproductsleastpurchased_Visible = 1;
+         WebComp_Wcproductsleastsold_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0047"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductsleastsold_Visible), 5, 0), true);
+         divTableproductsleastsold_Visible = 1;
+         WebComp_Wcproductstoppurchase_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0039"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstoppurchase_Visible), 5, 0), true);
+         divTableproducttoppurchased_Visible = 1;
+         WebComp_Wcproductstopsold_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0034"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcproductstopsold_Visible), 5, 0), true);
+         divTableproductstopsold_Visible = 1;
+         WebComp_Wcamountstatement_Visible = 1;
+         AssignProp("", false, "gxHTMLWrpW0026"+"", "Visible", StringUtil.LTrimStr( (decimal)(WebComp_Wcamountstatement_Visible), 5, 0), true);
+         divTableamountstatement_Visible = 1;
          cmbavMonth_Jsonclick = "";
          cmbavMonth.Enabled = 1;
          cmbavYear_Jsonclick = "";
@@ -1870,7 +2031,9 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[]");
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("VYEAR.CONTROLVALUECHANGED","{handler:'E12352',iparms:[{av:'cmbavYear'},{av:'AV18Year',fld:'vYEAR',pic:'ZZZ9'},{av:'cmbavMonth'},{av:'AV21Month',fld:'vMONTH',pic:'ZZZ9'},{av:'AV24Months',fld:'vMONTHS',pic:''}]");
-         setEventMetadata("VYEAR.CONTROLVALUECHANGED",",oparms:[{av:'AV24Months',fld:'vMONTHS',pic:''},{av:'cmbavMonth'},{av:'AV21Month',fld:'vMONTH',pic:'ZZZ9'},{ctrl:'WCAMOUNTSTATEMENT'},{ctrl:'WCPRODUCTSTOPSOLD'},{ctrl:'WCPRODUCTSOUTOFSTOCK'},{ctrl:'WCPRODUCTSLEASTSOLD'},{ctrl:'WCPRODUCTSLEASTPURCHASED'},{ctrl:'WCPRODUCTSTOPPURCHASE'},{ctrl:'WCSUPPLIERTOPSOLD'}]}");
+         setEventMetadata("VYEAR.CONTROLVALUECHANGED",",oparms:[{av:'AV24Months',fld:'vMONTHS',pic:''},{av:'cmbavMonth'},{av:'AV21Month',fld:'vMONTH',pic:'ZZZ9'},{ctrl:'WCAMOUNTSTATEMENT'},{av:'divTableamountstatement_Visible',ctrl:'TABLEAMOUNTSTATEMENT',prop:'Visible'},{ctrl:'WCAMOUNTSTATEMENT',prop:'Visible'},{ctrl:'WCPRODUCTSTOPSOLD'},{ctrl:'WCPRODUCTSLEASTSOLD'},{av:'divTableproductstopsold_Visible',ctrl:'TABLEPRODUCTSTOPSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSTOPSOLD',prop:'Visible'},{av:'divTableproductsleastsold_Visible',ctrl:'TABLEPRODUCTSLEASTSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSLEASTSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSTOPPURCHASE'},{ctrl:'WCPRODUCTSLEASTPURCHASED'},{av:'divTableproducttoppurchased_Visible',ctrl:'TABLEPRODUCTTOPPURCHASED',prop:'Visible'},{ctrl:'WCPRODUCTSTOPPURCHASE',prop:'Visible'},{av:'divTableproductsleastpurchased_Visible',ctrl:'TABLEPRODUCTSLEASTPURCHASED',prop:'Visible'},{ctrl:'WCPRODUCTSLEASTPURCHASED',prop:'Visible'},{ctrl:'WCSUPPLIERTOPSOLD'},{av:'divTablesuppliertopsold_Visible',ctrl:'TABLESUPPLIERTOPSOLD',prop:'Visible'},{ctrl:'WCSUPPLIERTOPSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSOUTOFSTOCK'},{av:'divTableproductsoutofstock_Visible',ctrl:'TABLEPRODUCTSOUTOFSTOCK',prop:'Visible'},{ctrl:'WCPRODUCTSOUTOFSTOCK',prop:'Visible'}]}");
+         setEventMetadata("VMONTH.CONTROLVALUECHANGED","{handler:'E13352',iparms:[{av:'cmbavYear'},{av:'AV18Year',fld:'vYEAR',pic:'ZZZ9'},{av:'cmbavMonth'},{av:'AV21Month',fld:'vMONTH',pic:'ZZZ9'}]");
+         setEventMetadata("VMONTH.CONTROLVALUECHANGED",",oparms:[{ctrl:'WCAMOUNTSTATEMENT'},{av:'divTableamountstatement_Visible',ctrl:'TABLEAMOUNTSTATEMENT',prop:'Visible'},{ctrl:'WCAMOUNTSTATEMENT',prop:'Visible'},{ctrl:'WCPRODUCTSTOPSOLD'},{ctrl:'WCPRODUCTSLEASTSOLD'},{av:'divTableproductstopsold_Visible',ctrl:'TABLEPRODUCTSTOPSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSTOPSOLD',prop:'Visible'},{av:'divTableproductsleastsold_Visible',ctrl:'TABLEPRODUCTSLEASTSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSLEASTSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSTOPPURCHASE'},{ctrl:'WCPRODUCTSLEASTPURCHASED'},{av:'divTableproducttoppurchased_Visible',ctrl:'TABLEPRODUCTTOPPURCHASED',prop:'Visible'},{ctrl:'WCPRODUCTSTOPPURCHASE',prop:'Visible'},{av:'divTableproductsleastpurchased_Visible',ctrl:'TABLEPRODUCTSLEASTPURCHASED',prop:'Visible'},{ctrl:'WCPRODUCTSLEASTPURCHASED',prop:'Visible'},{ctrl:'WCSUPPLIERTOPSOLD'},{av:'divTablesuppliertopsold_Visible',ctrl:'TABLESUPPLIERTOPSOLD',prop:'Visible'},{ctrl:'WCSUPPLIERTOPSOLD',prop:'Visible'},{ctrl:'WCPRODUCTSOUTOFSTOCK'},{av:'divTableproductsoutofstock_Visible',ctrl:'TABLEPRODUCTSOUTOFSTOCK',prop:'Visible'},{ctrl:'WCPRODUCTSOUTOFSTOCK',prop:'Visible'}]}");
          return  ;
       }
 
@@ -1905,16 +2068,16 @@ namespace GeneXus.Programs {
          OldWcamountstatement = "";
          WebComp_Wcproductstopsold_Component = "";
          OldWcproductstopsold = "";
-         WebComp_Wcproductsoutofstock_Component = "";
-         OldWcproductsoutofstock = "";
+         WebComp_Wcproductstoppurchase_Component = "";
+         OldWcproductstoppurchase = "";
          WebComp_Wcproductsleastsold_Component = "";
          OldWcproductsleastsold = "";
          WebComp_Wcproductsleastpurchased_Component = "";
          OldWcproductsleastpurchased = "";
+         WebComp_Wcproductsoutofstock_Component = "";
+         OldWcproductsoutofstock = "";
          WebComp_Wcsuppliertopsold_Component = "";
          OldWcsuppliertopsold = "";
-         WebComp_Wcproductstoppurchase_Component = "";
-         OldWcproductstoppurchase = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
@@ -1935,11 +2098,11 @@ namespace GeneXus.Programs {
          );
          WebComp_Wcamountstatement = new GeneXus.Http.GXNullWebComponent();
          WebComp_Wcproductstopsold = new GeneXus.Http.GXNullWebComponent();
-         WebComp_Wcproductsoutofstock = new GeneXus.Http.GXNullWebComponent();
+         WebComp_Wcproductstoppurchase = new GeneXus.Http.GXNullWebComponent();
          WebComp_Wcproductsleastsold = new GeneXus.Http.GXNullWebComponent();
          WebComp_Wcproductsleastpurchased = new GeneXus.Http.GXNullWebComponent();
+         WebComp_Wcproductsoutofstock = new GeneXus.Http.GXNullWebComponent();
          WebComp_Wcsuppliertopsold = new GeneXus.Http.GXNullWebComponent();
-         WebComp_Wcproductstoppurchase = new GeneXus.Http.GXNullWebComponent();
          /* GeneXus formulas. */
          context.Gx_err = 0;
       }
@@ -1959,6 +2122,20 @@ namespace GeneXus.Programs {
       private short AV22Position ;
       private short AV25MonthAux ;
       private short nGXWrapped ;
+      private int divTableamountstatement_Visible ;
+      private int WebComp_Wcamountstatement_Visible ;
+      private int divTableproductstopsold_Visible ;
+      private int WebComp_Wcproductstopsold_Visible ;
+      private int divTableproducttoppurchased_Visible ;
+      private int WebComp_Wcproductstoppurchase_Visible ;
+      private int divTableproductsleastsold_Visible ;
+      private int WebComp_Wcproductsleastsold_Visible ;
+      private int divTableproductsleastpurchased_Visible ;
+      private int WebComp_Wcproductsleastpurchased_Visible ;
+      private int divTableproductsoutofstock_Visible ;
+      private int WebComp_Wcproductsoutofstock_Visible ;
+      private int divTablesuppliertopsold_Visible ;
+      private int WebComp_Wcsuppliertopsold_Visible ;
       private int AV40GXV1 ;
       private int AV41GXV2 ;
       private int AV42GXV3 ;
@@ -1982,27 +2159,27 @@ namespace GeneXus.Programs {
       private string cmbavMonth_Internalname ;
       private string cmbavMonth_Jsonclick ;
       private string divTable3_Internalname ;
-      private string divTable10_Internalname ;
+      private string divTableamountstatement_Internalname ;
       private string WebComp_Wcamountstatement_Component ;
       private string OldWcamountstatement ;
-      private string divTable5_Internalname ;
+      private string divTableproductstopsold_Internalname ;
       private string WebComp_Wcproductstopsold_Component ;
       private string OldWcproductstopsold ;
-      private string divTable8_Internalname ;
-      private string WebComp_Wcproductsoutofstock_Component ;
-      private string OldWcproductsoutofstock ;
-      private string divTable6_Internalname ;
-      private string WebComp_Wcproductsleastsold_Component ;
-      private string OldWcproductsleastsold ;
-      private string divTable11_Internalname ;
-      private string WebComp_Wcproductsleastpurchased_Component ;
-      private string OldWcproductsleastpurchased ;
-      private string divTable1_Internalname ;
-      private string WebComp_Wcsuppliertopsold_Component ;
-      private string OldWcsuppliertopsold ;
-      private string divTable2_Internalname ;
+      private string divTableproducttoppurchased_Internalname ;
       private string WebComp_Wcproductstoppurchase_Component ;
       private string OldWcproductstoppurchase ;
+      private string divTableproductsleastsold_Internalname ;
+      private string WebComp_Wcproductsleastsold_Component ;
+      private string OldWcproductsleastsold ;
+      private string divTableproductsleastpurchased_Internalname ;
+      private string WebComp_Wcproductsleastpurchased_Component ;
+      private string OldWcproductsleastpurchased ;
+      private string divTableproductsoutofstock_Internalname ;
+      private string WebComp_Wcproductsoutofstock_Component ;
+      private string OldWcproductsoutofstock ;
+      private string divTablesuppliertopsold_Internalname ;
+      private string WebComp_Wcsuppliertopsold_Component ;
+      private string OldWcsuppliertopsold ;
       private string sEvt ;
       private string EvtGridId ;
       private string EvtRowId ;
@@ -2015,11 +2192,11 @@ namespace GeneXus.Programs {
       private bool wbErr ;
       private bool bDynCreated_Wcamountstatement ;
       private bool bDynCreated_Wcproductstopsold ;
-      private bool bDynCreated_Wcproductsoutofstock ;
+      private bool bDynCreated_Wcproductstoppurchase ;
       private bool bDynCreated_Wcproductsleastsold ;
       private bool bDynCreated_Wcproductsleastpurchased ;
+      private bool bDynCreated_Wcproductsoutofstock ;
       private bool bDynCreated_Wcsuppliertopsold ;
-      private bool bDynCreated_Wcproductstoppurchase ;
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
       private GxSimpleCollection<short> AV24Months ;
@@ -2031,11 +2208,11 @@ namespace GeneXus.Programs {
       private GxSimpleCollection<short> GXt_objcol_int2 ;
       private GXWebComponent WebComp_Wcamountstatement ;
       private GXWebComponent WebComp_Wcproductstopsold ;
-      private GXWebComponent WebComp_Wcproductsoutofstock ;
+      private GXWebComponent WebComp_Wcproductstoppurchase ;
       private GXWebComponent WebComp_Wcproductsleastsold ;
       private GXWebComponent WebComp_Wcproductsleastpurchased ;
+      private GXWebComponent WebComp_Wcproductsoutofstock ;
       private GXWebComponent WebComp_Wcsuppliertopsold ;
-      private GXWebComponent WebComp_Wcproductstoppurchase ;
       private IGxDataStore dsDefault ;
       private GXCombobox cmbavYear ;
       private GXCombobox cmbavMonth ;

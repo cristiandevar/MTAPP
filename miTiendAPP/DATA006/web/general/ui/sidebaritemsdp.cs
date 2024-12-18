@@ -133,6 +133,15 @@ namespace GeneXus.Programs.general.ui {
                Gxm3sidebaritems_sidebarsubitems.gxTpr_Target = formatLink("wwpaymentmethod.aspx") ;
                Gxm3sidebaritems_sidebarsubitems.gxTpr_Hassubitems = false;
             }
+            if ( new haspermission(context).executeUdp(  "invoice cancel") && new haspermission(context).executeUdp(  "invoice view") && new haspermission(context).executeUdp(  "product view") && new haspermission(context).executeUdp(  "product update") )
+            {
+               Gxm3sidebaritems_sidebarsubitems = new GeneXus.Programs.genexusunanimo.SdtSidebarItems_SidebarItem_SubItem(context);
+               Gxm1sidebaritems.gxTpr_Sidebarsubitems.Add(Gxm3sidebaritems_sidebarsubitems, 0);
+               Gxm3sidebaritems_sidebarsubitems.gxTpr_Id = "WPRegisterMovement";
+               Gxm3sidebaritems_sidebarsubitems.gxTpr_Title = "Cancel Sale";
+               Gxm3sidebaritems_sidebarsubitems.gxTpr_Target = formatLink("wpregistermovement.aspx") ;
+               Gxm3sidebaritems_sidebarsubitems.gxTpr_Hassubitems = false;
+            }
          }
          if ( new haspermission(context).executeUdp(  "menu purchaseorder") )
          {
@@ -229,7 +238,7 @@ namespace GeneXus.Programs.general.ui {
             Gxm1sidebaritems.gxTpr_Id = "SubmenuStatistics";
             Gxm1sidebaritems.gxTpr_Title = "Statistics";
             Gxm1sidebaritems.gxTpr_Hassubitems = true;
-            if ( new haspermission(context).executeUdp(  "ranking view") )
+            if ( new haspermission(context).executeUdp(  "statistics graphs") )
             {
                Gxm3sidebaritems_sidebarsubitems = new GeneXus.Programs.genexusunanimo.SdtSidebarItems_SidebarItem_SubItem(context);
                Gxm1sidebaritems.gxTpr_Sidebarsubitems.Add(Gxm3sidebaritems_sidebarsubitems, 0);
@@ -238,7 +247,7 @@ namespace GeneXus.Programs.general.ui {
                Gxm3sidebaritems_sidebarsubitems.gxTpr_Target = formatLink("wpstatisticsgraphs.aspx") ;
                Gxm3sidebaritems_sidebarsubitems.gxTpr_Hassubitems = false;
             }
-            if ( new haspermission(context).executeUdp(  "ranking view") )
+            if ( new haspermission(context).executeUdp(  "statistics ranking") )
             {
                Gxm3sidebaritems_sidebarsubitems = new GeneXus.Programs.genexusunanimo.SdtSidebarItems_SidebarItem_SubItem(context);
                Gxm1sidebaritems.gxTpr_Sidebarsubitems.Add(Gxm3sidebaritems_sidebarsubitems, 0);

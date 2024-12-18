@@ -26,7 +26,7 @@
       <add  key="DateFormat" value="MDY"/>
       <add  key="YearLimit" value="1940"/>
       <add  key="TimeAmPmFormat" value="12"/>
-      <add  key="VER_STAMP" value="20241209.055552"/>
+      <add  key="VER_STAMP" value="20241215.213830"/>
       <add  key="CS_BLOB_PATH" value="PublicTempStorage"/>
       <add  key="TMPMEDIA_DIR" value="PrivateTempStorage"/>
       <add  key="PRINT_LAYOUT_METADATA_DIR" value="LayoutMetadata"/>
@@ -56,11 +56,15 @@
       <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
       <add  key="HTTP_PROTOCOL" value="Unsecure"/>
       <add  key="SAMESITE_COOKIE" value="Lax"/>
+<<<<<<< HEAD
+      <add  key="CACHE_INVALIDATION_TOKEN" value="202412163563982"/>
+=======
 <<<<<<< Updated upstream
       <add  key="CACHE_INVALIDATION_TOKEN" value="2024121220444840"/>
 =======
       <add  key="CACHE_INVALIDATION_TOKEN" value="202412182101130"/>
 >>>>>>> Stashed changes
+>>>>>>> main
       <add  key="CORS_ALLOW_ORIGIN" value=""/>
       <add  key="MaxFileUploadSize" value="528000000"/>
    </appSettings>

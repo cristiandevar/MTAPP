@@ -30,4 +30,6 @@ obj_parms_i([ 'int aP0_pMovementId' ],[ [ 'Pmovementid',out ] ]).
  
  
  
+module_info_i('GeneXusUnanimo','CSHARP_NAME_SPACE','GeneXus.Programs').
+module_info_i('GeneXusUnanimo','AssemblyName','GeneXusUnanimo.dll').
  

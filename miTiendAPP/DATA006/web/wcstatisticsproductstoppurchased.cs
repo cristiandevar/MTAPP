@@ -1132,7 +1132,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024112312253176", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2024121417264035", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1150,7 +1150,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("wcstatisticsproductstoppurchased.js", "?2024112312253176", false, true);
+            context.AddJavascriptSource("wcstatisticsproductstoppurchased.js", "?2024121417264035", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerCommon.js", "", false, true);
             context.AddJavascriptSource("QueryViewer/QueryViewerRender.js", "", false, true);
          }
@@ -1185,7 +1185,7 @@ namespace GeneXus.Programs {
          }
          init_default_properties( ) ;
          Queryviewerpurchase_Title = "Top Products Purchased";
-         Queryviewerpurchase_Charttype = "Column";
+         Queryviewerpurchase_Charttype = "ColumnLine";
          Queryviewerpurchase_Objectname = "QStatisticsProductTopOrder";
          if ( StringUtil.Len( sPrefix) == 0 )
          {

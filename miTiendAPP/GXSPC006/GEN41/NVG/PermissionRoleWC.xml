@@ -9,7 +9,7 @@
 <ObjDesc>Permission Role WC</ObjDesc>
 <ObjPgmName>PermissionRoleWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0024</MsgCode>

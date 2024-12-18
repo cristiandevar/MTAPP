@@ -1,2 +1,4 @@
-ALTER TABLE [PurchaseOrder] ALTER COLUMN [PurchaseOrderPaidDate] datetime NULL
+ALTER TABLE [Movement] ADD [MovementDescription] nvarchar(200) NOT NULL CONSTRAINT MovementDescriptionMovement_DEFAULT DEFAULT ''
+ALTER TABLE [Movement] DROP CONSTRAINT MovementDescriptionMovement_DEFAULT
+ALTER TABLE [Movement] DROP COLUMN [MovementQuantity]
 

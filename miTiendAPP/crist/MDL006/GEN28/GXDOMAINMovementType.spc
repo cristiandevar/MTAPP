@@ -7,3 +7,4 @@ enum_type_i(6,144,int,4,0).
  
 enum_value_i(6,144,'1','ProductDiscard','"Product Discard"',[ none ]).
 enum_value_i(6,144,'2','ProductAdded','"Product Added"',[ none ]).
+enum_value_i(6,144,'3','InvoiceCancel','"Invoice Cancel"',[ none ]).

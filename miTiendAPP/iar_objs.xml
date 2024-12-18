@@ -4,12 +4,12 @@
 <Mod>5</Mod>
 <OldMod>6</OldMod>
 <Table>
-<TableId>10</TableId>
-<TableName>PurchaseOrder</TableName>
-<Description>Purchase Order</Description></Table>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
 <Table>
-<TableId>10</TableId>
-<TableName>PurchaseOrder</TableName>
-<Description>Purchase Order</Description></Table>
-<ReorgAction>#</ReorgAction>
-<ObjNavig>crist\MDL006\GEN41\PurchaseOrderConversion.xml</ObjNavig></Object>
+<TableId>22</TableId>
+<TableName>Movement</TableName>
+<Description>Movement</Description></Table>
+<ReorgAction>!</ReorgAction>
+<ObjNavig>crist\MDL006\GEN41\MovementConversion.xml</ObjNavig></Object>

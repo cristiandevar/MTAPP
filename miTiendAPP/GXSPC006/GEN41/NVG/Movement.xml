@@ -65,21 +65,21 @@
 <TableAction>insert</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>124</AttriId>
-<AttriName>MovementType</AttriName>
-<Description>Movement Type</Description></Attribute>
-<Attribute>
 <AttriId>125</AttriId>
 <AttriName>MovementCreatedDate</AttriName>
 <Description>Movement Created Date</Description></Attribute>
+<Attribute>
+<AttriId>124</AttriId>
+<AttriName>MovementType</AttriName>
+<Description>Movement Type</Description></Attribute>
 <Attribute>
 <AttriId>128</AttriId>
 <AttriName>MovementKeyAditional</AttriName>
 <Description>Movement Key Aditional</Description></Attribute>
 <Attribute>
-<AttriId>127</AttriId>
-<AttriName>MovementQuantity</AttriName>
-<Description>Movement Quantity</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<AttriId>140</AttriId>
+<AttriName>MovementDescription</AttriName>
+<Description>Movement Description</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>22</TableId>
@@ -88,21 +88,21 @@
 <TableAction>update</TableAction>
 <AttrisToUpdate>
 <Attribute>
-<AttriId>124</AttriId>
-<AttriName>MovementType</AttriName>
-<Description>Movement Type</Description></Attribute>
-<Attribute>
 <AttriId>125</AttriId>
 <AttriName>MovementCreatedDate</AttriName>
 <Description>Movement Created Date</Description></Attribute>
+<Attribute>
+<AttriId>124</AttriId>
+<AttriName>MovementType</AttriName>
+<Description>Movement Type</Description></Attribute>
 <Attribute>
 <AttriId>128</AttriId>
 <AttriName>MovementKeyAditional</AttriName>
 <Description>Movement Key Aditional</Description></Attribute>
 <Attribute>
-<AttriId>127</AttriId>
-<AttriName>MovementQuantity</AttriName>
-<Description>Movement Quantity</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<AttriId>140</AttriId>
+<AttriName>MovementDescription</AttriName>
+<Description>Movement Description</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>22</TableId>
